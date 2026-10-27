@@ -5,3 +5,4 @@ public/icons
 brand/final/png
 *.svg
 docs/brief.md
+.impeccable/hook.cache.json
