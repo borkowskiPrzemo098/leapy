@@ -1,0 +1,112 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Rzucamy kostką. Wiadomo, że wypadła liczba parzysta. Prawdopodobieństwo, że jest to $6$, wynosi",
+      "options": ["$\\frac{1}{3}$", "$\\frac{1}{6}$", "$\\frac{1}{2}$", "$\\frac{2}{3}$"],
+      "answer": 0,
+      "explanation": "Z trzech wyników parzystych sprzyja jeden.",
+      "verify": "1/3",
+      "tags": ["prawdopodobienstwo-warunkowe"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Urna I zawiera $2$ białe i $3$ czarne kule, urna II — $4$ białe i $1$ czarną. Rzucamy monetą: orzeł — losujemy z urny I, reszka — z II. Prawdopodobieństwo wylosowania kuli białej wynosi",
+      "options": ["$\\frac{3}{5}$", "$\\frac{2}{5}$", "$\\frac{1}{2}$", "$\\frac{6}{5}$"],
+      "answer": 0,
+      "explanation": "$\\frac{1}{2}\\cdot\\frac{2}{5}+\\frac{1}{2}\\cdot\\frac{4}{5}=\\frac{3}{5}$.",
+      "verify": "0.5 * 2/5 + 0.5 * 4/5",
+      "tags": ["prawdopodobienstwo-calkowite"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "$P(A)=0{,}5$, $P(B)=0{,}4$, $P(A\\cap B)=0{,}2$. Oblicz $P(A\\mid B)$.",
+      "answer": {
+        "value": 0.5
+      },
+      "explanation": "$\\frac{0{,}2}{0{,}4}=0{,}5$.",
+      "verify": "0.2 / 0.4",
+      "tags": ["prawdopodobienstwo-warunkowe"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Dla danych $P(A)=0{,}5$, $P(B)=0{,}4$, $P(A\\cap B)=0{,}2$ zdarzenia $A$ i $B$ są",
+      "options": ["niezależne", "zależne", "rozłączne", "przeciwne"],
+      "answer": 0,
+      "explanation": "$P(A)P(B)=0{,}2=P(A\\cap B)$.",
+      "tags": ["niezaleznosc"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Z talii $52$ kart losujemy kolejno dwie bez zwracania. Oblicz prawdopodobieństwo, że obie będą asami (jako ułamek).",
+      "answer": {
+        "value": "1/221"
+      },
+      "explanation": "$\\frac{4}{52}\\cdot\\frac{3}{51}=\\frac{12}{2652}=\\frac{1}{221}$.",
+      "verify": "4/52 * 3/51",
+      "tags": ["prawdopodobienstwo-warunkowe"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Rzucamy dwiema kostkami. Wiadomo, że suma oczek jest równa $8$. Prawdopodobieństwo, że na obu kostkach wypadła ta sama liczba, wynosi",
+      "options": ["$\\frac{1}{5}$", "$\\frac{1}{6}$", "$\\frac{1}{36}$", "$\\frac{5}{36}$"],
+      "answer": 0,
+      "explanation": "Pary z sumą $8$: $(2,6), (3,5), (4,4), (5,3), (6,2)$; jedna z pięciu to dublet.",
+      "verify": "1/5",
+      "tags": ["prawdopodobienstwo-warunkowe"]
+    },
+    {
+      "id": "007",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Zdarzenia rozłączne o dodatnich prawdopodobieństwach są niezależne.",
+        "$P(A\\mid B)$ i $P(B\\mid A)$ są zawsze równe."
+      ],
+      "answer": [false, false],
+      "explanation": "1. $P(A\\cap B)=0\\neq P(A)P(B)>0$. Fałsz.\n2. Na ogół różne. Fałsz.",
+      "tags": ["prawdopodobienstwo-warunkowe"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "W klasie $60\\%$ uczniów uczy się niemieckiego, a $25\\%$ niemieckiego i hiszpańskiego. Losujemy ucznia uczącego się niemieckiego. Oblicz prawdopodobieństwo, że uczy się też hiszpańskiego (jako ułamek).",
+      "answer": {
+        "value": "5/12"
+      },
+      "explanation": "$\\frac{0{,}25}{0{,}6}=\\frac{5}{12}$.",
+      "verify": "0.25 / 0.6",
+      "tags": ["prawdopodobienstwo-warunkowe"]
+    },
+    {
+      "id": "009",
+      "type": "ordering",
+      "difficulty": 2,
+      "prompt": "Ułóż kroki rozwiązania zadania z prawdopodobieństwem całkowitym.",
+      "options": [
+        "wyznacz zdarzenia rozbijające (np. wybór urny) i ich prawdopodobieństwa",
+        "oblicz prawdopodobieństwa warunkowe w każdej gałęzi",
+        "pomnóż prawdopodobieństwa wzdłuż gałęzi",
+        "dodaj wyniki gałęzi sprzyjających"
+      ],
+      "answer": [0, 1, 2, 3],
+      "explanation": "To schemat drzewka.",
+      "tags": ["prawdopodobienstwo-calkowite"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

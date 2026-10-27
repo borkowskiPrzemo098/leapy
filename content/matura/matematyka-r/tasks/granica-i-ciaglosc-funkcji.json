@@ -1,0 +1,109 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz $\\lim_{x\\to 3}\\frac{x^{2}-9}{x-3}$.",
+      "answer": {
+        "value": 6
+      },
+      "explanation": "$\\frac{(x-3)(x+3)}{x-3}=x+3\\to 6$.",
+      "tags": ["granica-funkcji"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz $\\lim_{x\\to\\infty}\\frac{2x^{2}+1}{x^{2}-3}$.",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "Iloraz współczynników przy $x^{2}$.",
+      "tags": ["granica-funkcji"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz $\\lim_{x\\to 2}\\frac{x^{3}-8}{x-2}$.",
+      "answer": {
+        "value": 12
+      },
+      "explanation": "$x^{3}-8=(x-2)(x^{2}+2x+4)$, granica $4+4+4=12$.",
+      "tags": ["granica-funkcji"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Funkcja $f(x)=\\begin{cases}x^{2}, & x<1\\\\ ax+3, & x\\ge 1\\end{cases}$ jest ciągła. Oblicz $a$.",
+      "answer": {
+        "value": -2
+      },
+      "explanation": "Granica lewostronna w $1$: $1$, wartość $f(1)=a+3$. $a+3=1$, $a=-2$.",
+      "tags": ["ciaglosc", "parametr"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz $\\lim_{x\\to 0}\\frac{\\sqrt{x+4}-2}{x}$ (jako ułamek).",
+      "answer": {
+        "value": "1/4"
+      },
+      "explanation": "Sprzężenie: $\\frac{x}{x(\\sqrt{x+4}+2)}=\\frac{1}{\\sqrt{x+4}+2}\\to\\frac{1}{4}$.",
+      "tags": ["granica-funkcji"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Granica $\\lim_{x\\to 0^{+}}\\frac{1}{x}$ jest równa",
+      "options": ["$+\\infty$", "$-\\infty$", "$0$", "$1$"],
+      "answer": 0,
+      "explanation": "Dla małych dodatnich $x$ ułamek rośnie nieograniczenie.",
+      "tags": ["granica-funkcji"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Funkcja $f(x)=\\frac{x^{2}-1}{x-1}$ w punkcie $x=1$",
+      "options": [
+        "nie jest określona, ale ma granicę równą $2$",
+        "jest ciągła i równa $2$",
+        "ma granicę równą $0$",
+        "nie ma granicy"
+      ],
+      "answer": 0,
+      "explanation": "$1$ nie należy do dziedziny; $\\lim_{x\\to 1}(x+1)=2$.",
+      "tags": ["ciaglosc"]
+    },
+    {
+      "id": "008",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Każdy wielomian jest funkcją ciągłą w całej dziedzinie.",
+        "Funkcja ciągła w punkcie musi być w nim różniczkowalna."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Prawda.\n2. Np. $|x|$ w $0$ jest ciągła, ale nieróżniczkowalna. Fałsz.",
+      "tags": ["ciaglosc"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz $\\lim_{x\\to -\\infty}\\frac{3x-1}{6x+5}$ (jako ułamek).",
+      "answer": {
+        "value": "1/2"
+      },
+      "explanation": "Iloraz współczynników przy $x$: $\\frac{3}{6}$.",
+      "tags": ["granica-funkcji"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

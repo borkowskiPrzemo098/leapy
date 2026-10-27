@@ -1,0 +1,110 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Asymptotami wykresu funkcji $f(x)=\\frac{2x+1}{x-1}$ są proste",
+      "options": ["$x=1$ i $y=2$", "$x=-1$ i $y=2$", "$x=1$ i $y=-1$", "$x=2$ i $y=1$"],
+      "answer": 0,
+      "explanation": "$f(x)=2+\\frac{3}{x-1}$: asymptoty $x=1$, $y=2$.",
+      "tags": ["funkcje-wymierne", "asymptoty"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Zbiorem rozwiązań nierówności $\\frac{x+2}{x-3}\\le 0$ jest",
+      "options": ["$[-2,\\ 3)$", "$[-2,\\ 3]$", "$(-\\infty,-2]\\cup(3,\\infty)$", "$(-2,\\ 3)$"],
+      "answer": 0,
+      "explanation": "$(x+2)(x-3)\\le 0$ i $x\\neq 3$.",
+      "tags": ["funkcje-wymierne", "nierownosci"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Zbiorem wartości funkcji $f(x)=\\frac{3}{x-2}+1$ jest",
+      "options": [
+        "$\\mathbb{R}\\setminus\\{1\\}$",
+        "$\\mathbb{R}\\setminus\\{2\\}$",
+        "$\\mathbb{R}$",
+        "$(1,\\ \\infty)$"
+      ],
+      "answer": 0,
+      "explanation": "$\\frac{3}{x-2}$ przyjmuje wszystkie wartości poza $0$.",
+      "tags": ["funkcje-wymierne"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Rozwiąż równanie $\\frac{x}{x-1}=\\frac{2}{x}+1$.",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "1. Dziedzina: $x\\neq 0, 1$.\n2. Mnożymy przez $x(x-1)$: $x^{2}=2(x-1)+x(x-1)$, $x^{2}=x^{2}+x-2$, $x=2$.",
+      "tags": ["funkcje-wymierne", "rownania"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Zbiorem rozwiązań nierówności $\\frac{1}{x}<1$ jest",
+      "options": ["$(-\\infty,0)\\cup(1,\\infty)$", "$(1,\\infty)$", "$(0,1)$", "$(-\\infty,1)$"],
+      "answer": 0,
+      "explanation": "$\\frac{1-x}{x}<0\\iff x(1-x)<0$: $x<0$ lub $x>1$. Nie mnożymy przez $x$ bez znajomości znaku.",
+      "tags": ["funkcje-wymierne", "nierownosci"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wykres funkcji $f(x)=\\frac{1}{x+3}-2$ powstaje z wykresu $y=\\frac{1}{x}$ przez przesunięcie o wektor",
+      "options": ["$[-3,\\ -2]$", "$[3,\\ -2]$", "$[-3,\\ 2]$", "$[2,\\ -3]$"],
+      "answer": 0,
+      "explanation": "$\\frac{1}{x-p}+q$ z $p=-3$, $q=-2$.",
+      "tags": ["funkcje-wymierne", "przeksztalcenia"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Funkcja $f(x)=\\frac{ax+1}{x-2}$ ma asymptotę poziomą $y=3$. Oblicz $a$.",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "Asymptota pozioma $y=\\frac{a}{1}$, więc $a=3$.",
+      "tags": ["funkcje-wymierne", "parametr"]
+    },
+    {
+      "id": "008",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań o funkcji $f(x)=\\frac{2}{x}$.",
+      "options": [
+        "Funkcja jest malejąca w przedziale $(0,\\infty)$.",
+        "Funkcja jest malejąca w całej dziedzinie."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Prawda.\n2. Np. $f(-1)=-2<f(1)=2$, choć $-1<1$. Maleje w każdym z przedziałów osobno. Fałsz.",
+      "tags": ["funkcje-wymierne", "monotonicznosc"]
+    },
+    {
+      "id": "009",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Zbiorem rozwiązań nierówności $\\frac{x^{2}-4}{x}\\ge 0$ jest",
+      "options": [
+        "$[-2,0)\\cup[2,\\infty)$",
+        "$(-\\infty,-2]\\cup(0,2]$",
+        "$[-2,2]$",
+        "$[2,\\infty)$"
+      ],
+      "answer": 0,
+      "explanation": "$(x-2)(x+2)x\\ge 0$ i $x\\neq 0$: pierwiastki $-2, 0, 2$.",
+      "tags": ["funkcje-wymierne", "nierownosci"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -68,7 +68,35 @@ Id fiszki powstaje z awersu: `matura.matematyka-p.logarytmy.card.logarytm-dziesi
 
 ## Zadania
 
-Plik `tasks/<temat>.json` to tablica zadań. Pola wspólne:
+Plik `tasks/<temat>.json` to tablica zadań albo (zalecana) **krótka forma**:
+
+```json
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "…",
+      "options": ["…"],
+      "answer": 0,
+      "explanation": "…"
+    }
+  ]
+}
+```
+
+W krótkiej formie `exam`, `subject` i `topic` wynikają ze ścieżki pliku, `"001"` zamienia się na pełne id, a `source: "original"`, `reviewed: false` i `updatedAt` (z nagłówka pliku) dopisują się same. Pole wpisane jawnie zawsze wygrywa.
+
+### Narzędzia do partii treści
+
+| Komenda                                                                  | Co robi                                                                                                                         |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| `node scripts/content/append-tasks.mjs <egzamin>/<przedmiot> plik.json`  | dopisuje zadania `{ "<temat>": [zadania bez id] }` z kolejnymi wolnymi id                                                       |
+| `node scripts/content/write-lessons.mjs <egzamin>/<przedmiot> plik.json` | tworzy lekcje z JSON-a (YAML generuje biblioteka, więc cudzysłowy są zawsze poprawne); istniejących nie nadpisuje bez `--force` |
+
+Pola wspólne:
 
 | Pole          | Opis                                                                                                                                                                                           |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -116,6 +144,14 @@ Przykłady: `"2^10 * 4^3 / 8^5"`, `"log(54, 3) - log(2, 3)"`, `"nthRoot(54, 3) -
 - poprawności wzorów KaTeX;
 - identycznych treści (błąd) i bardzo podobnych zadań w jednym temacie (ostrzeżenie);
 - tego, że żadne wcześniej opublikowane `id` nie zniknęło bez wpisu w `renames.json`.
+
+## Strony publiczne, blog i FAQ
+
+- `content/blog/<slug>.md`: frontmatter `title`, `description` (70–170 znaków), `date`, `tags`, opcjonalnie `exam`, `reviewed`; treść co najmniej 1500 znaków.
+- `content/pages/<slug>.md`: strony stałe (`prywatnosc`, `regulamin` są wymagane, `o-leapy`).
+- `content/faq.yaml`: lista `{ q, a }`, odpowiedzi w Markdownie.
+
+Wszystko trafia do `public/data/site.json` i do prerenderowanych stron (`npm run build`).
 
 ## Zasady treści
 

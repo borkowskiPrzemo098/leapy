@@ -5,6 +5,7 @@ import { watchSystemTheme } from '@/lib/theme'
 import { usePrefs } from '@/state/prefs'
 import { Skeleton } from '@/ui/controls'
 import { ReminderWatcher } from '@/features/reminders/ReminderWatcher'
+import { usePrefetchSubjects } from '@/features/study/prefetch'
 import { Sidebar, TabBar } from './Navigation'
 
 export function ScreenSkeleton() {
@@ -39,6 +40,7 @@ export function SessionShell() {
 
 export function AppLayout() {
   const { pathname } = useLocation()
+  usePrefetchSubjects()
 
   useEffect(() => watchSystemTheme(() => usePrefs.getState().theme), [])
 

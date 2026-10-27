@@ -84,3 +84,33 @@ test('picking an exam and subjects is remembered and shown on Start', async ({ p
   await expect(page.getByRole('heading', { level: 2, name: 'Matura' })).toBeVisible()
   await expect(page.getByText(/Matematyka \(poziom rozszerzony\)/)).toBeVisible()
 })
+
+test('a chosen subject is cached in the background and its tasks work offline', async ({
+  page,
+  context,
+}) => {
+  await page.goto('/app/egzaminy')
+  await page.evaluate(async () => {
+    await navigator.serviceWorker.ready
+  })
+  await page.reload()
+  await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller)).toBe(true)
+  await page.getByRole('button', { name: /^Matura/ }).click()
+  await page
+    .getByRole('button', { name: 'Dodaj do moich przedmiotów: Matematyka, poziom podstawowy' })
+    .click()
+  // The pack lands in the runtime cache
+  await expect
+    .poll(() =>
+      page.evaluate(async () => {
+        const cache = await caches.open('leapy-content')
+        return !!(await cache.match('/data/matura/matematyka-p.json'))
+      }),
+    )
+    .toBe(true)
+
+  await context.setOffline(true)
+  await page.goto('/app/sesja/temat/matura/matematyka-p/logarytmy')
+  await expect(page.getByText('1 / 10')).toBeVisible()
+  await context.setOffline(false)
+})

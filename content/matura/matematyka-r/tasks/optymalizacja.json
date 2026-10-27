@@ -1,0 +1,115 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Z drutu o długości $40$ cm wygięto prostokąt o największym możliwym polu. Oblicz to pole (w $\\text{cm}^{2}$).",
+      "answer": {
+        "value": 100
+      },
+      "explanation": "$P(x)=x(20-x)$, maksimum dla $x=10$: $100$.",
+      "verify": "10 * 10",
+      "tags": ["optymalizacja"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Z kwadratowego kartonu $12\\times 12$ wycinamy w rogach kwadraty o boku $x$ i składamy otwarte pudełko. Dla jakiego $x$ objętość jest największa?",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "$V(x)=x(12-2x)^{2}$, $V'(x)=(12-2x)(12-6x)=0$; w dziedzinie $(0,6)$: $x=2$.",
+      "tags": ["optymalizacja"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Dla pudełka z poprzedniego zadania (karton $12\\times 12$, wycinane kwadraty $x\\times x$) oblicz największą objętość.",
+      "answer": {
+        "value": 128
+      },
+      "explanation": "$V(2)=2\\cdot 8^{2}=128$.",
+      "verify": "2 * (12 - 4)^2",
+      "tags": ["optymalizacja"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Suma dwóch liczb dodatnich jest równa $10$. Oblicz największą możliwą wartość ich iloczynu.",
+      "answer": {
+        "value": 25
+      },
+      "explanation": "$P(x)=x(10-x)$, maksimum dla $x=5$: $25$.",
+      "verify": "5 * 5",
+      "tags": ["optymalizacja"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Iloczyn dwóch liczb dodatnich jest równy $16$. Oblicz najmniejszą możliwą wartość ich sumy.",
+      "answer": {
+        "value": 8
+      },
+      "explanation": "$S(x)=x+\\frac{16}{x}$, $S'=1-\\frac{16}{x^{2}}=0$ dla $x=4$: $S=8$.",
+      "verify": "4 + 16/4",
+      "tags": ["optymalizacja"]
+    },
+    {
+      "id": "006",
+      "type": "ordering",
+      "difficulty": 2,
+      "prompt": "Ułóż kroki rozwiązywania zadania optymalizacyjnego.",
+      "options": [
+        "wybierz zmienną i zapisz funkcję jednej zmiennej",
+        "wyznacz dziedzinę z warunków zadania",
+        "oblicz pochodną i jej miejsca zerowe",
+        "zbadaj znak pochodnej i odpowiedz na pytanie"
+      ],
+      "answer": [0, 1, 2, 3],
+      "explanation": "Funkcja → dziedzina → $f'$ → znak $f'$ → odpowiedź.",
+      "tags": ["optymalizacja"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Prostokątna działka przy rzece ma być ogrodzona z trzech stron (wzdłuż rzeki bez płotu). Mamy $60$ m siatki. Oblicz największe możliwe pole działki (w $\\text{m}^{2}$).",
+      "answer": {
+        "value": 450
+      },
+      "explanation": "Boki prostopadłe do rzeki $x$, równoległy $60-2x$. $P=x(60-2x)$, maksimum dla $x=15$: $15\\cdot 30=450$.",
+      "verify": "15 * 30",
+      "tags": ["optymalizacja"]
+    },
+    {
+      "id": "008",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Najmniejsza wartość funkcji $f(x)=x^{2}-4x+7$ w przedziale $[0,\\ 5]$ jest równa",
+      "options": ["$3$", "$7$", "$12$", "$0$"],
+      "answer": 0,
+      "explanation": "Wierzchołek $x=2$ w przedziale: $f(2)=3$; na końcach $7$ i $12$.",
+      "verify": "2^2 - 4*2 + 7",
+      "tags": ["optymalizacja"]
+    },
+    {
+      "id": "009",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Największa wartość funkcji ciągłej w przedziale domkniętym może być w jego końcu.",
+        "Wśród prostokątów o danym obwodzie największe pole ma kwadrat."
+      ],
+      "answer": [true, true],
+      "explanation": "1. Prawda — trzeba sprawdzać końce przedziału.\n2. Prawda.",
+      "tags": ["optymalizacja"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

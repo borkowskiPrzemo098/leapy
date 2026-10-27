@@ -2,9 +2,9 @@
 
 Wygenerowano: 2026-10-27 (`npm run content:build`).
 
-- Zadania: **928** (zweryfikowane przez człowieka: 0, czekają: 928)
-- Sprawdzone automatycznie (`verify`): 242
-- Typy: ordering 17, single 571, multi 27, truefalse 56, match 17, short 18, numeric 222
+- Zadania: **1141** (zweryfikowane przez człowieka: 0, czekają: 1141)
+- Sprawdzone automatycznie (`verify`): 314
+- Typy: ordering 19, single 659, multi 33, truefalse 76, match 17, short 18, numeric 319
 - Błędy: 0, ostrzeżenia: 0
 
 Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
@@ -129,31 +129,31 @@ Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
 | Statystyka (25) | Średnia, mediana, dominanta | 13 | tak |
 |  | Odchylenie standardowe | 12 | tak |
 
-### Matematyka (rozszerzony): 0 zadań
+### Matematyka (rozszerzony): 213 zadań
 
 | Dział | Temat | Zadania | Lekcja |
 | --- | --- | ---: | :---: |
-| Liczby i wyrażenia (0 ⚠) | Wartość bezwzględna i nierówności | 0 | — |
-|  | Logarytmy | 0 | — |
-| Wielomiany i funkcje wymierne (0 ⚠) | Wielomiany | 0 | — |
-|  | Równania i nierówności wielomianowe | 0 | — |
-|  | Funkcje wymierne | 0 | — |
-| Równania z parametrem (0 ⚠) | Równania kwadratowe z parametrem | 0 | — |
-|  | Wzory Viète’a | 0 | — |
-| Ciągi i granice (0 ⚠) | Ciągi | 0 | — |
-|  | Granica ciągu | 0 | — |
-|  | Szereg geometryczny | 0 | — |
-| Rachunek różniczkowy (0 ⚠) | Granica i ciągłość funkcji | 0 | — |
-|  | Pochodna funkcji | 0 | — |
-|  | Optymalizacja | 0 | — |
-| Trygonometria (0 ⚠) | Funkcje trygonometryczne | 0 | — |
-|  | Równania trygonometryczne | 0 | — |
-| Geometria (0 ⚠) | Planimetria | 0 | — |
-|  | Geometria analityczna | 0 | — |
-|  | Stereometria | 0 | — |
-| Kombinatoryka i prawdopodobieństwo (0 ⚠) | Kombinatoryka | 0 | — |
-|  | Prawdopodobieństwo warunkowe | 0 | — |
-|  | Schemat Bernoullego | 0 | — |
+| Liczby i wyrażenia (26) | Wartość bezwzględna i nierówności | 13 | tak |
+|  | Logarytmy | 13 | tak |
+| Wielomiany i funkcje wymierne (27) | Wielomiany | 9 | tak |
+|  | Równania i nierówności wielomianowe | 9 | tak |
+|  | Funkcje wymierne | 9 | tak |
+| Równania z parametrem (26) | Równania kwadratowe z parametrem | 13 | tak |
+|  | Wzory Viète’a | 13 | tak |
+| Ciągi i granice (27) | Ciągi | 9 | tak |
+|  | Granica ciągu | 9 | tak |
+|  | Szereg geometryczny | 9 | tak |
+| Rachunek różniczkowy (27) | Granica i ciągłość funkcji | 9 | tak |
+|  | Pochodna funkcji | 9 | tak |
+|  | Optymalizacja | 9 | tak |
+| Trygonometria (26) | Funkcje trygonometryczne | 13 | tak |
+|  | Równania trygonometryczne | 13 | tak |
+| Geometria (27) | Planimetria | 9 | tak |
+|  | Geometria analityczna | 9 | tak |
+|  | Stereometria | 9 | tak |
+| Kombinatoryka i prawdopodobieństwo (27) | Kombinatoryka | 9 | tak |
+|  | Prawdopodobieństwo warunkowe | 9 | tak |
+|  | Schemat Bernoullego | 9 | tak |
 
 ### Język polski (podstawowy): 111 zadań
 
@@ -314,6 +314,77 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.wyrazenia-wymierne.012` (numeric, trudność 3)
 - `matura.matematyka-p.wyrazenia-wymierne.013` (single, trudność 3)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.011` (single, trudność 3)
+- `matura.matematyka-r.ciagi.003` (single, trudność 3)
+- `matura.matematyka-r.ciagi.004` (numeric, trudność 3)
+- `matura.matematyka-r.ciagi.005` (numeric, trudność 3)
+- `matura.matematyka-r.ciagi.009` (single, trudność 3)
+- `matura.matematyka-r.funkcje-trygonometryczne.013` (single, trudność 3)
+- `matura.matematyka-r.funkcje-wymierne.004` (numeric, trudność 3)
+- `matura.matematyka-r.funkcje-wymierne.005` (single, trudność 3)
+- `matura.matematyka-r.funkcje-wymierne.007` (numeric, trudność 3)
+- `matura.matematyka-r.funkcje-wymierne.009` (single, trudność 3)
+- `matura.matematyka-r.geometria-analityczna.003` (multi, trudność 3)
+- `matura.matematyka-r.geometria-analityczna.006` (single, trudność 3)
+- `matura.matematyka-r.geometria-analityczna.009` (single, trudność 3)
+- `matura.matematyka-r.granica-ciagu.003` (numeric, trudność 3)
+- `matura.matematyka-r.granica-ciagu.005` (numeric, trudność 3)
+- `matura.matematyka-r.granica-ciagu.007` (numeric, trudność 3)
+- `matura.matematyka-r.granica-ciagu.009` (numeric, trudność 3)
+- `matura.matematyka-r.granica-i-ciaglosc-funkcji.003` (numeric, trudność 3)
+- `matura.matematyka-r.granica-i-ciaglosc-funkcji.004` (numeric, trudność 3)
+- `matura.matematyka-r.granica-i-ciaglosc-funkcji.005` (numeric, trudność 3)
+- `matura.matematyka-r.granica-i-ciaglosc-funkcji.007` (single, trudność 3)
+- `matura.matematyka-r.granica-i-ciaglosc-funkcji.009` (numeric, trudność 3)
+- `matura.matematyka-r.logarytmy.005` (single, trudność 3)
+- `matura.matematyka-r.logarytmy.008` (numeric, trudność 3)
+- `matura.matematyka-r.logarytmy.011` (numeric, trudność 3)
+- `matura.matematyka-r.logarytmy.012` (single, trudność 3)
+- `matura.matematyka-r.optymalizacja.002` (numeric, trudność 3)
+- `matura.matematyka-r.planimetria.006` (numeric, trudność 3)
+- `matura.matematyka-r.planimetria.007` (single, trudność 3)
+- `matura.matematyka-r.pochodna-funkcji.003` (single, trudność 3)
+- `matura.matematyka-r.pochodna-funkcji.006` (single, trudność 3)
+- `matura.matematyka-r.pochodna-funkcji.007` (numeric, trudność 3)
+- `matura.matematyka-r.prawdopodobienstwo-warunkowe.004` (single, trudność 3)
+- `matura.matematyka-r.rownania-i-nierownosci-wielomianowe.002` (single, trudność 3)
+- `matura.matematyka-r.rownania-i-nierownosci-wielomianowe.005` (numeric, trudność 3)
+- `matura.matematyka-r.rownania-i-nierownosci-wielomianowe.006` (single, trudność 3)
+- `matura.matematyka-r.rownania-i-nierownosci-wielomianowe.007` (multi, trudność 3)
+- `matura.matematyka-r.rownania-i-nierownosci-wielomianowe.009` (numeric, trudność 3)
+- `matura.matematyka-r.rownania-kwadratowe-z-parametrem.001` (single, trudność 3)
+- `matura.matematyka-r.rownania-kwadratowe-z-parametrem.002` (single, trudność 3)
+- `matura.matematyka-r.rownania-kwadratowe-z-parametrem.004` (single, trudność 3)
+- `matura.matematyka-r.rownania-kwadratowe-z-parametrem.005` (single, trudność 3)
+- `matura.matematyka-r.rownania-kwadratowe-z-parametrem.006` (numeric, trudność 3)
+- `matura.matematyka-r.rownania-kwadratowe-z-parametrem.007` (single, trudność 3)
+- `matura.matematyka-r.rownania-kwadratowe-z-parametrem.008` (numeric, trudność 3)
+- `matura.matematyka-r.rownania-kwadratowe-z-parametrem.010` (single, trudność 3)
+- `matura.matematyka-r.rownania-kwadratowe-z-parametrem.011` (numeric, trudność 3)
+- `matura.matematyka-r.rownania-kwadratowe-z-parametrem.013` (single, trudność 3)
+- `matura.matematyka-r.rownania-trygonometryczne.003` (numeric, trudność 3)
+- `matura.matematyka-r.rownania-trygonometryczne.004` (numeric, trudność 3)
+- `matura.matematyka-r.rownania-trygonometryczne.007` (numeric, trudność 3)
+- `matura.matematyka-r.rownania-trygonometryczne.008` (single, trudność 3)
+- `matura.matematyka-r.rownania-trygonometryczne.009` (numeric, trudność 3)
+- `matura.matematyka-r.rownania-trygonometryczne.010` (single, trudność 3)
+- `matura.matematyka-r.rownania-trygonometryczne.013` (numeric, trudność 3)
+- `matura.matematyka-r.schemat-bernoullego.004` (numeric, trudność 3)
+- `matura.matematyka-r.schemat-bernoullego.009` (single, trudność 3)
+- `matura.matematyka-r.stereometria.001` (single, trudność 3)
+- `matura.matematyka-r.szereg-geometryczny.006` (numeric, trudność 3)
+- `matura.matematyka-r.szereg-geometryczny.007` (single, trudność 3)
+- `matura.matematyka-r.szereg-geometryczny.008` (numeric, trudność 3)
+- `matura.matematyka-r.wartosc-bezwzgledna-i-nierownosci.001` (multi, trudność 3)
+- `matura.matematyka-r.wartosc-bezwzgledna-i-nierownosci.003` (single, trudność 3)
+- `matura.matematyka-r.wartosc-bezwzgledna-i-nierownosci.004` (multi, trudność 3)
+- `matura.matematyka-r.wartosc-bezwzgledna-i-nierownosci.009` (numeric, trudność 3)
+- `matura.matematyka-r.wartosc-bezwzgledna-i-nierownosci.011` (single, trudność 3)
+- `matura.matematyka-r.wartosc-bezwzgledna-i-nierownosci.012` (numeric, trudność 3)
+- `matura.matematyka-r.wielomiany.006` (single, trudność 3)
+- `matura.matematyka-r.wielomiany.007` (numeric, trudność 3)
+- `matura.matematyka-r.wzory-viete-a.007` (single, trudność 3)
+- `matura.matematyka-r.wzory-viete-a.008` (numeric, trudność 3)
+- `matura.matematyka-r.wzory-viete-a.013` (single, trudność 3)
 - `matura.polski-p.funkcje-tekstu-i-jezyka.005` (single, trudność 3)
 - `matura.polski-p.kompozycja-wypracowania.005` (single, trudność 3)
 - `matura.polski-p.kompozycja-wypracowania.008` (single, trudność 3)
@@ -363,74 +434,3 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.angielski-p.wyrazanie-przyszlosci.004` (single, trudność 3)
 - `matura.angielski-p.zakupy-i-uslugi.002` (single, trudność 3)
 - `matura.angielski-p.zdania-warunkowe.002` (single, trudność 3)
-- `matura.angielski-p.zdania-warunkowe.003` (single, trudność 3)
-- `matura.angielski-p.znajomosc-funkcji-jezykowych.003` (single, trudność 3)
-- `matura.angielski-p.znajomosc-funkcji-jezykowych.006` (single, trudność 3)
-- `matura.angielski-p.znajomosc-srodkow-jezykowych.005` (single, trudność 3)
-- `matura.angielski-p.znajomosc-srodkow-jezykowych.007` (single, trudność 3)
-- `matura.angielski-r.artykul-publicystyczny.004` (single, trudność 3)
-- `matura.angielski-r.czasy-i-aspekty.002` (single, trudność 3)
-- `matura.angielski-r.czasy-i-aspekty.003` (single, trudność 3)
-- `matura.angielski-r.czasy-i-aspekty.004` (single, trudność 3)
-- `matura.angielski-r.czasy-i-aspekty.005` (single, trudność 3)
-- `matura.angielski-r.idiomy-i-wyrazenia.003` (single, trudność 3)
-- `matura.angielski-r.idiomy-i-wyrazenia.005` (single, trudność 3)
-- `matura.angielski-r.idiomy-i-wyrazenia.007` (truefalse, trudność 3)
-- `matura.angielski-r.inwersja.001` (single, trudność 3)
-- `matura.angielski-r.inwersja.002` (single, trudność 3)
-- `matura.angielski-r.inwersja.003` (single, trudność 3)
-- `matura.angielski-r.inwersja.004` (single, trudność 3)
-- `matura.angielski-r.inwersja.005` (single, trudność 3)
-- `matura.angielski-r.kolokacje.004` (single, trudność 3)
-- `matura.angielski-r.kolokacje.005` (single, trudność 3)
-- `matura.angielski-r.konstrukcje-bezosobowe.001` (single, trudność 3)
-- `matura.angielski-r.konstrukcje-bezosobowe.002` (single, trudność 3)
-- `matura.angielski-r.konstrukcje-bezosobowe.003` (single, trudność 3)
-- `matura.angielski-r.konstrukcje-bezosobowe.004` (single, trudność 3)
-- `matura.angielski-r.list-formalny.005` (single, trudność 3)
-- `matura.angielski-r.phrasal-verbs.004` (single, trudność 3)
-- `matura.angielski-r.phrasal-verbs.005` (single, trudność 3)
-- `matura.angielski-r.phrasal-verbs.006` (match, trudność 3)
-- `matura.angielski-r.rozprawka.005` (single, trudność 3)
-- `matura.angielski-r.rozumienie-tekstow-pisanych.001` (single, trudność 3)
-- `matura.angielski-r.rozumienie-tekstow-pisanych.002` (single, trudność 3)
-- `matura.angielski-r.rozumienie-tekstow-pisanych.003` (single, trudność 3)
-- `matura.angielski-r.rozumienie-tekstow-pisanych.004` (truefalse, trudność 3)
-- `matura.angielski-r.rozumienie-tekstow-pisanych.005` (single, trudność 3)
-- `matura.angielski-r.slowotworstwo.006` (single, trudność 3)
-- `matura.angielski-r.transformacje-zdan.002` (single, trudność 3)
-- `matura.angielski-r.transformacje-zdan.003` (single, trudność 3)
-- `matura.angielski-r.transformacje-zdan.004` (single, trudność 3)
-- `matura.angielski-r.transformacje-zdan.005` (single, trudność 3)
-- `matura.angielski-r.zdania-warunkowe-mieszane.001` (single, trudność 3)
-- `matura.angielski-r.zdania-warunkowe-mieszane.002` (single, trudność 3)
-- `matura.angielski-r.zdania-warunkowe-mieszane.003` (single, trudność 3)
-- `matura.angielski-r.zdania-warunkowe-mieszane.004` (single, trudność 3)
-- `matura.angielski-r.znajomosc-srodkow-jezykowych.003` (single, trudność 3)
-- `matura.angielski-r.znajomosc-srodkow-jezykowych.004` (single, trudność 3)
-- `matura.angielski-r.znajomosc-srodkow-jezykowych.005` (single, trudność 3)
-- `e8.polski.charakterystyka.002` (single, trudność 2)
-- `e8.polski.charakterystyka.003` (multi, trudność 2)
-- `e8.polski.charakterystyka.004` (single, trudność 2)
-- `e8.polski.charakterystyka.006` (truefalse, trudność 2)
-- `e8.polski.charakterystyka.007` (single, trudność 2)
-- `e8.polski.czesci-mowy.003` (multi, trudność 2)
-- `e8.polski.czesci-mowy.004` (single, trudność 2)
-- `e8.polski.elementy-swiata-przedstawionego.002` (single, trudność 2)
-- `e8.polski.elementy-swiata-przedstawionego.003` (single, trudność 2)
-- `e8.polski.elementy-swiata-przedstawionego.004` (truefalse, trudność 2)
-- `e8.polski.formy-uzytkowe.002` (single, trudność 2)
-- `e8.polski.formy-uzytkowe.003` (ordering, trudność 2)
-- `e8.polski.formy-uzytkowe.004` (single, trudność 2)
-- `e8.polski.formy-uzytkowe.006` (truefalse, trudność 2)
-- `e8.polski.formy-uzytkowe.007` (single, trudność 2)
-- `e8.polski.frazeologia.002` (single, trudność 2)
-- `e8.polski.frazeologia.003` (single, trudność 2)
-- `e8.polski.frazeologia.004` (match, trudność 2)
-- `e8.polski.interpunkcja.002` (single, trudność 2)
-- `e8.polski.interpunkcja.003` (single, trudność 2)
-- `e8.polski.interpunkcja.004` (single, trudność 2)
-- `e8.polski.komunikacja-jezykowa.002` (single, trudność 2)
-- `e8.polski.komunikacja-jezykowa.003` (single, trudność 2)
-- `e8.polski.komunikacja-jezykowa.004` (multi, trudność 2)
-- `e8.polski.lektury-obowiazkowe.003` (single, trudność 2)

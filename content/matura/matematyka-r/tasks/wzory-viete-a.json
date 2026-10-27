@@ -1,0 +1,154 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Liczby $x_{1}$, $x_{2}$ są pierwiastkami równania $x^{2}-5x+3=0$. Oblicz $x_{1}^{2}+x_{2}^{2}$.",
+      "answer": {
+        "value": 19
+      },
+      "explanation": "$(x_{1}+x_{2})^{2}-2x_{1}x_{2}=25-6=19$.",
+      "verify": "5^2 - 2*3",
+      "tags": ["viete"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Liczby $x_{1}$, $x_{2}$ są pierwiastkami równania $x^{2}-5x+3=0$. Oblicz $\\frac{1}{x_{1}}+\\frac{1}{x_{2}}$ (jako ułamek).",
+      "answer": {
+        "value": "5/3"
+      },
+      "explanation": "$\\frac{x_{1}+x_{2}}{x_{1}x_{2}}=\\frac{5}{3}$.",
+      "verify": "5/3",
+      "tags": ["viete"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Liczby $x_{1}$, $x_{2}$ są pierwiastkami równania $x^{2}-3x-1=0$. Oblicz $x_{1}^{3}+x_{2}^{3}$.",
+      "answer": {
+        "value": 36
+      },
+      "explanation": "$(x_{1}+x_{2})^{3}-3x_{1}x_{2}(x_{1}+x_{2})=27-3\\cdot(-1)\\cdot 3=27+9=36$.",
+      "verify": "3^3 - 3*(-1)*3",
+      "tags": ["viete"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Suma pierwiastków równania $2x^{2}-8x+3=0$ jest równa",
+      "options": ["$4$", "$-4$", "$\\frac{3}{2}$", "$8$"],
+      "answer": 0,
+      "explanation": "$-\\frac{b}{a}=\\frac{8}{2}=4$.",
+      "verify": "8 / 2",
+      "tags": ["viete"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Iloczyn pierwiastków równania $3x^{2}+x-6=0$ jest równy",
+      "options": ["$-2$", "$2$", "$-\\frac{1}{3}$", "$-6$"],
+      "answer": 0,
+      "explanation": "$\\frac{c}{a}=\\frac{-6}{3}=-2$.",
+      "verify": "-6 / 3",
+      "tags": ["viete"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Liczby $x_{1}$, $x_{2}$ są pierwiastkami równania $x^{2}-6x+4=0$. Oblicz $|x_{1}-x_{2}|$ z dokładnością do $0{,}01$.",
+      "answer": {
+        "value": 4.47,
+        "tolerance": 0.01
+      },
+      "explanation": "$(x_{1}-x_{2})^{2}=(x_{1}+x_{2})^{2}-4x_{1}x_{2}=36-16=20$, więc $|x_{1}-x_{2}|=\\sqrt{20}\\approx 4{,}47$.",
+      "verify": "sqrt(20)",
+      "tags": ["viete"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Suma kwadratów pierwiastków równania $x^{2}-mx+m-1=0$ jest równa",
+      "options": ["$m^{2}-2m+2$", "$m^{2}+2m-2$", "$m^{2}$", "$m^{2}-m+1$"],
+      "answer": 0,
+      "explanation": "$m^{2}-2(m-1)=m^{2}-2m+2$.",
+      "tags": ["viete", "parametr"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Dla jakiej wartości $m$ suma kwadratów pierwiastków równania $x^{2}-mx+m-1=0$ jest najmniejsza? Podaj $m$.",
+      "answer": {
+        "value": 1
+      },
+      "explanation": "1. $S(m)=m^{2}-2m+2$, wierzchołek w $m=1$.\n2. Dla $m=1$: $x^{2}-x=0$ ma pierwiastki $0$ i $1$ (istnieją).",
+      "tags": ["viete", "parametr"]
+    },
+    {
+      "id": "009",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Równanie, którego pierwiastkami są $2$ i $5$, to",
+      "options": ["$x^{2}-7x+10=0$", "$x^{2}+7x+10=0$", "$x^{2}-10x+7=0$", "$x^{2}-3x-10=0$"],
+      "answer": 0,
+      "explanation": "$x^{2}-(x_{1}+x_{2})x+x_{1}x_{2}=x^{2}-7x+10$.",
+      "tags": ["viete"]
+    },
+    {
+      "id": "010",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Liczby $x_{1}$, $x_{2}$ są pierwiastkami równania $x^{2}+2x-5=0$. Oblicz $x_{1}^{2}x_{2}+x_{1}x_{2}^{2}$.",
+      "answer": {
+        "value": 10
+      },
+      "explanation": "$x_{1}x_{2}(x_{1}+x_{2})=(-5)\\cdot(-2)=10$.",
+      "verify": "(-5) * (-2)",
+      "tags": ["viete"]
+    },
+    {
+      "id": "011",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Wzory Viète’a można stosować tylko wtedy, gdy pierwiastki istnieją.",
+        "Dla $x^{2}+x+1=0$ suma pierwiastków rzeczywistych wynosi $-1$."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Prawda.\n2. $\\Delta=-3<0$: brak pierwiastków rzeczywistych. Fałsz.",
+      "tags": ["viete"]
+    },
+    {
+      "id": "012",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Liczby $x_{1}$, $x_{2}$ są pierwiastkami równania $x^{2}-4x+1=0$. Oblicz $\\frac{x_{1}}{x_{2}}+\\frac{x_{2}}{x_{1}}$.",
+      "answer": {
+        "value": 14
+      },
+      "explanation": "$\\frac{x_{1}^{2}+x_{2}^{2}}{x_{1}x_{2}}=\\frac{16-2}{1}=14$.",
+      "verify": "(16 - 2) / 1",
+      "tags": ["viete"]
+    },
+    {
+      "id": "013",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Pierwiastki równania $x^{2}+px+q=0$ to $-1$ i $4$. Wtedy",
+      "options": ["$p=-3$, $q=-4$", "$p=3$, $q=-4$", "$p=-3$, $q=4$", "$p=3$, $q=4$"],
+      "answer": 0,
+      "explanation": "$-p=-1+4=3$, więc $p=-3$; $q=(-1)\\cdot 4=-4$.",
+      "tags": ["viete"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -57,11 +57,24 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Content packs (public/data) are precached too, so every subject works offline.
-        // Revisit once total content passes a few MB (switch packs to runtime caching).
-        // Prerendered public pages are not precached (they come from the network and stay
-        // indexable); the app shell app.html is, and serves every /app route offline.
-        globPatterns: ['**/*.{js,css,svg,png,woff2,webmanifest,json}', 'app.html'],
+        // Precached: the app shell (app.html serves every /app route offline), code, fonts,
+        // icons, and the small content index (catalog, site). Subject packs are several MB of
+        // pre-rendered KaTeX, so they are cached at runtime instead: the learner's chosen
+        // subjects are fetched in the background (features/study/prefetch.ts) and then work
+        // offline. Prerendered public pages stay network-first and indexable.
+        globPatterns: [
+          '**/*.{js,css,svg,png,woff2,webmanifest}',
+          'app.html',
+          'data/catalog.json',
+          'data/site.json',
+        ],
+        runtimeCaching: [
+          {
+            urlPattern: /\/data\/[a-z0-9-]+\/[a-z0-9-]+\.json$/,
+            handler: 'StaleWhileRevalidate',
+            options: { cacheName: 'leapy-content', expiration: { maxEntries: 40 } },
+          },
+        ],
         // Only the fonts actually used (latin + latin-ext) are precached.
         globIgnores: ['**/*-{cyrillic,cyrillic-ext,vietnamese,greek}-*.woff2', 'og-default.png'],
         navigateFallback: '/app.html',

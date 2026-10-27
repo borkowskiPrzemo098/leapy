@@ -1,0 +1,110 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Ile różnych słów (także bezsensownych) można ułożyć, przestawiając litery słowa MAMA?",
+      "answer": {
+        "value": 6
+      },
+      "explanation": "$\\frac{4!}{2!\\cdot 2!}=6$.",
+      "verify": "factorial(4) / (factorial(2) * factorial(2))",
+      "tags": ["kombinatoryka", "permutacje-z-powtorzeniami"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Z grupy $6$ chłopców i $4$ dziewcząt wybieramy $3$ osoby. Na ile sposobów można to zrobić tak, by była wśród nich co najmniej jedna dziewczyna?",
+      "answer": {
+        "value": 100
+      },
+      "explanation": "$\\binom{10}{3}-\\binom{6}{3}=120-20=100$.",
+      "verify": "combinations(10, 3) - combinations(6, 3)",
+      "tags": ["kombinatoryka"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ile liczb ze zbioru $\\{1, 2, \\ldots, 100\\}$ jest podzielnych przez $2$ lub przez $3$?",
+      "answer": {
+        "value": 67
+      },
+      "explanation": "$50+33-16=67$.",
+      "verify": "50 + 33 - 16",
+      "tags": ["kombinatoryka", "wlaczenia-wylaczenia"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ile różnych słów można ułożyć z liter słowa ANANAS?",
+      "answer": {
+        "value": 60
+      },
+      "explanation": "$\\frac{6!}{3!\\cdot 2!\\cdot 1!}=60$ (A trzy razy, N dwa razy).",
+      "verify": "factorial(6) / (factorial(3) * factorial(2))",
+      "tags": ["kombinatoryka", "permutacje-z-powtorzeniami"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ile jest liczb pięciocyfrowych, w których cyfry się nie powtarzają i występuje cyfra $0$?",
+      "answer": {
+        "value": 12096
+      },
+      "explanation": "1. Wszystkie bez powtórzeń: $9\\cdot 9\\cdot 8\\cdot 7\\cdot 6=27\\,216$.\n2. Bez zera: $9\\cdot 8\\cdot 7\\cdot 6\\cdot 5=15\\,120$.\n3. Z zerem: $27\\,216-15\\,120=12\\,096$.",
+      "verify": "9*9*8*7*6 - 9*8*7*6*5",
+      "tags": ["kombinatoryka"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Na ile sposobów można posadzić $5$ osób przy okrągłym stole (ustawienia różniące się obrotem uznajemy za takie same)?",
+      "answer": {
+        "value": 24
+      },
+      "explanation": "$(5-1)!=24$.",
+      "verify": "factorial(4)",
+      "tags": ["kombinatoryka", "permutacje"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Liczba $\\binom{10}{8}$ jest równa",
+      "options": ["$45$", "$90$", "$80$", "$10$"],
+      "answer": 0,
+      "explanation": "$\\binom{10}{8}=\\binom{10}{2}=45$.",
+      "verify": "combinations(10, 8)",
+      "tags": ["kombinatoryka", "kombinacje"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ile przekątnych ma dziesięciokąt wypukły?",
+      "answer": {
+        "value": 35
+      },
+      "explanation": "$\\binom{10}{2}-10=45-10=35$.",
+      "verify": "combinations(10, 2) - 10",
+      "tags": ["kombinatoryka"]
+    },
+    {
+      "id": "009",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": ["$\\binom{n}{k}=\\binom{n}{n-k}$", "$\\binom{n}{0}=0$"],
+      "answer": [true, false],
+      "explanation": "1. Prawda.\n2. $\\binom{n}{0}=1$. Fałsz.",
+      "tags": ["kombinatoryka"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

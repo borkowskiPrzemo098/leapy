@@ -1,0 +1,106 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Ciąg $a_{n}=\\frac{n}{n+1}$ jest",
+      "options": ["rosnący", "malejący", "stały", "niemonotoniczny"],
+      "answer": 0,
+      "explanation": "$a_{n+1}-a_{n}=\\frac{1}{(n+1)(n+2)}>0$.",
+      "tags": ["ciagi", "monotonicznosc"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Ciąg określony jest wzorem $a_{1}=1$, $a_{n+1}=2a_{n}+1$. Oblicz $a_{5}$.",
+      "answer": {
+        "value": 31
+      },
+      "explanation": "$1, 3, 7, 15, 31$ (ogólnie $a_{n}=2^{n}-1$).",
+      "verify": "2^5 - 1",
+      "tags": ["ciagi", "rekurencja"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Ciąg $a_{n}=n^{2}-6n$ jest",
+      "options": ["malejący dla $n\\le 3$ i rosnący dla $n\\ge 3$", "rosnący", "malejący", "stały"],
+      "answer": 0,
+      "explanation": "$a_{n+1}-a_{n}=2n-5$: ujemne dla $n\\le 2$, dodatnie od $n=3$. Najmniejszy wyraz $a_{3}=-9$.",
+      "tags": ["ciagi", "monotonicznosc"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Liczby $x-1$, $x+1$, $2x+2$ tworzą w podanej kolejności ciąg geometryczny. Oblicz $x$, wiedząc, że $x>-1$.",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "1. $(x+1)^{2}=(x-1)(2x+2)=2(x-1)(x+1)$.\n2. $x+1=2(x-1)$ (bo $x\\neq -1$), $x=3$.\n3. Ciąg $2, 4, 8$.",
+      "tags": ["ciagi", "geometryczny"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Trzy liczby tworzą ciąg arytmetyczny. Ich suma jest równa $15$, a iloczyn $80$. Podaj największą z tych liczb.",
+      "answer": {
+        "value": 8
+      },
+      "explanation": "1. $a-r, a, a+r$ z sumą $3a=15$, $a=5$.\n2. $5(25-r^{2})=80$, $r^{2}=9$.\n3. Liczby $2, 5, 8$.",
+      "tags": ["ciagi", "arytmetyczny"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Który wyraz ciągu $a_{n}=\\frac{n+5}{n}$ jest równy $2$?",
+      "options": ["piąty", "drugi", "dziesiąty", "żaden"],
+      "answer": 0,
+      "explanation": "$\\frac{n+5}{n}=2\\iff n=5$.",
+      "tags": ["ciagi"]
+    },
+    {
+      "id": "007",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": ["Ciąg $a_{n}=(-1)^{n}$ jest monotoniczny.", "Ciąg $a_{n}=3-2n$ jest malejący."],
+      "answer": [false, true],
+      "explanation": "1. Wyrazy na przemian $-1$ i $1$. Fałsz.\n2. $a_{n+1}-a_{n}=-2<0$. Prawda.",
+      "tags": ["ciagi", "monotonicznosc"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Suma $n$ początkowych wyrazów ciągu jest dana wzorem $S_{n}=n^{2}+2n$. Oblicz $a_{10}$.",
+      "answer": {
+        "value": 21
+      },
+      "explanation": "$a_{10}=S_{10}-S_{9}=120-99=21$.",
+      "verify": "(10^2 + 20) - (9^2 + 18)",
+      "tags": ["ciagi", "suma"]
+    },
+    {
+      "id": "009",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Dowód indukcyjny składa się z",
+      "options": [
+        "sprawdzenia dla $n=1$ i kroku $n\\Rightarrow n+1$",
+        "sprawdzenia dla kilku pierwszych $n$",
+        "sprawdzenia dla $n=100$",
+        "dowodu nie wprost dla jednego $n$"
+      ],
+      "answer": 0,
+      "explanation": "Baza indukcji i krok indukcyjny.",
+      "tags": ["ciagi", "indukcja"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

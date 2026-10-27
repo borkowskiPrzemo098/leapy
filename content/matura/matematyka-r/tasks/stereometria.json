@@ -1,0 +1,115 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Ostrosłup prawidłowy czworokątny ma krawędź podstawy $6$ i wysokość $3\\sqrt{2}$. Kąt nachylenia krawędzi bocznej do podstawy ma miarę",
+      "options": ["$45^\\circ$", "$30^\\circ$", "$60^\\circ$", "$90^\\circ$"],
+      "answer": 0,
+      "explanation": "Połowa przekątnej podstawy: $3\\sqrt{2}=H$, więc $\\operatorname{tg}\\alpha=1$.",
+      "tags": ["stereometria", "katy"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "W tym samym ostrosłupie (krawędź podstawy $6$, wysokość $3\\sqrt{2}$) tangens kąta nachylenia ściany bocznej do podstawy jest równy",
+      "options": ["$\\sqrt{2}$", "$1$", "$\\frac{\\sqrt{2}}{2}$", "$2$"],
+      "answer": 0,
+      "explanation": "$\\operatorname{tg}\\beta=\\frac{H}{\\frac{a}{2}}=\\frac{3\\sqrt{2}}{3}$.",
+      "verify": "sqrt(2)",
+      "tags": ["stereometria", "katy"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Objętość czworościanu foremnego o krawędzi $6$ jest równa",
+      "options": ["$18\\sqrt{2}$", "$36\\sqrt{2}$", "$9\\sqrt{2}$", "$72$"],
+      "answer": 0,
+      "explanation": "$\\frac{a^{3}\\sqrt{2}}{12}=\\frac{216\\sqrt{2}}{12}=18\\sqrt{2}$.",
+      "verify": "216 * sqrt(2) / 12",
+      "tags": ["stereometria", "objetosc"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Przekątna sześcianu ma długość $6\\sqrt{3}$. Oblicz objętość sześcianu.",
+      "answer": {
+        "value": 216
+      },
+      "explanation": "$a\\sqrt{3}=6\\sqrt{3}$, $a=6$, $V=216$.",
+      "verify": "6^3",
+      "tags": ["stereometria"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz promień kuli opisanej na sześcianie o krawędzi $2$ z dokładnością do $0{,}01$.",
+      "answer": {
+        "value": 1.73,
+        "tolerance": 0.01
+      },
+      "explanation": "Średnica kuli to przekątna sześcianu $2\\sqrt{3}$, promień $\\sqrt{3}\\approx 1{,}73$.",
+      "verify": "sqrt(3)",
+      "tags": ["stereometria", "kula-opisana"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Stożek ma tworzącą $10$ nachyloną do podstawy pod kątem $60^\\circ$. Oblicz promień podstawy.",
+      "answer": {
+        "value": 5
+      },
+      "explanation": "$r=l\\cos 60^\\circ=5$.",
+      "verify": "10 * cos(pi/3)",
+      "tags": ["stereometria", "stozek"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Kąt między prostą a płaszczyzną to kąt między",
+      "options": [
+        "prostą a jej rzutem prostokątnym na płaszczyznę",
+        "prostą a dowolną prostą płaszczyzny",
+        "prostą a normalną płaszczyzny",
+        "dwiema płaszczyznami"
+      ],
+      "answer": 0,
+      "explanation": "Definicja kąta nachylenia prostej do płaszczyzny.",
+      "tags": ["stereometria", "katy"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Graniastosłup prawidłowy czworokątny ma krawędź podstawy $4$, a przekątna graniastosłupa tworzy z podstawą kąt $45^\\circ$. Oblicz wysokość graniastosłupa z dokładnością do $0{,}01$.",
+      "answer": {
+        "value": 5.66,
+        "tolerance": 0.01
+      },
+      "explanation": "Przekątna podstawy $4\\sqrt{2}$; przy $45^\\circ$ wysokość jest jej równa: $4\\sqrt{2}\\approx 5{,}66$.",
+      "verify": "4 * sqrt(2)",
+      "tags": ["stereometria", "katy"]
+    },
+    {
+      "id": "009",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "W ostrosłupie prawidłowym spodek wysokości jest środkiem okręgu opisanego na podstawie.",
+        "Kąt nachylenia ściany bocznej i krawędzi bocznej do podstawy są zawsze równe."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Prawda.\n2. Na ogół są różne (np. $45^\\circ$ i $\\operatorname{arctg}\\sqrt{2}$ w zadaniu wyżej). Fałsz.",
+      "tags": ["stereometria"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

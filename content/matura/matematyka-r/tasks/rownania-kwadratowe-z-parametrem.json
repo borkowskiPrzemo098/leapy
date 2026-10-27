@@ -1,0 +1,147 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Równanie $x^{2}-2mx+m+2=0$ ma dwa różne pierwiastki rzeczywiste dla",
+      "options": [
+        "$m\\in(-\\infty,-1)\\cup(2,\\infty)$",
+        "$m\\in(-1,\\ 2)$",
+        "$m\\in[-1,\\ 2]$",
+        "$m>2$"
+      ],
+      "answer": 0,
+      "explanation": "$\\Delta=4m^{2}-4m-8>0\\iff (m-2)(m+1)>0$.",
+      "tags": ["parametr", "delta"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Równanie $x^{2}+x+m-3=0$ ma pierwiastki różnych znaków dla",
+      "options": ["$m<3$", "$m>3$", "$m=3$", "$m<\\frac{13}{4}$"],
+      "answer": 0,
+      "explanation": "$x_{1}x_{2}=m-3<0$ (wtedy $\\Delta>0$ automatycznie).",
+      "tags": ["parametr", "viete"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Dla jakiej wartości $m$ równanie $x^{2}+6x+m=0$ ma dokładnie jedno rozwiązanie?",
+      "answer": {
+        "value": 9
+      },
+      "explanation": "$\\Delta=36-4m=0$, $m=9$.",
+      "tags": ["parametr", "delta"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Równanie $(m-1)x^{2}+2x+1=0$ ma dokładnie jedno rozwiązanie dla",
+      "options": ["$m=1$ lub $m=2$", "tylko $m=2$", "tylko $m=1$", "$m>2$"],
+      "answer": 0,
+      "explanation": "1. $m=1$: równanie liniowe $2x+1=0$ — jedno rozwiązanie.\n2. $m\\neq 1$: $\\Delta=4-4(m-1)=0$, $m=2$.",
+      "tags": ["parametr"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Równanie $x^{2}-(m+1)x+m=0$ ma dwa różne pierwiastki dodatnie dla",
+      "options": ["$m>0$ i $m\\neq 1$", "$m>0$", "$m\\neq 1$", "$m>1$"],
+      "answer": 0,
+      "explanation": "1. Pierwiastki: $1$ i $m$.\n2. Dodatnie i różne: $m>0$, $m\\neq 1$.",
+      "tags": ["parametr", "viete"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Dla jakiej wartości $m$ jednym z rozwiązań równania $x^{2}-mx+12=0$ jest $3$? Podaj $m$.",
+      "answer": {
+        "value": 7
+      },
+      "explanation": "$9-3m+12=0$, $m=7$. Drugi pierwiastek: $4$.",
+      "tags": ["parametr"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Nierówność $x^{2}+mx+4>0$ jest spełniona dla każdego $x\\in\\mathbb{R}$ wtedy i tylko wtedy, gdy",
+      "options": ["$m\\in(-4,\\ 4)$", "$m\\in[-4,\\ 4]$", "$m>4$", "$m<-4$"],
+      "answer": 0,
+      "explanation": "$a=1>0$ i $\\Delta=m^{2}-16<0$.",
+      "tags": ["parametr", "nierownosci"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Pierwiastki równania $x^{2}-4x+m=0$ spełniają $x_{1}=3x_{2}$. Oblicz $m$.",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "1. $x_{1}+x_{2}=4x_{2}=4$, $x_{2}=1$, $x_{1}=3$.\n2. $m=x_{1}x_{2}=3$.",
+      "tags": ["parametr", "viete"]
+    },
+    {
+      "id": "009",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Równanie $mx^{2}+4x+1=0$ jest równaniem kwadratowym dla",
+      "options": ["$m\\neq 0$", "$m=0$", "$m>0$", "każdego $m$"],
+      "answer": 0,
+      "explanation": "Współczynnik przy $x^{2}$ musi być niezerowy.",
+      "tags": ["parametr"]
+    },
+    {
+      "id": "010",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Równanie $x^{2}-2x+m=0$ nie ma rozwiązań rzeczywistych dla",
+      "options": ["$m>1$", "$m<1$", "$m=1$", "$m\\ge 1$"],
+      "answer": 0,
+      "explanation": "$\\Delta=4-4m<0\\iff m>1$.",
+      "tags": ["parametr", "delta"]
+    },
+    {
+      "id": "011",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Dla jakiej wartości $m$ suma pierwiastków równania $x^{2}-(2m-1)x+m^{2}-4=0$ jest równa $5$ (zakładając, że pierwiastki istnieją)? Podaj $m$.",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "1. $x_{1}+x_{2}=2m-1=5$, $m=3$.\n2. Sprawdzenie: $\\Delta=(2m-1)^{2}-4(m^{2}-4)=-4m+17$; dla $m=3$: $5>0$.",
+      "tags": ["parametr", "viete"]
+    },
+    {
+      "id": "012",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Dane jest równanie $x^{2}+mx-1=0$. Oceń prawdziwość zdań.",
+      "options": [
+        "Dla każdego $m$ równanie ma dwa różne pierwiastki.",
+        "Pierwiastki są zawsze różnych znaków."
+      ],
+      "answer": [true, true],
+      "explanation": "1. $\\Delta=m^{2}+4>0$. Prawda.\n2. $x_{1}x_{2}=-1<0$. Prawda.",
+      "tags": ["parametr"]
+    },
+    {
+      "id": "013",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Równanie $x^{2}-4x+m=0$ ma dwa różne pierwiastki ujemne dla",
+      "options": ["żadnego $m$", "$m<4$", "$0<m<4$", "$m>4$"],
+      "answer": 0,
+      "explanation": "Suma pierwiastków $x_{1}+x_{2}=4>0$, więc oba nie mogą być ujemne.",
+      "tags": ["parametr", "viete"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

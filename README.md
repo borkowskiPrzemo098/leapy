@@ -2,7 +2,7 @@
 
 **Skocz na wyższy poziom.** Polskojęzyczna platforma PWA (mobile-first) do nauki i przygotowania do egzaminów: egzamin ósmoklasisty i matura na start. Darmowa, bez konta, działa offline. Postęp zostaje na urządzeniu.
 
-> Status: **E4 ukończony**: XP i stopnie, seria z zamrożeniami, 12 odznak, cele dzienny i tygodniowy, onboarding z testem na start, karty do udostępniania (post i relacja), przypomnienia (kalendarz .ics i powiadomienie w otwartej aplikacji), feature flags. Wcześniej (E3): powtórki SM-2, tryb „Moje błędy”, fiszki z mini-ściąg, egzamin próbny z czasem i punktacją, statystyki z kalendarzem nauki. Wcześniej (E2): model treści z walidacją, silnik zadań (7 typów), sesje, zapis postępów i kopia zapasowa. Na start jest 30 przykładowych zadań z matematyki (matura, poziom podstawowy). Dalsze etapy: [docs/plan.md](docs/plan.md).
+> Status: **E5 ukończony**: treść Fazy 1 (177 lekcji, 1141 zadań, egzamin ósmoklasisty i matura), prerenderowane strony publiczne (SEO, JSON-LD, sitemap), blog, FAQ, cennik, polityka prywatności i regulamin, `docs/monetization.md`, `docs/marketing/`. Wcześniej (E4): XP i stopnie, seria z zamrożeniami, 12 odznak, cele dzienny i tygodniowy, onboarding z testem na start, karty do udostępniania (post i relacja), przypomnienia (kalendarz .ics i powiadomienie w otwartej aplikacji), feature flags. Wcześniej (E3): powtórki SM-2, tryb „Moje błędy”, fiszki z mini-ściąg, egzamin próbny z czasem i punktacją, statystyki z kalendarzem nauki. Wcześniej (E2): model treści z walidacją, silnik zadań (7 typów), sesje, zapis postępów i kopia zapasowa. Na start jest 30 przykładowych zadań z matematyki (matura, poziom podstawowy). Dalsze etapy: [docs/plan.md](docs/plan.md).
 
 ## Szybki start
 

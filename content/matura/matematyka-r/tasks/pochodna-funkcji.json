@@ -1,0 +1,110 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Funkcja $f(x)=x^{3}-3x$. Oblicz $f'(2)$.",
+      "answer": {
+        "value": 9
+      },
+      "explanation": "$f'(x)=3x^{2}-3$, $f'(2)=12-3=9$.",
+      "verify": "3 * 2^2 - 3",
+      "tags": ["pochodna"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Pochodna funkcji $f(x)=(x^{2}+1)(x-3)$ jest równa",
+      "options": ["$3x^{2}-6x+1$", "$2x(x-3)$", "$2x$", "$3x^{2}+1$"],
+      "answer": 0,
+      "explanation": "$2x(x-3)+(x^{2}+1)=3x^{2}-6x+1$.",
+      "tags": ["pochodna", "iloczyn"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Pochodna funkcji $f(x)=\\frac{x}{x+1}$ jest równa",
+      "options": [
+        "$\\frac{1}{(x+1)^{2}}$",
+        "$\\frac{-1}{(x+1)^{2}}$",
+        "$\\frac{2x+1}{(x+1)^{2}}$",
+        "$1$"
+      ],
+      "answer": 0,
+      "explanation": "$\\frac{1\\cdot(x+1)-x\\cdot 1}{(x+1)^{2}}=\\frac{1}{(x+1)^{2}}$.",
+      "tags": ["pochodna", "iloraz"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Równanie stycznej do wykresu $f(x)=x^{2}$ w punkcie $x_{0}=3$ to",
+      "options": ["$y=6x-9$", "$y=6x+9$", "$y=3x$", "$y=9x-18$"],
+      "answer": 0,
+      "explanation": "$f'(3)=6$, $f(3)=9$: $y=6(x-3)+9$.",
+      "tags": ["pochodna", "styczna"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Wyznacz maksimum lokalne funkcji $f(x)=x^{3}-3x$ (podaj wartość funkcji).",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "$f'(x)=3(x-1)(x+1)$, zmiana znaku z $+$ na $-$ w $x=-1$: $f(-1)=-1+3=2$.",
+      "verify": "(-1)^3 - 3*(-1)",
+      "tags": ["pochodna", "ekstremum"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Funkcja $f(x)=x^{3}-6x^{2}+9x$ jest malejąca w przedziale",
+      "options": ["$[1,\\ 3]$", "$(-\\infty,\\ 1]$", "$[3,\\ \\infty)$", "$\\mathbb{R}$"],
+      "answer": 0,
+      "explanation": "$f'(x)=3x^{2}-12x+9=3(x-1)(x-3)\\le 0$ dla $x\\in[1,3]$.",
+      "tags": ["pochodna", "monotonicznosc"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Funkcja $f(x)=x^{2}+bx$ ma minimum w punkcie $x=3$. Oblicz $b$.",
+      "answer": {
+        "value": -6
+      },
+      "explanation": "$f'(3)=6+b=0$, $b=-6$.",
+      "tags": ["pochodna", "parametr"]
+    },
+    {
+      "id": "008",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Jeśli $f'(x_{0})=0$, to $f$ ma ekstremum w $x_{0}$.",
+        "Pochodna funkcji stałej jest równa $0$."
+      ],
+      "answer": [false, true],
+      "explanation": "1. Np. $f(x)=x^{3}$ w $0$: $f'=0$, ale brak ekstremum. Fałsz.\n2. Prawda.",
+      "tags": ["pochodna"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz współczynnik kierunkowy stycznej do wykresu $f(x)=\\frac{1}{x}$ w punkcie $x_{0}=2$.",
+      "answer": {
+        "value": -0.25
+      },
+      "explanation": "$f'(x)=-\\frac{1}{x^{2}}$, $f'(2)=-\\frac{1}{4}$.",
+      "verify": "-1 / 4",
+      "tags": ["pochodna", "styczna"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

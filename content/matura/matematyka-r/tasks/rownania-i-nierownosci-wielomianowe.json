@@ -1,0 +1,118 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Zbiorem rozwiązań nierówności $(x-1)(x+2)(x-3)\\ge 0$ jest",
+      "options": [
+        "$[-2,1]\\cup[3,\\infty)$",
+        "$(-\\infty,-2]\\cup[1,3]$",
+        "$[-2,3]$",
+        "$[1,\\infty)$"
+      ],
+      "answer": 0,
+      "explanation": "Pierwiastki $-2, 1, 3$; współczynnik dodatni, „wężyk” od góry z prawej.",
+      "tags": ["nierownosci-wielomianowe"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Zbiorem rozwiązań nierówności $(x-2)^{2}(x+1)<0$ jest",
+      "options": [
+        "$(-\\infty,-1)$",
+        "$(-1,\\ 2)$",
+        "$(-\\infty,-1)\\cup(2,\\ \\infty)$",
+        "$(-1,\\ \\infty)$"
+      ],
+      "answer": 0,
+      "explanation": "$(x-2)^{2}\\ge 0$, zeruje się w $2$; znak zależy od $(x+1)$: ujemny dla $x<-1$.",
+      "tags": ["nierownosci-wielomianowe", "krotnosc"]
+    },
+    {
+      "id": "003",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** rozwiązania równania $x^{4}-5x^{2}+4=0$.",
+      "options": ["$-2$", "$-1$", "$1$", "$2$", "$4$"],
+      "answer": [0, 1, 2, 3],
+      "explanation": "$t=x^{2}$: $t=1$ lub $t=4$, więc $x=\\pm 1, \\pm 2$.",
+      "tags": ["rownania-wielomianowe", "dwukwadratowe"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Ile rozwiązań rzeczywistych ma równanie $x^{3}-4x=0$?",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "$x(x-2)(x+2)=0$: $0, 2, -2$.",
+      "tags": ["rownania-wielomianowe"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ile rozwiązań rzeczywistych ma równanie $x^{4}+3x^{2}-4=0$?",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "$t^{2}+3t-4=0$: $t=1$ lub $t=-4$ (odpada, bo $t=x^{2}\\ge 0$). Więc $x=\\pm 1$.",
+      "tags": ["rownania-wielomianowe", "dwukwadratowe"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Zbiorem rozwiązań nierówności $x^{3}\\ge x$ jest",
+      "options": [
+        "$[-1,0]\\cup[1,\\infty)$",
+        "$[1,\\infty)$",
+        "$(-\\infty,-1]\\cup[0,1]$",
+        "$\\mathbb{R}$"
+      ],
+      "answer": 0,
+      "explanation": "$x(x-1)(x+1)\\ge 0$, pierwiastki $-1, 0, 1$.",
+      "tags": ["nierownosci-wielomianowe"]
+    },
+    {
+      "id": "007",
+      "type": "multi",
+      "difficulty": 3,
+      "prompt": "Zaznacz **wszystkie** rozwiązania równania $x^{3}-2x^{2}-9x+18=0$.",
+      "options": ["$2$", "$3$", "$-3$", "$-2$", "$9$"],
+      "answer": [0, 1, 2],
+      "explanation": "$x^{2}(x-2)-9(x-2)=(x-2)(x-3)(x+3)$.",
+      "tags": ["rownania-wielomianowe", "rozklad"]
+    },
+    {
+      "id": "008",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Równanie $(x^{2}+1)(x-5)=0$ ma",
+      "options": [
+        "jedno rozwiązanie rzeczywiste",
+        "trzy rozwiązania",
+        "dwa rozwiązania",
+        "nie ma rozwiązań"
+      ],
+      "answer": 0,
+      "explanation": "$x^{2}+1>0$, zostaje $x=5$.",
+      "tags": ["rownania-wielomianowe"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Podaj największą liczbę całkowitą spełniającą nierówność $-x^{3}+4x^{2}>0$.",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "$x^{2}(4-x)>0$: $x<4$ i $x\\neq 0$. Największa całkowita: $3$.",
+      "tags": ["nierownosci-wielomianowe"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

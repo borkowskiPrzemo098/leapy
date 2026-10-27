@@ -1,0 +1,112 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Rzucamy $4$ razy monetą. Prawdopodobieństwo otrzymania dokładnie $2$ orłów wynosi",
+      "options": ["$\\frac{3}{8}$", "$\\frac{1}{4}$", "$\\frac{1}{2}$", "$\\frac{1}{16}$"],
+      "answer": 0,
+      "explanation": "$\\binom{4}{2}\\cdot\\frac{1}{16}=\\frac{6}{16}$.",
+      "verify": "combinations(4, 2) / 16",
+      "tags": ["bernoulli"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Rzucamy $3$ razy kostką. Prawdopodobieństwo co najmniej jednej szóstki wynosi",
+      "options": ["$\\frac{91}{216}$", "$\\frac{1}{2}$", "$\\frac{125}{216}$", "$\\frac{3}{6}$"],
+      "answer": 0,
+      "explanation": "$1-\\left(\\frac{5}{6}\\right)^{3}=\\frac{91}{216}$.",
+      "verify": "1 - (5/6)^3",
+      "tags": ["bernoulli"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Strzelec trafia z prawdopodobieństwem $0{,}8$. Oddaje $3$ strzały. Oblicz prawdopodobieństwo dokładnie $2$ trafień.",
+      "answer": {
+        "value": 0.384
+      },
+      "explanation": "$\\binom{3}{2}\\cdot 0{,}8^{2}\\cdot 0{,}2=3\\cdot 0{,}64\\cdot 0{,}2=0{,}384$.",
+      "verify": "combinations(3, 2) * 0.8^2 * 0.2",
+      "tags": ["bernoulli"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Prawdopodobieństwo sukcesu w jednej próbie wynosi $\\frac{1}{2}$. Ile co najmniej prób trzeba wykonać, żeby prawdopodobieństwo co najmniej jednego sukcesu przekroczyło $0{,}9$?",
+      "answer": {
+        "value": 4
+      },
+      "explanation": "$1-\\left(\\frac{1}{2}\\right)^{n}>0{,}9\\iff 2^{n}>10$, więc $n\\ge 4$.",
+      "tags": ["bernoulli"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Schematu Bernoulliego NIE można zastosować do",
+      "options": [
+        "losowania kul z urny bez zwracania",
+        "rzutów monetą",
+        "rzutów kostką",
+        "strzałów do tarczy o stałej celności"
+      ],
+      "answer": 0,
+      "explanation": "Bez zwracania prawdopodobieństwo zmienia się w kolejnych próbach.",
+      "tags": ["bernoulli"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Test ma $5$ pytań, każde z $4$ odpowiedziami (jedna poprawna). Uczeń zgaduje. Oblicz prawdopodobieństwo, że odpowie poprawnie na wszystkie pytania (jako ułamek).",
+      "answer": {
+        "value": "1/1024"
+      },
+      "explanation": "$\\left(\\frac{1}{4}\\right)^{5}=\\frac{1}{1024}$.",
+      "verify": "(1/4)^5",
+      "tags": ["bernoulli"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Rzucamy $5$ razy monetą. Oblicz prawdopodobieństwo otrzymania co najmniej $4$ orłów (jako ułamek).",
+      "answer": {
+        "value": "3/16"
+      },
+      "explanation": "$\\frac{\\binom{5}{4}+\\binom{5}{5}}{32}=\\frac{6}{32}=\\frac{3}{16}$.",
+      "verify": "(combinations(5,4) + 1) / 32",
+      "tags": ["bernoulli"]
+    },
+    {
+      "id": "008",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań o schemacie Bernoulliego.",
+      "options": [
+        "Próby muszą być niezależne.",
+        "Prawdopodobieństwo sukcesu może się zmieniać między próbami."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Prawda.\n2. W każdej próbie $p$ jest takie samo. Fałsz.",
+      "tags": ["bernoulli"]
+    },
+    {
+      "id": "009",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Najbardziej prawdopodobna liczba orłów w $10$ rzutach monetą to",
+      "options": ["$5$", "$10$", "$0$", "$4$ i $6$ jednakowo, $5$ mniej"],
+      "answer": 0,
+      "explanation": "$\\binom{10}{k}$ jest największe dla $k=5$.",
+      "tags": ["bernoulli"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

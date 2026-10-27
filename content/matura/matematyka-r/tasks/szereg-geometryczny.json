@@ -1,0 +1,111 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz sumę szeregu $1+\\frac{1}{2}+\\frac{1}{4}+\\ldots$",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "$\\frac{1}{1-\\frac{1}{2}}=2$.",
+      "verify": "1 / (1 - 1/2)",
+      "tags": ["szereg"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Ułamek $0{,}(7)$ jest równy",
+      "options": ["$\\frac{7}{9}$", "$\\frac{7}{10}$", "$\\frac{7}{99}$", "$\\frac{77}{100}$"],
+      "answer": 0,
+      "explanation": "$\\frac{0{,}7}{1-0{,}1}=\\frac{7}{9}$.",
+      "verify": "7/9",
+      "tags": ["szereg", "ulamek-okresowy"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Szereg $1+x+x^{2}+\\ldots$ jest zbieżny dla",
+      "options": ["$x\\in(-1,\\ 1)$", "$x\\in[-1,\\ 1]$", "$x>1$", "każdego $x$"],
+      "answer": 0,
+      "explanation": "Warunek $|q|=|x|<1$.",
+      "tags": ["szereg"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz sumę szeregu $6-2+\\frac{2}{3}-\\ldots$",
+      "answer": {
+        "value": 4.5
+      },
+      "explanation": "$a_{1}=6$, $q=-\\frac{1}{3}$, $S=\\frac{6}{\\frac{4}{3}}=4{,}5$.",
+      "verify": "6 / (1 + 1/3)",
+      "tags": ["szereg"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Ułamek $0{,}(36)$ jest równy",
+      "options": ["$\\frac{4}{11}$", "$\\frac{36}{100}$", "$\\frac{9}{25}$", "$\\frac{3}{8}$"],
+      "answer": 0,
+      "explanation": "$\\frac{36}{99}=\\frac{4}{11}$.",
+      "verify": "36/99",
+      "tags": ["szereg", "ulamek-okresowy"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Suma szeregu geometrycznego jest równa $12$, a jego pierwszy wyraz to $8$. Oblicz iloraz (jako ułamek).",
+      "answer": {
+        "value": "1/3"
+      },
+      "explanation": "$\\frac{8}{1-q}=12$, $1-q=\\frac{2}{3}$, $q=\\frac{1}{3}$.",
+      "tags": ["szereg"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Dla jakich $x$ suma szeregu $1+2x+4x^{2}+\\ldots$ istnieje?",
+      "options": [
+        "$x\\in\\left(-\\frac{1}{2},\\ \\frac{1}{2}\\right)$",
+        "$x\\in(-2,\\ 2)$",
+        "$x\\in(-1,\\ 1)$",
+        "$x>\\frac{1}{2}$"
+      ],
+      "answer": 0,
+      "explanation": "$q=2x$, warunek $|2x|<1$.",
+      "tags": ["szereg", "parametr"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Rozwiąż równanie $x+\\frac{x}{3}+\\frac{x}{9}+\\ldots=6$.",
+      "answer": {
+        "value": 4
+      },
+      "explanation": "$\\frac{x}{1-\\frac{1}{3}}=\\frac{3x}{2}=6$, $x=4$.",
+      "tags": ["szereg"]
+    },
+    {
+      "id": "009",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Szereg $1+2+4+\\ldots$ ma skończoną sumę.",
+        "Suma szeregu $\\frac{1}{3}+\\frac{1}{9}+\\frac{1}{27}+\\ldots$ wynosi $\\frac{1}{2}$."
+      ],
+      "answer": [false, true],
+      "explanation": "1. $q=2$, szereg rozbieżny. Fałsz.\n2. $\\frac{\\frac{1}{3}}{1-\\frac{1}{3}}=\\frac{1}{2}$. Prawda.",
+      "tags": ["szereg"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

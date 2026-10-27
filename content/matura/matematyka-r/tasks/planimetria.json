@@ -1,0 +1,114 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Dwa boki trójkąta mają długości $5$ i $8$, a kąt między nimi $60^\\circ$. Oblicz długość trzeciego boku.",
+      "answer": {
+        "value": 7
+      },
+      "explanation": "$c^{2}=25+64-80\\cdot\\frac{1}{2}=49$.",
+      "verify": "sqrt(25 + 64 - 80 * cos(pi/3))",
+      "tags": ["planimetria", "tw-cosinusow"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz pole trójkąta o bokach $5$, $12$ i $13$ wzorem Herona.",
+      "answer": {
+        "value": 30
+      },
+      "explanation": "$p=15$, $P=\\sqrt{15\\cdot 10\\cdot 3\\cdot 2}=30$.",
+      "verify": "sqrt(15 * 10 * 3 * 2)",
+      "tags": ["planimetria", "heron"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz promień okręgu wpisanego w trójkąt o bokach $5$, $12$, $13$.",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "$r=\\frac{P}{p}=\\frac{30}{15}=2$.",
+      "verify": "30 / 15",
+      "tags": ["planimetria", "okrag-wpisany"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "W trójkącie bok $a=6$ leży naprzeciw kąta $30^\\circ$. Oblicz promień okręgu opisanego na tym trójkącie.",
+      "answer": {
+        "value": 6
+      },
+      "explanation": "$\\frac{a}{\\sin\\alpha}=2R$: $\\frac{6}{\\frac{1}{2}}=12$, $R=6$.",
+      "verify": "6 / sin(pi/6) / 2",
+      "tags": ["planimetria", "tw-sinusow"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Czworokąt można wpisać w okrąg wtedy i tylko wtedy, gdy",
+      "options": [
+        "sumy przeciwległych kątów są równe $180^\\circ$",
+        "sumy przeciwległych boków są równe",
+        "ma wszystkie boki równe",
+        "ma dwie pary boków równoległych"
+      ],
+      "answer": 0,
+      "explanation": "Warunek na kąty — dla czworokąta wpisanego. Warunek na boki — dla opisanego.",
+      "tags": ["planimetria"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Boki trójkąta mają długości $4$, $5$, $6$. Oblicz cosinus kąta leżącego naprzeciw boku $6$ (jako ułamek).",
+      "answer": {
+        "value": "1/8"
+      },
+      "explanation": "$36=16+25-40\\cos\\gamma$, $\\cos\\gamma=\\frac{5}{40}=\\frac{1}{8}$.",
+      "tags": ["planimetria", "tw-cosinusow"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Trójkąt o bokach $4$, $5$, $7$ jest",
+      "options": ["rozwartokątny", "ostrokątny", "prostokątny", "równoramienny"],
+      "answer": 0,
+      "explanation": "$7^{2}=49>16+25=41$: kąt naprzeciw najdłuższego boku jest rozwarty.",
+      "tags": ["planimetria"]
+    },
+    {
+      "id": "008",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "W trójkącie prostokątnym promień okręgu opisanego to połowa przeciwprostokątnej.",
+        "Twierdzenie Pitagorasa jest szczególnym przypadkiem twierdzenia cosinusów."
+      ],
+      "answer": [true, true],
+      "explanation": "1. Prawda.\n2. Dla $\\gamma=90^\\circ$: $\\cos\\gamma=0$. Prawda.",
+      "tags": ["planimetria"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz pole trójkąta o bokach $7$, $8$ i kącie $30^\\circ$ między nimi.",
+      "answer": {
+        "value": 14
+      },
+      "explanation": "$\\frac{1}{2}\\cdot 7\\cdot 8\\cdot\\frac{1}{2}=14$.",
+      "verify": "0.5 * 7 * 8 * sin(pi/6)",
+      "tags": ["planimetria", "pole"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

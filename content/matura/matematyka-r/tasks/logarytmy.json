@@ -1,0 +1,157 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Rozwiąż równanie $\\log_{2}(x+1)+\\log_{2}(x-1)=3$.",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "1. Dziedzina: $x>1$.\n2. $\\log_{2}(x^{2}-1)=3$, $x^{2}-1=8$, $x=\\pm 3$.\n3. Tylko $x=3$ należy do dziedziny.",
+      "tags": ["logarytmy", "rownania"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Zbiorem rozwiązań nierówności $\\log_{\\frac{1}{2}}(x-2)>-1$ jest",
+      "options": ["$(2,\\ 4)$", "$(4,\\ \\infty)$", "$(2,\\ \\infty)$", "$(-\\infty,\\ 4)$"],
+      "answer": 0,
+      "explanation": "1. Dziedzina: $x>2$.\n2. $-1=\\log_{\\frac{1}{2}}2$; podstawa $<1$, zmieniamy zwrot: $x-2<2$.\n3. $x\\in(2,4)$.",
+      "tags": ["logarytmy", "nierownosci"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz $\\log_{4}8$.",
+      "answer": {
+        "value": 1.5
+      },
+      "explanation": "$\\frac{\\log_{2}8}{\\log_{2}4}=\\frac{3}{2}$.",
+      "verify": "log(8, 4)",
+      "tags": ["logarytmy", "zmiana-podstawy"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz $5^{\\log_{5}7}+\\log_{3}\\sqrt{3}$.",
+      "answer": {
+        "value": 7.5
+      },
+      "explanation": "$5^{\\log_{5}7}=7$, $\\log_{3}3^{\\frac{1}{2}}=\\frac{1}{2}$. Suma: $7{,}5$.",
+      "verify": "7 + log(sqrt(3), 3)",
+      "tags": ["logarytmy"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Jeśli $\\log_{2}3=a$, to $\\log_{3}8$ jest równe",
+      "options": ["$\\frac{3}{a}$", "$3a$", "$\\frac{a}{3}$", "$a^{3}$"],
+      "answer": 0,
+      "explanation": "$\\log_{3}8=\\frac{\\log_{2}8}{\\log_{2}3}=\\frac{3}{a}$.",
+      "tags": ["logarytmy", "zmiana-podstawy"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Rozwiąż równanie $\\log_{3}^{2}x-3\\log_{3}x+2=0$. Podaj sumę rozwiązań.",
+      "answer": {
+        "value": 12
+      },
+      "explanation": "1. $t=\\log_{3}x$: $t^{2}-3t+2=0$, $t=1$ lub $t=2$.\n2. $x=3$ lub $x=9$. Suma: $12$.",
+      "verify": "3 + 9",
+      "tags": ["logarytmy", "rownania"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Dziedziną funkcji $f(x)=\\log(x^{2}-9)$ jest",
+      "options": [
+        "$(-\\infty,-3)\\cup(3,\\ \\infty)$",
+        "$(-3,\\ 3)$",
+        "$(3,\\ \\infty)$",
+        "$\\mathbb{R}\\setminus\\{-3,3\\}$"
+      ],
+      "answer": 0,
+      "explanation": "$x^{2}-9>0\\iff x<-3$ lub $x>3$.",
+      "tags": ["logarytmy", "dziedzina"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Rozwiąż nierówność $\\log_{2}(3x-1)\\le 3$. Ile liczb całkowitych ją spełnia?",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "1. Dziedzina: $x>\\frac{1}{3}$.\n2. $3x-1\\le 8$, $x\\le 3$.\n3. $x\\in\\left(\\frac{1}{3},3\\right]$: liczby $1, 2, 3$.",
+      "tags": ["logarytmy", "nierownosci"]
+    },
+    {
+      "id": "009",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Funkcja $f(x)=\\log_{0{,}5}x$ jest malejąca.",
+        "$\\log_{a}b\\cdot\\log_{b}a=1$ dla $a,b>0$, $a,b\\neq 1$.",
+        "$\\log(a+b)=\\log a+\\log b$."
+      ],
+      "answer": [true, true, false],
+      "explanation": "1. Podstawa $<1$. Prawda.\n2. Z odwrotności logarytmów. Prawda.\n3. Fałsz.",
+      "tags": ["logarytmy"]
+    },
+    {
+      "id": "010",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz $\\log_{2}5\\cdot\\log_{5}16$.",
+      "answer": {
+        "value": 4
+      },
+      "explanation": "$\\log_{2}5\\cdot\\frac{\\log_{2}16}{\\log_{2}5}=\\log_{2}16=4$.",
+      "verify": "log(5, 2) * log(16, 5)",
+      "tags": ["logarytmy", "zmiana-podstawy"]
+    },
+    {
+      "id": "011",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Rozwiąż równanie $\\log(x+2)=\\log 2+\\log x$.",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "1. Dziedzina: $x>0$.\n2. $x+2=2x$, $x=2$.",
+      "tags": ["logarytmy", "rownania"]
+    },
+    {
+      "id": "012",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Liczby $a=\\log_{2}5$, $b=\\log_{3}5$ spełniają",
+      "options": ["$a>b$", "$a<b$", "$a=b$", "nie da się porównać"],
+      "answer": 0,
+      "explanation": "$a=\\frac{\\log 5}{\\log 2}$, $b=\\frac{\\log 5}{\\log 3}$; $\\log 2<\\log 3$, więc $a>b$.",
+      "tags": ["logarytmy"]
+    },
+    {
+      "id": "013",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz $\\log_{3}54-\\log_{3}2+\\log_{3}\\frac{1}{3}$.",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "1. $\\log_{3}54-\\log_{3}2=\\log_{3}27=3$.\n2. $\\log_{3}\\frac{1}{3}=-1$.\n3. Wynik: $3-1=2$.",
+      "verify": "log(54, 3) - log(2, 3) + log(1/3, 3)",
+      "tags": ["logarytmy"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

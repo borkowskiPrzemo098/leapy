@@ -67,6 +67,8 @@ Szczegóły: [docs/content-guide.md](docs/content-guide.md). Najważniejsze:
 - `src/flags/flags.ts`: feature flags free/premium. Dziś wszystko, co działa, jest „free”; flagi premium tylko pod przyszłe funkcje.
 - `src/features/study/queries.ts`: łączy magazyn z treścią (co na dziś do powtórki, błędy, zadania po id) i zapisuje powtórki (`recordReview`).
 - Stan SRS jest w tabeli `srs` (klucz: id zadania albo fiszki, fiszki mają `.card.` w id). Rozpoczęty egzamin próbny leży w `kv` pod `mock:active`, ostatni oddany pod `mock:last`.
+- `src/public/`: strony publiczne (SEO). Te same komponenty renderuje `scripts/prerender/prerender.tsx` po `vite build` (strony `.html`, sitemap, robots, `_redirects`). `useHead` ustawia tytuł, opis, kanoniczny adres i JSON-LD. Strony czytają dane przez `useResource` (`useCatalog`, `usePack`, `useSite`); prerender osadza je w `#page-data`, a `main.tsx` zasiewa nimi pamięć przed pierwszym renderem.
+- Paczki przedmiotów nie są w precache (za duże); service worker cache'uje je w locie, a `usePrefetchSubjects` pobiera wybrane przedmioty w tle.
 - `src/storage/`: interfejs `ProgressStore` + implementacja Dexie + format kopii zapasowej. UI woła tylko `progress()`.
 - Zapisy do IndexedDB nigdy wewnątrz updatera `setState` (StrictMode wywołuje je dwa razy).
 - Dexie ładujemy dynamicznie (`import('@/storage')`) tam, gdzie kod trafia do pierwszego ekranu.

@@ -1,0 +1,104 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz $\\lim_{n\\to\\infty}\\frac{3n^{2}+1}{n^{2}-5n}$.",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "Dzielimy przez $n^{2}$: $\\frac{3+\\frac{1}{n^{2}}}{1-\\frac{5}{n}}\\to 3$.",
+      "tags": ["granica"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz $\\lim_{n\\to\\infty}\\frac{2n+1}{n^{2}+3}$.",
+      "answer": {
+        "value": 0
+      },
+      "explanation": "Mianownik wyższego stopnia: granica $0$.",
+      "tags": ["granica"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz $\\lim_{n\\to\\infty}(\\sqrt{n^{2}+n}-n)$.",
+      "answer": {
+        "value": 0.5
+      },
+      "explanation": "$\\frac{n}{\\sqrt{n^{2}+n}+n}=\\frac{1}{\\sqrt{1+\\frac{1}{n}}+1}\\to\\frac{1}{2}$.",
+      "tags": ["granica", "sprzezenie"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "$\\lim_{n\\to\\infty}\\left(\\frac{2}{3}\\right)^{n}$ jest równa",
+      "options": ["$0$", "$1$", "$\\frac{2}{3}$", "$\\infty$"],
+      "answer": 0,
+      "explanation": "$|q|<1$, więc $q^{n}\\to 0$.",
+      "tags": ["granica"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz $\\lim_{n\\to\\infty}\\frac{(2n-1)^{2}}{n^{2}+4}$.",
+      "answer": {
+        "value": 4
+      },
+      "explanation": "Licznik $4n^{2}-4n+1$; iloraz współczynników przy $n^{2}$: $4$.",
+      "tags": ["granica"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Granica $\\lim_{n\\to\\infty}\\frac{n^{3}}{n^{2}+1}$ jest równa",
+      "options": ["$\\infty$", "$1$", "$0$", "$-\\infty$"],
+      "answer": 0,
+      "explanation": "Licznik wyższego stopnia z dodatnim współczynnikiem.",
+      "tags": ["granica"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz $\\lim_{n\\to\\infty}\\frac{3^{n}+2^{n}}{3^{n+1}}$ (jako ułamek).",
+      "answer": {
+        "value": "1/3"
+      },
+      "explanation": "$\\frac{1+\\left(\\frac{2}{3}\\right)^{n}}{3}\\to\\frac{1}{3}$.",
+      "tags": ["granica"]
+    },
+    {
+      "id": "008",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "$\\lim_{n\\to\\infty}\\left(1+\\frac{1}{n}\\right)^{n}=e$.",
+        "Ciąg $a_{n}=(-1)^{n}$ ma granicę."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Prawda.\n2. Wyrazy skaczą między $-1$ a $1$. Fałsz.",
+      "tags": ["granica"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz $\\lim_{n\\to\\infty}\\frac{1+2+\\ldots+n}{n^{2}}$ (jako ułamek).",
+      "answer": {
+        "value": "1/2"
+      },
+      "explanation": "$1+\\ldots+n=\\frac{n(n+1)}{2}$, więc $\\frac{n^{2}+n}{2n^{2}}\\to\\frac{1}{2}$.",
+      "tags": ["granica"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

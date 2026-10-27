@@ -1,0 +1,170 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Ile rozwiązań ma równanie $\\sin x=\\frac{1}{2}$ w przedziale $[0,\\ 2\\pi]$?",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "$x=\\frac{\\pi}{6}$ lub $x=\\frac{5\\pi}{6}$.",
+      "tags": ["rownania-trygonometryczne"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Rozwiązaniami równania $\\cos x=0$ są",
+      "options": [
+        "$x=\\frac{\\pi}{2}+k\\pi$",
+        "$x=k\\pi$",
+        "$x=2k\\pi$",
+        "$x=\\frac{\\pi}{4}+k\\pi$"
+      ],
+      "answer": 0,
+      "explanation": "Cosinus zeruje się w $\\frac{\\pi}{2}$ i $\\frac{3\\pi}{2}$, co $\\pi$.",
+      "tags": ["rownania-trygonometryczne"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ile rozwiązań ma równanie $\\sin 2x=\\sin x$ w przedziale $[0,\\ 2\\pi)$?",
+      "answer": {
+        "value": 4
+      },
+      "explanation": "$\\sin x(2\\cos x-1)=0$: $\\sin x=0$ ($0, \\pi$) lub $\\cos x=\\frac{1}{2}$ ($\\frac{\\pi}{3}, \\frac{5\\pi}{3}$).",
+      "tags": ["rownania-trygonometryczne"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ile rozwiązań ma równanie $2\\sin^{2}x-\\sin x-1=0$ w przedziale $[0,\\ 2\\pi)$?",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "$t=\\sin x$: $t=1$ ($x=\\frac{\\pi}{2}$) lub $t=-\\frac{1}{2}$ ($x=\\frac{7\\pi}{6}, \\frac{11\\pi}{6}$).",
+      "tags": ["rownania-trygonometryczne"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Równanie $\\sin x=2$",
+      "options": [
+        "nie ma rozwiązań",
+        "ma jedno rozwiązanie",
+        "ma nieskończenie wiele rozwiązań",
+        "ma rozwiązanie $x=\\frac{\\pi}{2}$"
+      ],
+      "answer": 0,
+      "explanation": "$|\\sin x|\\le 1$.",
+      "tags": ["rownania-trygonometryczne"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Rozwiązaniami równania $\\operatorname{tg}x=1$ są",
+      "options": [
+        "$x=\\frac{\\pi}{4}+k\\pi$",
+        "$x=\\frac{\\pi}{4}+2k\\pi$",
+        "$x=\\pm\\frac{\\pi}{4}+2k\\pi$",
+        "$x=k\\pi$"
+      ],
+      "answer": 0,
+      "explanation": "Okres tangensa to $\\pi$.",
+      "tags": ["rownania-trygonometryczne"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ile rozwiązań ma równanie $\\cos 2x=\\cos x$ w przedziale $[0,\\ 2\\pi)$?",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "$2\\cos^{2}x-\\cos x-1=0$: $\\cos x=1$ ($x=0$) lub $\\cos x=-\\frac{1}{2}$ ($\\frac{2\\pi}{3}, \\frac{4\\pi}{3}$).",
+      "tags": ["rownania-trygonometryczne"]
+    },
+    {
+      "id": "008",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Zbiorem rozwiązań nierówności $\\sin x>\\frac{1}{2}$ w przedziale $[0,\\ 2\\pi]$ jest",
+      "options": [
+        "$\\left(\\frac{\\pi}{6},\\ \\frac{5\\pi}{6}\\right)$",
+        "$\\left(0,\\ \\frac{\\pi}{6}\\right)$",
+        "$\\left(\\frac{5\\pi}{6},\\ 2\\pi\\right)$",
+        "$\\left[\\frac{\\pi}{6},\\ \\frac{5\\pi}{6}\\right]$"
+      ],
+      "answer": 0,
+      "explanation": "Sinus jest większy od $\\frac{1}{2}$ między $\\frac{\\pi}{6}$ a $\\frac{5\\pi}{6}$ (bez końców).",
+      "tags": ["nierownosci-trygonometryczne"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ile rozwiązań ma równanie $\\sin x+\\cos x=0$ w przedziale $[0,\\ 2\\pi)$?",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "$\\operatorname{tg}x=-1$ (gdy $\\cos x\\neq 0$): $x=\\frac{3\\pi}{4}, \\frac{7\\pi}{4}$.",
+      "tags": ["rownania-trygonometryczne"]
+    },
+    {
+      "id": "010",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Dlaczego nie wolno dzielić równania $\\sin x\\cos x=\\sin x$ przez $\\sin x$?",
+      "options": [
+        "bo zgubimy rozwiązania, dla których $\\sin x=0$",
+        "bo sinus jest okresowy",
+        "bo wynik będzie ujemny",
+        "bo cosinus nie istnieje"
+      ],
+      "answer": 0,
+      "explanation": "Poprawnie: $\\sin x(\\cos x-1)=0$.",
+      "tags": ["rownania-trygonometryczne"]
+    },
+    {
+      "id": "011",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Podaj najmniejsze dodatnie rozwiązanie równania $\\cos x=-1$ (jako wielokrotność $\\pi$; wpisz samą liczbę przy $\\pi$).",
+      "answer": {
+        "value": 1
+      },
+      "explanation": "$x=\\pi$.",
+      "tags": ["rownania-trygonometryczne"]
+    },
+    {
+      "id": "012",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Równanie $\\cos x=\\frac{\\sqrt{3}}{2}$ ma w $[0,2\\pi)$ dwa rozwiązania.",
+        "Rozwiązania $\\sin x=\\sin\\alpha$ to tylko $x=\\alpha+2k\\pi$."
+      ],
+      "answer": [true, false],
+      "explanation": "1. $\\frac{\\pi}{6}$ i $\\frac{11\\pi}{6}$. Prawda.\n2. Jest też seria $x=\\pi-\\alpha+2k\\pi$. Fałsz.",
+      "tags": ["rownania-trygonometryczne"]
+    },
+    {
+      "id": "013",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ile rozwiązań ma równanie $\\operatorname{tg}^{2}x=3$ w przedziale $[0,\\ \\pi)$, $x\\neq\\frac{\\pi}{2}$?",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "$\\operatorname{tg}x=\\sqrt{3}$ ($\\frac{\\pi}{3}$) lub $-\\sqrt{3}$ ($\\frac{2\\pi}{3}$).",
+      "tags": ["rownania-trygonometryczne"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

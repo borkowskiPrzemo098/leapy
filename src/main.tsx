@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
 import './styles/index.css'
 import { createRouter, loadPublic } from './app/router'
+import { loadPack, loadSite, seedResource } from './content/data'
 
 const root = document.getElementById('root')
 if (!root) throw new Error('#root missing in index.html')
@@ -14,7 +15,7 @@ async function start(el: HTMLElement) {
   if (!isApp) {
     // Public page: load its chunk and the data embedded by the prerender before rendering,
     // so React's first render matches the static HTML.
-    const [{ seedResource }] = await Promise.all([import('./content/data'), loadPublic()])
+    await loadPublic()
     const embedded = document.getElementById('page-data')
     if (embedded?.textContent) {
       embeddedKeys = JSON.parse(embedded.textContent) as Record<string, unknown>
@@ -28,12 +29,11 @@ async function start(el: HTMLElement) {
   )
   if (!isApp) {
     // Embedded data is trimmed to the first page; load the full files for later navigation.
-    const data = await import('./content/data')
-    void data.loadSite().then((d) => data.seedResource('site', d))
+    void loadSite().then((d) => seedResource('site', d))
     for (const k of Object.keys(embeddedKeys))
       if (k.startsWith('pack:')) {
         const [exam = '', subject = ''] = k.slice(5).split('/')
-        void data.loadPack(exam, subject).then((p) => data.seedResource(k, p))
+        void loadPack(exam, subject).then((p) => seedResource(k, p))
       }
   }
 }
