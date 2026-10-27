@@ -1,0 +1,35 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*You ___ use your phone during the test. It's not allowed.*",
+      "options": ["mustn't", "don't have to", "can", "should"],
+      "answer": 0,
+      "explanation": "Zakaz: *mustn't*.",
+      "tags": ["gramatyka", "modalne"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*Tomorrow is Saturday, so I ___ get up early.*",
+      "options": ["don't have to", "mustn't", "can't", "have to"],
+      "answer": 0,
+      "explanation": "Nie trzeba: *don't have to*.",
+      "tags": ["gramatyka", "modalne"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*You look tired. You ___ go to bed earlier.*",
+      "options": ["should", "must to", "can't", "mustn't"],
+      "answer": 0,
+      "explanation": "Rada: *should*.",
+      "tags": ["gramatyka", "modalne"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

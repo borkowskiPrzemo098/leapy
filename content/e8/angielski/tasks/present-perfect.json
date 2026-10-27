@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*I ___ my homework. Can I go out now?*",
+      "options": ["have finished", "finished yesterday", "finish", "am finishing"],
+      "answer": 0,
+      "explanation": "Skutek teraz: Present Perfect.",
+      "tags": ["gramatyka", "present-perfect"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*We have lived here ___ 2020.*",
+      "options": ["since", "for", "ago", "from"],
+      "answer": 0,
+      "explanation": "Punkt w czasie: *since*.",
+      "tags": ["gramatyka", "since-for"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wybierz poprawne zdanie.",
+      "options": [
+        "I saw him yesterday.",
+        "I have seen him yesterday.",
+        "I have saw him yesterday.",
+        "I seen him yesterday."
+      ],
+      "answer": 0,
+      "explanation": "*yesterday* — zakończony czas: Past Simple.",
+      "tags": ["gramatyka", "present-perfect"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

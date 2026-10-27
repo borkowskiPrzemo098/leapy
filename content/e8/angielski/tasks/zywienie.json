@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*This curry is very ___. I need some water!*",
+      "options": ["spicy", "sweet", "cold", "fresh"],
+      "answer": 0,
+      "explanation": "Potrzeba wody po ostrym jedzeniu: *spicy*.",
+      "tags": ["slownictwo", "jedzenie"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*She doesn't eat meat. She is a ___.*",
+      "options": ["vegetarian", "vegetable", "waiter", "cook"],
+      "answer": 0,
+      "explanation": "Osoba, która nie je mięsa: *vegetarian*.",
+      "tags": ["slownictwo", "jedzenie"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

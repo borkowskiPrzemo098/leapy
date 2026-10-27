@@ -1,0 +1,74 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*I'm really good ___ maths.*",
+      "options": ["at", "in", "on", "for"],
+      "answer": 0,
+      "explanation": "Stały zwrot: *good at*.",
+      "tags": ["przyimki"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*She is interested ___ photography.*",
+      "options": ["in", "at", "on", "about"],
+      "answer": 0,
+      "explanation": "*interested in*.",
+      "tags": ["przyimki"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*Before ___ the house, check that the windows are closed.*",
+      "options": ["leaving", "leave", "to leave", "left"],
+      "answer": 0,
+      "explanation": "Po przyimku *before* czasownik z -ing.",
+      "tags": ["gramatyka", "gerund"]
+    },
+    {
+      "id": "004",
+      "type": "short",
+      "difficulty": 3,
+      "prompt": "Uzupełnij formą słowa z nawiasu: *The staff were very ___ (help).*",
+      "answer": ["helpful"],
+      "explanation": "Przymiotnik od *help*: *helpful*.",
+      "tags": ["slowotworstwo"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*It isn't necessary to come early.* = *You ___ come early.*",
+      "options": ["don't have to", "mustn't", "can't", "shouldn't to"],
+      "answer": 0,
+      "explanation": "„Nie jest konieczne” = *don't have to*.",
+      "tags": ["transformacje", "modalne"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*We are waiting ___ the bus.*",
+      "options": ["for", "on", "to", "at"],
+      "answer": 0,
+      "explanation": "*wait for*.",
+      "tags": ["przyimki"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*My sister is afraid ___ spiders.*",
+      "options": ["of", "from", "about", "with"],
+      "answer": 0,
+      "explanation": "*afraid of*.",
+      "tags": ["przyimki"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

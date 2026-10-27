@@ -1,0 +1,30 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*I keep my clothes in the ___.*",
+      "options": ["wardrobe", "sink", "fridge", "bath"],
+      "answer": 0,
+      "explanation": "Ubrania trzymamy w szafie: *wardrobe*.",
+      "tags": ["slownictwo", "dom"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wybierz poprawny zwrot: „zmywać naczynia”.",
+      "options": [
+        "do the washing-up",
+        "make the washing-up",
+        "wash the dishwasher",
+        "clean the dishes up"
+      ],
+      "answer": 0,
+      "explanation": "Stały zwrot: *do the washing-up* (też *wash the dishes*).",
+      "tags": ["slownictwo", "prace-domowe"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*The football players train on the ___.*",
+      "options": ["pitch", "court", "pool", "track"],
+      "answer": 0,
+      "explanation": "Boisko do piłki nożnej: *pitch*.",
+      "tags": ["slownictwo", "sport"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*He can't play today because of an ___ to his knee.*",
+      "options": ["injury", "illness", "accident", "ache"],
+      "answer": 0,
+      "explanation": "Kontuzja: *injury*.",
+      "tags": ["slownictwo", "sport"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

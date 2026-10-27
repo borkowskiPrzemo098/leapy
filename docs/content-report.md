@@ -2,9 +2,9 @@
 
 Wygenerowano: 2026-10-27 (`npm run content:build`).
 
-- Zadania: **572** (zweryfikowane przez człowieka: 0, czekają: 572)
+- Zadania: **653** (zweryfikowane przez człowieka: 0, czekają: 653)
 - Sprawdzone automatycznie (`verify`): 242
-- Typy: ordering 12, single 251, multi 22, truefalse 44, match 14, short 7, numeric 222
+- Typy: ordering 13, single 326, multi 23, truefalse 46, match 14, short 9, numeric 222
 - Błędy: 0, ostrzeżenia: 0
 
 Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
@@ -61,36 +61,36 @@ Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
 | Zadania tekstowe (26) | Prędkość, droga, czas | 13 | tak |
 |  | Zadania z treścią | 13 | tak |
 
-### Język angielski: 0 zadań
+### Język angielski: 81 zadań
 
 | Dział | Temat | Zadania | Lekcja |
 | --- | --- | ---: | :---: |
-| Słownictwo (0 ⚠) | Człowiek | 0 | — |
-|  | Dom | 0 | — |
-|  | Szkoła | 0 | — |
-|  | Praca | 0 | — |
-|  | Życie prywatne | 0 | — |
-|  | Żywienie | 0 | — |
-|  | Zakupy i usługi | 0 | — |
-|  | Podróżowanie i turystyka | 0 | — |
-|  | Kultura | 0 | — |
-|  | Sport | 0 | — |
-|  | Zdrowie | 0 | — |
-|  | Nauka i technika | 0 | — |
-|  | Świat przyrody | 0 | — |
-| Gramatyka (0 ⚠) | Czasy teraźniejsze | 0 | — |
-|  | Czasy przeszłe | 0 | — |
-|  | Wyrażanie przyszłości | 0 | — |
-|  | Present Perfect | 0 | — |
-|  | Stopniowanie przymiotników | 0 | — |
-|  | Czasowniki modalne | 0 | — |
-|  | Strona bierna | 0 | — |
-|  | Zdania warunkowe | 0 | — |
-|  | Rzeczowniki, przedimki i określniki | 0 | — |
-| Umiejętności (0 ⚠) | Znajomość funkcji językowych | 0 | — |
-|  | Rozumienie tekstów pisanych | 0 | — |
-|  | Znajomość środków językowych | 0 | — |
-|  | Wypowiedź pisemna: e-mail | 0 | — |
+| Słownictwo (26) | Człowiek | 2 | tak |
+|  | Dom | 2 | tak |
+|  | Szkoła | 2 | tak |
+|  | Praca | 2 | tak |
+|  | Życie prywatne | 2 | tak |
+|  | Żywienie | 2 | tak |
+|  | Zakupy i usługi | 2 | tak |
+|  | Podróżowanie i turystyka | 2 | tak |
+|  | Kultura | 2 | tak |
+|  | Sport | 2 | tak |
+|  | Zdrowie | 2 | tak |
+|  | Nauka i technika | 2 | tak |
+|  | Świat przyrody | 2 | tak |
+| Gramatyka (27) | Czasy teraźniejsze | 3 | tak |
+|  | Czasy przeszłe | 3 | tak |
+|  | Wyrażanie przyszłości | 3 | tak |
+|  | Present Perfect | 3 | tak |
+|  | Stopniowanie przymiotników | 3 | tak |
+|  | Czasowniki modalne | 3 | tak |
+|  | Strona bierna | 3 | tak |
+|  | Zdania warunkowe | 3 | tak |
+|  | Rzeczowniki, przedimki i określniki | 3 | tak |
+| Umiejętności (28) | Znajomość funkcji językowych | 7 | tak |
+|  | Rozumienie tekstów pisanych | 7 | tak |
+|  | Znajomość środków językowych | 7 | tak |
+|  | Wypowiedź pisemna: e-mail | 7 | tak |
 
 ## Matura
 
@@ -234,8 +234,10 @@ Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
 
 Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 
+- `e8.angielski.znajomosc-srodkow-jezykowych.004` (short, trudność 3)
 - `e8.polski.slowotworstwo.004` (short, trudność 2)
 - `e8.matematyka.wyrazenia-algebraiczne.007` (short, trudność 2)
+- `e8.angielski.czlowiek.002` (short, trudność 2)
 - `matura.matematyka-p.ciag-arytmetyczny.011` (short, trudność 2)
 - `matura.matematyka-p.potegi-i-pierwiastki.008` (short, trudność 2)
 - `matura.matematyka-p.procenty.008` (short, trudność 2)
@@ -262,6 +264,11 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `e8.matematyka.rownania-pierwszego-stopnia.007` (numeric, trudność 3)
 - `e8.matematyka.wyrazenia-algebraiczne.005` (single, trudność 3)
 - `e8.matematyka.zadania-z-trescia.007` (numeric, trudność 3)
+- `e8.angielski.rozumienie-tekstow-pisanych.005` (single, trudność 3)
+- `e8.angielski.wypowiedz-pisemna-e-mail.006` (single, trudność 3)
+- `e8.angielski.wyrazanie-przyszlosci.003` (single, trudność 3)
+- `e8.angielski.znajomosc-funkcji-jezykowych.006` (single, trudność 3)
+- `e8.angielski.znajomosc-srodkow-jezykowych.007` (single, trudność 3)
 - `matura.matematyka-p.bryly-obrotowe.008` (numeric, trudność 3)
 - `matura.matematyka-p.ciag-arytmetyczny.010` (numeric, trudność 3)
 - `matura.matematyka-p.ciag-geometryczny.004` (multi, trudność 3)
@@ -418,19 +425,12 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `e8.matematyka.zadania-z-trescia.001` (numeric, trudność 2)
 - `e8.matematyka.zadania-z-trescia.003` (numeric, trudność 2)
 - `e8.matematyka.zadania-z-trescia.011` (single, trudność 2)
-- `matura.matematyka-p.bryly-obrotowe.007` (match, trudność 2)
-- `matura.matematyka-p.ciag-arytmetyczny.003` (numeric, trudność 2)
-- `matura.matematyka-p.ciag-arytmetyczny.005` (numeric, trudność 2)
-- `matura.matematyka-p.ciag-arytmetyczny.006` (single, trudność 2)
-- `matura.matematyka-p.ciag-arytmetyczny.008` (single, trudność 2)
-- `matura.matematyka-p.ciag-arytmetyczny.009` (truefalse, trudność 2)
-- `matura.matematyka-p.ciag-geometryczny.005` (multi, trudność 2)
-- `matura.matematyka-p.ciag-geometryczny.006` (single, trudność 2)
-- `matura.matematyka-p.ciag-geometryczny.008` (truefalse, trudność 2)
-- `matura.matematyka-p.ciag-geometryczny.009` (numeric, trudność 2)
-- `matura.matematyka-p.ciag-geometryczny.012` (single, trudność 2)
-- `matura.matematyka-p.czworokaty.007` (truefalse, trudność 2)
-- `matura.matematyka-p.funkcja-kwadratowa.002` (single, trudność 2)
-- `matura.matematyka-p.funkcja-kwadratowa.003` (single, trudność 2)
-- `matura.matematyka-p.funkcja-kwadratowa.004` (single, trudność 2)
-- `matura.matematyka-p.funkcja-liniowa.003` (single, trudność 2)
+- `e8.angielski.czasowniki-modalne.002` (single, trudność 2)
+- `e8.angielski.czasowniki-modalne.003` (single, trudność 2)
+- `e8.angielski.czasy-przeszle.002` (single, trudność 2)
+- `e8.angielski.czasy-przeszle.003` (single, trudność 2)
+- `e8.angielski.czasy-terazniejsze.003` (single, trudność 2)
+- `e8.angielski.dom.002` (single, trudność 2)
+- `e8.angielski.kultura.002` (single, trudność 2)
+- `e8.angielski.nauka-i-technika.002` (single, trudność 2)
+- `e8.angielski.podrozowanie-i-turystyka.002` (single, trudność 2)

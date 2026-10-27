@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Wybierz słowo, które pasuje do zdania: *Tom never talks to new people. He is very ___.*",
+      "options": ["shy", "noisy", "tall", "proud"],
+      "answer": 0,
+      "explanation": "Ktoś, kto nie rozmawia z nowymi osobami, jest nieśmiały: *shy*.",
+      "tags": ["slownictwo", "charakter"]
+    },
+    {
+      "id": "002",
+      "type": "short",
+      "difficulty": 2,
+      "prompt": "Przetłumacz na angielski: „życzliwy” (o człowieku).",
+      "answer": ["kind", "friendly"],
+      "explanation": "*kind* (też *friendly*).",
+      "tags": ["slownictwo", "charakter"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

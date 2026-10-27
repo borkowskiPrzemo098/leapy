@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*She ___ tennis every Monday.*",
+      "options": ["plays", "play", "is playing", "playing"],
+      "answer": 0,
+      "explanation": "Zwyczaj, 3. osoba: Present Simple z -s.",
+      "tags": ["gramatyka", "present-simple"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*Look! It ___.*",
+      "options": ["is snowing", "snows", "snow", "snowed"],
+      "answer": 0,
+      "explanation": "*Look!* — dzieje się teraz: Present Continuous.",
+      "tags": ["gramatyka", "present-continuous"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wybierz poprawne zdanie.",
+      "options": [
+        "I know the answer.",
+        "I am knowing the answer.",
+        "I knows the answer.",
+        "I am know the answer."
+      ],
+      "answer": 0,
+      "explanation": "*know* to czasownik stanu — bez Continuous.",
+      "tags": ["gramatyka", "czasowniki-stanu"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

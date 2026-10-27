@@ -1,0 +1,90 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Kolega mówi: *I've failed my driving test.* Jak reagujesz?",
+      "options": [
+        "I'm sorry to hear that.",
+        "Congratulations!",
+        "You're welcome.",
+        "Help yourself."
+      ],
+      "answer": 0,
+      "explanation": "Współczucie po złej wiadomości.",
+      "tags": ["funkcje-jezykowe"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Chcesz grzecznie poprosić o pomoc. Co mówisz?",
+      "options": ["Could you help me, please?", "Help me now.", "You help me.", "I help you?"],
+      "answer": 0,
+      "explanation": "Uprzejma prośba: *Could you…, please?*",
+      "tags": ["funkcje-jezykowe"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*— How about going to the cinema tonight? — ___*",
+      "options": ["Sounds great!", "Yes, I go.", "I'm fine, thanks.", "Nice to meet you."],
+      "answer": 0,
+      "explanation": "Reakcja na propozycję: zgoda.",
+      "tags": ["funkcje-jezykowe"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Chcesz zaproponować wspólną naukę. Co mówisz?",
+      "options": [
+        "Why don't we study together?",
+        "Why we don't study together?",
+        "Do we study together?",
+        "We studying together?"
+      ],
+      "answer": 0,
+      "explanation": "Propozycja: *Why don't we…?*",
+      "tags": ["funkcje-jezykowe"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Ktoś cię zaczepia na ulicy: *Excuse me, where is the station?* Nie wiesz. Co mówisz?",
+      "options": ["I'm sorry, I'm not from here.", "You're welcome.", "Here you are.", "Me too."],
+      "answer": 0,
+      "explanation": "Uprzejma odmowa informacji.",
+      "tags": ["funkcje-jezykowe"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Musisz odmówić zaproszenia. Co mówisz?",
+      "options": [
+        "I'm afraid I can't. I have to study.",
+        "No. Bye.",
+        "Of course I can't come never.",
+        "I don't."
+      ],
+      "answer": 0,
+      "explanation": "Uprzejma odmowa z powodem: *I'm afraid I can't…*",
+      "tags": ["funkcje-jezykowe"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*— Thank you for your help! — ___*",
+      "options": ["You're welcome.", "I'm sorry.", "Congratulations.", "Bless you."],
+      "answer": 0,
+      "explanation": "Odpowiedź na podziękowanie.",
+      "tags": ["funkcje-jezykowe"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

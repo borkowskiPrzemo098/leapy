@@ -1,0 +1,93 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Przeczytaj ogłoszenie.\n\n> **City Museum.** Open Tuesday–Sunday, 10 a.m.–6 p.m. Closed on Mondays. Free entry on Thursdays.\n\nKiedy wstęp jest bezpłatny?",
+      "options": ["w czwartki", "w poniedziałki", "w niedziele", "codziennie po 18:00"],
+      "answer": 0,
+      "explanation": "*Free entry on Thursdays.*",
+      "tags": ["czytanie"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj ogłoszenie.\n\n> **City Museum.** Open Tuesday–Sunday, 10 a.m.–6 p.m. Closed on Mondays. Free entry on Thursdays.\n\nKtóre zdanie jest prawdziwe?",
+      "options": [
+        "You can't visit the museum at the start of the week.",
+        "The museum opens at 6 a.m.",
+        "You always pay to enter.",
+        "The museum is open every day."
+      ],
+      "answer": 0,
+      "explanation": "Muzeum jest zamknięte w poniedziałki (początek tygodnia) — ta sama informacja innymi słowami.",
+      "tags": ["czytanie", "synonimy"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj wiadomość.\n\n> Hi Sam! I'm sorry, but I can't meet you at five. My mum needs help in the shop. Can we meet at seven instead? Lucy\n\nPo co Lucy napisała wiadomość?",
+      "options": [
+        "żeby zmienić godzinę spotkania",
+        "żeby odwołać spotkanie na zawsze",
+        "żeby zaprosić Sama do sklepu",
+        "żeby przeprosić za spóźnienie"
+      ],
+      "answer": 0,
+      "explanation": "Proponuje siódmą zamiast piątej.",
+      "tags": ["czytanie", "intencja"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj wiadomość.\n\n> Hi Sam! I'm sorry, but I can't meet you at five. My mum needs help in the shop. Can we meet at seven instead? Lucy\n\nDlaczego Lucy nie może przyjść o piątej?",
+      "options": ["pomaga mamie w sklepie", "ma lekcje", "jest chora", "jest na zakupach z Samem"],
+      "answer": 0,
+      "explanation": "*My mum needs help in the shop.*",
+      "tags": ["czytanie"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj tekst.\n\n> Last year Mia started a recycling club at her school. At first only three students joined. Now there are thirty members, and the school uses half as much plastic as before.\n\nCo się zmieniło dzięki klubowi?",
+      "options": [
+        "szkoła zużywa mniej plastiku",
+        "do klubu należą tylko trzy osoby",
+        "Mia zmieniła szkołę",
+        "szkoła przestała segregować śmieci"
+      ],
+      "answer": 0,
+      "explanation": "*uses half as much plastic as before* — o połowę mniej.",
+      "tags": ["czytanie"]
+    },
+    {
+      "id": "006",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Przeczytaj tekst.\n\n> Last year Mia started a recycling club at her school. At first only three students joined. Now there are thirty members, and the school uses half as much plastic as before.\n\nOceń prawdziwość zdań.",
+      "options": [
+        "The club has more members now than at the start.",
+        "Mia joined a club started by her teacher."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Z trzech do trzydziestu. Prawda.\n2. To Mia założyła klub. Fałsz.",
+      "tags": ["czytanie"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Napis w autobusie: *Please do not leave your bags unattended.* Jaki jest cel tego tekstu?",
+      "options": ["ostrzec", "rozśmieszyć", "opowiedzieć historię", "zaprosić"],
+      "answer": 0,
+      "explanation": "To ostrzeżenie (*warn*).",
+      "tags": ["czytanie", "intencja"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

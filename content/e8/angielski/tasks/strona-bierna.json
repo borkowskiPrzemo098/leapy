@@ -1,0 +1,35 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*English ___ in many countries.*",
+      "options": ["is spoken", "speaks", "is speaking", "spoke"],
+      "answer": 0,
+      "explanation": "Strona bierna, Present Simple: *is + spoken*.",
+      "tags": ["gramatyka", "passive"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*My bike ___ last night.*",
+      "options": ["was stolen", "stole", "is stolen", "was stole"],
+      "answer": 0,
+      "explanation": "Past Simple w stronie biernej: *was + III forma*.",
+      "tags": ["gramatyka", "passive"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*„Pan Tadeusz” ___ by Adam Mickiewicz.*",
+      "options": ["was written", "wrote", "was wrote", "has written"],
+      "answer": 0,
+      "explanation": "*write – wrote – written*, strona bierna z *by*.",
+      "tags": ["gramatyka", "passive"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

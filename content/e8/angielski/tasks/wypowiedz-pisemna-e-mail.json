@@ -1,0 +1,103 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "ordering",
+      "difficulty": 1,
+      "prompt": "Ułóż części nieformalnego e-maila w dobrej kolejności.",
+      "options": [
+        "Hi Kate,",
+        "Thanks for your email.",
+        "Last weekend I went to a concert…",
+        "Write back soon! Ola"
+      ],
+      "answer": [0, 1, 2, 3],
+      "explanation": "Powitanie → wstęp → treść → zakończenie z podpisem.",
+      "tags": ["e-mail"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które zakończenie pasuje do e-maila do kolegi?",
+      "options": [
+        "Write back soon!",
+        "Yours faithfully,",
+        "Dear Sir or Madam,",
+        "I look forward to your official reply."
+      ],
+      "answer": 0,
+      "explanation": "Nieformalny styl do kolegi.",
+      "tags": ["e-mail", "styl"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Polecenie: opisz wycieczkę, napisz, co ci się podobało, i zaproponuj spotkanie. Czego brakuje w tekście: *Hi Tom! Last week I went to Zakopane. It was great because we climbed a mountain. Bye, Ola*?",
+      "options": ["propozycji spotkania", "opisu wycieczki", "tego, co się podobało", "powitania"],
+      "answer": 0,
+      "explanation": "Pominięty punkt polecenia obniża ocenę za treść.",
+      "tags": ["e-mail", "tresc"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które zdanie dobrze wyraża propozycję?",
+      "options": [
+        "Why don't you come to my place on Saturday?",
+        "Why you don't come to my place?",
+        "You come my place Saturday.",
+        "Do you came on Saturday?"
+      ],
+      "answer": 0,
+      "explanation": "*Why don't you…?* — poprawna propozycja.",
+      "tags": ["e-mail", "funkcje-jezykowe"]
+    },
+    {
+      "id": "005",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** zwroty pasujące do początku nieformalnego e-maila.",
+      "options": [
+        "Hi Anna,",
+        "Thanks for your email.",
+        "Dear Sir or Madam,",
+        "It was great to hear from you."
+      ],
+      "answer": [0, 1, 3],
+      "explanation": "*Dear Sir or Madam* to styl formalny.",
+      "tags": ["e-mail", "styl"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Które zdanie najlepiej **rozwija** punkt „napisz, co ci się podobało”?",
+      "options": [
+        "I loved the view from the top because we could see the whole valley.",
+        "It was nice.",
+        "I liked it.",
+        "Good."
+      ],
+      "answer": 0,
+      "explanation": "Rozwinięcie podaje szczegół i uzasadnienie.",
+      "tags": ["e-mail", "tresc"]
+    },
+    {
+      "id": "007",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań o e-mailu egzaminacyjnym.",
+      "options": [
+        "Trzeba odnieść się do wszystkich punktów polecenia.",
+        "Podział na akapity nie ma znaczenia."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Prawda.\n2. Akapity poprawiają spójność tekstu. Fałsz.",
+      "tags": ["e-mail"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

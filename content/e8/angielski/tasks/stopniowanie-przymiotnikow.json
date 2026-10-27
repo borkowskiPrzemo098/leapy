@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*My brother is ___ than me.*",
+      "options": ["taller", "more tall", "tallest", "more taller"],
+      "answer": 0,
+      "explanation": "Krótki przymiotnik: *-er*.",
+      "tags": ["gramatyka", "stopniowanie"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*This is the ___ pizza in town.*",
+      "options": ["best", "goodest", "most good", "better"],
+      "answer": 0,
+      "explanation": "*good – better – the best*.",
+      "tags": ["gramatyka", "stopniowanie"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*The book was ___ the film.*",
+      "options": [
+        "more interesting than",
+        "interestinger than",
+        "more interesting then",
+        "most interesting than"
+      ],
+      "answer": 0,
+      "explanation": "Długi przymiotnik: *more … than*.",
+      "tags": ["gramatyka", "stopniowanie"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

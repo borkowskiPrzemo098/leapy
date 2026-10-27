@@ -1,0 +1,35 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*If it ___ tomorrow, we will stay at home.*",
+      "options": ["rains", "will rain", "rained", "raining"],
+      "answer": 0,
+      "explanation": "First conditional: po *if* Present Simple.",
+      "tags": ["gramatyka", "conditionals"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*If I had more money, I ___ a new bike.*",
+      "options": ["would buy", "will buy", "buy", "bought"],
+      "answer": 0,
+      "explanation": "Second conditional: *If + Past, would + bezokolicznik*.",
+      "tags": ["gramatyka", "conditionals"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*If you heat ice, it ___.*",
+      "options": ["melts", "will melting", "would melt", "melted"],
+      "answer": 0,
+      "explanation": "Prawda ogólna: zero conditional (Present + Present).",
+      "tags": ["gramatyka", "conditionals"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

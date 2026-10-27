@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "W sklepie z ubraniami: *Can I ___ this jacket?*",
+      "options": ["try on", "try out", "put off", "take up"],
+      "answer": 0,
+      "explanation": "Przymierzyć ubranie: *try on*.",
+      "tags": ["slownictwo", "zakupy"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*I want to return this shirt. Here is the ___.*",
+      "options": ["receipt", "recipe", "reception", "discount"],
+      "answer": 0,
+      "explanation": "Paragon to *receipt*; *recipe* to przepis kulinarny.",
+      "tags": ["slownictwo", "zakupy"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

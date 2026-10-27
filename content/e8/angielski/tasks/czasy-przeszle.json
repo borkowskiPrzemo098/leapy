@@ -1,0 +1,35 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*We ___ to Gdańsk last summer.*",
+      "options": ["went", "go", "goed", "have gone"],
+      "answer": 0,
+      "explanation": "*last summer* — Past Simple, *go → went*.",
+      "tags": ["gramatyka", "past-simple"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*Did you ___ the film yesterday?*",
+      "options": ["see", "saw", "seen", "seeing"],
+      "answer": 0,
+      "explanation": "Po *did* forma podstawowa.",
+      "tags": ["gramatyka", "past-simple"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*I ___ dinner when the phone rang.*",
+      "options": ["was cooking", "cooked", "am cooking", "cook"],
+      "answer": 0,
+      "explanation": "Dłuższa czynność przerwana krótszą: Past Continuous.",
+      "tags": ["gramatyka", "past-continuous"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

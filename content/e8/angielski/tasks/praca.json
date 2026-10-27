@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*A person who repairs cars is a ___.*",
+      "options": ["mechanic", "nurse", "chef", "pilot"],
+      "answer": 0,
+      "explanation": "Samochody naprawia mechanik.",
+      "tags": ["slownictwo", "zawody"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*My mum works only in the mornings. She has a ___ job.*",
+      "options": ["part-time", "full-time", "free-time", "half-day"],
+      "answer": 0,
+      "explanation": "Praca tylko rano to praca na pół etatu: *part-time*.",
+      "tags": ["slownictwo", "praca"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

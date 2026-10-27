@@ -1,0 +1,35 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*Look at those black clouds! It ___ rain.*",
+      "options": ["is going to", "will to", "rains", "is raining to"],
+      "answer": 0,
+      "explanation": "Przewidywanie na podstawie tego, co widać: *be going to*.",
+      "tags": ["gramatyka", "przyszlosc"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*— It's cold in here. — OK, I ___ the window.*",
+      "options": ["'ll close", "close", "'m closing to", "closed"],
+      "answer": 0,
+      "explanation": "Spontaniczna decyzja: *will*.",
+      "tags": ["gramatyka", "przyszlosc"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*When I ___ home, I'll call you.*",
+      "options": ["get", "will get", "am going to get", "got"],
+      "answer": 0,
+      "explanation": "Po *when* (o przyszłości) czas teraźniejszy.",
+      "tags": ["gramatyka", "zdania-czasowe"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

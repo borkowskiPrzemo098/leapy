@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*I'd like ___ apple, please.*",
+      "options": ["an", "a", "the", "some"],
+      "answer": 0,
+      "explanation": "Przed samogłoską w wymowie: *an*.",
+      "tags": ["gramatyka", "przedimki"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*How ___ people came to the party?*",
+      "options": ["many", "much", "lot", "few of"],
+      "answer": 0,
+      "explanation": "*people* — policzalne: *many*.",
+      "tags": ["gramatyka", "okresniki"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wybierz poprawne zdanie.",
+      "options": [
+        "Can you give me some advice?",
+        "Can you give me an advice?",
+        "Can you give me some advices?",
+        "Can you give me many advices?"
+      ],
+      "answer": 0,
+      "explanation": "*advice* jest niepoliczalne.",
+      "tags": ["gramatyka", "niepoliczalne"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

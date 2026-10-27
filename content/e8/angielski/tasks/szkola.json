@@ -1,0 +1,30 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "*I studied a lot, so I ___ the exam.*",
+      "options": ["passed", "failed", "missed", "took off"],
+      "answer": 0,
+      "explanation": "Dużo nauki → zdany egzamin: *passed*.",
+      "tags": ["slownictwo", "szkola"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wybierz poprawne zdanie.",
+      "options": [
+        "I have a lot of homework today.",
+        "I have a lot of homeworks today.",
+        "I have many homework today.",
+        "I have a homework today."
+      ],
+      "answer": 0,
+      "explanation": "*Homework* jest niepoliczalne: bez -s i bez *a*.",
+      "tags": ["slownictwo", "niepoliczalne"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}
