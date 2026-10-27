@@ -30,7 +30,7 @@ export function AppLayout() {
     <div className="flex min-h-dvh">
       <a
         href="#main"
-        className="fixed top-2 left-2 z-50 -translate-y-24 rounded-lg bg-brand px-4 py-3 font-bold text-on-brand focus:translate-y-0"
+        className="sr-only z-50 rounded-lg bg-brand px-4 py-3 font-bold text-on-brand focus:not-sr-only focus:fixed focus:top-2 focus:left-2"
       >
         Przejdź do treści
       </a>

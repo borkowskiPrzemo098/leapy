@@ -1,11 +1,11 @@
 import { ButtonLink } from '@/ui/Button'
-import { EmptyState, Page, StairsArt } from '@/ui/Page'
+import { ClimbArt, EmptyState, Page } from '@/ui/Page'
 
 export default function ProgressPage() {
   return (
     <Page title="Postępy">
       <EmptyState
-        art={<StairsArt size={136} />}
+        art={<ClimbArt done={0} />}
         title="Tu zbudujesz swoje schody"
         action={
           <ButtonLink block to="/app/cwicz">

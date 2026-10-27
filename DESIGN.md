@@ -35,7 +35,7 @@ colors:
 typography:
   display:
     fontFamily: 'Plus Jakarta Sans Variable, ui-rounded, system-ui, sans-serif'
-    fontSize: '2.5rem'
+    fontSize: 'clamp(2.125rem, 9vw, 2.5rem)'
     fontWeight: 800
     lineHeight: 1.05
     letterSpacing: '-0.035em'
@@ -184,7 +184,7 @@ components:
     height: '14px'
 ---
 
-<!-- Recorded from the built E0 design system (src/styles/tokens.css, src/styles/index.css, src/ui/*, src/brand/*). The living style guide in src/app/DesignSystemPage.tsx is TEMPORARY: it renders at "/" during E0 and moves to /dev/ui in E1 when the app shell takes "/". Its page composition (logo-concept review, demo sections) is not part of the system. Frontmatter colors are the light theme; dark values live in tokens.css and in .impeccable/design.json. -->
+<!-- Recorded from the built E0 design system (src/styles/tokens.css, src/styles/index.css, src/ui/*, src/brand/*). The living style guide in src/app/DesignSystemPage.tsx is TEMPORARY: it lives at /dev/ui when the app shell takes "/". Its page composition (logo-concept review, demo sections) is not part of the system. Frontmatter colors are the light theme; dark values live in tokens.css and in .impeccable/design.json. -->
 
 # Design System: Leapy
 
@@ -257,7 +257,7 @@ One intense violet carries the brand at full field strength, a single warm sun-y
 
 ### Hierarchy
 
-- **Display** (800, 2.5rem, 1.05, -0.035em): the Start card headline and other single hero statements; may step up on wide screens.
+- **Display** (800, clamp(2.125rem, 9vw, 2.5rem), 1.05, -0.035em): the Start card and Egzaminy hero headlines and other single hero statements; it shrinks only enough to keep the tagline on two lines at 360px, never down to Title.
 - **Title** (800, 1.75rem, 1.12, -0.025em): section titles and the feedback verdict in the explanation panel.
 - **Heading** (750, 1.3125rem, 1.25, -0.015em): card headings, the task question.
 - **Lead** (500, 1.0625rem, 1.5): intro paragraph on a colour field and the text of large (lg) buttons.

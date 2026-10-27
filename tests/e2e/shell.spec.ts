@@ -69,3 +69,17 @@ test('unknown app path shows the 404 screen', async ({ page }) => {
   await page.goto('/app/nie-ma-takiej')
   await expect(page.getByRole('heading', { level: 1, name: 'Nie ma takiego ekranu' })).toBeVisible()
 })
+
+test('picking an exam and subjects is remembered and shown on Start', async ({ page }) => {
+  await page.goto('/app/egzaminy')
+  await page.getByRole('button', { name: /^Matura/ }).click()
+  await page.getByRole('button', { name: /Matematyka.*rozszerzony/ }).click()
+  await expect(page.getByRole('button', { name: /Matematyka.*rozszerzony/ })).toHaveAttribute(
+    'aria-pressed',
+    'true',
+  )
+  await page.reload()
+  await page.goto('/app')
+  await expect(page.getByRole('heading', { level: 2, name: 'Matura' })).toBeVisible()
+  await expect(page.getByText(/Matematyka \(poziom rozszerzony\)/)).toBeVisible()
+})

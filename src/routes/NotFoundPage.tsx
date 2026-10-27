@@ -1,11 +1,11 @@
 import { ButtonLink } from '@/ui/Button'
-import { EmptyState, Page, StairsArt } from '@/ui/Page'
+import { ClimbArt, EmptyState, Page } from '@/ui/Page'
 
 export default function NotFoundPage() {
   return (
     <Page title="Nie ma takiego ekranu">
       <EmptyState
-        art={<StairsArt size={136} />}
+        art={<ClimbArt done={0} />}
         title="Ten stopień nie istnieje"
         action={
           <ButtonLink block to="/app">

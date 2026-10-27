@@ -33,8 +33,8 @@ export const CATALOG: CatalogExam[] = [
     short: 'M',
     audience: 'Szkoła średnia',
     subjects: [
-      { id: 'matematyka-p', name: 'Matematyka', level: 'podstawowa' },
-      { id: 'matematyka-r', name: 'Matematyka', level: 'rozszerzona' },
+      { id: 'matematyka-p', name: 'Matematyka', level: 'podstawowy' },
+      { id: 'matematyka-r', name: 'Matematyka', level: 'rozszerzony' },
       { id: 'polski-p', name: 'Język polski', level: 'podstawowy' },
       { id: 'angielski-p', name: 'Język angielski', level: 'podstawowy' },
       { id: 'angielski-r', name: 'Język angielski', level: 'rozszerzony' },
