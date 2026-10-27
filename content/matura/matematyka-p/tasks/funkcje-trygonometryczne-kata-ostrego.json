@@ -1,0 +1,127 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "W trójkącie prostokątnym przyprostokątne mają długości $3$ i $4$. Sinus kąta leżącego naprzeciw boku długości $3$ jest równy",
+      "options": ["$\\frac{3}{5}$", "$\\frac{4}{5}$", "$\\frac{3}{4}$", "$\\frac{4}{3}$"],
+      "answer": 0,
+      "explanation": "1. Przeciwprostokątna: $\\sqrt{9+16}=5$.\n2. $\\sin\\alpha=\\frac{3}{5}$.",
+      "verify": "3 / 5",
+      "tags": ["trygonometria"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Wartość $\\sin 30^\\circ$ jest równa",
+      "options": ["$\\frac{1}{2}$", "$\\frac{\\sqrt{3}}{2}$", "$\\frac{\\sqrt{2}}{2}$", "$1$"],
+      "answer": 0,
+      "explanation": "$\\sin 30^\\circ=\\frac{1}{2}$ (połowa trójkąta równobocznego).",
+      "verify": "sin(pi / 6)",
+      "tags": ["trygonometria", "wartosci"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Przeciwprostokątna trójkąta prostokątnego ma długość $10$, a jeden z kątów ostrych ma miarę $30^\\circ$. Oblicz długość przyprostokątnej leżącej naprzeciw tego kąta.",
+      "answer": { "value": 5 },
+      "explanation": "$a=c\\cdot\\sin 30^\\circ=10\\cdot\\frac{1}{2}=5$.",
+      "verify": "10 * sin(pi / 6)",
+      "tags": ["trygonometria"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wartość wyrażenia $\\sin 60^\\circ\\cdot\\cos 30^\\circ$ jest równa",
+      "options": ["$\\frac{3}{4}$", "$\\frac{1}{4}$", "$\\frac{\\sqrt{3}}{2}$", "$1$"],
+      "answer": 0,
+      "explanation": "$\\frac{\\sqrt{3}}{2}\\cdot\\frac{\\sqrt{3}}{2}=\\frac{3}{4}$.",
+      "verify": "sin(pi / 3) * cos(pi / 6)",
+      "tags": ["trygonometria", "wartosci"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Kąt $\\alpha$ jest ostry i $\\operatorname{tg}\\alpha=1$. Miara kąta $\\alpha$ jest równa",
+      "options": ["$45^\\circ$", "$30^\\circ$", "$60^\\circ$", "$90^\\circ$"],
+      "answer": 0,
+      "explanation": "$\\operatorname{tg}45^\\circ=1$: w trójkącie prostokątnym równoramiennym przyprostokątne są równe.",
+      "tags": ["trygonometria"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Drabina o długości $4$ m opiera się o ścianę i tworzy z ziemią kąt $60^\\circ$. W jakiej odległości od ściany (w m) stoi dolny koniec drabiny?",
+      "answer": { "value": 2, "unit": "m" },
+      "explanation": "1. Odległość od ściany to przyprostokątna przy kącie $60^\\circ$.\n2. $4\\cdot\\cos 60^\\circ=4\\cdot\\frac{1}{2}=2$ m.",
+      "verify": "4 * cos(pi / 3)",
+      "tags": ["trygonometria", "zadania-tekstowe"]
+    },
+    {
+      "id": "007",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Kąt $\\alpha$ jest ostry. Oceń prawdziwość zdań.",
+      "options": [
+        "$\\sin\\alpha$ może być równy $1{,}2$.",
+        "$\\sin(90^\\circ-\\alpha)=\\cos\\alpha$.",
+        "$\\operatorname{tg}\\alpha$ może być większy od $1$."
+      ],
+      "answer": [false, true, true],
+      "explanation": "1. Przyprostokątna jest krótsza od przeciwprostokątnej, więc $\\sin\\alpha<1$. Fałsz.\n2. Kąty ostre trójkąta prostokątnego się dopełniają. Prawda.\n3. Np. $\\operatorname{tg}60^\\circ=\\sqrt{3}>1$. Prawda.",
+      "tags": ["trygonometria"]
+    },
+    {
+      "id": "008",
+      "type": "match",
+      "difficulty": 2,
+      "prompt": "Dopasuj każdą wartość funkcji do liczby.",
+      "options": {
+        "left": [
+          "$\\cos 60^\\circ$",
+          "$\\sin 45^\\circ$",
+          "$\\operatorname{tg} 60^\\circ$",
+          "$\\cos 30^\\circ$"
+        ],
+        "right": [
+          "$\\frac{1}{2}$",
+          "$\\frac{\\sqrt{2}}{2}$",
+          "$\\sqrt{3}$",
+          "$\\frac{\\sqrt{3}}{2}$",
+          "$\\frac{\\sqrt{3}}{3}$"
+        ]
+      },
+      "answer": [0, 1, 2, 3],
+      "explanation": "$\\cos 60^\\circ=\\frac{1}{2}$, $\\sin 45^\\circ=\\frac{\\sqrt{2}}{2}$, $\\operatorname{tg}60^\\circ=\\sqrt{3}$, $\\cos 30^\\circ=\\frac{\\sqrt{3}}{2}$. Wartość $\\frac{\\sqrt{3}}{3}$ to $\\operatorname{tg}30^\\circ$.",
+      "tags": ["trygonometria", "wartosci"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "W trójkącie prostokątnym przyprostokątna przy kącie $\\alpha$ ma długość $6$, a $\\operatorname{tg}\\alpha=\\frac{4}{3}$. Oblicz długość przeciwprostokątnej.",
+      "answer": { "value": 10 },
+      "explanation": "1. Przyprostokątna naprzeciw: $6\\cdot\\frac{4}{3}=8$.\n2. Przeciwprostokątna: $\\sqrt{36+64}=10$.",
+      "verify": "sqrt(6^2 + 8^2)",
+      "tags": ["trygonometria"]
+    },
+    {
+      "id": "010",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Kąt $\\alpha$ jest ostry i $\\cos\\alpha=\\frac{5}{13}$. Wtedy $\\sin\\alpha$ jest równy",
+      "options": ["$\\frac{12}{13}$", "$\\frac{8}{13}$", "$\\frac{5}{12}$", "$\\frac{13}{12}$"],
+      "answer": 0,
+      "explanation": "1. Trójkąt o przyprostokątnej $5$ i przeciwprostokątnej $13$ ma drugą przyprostokątną $\\sqrt{169-25}=12$.\n2. $\\sin\\alpha=\\frac{12}{13}$.",
+      "verify": "sqrt(1 - (5/13)^2)",
+      "tags": ["trygonometria"]
+    }
+  ]
+}

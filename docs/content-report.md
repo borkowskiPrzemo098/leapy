@@ -2,9 +2,9 @@
 
 Wygenerowano: 2026-10-27 (`npm run content:build`).
 
-- Zadania: **114** (zweryfikowane przez człowieka: 0, czekają: 114)
-- Sprawdzone automatycznie (`verify`): 32
-- Typy: single 50, numeric 33, match 7, truefalse 10, multi 6, short 4, ordering 4
+- Zadania: **157** (zweryfikowane przez człowieka: 0, czekają: 157)
+- Sprawdzone automatycznie (`verify`): 51
+- Typy: numeric 52, single 64, truefalse 14, short 5, multi 8, match 9, ordering 5
 - Błędy: 0, ostrzeżenia: 0
 
 Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
@@ -94,7 +94,7 @@ Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
 
 ## Matura
 
-### Matematyka (podstawowy): 114 zadań
+### Matematyka (podstawowy): 157 zadań
 
 | Dział | Temat | Zadania | Lekcja |
 | --- | --- | ---: | :---: |
@@ -111,10 +111,10 @@ Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
 |  | Funkcja liniowa | 7 | tak |
 |  | Funkcja kwadratowa | 7 | tak |
 |  | Funkcja wykładnicza | 7 | tak |
-| Ciągi (0 ⚠) | Ciąg arytmetyczny | 0 | — |
-|  | Ciąg geometryczny | 0 | — |
-| Trygonometria (0 ⚠) | Funkcje trygonometryczne kąta ostrego | 0 | — |
-|  | Tożsamości trygonometryczne | 0 | — |
+| Ciągi (24 ⚠) | Ciąg arytmetyczny | 12 | tak |
+|  | Ciąg geometryczny | 12 | tak |
+| Trygonometria (19 ⚠) | Funkcje trygonometryczne kąta ostrego | 10 | tak |
+|  | Tożsamości trygonometryczne | 9 | tak |
 | Planimetria (0 ⚠) | Trójkąty | 0 | — |
 |  | Czworokąty | 0 | — |
 |  | Okrąg i koło | 0 | — |
@@ -234,10 +234,14 @@ Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
 
 Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 
+- `matura.matematyka-p.ciag-arytmetyczny.011` (short, trudność 2)
 - `matura.matematyka-p.potegi-i-pierwiastki.008` (short, trudność 2)
 - `matura.matematyka-p.procenty.008` (short, trudność 2)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.012` (short, trudność 2)
 - `matura.matematyka-p.logarytmy.009` (short, trudność 1)
+- `matura.matematyka-p.ciag-arytmetyczny.010` (numeric, trudność 3)
+- `matura.matematyka-p.ciag-geometryczny.004` (multi, trudność 3)
+- `matura.matematyka-p.ciag-geometryczny.010` (match, trudność 3)
 - `matura.matematyka-p.funkcja-kwadratowa.007` (match, trudność 3)
 - `matura.matematyka-p.funkcja-liniowa.006` (single, trudność 3)
 - `matura.matematyka-p.logarytmy.008` (multi, trudność 3)
@@ -259,6 +263,16 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.wyrazenia-wymierne.006` (single, trudność 3)
 - `matura.matematyka-p.wyrazenia-wymierne.007` (numeric, trudność 3)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.011` (single, trudność 3)
+- `matura.matematyka-p.ciag-arytmetyczny.003` (numeric, trudność 2)
+- `matura.matematyka-p.ciag-arytmetyczny.005` (numeric, trudność 2)
+- `matura.matematyka-p.ciag-arytmetyczny.006` (single, trudność 2)
+- `matura.matematyka-p.ciag-arytmetyczny.008` (single, trudność 2)
+- `matura.matematyka-p.ciag-arytmetyczny.009` (truefalse, trudność 2)
+- `matura.matematyka-p.ciag-geometryczny.005` (multi, trudność 2)
+- `matura.matematyka-p.ciag-geometryczny.006` (single, trudność 2)
+- `matura.matematyka-p.ciag-geometryczny.008` (truefalse, trudność 2)
+- `matura.matematyka-p.ciag-geometryczny.009` (numeric, trudność 2)
+- `matura.matematyka-p.ciag-geometryczny.012` (single, trudność 2)
 - `matura.matematyka-p.funkcja-kwadratowa.002` (single, trudność 2)
 - `matura.matematyka-p.funkcja-kwadratowa.003` (single, trudność 2)
 - `matura.matematyka-p.funkcja-kwadratowa.004` (single, trudność 2)
@@ -269,6 +283,9 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.funkcja-wykladnicza.004` (single, trudność 2)
 - `matura.matematyka-p.funkcja-wykladnicza.005` (numeric, trudność 2)
 - `matura.matematyka-p.funkcja-wykladnicza.006` (truefalse, trudność 2)
+- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.005` (single, trudność 2)
+- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.007` (truefalse, trudność 2)
+- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.008` (match, trudność 2)
 - `matura.matematyka-p.logarytmy.005` (truefalse, trudność 2)
 - `matura.matematyka-p.logarytmy.007` (match, trudność 2)
 - `matura.matematyka-p.potegi-i-pierwiastki.004` (truefalse, trudność 2)
@@ -284,6 +301,10 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.rownania-i-nierownosci-liniowe.003` (numeric, trudność 2)
 - `matura.matematyka-p.rownania-i-nierownosci-liniowe.004` (single, trudność 2)
 - `matura.matematyka-p.rownania-i-nierownosci-liniowe.008` (ordering, trudność 2)
+- `matura.matematyka-p.tozsamosci-trygonometryczne.004` (single, trudność 2)
+- `matura.matematyka-p.tozsamosci-trygonometryczne.005` (single, trudność 2)
+- `matura.matematyka-p.tozsamosci-trygonometryczne.007` (truefalse, trudność 2)
+- `matura.matematyka-p.tozsamosci-trygonometryczne.009` (ordering, trudność 2)
 - `matura.matematyka-p.uklady-rownan.002` (single, trudność 2)
 - `matura.matematyka-p.uklady-rownan.003` (numeric, trudność 2)
 - `matura.matematyka-p.uklady-rownan.004` (single, trudność 2)
@@ -305,6 +326,8 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.wzory-skroconego-mnozenia.005` (single, trudność 2)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.007` (truefalse, trudność 2)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.009` (match, trudność 2)
+- `matura.matematyka-p.ciag-arytmetyczny.002` (numeric, trudność 1)
+- `matura.matematyka-p.ciag-geometryczny.002` (numeric, trudność 1)
 - `matura.matematyka-p.funkcja-kwadratowa.001` (single, trudność 1)
 - `matura.matematyka-p.funkcja-liniowa.001` (single, trudność 1)
 - `matura.matematyka-p.funkcja-wykladnicza.001` (numeric, trudność 1)
@@ -312,22 +335,36 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.procenty.009` (match, trudność 1)
 - `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.001` (multi, trudność 1)
 - `matura.matematyka-p.rownania-i-nierownosci-liniowe.001` (numeric, trudność 1)
+- `matura.matematyka-p.tozsamosci-trygonometryczne.003` (numeric, trudność 1)
 - `matura.matematyka-p.uklady-rownan.001` (single, trudność 1)
 - `matura.matematyka-p.wlasnosci-funkcji.002` (numeric, trudność 1)
 - `matura.matematyka-p.wyrazenia-wymierne.001` (single, trudność 1)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.001` (single, trudność 1)
+- `matura.matematyka-p.ciag-arytmetyczny.007` (numeric, trudność 3, verify ✓)
+- `matura.matematyka-p.ciag-arytmetyczny.012` (numeric, trudność 3, verify ✓)
+- `matura.matematyka-p.ciag-geometryczny.007` (numeric, trudność 3, verify ✓)
+- `matura.matematyka-p.ciag-geometryczny.011` (numeric, trudność 3, verify ✓)
 - `matura.matematyka-p.funkcja-kwadratowa.005` (numeric, trudność 3, verify ✓)
 - `matura.matematyka-p.funkcja-liniowa.005` (single, trudność 3, verify ✓)
 - `matura.matematyka-p.funkcja-wykladnicza.007` (numeric, trudność 3, verify ✓)
+- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.006` (numeric, trudność 3, verify ✓)
+- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.009` (numeric, trudność 3, verify ✓)
+- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.010` (single, trudność 3, verify ✓)
 - `matura.matematyka-p.logarytmy.004` (numeric, trudność 3, verify ✓)
 - `matura.matematyka-p.potegi-i-pierwiastki.003` (single, trudność 3, verify ✓)
 - `matura.matematyka-p.procenty.004` (single, trudność 3, verify ✓)
 - `matura.matematyka-p.procenty.006` (numeric, trudność 3, verify ✓)
+- `matura.matematyka-p.tozsamosci-trygonometryczne.006` (single, trudność 3, verify ✓)
+- `matura.matematyka-p.tozsamosci-trygonometryczne.008` (numeric, trudność 3, verify ✓)
 - `matura.matematyka-p.wartosc-bezwzgledna.007` (numeric, trudność 3, verify ✓)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.006` (single, trudność 3, verify ✓)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.008` (numeric, trudność 3, verify ✓)
+- `matura.matematyka-p.ciag-arytmetyczny.004` (numeric, trudność 2, verify ✓)
+- `matura.matematyka-p.ciag-geometryczny.003` (numeric, trudność 2, verify ✓)
 - `matura.matematyka-p.funkcja-kwadratowa.006` (numeric, trudność 2, verify ✓)
 - `matura.matematyka-p.funkcja-liniowa.002` (numeric, trudność 2, verify ✓)
+- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.003` (numeric, trudność 2, verify ✓)
+- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.004` (single, trudność 2, verify ✓)
 - `matura.matematyka-p.logarytmy.002` (numeric, trudność 2, verify ✓)
 - `matura.matematyka-p.logarytmy.003` (single, trudność 2, verify ✓)
 - `matura.matematyka-p.logarytmy.006` (single, trudność 2, verify ✓)
@@ -336,15 +373,21 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.potegi-i-pierwiastki.010` (single, trudność 2, verify ✓)
 - `matura.matematyka-p.procenty.003` (numeric, trudność 2, verify ✓)
 - `matura.matematyka-p.rownania-i-nierownosci-liniowe.005` (single, trudność 2, verify ✓)
+- `matura.matematyka-p.tozsamosci-trygonometryczne.002` (single, trudność 2, verify ✓)
 - `matura.matematyka-p.wartosc-bezwzgledna.002` (single, trudność 2, verify ✓)
 - `matura.matematyka-p.wyrazenia-wymierne.008` (numeric, trudność 2, verify ✓)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.004` (single, trudność 2, verify ✓)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.010` (numeric, trudność 2, verify ✓)
+- `matura.matematyka-p.ciag-arytmetyczny.001` (numeric, trudność 1, verify ✓)
+- `matura.matematyka-p.ciag-geometryczny.001` (numeric, trudność 1, verify ✓)
+- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.001` (single, trudność 1, verify ✓)
+- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.002` (single, trudność 1, verify ✓)
 - `matura.matematyka-p.logarytmy.001` (single, trudność 1, verify ✓)
 - `matura.matematyka-p.potegi-i-pierwiastki.002` (numeric, trudność 1, verify ✓)
 - `matura.matematyka-p.procenty.001` (numeric, trudność 1, verify ✓)
 - `matura.matematyka-p.procenty.002` (single, trudność 1, verify ✓)
 - `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.003` (numeric, trudność 1, verify ✓)
+- `matura.matematyka-p.tozsamosci-trygonometryczne.001` (single, trudność 1, verify ✓)
 - `matura.matematyka-p.wartosc-bezwzgledna.001` (numeric, trudność 1, verify ✓)
 - `matura.matematyka-p.wlasnosci-funkcji.001` (numeric, trudność 1, verify ✓)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.003` (numeric, trudność 1, verify ✓)

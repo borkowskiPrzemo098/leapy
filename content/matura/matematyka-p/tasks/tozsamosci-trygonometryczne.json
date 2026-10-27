@@ -1,0 +1,121 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Kąt $\\alpha$ jest ostry i $\\sin\\alpha=\\frac{4}{5}$. Wtedy $\\cos\\alpha$ jest równy",
+      "options": ["$\\frac{3}{5}$", "$\\frac{1}{5}$", "$\\frac{9}{25}$", "$\\frac{5}{4}$"],
+      "answer": 0,
+      "explanation": "1. $\\cos^{2}\\alpha=1-\\frac{16}{25}=\\frac{9}{25}$.\n2. Kąt ostry, więc $\\cos\\alpha=\\frac{3}{5}$.",
+      "verify": "sqrt(1 - (4/5)^2)",
+      "tags": ["trygonometria", "jedynka"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Kąt $\\alpha$ jest ostry i $\\sin\\alpha=\\frac{4}{5}$. Wtedy $\\operatorname{tg}\\alpha$ jest równy",
+      "options": ["$\\frac{4}{3}$", "$\\frac{3}{4}$", "$\\frac{4}{5}$", "$\\frac{5}{3}$"],
+      "answer": 0,
+      "explanation": "1. $\\cos\\alpha=\\frac{3}{5}$.\n2. $\\operatorname{tg}\\alpha=\\frac{4/5}{3/5}=\\frac{4}{3}$.",
+      "verify": "(4/5) / (3/5)",
+      "tags": ["trygonometria"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz wartość wyrażenia $\\sin^{2}37^\\circ+\\cos^{2}37^\\circ$.",
+      "answer": { "value": 1 },
+      "explanation": "Jedynka trygonometryczna działa dla każdego kąta: wynik to $1$.",
+      "tags": ["trygonometria", "jedynka"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wyrażenie $(\\sin\\alpha+\\cos\\alpha)^{2}$ jest równe",
+      "options": [
+        "$1+2\\sin\\alpha\\cos\\alpha$",
+        "$1$",
+        "$2\\sin\\alpha\\cos\\alpha$",
+        "$\\sin^{2}\\alpha+\\cos^{2}\\alpha$"
+      ],
+      "answer": 0,
+      "explanation": "1. $\\sin^{2}\\alpha+2\\sin\\alpha\\cos\\alpha+\\cos^{2}\\alpha$.\n2. $\\sin^{2}\\alpha+\\cos^{2}\\alpha=1$.\n3. Wynik: $1+2\\sin\\alpha\\cos\\alpha$.",
+      "tags": ["trygonometria", "jedynka"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wyrażenie $1-\\cos^{2}\\alpha$ jest równe",
+      "options": [
+        "$\\sin^{2}\\alpha$",
+        "$\\cos^{2}\\alpha$",
+        "$\\operatorname{tg}^{2}\\alpha$",
+        "$0$"
+      ],
+      "answer": 0,
+      "explanation": "Z jedynki: $\\sin^{2}\\alpha=1-\\cos^{2}\\alpha$.",
+      "tags": ["trygonometria", "jedynka"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Kąt $\\alpha$ jest ostry i $\\operatorname{tg}\\alpha=2$. Wtedy $\\cos\\alpha$ jest równy",
+      "options": [
+        "$\\frac{\\sqrt{5}}{5}$",
+        "$\\frac{2\\sqrt{5}}{5}$",
+        "$\\frac{1}{2}$",
+        "$\\frac{1}{5}$"
+      ],
+      "answer": 0,
+      "explanation": "1. $\\sin\\alpha=2\\cos\\alpha$.\n2. $4\\cos^{2}\\alpha+\\cos^{2}\\alpha=1$, więc $\\cos^{2}\\alpha=\\frac{1}{5}$.\n3. $\\cos\\alpha=\\frac{1}{\\sqrt{5}}=\\frac{\\sqrt{5}}{5}$.",
+      "verify": "1 / sqrt(5)",
+      "tags": ["trygonometria"]
+    },
+    {
+      "id": "007",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość tożsamości (dla kąta ostrego $\\alpha$).",
+      "options": [
+        "$\\operatorname{tg}\\alpha\\cdot\\cos\\alpha=\\sin\\alpha$",
+        "$\\sin\\alpha+\\cos\\alpha=1$",
+        "$\\frac{\\sin^{2}\\alpha}{1-\\sin^{2}\\alpha}=\\operatorname{tg}^{2}\\alpha$"
+      ],
+      "answer": [true, false, true],
+      "explanation": "1. $\\frac{\\sin\\alpha}{\\cos\\alpha}\\cdot\\cos\\alpha=\\sin\\alpha$. Prawda.\n2. Dla $45^\\circ$: $\\frac{\\sqrt{2}}{2}+\\frac{\\sqrt{2}}{2}=\\sqrt{2}\\neq 1$. Fałsz (jedynka dotyczy kwadratów).\n3. $1-\\sin^{2}\\alpha=\\cos^{2}\\alpha$, więc iloraz to $\\operatorname{tg}^{2}\\alpha$. Prawda.",
+      "tags": ["trygonometria"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Kąt $\\alpha$ jest ostry i $\\sin\\alpha\\cdot\\cos\\alpha=\\frac{1}{4}$. Oblicz $(\\sin\\alpha+\\cos\\alpha)^{2}$.",
+      "answer": { "value": 1.5 },
+      "explanation": "$(\\sin\\alpha+\\cos\\alpha)^{2}=1+2\\sin\\alpha\\cos\\alpha=1+\\frac{1}{2}=\\frac{3}{2}$.",
+      "verify": "1 + 2 * (1/4)",
+      "tags": ["trygonometria", "jedynka"]
+    },
+    {
+      "id": "009",
+      "type": "ordering",
+      "difficulty": 2,
+      "prompt": "Kąt $\\alpha$ jest ostry i $\\cos\\alpha=\\frac{12}{13}$. Ułóż kroki wyznaczenia $\\operatorname{tg}\\alpha$ w kolejności.",
+      "options": [
+        "$\\sin^{2}\\alpha=1-\\frac{144}{169}$",
+        "$\\sin^{2}\\alpha=\\frac{25}{169}$",
+        "$\\sin\\alpha=\\frac{5}{13}$",
+        "$\\operatorname{tg}\\alpha=\\frac{5}{12}$"
+      ],
+      "answer": [0, 1, 2, 3],
+      "explanation": "Jedynka trygonometryczna, pierwiastek (dodatni dla kąta ostrego), potem iloraz $\\frac{\\sin\\alpha}{\\cos\\alpha}=\\frac{5/13}{12/13}=\\frac{5}{12}$.",
+      "tags": ["trygonometria"]
+    }
+  ]
+}
