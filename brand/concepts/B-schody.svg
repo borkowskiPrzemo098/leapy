@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 4 284 128" role="img" aria-label="Leapy, koncepcja B: Schody"><title>Leapy, koncepcja B: Schody</title><defs><mask id="b-gap"><rect x="-10" y="0" width="300" height="160" fill="#fff"/>
+    <path d="M259.5 40L228 108" stroke="#000" stroke-width="25" stroke-linecap="round"/></mask></defs>
+  <g fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 30V100"/><g transform="translate(0 -5)"><path d="M30.5 80H70.5A20 20 0 1 0 64.6 94.1"/></g><g transform="translate(0 -10)"><path d="M134.5 80A20 20 0 1 0 134.5 80.01M134.5 60V100"/></g><g transform="translate(0 -41)"><path d="M158.5 60V128M158.5 80A20 20 0 1 1 158.5 80.01"/></g><g transform="translate(0 -20)"><path d="M222.5 60L241 100M259.5 60L228 128"/></g></g>
+  <path d="M-2 116H18V111H83V106H147V101H211V96H268" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" mask="url(#b-gap)" opacity=".45"/>
+  <g fill="#5b3df5"><circle cx="170" cy="88" r="5"/><circle cx="181" cy="85" r="6.5"/><circle cx="192" cy="89" r="4.5"/></g></svg>

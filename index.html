@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Leapy · Skocz na wyższy poziom</title>
+    <meta
+      name="description"
+      content="Leapy: darmowa nauka do egzaminu ósmoklasisty i matury. Zadania z wyjaśnieniami, powtórki i egzaminy próbne. Działa offline, bez zakładania konta."
+    />
+    <meta name="theme-color" content="#5b3df5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e0a22" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta property="og:title" content="Leapy · Skocz na wyższy poziom" />
+    <meta property="og:image" content="/og-default.png" />
+    <!-- Resolve theme and motion before first paint (no flash). Mirrors src/lib/theme.ts -->
+    <script>
+      ;(function () {
+        var d = document.documentElement
+        var t = null
+        try {
+          t = localStorage.getItem('leapy:theme')
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark')
+          t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        d.dataset.theme = t
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

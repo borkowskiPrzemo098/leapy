@@ -1,0 +1,132 @@
+/*
+ * Leapy design tokens. Components read ONLY these variables (via Tailwind theme
+ * aliases in index.css), so light/dark and future themes swap here.
+ * Contrast pairs are noted where they matter (WCAG 2.2 AA: text >= 4.5:1).
+ */
+
+:root {
+  color-scheme: light;
+
+  /* Ground and surfaces: violet-tinted neutrals, never grey or cream */
+  --bg: #f5f3ff;
+  --surface: #ffffff;
+  --surface-2: #eeeaff;
+  --surface-sunken: #e7e2fb;
+  --line: #ddd6f6;
+  --line-strong: #c3b8ee;
+
+  /* Ink: deep violet-black. On --surface: ink 16.9:1, ink-2 9.1:1, ink-3 5.4:1 */
+  --ink: #17123a;
+  --ink-2: #463f6e;
+  --ink-3: #635c8c;
+
+  /* Brand: intense indigo-violet. White on --brand 6.1:1 */
+  --brand: #5b3df5;
+  --brand-strong: #4a2be0;
+  --brand-deep: #2f1a9e;
+  --brand-soft: #e6e0ff;
+  --brand-text: #4a2be0;
+  --on-brand: #ffffff;
+  --on-brand-2: #d9d2ff;
+
+  /* Reward (XP, streaks, levels): sun yellow. --on-reward on --reward 11.8:1 */
+  --reward: #ffc531;
+  --reward-strong: #f0a800;
+  --reward-deep: #b87a00;
+  --reward-soft: #fff2c9;
+  --on-reward: #2b1d00;
+
+  /* Feedback: used only for correct / wrong answers, always paired with an icon */
+  --correct: #1f9d55;
+  --correct-deep: #157a40;
+  --correct-soft: #dcf6e6;
+  --correct-text: #0f6b36;
+  --wrong: #e0394a;
+  --wrong-deep: #b3202f;
+  --wrong-soft: #ffe2e5;
+  --wrong-text: #a51c2a;
+
+  --focus: #5b3df5;
+  --overlay: rgb(23 18 58 / 0.45);
+
+  --shadow-sm: 0 1px 2px rgb(32 20 110 / 0.06), 0 2px 6px -2px rgb(32 20 110 / 0.08);
+  --shadow-md: 0 2px 4px rgb(32 20 110 / 0.05), 0 10px 28px -10px rgb(32 20 110 / 0.22);
+  --shadow-lg: 0 4px 8px rgb(32 20 110 / 0.06), 0 22px 48px -16px rgb(32 20 110 / 0.3);
+
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+
+  /* Motion: exponential ease-out; durations collapse under reduced motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 140ms;
+  --dur-base: 240ms;
+  --dur-slow: 420ms;
+
+  /* Text size setting multiplies this (Profil > Rozmiar tekstu) */
+  --text-scale: 1;
+}
+
+/* 'auto' is resolved to light/dark by the boot script in index.html before first paint */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: #0e0a22;
+  --surface: #19143a;
+  --surface-2: #231c4c;
+  --surface-sunken: #120d2c;
+  --line: #2f2762;
+  --line-strong: #463b86;
+
+  /* On --surface: ink 15.6:1, ink-2 9.4:1, ink-3 5.6:1 */
+  --ink: #f4f1ff;
+  --ink-2: #c9c1ef;
+  --ink-3: #9d94cc;
+
+  /* White on --brand 4.9:1 */
+  --brand: #6c4fff;
+  --brand-strong: #7d64ff;
+  --brand-deep: #3a24b8;
+  --brand-soft: #2a2160;
+  --brand-text: #b3a4ff;
+  --on-brand: #ffffff;
+  --on-brand-2: #d9d2ff;
+
+  --reward: #ffcd4a;
+  --reward-strong: #ffbb1a;
+  --reward-deep: #b88400;
+  --reward-soft: #3a2f12;
+  --on-reward: #2b1d00;
+
+  --correct: #34c46f;
+  --correct-deep: #1f8a4b;
+  --correct-soft: #12301f;
+  --correct-text: #6fe09d;
+  --wrong: #ff5a68;
+  --wrong-deep: #c42d3b;
+  --wrong-soft: #3a1520;
+  --wrong-text: #ff9aa4;
+
+  --focus: #b3a4ff;
+  --overlay: rgb(5 3 16 / 0.65);
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3);
+  --shadow-md: 0 2px 4px rgb(0 0 0 / 0.25), 0 12px 28px -10px rgb(0 0 0 / 0.55);
+  --shadow-lg: 0 4px 8px rgb(0 0 0 / 0.3), 0 24px 48px -16px rgb(0 0 0 / 0.65);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur-base: 0ms;
+    --dur-slow: 0ms;
+  }
+}
+
+:root[data-motion='reduce'] {
+  --dur-fast: 0ms;
+  --dur-base: 0ms;
+  --dur-slow: 0ms;
+}

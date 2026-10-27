@@ -52,6 +52,7 @@ leapy/
 **ID**: `<exam>.<subject>.<topic>.<nnn>` (np. `matura.mat-p.funkcja-kwadratowa.014`) — stabilne, bo od nich zależą postępy w IndexedDB.
 
 **Postęp (Dexie)**:
+
 - `attempts` (taskId, ts, correct, ms, mode) — surowa historia
 - `srs` (taskId, ease, interval, due, reps, lapses) — stan powtórek
 - `sessions` (id, mode, start, end, scope, wynik)
@@ -63,15 +64,15 @@ Statystyki, poziomy i przewidywany wynik liczone są z `attempts`, a nie zapisyw
 
 ## 4. Etapy (każdy kończy się: lint + testy + build + commit + push)
 
-| Etap | Zakres | Kryterium „gotowe" |
-|---|---|---|
-| **E0** | Scaffold Vite/TS strict, Tailwind + tokeny, Fontsource, ESLint/Prettier, Vitest, CI, `CLAUDE.md`, komponenty bazowe, 3 koncepcje logo → wybór + pełny zestaw assetów | CI zielone, strona z komponentami/logo działa w obu motywach |
-| **E1** | Shell, tab bar ↔ sidebar, routing, safe-area/100dvh, PWA (manifest, SW, offline, baner instalacji, aktualizacje), motyw jasny/ciemny/auto, przejścia i skeletony | instalacja + offline działa, nawigacja klawiaturą |
-| **E2** | Schemat Zod, `content:check`/`content:build` (dedupe, braki, pokrycie, weryfikatory) blokujące build, silnik zadań (7 typów), sesja, Dexie + eksport/import | testy silnika i zapisu, próbna partia treści przechodzi pipeline |
-| **E3** | SRS (SM-2, w pełni testowany), powtórka błędów, fiszki, egzamin próbny z timerem i punktacją, statystyki + wykresy SVG, kalendarz aktywności | testy SRS, egzamin próbny end-to-end |
-| **E4** | XP, poziomy-stopnie, serie + zamrożenie, odznaki, cele tygodniowe, onboarding 30 s z testem diagnostycznym, karty do udostępniania (canvas, Web Share), lokalne przypomnienia, feature flags | ścieżka nowego użytkownika od zera do pierwszej karty |
-| **E5** | Treści Fazy 1 partiami (po przedmiocie), strony SEO, blog MDX, sitemap/robots/JSON-LD/OG, FAQ, prawne, cennik-szkielet, `docs/monetization.md`, `docs/marketing/` | raport pokrycia: ≥25 zadań/dział, 1 lekcja/temat |
-| **E6** | WCAG 2.2 AA audit, Lighthouse ≥95, Playwright smoke na 3 viewportach, polish, README + instrukcja Cloudflare Pages + domena, raport końcowy | Definition of Done z briefu |
+| Etap   | Zakres                                                                                                                                                                                       | Kryterium „gotowe"                                               |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| **E0** | Scaffold Vite/TS strict, Tailwind + tokeny, Fontsource, ESLint/Prettier, Vitest, CI, `CLAUDE.md`, komponenty bazowe, 3 koncepcje logo → wybór + pełny zestaw assetów                         | CI zielone, strona z komponentami/logo działa w obu motywach     |
+| **E1** | Shell, tab bar ↔ sidebar, routing, safe-area/100dvh, PWA (manifest, SW, offline, baner instalacji, aktualizacje), motyw jasny/ciemny/auto, przejścia i skeletony                             | instalacja + offline działa, nawigacja klawiaturą                |
+| **E2** | Schemat Zod, `content:check`/`content:build` (dedupe, braki, pokrycie, weryfikatory) blokujące build, silnik zadań (7 typów), sesja, Dexie + eksport/import                                  | testy silnika i zapisu, próbna partia treści przechodzi pipeline |
+| **E3** | SRS (SM-2, w pełni testowany), powtórka błędów, fiszki, egzamin próbny z timerem i punktacją, statystyki + wykresy SVG, kalendarz aktywności                                                 | testy SRS, egzamin próbny end-to-end                             |
+| **E4** | XP, poziomy-stopnie, serie + zamrożenie, odznaki, cele tygodniowe, onboarding 30 s z testem diagnostycznym, karty do udostępniania (canvas, Web Share), lokalne przypomnienia, feature flags | ścieżka nowego użytkownika od zera do pierwszej karty            |
+| **E5** | Treści Fazy 1 partiami (po przedmiocie), strony SEO, blog MDX, sitemap/robots/JSON-LD/OG, FAQ, prawne, cennik-szkielet, `docs/monetization.md`, `docs/marketing/`                            | raport pokrycia: ≥25 zadań/dział, 1 lekcja/temat                 |
+| **E6** | WCAG 2.2 AA audit, Lighthouse ≥95, Playwright smoke na 3 viewportach, polish, README + instrukcja Cloudflare Pages + domena, raport końcowy                                                  | Definition of Done z briefu                                      |
 
 Realnie E0–E4 to kod (kilka sesji), E5 to głównie treść i będzie najdłuższy.
 
