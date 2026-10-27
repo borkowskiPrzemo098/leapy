@@ -1,6 +1,9 @@
 import { clsx } from 'clsx'
 import { ArrowRight } from 'lucide-react'
+import { Navigate } from 'react-router-dom'
 import { useCatalog } from '@/content/data'
+import { TodayCard } from '@/features/gamify/TodayCard'
+import { isOnboarded } from '@/state/profile'
 import { InstallCard } from '@/features/pwa/pwa'
 import { useStudy } from '@/state/study'
 import { ButtonLink } from '@/ui/Button'
@@ -17,8 +20,13 @@ const blockTone = (i: number) =>
     ? 'bg-reward text-on-reward shadow-[inset_0_-4px_0_var(--reward-deep)]'
     : 'bg-brand text-on-brand shadow-[inset_0_-4px_0_var(--brand-deep)]'
 
-/** First-run Start. The real dashboard (streak, goal ring, reviews) replaces this after onboarding in E4. */
+/** Start: new learners go to onboarding first; with an exam chosen, "Jak to działa" becomes today's goals. */
 export function StartPage() {
+  if (!isOnboarded()) return <Navigate to="/app/witaj" replace />
+  return <Dashboard />
+}
+
+function Dashboard() {
   const { exam: examId, subjects } = useStudy()
   const catalog = useCatalog()
   const exam =
@@ -79,45 +87,49 @@ export function StartPage() {
           </div>
         </section>
 
-        <section aria-labelledby="how" className="rounded-2xl bg-surface p-5 shadow-sm sm:p-6">
-          <h2 id="how" className="text-heading text-ink">
-            Jak to działa
-          </h2>
-          {/* The climb: three solid blocks rising left to right, then the steps in full measure */}
-          <div aria-hidden className="mt-5 grid grid-cols-3 items-end gap-2">
-            {steps.map(([title], i) => (
-              <div
-                key={title}
-                className={clsx(
-                  'grid place-items-start rounded-t-lg rounded-b-sm p-2.5 text-lead font-extrabold',
-                  blockTone(i),
-                )}
-                style={{ height: `${2.75 + i * 1.5}rem` }}
-              >
-                {i + 1}
-              </div>
-            ))}
-          </div>
-          <ol className="mt-5 flex flex-col gap-4">
-            {steps.map(([title, text], i) => (
-              <li key={title} className="flex items-start gap-3">
-                <span
-                  aria-hidden
+        {exam ? (
+          <TodayCard />
+        ) : (
+          <section aria-labelledby="how" className="rounded-2xl bg-surface p-5 shadow-sm sm:p-6">
+            <h2 id="how" className="text-heading text-ink">
+              Jak to działa
+            </h2>
+            {/* The climb: three solid blocks rising left to right, then the steps in full measure */}
+            <div aria-hidden className="mt-5 grid grid-cols-3 items-end gap-2">
+              {steps.map(([title], i) => (
+                <div
+                  key={title}
                   className={clsx(
-                    'grid size-8 shrink-0 place-items-center rounded-md text-small font-extrabold',
+                    'grid place-items-start rounded-t-lg rounded-b-sm p-2.5 text-lead font-extrabold',
                     blockTone(i),
                   )}
+                  style={{ height: `${2.75 + i * 1.5}rem` }}
                 >
                   {i + 1}
-                </span>
-                <div>
-                  <h3 className="font-extrabold text-ink">{title}</h3>
-                  <p className="text-small text-ink-2">{text}</p>
                 </div>
-              </li>
-            ))}
-          </ol>
-        </section>
+              ))}
+            </div>
+            <ol className="mt-5 flex flex-col gap-4">
+              {steps.map(([title, text], i) => (
+                <li key={title} className="flex items-start gap-3">
+                  <span
+                    aria-hidden
+                    className={clsx(
+                      'grid size-8 shrink-0 place-items-center rounded-md text-small font-extrabold',
+                      blockTone(i),
+                    )}
+                  >
+                    {i + 1}
+                  </span>
+                  <div>
+                    <h3 className="font-extrabold text-ink">{title}</h3>
+                    <p className="text-small text-ink-2">{text}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </section>
+        )}
       </div>
 
       <div className="mt-4 md:max-w-[58%]">

@@ -61,6 +61,10 @@ Szczegóły: [docs/content-guide.md](docs/content-guide.md). Najważniejsze:
 - `src/content/schema.ts`: Zod dla treści (build i typy; aplikacja nie importuje go w czasie działania, stała wersji jest w `version.ts`).
 - `src/content/data.ts`: wczytywanie `/data/*.json` + `useResource`.
 - `src/engine/`: czyste funkcje: ocenianie 7 typów zadań, losowanie, sesja, powtórki (`srs.ts`, SM-2 za interfejsem `Scheduler`), egzamin próbny (`mock.ts`), statystyki (`stats.ts`, dni lokalne). Bez Reacta, bez IndexedDB i bez odczytu zegara: `now` zawsze przychodzi z zewnątrz.
+- `src/engine/gamify.ts`: XP, stopnie, seria z zamrożeniami, cele, odznaki. Wszystko liczone z historii (`attempts`, `sessions`), nic nie jest zapisywane osobno. `src/features/gamify/useGame.ts` składa to w jeden obiekt dla ekranów.
+- `src/state/profile.ts`: cele, przypomnienie i już pokazane odznaki (Dexie kv `profile`, jedzie z kopią). Flaga pierwszego uruchomienia `leapy:onboarded` jest w localStorage (Start musi ją znać synchronicznie); testy E2E ustawiają ją domyślnie w `playwright.config.ts`.
+- `src/features/share/card.ts`: karty 1080×1350 i 1080×1920 rysowane na canvasie; Web Share z plikiem albo pobranie PNG.
+- `src/flags/flags.ts`: feature flags free/premium. Dziś wszystko, co działa, jest „free”; flagi premium tylko pod przyszłe funkcje.
 - `src/features/study/queries.ts`: łączy magazyn z treścią (co na dziś do powtórki, błędy, zadania po id) i zapisuje powtórki (`recordReview`).
 - Stan SRS jest w tabeli `srs` (klucz: id zadania albo fiszki, fiszki mają `.card.` w id). Rozpoczęty egzamin próbny leży w `kv` pod `mock:active`, ostatni oddany pod `mock:last`.
 - `src/storage/`: interfejs `ProgressStore` + implementacja Dexie + format kopii zapasowej. UI woła tylko `progress()`.

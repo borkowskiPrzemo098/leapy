@@ -4,6 +4,7 @@ import { OfflineChip, UpdateToast } from '@/features/pwa/pwa'
 import { watchSystemTheme } from '@/lib/theme'
 import { usePrefs } from '@/state/prefs'
 import { Skeleton } from '@/ui/controls'
+import { ReminderWatcher } from '@/features/reminders/ReminderWatcher'
 import { Sidebar, TabBar } from './Navigation'
 
 export function ScreenSkeleton() {
@@ -62,6 +63,7 @@ export function AppLayout() {
         </div>
       </main>
       <TabBar />
+      <ReminderWatcher />
       <OfflineChip />
       <UpdateToast />
       <ScrollRestoration />

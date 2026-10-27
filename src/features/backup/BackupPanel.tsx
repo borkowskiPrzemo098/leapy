@@ -1,5 +1,6 @@
 import { Download, Trash2, Upload } from 'lucide-react'
 import { useRef, useState } from 'react'
+import { rehydrateProfile } from '@/state/profile'
 import { rehydrateStudy } from '@/state/study'
 import { progress } from '@/storage'
 import { backupFileName, makeBackup, parseBackup, type Backup } from '@/storage/backup'
@@ -52,7 +53,7 @@ export function BackupPanel() {
         await progress().clearAll()
         setMessage({ tone: 'ok', text: 'Wszystkie postępy zostały usunięte z tego urządzenia.' })
       }
-      await rehydrateStudy()
+      await Promise.all([rehydrateStudy(), rehydrateProfile()])
     } catch {
       setMessage({ tone: 'error', text: 'Nie udało się zapisać danych. Spróbuj jeszcze raz.' })
     } finally {

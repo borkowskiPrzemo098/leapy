@@ -25,6 +25,7 @@ import { qualityFromGrade } from '@/engine/srs'
 import { Prose } from '@/features/content/Prose'
 import { activeMock, archiveMock, lastMock, mockPath, saveActiveMock } from '@/features/mock/store'
 import { TaskView } from '@/features/session/TaskView'
+import { ShareButton } from '@/features/share/ShareButton'
 import { recordReview } from '@/features/study/queries'
 import { progress } from '@/storage'
 import { Button, ButtonLink } from '@/ui/Button'
@@ -561,7 +562,17 @@ function MockResultView({ loaded }: { loaded: Loaded }) {
         </ol>
       </section>
 
-      <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+      <div className="mt-8">
+        <ShareButton
+          content={{
+            kicker: 'Egzamin próbny w Leapy',
+            value: `${result.points} z ${result.maxPoints} pkt`,
+            detail: title,
+            steps: Math.round((pct / 100) * 5),
+          }}
+        />
+      </div>
+      <div className="mt-3 flex flex-col gap-3 sm:flex-row">
         <ButtonLink to="/app/egzamin-probny" size="lg" block>
           Nowy arkusz
         </ButtonLink>

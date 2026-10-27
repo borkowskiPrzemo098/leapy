@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 import { CONTACT_EMAIL } from '@/lib/report'
 import { usePrefs, type TextScale } from '@/state/prefs'
 import { BackupPanel } from '@/features/backup/BackupPanel'
+import { GoalSettings, ReminderSettings } from '@/features/reminders/StudySettings'
 import { Segmented, Switch } from '@/ui/controls'
 import { Page } from '@/ui/Page'
 
@@ -65,6 +66,14 @@ export default function ProfilePage() {
             description="Wyłącza skoki, konfetti i przejścia między ekranami. Domyślnie Leapy słucha ustawień systemu."
           />
         </div>
+      </Group>
+
+      <Group title="Cele">
+        <GoalSettings />
+      </Group>
+
+      <Group title="Przypomnienia">
+        <ReminderSettings />
       </Group>
 
       <Group title="Twoje dane">

@@ -6,7 +6,6 @@ import { loadCatalog, subjectLabel } from '@/content/data'
 import type { Catalog } from '@/content/schema'
 import {
   activityByDay,
-  currentStreak,
   dailySeries,
   longestStreak,
   topicMastery,
@@ -14,6 +13,8 @@ import {
   type DayActivity,
   type TopicMastery,
 } from '@/engine/stats'
+import { streakWithFreezes } from '@/engine/gamify'
+import { BadgeGrid } from '@/features/gamify/BadgeGrid'
 import { ActivityCalendar, DailyBars } from '@/features/stats/charts'
 import { daysLabel, formatDate, formatDuration } from '@/features/stats/format'
 import { practiceCounts, type PracticeCounts } from '@/features/study/queries'
@@ -87,7 +88,7 @@ export default function ProgressPage() {
 function Stats({ data }: { data: Data }) {
   const { now, catalog, activity, mastery, mocks, counts } = data
   const days = new Set(activity.keys())
-  const streak = currentStreak(days, now)
+  const streak = streakWithFreezes(days, now).current
   const t = totals(activity)
 
   // Topic names and task counts from the catalog, keyed like mastery: "exam/subject/topic"
@@ -252,6 +253,8 @@ function Stats({ data }: { data: Data }) {
           </ul>
         </section>
       ))}
+
+      <BadgeGrid />
 
       {mocks.length > 0 && (
         <section aria-labelledby="mocks" className="mt-10">

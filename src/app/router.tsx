@@ -16,6 +16,7 @@ const SessionPage = lazy(() => import('@/routes/SessionPage'))
 const FlashcardsPage = lazy(() => import('@/routes/FlashcardsPage'))
 const MockSetupPage = lazy(() => import('@/routes/MockSetupPage'))
 const MockPage = lazy(() => import('@/routes/MockPage'))
+const OnboardingPage = lazy(() => import('@/routes/OnboardingPage'))
 const DesignSystemPage = lazy(() =>
   import('./DesignSystemPage').then((m) => ({ default: m.DesignSystemPage })),
 )
@@ -45,12 +46,19 @@ export const routes: RouteObject[] = [
     children: [
       { path: 'temat/:exam/:subject/:topic', element: <SessionPage mode="topic" /> },
       { path: 'szybka', element: <SessionPage mode="quick" /> },
+      { path: 'diagnoza', element: <SessionPage mode="quick" diagnostic /> },
       { path: 'powtorki', element: <SessionPage mode="review" /> },
       { path: 'bledy', element: <SessionPage mode="mistakes" /> },
       { path: 'fiszki', element: <FlashcardsPage /> },
       { path: 'fiszki/:exam/:subject/:topic', element: <FlashcardsPage /> },
       { path: 'probny/:exam/:subject', element: <MockPage /> },
     ],
+  },
+  {
+    // First run, full-screen like a session
+    path: '/app/witaj',
+    element: <SessionShell />,
+    children: [{ index: true, element: <OnboardingPage /> }],
   },
   { path: '/dev/ui', element: <DesignSystemPage /> },
   { path: '*', element: <Navigate to="/app" replace /> },

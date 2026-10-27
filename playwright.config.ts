@@ -7,7 +7,20 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
   reporter: process.env.CI ? 'github' : 'list',
-  use: { baseURL: 'http://localhost:4173', trace: 'retain-on-failure' },
+  use: {
+    baseURL: 'http://localhost:4173',
+    trace: 'retain-on-failure',
+    // Returning learner by default; tests/e2e/onboarding.spec.ts starts from a clean slate.
+    storageState: {
+      cookies: [],
+      origins: [
+        {
+          origin: 'http://localhost:4173',
+          localStorage: [{ name: 'leapy:onboarded', value: '1' }],
+        },
+      ],
+    },
+  },
   webServer: {
     command: 'npm run build && npm run preview -- --port 4173 --strictPort',
     url: 'http://localhost:4173',

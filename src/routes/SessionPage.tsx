@@ -25,6 +25,8 @@ import { dueTaskIds, mistakeTaskIds, recordReview, tasksByIds } from '@/features
 import { TaskView } from '@/features/session/TaskView'
 import { reportMailto } from '@/lib/report'
 import { useStudy, useStudyHydrated } from '@/state/study'
+import { NewBadges, XpGain } from '@/features/gamify/Rewards'
+import { ShareButton } from '@/features/share/ShareButton'
 import { progress } from '@/storage'
 import { Button, ButtonLink } from '@/ui/Button'
 import { IconButton } from '@/ui/controls'
@@ -33,6 +35,7 @@ import { ClimbArt, EmptyState, Page } from '@/ui/Page'
 import { ProgressBar } from '@/ui/progress'
 
 const SESSION_LENGTH = 10
+const DIAGNOSTIC_LENGTH = 5
 const REVIEW_LENGTH = 15
 
 interface Prepared {
@@ -47,13 +50,14 @@ async function prepare(
   mode: SessionMode,
   params: { exam?: string; subject?: string; topic?: string },
   study: { exam: string | null; subjects: string[] },
+  diagnostic = false,
 ): Promise<Prepared | null> {
   const seed = newSeed()
   const rand = rng(seed)
   let pool: CompiledTask[] = []
-  let title = 'Szybka sesja'
-  let scope = 'quick'
-  let backTo = '/app/cwicz'
+  let title = diagnostic ? 'Test na start' : 'Szybka sesja'
+  let scope = diagnostic ? 'diagnostic' : 'quick'
+  let backTo = diagnostic ? '/app' : '/app/cwicz'
 
   if (mode === 'topic') {
     const { exam = '', subject = '', topic = '' } = params
@@ -105,7 +109,7 @@ async function prepare(
     }
 
   const history = await progress().attempts()
-  const chosen = pickTasks(pool, history, SESSION_LENGTH, rand)
+  const chosen = pickTasks(pool, history, diagnostic ? DIAGNOSTIC_LENGTH : SESSION_LENGTH, rand)
   const session = startSession({
     id: crypto.randomUUID(),
     mode,
@@ -117,7 +121,14 @@ async function prepare(
   return { tasks: new Map(chosen.map((t) => [t.id, t])), session, title, backTo }
 }
 
-export default function SessionPage({ mode }: { mode: SessionMode }) {
+export default function SessionPage({
+  mode,
+  diagnostic = false,
+}: {
+  mode: SessionMode
+  /** First-run test: 5 tasks from the learner's subjects, back to Start */
+  diagnostic?: boolean
+}) {
   const params = useParams()
   const study = useStudy()
   const navigate = useNavigate()
@@ -133,7 +144,7 @@ export default function SessionPage({ mode }: { mode: SessionMode }) {
   useEffect(() => {
     if (mode === 'quick' && !hydrated) return
     let alive = true
-    prepare(mode, params, { exam: study.exam, subjects: study.subjects }).then(
+    prepare(mode, params, { exam: study.exam, subjects: study.subjects }, diagnostic).then(
       (p) => alive && setResult({ key, value: p }),
       (e: unknown) =>
         alive && setResult({ key, value: { error: e instanceof Error ? e.message : String(e) } }),
@@ -209,6 +220,8 @@ function Player({
   const [showHint, setShowHint] = useState(false)
   const [bookmarked, setBookmarked] = useState<Set<string>>(new Set())
   const [canSubmit, setCanSubmit] = useState(false)
+  // Rewards are computed from saved history, so the summary waits for the session write.
+  const [saved, setSaved] = useState(false)
   const draft = useRef<(() => void) | null>(null)
   const feedbackRef = useRef<HTMLDivElement>(null)
 
@@ -271,14 +284,16 @@ function Player({
     setShowHint(false)
     update(ns)
     if (isFinished(ns))
-      void progress().saveSession({
-        id: ns.id,
-        mode: ns.mode,
-        scope: ns.scope,
-        startedAt: ns.startedAt,
-        finishedAt: ns.finishedAt ?? Date.now(),
-        summary: summarize(ns),
-      })
+      void progress()
+        .saveSession({
+          id: ns.id,
+          mode: ns.mode,
+          scope: ns.scope,
+          startedAt: ns.startedAt,
+          finishedAt: ns.finishedAt ?? Date.now(),
+          summary: summarize(ns),
+        })
+        .then(() => setSaved(true))
     window.scrollTo({ top: 0 })
   }, [update])
 
@@ -325,7 +340,7 @@ function Player({
       </header>
 
       {summary ? (
-        <Summary prep={prep} summary={summary} onAgain={onAgain} />
+        <Summary prep={prep} summary={summary} onAgain={onAgain} saved={saved} />
       ) : task && item ? (
         <>
           <main id="main" className="mx-auto w-full max-w-2xl flex-1 px-4 pt-6 pb-64 sm:px-6">
@@ -454,10 +469,12 @@ function Summary({
   prep,
   summary,
   onAgain,
+  saved,
 }: {
   prep: Prepared
   summary: ReturnType<typeof summarize>
   onAgain: () => void
+  saved: boolean
 }) {
   const pct = Math.round(summary.accuracy * 100)
   const minutes = Math.max(1, Math.round(summary.ms / 60000))
@@ -477,6 +494,13 @@ function Summary({
           <ClimbArt steps={steps} done={done} onBrand />
         </div>
       </section>
+
+      {saved && (
+        <>
+          <XpGain sessionId={prep.session.id} />
+          <NewBadges />
+        </>
+      )}
 
       {summary.wrongTaskIds.length > 0 && (
         <section aria-labelledby="wrong" className="mt-6 rounded-2xl bg-surface p-5 shadow-sm">
@@ -511,6 +535,16 @@ function Summary({
         <ButtonLink to={prep.backTo} variant="secondary" size="lg" block>
           Wróć
         </ButtonLink>
+      </div>
+      <div className="mt-3">
+        <ShareButton
+          content={{
+            kicker: prep.title,
+            value: `${summary.correct} z ${summary.total}`,
+            detail: `${pct}% poprawnych odpowiedzi`,
+            steps: done,
+          }}
+        />
       </div>
       <p className="mt-6 text-center text-small text-ink-3">
         <Link to="/app/postepy">Zobacz postępy</Link>
