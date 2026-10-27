@@ -1,0 +1,78 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Funkcja $f$ jest określona wzorem $f(x)=2x^{2}-1$. Oblicz $f(-3)$.",
+      "answer": { "value": 17 },
+      "explanation": "1. $f(-3)=2\\cdot(-3)^{2}-1$.\n2. $(-3)^{2}=9$, więc $2\\cdot 9-1=17$.",
+      "verify": "2 * (-3)^2 - 1",
+      "tags": ["funkcje", "wartosc-funkcji"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Wyznacz miejsce zerowe funkcji $f(x)=3x-12$.",
+      "answer": { "value": 4 },
+      "explanation": "1. $3x-12=0$.\n2. $x=4$.",
+      "tags": ["funkcje", "miejsce-zerowe"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wykres funkcji $f(x)=x^{2}$ przesunięto o $3$ jednostki w prawo i o $2$ jednostki w górę. Otrzymano wykres funkcji",
+      "options": ["$y=(x-3)^{2}+2$", "$y=(x+3)^{2}+2$", "$y=(x-3)^{2}-2$", "$y=(x+2)^{2}-3$"],
+      "answer": 0,
+      "explanation": "Przesunięcie o wektor $[3,2]$: $y=f(x-3)+2=(x-3)^{2}+2$.\n\nTypowy błąd: $(x+3)^{2}$, czyli przesunięcie w lewo.",
+      "tags": ["funkcje", "przeksztalcenia"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Punkt przecięcia wykresu funkcji $f(x)=-2x+7$ z osią $Oy$ ma współrzędne",
+      "options": ["$(0,\\ 7)$", "$(7,\\ 0)$", "$(0,\\ -2)$", "$(3{,}5;\\ 0)$"],
+      "answer": 0,
+      "explanation": "Na osi $Oy$ jest $x=0$: $f(0)=7$. Punkt: $(0,7)$.",
+      "tags": ["funkcje"]
+    },
+    {
+      "id": "005",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Funkcja $f(x)=x^{2}-4$. Oceń prawdziwość zdań.",
+      "options": [
+        "Miejscami zerowymi funkcji są $-2$ i $2$.",
+        "Zbiorem wartości funkcji jest $\\mathbb{R}$.",
+        "$f(-1)=f(1)$."
+      ],
+      "answer": [true, false, true],
+      "explanation": "1. $x^{2}-4=0\\iff x=\\pm 2$. Prawda.\n2. $x^{2}\\ge 0$, więc $f(x)\\ge -4$; zbiór wartości to $[-4,\\infty)$. Fałsz.\n3. $f(-1)=1-4=-3=f(1)$. Prawda.",
+      "tags": ["funkcje", "zbior-wartosci"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Dziedziną funkcji $f(x)=\\sqrt{x-2}$ jest",
+      "options": ["$[2,\\ \\infty)$", "$(2,\\ \\infty)$", "$(-\\infty,\\ 2]$", "$\\mathbb{R}$"],
+      "answer": 0,
+      "explanation": "Pod pierwiastkiem stopnia parzystego musi być liczba nieujemna: $x-2\\ge 0$, czyli $x\\ge 2$.",
+      "tags": ["funkcje", "dziedzina"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wykres funkcji $y=f(x)$ odbito symetrycznie względem osi $Ox$. Otrzymano wykres funkcji",
+      "options": ["$y=-f(x)$", "$y=f(-x)$", "$y=-f(-x)$", "$y=f(x)-1$"],
+      "answer": 0,
+      "explanation": "Odbicie względem osi $Ox$ zmienia znak wartości: $y=-f(x)$. Odbicie względem osi $Oy$ to $y=f(-x)$.",
+      "tags": ["funkcje", "przeksztalcenia"]
+    }
+  ]
+}

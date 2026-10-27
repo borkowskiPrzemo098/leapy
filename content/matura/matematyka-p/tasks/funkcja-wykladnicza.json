@@ -1,0 +1,74 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Rozwiąż równanie $3^{x+1}=27$.",
+      "answer": { "value": 2 },
+      "explanation": "1. $27=3^{3}$.\n2. $3^{x+1}=3^{3}\\iff x+1=3$.\n3. $x=2$.",
+      "tags": ["funkcja-wykladnicza", "rownania-wykladnicze"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Wykres funkcji $f(x)=5^{x}$ przechodzi przez punkt",
+      "options": ["$(0,\\ 1)$", "$(1,\\ 0)$", "$(0,\\ 5)$", "$(0,\\ 0)$"],
+      "answer": 0,
+      "explanation": "$f(0)=5^{0}=1$. Każda funkcja $a^{x}$ przechodzi przez $(0,1)$.",
+      "tags": ["funkcja-wykladnicza"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Funkcja $f(x)=\\left(\\frac{2}{3}\\right)^{x}$ jest",
+      "options": ["malejąca", "rosnąca", "stała", "ani rosnąca, ani malejąca"],
+      "answer": 0,
+      "explanation": "Podstawa $\\frac{2}{3}$ jest między $0$ a $1$, więc funkcja jest malejąca.",
+      "tags": ["funkcja-wykladnicza", "monotonicznosc"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Zbiorem wartości funkcji $f(x)=2^{x}-3$ jest",
+      "options": ["$(-3,\\ \\infty)$", "$(0,\\ \\infty)$", "$[-3,\\ \\infty)$", "$\\mathbb{R}$"],
+      "answer": 0,
+      "explanation": "1. $2^{x}\\in(0,\\infty)$.\n2. Odejmujemy $3$: $2^{x}-3\\in(-3,\\infty)$.\n3. Wartość $-3$ nie jest osiągana, bo $2^{x}\\neq 0$.",
+      "tags": ["funkcja-wykladnicza", "zbior-wartosci"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Rozwiąż równanie $4^{x}=8$. Podaj wynik jako ułamek dziesiętny lub zwykły.",
+      "answer": { "value": "3/2" },
+      "hint": "Zapisz $4$ i $8$ jako potęgi dwójki.",
+      "explanation": "1. $4^{x}=(2^{2})^{x}=2^{2x}$, $8=2^{3}$.\n2. $2x=3$, $x=\\frac{3}{2}$.",
+      "tags": ["funkcja-wykladnicza", "rownania-wykladnicze"]
+    },
+    {
+      "id": "006",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań o funkcji $f(x)=3^{x}$.",
+      "options": ["Funkcja ma jedno miejsce zerowe.", "$f(-1)=\\frac{1}{3}$.", "$f(2)=2f(1)$."],
+      "answer": [false, true, false],
+      "explanation": "1. $3^{x}>0$ dla każdego $x$, brak miejsc zerowych. Fałsz.\n2. $3^{-1}=\\frac{1}{3}$. Prawda.\n3. $f(2)=9$, a $2f(1)=6$. Fałsz.",
+      "tags": ["funkcja-wykladnicza"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Liczba bakterii w hodowli podwaja się co godzinę. Na początku było ich $300$. Ile ich będzie po $5$ godzinach?",
+      "answer": { "value": 9600 },
+      "explanation": "1. Po $n$ godzinach: $300\\cdot 2^{n}$.\n2. $300\\cdot 2^{5}=300\\cdot 32=9600$.",
+      "verify": "300 * 2^5",
+      "tags": ["funkcja-wykladnicza", "zadania-tekstowe"]
+    }
+  ]
+}

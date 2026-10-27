@@ -1,0 +1,80 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Funkcja liniowa $f(x)=(m-3)x+2$ jest rosnąca dla",
+      "options": ["$m>3$", "$m<3$", "$m=3$", "$m>-3$"],
+      "answer": 0,
+      "explanation": "Funkcja liniowa rośnie, gdy współczynnik kierunkowy jest dodatni: $m-3>0$, czyli $m>3$.",
+      "tags": ["funkcja-liniowa", "monotonicznosc"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Prosta przechodzi przez punkty $A=(1,3)$ i $B=(3,7)$. Oblicz jej współczynnik kierunkowy $a$.",
+      "answer": { "value": 2 },
+      "explanation": "$a=\\frac{y_{B}-y_{A}}{x_{B}-x_{A}}=\\frac{7-3}{3-1}=\\frac{4}{2}=2$.",
+      "verify": "(7 - 3) / (3 - 1)",
+      "tags": ["funkcja-liniowa"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wykres funkcji $f(x)=2x-6$ przecina oś $Ox$ w punkcie",
+      "options": ["$(3,\\ 0)$", "$(0,\\ -6)$", "$(-3,\\ 0)$", "$(6,\\ 0)$"],
+      "answer": 0,
+      "explanation": "$2x-6=0\\iff x=3$. Punkt przecięcia z osią $Ox$: $(3,0)$.",
+      "tags": ["funkcja-liniowa", "miejsce-zerowe"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Prosta równoległa do prostej $y=-3x+5$ i przechodząca przez punkt $(0,2)$ ma równanie",
+      "options": ["$y=-3x+2$", "$y=3x+2$", "$y=\\frac{1}{3}x+2$", "$y=-3x+5$"],
+      "answer": 0,
+      "explanation": "Proste równoległe mają ten sam współczynnik kierunkowy $a=-3$. Przez $(0,2)$: $b=2$.",
+      "tags": ["funkcja-liniowa", "rownoleglosc"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Prosta prostopadła do prostej $y=2x-1$ ma współczynnik kierunkowy równy",
+      "options": ["$-\\frac{1}{2}$", "$\\frac{1}{2}$", "$-2$", "$2$"],
+      "answer": 0,
+      "explanation": "$a_{1}\\cdot a_{2}=-1$, więc $2\\cdot a_{2}=-1$, $a_{2}=-\\frac{1}{2}$.",
+      "verify": "-1 / 2",
+      "tags": ["funkcja-liniowa", "prostopadlosc"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Prosta przechodząca przez punkty $(1,3)$ i $(3,7)$ ma równanie",
+      "options": ["$y=2x+1$", "$y=2x+3$", "$y=\\frac{1}{2}x+\\frac{5}{2}$", "$y=4x-1$"],
+      "answer": 0,
+      "explanation": "1. $a=\\frac{7-3}{3-1}=2$.\n2. $3=2\\cdot 1+b$, więc $b=1$.\n3. $y=2x+1$. Sprawdzenie: $2\\cdot 3+1=7$.",
+      "tags": ["funkcja-liniowa"]
+    },
+    {
+      "id": "007",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Funkcja $f(x)=-\\frac{1}{2}x+4$. Oceń prawdziwość zdań.",
+      "options": [
+        "Funkcja jest malejąca.",
+        "Miejscem zerowym funkcji jest $8$.",
+        "Wykres przecina oś $Oy$ w punkcie $(0,-\\frac{1}{2})$."
+      ],
+      "answer": [true, true, false],
+      "explanation": "1. $a=-\\frac{1}{2}<0$. Prawda.\n2. $-\\frac{1}{2}x+4=0\\iff x=8$. Prawda.\n3. Oś $Oy$ przecina w $(0,b)=(0,4)$. Fałsz.",
+      "tags": ["funkcja-liniowa"]
+    }
+  ]
+}
