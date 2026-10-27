@@ -62,7 +62,9 @@
       "type": "numeric",
       "difficulty": 2,
       "prompt": "Rozwiąż równanie $\\dfrac{x-3}{x+1}=0$. Podaj rozwiązanie.",
-      "answer": { "value": 3 },
+      "answer": {
+        "value": 3
+      },
       "explanation": "1. Dziedzina: $x\\neq -1$.\n2. Ułamek jest równy zeru, gdy licznik jest zerem: $x-3=0$, $x=3$.\n3. $3$ należy do dziedziny.",
       "tags": ["wyrazenia-wymierne", "rownania"]
     },
@@ -86,7 +88,9 @@
       "type": "numeric",
       "difficulty": 3,
       "prompt": "Rozwiąż równanie $\\dfrac{2}{x}=\\dfrac{3}{x+1}$.",
-      "answer": { "value": 2 },
+      "answer": {
+        "value": 2
+      },
       "hint": "Pomnóż „na krzyż” i pamiętaj o dziedzinie.",
       "explanation": "1. Dziedzina: $x\\neq 0$, $x\\neq -1$.\n2. $2(x+1)=3x$.\n3. $2x+2=3x$, więc $x=2$.\n4. $2$ należy do dziedziny.",
       "tags": ["wyrazenia-wymierne", "rownania"]
@@ -96,7 +100,9 @@
       "type": "numeric",
       "difficulty": 2,
       "prompt": "Oblicz wartość wyrażenia $\\dfrac{x^{2}+x}{x}$ dla $x=7$.",
-      "answer": { "value": 8 },
+      "answer": {
+        "value": 8
+      },
       "explanation": "1. Dla $x\\neq 0$: $\\dfrac{x(x+1)}{x}=x+1$.\n2. Dla $x=7$: $8$.",
       "verify": "(7^2 + 7) / 7",
       "tags": ["wyrazenia-wymierne"]
@@ -114,6 +120,47 @@
       "answer": [true, false, true],
       "explanation": "1. $\\dfrac{x+2}{x}=\\dfrac{x}{x}+\\dfrac{2}{x}=1+\\dfrac{2}{x}$. Prawda.\n2. Skrócono składnik $x$, czego nie wolno; np. dla $x=1$ wynik to $3$. Fałsz.\n3. $x^{2}+1\\ge 1$, mianownik nigdy nie jest zerem. Prawda.",
       "tags": ["wyrazenia-wymierne"]
+    },
+    {
+      "id": "010",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Dla $x\\neq 0$ wyrażenie $\\dfrac{3}{x}\\cdot\\dfrac{x^{2}}{6}$ jest równe",
+      "options": ["$\\dfrac{x}{2}$", "$\\dfrac{x^{2}}{2}$", "$2x$", "$\\dfrac{1}{2x}$"],
+      "answer": 0,
+      "explanation": "$\\dfrac{3x^{2}}{6x}=\\dfrac{x}{2}$.",
+      "tags": ["wyrazenia-wymierne", "dzialania"]
+    },
+    {
+      "id": "011",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Dla $x\\neq 0$ i $x\\neq 1$ wyrażenie $\\dfrac{x-1}{x}:\\dfrac{x-1}{x^{2}}$ jest równe",
+      "options": ["$x$", "$\\dfrac{1}{x}$", "$x-1$", "$\\dfrac{(x-1)^{2}}{x^{3}}$"],
+      "answer": 0,
+      "explanation": "1. Dzielenie to mnożenie przez odwrotność: $\\dfrac{x-1}{x}\\cdot\\dfrac{x^{2}}{x-1}$.\n2. Po skróceniu: $x$.",
+      "tags": ["wyrazenia-wymierne", "dzialania"]
+    },
+    {
+      "id": "012",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Rozwiąż równanie $\\dfrac{x+3}{x-1}=2$.",
+      "answer": {
+        "value": 5
+      },
+      "explanation": "1. Dziedzina: $x\\neq 1$.\n2. $x+3=2(x-1)=2x-2$.\n3. $x=5$.",
+      "tags": ["wyrazenia-wymierne", "rownania"]
+    },
+    {
+      "id": "013",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Dla $x\\neq \\pm 3$ wyrażenie $\\dfrac{x^{2}-6x+9}{x^{2}-9}$ jest równe",
+      "options": ["$\\dfrac{x-3}{x+3}$", "$\\dfrac{x+3}{x-3}$", "$1$", "$\\dfrac{-6x}{-9}$"],
+      "answer": 0,
+      "explanation": "1. Licznik: $(x-3)^{2}$, mianownik: $(x-3)(x+3)$.\n2. Skracamy $(x-3)$: $\\dfrac{x-3}{x+3}$.",
+      "tags": ["wyrazenia-wymierne", "skracanie"]
     }
   ]
 }

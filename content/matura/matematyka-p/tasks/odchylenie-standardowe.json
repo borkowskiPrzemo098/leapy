@@ -1,0 +1,152 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wariancja danych $2, 4, 6$ jest równa",
+      "options": ["$\\frac{8}{3}$", "$4$", "$8$", "$\\frac{2}{3}$"],
+      "answer": 0,
+      "explanation": "1. Średnia: $4$.\n2. Kwadraty odchyleń: $4, 0, 4$.\n3. $\\sigma^{2}=\\frac{8}{3}$.",
+      "verify": "((2-4)^2 + (4-4)^2 + (6-4)^2) / 3",
+      "tags": ["statystyka", "wariancja"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz odchylenie standardowe danych $5, 5, 5, 5$.",
+      "answer": {
+        "value": 0
+      },
+      "explanation": "Wszystkie dane są równe średniej, nie ma rozrzutu: $\\sigma=0$.",
+      "tags": ["statystyka", "odchylenie"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz odchylenie standardowe danych $1, 3, 5, 7$. Podaj wynik z dokładnością do $0{,}01$.",
+      "answer": {
+        "value": 2.24,
+        "tolerance": 0.01
+      },
+      "explanation": "1. Średnia: $4$.\n2. Kwadraty odchyleń: $9, 1, 1, 9$, suma $20$.\n3. $\\sigma^{2}=5$, $\\sigma=\\sqrt{5}\\approx 2{,}24$.",
+      "verify": "sqrt(5)",
+      "tags": ["statystyka", "odchylenie"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Do każdej z danych dodano liczbę $10$. Odchylenie standardowe",
+      "options": ["nie zmieniło się", "wzrosło o $10$", "wzrosło $10$ razy", "zmalało o $10$"],
+      "answer": 0,
+      "explanation": "Średnia też wzrasta o $10$, więc odchylenia od średniej się nie zmieniają.",
+      "tags": ["statystyka", "odchylenie"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Wariancja pewnych danych jest równa $9$. Oblicz ich odchylenie standardowe.",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "$\\sigma=\\sqrt{9}=3$.",
+      "verify": "sqrt(9)",
+      "tags": ["statystyka", "odchylenie"]
+    },
+    {
+      "id": "006",
+      "type": "truefalse",
+      "difficulty": 3,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Suma odchyleń danych od ich średniej jest zawsze równa $0$.",
+        "Odchylenie standardowe może być liczbą ujemną.",
+        "Każdą daną pomnożono przez $2$. Odchylenie standardowe też wzrosło $2$ razy."
+      ],
+      "answer": [true, false, true],
+      "explanation": "1. Odchylenia dodatnie i ujemne się znoszą. Prawda.\n2. To pierwiastek z sumy kwadratów, nie jest ujemny. Fałsz.\n3. Wszystkie odchylenia rosną $2$ razy, więc i $\\sigma$. Prawda.",
+      "tags": ["statystyka"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz wariancję danych $3, 3, 5, 5$.",
+      "answer": {
+        "value": 1
+      },
+      "explanation": "1. Średnia: $4$.\n2. Kwadraty odchyleń: $1, 1, 1, 1$.\n3. $\\sigma^{2}=1$.",
+      "verify": "(1+1+1+1)/4",
+      "tags": ["statystyka", "wariancja"]
+    },
+    {
+      "id": "008",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Dwie klasy mają tę samą średnią ocen $4$. W klasie A odchylenie standardowe wynosi $0{,}5$, w klasie B $1{,}5$. Wynika z tego, że",
+      "options": [
+        "oceny w klasie A są bardziej skupione wokół średniej",
+        "klasa B ma lepsze oceny",
+        "klasa A ma więcej piątek",
+        "w klasie B nie ma ocen niedostatecznych"
+      ],
+      "answer": 0,
+      "explanation": "Mniejsze odchylenie standardowe oznacza mniejszy rozrzut wyników wokół średniej. O tym, kto ma lepsze oceny, ta miara nic nie mówi.",
+      "tags": ["statystyka", "odchylenie"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz odchylenie standardowe danych $2, 4, 4, 4, 5, 5, 7, 9$.",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "1. Średnia: $\\frac{40}{8}=5$.\n2. Kwadraty odchyleń: $9, 1, 1, 1, 0, 0, 4, 16$, suma $32$.\n3. $\\sigma^{2}=4$, $\\sigma=2$.",
+      "verify": "sqrt(32/8)",
+      "tags": ["statystyka", "odchylenie"]
+    },
+    {
+      "id": "010",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Średnia danych jest równa $3$, a średnia ich kwadratów $13$. Oblicz wariancję.",
+      "answer": {
+        "value": 4
+      },
+      "explanation": "$\\sigma^{2}=\\overline{x^{2}}-\\bar{x}^{2}=13-9=4$.",
+      "verify": "13 - 3^2",
+      "tags": ["statystyka", "wariancja"]
+    },
+    {
+      "id": "011",
+      "type": "ordering",
+      "difficulty": 2,
+      "prompt": "Ułóż kroki obliczania odchylenia standardowego w dobrej kolejności.",
+      "options": [
+        "oblicz średnią",
+        "odejmij średnią od każdej danej",
+        "podnieś różnice do kwadratu i oblicz ich średnią",
+        "wyciągnij pierwiastek"
+      ],
+      "answer": [0, 1, 2, 3],
+      "explanation": "Średnia → odchylenia → wariancja (średnia kwadratów odchyleń) → pierwiastek.",
+      "tags": ["statystyka", "odchylenie"]
+    },
+    {
+      "id": "012",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Odchylenie standardowe danych $10, 10, 10, 14$ jest",
+      "options": ["większe od $0$", "równe $0$", "ujemne", "równe $14$"],
+      "answer": 0,
+      "explanation": "Dane nie są wszystkie równe, więc jest rozrzut: $\\sigma>0$ (dokładnie $\\sqrt{3}$).",
+      "tags": ["statystyka", "odchylenie"]
+    }
+  ]
+}

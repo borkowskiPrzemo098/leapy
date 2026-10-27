@@ -1,0 +1,151 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Współczynnik kierunkowy prostej $2x+y-3=0$ jest równy",
+      "options": ["$-2$", "$2$", "$3$", "$-3$"],
+      "answer": 0,
+      "explanation": "$y=-2x+3$, więc $a=-2$.",
+      "verify": "-2",
+      "tags": ["prosta"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Prosta przechodząca przez punkt $P=(2,1)$ i prostopadła do prostej $y=\\frac{1}{2}x+4$ ma równanie",
+      "options": ["$y=-2x+5$", "$y=2x-3$", "$y=-\\frac{1}{2}x+2$", "$y=-2x+1$"],
+      "answer": 0,
+      "explanation": "1. $a=-2$ (bo $\\frac{1}{2}\\cdot(-2)=-1$).\n2. $y-1=-2(x-2)$, czyli $y=-2x+5$.",
+      "tags": ["prosta", "prostopadlosc"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Proste $y=x+1$ i $y=-x+5$ przecinają się w punkcie",
+      "options": ["$(2,\\ 3)$", "$(3,\\ 2)$", "$(1,\\ 2)$", "$(4,\\ 1)$"],
+      "answer": 0,
+      "explanation": "1. $x+1=-x+5$, $x=2$.\n2. $y=3$.",
+      "tags": ["prosta", "uklady-rownan"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Punkt $A=(3,\\ m)$ leży na prostej $y=2x-4$. Oblicz $m$.",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "$m=2\\cdot 3-4=2$.",
+      "verify": "2 * 3 - 4",
+      "tags": ["prosta"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Prosta równoległa do prostej $y=3x-7$ i przechodząca przez początek układu współrzędnych ma równanie",
+      "options": ["$y=3x$", "$y=-\\frac{1}{3}x$", "$y=3x-7$", "$y=-3x$"],
+      "answer": 0,
+      "explanation": "Ten sam współczynnik $a=3$ i $b=0$ (przez punkt $(0,0)$).",
+      "tags": ["prosta", "rownoleglosc"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Proste $y=(m-1)x+3$ i $y=2x-5$ są równoległe. Oblicz $m$.",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "$m-1=2$, więc $m=3$.",
+      "tags": ["prosta", "rownoleglosc"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Proste $y=mx+1$ i $y=4x-2$ są prostopadłe. Oblicz $m$.",
+      "answer": {
+        "value": -0.25
+      },
+      "explanation": "$4m=-1$, więc $m=-\\frac{1}{4}$.",
+      "verify": "-1 / 4",
+      "tags": ["prosta", "prostopadlosc"]
+    },
+    {
+      "id": "008",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Prosta $k$ ma równanie $y=-x+2$. Oceń prawdziwość zdań.",
+      "options": [
+        "Punkt $(1,1)$ leży na prostej $k$.",
+        "Prosta $k$ przecina oś $Ox$ w punkcie $(2,0)$.",
+        "Prosta $y=x$ jest prostopadła do $k$."
+      ],
+      "answer": [true, true, true],
+      "explanation": "1. $-1+2=1$. Prawda.\n2. $-x+2=0\\iff x=2$. Prawda.\n3. $(-1)\\cdot 1=-1$. Prawda.",
+      "tags": ["prosta"]
+    },
+    {
+      "id": "009",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Prosta przechodząca przez punkty $(0,3)$ i $(2,7)$ ma równanie",
+      "options": ["$y=2x+3$", "$y=3x+2$", "$y=4x+3$", "$y=2x+7$"],
+      "answer": 0,
+      "explanation": "1. $a=\\frac{7-3}{2-0}=2$.\n2. Przez $(0,3)$: $b=3$.",
+      "tags": ["prosta"]
+    },
+    {
+      "id": "010",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Prosta $y=-3x+6$ przecina oś $Ox$ w punkcie",
+      "options": ["$(2,\\ 0)$", "$(6,\\ 0)$", "$(0,\\ 6)$", "$(-2,\\ 0)$"],
+      "answer": 0,
+      "explanation": "$-3x+6=0\\iff x=2$.",
+      "tags": ["prosta"]
+    },
+    {
+      "id": "011",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz pole trójkąta ograniczonego osiami układu współrzędnych i prostą $y=-2x+4$.",
+      "answer": {
+        "value": 4
+      },
+      "explanation": "1. Przecięcia: z osią $Oy$ w $(0,4)$, z osią $Ox$ w $(2,0)$.\n2. Trójkąt prostokątny o przyprostokątnych $4$ i $2$: $P=\\frac{1}{2}\\cdot 4\\cdot 2=4$.",
+      "verify": "0.5 * 4 * 2",
+      "tags": ["prosta", "pole"]
+    },
+    {
+      "id": "012",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Prosta prostopadła do prostej $x+2y-4=0$ ma współczynnik kierunkowy równy",
+      "options": ["$2$", "$-2$", "$\\frac{1}{2}$", "$-\\frac{1}{2}$"],
+      "answer": 0,
+      "explanation": "1. $y=-\\frac{1}{2}x+2$, więc $a_{1}=-\\frac{1}{2}$.\n2. $a_{2}=-\\frac{1}{a_{1}}=2$.",
+      "verify": "2",
+      "tags": ["prosta", "prostopadlosc"]
+    },
+    {
+      "id": "013",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Proste $y=2x+1$ i $y=2x-3$ są równoległe.",
+        "Proste $y=3x$ i $y=-3x$ są prostopadłe."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Ten sam współczynnik $2$. Prawda.\n2. $3\\cdot(-3)=-9\\neq -1$. Fałsz.",
+      "tags": ["prosta"]
+    }
+  ]
+}

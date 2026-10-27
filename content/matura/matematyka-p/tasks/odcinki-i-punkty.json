@@ -1,0 +1,154 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz długość odcinka $AB$, gdzie $A=(1,2)$ i $B=(4,6)$.",
+      "answer": {
+        "value": 5
+      },
+      "explanation": "$|AB|=\\sqrt{(4-1)^{2}+(6-2)^{2}}=\\sqrt{9+16}=5$.",
+      "verify": "sqrt(3^2 + 4^2)",
+      "tags": ["geometria-analityczna", "odcinek"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Środkiem odcinka o końcach $A=(-2,5)$ i $B=(4,1)$ jest punkt",
+      "options": ["$(1,\\ 3)$", "$(3,\\ 2)$", "$(2,\\ 6)$", "$(-3,\\ 2)$"],
+      "answer": 0,
+      "explanation": "$\\left(\\frac{-2+4}{2},\\ \\frac{5+1}{2}\\right)=(1,3)$.",
+      "tags": ["geometria-analityczna", "srodek-odcinka"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Punkt $S=(2,3)$ jest środkiem odcinka $AB$, a $A=(0,1)$. Punkt $B$ ma współrzędne",
+      "options": ["$(4,\\ 5)$", "$(1,\\ 2)$", "$(2,\\ 2)$", "$(4,\\ 4)$"],
+      "answer": 0,
+      "explanation": "1. $\\frac{0+x_{B}}{2}=2\\Rightarrow x_{B}=4$.\n2. $\\frac{1+y_{B}}{2}=3\\Rightarrow y_{B}=5$.",
+      "tags": ["geometria-analityczna", "srodek-odcinka"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Środek i promień okręgu $(x+1)^{2}+(y-2)^{2}=9$ to",
+      "options": [
+        "$S=(-1,\\ 2),\\ r=3$",
+        "$S=(1,\\ -2),\\ r=3$",
+        "$S=(-1,\\ 2),\\ r=9$",
+        "$S=(1,\\ 2),\\ r=3$"
+      ],
+      "answer": 0,
+      "explanation": "1. $(x-(-1))^{2}+(y-2)^{2}=3^{2}$.\n2. Środek $(-1,2)$, promień $3$.",
+      "tags": ["geometria-analityczna", "okrag"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Równanie okręgu o środku $(3,-1)$ przechodzącego przez punkt $(0,3)$ to",
+      "options": [
+        "$(x-3)^{2}+(y+1)^{2}=25$",
+        "$(x+3)^{2}+(y-1)^{2}=25$",
+        "$(x-3)^{2}+(y+1)^{2}=5$",
+        "$(x-3)^{2}+(y-1)^{2}=25$"
+      ],
+      "answer": 0,
+      "explanation": "1. $r^{2}=(0-3)^{2}+(3+1)^{2}=9+16=25$.\n2. $(x-3)^{2}+(y+1)^{2}=25$.",
+      "tags": ["geometria-analityczna", "okrag"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Punkty $A=(1,1)$, $B=(5,1)$ i $C=(5,4)$ są wierzchołkami trójkąta. Oblicz jego obwód.",
+      "answer": {
+        "value": 12
+      },
+      "explanation": "1. $|AB|=4$, $|BC|=3$.\n2. $|AC|=\\sqrt{16+9}=5$.\n3. Obwód: $4+3+5=12$.",
+      "verify": "4 + 3 + sqrt(4^2 + 3^2)",
+      "tags": ["geometria-analityczna", "odcinek"]
+    },
+    {
+      "id": "007",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Dany jest okrąg $x^{2}+y^{2}=25$. Oceń prawdziwość zdań.",
+      "options": [
+        "Punkt $(3,4)$ leży na okręgu.",
+        "Punkt $(1,1)$ leży na zewnątrz okręgu.",
+        "Środkiem okręgu jest początek układu współrzędnych."
+      ],
+      "answer": [true, false, true],
+      "explanation": "1. $9+16=25$. Prawda.\n2. $1+1=2<25$: punkt jest wewnątrz. Fałsz.\n3. Brak przesunięć, środek $(0,0)$. Prawda.",
+      "tags": ["geometria-analityczna", "okrag"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz odległość punktu $A=(-3,4)$ od początku układu współrzędnych.",
+      "answer": {
+        "value": 5
+      },
+      "explanation": "$\\sqrt{9+16}=5$.",
+      "verify": "sqrt(9 + 16)",
+      "tags": ["geometria-analityczna", "odcinek"]
+    },
+    {
+      "id": "009",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Okrąg o środku $(2,-3)$ i promieniu $4$ ma równanie",
+      "options": [
+        "$(x-2)^{2}+(y+3)^{2}=16$",
+        "$(x+2)^{2}+(y-3)^{2}=16$",
+        "$(x-2)^{2}+(y+3)^{2}=4$",
+        "$(x-2)^{2}+(y-3)^{2}=16$"
+      ],
+      "answer": 0,
+      "explanation": "$(x-a)^{2}+(y-b)^{2}=r^{2}$ dla $a=2$, $b=-3$, $r=4$.",
+      "tags": ["geometria-analityczna", "okrag"]
+    },
+    {
+      "id": "010",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Punkty $A=(1,2)$ i $B=(7,10)$ są końcami średnicy okręgu. Oblicz promień tego okręgu.",
+      "answer": {
+        "value": 5
+      },
+      "explanation": "1. $|AB|=\\sqrt{36+64}=10$.\n2. $r=5$.",
+      "verify": "sqrt(6^2 + 8^2) / 2",
+      "tags": ["geometria-analityczna", "okrag"]
+    },
+    {
+      "id": "011",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Punkty $A=(0,0)$, $B=(4,0)$, $C=(4,3)$ i $D$ są wierzchołkami prostokąta $ABCD$. Punkt $D$ ma współrzędne",
+      "options": ["$(0,\\ 3)$", "$(3,\\ 0)$", "$(0,\\ 4)$", "$(4,\\ 4)$"],
+      "answer": 0,
+      "explanation": "Bok $AD$ jest równoległy i równy $BC$: $D=A+(C-B)=(0,3)$.",
+      "tags": ["geometria-analityczna"]
+    },
+    {
+      "id": "012",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Środek odcinka $AB$ to $S=(3,-1)$, a $B=(5,2)$. Oblicz sumę współrzędnych punktu $A$.",
+      "answer": {
+        "value": -3
+      },
+      "explanation": "1. $x_{A}=2\\cdot 3-5=1$, $y_{A}=2\\cdot(-1)-2=-4$.\n2. $1+(-4)=-3$.",
+      "verify": "(2*3 - 5) + (2*(-1) - 2)",
+      "tags": ["geometria-analityczna", "srodek-odcinka"]
+    }
+  ]
+}

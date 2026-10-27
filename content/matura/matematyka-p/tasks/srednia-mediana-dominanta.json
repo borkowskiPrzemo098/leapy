@@ -1,0 +1,159 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz średnią arytmetyczną liczb $2, 3, 4, 5, 5, 5$.",
+      "answer": {
+        "value": 4
+      },
+      "explanation": "$\\frac{2+3+4+5+5+5}{6}=\\frac{24}{6}=4$.",
+      "verify": "(2 + 3 + 4 + 5 + 5 + 5) / 6",
+      "tags": ["statystyka", "srednia"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Wyznacz medianę danych: $5, 2, 5, 3, 4, 5$.",
+      "answer": {
+        "value": 4.5
+      },
+      "explanation": "1. Porządkujemy: $2, 3, 4, 5, 5, 5$.\n2. Dwie środkowe: $4$ i $5$.\n3. Mediana: $4{,}5$.",
+      "verify": "(4 + 5) / 2",
+      "tags": ["statystyka", "mediana"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Wyznacz dominantę danych: $3, 7, 7, 2, 9, 7, 3$.",
+      "answer": {
+        "value": 7
+      },
+      "explanation": "$7$ występuje trzy razy, częściej niż inne wartości.",
+      "tags": ["statystyka", "dominanta"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Trzy osoby zdobyły po $4$ punkty, a dwie osoby po $9$ punktów. Oblicz średnią liczbę punktów.",
+      "answer": {
+        "value": 6
+      },
+      "explanation": "$\\frac{3\\cdot 4+2\\cdot 9}{5}=\\frac{30}{5}=6$.",
+      "verify": "(3 * 4 + 2 * 9) / 5",
+      "tags": ["statystyka", "srednia-wazona"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Średnia czterech liczb jest równa $6$. Po dopisaniu piątej liczby średnia wzrosła do $7$. Jaką liczbę dopisano?",
+      "answer": {
+        "value": 11
+      },
+      "explanation": "1. Suma czterech: $24$.\n2. Suma pięciu: $35$.\n3. Dopisano $35-24=11$.",
+      "verify": "5 * 7 - 4 * 6",
+      "tags": ["statystyka", "srednia"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Liczby $1, 3, x, 8, 10$ są uporządkowane rosnąco, a ich średnia jest równa $5{,}6$. Oblicz $x$.",
+      "answer": {
+        "value": 6
+      },
+      "explanation": "1. Suma: $5\\cdot 5{,}6=28$.\n2. $1+3+x+8+10=28$, więc $x=6$.",
+      "verify": "5 * 5.6 - 1 - 3 - 8 - 10",
+      "tags": ["statystyka", "srednia"]
+    },
+    {
+      "id": "007",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Dane: $1, 2, 3, 100$. Oceń prawdziwość zdań.",
+      "options": [
+        "Średnia jest równa $26{,}5$.",
+        "Mediana jest równa $2{,}5$.",
+        "Zestaw ma dominantę równą $100$."
+      ],
+      "answer": [true, true, false],
+      "explanation": "1. $\\frac{106}{4}=26{,}5$. Prawda.\n2. $\\frac{2+3}{2}=2{,}5$. Prawda.\n3. Każda wartość występuje raz, więc nie ma jednej najczęstszej. Fałsz.",
+      "tags": ["statystyka"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Wyznacz medianę danych: $8, 3, 5, 9, 1$.",
+      "answer": {
+        "value": 5
+      },
+      "explanation": "Po uporządkowaniu $1, 3, 5, 8, 9$ środkowa wartość to $5$.",
+      "tags": ["statystyka", "mediana"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Uczeń ma oceny: $5$ z wagą $3$, $4$ z wagą $2$ i $3$ z wagą $1$. Oblicz średnią ważoną z dokładnością do $0{,}01$.",
+      "answer": {
+        "value": 4.33,
+        "tolerance": 0.01
+      },
+      "explanation": "$\\frac{5\\cdot 3+4\\cdot 2+3\\cdot 1}{3+2+1}=\\frac{26}{6}\\approx 4{,}33$.",
+      "verify": "26 / 6",
+      "tags": ["statystyka", "srednia-wazona"]
+    },
+    {
+      "id": "010",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Średnia arytmetyczna liczb $x, 2x, 3x$ jest równa $8$. Wtedy $x$ jest równe",
+      "options": ["$4$", "$8$", "$2$", "$\\frac{8}{3}$"],
+      "answer": 0,
+      "explanation": "$\\frac{6x}{3}=2x=8$, więc $x=4$.",
+      "verify": "4",
+      "tags": ["statystyka", "srednia"]
+    },
+    {
+      "id": "011",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "W tabeli podano liczbę rodzeństwa uczniów: $0$ rodzeństwa: $4$ osoby, $1$: $10$ osób, $2$: $5$ osób, $3$: $1$ osoba. Oblicz średnią liczbę rodzeństwa.",
+      "answer": {
+        "value": 1.15
+      },
+      "explanation": "$\\frac{0\\cdot 4+1\\cdot 10+2\\cdot 5+3\\cdot 1}{20}=\\frac{23}{20}=1{,}15$.",
+      "verify": "23 / 20",
+      "tags": ["statystyka", "srednia-wazona"]
+    },
+    {
+      "id": "012",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Dla danych z tabeli: $0$ rodzeństwa: $4$ osoby, $1$: $10$ osób, $2$: $5$ osób, $3$: $1$ osoba, wyznacz medianę.",
+      "answer": {
+        "value": 1
+      },
+      "explanation": "1. $20$ danych, środkowe to $10.$ i $11.$ wartość.\n2. Pozycje $5$–$14$ mają wartość $1$.\n3. Mediana: $1$.",
+      "tags": ["statystyka", "mediana"]
+    },
+    {
+      "id": "013",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Wyznacz dominantę danych: $4, 4, 5, 6, 6, 6, 7$.",
+      "answer": {
+        "value": 6
+      },
+      "explanation": "$6$ występuje najczęściej (trzy razy).",
+      "tags": ["statystyka", "dominanta"]
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Ile różnych zestawów (koszulka + spodnie) można ułożyć z $3$ koszulek i $4$ par spodni?",
+      "answer": {
+        "value": 12
+      },
+      "explanation": "Reguła mnożenia: $3\\cdot 4=12$.",
+      "verify": "3 * 4",
+      "tags": ["kombinatoryka", "regula-mnozenia"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Na ile sposobów można ustawić $4$ osoby w kolejce?",
+      "answer": {
+        "value": 24
+      },
+      "explanation": "$4!=1\\cdot 2\\cdot 3\\cdot 4=24$.",
+      "verify": "factorial(4)",
+      "tags": ["kombinatoryka", "permutacje"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "W biegu startuje $8$ zawodników. Na ile sposobów można rozdzielić złoty, srebrny i brązowy medal?",
+      "answer": {
+        "value": 336
+      },
+      "explanation": "Kolejność ma znaczenie, bez powtórzeń: $8\\cdot 7\\cdot 6=336$.",
+      "verify": "8 * 7 * 6",
+      "tags": ["kombinatoryka", "wariacje"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Na ile sposobów można wybrać $2$ osoby do delegacji spośród $5$ osób?",
+      "answer": {
+        "value": 10
+      },
+      "explanation": "Kolejność nie ma znaczenia: $\\binom{5}{2}=\\frac{5\\cdot 4}{2}=10$.",
+      "verify": "combinations(5, 2)",
+      "tags": ["kombinatoryka", "kombinacje"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Ile jest różnych czterocyfrowych kodów PIN (cyfry mogą się powtarzać, kod może zaczynać się od $0$)?",
+      "answer": {
+        "value": 10000
+      },
+      "explanation": "Każda z $4$ pozycji ma $10$ możliwości: $10^{4}=10\\,000$.",
+      "verify": "10^4",
+      "tags": ["kombinatoryka", "wariacje-z-powtorzeniami"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ile jest liczb trzycyfrowych, w których wszystkie cyfry są różne?",
+      "answer": {
+        "value": 648
+      },
+      "hint": "Pierwsza cyfra nie może być zerem.",
+      "explanation": "1. Pierwsza cyfra: $9$ możliwości ($1$–$9$).\n2. Druga: $9$ (wszystkie poza pierwszą, łącznie z zerem).\n3. Trzecia: $8$.\n4. $9\\cdot 9\\cdot 8=648$.",
+      "verify": "9 * 9 * 8",
+      "tags": ["kombinatoryka", "regula-mnozenia"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ile jest liczb dwucyfrowych parzystych?",
+      "answer": {
+        "value": 45
+      },
+      "explanation": "1. Cyfra dziesiątek: $9$ możliwości.\n2. Cyfra jedności parzysta: $0, 2, 4, 6, 8$, czyli $5$.\n3. $9\\cdot 5=45$.",
+      "verify": "9 * 5",
+      "tags": ["kombinatoryka"]
+    },
+    {
+      "id": "008",
+      "type": "match",
+      "difficulty": 3,
+      "prompt": "Dopasuj sytuację do sposobu liczenia.",
+      "options": {
+        "left": [
+          "ustawienie $5$ książek na półce",
+          "wybór $3$ osób z $10$ do zespołu",
+          "kod z $3$ liter (litery mogą się powtarzać)"
+        ],
+        "right": ["permutacje", "kombinacje", "wariacje z powtórzeniami", "wariacje bez powtórzeń"]
+      },
+      "answer": [0, 1, 2],
+      "explanation": "1. Wszystkie elementy w kolejności: permutacje ($5!$).\n2. Kolejność nieważna: kombinacje ($\\binom{10}{3}$).\n3. Kolejność ważna, powtórzenia dozwolone: $n^{3}$.",
+      "tags": ["kombinatoryka"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Każdy z $6$ uczniów podał rękę każdemu innemu dokładnie raz. Ile było uścisków dłoni?",
+      "answer": {
+        "value": 15
+      },
+      "explanation": "Para osób bez kolejności: $\\binom{6}{2}=15$.",
+      "verify": "combinations(6, 2)",
+      "tags": ["kombinatoryka", "kombinacje"]
+    },
+    {
+      "id": "010",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Ile jest liczb trzycyfrowych zbudowanych tylko z cyfr $1$, $2$, $3$ (cyfry mogą się powtarzać)?",
+      "answer": {
+        "value": 27
+      },
+      "explanation": "$3^{3}=27$.",
+      "verify": "3^3",
+      "tags": ["kombinatoryka", "wariacje-z-powtorzeniami"]
+    },
+    {
+      "id": "011",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ile jest liczb czterocyfrowych podzielnych przez $5$?",
+      "answer": {
+        "value": 1800
+      },
+      "explanation": "1. Pierwsza cyfra: $9$, druga i trzecia: po $10$, ostatnia: $0$ lub $5$.\n2. $9\\cdot 10\\cdot 10\\cdot 2=1800$.",
+      "verify": "9 * 10 * 10 * 2",
+      "tags": ["kombinatoryka"]
+    },
+    {
+      "id": "012",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Na ile sposobów można wybrać przewodniczącego i zastępcę w klasie liczącej $25$ osób?",
+      "answer": {
+        "value": 600
+      },
+      "explanation": "Kolejność ma znaczenie (dwie różne funkcje): $25\\cdot 24=600$.",
+      "verify": "25 * 24",
+      "tags": ["kombinatoryka", "wariacje"]
+    },
+    {
+      "id": "013",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Liczba $\\binom{7}{2}$ jest równa",
+      "options": ["$21$", "$42$", "$14$", "$49$"],
+      "answer": 0,
+      "explanation": "$\\frac{7\\cdot 6}{2}=21$.",
+      "verify": "combinations(7, 2)",
+      "tags": ["kombinatoryka", "kombinacje"]
+    }
+  ]
+}

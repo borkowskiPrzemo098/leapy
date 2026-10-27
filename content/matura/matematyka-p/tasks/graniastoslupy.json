@@ -1,0 +1,99 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz objętość sześcianu o krawędzi $5$.",
+      "answer": {
+        "value": 125
+      },
+      "explanation": "$V=5^{3}=125$.",
+      "verify": "5^3",
+      "tags": ["stereometria", "objetosc"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Graniastosłup prawidłowy czworokątny ma krawędź podstawy $4$ i wysokość $10$. Oblicz jego pole powierzchni całkowitej.",
+      "answer": {
+        "value": 192
+      },
+      "explanation": "1. $P_{p}=16$, dwie podstawy: $32$.\n2. $P_{b}=4\\cdot 4\\cdot 10=160$.\n3. $P_{c}=192$.",
+      "verify": "2 * 16 + 4 * 4 * 10",
+      "tags": ["stereometria", "pole-powierzchni"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Prostopadłościan ma wymiary $3\\times 4\\times 12$. Oblicz długość jego przekątnej.",
+      "answer": {
+        "value": 13
+      },
+      "explanation": "$d=\\sqrt{9+16+144}=\\sqrt{169}=13$.",
+      "verify": "sqrt(3^2 + 4^2 + 12^2)",
+      "tags": ["stereometria", "przekatna"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przekątna sześcianu o krawędzi $a$ ma długość",
+      "options": ["$a\\sqrt{3}$", "$a\\sqrt{2}$", "$3a$", "$2a$"],
+      "answer": 0,
+      "explanation": "$d=\\sqrt{a^{2}+a^{2}+a^{2}}=a\\sqrt{3}$. Wartość $a\\sqrt{2}$ to przekątna ściany.",
+      "tags": ["stereometria", "przekatna"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Pole powierzchni całkowitej sześcianu jest równe $54$. Oblicz jego objętość.",
+      "answer": {
+        "value": 27
+      },
+      "explanation": "1. $6a^{2}=54$, $a=3$.\n2. $V=27$.",
+      "verify": "3^3",
+      "tags": ["stereometria"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Graniastosłup prawidłowy trójkątny ma krawędź podstawy $6$ i wysokość $5$. Jego objętość jest równa",
+      "options": ["$45\\sqrt{3}$", "$90\\sqrt{3}$", "$15\\sqrt{3}$", "$180$"],
+      "answer": 0,
+      "explanation": "1. $P_{p}=\\frac{36\\sqrt{3}}{4}=9\\sqrt{3}$.\n2. $V=9\\sqrt{3}\\cdot 5=45\\sqrt{3}$.",
+      "verify": "36 * sqrt(3) / 4 * 5",
+      "tags": ["stereometria", "objetosc"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Akwarium ma kształt prostopadłościanu o wymiarach $50$ cm $\\times$ $30$ cm $\\times$ $40$ cm. Ile litrów wody mieści? ($1$ litr $=1000\\ \\text{cm}^{3}$)",
+      "answer": {
+        "value": 60,
+        "unit": "l"
+      },
+      "explanation": "1. $V=50\\cdot 30\\cdot 40=60\\,000\\ \\text{cm}^{3}$.\n2. $60\\,000:1000=60$ litrów.",
+      "verify": "50 * 30 * 40 / 1000",
+      "tags": ["stereometria", "zadania-tekstowe"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz pole powierzchni całkowitej prostopadłościanu o wymiarach $2\\times 3\\times 4$.",
+      "answer": {
+        "value": 52
+      },
+      "explanation": "$2(2\\cdot 3+2\\cdot 4+3\\cdot 4)=2\\cdot 26=52$.",
+      "verify": "2 * (6 + 8 + 12)",
+      "tags": ["stereometria", "pole-powierzchni"]
+    }
+  ]
+}

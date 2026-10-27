@@ -1,0 +1,112 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Objętość walca o promieniu podstawy $3$ i wysokości $5$ jest równa",
+      "options": ["$45\\pi$", "$15\\pi$", "$30\\pi$", "$75\\pi$"],
+      "answer": 0,
+      "explanation": "$V=\\pi\\cdot 3^{2}\\cdot 5=45\\pi$.",
+      "verify": "pi * 9 * 5",
+      "tags": ["stereometria", "walec"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Stożek ma promień podstawy $3$ i wysokość $4$. Jego objętość jest równa",
+      "options": ["$12\\pi$", "$36\\pi$", "$15\\pi$", "$4\\pi$"],
+      "answer": 0,
+      "explanation": "$V=\\frac{1}{3}\\pi\\cdot 9\\cdot 4=12\\pi$.",
+      "verify": "pi * 9 * 4 / 3",
+      "tags": ["stereometria", "stozek"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Stożek ma promień podstawy $6$ i wysokość $8$. Oblicz długość jego tworzącej.",
+      "answer": {
+        "value": 10
+      },
+      "explanation": "$l=\\sqrt{36+64}=10$.",
+      "verify": "sqrt(6^2 + 8^2)",
+      "tags": ["stereometria", "stozek"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Pole powierzchni kuli o promieniu $3$ jest równe",
+      "options": ["$36\\pi$", "$12\\pi$", "$9\\pi$", "$108\\pi$"],
+      "answer": 0,
+      "explanation": "$P=4\\pi\\cdot 9=36\\pi$.",
+      "verify": "4 * pi * 9",
+      "tags": ["stereometria", "kula"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Objętość kuli o średnicy $6$ jest równa",
+      "options": ["$36\\pi$", "$288\\pi$", "$12\\pi$", "$72\\pi$"],
+      "answer": 0,
+      "explanation": "1. $r=3$.\n2. $V=\\frac{4}{3}\\pi\\cdot 27=36\\pi$.\n\nTypowy błąd: $288\\pi$, czyli $r=6$ zamiast $3$.",
+      "verify": "4 / 3 * pi * 27",
+      "tags": ["stereometria", "kula"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Prostokąt o wymiarach $4\\times 2$ obrócono wokół dłuższego boku. Pole powierzchni bocznej otrzymanego walca jest równe",
+      "options": ["$16\\pi$", "$8\\pi$", "$32\\pi$", "$24\\pi$"],
+      "answer": 0,
+      "explanation": "1. Oś obrotu to bok $4$, więc $H=4$, $r=2$.\n2. $P_{b}=2\\pi\\cdot 2\\cdot 4=16\\pi$.",
+      "verify": "2 * pi * 2 * 4",
+      "tags": ["stereometria", "walec"]
+    },
+    {
+      "id": "007",
+      "type": "match",
+      "difficulty": 2,
+      "prompt": "Dopasuj bryłę do wzoru na objętość.",
+      "options": {
+        "left": ["walec", "stożek", "kula"],
+        "right": [
+          "$\\pi r^{2}H$",
+          "$\\frac{1}{3}\\pi r^{2}H$",
+          "$\\frac{4}{3}\\pi r^{3}$",
+          "$4\\pi r^{2}$"
+        ]
+      },
+      "answer": [0, 1, 2],
+      "explanation": "$4\\pi r^{2}$ to pole powierzchni kuli, nie objętość.",
+      "tags": ["stereometria"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Walec i stożek mają te same podstawy i wysokości. Objętość walca jest równa $30\\pi$. Oblicz objętość stożka i podaj ją jako wielokrotność $\\pi$ (wpisz samą liczbę przy $\\pi$).",
+      "answer": {
+        "value": 10
+      },
+      "explanation": "Stożek ma objętość $\\frac{1}{3}$ walca o tej samej podstawie i wysokości: $10\\pi$.",
+      "tags": ["stereometria"]
+    },
+    {
+      "id": "009",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Stożek ma promień podstawy $3$ i tworzącą $5$. Pole jego powierzchni bocznej jest równe",
+      "options": ["$15\\pi$", "$24\\pi$", "$9\\pi$", "$30\\pi$"],
+      "answer": 0,
+      "explanation": "$P_{b}=\\pi rl=15\\pi$.",
+      "verify": "pi * 3 * 5",
+      "tags": ["stereometria", "stozek"]
+    }
+  ]
+}

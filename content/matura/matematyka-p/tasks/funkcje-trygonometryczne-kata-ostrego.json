@@ -28,7 +28,9 @@
       "type": "numeric",
       "difficulty": 2,
       "prompt": "Przeciwprostokątna trójkąta prostokątnego ma długość $10$, a jeden z kątów ostrych ma miarę $30^\\circ$. Oblicz długość przyprostokątnej leżącej naprzeciw tego kąta.",
-      "answer": { "value": 5 },
+      "answer": {
+        "value": 5
+      },
       "explanation": "$a=c\\cdot\\sin 30^\\circ=10\\cdot\\frac{1}{2}=5$.",
       "verify": "10 * sin(pi / 6)",
       "tags": ["trygonometria"]
@@ -59,7 +61,10 @@
       "type": "numeric",
       "difficulty": 3,
       "prompt": "Drabina o długości $4$ m opiera się o ścianę i tworzy z ziemią kąt $60^\\circ$. W jakiej odległości od ściany (w m) stoi dolny koniec drabiny?",
-      "answer": { "value": 2, "unit": "m" },
+      "answer": {
+        "value": 2,
+        "unit": "m"
+      },
       "explanation": "1. Odległość od ściany to przyprostokątna przy kącie $60^\\circ$.\n2. $4\\cdot\\cos 60^\\circ=4\\cdot\\frac{1}{2}=2$ m.",
       "verify": "4 * cos(pi / 3)",
       "tags": ["trygonometria", "zadania-tekstowe"]
@@ -107,7 +112,9 @@
       "type": "numeric",
       "difficulty": 3,
       "prompt": "W trójkącie prostokątnym przyprostokątna przy kącie $\\alpha$ ma długość $6$, a $\\operatorname{tg}\\alpha=\\frac{4}{3}$. Oblicz długość przeciwprostokątnej.",
-      "answer": { "value": 10 },
+      "answer": {
+        "value": 10
+      },
       "explanation": "1. Przyprostokątna naprzeciw: $6\\cdot\\frac{4}{3}=8$.\n2. Przeciwprostokątna: $\\sqrt{36+64}=10$.",
       "verify": "sqrt(6^2 + 8^2)",
       "tags": ["trygonometria"]
@@ -122,6 +129,46 @@
       "explanation": "1. Trójkąt o przyprostokątnej $5$ i przeciwprostokątnej $13$ ma drugą przyprostokątną $\\sqrt{169-25}=12$.\n2. $\\sin\\alpha=\\frac{12}{13}$.",
       "verify": "sqrt(1 - (5/13)^2)",
       "tags": ["trygonometria"]
+    },
+    {
+      "id": "011",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Kąt $\\alpha$ jest ostry i $\\sin\\alpha=\\cos\\alpha$. Wtedy",
+      "options": [
+        "$\\alpha=45^\\circ$",
+        "$\\alpha=30^\\circ$",
+        "$\\alpha=60^\\circ$",
+        "taki kąt nie istnieje"
+      ],
+      "answer": 0,
+      "explanation": "Przyprostokątne są równe tylko w trójkącie prostokątnym równoramiennym, czyli dla $45^\\circ$.",
+      "tags": ["trygonometria"]
+    },
+    {
+      "id": "012",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Z punktu odległego o $20$ m od podstawy wieży widać jej szczyt pod kątem $60^\\circ$. Oblicz wysokość wieży z dokładnością do $0{,}1$ m.",
+      "answer": {
+        "value": 34.6,
+        "tolerance": 0.05,
+        "unit": "m"
+      },
+      "explanation": "1. $\\operatorname{tg}60^\\circ=\\frac{h}{20}$.\n2. $h=20\\sqrt{3}\\approx 34{,}6$ m.",
+      "verify": "20 * sqrt(3)",
+      "tags": ["trygonometria", "zadania-tekstowe"]
+    },
+    {
+      "id": "013",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wartość wyrażenia $\\operatorname{tg}30^\\circ\\cdot\\operatorname{tg}60^\\circ$ jest równa",
+      "options": ["$1$", "$\\sqrt{3}$", "$\\frac{1}{3}$", "$3$"],
+      "answer": 0,
+      "explanation": "$\\frac{\\sqrt{3}}{3}\\cdot\\sqrt{3}=\\frac{3}{3}=1$.",
+      "verify": "tan(pi/6) * tan(pi/3)",
+      "tags": ["trygonometria", "wartosci"]
     }
   ]
 }

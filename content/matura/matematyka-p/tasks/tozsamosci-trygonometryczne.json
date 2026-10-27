@@ -28,7 +28,9 @@
       "type": "numeric",
       "difficulty": 1,
       "prompt": "Oblicz wartość wyrażenia $\\sin^{2}37^\\circ+\\cos^{2}37^\\circ$.",
-      "answer": { "value": 1 },
+      "answer": {
+        "value": 1
+      },
       "explanation": "Jedynka trygonometryczna działa dla każdego kąta: wynik to $1$.",
       "tags": ["trygonometria", "jedynka"]
     },
@@ -97,7 +99,9 @@
       "type": "numeric",
       "difficulty": 3,
       "prompt": "Kąt $\\alpha$ jest ostry i $\\sin\\alpha\\cdot\\cos\\alpha=\\frac{1}{4}$. Oblicz $(\\sin\\alpha+\\cos\\alpha)^{2}$.",
-      "answer": { "value": 1.5 },
+      "answer": {
+        "value": 1.5
+      },
       "explanation": "$(\\sin\\alpha+\\cos\\alpha)^{2}=1+2\\sin\\alpha\\cos\\alpha=1+\\frac{1}{2}=\\frac{3}{2}$.",
       "verify": "1 + 2 * (1/4)",
       "tags": ["trygonometria", "jedynka"]
@@ -115,6 +119,49 @@
       ],
       "answer": [0, 1, 2, 3],
       "explanation": "Jedynka trygonometryczna, pierwiastek (dodatni dla kąta ostrego), potem iloraz $\\frac{\\sin\\alpha}{\\cos\\alpha}=\\frac{5/13}{12/13}=\\frac{5}{12}$.",
+      "tags": ["trygonometria"]
+    },
+    {
+      "id": "010",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Kąt $\\alpha$ jest ostry i $\\cos\\alpha=\\frac{\\sqrt{3}}{2}$. Wtedy $\\sin\\alpha$ jest równy",
+      "options": [
+        "$\\frac{1}{2}$",
+        "$\\frac{\\sqrt{2}}{2}$",
+        "$\\frac{\\sqrt{3}}{2}$",
+        "$\\frac{1}{4}$"
+      ],
+      "answer": 0,
+      "explanation": "$\\sin^{2}\\alpha=1-\\frac{3}{4}=\\frac{1}{4}$, więc $\\sin\\alpha=\\frac{1}{2}$ (to kąt $30^\\circ$).",
+      "verify": "sqrt(1 - 3/4)",
+      "tags": ["trygonometria", "jedynka"]
+    },
+    {
+      "id": "011",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Wyrażenie $\\sin\\alpha\\cdot\\operatorname{tg}\\alpha+\\cos\\alpha$ (dla kąta ostrego $\\alpha$) jest równe",
+      "options": [
+        "$\\frac{1}{\\cos\\alpha}$",
+        "$1$",
+        "$\\sin\\alpha$",
+        "$\\frac{1}{\\sin\\alpha}$"
+      ],
+      "answer": 0,
+      "explanation": "1. $\\sin\\alpha\\cdot\\frac{\\sin\\alpha}{\\cos\\alpha}+\\cos\\alpha=\\frac{\\sin^{2}\\alpha+\\cos^{2}\\alpha}{\\cos\\alpha}$.\n2. $=\\frac{1}{\\cos\\alpha}$.",
+      "tags": ["trygonometria", "jedynka"]
+    },
+    {
+      "id": "012",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Kąt $\\alpha$ jest ostry i $\\operatorname{tg}\\alpha=\\frac{3}{4}$. Oblicz $\\sin\\alpha+\\cos\\alpha$.",
+      "answer": {
+        "value": 1.4
+      },
+      "explanation": "1. Trójkąt o przyprostokątnych $3$ i $4$ ma przeciwprostokątną $5$.\n2. $\\sin\\alpha=\\frac{3}{5}$, $\\cos\\alpha=\\frac{4}{5}$.\n3. Suma: $\\frac{7}{5}=1{,}4$.",
+      "verify": "3/5 + 4/5",
       "tags": ["trygonometria"]
     }
   ]
