@@ -1,0 +1,78 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Który tytuł najlepiej pasuje do artykułu o śnie i telefonach?",
+      "options": [
+        "Is Your Phone Stealing Your Sleep?",
+        "Article about phones",
+        "My essay",
+        "Dear readers"
+      ],
+      "answer": 0,
+      "explanation": "Tytuł ma przyciągnąć uwagę — pytanie dobrze to robi.",
+      "tags": ["artykul"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Który wstęp jest najbardziej angażujący?",
+      "options": [
+        "Have you ever checked your messages at midnight and then lain awake for hours?",
+        "In this article I will write about sleep.",
+        "Sleep is a thing.",
+        "Phones exist."
+      ],
+      "answer": 0,
+      "explanation": "Pytanie do czytelnika wciąga w temat.",
+      "tags": ["artykul"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Artykuł różni się od listu tym, że",
+      "options": [
+        "ma tytuł i nie zaczyna się od zwrotu do adresata",
+        "zawsze jest formalny",
+        "nie może zawierać pytań",
+        "musi kończyć się podpisem"
+      ],
+      "answer": 0,
+      "explanation": "Artykuł ma tytuł, list ma formułę powitalną i podpis.",
+      "tags": ["artykul"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Które zakończenie pasuje do artykułu?",
+      "options": [
+        "So tonight, try leaving your phone in another room. Your body will thank you.",
+        "Yours faithfully, Anna",
+        "I look forward to hearing from you.",
+        "Dear Sir or Madam,"
+      ],
+      "answer": 0,
+      "explanation": "Rada dla czytelnika domyka artykuł.",
+      "tags": ["artykul"]
+    },
+    {
+      "id": "005",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań o artykule.",
+      "options": [
+        "W artykule można zwracać się bezpośrednio do czytelnika.",
+        "Artykuł nie potrzebuje tytułu."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Prawda.\n2. Tytuł jest obowiązkowym elementem. Fałsz.",
+      "tags": ["artykul"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

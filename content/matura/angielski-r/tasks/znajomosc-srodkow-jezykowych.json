@@ -1,0 +1,55 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*___ the bad weather, we went for a walk.*",
+      "options": ["Despite", "Although", "However", "Even"],
+      "answer": 0,
+      "explanation": "Po luce rzeczownik: *Despite*.",
+      "tags": ["srodki-jezykowe"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*It was ___ an interesting lecture that nobody left early.*",
+      "options": ["such", "so", "very", "too"],
+      "answer": 0,
+      "explanation": "*such + a/an + przymiotnik + rzeczownik*.",
+      "tags": ["srodki-jezykowe"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*The man ___ car was stolen called the police.*",
+      "options": ["whose", "who", "which", "whom"],
+      "answer": 0,
+      "explanation": "Przynależność: *whose*.",
+      "tags": ["srodki-jezykowe", "zaimki-wzgledne"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*She is used ___ up early.*",
+      "options": ["to getting", "to get", "getting", "get"],
+      "answer": 0,
+      "explanation": "*be used to + -ing* — być przyzwyczajonym.",
+      "tags": ["srodki-jezykowe"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*Hardly ___ the house when it started to rain.*",
+      "options": ["had I left", "I had left", "did I leave", "I left"],
+      "answer": 0,
+      "explanation": "*Hardly had + podmiot + III forma … when*.",
+      "tags": ["srodki-jezykowe", "inwersja"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

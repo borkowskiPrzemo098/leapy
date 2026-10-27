@@ -1,0 +1,54 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "short",
+      "difficulty": 3,
+      "prompt": "Uzupełnij, zachowując sens: *It's a pity I can't drive.* → *I wish I ___ drive.* (jedno słowo)",
+      "answer": ["could"],
+      "explanation": "*wish + could* o teraźniejszości.",
+      "tags": ["transformacje", "wish"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*I last saw her two years ago.* → *I ___ her for two years.*",
+      "options": ["haven't seen", "didn't see", "don't see", "hadn't saw"],
+      "answer": 0,
+      "explanation": "*haven't seen … for*.",
+      "tags": ["transformacje", "present-perfect"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*It wasn't necessary to buy bread, but I did.* → *I ___ bread.*",
+      "options": ["needn't have bought", "didn't need buy", "mustn't have bought", "needn't buy"],
+      "answer": 0,
+      "explanation": "Zrobiłem coś niepotrzebnie: *needn't have + III forma*.",
+      "tags": ["transformacje", "modalne"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*Perhaps he forgot about the meeting.* → *He ___ about the meeting.*",
+      "options": ["may have forgotten", "may forget", "must forget", "can have forgot"],
+      "answer": 0,
+      "explanation": "Przypuszczenie o przeszłości: *may/might have + III forma*.",
+      "tags": ["transformacje", "modalne"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*They are building a new hospital.* → *A new hospital ___.*",
+      "options": ["is being built", "is built", "has built", "builds"],
+      "answer": 0,
+      "explanation": "Strona bierna Present Continuous.",
+      "tags": ["transformacje", "passive"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

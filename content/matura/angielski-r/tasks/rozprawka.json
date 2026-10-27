@@ -1,0 +1,75 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Który zwrot najlepiej rozpoczyna formalną rozprawkę?",
+      "options": [
+        "It is often argued that…",
+        "Hey, let's talk about…",
+        "So, basically…",
+        "You know what?"
+      ],
+      "answer": 0,
+      "explanation": "Formalny, neutralny wstęp.",
+      "tags": ["rozprawka", "styl"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które wyrażenie wprowadza kontrargument?",
+      "options": ["On the other hand,", "Moreover,", "Firstly,", "In addition,"],
+      "answer": 0,
+      "explanation": "*On the other hand* — z drugiej strony.",
+      "tags": ["rozprawka", "spojnosc"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które zdanie jest zgodne ze stylem rozprawki?",
+      "options": [
+        "Many people do not agree with this view.",
+        "Lots of people don't agree, like, at all.",
+        "Loads of folks disagree.",
+        "People don't wanna agree."
+      ],
+      "answer": 0,
+      "explanation": "Bez skrótów i potocyzmów.",
+      "tags": ["rozprawka", "styl"]
+    },
+    {
+      "id": "004",
+      "type": "ordering",
+      "difficulty": 2,
+      "prompt": "Ułóż części rozprawki *for and against*.",
+      "options": [
+        "wstęp z przedstawieniem problemu",
+        "argumenty za",
+        "argumenty przeciw",
+        "zakończenie z opinią"
+      ],
+      "answer": [0, 1, 2, 3],
+      "explanation": "Klasyczny układ rozprawki za i przeciw.",
+      "tags": ["rozprawka", "kompozycja"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Czym jest *topic sentence*?",
+      "options": [
+        "zdaniem otwierającym akapit, które podaje jego główną myśl",
+        "tytułem rozprawki",
+        "ostatnim zdaniem tekstu",
+        "cytatem z autorytetu"
+      ],
+      "answer": 0,
+      "explanation": "Zdanie tematyczne zapowiada treść akapitu.",
+      "tags": ["rozprawka", "kompozycja"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

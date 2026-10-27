@@ -1,0 +1,75 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*The storm ___ a lot of damage to the houses.*",
+      "options": ["did", "made", "took", "gave"],
+      "answer": 0,
+      "explanation": "Kolokacja: *do damage*.",
+      "tags": ["kolokacje"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*Could you ___ me a favour and post this letter?*",
+      "options": ["do", "make", "give", "take"],
+      "answer": 0,
+      "explanation": "*do someone a favour*.",
+      "tags": ["kolokacje"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*There was ___ traffic, so we were late.*",
+      "options": ["heavy", "strong", "big", "hard"],
+      "answer": 0,
+      "explanation": "*heavy traffic*.",
+      "tags": ["kolokacje"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*The campaign aims to ___ awareness of climate change.*",
+      "options": ["raise", "rise", "grow", "lift up"],
+      "answer": 0,
+      "explanation": "*raise awareness*; *rise* jest nieprzechodnie.",
+      "tags": ["kolokacje"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*We worked all night to ___ the deadline.*",
+      "options": ["meet", "reach up", "catch", "make up"],
+      "answer": 0,
+      "explanation": "*meet a deadline* — zdążyć na czas.",
+      "tags": ["kolokacje"]
+    },
+    {
+      "id": "006",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** poprawne kolokacje.",
+      "options": ["make a decision", "do a decision", "take a risk", "make a photo"],
+      "answer": [0, 2],
+      "explanation": "*make a decision*, *take a risk*; poprawnie *take a photo*.",
+      "tags": ["kolokacje"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*Students are expected to ___ attention during lectures.*",
+      "options": ["pay", "give", "make", "put"],
+      "answer": 0,
+      "explanation": "*pay attention*.",
+      "tags": ["kolokacje"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

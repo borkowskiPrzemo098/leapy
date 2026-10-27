@@ -1,0 +1,69 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "short",
+      "difficulty": 2,
+      "prompt": "Uzupełnij formą słowa z nawiasu: *The ___ of the city has doubled since 1990. (populate)*",
+      "answer": ["population"],
+      "explanation": "Po *The* i przed *of* — rzeczownik: *population*.",
+      "tags": ["slowotworstwo"]
+    },
+    {
+      "id": "002",
+      "type": "short",
+      "difficulty": 2,
+      "prompt": "Uzupełnij formą słowa z nawiasu: *It was ___ of him to leave without saying goodbye. (polite)*",
+      "answer": ["impolite"],
+      "explanation": "Negatywna ocena: *impolite*.",
+      "tags": ["slowotworstwo"]
+    },
+    {
+      "id": "003",
+      "type": "short",
+      "difficulty": 3,
+      "prompt": "Uzupełnij formą słowa z nawiasu: *Her first attempt was ___, but she tried again. (success)*",
+      "answer": ["unsuccessful"],
+      "explanation": "Przymiotnik przeczący: *unsuccessful*.",
+      "tags": ["slowotworstwo"]
+    },
+    {
+      "id": "004",
+      "type": "short",
+      "difficulty": 3,
+      "prompt": "Uzupełnij formą słowa z nawiasu: *Parking here is ___. You will get a fine. (legal)*",
+      "answer": ["illegal"],
+      "explanation": "*il-* przed *l*: *illegal*.",
+      "tags": ["slowotworstwo"]
+    },
+    {
+      "id": "005",
+      "type": "short",
+      "difficulty": 2,
+      "prompt": "Uzupełnij formą słowa z nawiasu: *She answered the question ___. (careful)*",
+      "answer": ["carefully"],
+      "explanation": "Przysłówek: *carefully*.",
+      "tags": ["slowotworstwo"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Które słowo jest rzeczownikiem od *decide*?",
+      "options": ["decision", "decisive", "decided", "decidement"],
+      "answer": 0,
+      "explanation": "*decide – decision – decisive*.",
+      "tags": ["slowotworstwo"]
+    },
+    {
+      "id": "007",
+      "type": "short",
+      "difficulty": 3,
+      "prompt": "Uzupełnij formą słowa z nawiasu: *There have been many ___ in medicine recently. (improve)*",
+      "answer": ["improvements"],
+      "explanation": "Rzeczownik w liczbie mnogiej po *many*: *improvements*.",
+      "tags": ["slowotworstwo"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

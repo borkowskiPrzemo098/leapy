@@ -1,0 +1,55 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*I ___ for you for over an hour! Where have you been?*",
+      "options": ["have been waiting", "am waiting", "waited", "had waited"],
+      "answer": 0,
+      "explanation": "Trwanie do teraz z naciskiem na czas: Present Perfect Continuous.",
+      "tags": ["gramatyka", "aspekty"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*When I got to the station, the train ___. I had to wait an hour for the next one.*",
+      "options": ["had left", "left", "has left", "was leaving"],
+      "answer": 0,
+      "explanation": "Odjazd wcześniejszy niż przyjście: Past Perfect.",
+      "tags": ["gramatyka", "past-perfect"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*By the end of June, I ___ all my exams.*",
+      "options": ["will have finished", "will finish", "finish", "am finishing"],
+      "answer": 0,
+      "explanation": "Zakończone przed momentem w przyszłości: Future Perfect.",
+      "tags": ["gramatyka", "future-perfect"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*Your eyes are red. ___?*",
+      "options": ["Have you been crying", "Did you cry", "Are you crying since", "Had you cried"],
+      "answer": 0,
+      "explanation": "Widoczny skutek niedawnej, trwającej czynności.",
+      "tags": ["gramatyka", "aspekty"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*She was tired because she ___ all day.*",
+      "options": ["had been working", "has been working", "was worked", "works"],
+      "answer": 0,
+      "explanation": "Trwanie przed przeszłym momentem: Past Perfect Continuous.",
+      "tags": ["gramatyka", "aspekty"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

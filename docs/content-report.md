@@ -2,9 +2,9 @@
 
 Wygenerowano: 2026-10-27 (`npm run content:build`).
 
-- Zadania: **739** (zweryfikowane przez człowieka: 0, czekają: 739)
+- Zadania: **817** (zweryfikowane przez człowieka: 0, czekają: 817)
 - Sprawdzone automatycznie (`verify`): 242
-- Typy: ordering 14, single 406, multi 24, truefalse 48, match 14, short 11, numeric 222
+- Typy: ordering 15, single 471, multi 25, truefalse 51, match 15, short 18, numeric 222
 - Błędy: 0, ostrzeżenia: 0
 
 Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
@@ -211,24 +211,24 @@ Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
 |  | Znajomość środków językowych | 7 | tak |
 |  | Wypowiedź pisemna: e-mail | 7 | tak |
 
-### Język angielski (rozszerzony): 0 zadań
+### Język angielski (rozszerzony): 78 zadań
 
 | Dział | Temat | Zadania | Lekcja |
 | --- | --- | ---: | :---: |
-| Słownictwo zaawansowane (0 ⚠) | Kolokacje | 0 | — |
-|  | Phrasal verbs | 0 | — |
-|  | Słowotwórstwo | 0 | — |
-|  | Idiomy i wyrażenia | 0 | — |
-| Gramatyka zaawansowana (0 ⚠) | Czasy i aspekty | 0 | — |
-|  | Inwersja | 0 | — |
-|  | Zdania warunkowe mieszane | 0 | — |
-|  | Konstrukcje bezosobowe | 0 | — |
-|  | Transformacje zdań | 0 | — |
-| Umiejętności (0 ⚠) | Rozumienie tekstów pisanych | 0 | — |
-|  | Znajomość środków językowych | 0 | — |
-|  | Rozprawka | 0 | — |
-|  | Artykuł publicystyczny | 0 | — |
-|  | List formalny | 0 | — |
+| Słownictwo zaawansowane (28) | Kolokacje | 7 | tak |
+|  | Phrasal verbs | 7 | tak |
+|  | Słowotwórstwo | 7 | tak |
+|  | Idiomy i wyrażenia | 7 | tak |
+| Gramatyka zaawansowana (25) | Czasy i aspekty | 5 | tak |
+|  | Inwersja | 5 | tak |
+|  | Zdania warunkowe mieszane | 5 | tak |
+|  | Konstrukcje bezosobowe | 5 | tak |
+|  | Transformacje zdań | 5 | tak |
+| Umiejętności (25) | Rozumienie tekstów pisanych | 5 | tak |
+|  | Znajomość środków językowych | 5 | tak |
+|  | Rozprawka | 5 | tak |
+|  | Artykuł publicystyczny | 5 | tak |
+|  | List formalny | 5 | tak |
 
 ## Do weryfikacji przez człowieka
 
@@ -237,6 +237,10 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `e8.angielski.znajomosc-srodkow-jezykowych.004` (short, trudność 3)
 - `matura.angielski-p.znajomosc-srodkow-jezykowych.002` (short, trudność 3)
 - `matura.angielski-p.znajomosc-srodkow-jezykowych.003` (short, trudność 3)
+- `matura.angielski-r.slowotworstwo.003` (short, trudność 3)
+- `matura.angielski-r.slowotworstwo.004` (short, trudność 3)
+- `matura.angielski-r.slowotworstwo.007` (short, trudność 3)
+- `matura.angielski-r.transformacje-zdan.001` (short, trudność 3)
 - `e8.polski.slowotworstwo.004` (short, trudność 2)
 - `e8.matematyka.wyrazenia-algebraiczne.007` (short, trudność 2)
 - `e8.angielski.czlowiek.002` (short, trudność 2)
@@ -244,6 +248,9 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.potegi-i-pierwiastki.008` (short, trudność 2)
 - `matura.matematyka-p.procenty.008` (short, trudność 2)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.012` (short, trudność 2)
+- `matura.angielski-r.slowotworstwo.001` (short, trudność 2)
+- `matura.angielski-r.slowotworstwo.002` (short, trudność 2)
+- `matura.angielski-r.slowotworstwo.005` (short, trudność 2)
 - `matura.matematyka-p.logarytmy.009` (short, trudność 1)
 - `e8.polski.charakterystyka.005` (single, trudność 3)
 - `e8.polski.elementy-swiata-przedstawionego.005` (single, trudność 3)
@@ -335,6 +342,47 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.angielski-p.znajomosc-funkcji-jezykowych.006` (single, trudność 3)
 - `matura.angielski-p.znajomosc-srodkow-jezykowych.005` (single, trudność 3)
 - `matura.angielski-p.znajomosc-srodkow-jezykowych.007` (single, trudność 3)
+- `matura.angielski-r.artykul-publicystyczny.004` (single, trudność 3)
+- `matura.angielski-r.czasy-i-aspekty.002` (single, trudność 3)
+- `matura.angielski-r.czasy-i-aspekty.003` (single, trudność 3)
+- `matura.angielski-r.czasy-i-aspekty.004` (single, trudność 3)
+- `matura.angielski-r.czasy-i-aspekty.005` (single, trudność 3)
+- `matura.angielski-r.idiomy-i-wyrazenia.003` (single, trudność 3)
+- `matura.angielski-r.idiomy-i-wyrazenia.005` (single, trudność 3)
+- `matura.angielski-r.idiomy-i-wyrazenia.007` (truefalse, trudność 3)
+- `matura.angielski-r.inwersja.001` (single, trudność 3)
+- `matura.angielski-r.inwersja.002` (single, trudność 3)
+- `matura.angielski-r.inwersja.003` (single, trudność 3)
+- `matura.angielski-r.inwersja.004` (single, trudność 3)
+- `matura.angielski-r.inwersja.005` (single, trudność 3)
+- `matura.angielski-r.kolokacje.004` (single, trudność 3)
+- `matura.angielski-r.kolokacje.005` (single, trudność 3)
+- `matura.angielski-r.konstrukcje-bezosobowe.001` (single, trudność 3)
+- `matura.angielski-r.konstrukcje-bezosobowe.002` (single, trudność 3)
+- `matura.angielski-r.konstrukcje-bezosobowe.003` (single, trudność 3)
+- `matura.angielski-r.konstrukcje-bezosobowe.004` (single, trudność 3)
+- `matura.angielski-r.list-formalny.005` (single, trudność 3)
+- `matura.angielski-r.phrasal-verbs.004` (single, trudność 3)
+- `matura.angielski-r.phrasal-verbs.005` (single, trudność 3)
+- `matura.angielski-r.phrasal-verbs.006` (match, trudność 3)
+- `matura.angielski-r.rozprawka.005` (single, trudność 3)
+- `matura.angielski-r.rozumienie-tekstow-pisanych.001` (single, trudność 3)
+- `matura.angielski-r.rozumienie-tekstow-pisanych.002` (single, trudność 3)
+- `matura.angielski-r.rozumienie-tekstow-pisanych.003` (single, trudność 3)
+- `matura.angielski-r.rozumienie-tekstow-pisanych.004` (truefalse, trudność 3)
+- `matura.angielski-r.rozumienie-tekstow-pisanych.005` (single, trudność 3)
+- `matura.angielski-r.slowotworstwo.006` (single, trudność 3)
+- `matura.angielski-r.transformacje-zdan.002` (single, trudność 3)
+- `matura.angielski-r.transformacje-zdan.003` (single, trudność 3)
+- `matura.angielski-r.transformacje-zdan.004` (single, trudność 3)
+- `matura.angielski-r.transformacje-zdan.005` (single, trudność 3)
+- `matura.angielski-r.zdania-warunkowe-mieszane.001` (single, trudność 3)
+- `matura.angielski-r.zdania-warunkowe-mieszane.002` (single, trudność 3)
+- `matura.angielski-r.zdania-warunkowe-mieszane.003` (single, trudność 3)
+- `matura.angielski-r.zdania-warunkowe-mieszane.004` (single, trudność 3)
+- `matura.angielski-r.znajomosc-srodkow-jezykowych.003` (single, trudność 3)
+- `matura.angielski-r.znajomosc-srodkow-jezykowych.004` (single, trudność 3)
+- `matura.angielski-r.znajomosc-srodkow-jezykowych.005` (single, trudność 3)
 - `e8.polski.charakterystyka.002` (single, trudność 2)
 - `e8.polski.charakterystyka.003` (multi, trudność 2)
 - `e8.polski.charakterystyka.004` (single, trudność 2)
@@ -386,51 +434,3 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `e8.polski.srodki-stylistyczne.003` (single, trudność 2)
 - `e8.polski.srodki-stylistyczne.004` (multi, trudność 2)
 - `e8.polski.srodki-stylistyczne.006` (match, trudność 2)
-- `e8.polski.tekst-literacki.002` (multi, trudność 2)
-- `e8.polski.tekst-literacki.003` (single, trudność 2)
-- `e8.polski.tekst-literacki.004` (single, trudność 2)
-- `e8.polski.tekst-literacki.005` (truefalse, trudność 2)
-- `e8.polski.tekst-literacki.008` (single, trudność 2)
-- `e8.polski.tekst-literacki.009` (single, trudność 2)
-- `e8.polski.tekst-literacki.011` (single, trudność 2)
-- `e8.polski.tekst-literacki.012` (truefalse, trudność 2)
-- `e8.polski.tekst-poetycki.003` (single, trudność 2)
-- `e8.polski.tekst-poetycki.004` (single, trudność 2)
-- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.002` (single, trudność 2)
-- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.003` (single, trudność 2)
-- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.004` (multi, trudność 2)
-- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.005` (single, trudność 2)
-- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.007` (single, trudność 2)
-- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.008` (truefalse, trudność 2)
-- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.009` (single, trudność 2)
-- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.012` (single, trudność 2)
-- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.013` (single, trudność 2)
-- `e8.polski.zdanie-zlozone.002` (single, trudność 2)
-- `e8.polski.zdanie-zlozone.003` (numeric, trudność 2)
-- `e8.matematyka.graniastoslupy.006` (single, trudność 2)
-- `e8.matematyka.graniastoslupy.007` (single, trudność 2)
-- `e8.matematyka.graniastoslupy.011` (truefalse, trudność 2)
-- `e8.matematyka.katy-i-trojkaty.004` (single, trudność 2)
-- `e8.matematyka.katy-i-trojkaty.005` (truefalse, trudność 2)
-- `e8.matematyka.liczby-wymierne.003` (single, trudność 2)
-- `e8.matematyka.odczytywanie-danych-i-diagramy.004` (single, trudność 2)
-- `e8.matematyka.odczytywanie-danych-i-diagramy.005` (single, trudność 2)
-- `e8.matematyka.odczytywanie-danych-i-diagramy.009` (truefalse, trudność 2)
-- `e8.matematyka.okrag-i-kolo.005` (numeric, trudność 2)
-- `e8.matematyka.ostroslupy.003` (single, trudność 2)
-- `e8.matematyka.ostroslupy.006` (single, trudność 2)
-- `e8.matematyka.ostroslupy.009` (single, trudność 2)
-- `e8.matematyka.ostroslupy.010` (numeric, trudność 2)
-- `e8.matematyka.ostroslupy.012` (truefalse, trudność 2)
-- `e8.matematyka.pierwiastki.002` (single, trudność 2)
-- `e8.matematyka.pierwiastki.005` (truefalse, trudność 2)
-- `e8.matematyka.potegi.002` (single, trudność 2)
-- `e8.matematyka.potegi.004` (single, trudność 2)
-- `e8.matematyka.prawdopodobienstwo.008` (truefalse, trudność 2)
-- `e8.matematyka.predkosc-droga-czas.008` (single, trudność 2)
-- `e8.matematyka.predkosc-droga-czas.011` (single, trudność 2)
-- `e8.matematyka.predkosc-droga-czas.013` (truefalse, trudność 2)
-- `e8.matematyka.procenty.004` (single, trudność 2)
-- `e8.matematyka.proporcjonalnosc.004` (numeric, trudność 2)
-- `e8.matematyka.proporcjonalnosc.005` (single, trudność 2)
-- `e8.matematyka.proporcjonalnosc.008` (truefalse, trudność 2)

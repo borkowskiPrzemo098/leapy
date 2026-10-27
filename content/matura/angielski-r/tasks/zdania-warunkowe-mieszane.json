@@ -1,0 +1,55 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*If I had studied medicine, I ___ a doctor now.*",
+      "options": ["would be", "would have been", "will be", "am"],
+      "answer": 0,
+      "explanation": "Przeszły warunek, obecny skutek: *would + bezokolicznik*.",
+      "tags": ["gramatyka", "conditionals"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*If she weren't so shy, she ___ at yesterday's meeting.*",
+      "options": ["would have spoken", "would speak", "had spoken", "spoke"],
+      "answer": 0,
+      "explanation": "Stała cecha teraz, skutek w przeszłości: *would have + III forma*.",
+      "tags": ["gramatyka", "conditionals"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*___ I known about the problem, I would have helped.*",
+      "options": ["Had", "If", "Have", "Should"],
+      "answer": 0,
+      "explanation": "Inwersja zamiast *If I had known*.",
+      "tags": ["gramatyka", "inwersja"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*___ you need any help, do not hesitate to call.*",
+      "options": ["Should", "Would", "Had", "Were"],
+      "answer": 0,
+      "explanation": "Formalne *Should you…* = *If you…*.",
+      "tags": ["gramatyka", "inwersja"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*You can borrow my car ___ you drive carefully.*",
+      "options": ["provided that", "unless", "otherwise", "in case of"],
+      "answer": 0,
+      "explanation": "*provided that* — pod warunkiem, że.",
+      "tags": ["gramatyka", "conditionals"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

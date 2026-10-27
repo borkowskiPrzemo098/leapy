@@ -1,0 +1,88 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*The test was a piece of cake.* To znaczy, że test był",
+      "options": ["bardzo łatwy", "bardzo trudny", "długi", "nudny"],
+      "answer": 0,
+      "explanation": "*a piece of cake* — bułka z masłem.",
+      "tags": ["idiomy"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*I'm feeling a bit under the weather today.* To znaczy, że",
+      "options": [
+        "czuję się trochę chory",
+        "jest mi zimno",
+        "lubię deszcz",
+        "jestem bardzo szczęśliwy"
+      ],
+      "answer": 0,
+      "explanation": "*under the weather* — nie w formie.",
+      "tags": ["idiomy"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*My uncle visits us once in a blue moon.* Wujek odwiedza nas",
+      "options": ["bardzo rzadko", "co miesiąc", "każdej nocy", "w każdą pełnię"],
+      "answer": 0,
+      "explanation": "*once in a blue moon* — bardzo rzadko.",
+      "tags": ["idiomy"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*He told a joke to ___ the ice.*",
+      "options": ["break", "melt", "crack", "cut"],
+      "answer": 0,
+      "explanation": "*break the ice* — przełamać lody.",
+      "tags": ["idiomy"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*That new phone costs ___.*",
+      "options": [
+        "an arm and a leg",
+        "a hand and a foot",
+        "a head and shoulders",
+        "a leg and a toe"
+      ],
+      "answer": 0,
+      "explanation": "*cost an arm and a leg* — kosztować fortunę.",
+      "tags": ["idiomy"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*Exams start next week, so it's time to ___.*",
+      "options": ["hit the books", "hit the road", "hit the roof", "hit the sack"],
+      "answer": 0,
+      "explanation": "*hit the books* — zabrać się do nauki. *hit the sack* — iść spać.",
+      "tags": ["idiomy"]
+    },
+    {
+      "id": "007",
+      "type": "truefalse",
+      "difficulty": 3,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Idiomy pasują do każdego listu formalnego.",
+        "Znaczenie idiomu często da się odgadnąć z kontekstu."
+      ],
+      "answer": [false, true],
+      "explanation": "1. W liście formalnym idiomy są zbyt potoczne. Fałsz.\n2. Prawda.",
+      "tags": ["idiomy", "styl"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,68 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj zdanie.\n\n> Of course, nothing could possibly go wrong with a plan made in five minutes.\n\nJaki jest ton wypowiedzi?",
+      "options": ["ironiczny", "entuzjastyczny", "neutralny", "nostalgiczny"],
+      "answer": 0,
+      "explanation": "Autor mówi odwrotnie, niż myśli: uważa plan za nieprzemyślany.",
+      "tags": ["czytanie", "ton"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj fragment.\n\n> Cats and dogs are the most popular pets. The former are more independent, while the latter need more attention.\n\n*The latter* odnosi się do",
+      "options": ["psów", "kotów", "właścicieli", "zwierząt w ogóle"],
+      "answer": 0,
+      "explanation": "*the former* — pierwsze wymienione (koty), *the latter* — drugie (psy).",
+      "tags": ["czytanie", "odwolania"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj fragment.\n\n> Although the city has invested heavily in public transport, many residents still prefer their cars, mainly because buses rarely run on time.\n\nGłówny powód wyboru samochodu to",
+      "options": [
+        "niepunktualność autobusów",
+        "niska cena paliwa",
+        "brak inwestycji w transport",
+        "wygoda parkowania"
+      ],
+      "answer": 0,
+      "explanation": "*mainly because buses rarely run on time*.",
+      "tags": ["czytanie"]
+    },
+    {
+      "id": "004",
+      "type": "truefalse",
+      "difficulty": 3,
+      "prompt": "Przeczytaj fragment.\n\n> Although the city has invested heavily in public transport, many residents still prefer their cars, mainly because buses rarely run on time.\n\nOceń prawdziwość zdań.",
+      "options": [
+        "The city has not spent money on public transport.",
+        "Some residents prefer cars despite the investment."
+      ],
+      "answer": [false, true],
+      "explanation": "1. *invested heavily*. Fałsz.\n2. *Although … still prefer*. Prawda.",
+      "tags": ["czytanie"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj fragment.\n\n> Critics praised the director's bold vision; audiences, however, were left confused by the non-linear plot.\n\nKtóre zdanie jest zgodne z tekstem?",
+      "options": [
+        "Krytycy i widzowie ocenili film różnie.",
+        "Widzowie byli zachwyceni fabułą.",
+        "Krytycy skrytykowali reżysera.",
+        "Fabuła była prosta i chronologiczna."
+      ],
+      "answer": 0,
+      "explanation": "*however* — kontrast między krytykami a widzami.",
+      "tags": ["czytanie"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

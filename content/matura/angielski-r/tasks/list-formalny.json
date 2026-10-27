@@ -1,0 +1,70 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Zaczynasz list od *Dear Sir or Madam*. Jak go kończysz?",
+      "options": ["Yours faithfully,", "Yours sincerely,", "Love,", "Cheers,"],
+      "answer": 0,
+      "explanation": "Po nieznanym adresacie: *Yours faithfully*.",
+      "tags": ["list-formalny"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które zdanie dobrze określa cel listu?",
+      "options": [
+        "I am writing to complain about the service I received.",
+        "I want to say something.",
+        "Hi, it's me again.",
+        "This is a letter."
+      ],
+      "answer": 0,
+      "explanation": "Jasny cel w pierwszym akapicie.",
+      "tags": ["list-formalny"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Formalna wersja zdania *I want you to give me my money back* to",
+      "options": [
+        "I would be grateful if you could refund my money.",
+        "Give my money back, please.",
+        "I wanna get my money back.",
+        "Money back now!"
+      ],
+      "answer": 0,
+      "explanation": "Uprzejma, formalna prośba.",
+      "tags": ["list-formalny", "styl"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Zaczynasz list od *Dear Mr Brown*. Jak go kończysz?",
+      "options": ["Yours sincerely,", "Yours faithfully,", "Best wishes, mate,", "See ya,"],
+      "answer": 0,
+      "explanation": "Po nazwisku adresata: *Yours sincerely*.",
+      "tags": ["list-formalny"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Które zdanie jest typową formułą przed podpisem?",
+      "options": [
+        "I look forward to hearing from you.",
+        "Write back soon!",
+        "Can't wait to see you!",
+        "Bye for now!"
+      ],
+      "answer": 0,
+      "explanation": "Formalna formuła końcowa.",
+      "tags": ["list-formalny"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

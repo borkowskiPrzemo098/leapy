@@ -1,0 +1,65 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*It is said ___ he is the richest man in town.*",
+      "options": ["that", "to", "what", "him"],
+      "answer": 0,
+      "explanation": "*It is said that…*",
+      "tags": ["gramatyka", "bezosobowe"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*He is said ___ the richest man in town.*",
+      "options": ["to be", "that he is", "being", "be"],
+      "answer": 0,
+      "explanation": "*Subject + is said + to + bezokolicznik*.",
+      "tags": ["gramatyka", "bezosobowe"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*The painting is believed ___ in 1990.*",
+      "options": ["to have been stolen", "to steal", "stolen", "to be stealing"],
+      "answer": 0,
+      "explanation": "Czynność przeszła w stronie biernej: *to have been + III forma*.",
+      "tags": ["gramatyka", "bezosobowe"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*The two companies are reported ___ a merger at the moment.*",
+      "options": [
+        "to be negotiating",
+        "to negotiate yesterday",
+        "negotiating",
+        "that they negotiate"
+      ],
+      "answer": 0,
+      "explanation": "Czynność w toku: *to be + -ing*.",
+      "tags": ["gramatyka", "bezosobowe"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które zdanie jest poprawne?",
+      "options": [
+        "It is thought that she moved abroad.",
+        "She is thought that she moved abroad.",
+        "It is thought she to move abroad.",
+        "She thought to be moved abroad."
+      ],
+      "answer": 0,
+      "explanation": "Konstrukcja *It is thought that…*",
+      "tags": ["gramatyka", "bezosobowe"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

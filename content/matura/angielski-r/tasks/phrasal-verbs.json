@@ -1,0 +1,78 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*We've ___ milk. Can you buy some?*",
+      "options": ["run out of", "run into", "run over", "run away with"],
+      "answer": 0,
+      "explanation": "*run out of* — skończyć się.",
+      "tags": ["phrasal-verbs"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*She ___ the job offer because the salary was too low.*",
+      "options": ["turned down", "turned up", "turned over", "turned into"],
+      "answer": 0,
+      "explanation": "*turn down* — odrzucić.",
+      "tags": ["phrasal-verbs"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*The music is too loud. Could you turn ___?*",
+      "options": ["it down", "down it", "it off down", "down"],
+      "answer": 0,
+      "explanation": "Z zaimkiem czasownik rozdzielny się rozdziela: *turn it down*.",
+      "tags": ["phrasal-verbs", "szyk"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*I can't ___ his rude behaviour any longer.*",
+      "options": ["put up with", "put off", "put out", "put on"],
+      "answer": 0,
+      "explanation": "*put up with* — znosić, tolerować.",
+      "tags": ["phrasal-verbs"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*The meeting has been ___ until next week.*",
+      "options": ["put off", "put out", "called up", "taken off"],
+      "answer": 0,
+      "explanation": "*put off* — przełożyć na później.",
+      "tags": ["phrasal-verbs"]
+    },
+    {
+      "id": "006",
+      "type": "match",
+      "difficulty": 3,
+      "prompt": "Dopasuj czasownik frazowy do znaczenia.",
+      "options": {
+        "left": ["come up with", "look after", "give up", "catch up with"],
+        "right": ["wymyślić", "opiekować się", "zrezygnować", "dogonić", "zgasić"]
+      },
+      "answer": [0, 1, 2, 3],
+      "explanation": "*Zgasić* to *put out*.",
+      "tags": ["phrasal-verbs"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*If you don't know a word, ___ in a dictionary.*",
+      "options": ["look it up", "look up it", "look it after", "look for up it"],
+      "answer": 0,
+      "explanation": "*look up* — sprawdzić; z zaimkiem: *look it up*.",
+      "tags": ["phrasal-verbs"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}
