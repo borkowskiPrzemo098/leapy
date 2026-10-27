@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*„I am tired,” said Anna.* → *Anna said that she ___ tired.*",
+      "options": ["was", "is", "has been", "were"],
+      "answer": 0,
+      "explanation": "Cofamy czas: *am → was*.",
+      "tags": ["gramatyka", "reported-speech"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*„Where do you live?” he asked me.* → *He asked me where ___.*",
+      "options": ["I lived", "did I live", "do I live", "I live did"],
+      "answer": 0,
+      "explanation": "Szyk twierdzący i cofnięcie czasu.",
+      "tags": ["gramatyka", "reported-speech"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*„Please close the door,” the teacher said to me.* → *The teacher ___ me to close the door.*",
+      "options": ["asked", "said", "told that", "spoke"],
+      "answer": 0,
+      "explanation": "Prośba: *ask somebody to do something*.",
+      "tags": ["gramatyka", "reported-speech"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*„I will call you tomorrow,” Tom said.* → *Tom said he ___ me the next day.*",
+      "options": ["would call", "will call", "called", "calls"],
+      "answer": 0,
+      "explanation": "*will → would*, *tomorrow → the next day*.",
+      "tags": ["gramatyka", "reported-speech"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

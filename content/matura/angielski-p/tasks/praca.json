@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*I sent my CV and ___ for the job of a shop assistant.*",
+      "options": ["applied", "employed", "hired", "earned"],
+      "answer": 0,
+      "explanation": "Ubiegać się o pracę: *apply for a job*.",
+      "tags": ["slownictwo", "praca"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*The company had to ___ fifty workers because of financial problems.*",
+      "options": ["lay off", "take on", "put up", "carry on"],
+      "answer": 0,
+      "explanation": "*lay off* — zwolnić (z przyczyn ekonomicznych). *take on* — zatrudnić.",
+      "tags": ["slownictwo", "phrasal-verbs"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

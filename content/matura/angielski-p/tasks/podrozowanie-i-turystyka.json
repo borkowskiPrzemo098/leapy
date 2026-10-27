@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*Our flight was ___ because of the storm, so we left five hours later.*",
+      "options": ["delayed", "cancelled", "boarded", "landed"],
+      "answer": 0,
+      "explanation": "Wylecieli później — lot był opóźniony: *delayed*.",
+      "tags": ["slownictwo", "podroze"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*We ___ a room at a small hotel near the beach.*",
+      "options": ["booked", "checked", "rented out", "reserved for"],
+      "answer": 0,
+      "explanation": "Zarezerwować: *book*.",
+      "tags": ["slownictwo", "noclegi"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

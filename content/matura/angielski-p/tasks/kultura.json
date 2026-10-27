@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*The novel was so popular that it became a ___.*",
+      "options": ["bestseller", "best-buyer", "headline", "trailer"],
+      "answer": 0,
+      "explanation": "Bestseller: *bestseller*.",
+      "tags": ["slownictwo", "kultura"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*The band is going to ___ their new album in a studio in London.*",
+      "options": ["record", "register", "remind", "review"],
+      "answer": 0,
+      "explanation": "Nagrać album: *record*.",
+      "tags": ["slownictwo", "muzyka"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

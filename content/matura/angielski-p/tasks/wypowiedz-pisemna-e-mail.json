@@ -1,0 +1,103 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Piszesz e-mail z reklamacją do sklepu internetowego. Jak go zaczynasz?",
+      "options": ["Dear Sir or Madam,", "Hi guys!", "Hey there,", "What's up?"],
+      "answer": 0,
+      "explanation": "Oficjalny e-mail do nieznanego adresata.",
+      "tags": ["e-mail", "styl"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które zdanie rozwija punkt „opisz problem z zamówieniem”?",
+      "options": [
+        "The jacket I received is two sizes too small and the zip is broken.",
+        "I have a problem.",
+        "Problem with order.",
+        "Something is wrong."
+      ],
+      "answer": 0,
+      "explanation": "Rozwinięcie podaje konkretne szczegóły.",
+      "tags": ["e-mail", "tresc"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Które zdanie formalnie wyraża oczekiwanie?",
+      "options": [
+        "I would be grateful if you could refund the money.",
+        "Give me my money back.",
+        "I want money now.",
+        "You must pay me back fast."
+      ],
+      "answer": 0,
+      "explanation": "Uprzejma, formalna prośba.",
+      "tags": ["e-mail", "styl"]
+    },
+    {
+      "id": "004",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** zwroty pasujące do zakończenia e-maila do przyjaciela.",
+      "options": [
+        "Take care!",
+        "Hope to hear from you soon.",
+        "Yours faithfully,",
+        "Lots of love,"
+      ],
+      "answer": [0, 1, 3],
+      "explanation": "*Yours faithfully* to formalne zakończenie.",
+      "tags": ["e-mail", "styl"]
+    },
+    {
+      "id": "005",
+      "type": "ordering",
+      "difficulty": 2,
+      "prompt": "Ułóż akapity e-maila z reklamacją.",
+      "options": [
+        "powód napisania (zamówienie i data)",
+        "opis problemu",
+        "oczekiwane rozwiązanie",
+        "formuła końcowa i podpis"
+      ],
+      "answer": [0, 1, 2, 3],
+      "explanation": "Logiczny porządek pisma oficjalnego.",
+      "tags": ["e-mail", "kompozycja"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Które zdanie łączy dwie myśli spójnikiem przeciwstawnym?",
+      "options": [
+        "The hotel was comfortable; however, the food was disappointing.",
+        "The hotel was comfortable and the food was great.",
+        "The hotel was comfortable so we stayed.",
+        "Because the hotel was comfortable."
+      ],
+      "answer": 0,
+      "explanation": "*however* wprowadza kontrast.",
+      "tags": ["e-mail", "spojnosc"]
+    },
+    {
+      "id": "007",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań o e-mailu maturalnym.",
+      "options": [
+        "Przekroczenie limitu słów może obniżyć ocenę.",
+        "W e-mailu do kolegi warto używać form skróconych, np. *I'm*, *can't*."
+      ],
+      "answer": [true, true],
+      "explanation": "1. Prawda — limit słów jest częścią polecenia.\n2. Prawda — formy skrócone pasują do stylu nieformalnego.",
+      "tags": ["e-mail"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

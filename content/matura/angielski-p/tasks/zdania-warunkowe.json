@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*If I ___ you, I would talk to her.*",
+      "options": ["were", "am", "would be", "have been"],
+      "answer": 0,
+      "explanation": "Rada: *If I were you…*",
+      "tags": ["gramatyka", "conditionals"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*If we had left earlier, we ___ the train.*",
+      "options": ["wouldn't have missed", "won't miss", "didn't miss", "wouldn't miss"],
+      "answer": 0,
+      "explanation": "Third conditional: *If + Past Perfect, would have + III forma*.",
+      "tags": ["gramatyka", "conditionals"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*I wish I ___ more time to read.*",
+      "options": ["had", "have", "will have", "am having"],
+      "answer": 0,
+      "explanation": "Życzenie dotyczące teraźniejszości: *wish + Past Simple*.",
+      "tags": ["gramatyka", "wish"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*You won't pass ___ you study harder.*",
+      "options": ["unless", "if", "when", "as long"],
+      "answer": 0,
+      "explanation": "*unless* = *if not*.",
+      "tags": ["gramatyka", "conditionals"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

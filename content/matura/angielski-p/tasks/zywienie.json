@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*Could you read me the ___? I don't remember how much sugar we need.*",
+      "options": ["recipe", "receipt", "menu", "bill"],
+      "answer": 0,
+      "explanation": "Przepis: *recipe*.",
+      "tags": ["slownictwo", "jedzenie"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*I'm on a diet, so I try to avoid ___ food.*",
+      "options": ["fatty", "fat-free", "healthy", "raw"],
+      "answer": 0,
+      "explanation": "Na diecie unika się tłustego jedzenia: *fatty food*.",
+      "tags": ["slownictwo", "jedzenie"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

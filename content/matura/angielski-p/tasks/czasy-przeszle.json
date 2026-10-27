@@ -1,0 +1,50 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*While I ___ through the park, I saw an old friend.*",
+      "options": ["was walking", "walked", "am walking", "had walk"],
+      "answer": 0,
+      "explanation": "Tło (trwająca czynność): Past Continuous.",
+      "tags": ["gramatyka", "past-continuous"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*When we arrived at the cinema, the film ___.*",
+      "options": [
+        "had already started",
+        "already started",
+        "has already started",
+        "was already start"
+      ],
+      "answer": 0,
+      "explanation": "Czynność wcześniejsza od innej przeszłej: Past Perfect.",
+      "tags": ["gramatyka", "past-perfect"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*I ___ my keys yesterday and had to wait for my mum.*",
+      "options": ["lost", "have lost", "was losing", "lose"],
+      "answer": 0,
+      "explanation": "*yesterday* — Past Simple.",
+      "tags": ["gramatyka", "past-simple"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*When I was a child, I ___ climb trees every day.*",
+      "options": ["used to", "use to", "was used to", "am used to"],
+      "answer": 0,
+      "explanation": "Przeszły zwyczaj: *used to + bezokolicznik*.",
+      "tags": ["gramatyka", "used-to"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

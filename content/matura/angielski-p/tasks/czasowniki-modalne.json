@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*He ___ be at home — the lights are on.*",
+      "options": ["must", "can't", "mustn't", "needn't"],
+      "answer": 0,
+      "explanation": "Pewność oparta na dowodzie: *must*.",
+      "tags": ["gramatyka", "modalne"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*She ___ be Spanish — she doesn't speak a word of Spanish.*",
+      "options": ["can't", "must", "should", "might not to"],
+      "answer": 0,
+      "explanation": "Logiczna pewność, że coś nie jest prawdą: *can't*.",
+      "tags": ["gramatyka", "modalne"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*You ___ have told me earlier! Now it's too late.*",
+      "options": ["should", "must", "can", "had"],
+      "answer": 0,
+      "explanation": "Krytyka przeszłego zachowania: *should have + III forma*.",
+      "tags": ["gramatyka", "modalne-przeszle"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*When I was five, I ___ already read.*",
+      "options": ["could", "can", "was able", "managed"],
+      "answer": 0,
+      "explanation": "Umiejętność w przeszłości: *could*.",
+      "tags": ["gramatyka", "modalne"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,100 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Kolega mówi: *I got a place at the university!* Co odpowiadasz?",
+      "options": [
+        "Well done! You deserve it.",
+        "Never mind.",
+        "It doesn't matter.",
+        "What a pity!"
+      ],
+      "answer": 0,
+      "explanation": "Gratulacje po dobrej wiadomości.",
+      "tags": ["funkcje-jezykowe"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Chcesz grzecznie zapytać, czy możesz otworzyć okno. Co mówisz?",
+      "options": [
+        "Would you mind if I opened the window?",
+        "Would you mind to open the window?",
+        "I open the window, OK?",
+        "Do you mind I open window?"
+      ],
+      "answer": 0,
+      "explanation": "*Would you mind if I + Past Simple?*",
+      "tags": ["funkcje-jezykowe"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*— I think we should cancel the trip. — ___ The weather forecast looks fine.*",
+      "options": [
+        "I'm not so sure about that.",
+        "Exactly!",
+        "That's what I think too.",
+        "You're welcome."
+      ],
+      "answer": 0,
+      "explanation": "Uprzejmy brak zgody.",
+      "tags": ["funkcje-jezykowe"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Chcesz kogoś przeprosić za spóźnienie. Co mówisz?",
+      "options": [
+        "I'm sorry I'm late. The bus didn't come.",
+        "Excuse me for late.",
+        "Sorry for being late not.",
+        "I late, sorry."
+      ],
+      "answer": 0,
+      "explanation": "Poprawne przeprosiny z wyjaśnieniem.",
+      "tags": ["funkcje-jezykowe"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "W restauracji kelner pyta: *Are you ready to order?* Co odpowiadasz?",
+      "options": [
+        "Yes, I'll have the chicken salad, please.",
+        "Yes, I'm ordering.",
+        "I'm fine, thank you.",
+        "Here you are."
+      ],
+      "answer": 0,
+      "explanation": "Zamówienie: *I'll have…, please*.",
+      "tags": ["funkcje-jezykowe"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Chcesz poprosić o powtórzenie, bo nie usłyszałeś. Co mówisz?",
+      "options": ["Sorry, could you say that again?", "What you said?", "Repeat.", "Say again me."],
+      "answer": 0,
+      "explanation": "Uprzejma prośba o powtórzenie.",
+      "tags": ["funkcje-jezykowe"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*— Shall I help you with those bags? — ___*",
+      "options": ["That's very kind of you.", "Yes, you shall.", "No, I shan't.", "Help yourself."],
+      "answer": 0,
+      "explanation": "Przyjęcie oferty pomocy.",
+      "tags": ["funkcje-jezykowe"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

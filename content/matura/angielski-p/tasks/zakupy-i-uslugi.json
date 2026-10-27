@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*These shoes were on sale with a 30% ___.*",
+      "options": ["discount", "refund", "receipt", "change"],
+      "answer": 0,
+      "explanation": "Zniżka: *discount*. *Refund* — zwrot pieniędzy.",
+      "tags": ["slownictwo", "zakupy"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*The laptop stopped working after a week, so I asked for a ___.*",
+      "options": ["refund", "discount", "bargain", "sale"],
+      "answer": 0,
+      "explanation": "Zwrot pieniędzy: *refund*.",
+      "tags": ["slownictwo", "reklamacje"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

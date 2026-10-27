@@ -1,0 +1,73 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*It's not worth ___ about it now.*",
+      "options": ["worrying", "to worry", "worry", "worried"],
+      "answer": 0,
+      "explanation": "*It's (not) worth + -ing*.",
+      "tags": ["konstrukcje"]
+    },
+    {
+      "id": "002",
+      "type": "short",
+      "difficulty": 3,
+      "prompt": "Uzupełnij formą słowa z nawiasu: *The ___ of the new bridge took three years. (build)*",
+      "answer": ["building", "construction"],
+      "explanation": "Rzeczownik od *build*: *building*.",
+      "tags": ["slowotworstwo"]
+    },
+    {
+      "id": "003",
+      "type": "short",
+      "difficulty": 3,
+      "prompt": "Uzupełnij formą słowa z nawiasu: *It was very ___ of you to forget her birthday. (care)*",
+      "answer": ["careless"],
+      "explanation": "Negatywny przymiotnik: *careless* — nieostrożny, niedbały.",
+      "tags": ["slowotworstwo"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*I'm looking forward ___ you soon.*",
+      "options": ["to seeing", "to see", "seeing", "for seeing"],
+      "answer": 0,
+      "explanation": "*look forward to + -ing*.",
+      "tags": ["konstrukcje"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*It's the first time I ___ sushi.*",
+      "options": ["have eaten", "eat", "ate", "am eating"],
+      "answer": 0,
+      "explanation": "*It's the first time + Present Perfect*.",
+      "tags": ["gramatyka", "present-perfect"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*She is responsible ___ organising the event.*",
+      "options": ["for", "of", "about", "to"],
+      "answer": 0,
+      "explanation": "*responsible for*.",
+      "tags": ["przyimki"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*I'd rather you ___ smoke in the house.*",
+      "options": ["didn't", "don't", "won't", "not"],
+      "answer": 0,
+      "explanation": "*I'd rather somebody + Past Simple*.",
+      "tags": ["konstrukcje"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,99 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj tekst.\n\n> Many people believe that working from home makes us less productive. However, a recent study of 500 office workers found that those who worked remotely completed more tasks and took fewer sick days.\n\nJaki jest główny cel tekstu?",
+      "options": [
+        "podważyć popularną opinię na podstawie badania",
+        "zachęcić do pracy w biurze",
+        "opisać, jak urządzić biuro",
+        "skrytykować badania naukowe"
+      ],
+      "answer": 0,
+      "explanation": "*However* wprowadza wynik badania przeczący opinii.",
+      "tags": ["czytanie", "intencja"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj tekst.\n\n> Many people believe that working from home makes us less productive. However, a recent study of 500 office workers found that those who worked remotely completed more tasks and took fewer sick days.\n\nWedług badania osoby pracujące zdalnie",
+      "options": [
+        "rzadziej brały zwolnienia lekarskie",
+        "wykonywały mniej zadań",
+        "chorowały częściej",
+        "nie lubiły swojej pracy"
+      ],
+      "answer": 0,
+      "explanation": "*took fewer sick days*.",
+      "tags": ["czytanie"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj tekst.\n\n> Many people believe that working from home makes us less productive. However, a recent study of 500 office workers found that those who worked remotely completed more tasks and took fewer sick days.\n\nSłowo *remotely* w tekście oznacza",
+      "options": ["zdalnie", "rzadko", "wolno", "w zespole"],
+      "answer": 0,
+      "explanation": "Kontekst: praca z domu — *remotely* = zdalnie.",
+      "tags": ["czytanie", "slownictwo"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment recenzji.\n\n> The plot was predictable and the dialogue felt unnatural. Only the soundtrack saved the film from being a complete disappointment.\n\nJaka jest ogólna opinia autora o filmie?",
+      "options": [
+        "raczej negatywna",
+        "entuzjastyczna",
+        "neutralna, bez oceny",
+        "pozytywna z drobnymi uwagami"
+      ],
+      "answer": 0,
+      "explanation": "*predictable, unnatural, disappointment* — przeważają oceny negatywne.",
+      "tags": ["czytanie", "opinia"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment recenzji.\n\n> The plot was predictable and the dialogue felt unnatural. Only the soundtrack saved the film from being a complete disappointment.\n\nCo autor ocenił pozytywnie?",
+      "options": ["muzykę", "fabułę", "dialogi", "zakończenie"],
+      "answer": 0,
+      "explanation": "*soundtrack* — ścieżka dźwiękowa.",
+      "tags": ["czytanie"]
+    },
+    {
+      "id": "006",
+      "type": "truefalse",
+      "difficulty": 3,
+      "prompt": "Przeczytaj tekst.\n\n> Volunteers are needed for the town's spring clean-up on Saturday, 12 April. Gloves and bags will be provided. Please bring your own water bottle. No experience necessary.\n\nOceń prawdziwość zdań.",
+      "options": [
+        "Volunteers have to bring gloves.",
+        "You don't need any previous experience.",
+        "The event takes place on a weekend."
+      ],
+      "answer": [false, true, true],
+      "explanation": "1. Rękawice zapewniają organizatorzy (*will be provided*). Fałsz.\n2. *No experience necessary.* Prawda.\n3. Sobota. Prawda.",
+      "tags": ["czytanie"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj tekst.\n\n> Volunteers are needed for the town's spring clean-up on Saturday, 12 April. Gloves and bags will be provided. Please bring your own water bottle. No experience necessary.\n\nTekst ma na celu",
+      "options": [
+        "zachęcić do udziału w akcji",
+        "podziękować wolontariuszom",
+        "opisać przebieg akcji z zeszłego roku",
+        "sprzedać rękawice"
+      ],
+      "answer": 0,
+      "explanation": "To ogłoszenie zachęcające do zgłoszenia się.",
+      "tags": ["czytanie", "intencja"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

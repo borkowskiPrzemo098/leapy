@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*I really enjoy ___ in the sea.*",
+      "options": ["swimming", "to swim", "swim", "swam"],
+      "answer": 0,
+      "explanation": "*enjoy + -ing*.",
+      "tags": ["gramatyka", "gerund"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*We decided ___ at home because of the rain.*",
+      "options": ["to stay", "staying", "stay", "stayed"],
+      "answer": 0,
+      "explanation": "*decide + to*.",
+      "tags": ["gramatyka", "infinitive"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*My parents don't let me ___ out after 10 p.m.*",
+      "options": ["go", "to go", "going", "went"],
+      "answer": 0,
+      "explanation": "*let somebody do something* — bez *to*.",
+      "tags": ["gramatyka", "make-let"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*I'll never forget ___ the Eiffel Tower for the first time.*",
+      "options": ["seeing", "to see", "see", "to have see"],
+      "answer": 0,
+      "explanation": "*forget doing* — wspomnienie czegoś, co już się wydarzyło.",
+      "tags": ["gramatyka", "gerund-infinitive"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

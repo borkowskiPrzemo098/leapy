@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*They ___ last year and now they have a little daughter.*",
+      "options": ["got married", "got marry", "married with", "were marrying"],
+      "answer": 0,
+      "explanation": "Pobrać się: *get married*.",
+      "tags": ["slownictwo", "rodzina"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*My parents often ___ about money, but they always make up quickly.*",
+      "options": ["argue", "discuss", "agree", "share"],
+      "answer": 0,
+      "explanation": "Kłócić się: *argue*; *make up* — pogodzić się.",
+      "tags": ["slownictwo", "relacje"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

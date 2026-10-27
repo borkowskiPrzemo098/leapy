@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*There has been no rain for months. Farmers are worried about the ___.*",
+      "options": ["drought", "flood", "storm", "fog"],
+      "answer": 0,
+      "explanation": "Brak deszczu: susza, *drought*.",
+      "tags": ["slownictwo", "pogoda"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*Turning off the lights when you leave a room helps to ___ energy.*",
+      "options": ["save", "spend", "waste", "protect from"],
+      "answer": 0,
+      "explanation": "Oszczędzać energię: *save energy*.",
+      "tags": ["slownictwo", "ekologia"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

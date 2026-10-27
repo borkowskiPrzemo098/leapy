@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*Water ___ at 100 degrees Celsius.*",
+      "options": ["boils", "is boiling", "boil", "has boiled"],
+      "answer": 0,
+      "explanation": "Prawda naukowa: Present Simple.",
+      "tags": ["gramatyka", "present-simple"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*This week I ___ at my aunt's because my parents are away.*",
+      "options": ["am staying", "stay", "stayed", "have stayed"],
+      "answer": 0,
+      "explanation": "Sytuacja tymczasowa: Present Continuous.",
+      "tags": ["gramatyka", "present-continuous"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*This soup ___ delicious. What's in it?*",
+      "options": ["tastes", "is tasting", "taste", "tasting"],
+      "answer": 0,
+      "explanation": "*taste* w znaczeniu „smakować” to czasownik stanu.",
+      "tags": ["gramatyka", "czasowniki-stanu"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*He ___ complaining about his job! It's so annoying.*",
+      "options": ["is always", "always is", "always", "has always been"],
+      "answer": 0,
+      "explanation": "*be always + -ing* wyraża irytujący zwyczaj.",
+      "tags": ["gramatyka", "present-continuous"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*The new stadium ___ next year.*",
+      "options": ["will be built", "will build", "is building", "builds"],
+      "answer": 0,
+      "explanation": "Przyszłość w stronie biernej: *will be + III forma*.",
+      "tags": ["gramatyka", "passive"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*The road ___ at the moment, so we have to take another route.*",
+      "options": ["is being repaired", "is repairing", "has repaired", "repairs"],
+      "answer": 0,
+      "explanation": "Teraz, strona bierna: *is being + III forma*.",
+      "tags": ["gramatyka", "passive"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*I ___ my hair cut yesterday.*",
+      "options": ["had", "did", "made", "was"],
+      "answer": 0,
+      "explanation": "*have something done* — ktoś coś zrobił dla mnie (fryzjer).",
+      "tags": ["gramatyka", "causative"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*All the tickets ___ already ___.*",
+      "options": ["have / been sold", "have / sold", "are / sold been", "were / selling"],
+      "answer": 0,
+      "explanation": "Present Perfect w stronie biernej: *have been + III forma*.",
+      "tags": ["gramatyka", "passive"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

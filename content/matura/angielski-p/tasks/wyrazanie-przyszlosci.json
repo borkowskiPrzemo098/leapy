@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*I ___ my dentist at 4 p.m. tomorrow. It's in my calendar.*",
+      "options": ["am seeing", "see", "will have seen", "would see"],
+      "answer": 0,
+      "explanation": "Ustalone spotkanie: Present Continuous.",
+      "tags": ["gramatyka", "przyszlosc"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*The last bus ___ at 11.30 p.m.*",
+      "options": ["leaves", "is going to leave", "will be leaving at", "left"],
+      "answer": 0,
+      "explanation": "Rozkład jazdy: Present Simple.",
+      "tags": ["gramatyka", "przyszlosc"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*This time next week I ___ on a beach in Spain.*",
+      "options": ["will be lying", "will lie", "am lying", "lie"],
+      "answer": 0,
+      "explanation": "Czynność trwająca w określonym momencie przyszłości: Future Continuous.",
+      "tags": ["gramatyka", "future-continuous"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "*By 2030 scientists ___ a cure for this disease.*",
+      "options": ["will have found", "will find by", "are finding", "find"],
+      "answer": 0,
+      "explanation": "Czynność zakończona przed momentem w przyszłości: Future Perfect.",
+      "tags": ["gramatyka", "future-perfect"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*Thousands of ___ cheered when the team scored.*",
+      "options": ["supporters", "players", "referees", "coaches"],
+      "answer": 0,
+      "explanation": "Kibice: *supporters / fans*.",
+      "tags": ["slownictwo", "sport"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*The match ended in a ___: 1–1.*",
+      "options": ["draw", "tie up", "loss", "win"],
+      "answer": 0,
+      "explanation": "Remis: *draw*.",
+      "tags": ["slownictwo", "sport"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

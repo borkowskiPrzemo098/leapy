@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*He was caught ___ during the test and had to leave the room.*",
+      "options": ["cheating", "cheeting", "copying up", "failing"],
+      "answer": 0,
+      "explanation": "Ściągać: *cheat*.",
+      "tags": ["slownictwo", "szkola"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "*She ___ her driving test twice before she finally passed.*",
+      "options": ["failed", "lost", "missed", "dropped"],
+      "answer": 0,
+      "explanation": "Oblać egzamin: *fail*.",
+      "tags": ["slownictwo", "szkola"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}
