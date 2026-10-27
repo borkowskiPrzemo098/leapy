@@ -189,10 +189,8 @@ function StartPreview() {
               </div>
               <DailyRing size={96} className="sm:hidden" />
             </div>
-            <h1 className="mt-5 text-display text-on-brand sm:text-[3.25rem]">
-              Skocz na wyższy&nbsp;poziom.
-            </h1>
-            <p className="mt-3 max-w-[38ch] text-[1.0625rem] text-on-brand-2">
+            <h1 className="mt-5 text-display text-on-brand">Skocz na wyższy&nbsp;poziom.</h1>
+            <p className="mt-3 max-w-[38ch] text-lead text-on-brand-2">
               Dziś zostały ci 4 minuty do celu. Wracasz do tematu „Funkcja kwadratowa”, zadanie 7 z
               12.
             </p>

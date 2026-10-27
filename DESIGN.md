@@ -54,6 +54,12 @@ typography:
     lineHeight: 1.25
     letterSpacing: '-0.015em'
     fontFeature: "'ss01' on"
+  lead:
+    fontFamily: 'Plus Jakarta Sans Variable, ui-rounded, system-ui, sans-serif'
+    fontSize: '1.0625rem'
+    fontWeight: 500
+    lineHeight: 1.5
+    fontFeature: "'ss01' on"
   body:
     fontFamily: 'Plus Jakarta Sans Variable, ui-rounded, system-ui, sans-serif'
     fontSize: '1rem'
@@ -254,6 +260,7 @@ One intense violet carries the brand at full field strength, a single warm sun-y
 - **Display** (800, 2.5rem, 1.05, -0.035em): the Start card headline and other single hero statements; may step up on wide screens.
 - **Title** (800, 1.75rem, 1.12, -0.025em): section titles and the feedback verdict in the explanation panel.
 - **Heading** (750, 1.3125rem, 1.25, -0.015em): card headings, the task question.
+- **Lead** (500, 1.0625rem, 1.5): intro paragraph on a colour field and the text of large (lg) buttons.
 - **Body** (500, 1rem, 1.55): explanations and reading text, capped near 60–65ch; answer text is body at 600.
 - **Small** (500–700, 0.875rem, 1.45): meta lines, counters, descriptions under Switch labels, segmented labels.
 - **Label** (700, 0.75rem, 1.35): chips and captions. Sentence case, never uppercase-tracked.
