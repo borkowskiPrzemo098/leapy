@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Które powitanie pasuje do e-maila do dyrektora szkoły?",
+      "options": ["Szanowny Panie Dyrektorze,", "Siema!", "Hej, dyrektorze,", "Cześć, Panie,"],
+      "answer": 0,
+      "explanation": "W sytuacji oficjalnej używamy zwrotów grzecznościowych.",
+      "tags": ["komunikacja", "styl"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Hasło reklamowe „Ty też możesz być mistrzem!” wykorzystuje przede wszystkim",
+      "options": ["bezpośredni zwrot do odbiorcy", "opis naukowy", "statystykę", "cytat z lektury"],
+      "answer": 0,
+      "explanation": "Zwrot „ty” i wykrzyknienie to typowe środki perswazji.",
+      "tags": ["perswazja"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Osoba, która wysyła komunikat, to",
+      "options": ["nadawca", "odbiorca", "kanał", "kod"],
+      "answer": 0,
+      "explanation": "Nadawca tworzy i przekazuje komunikat.",
+      "tags": ["komunikacja"]
+    },
+    {
+      "id": "004",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** zwroty grzecznościowe.",
+      "options": ["proszę", "dziękuję", "przepraszam", "nara", "spoko"],
+      "answer": [0, 1, 2],
+      "explanation": "„Nara” i „spoko” to wyrazy potoczne.",
+      "tags": ["grzecznosc"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

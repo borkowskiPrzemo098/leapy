@@ -1,0 +1,82 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Autorem komedii „Zemsta” jest",
+      "options": ["Aleksander Fredro", "Adam Mickiewicz", "Juliusz Słowacki", "Henryk Sienkiewicz"],
+      "answer": 0,
+      "explanation": "„Zemstę” napisał Aleksander Fredro.",
+      "tags": ["lektury"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Ebenezer Scrooge jest bohaterem utworu",
+      "options": ["„Opowieść wigilijna”", "„Latarnik”", "„Balladyna”", "„Mały Książę”"],
+      "answer": 0,
+      "explanation": "Scrooge to główny bohater „Opowieści wigilijnej” Charlesa Dickensa.",
+      "tags": ["lektury"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "W „Zemście” Cześnik Raptusiewicz i Rejent Milczek spierają się o",
+      "options": ["mur graniczny", "posag Klary", "spadek po stryju", "dzierżawę młyna"],
+      "answer": 0,
+      "explanation": "Spór dotyczy naprawy muru na granicy części zamku.",
+      "tags": ["lektury", "zemsta"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Skawiński, bohater „Latarnika”, traci posadę, ponieważ",
+      "options": [
+        "zaczytany w polskiej książce, zapomina zapalić latarnię",
+        "zasypia na posterunku po pracy w porcie",
+        "kłóci się z konsulem",
+        "wyjeżdża bez pozwolenia do Polski"
+      ],
+      "answer": 0,
+      "explanation": "Lektura „Pana Tadeusza” przypomina mu ojczyznę, wpada w zadumę i nie zapala światła.",
+      "tags": ["lektury", "latarnik"]
+    },
+    {
+      "id": "005",
+      "type": "match",
+      "difficulty": 2,
+      "prompt": "Dopasuj bohatera do utworu.",
+      "options": {
+        "left": ["Papkin", "Rudy", "Guślarz", "Goplana"],
+        "right": [
+          "„Zemsta”",
+          "„Kamienie na szaniec”",
+          "„Dziady” cz. II",
+          "„Balladyna”",
+          "„Latarnik”"
+        ]
+      },
+      "answer": [0, 1, 2, 3],
+      "explanation": "Papkin — „Zemsta”, Rudy — „Kamienie na szaniec”, Guślarz — „Dziady” cz. II, Goplana — „Balladyna”.",
+      "tags": ["lektury"]
+    },
+    {
+      "id": "006",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "„Kamienie na szaniec” opowiadają o harcerzach z Szarych Szeregów.",
+        "„Opowieść wigilijna” kończy się śmiercią Scrooge’a."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Prawda.\n2. Scrooge przechodzi przemianę i zaczyna żyć inaczej. Fałsz.",
+      "tags": ["lektury"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

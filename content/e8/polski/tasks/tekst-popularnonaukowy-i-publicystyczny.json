@@ -1,0 +1,170 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Które zdanie jest faktem, a nie opinią?",
+      "options": [
+        "W Polsce jest $16$ województw.",
+        "Polska ma najpiękniejsze góry w Europie.",
+        "Szkoła powinna zaczynać się później.",
+        "Zima to najgorsza pora roku."
+      ],
+      "answer": 0,
+      "explanation": "Liczbę województw da się sprawdzić. Pozostałe to opinie.",
+      "tags": ["fakt-opinia"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj tekst.\n\n> Pszczoły zapylają wiele roślin uprawnych. Bez nich plony owoców i warzyw byłyby znacznie mniejsze. Dlatego ochrona pszczół powinna być ważnym celem każdego rolnika.\n\nTezą tekstu jest zdanie:",
+      "options": [
+        "Ochrona pszczół powinna być ważnym celem każdego rolnika.",
+        "Pszczoły zapylają wiele roślin.",
+        "Plony byłyby mniejsze.",
+        "Pszczoły żyją w ulach."
+      ],
+      "answer": 0,
+      "explanation": "Teza to twierdzenie, które autor uzasadnia; dwa pierwsze zdania to argumenty.",
+      "tags": ["teza"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj tekst.\n\n> Pszczoły zapylają wiele roślin uprawnych. Bez nich plony owoców i warzyw byłyby znacznie mniejsze. Dlatego ochrona pszczół powinna być ważnym celem każdego rolnika.\n\nSłowo „dlatego” wprowadza",
+      "options": ["wniosek", "przykład", "pytanie", "wyjątek"],
+      "answer": 0,
+      "explanation": "„Dlatego” zapowiada wniosek z wcześniejszych zdań.",
+      "tags": ["spojnosc"]
+    },
+    {
+      "id": "004",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** zdania będące opiniami.",
+      "options": [
+        "Ten film jest nudny.",
+        "Film trwa $120$ minut.",
+        "Najlepsze książki to fantastyka.",
+        "Książka ma $300$ stron."
+      ],
+      "answer": [0, 2],
+      "explanation": "Opinie wyrażają ocenę; czas trwania i liczba stron to fakty.",
+      "tags": ["fakt-opinia"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Tekst popularnonaukowy ma przede wszystkim",
+      "options": [
+        "przekazać wiedzę przystępnym językiem",
+        "rozśmieszyć czytelnika",
+        "opowiedzieć zmyśloną historię",
+        "wyrazić uczucia podmiotu lirycznego"
+      ],
+      "answer": 0,
+      "explanation": "Popularyzuje naukę wśród niespecjalistów.",
+      "tags": ["rodzaje-tekstow"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj tekst.\n\n> Coraz więcej młodych ludzi spędza wieczory przed ekranem. Lekarze ostrzegają, że niebieskie światło telefonu utrudnia zasypianie. Może więc warto odłożyć telefon godzinę przed snem?\n\nJaki jest cel ostatniego zdania?",
+      "options": [
+        "skłonić czytelnika do zmiany nawyku",
+        "podać wynik badania",
+        "opisać budowę telefonu",
+        "zakończyć opowiadanie"
+      ],
+      "answer": 0,
+      "explanation": "Pytanie retoryczne nakłania odbiorcę do działania (perswazja).",
+      "tags": ["perswazja"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj tekst.\n\n> Coraz więcej młodych ludzi spędza wieczory przed ekranem. Lekarze ostrzegają, że niebieskie światło telefonu utrudnia zasypianie. Może więc warto odłożyć telefon godzinę przed snem?\n\nNa czyje zdanie powołuje się autor?",
+      "options": ["lekarzy", "nauczycieli", "rodziców", "producentów telefonów"],
+      "answer": 0,
+      "explanation": "„Lekarze ostrzegają” — odwołanie do autorytetu.",
+      "tags": ["argumentacja"]
+    },
+    {
+      "id": "008",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Przeczytaj tekst.\n\n> Coraz więcej młodych ludzi spędza wieczory przed ekranem. Lekarze ostrzegają, że niebieskie światło telefonu utrudnia zasypianie. Może więc warto odłożyć telefon godzinę przed snem?\n\nOceń prawdziwość zdań.",
+      "options": ["Autor zakazuje używania telefonów.", "Tekst odnosi się do problemu ze snem."],
+      "answer": [false, true],
+      "explanation": "1. Autor tylko zachęca („może warto”). Fałsz.\n2. Prawda.",
+      "tags": ["rozumienie"]
+    },
+    {
+      "id": "009",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "W zdaniu „Zjawisko fotosyntezy, czyli wytwarzania pokarmu przez rośliny z udziałem światła, jest podstawą życia na Ziemi” wyrażenie po „czyli” pełni funkcję",
+      "options": ["objaśnienia trudnego słowa", "argumentu", "przykładu z życia", "opinii autora"],
+      "answer": 0,
+      "explanation": "„Czyli” wprowadza wyjaśnienie terminu.",
+      "tags": ["slownictwo"]
+    },
+    {
+      "id": "010",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Argument w tekście publicystycznym służy",
+      "options": [
+        "uzasadnieniu tezy",
+        "zmianie tematu",
+        "wprowadzeniu dialogu",
+        "opisaniu wyglądu"
+      ],
+      "answer": 0,
+      "explanation": "Argumenty mają przekonać, że teza jest słuszna.",
+      "tags": ["argumentacja"]
+    },
+    {
+      "id": "011",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj tekst.\n\n> Rowery miejskie to nie tylko moda. Każdy przejazd rowerem zamiast samochodem oznacza mniej spalin, a do tego dbamy o kondycję.\n\nIle argumentów za jazdą na rowerze podaje autor?",
+      "options": ["dwa", "jeden", "trzy", "żadnego"],
+      "answer": 0,
+      "explanation": "Mniej spalin i lepsza kondycja.",
+      "tags": ["argumentacja"]
+    },
+    {
+      "id": "012",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj tekst.\n\n> Rowery miejskie to nie tylko moda. Każdy przejazd rowerem zamiast samochodem oznacza mniej spalin, a do tego dbamy o kondycję.\n\nStosunek autora do rowerów miejskich jest",
+      "options": ["pozytywny", "negatywny", "obojętny", "nie da się go określić"],
+      "answer": 0,
+      "explanation": "Autor podaje same zalety.",
+      "tags": ["postawa-autora"]
+    },
+    {
+      "id": "013",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Skąd najlepiej wywnioskować znaczenie nieznanego słowa w tekście?",
+      "options": [
+        "z kontekstu zdań przed i po nim",
+        "z pierwszej litery słowa",
+        "z liczby liter",
+        "z tytułu książki"
+      ],
+      "answer": 0,
+      "explanation": "Kontekst zwykle podpowiada znaczenie.",
+      "tags": ["strategia"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

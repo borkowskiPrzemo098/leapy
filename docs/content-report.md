@@ -2,38 +2,38 @@
 
 Wygenerowano: 2026-10-27 (`npm run content:build`).
 
-- Zadania: **459** (zweryfikowane przez człowieka: 0, czekają: 459)
+- Zadania: **572** (zweryfikowane przez człowieka: 0, czekają: 572)
 - Sprawdzone automatycznie (`verify`): 242
-- Typy: numeric 221, single 168, truefalse 35, ordering 8, multi 10, short 6, match 11
-- Błędy: 0, ostrzeżenia: 1
+- Typy: ordering 12, single 251, multi 22, truefalse 44, match 14, short 7, numeric 222
+- Błędy: 0, ostrzeżenia: 0
 
 Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
 
 ## Egzamin ósmoklasisty
 
-### Język polski: 0 zadań
+### Język polski: 113 zadań
 
 | Dział | Temat | Zadania | Lekcja |
 | --- | --- | ---: | :---: |
-| Kształcenie literackie (0 ⚠) | Lektury obowiązkowe | 0 | — |
-|  | Rodzaje i gatunki literackie | 0 | — |
-|  | Środki stylistyczne | 0 | — |
-|  | Elementy świata przedstawionego | 0 | — |
-|  | Tekst poetycki | 0 | — |
-| Kształcenie językowe (0 ⚠) | Części mowy | 0 | — |
-|  | Składnia zdania | 0 | — |
-|  | Zdanie złożone | 0 | — |
-|  | Słowotwórstwo | 0 | — |
-|  | Frazeologia | 0 | — |
-|  | Ortografia | 0 | — |
-|  | Interpunkcja | 0 | — |
-|  | Komunikacja językowa | 0 | — |
-| Czytanie ze zrozumieniem (0 ⚠) | Tekst literacki | 0 | — |
-|  | Tekst popularnonaukowy i publicystyczny | 0 | — |
-| Tworzenie wypowiedzi (0 ⚠) | Rozprawka | 0 | — |
-|  | Opowiadanie | 0 | — |
-|  | Charakterystyka | 0 | — |
-|  | Formy użytkowe | 0 | — |
+| Kształcenie literackie (27) | Lektury obowiązkowe | 6 | tak |
+|  | Rodzaje i gatunki literackie | 5 | tak |
+|  | Środki stylistyczne | 6 | tak |
+|  | Elementy świata przedstawionego | 5 | tak |
+|  | Tekst poetycki | 5 | tak |
+| Kształcenie językowe (32) | Części mowy | 4 | tak |
+|  | Składnia zdania | 4 | tak |
+|  | Zdanie złożone | 4 | tak |
+|  | Słowotwórstwo | 4 | tak |
+|  | Frazeologia | 4 | tak |
+|  | Ortografia | 4 | tak |
+|  | Interpunkcja | 4 | tak |
+|  | Komunikacja językowa | 4 | tak |
+| Czytanie ze zrozumieniem (26) | Tekst literacki | 13 | tak |
+|  | Tekst popularnonaukowy i publicystyczny | 13 | tak |
+| Tworzenie wypowiedzi (28) | Rozprawka | 7 | tak |
+|  | Opowiadanie | 7 | tak |
+|  | Charakterystyka | 7 | tak |
+|  | Formy użytkowe | 7 | tak |
 
 ### Matematyka: 162 zadań
 
@@ -234,12 +234,28 @@ Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
 
 Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 
+- `e8.polski.slowotworstwo.004` (short, trudność 2)
 - `e8.matematyka.wyrazenia-algebraiczne.007` (short, trudność 2)
 - `matura.matematyka-p.ciag-arytmetyczny.011` (short, trudność 2)
 - `matura.matematyka-p.potegi-i-pierwiastki.008` (short, trudność 2)
 - `matura.matematyka-p.procenty.008` (short, trudność 2)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.012` (short, trudność 2)
 - `matura.matematyka-p.logarytmy.009` (short, trudność 1)
+- `e8.polski.charakterystyka.005` (single, trudność 3)
+- `e8.polski.elementy-swiata-przedstawionego.005` (single, trudność 3)
+- `e8.polski.formy-uzytkowe.005` (single, trudność 3)
+- `e8.polski.opowiadanie.005` (single, trudność 3)
+- `e8.polski.ortografia.004` (single, trudność 3)
+- `e8.polski.rodzaje-i-gatunki-literackie.005` (single, trudność 3)
+- `e8.polski.rozprawka.005` (single, trudność 3)
+- `e8.polski.srodki-stylistyczne.005` (single, trudność 3)
+- `e8.polski.tekst-literacki.006` (single, trudność 3)
+- `e8.polski.tekst-literacki.010` (single, trudność 3)
+- `e8.polski.tekst-literacki.013` (single, trudność 3)
+- `e8.polski.tekst-poetycki.005` (multi, trudność 3)
+- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.006` (single, trudność 3)
+- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.011` (single, trudność 3)
+- `e8.polski.zdanie-zlozone.004` (single, trudność 3)
 - `e8.matematyka.odczytywanie-danych-i-diagramy.006` (single, trudność 3)
 - `e8.matematyka.procenty.005` (single, trudność 3)
 - `e8.matematyka.rownania-pierwszego-stopnia.006` (numeric, trudność 3)
@@ -282,6 +298,78 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.wyrazenia-wymierne.012` (numeric, trudność 3)
 - `matura.matematyka-p.wyrazenia-wymierne.013` (single, trudność 3)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.011` (single, trudność 3)
+- `e8.polski.charakterystyka.002` (single, trudność 2)
+- `e8.polski.charakterystyka.003` (multi, trudność 2)
+- `e8.polski.charakterystyka.004` (single, trudność 2)
+- `e8.polski.charakterystyka.006` (truefalse, trudność 2)
+- `e8.polski.charakterystyka.007` (single, trudność 2)
+- `e8.polski.czesci-mowy.003` (multi, trudność 2)
+- `e8.polski.czesci-mowy.004` (single, trudność 2)
+- `e8.polski.elementy-swiata-przedstawionego.002` (single, trudność 2)
+- `e8.polski.elementy-swiata-przedstawionego.003` (single, trudność 2)
+- `e8.polski.elementy-swiata-przedstawionego.004` (truefalse, trudność 2)
+- `e8.polski.formy-uzytkowe.002` (single, trudność 2)
+- `e8.polski.formy-uzytkowe.003` (ordering, trudność 2)
+- `e8.polski.formy-uzytkowe.004` (single, trudność 2)
+- `e8.polski.formy-uzytkowe.006` (truefalse, trudność 2)
+- `e8.polski.formy-uzytkowe.007` (single, trudność 2)
+- `e8.polski.frazeologia.002` (single, trudność 2)
+- `e8.polski.frazeologia.003` (single, trudność 2)
+- `e8.polski.frazeologia.004` (match, trudność 2)
+- `e8.polski.interpunkcja.002` (single, trudność 2)
+- `e8.polski.interpunkcja.003` (single, trudność 2)
+- `e8.polski.interpunkcja.004` (single, trudność 2)
+- `e8.polski.komunikacja-jezykowa.002` (single, trudność 2)
+- `e8.polski.komunikacja-jezykowa.003` (single, trudność 2)
+- `e8.polski.komunikacja-jezykowa.004` (multi, trudność 2)
+- `e8.polski.lektury-obowiazkowe.003` (single, trudność 2)
+- `e8.polski.lektury-obowiazkowe.004` (single, trudność 2)
+- `e8.polski.lektury-obowiazkowe.005` (match, trudność 2)
+- `e8.polski.lektury-obowiazkowe.006` (truefalse, trudność 2)
+- `e8.polski.opowiadanie.002` (single, trudność 2)
+- `e8.polski.opowiadanie.003` (multi, trudność 2)
+- `e8.polski.opowiadanie.004` (single, trudność 2)
+- `e8.polski.opowiadanie.006` (truefalse, trudność 2)
+- `e8.polski.opowiadanie.007` (single, trudność 2)
+- `e8.polski.ortografia.002` (single, trudność 2)
+- `e8.polski.ortografia.003` (single, trudność 2)
+- `e8.polski.rodzaje-i-gatunki-literackie.002` (single, trudność 2)
+- `e8.polski.rodzaje-i-gatunki-literackie.003` (single, trudność 2)
+- `e8.polski.rodzaje-i-gatunki-literackie.004` (multi, trudność 2)
+- `e8.polski.rozprawka.002` (single, trudność 2)
+- `e8.polski.rozprawka.003` (single, trudność 2)
+- `e8.polski.rozprawka.004` (multi, trudność 2)
+- `e8.polski.rozprawka.006` (truefalse, trudność 2)
+- `e8.polski.rozprawka.007` (single, trudność 2)
+- `e8.polski.skladnia-zdania.002` (single, trudność 2)
+- `e8.polski.skladnia-zdania.003` (single, trudność 2)
+- `e8.polski.skladnia-zdania.004` (single, trudność 2)
+- `e8.polski.slowotworstwo.002` (multi, trudność 2)
+- `e8.polski.slowotworstwo.003` (single, trudność 2)
+- `e8.polski.srodki-stylistyczne.003` (single, trudność 2)
+- `e8.polski.srodki-stylistyczne.004` (multi, trudność 2)
+- `e8.polski.srodki-stylistyczne.006` (match, trudność 2)
+- `e8.polski.tekst-literacki.002` (multi, trudność 2)
+- `e8.polski.tekst-literacki.003` (single, trudność 2)
+- `e8.polski.tekst-literacki.004` (single, trudność 2)
+- `e8.polski.tekst-literacki.005` (truefalse, trudność 2)
+- `e8.polski.tekst-literacki.008` (single, trudność 2)
+- `e8.polski.tekst-literacki.009` (single, trudność 2)
+- `e8.polski.tekst-literacki.011` (single, trudność 2)
+- `e8.polski.tekst-literacki.012` (truefalse, trudność 2)
+- `e8.polski.tekst-poetycki.003` (single, trudność 2)
+- `e8.polski.tekst-poetycki.004` (single, trudność 2)
+- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.002` (single, trudność 2)
+- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.003` (single, trudność 2)
+- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.004` (multi, trudność 2)
+- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.005` (single, trudność 2)
+- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.007` (single, trudność 2)
+- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.008` (truefalse, trudność 2)
+- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.009` (single, trudność 2)
+- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.012` (single, trudność 2)
+- `e8.polski.tekst-popularnonaukowy-i-publicystyczny.013` (single, trudność 2)
+- `e8.polski.zdanie-zlozone.002` (single, trudność 2)
+- `e8.polski.zdanie-zlozone.003` (numeric, trudność 2)
 - `e8.matematyka.graniastoslupy.006` (single, trudność 2)
 - `e8.matematyka.graniastoslupy.007` (single, trudność 2)
 - `e8.matematyka.graniastoslupy.011` (truefalse, trudność 2)
@@ -346,95 +434,3 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.funkcja-kwadratowa.003` (single, trudność 2)
 - `matura.matematyka-p.funkcja-kwadratowa.004` (single, trudność 2)
 - `matura.matematyka-p.funkcja-liniowa.003` (single, trudność 2)
-- `matura.matematyka-p.funkcja-liniowa.004` (single, trudność 2)
-- `matura.matematyka-p.funkcja-liniowa.007` (truefalse, trudność 2)
-- `matura.matematyka-p.funkcja-wykladnicza.003` (single, trudność 2)
-- `matura.matematyka-p.funkcja-wykladnicza.004` (single, trudność 2)
-- `matura.matematyka-p.funkcja-wykladnicza.005` (numeric, trudność 2)
-- `matura.matematyka-p.funkcja-wykladnicza.006` (truefalse, trudność 2)
-- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.005` (single, trudność 2)
-- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.007` (truefalse, trudność 2)
-- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.008` (match, trudność 2)
-- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.011` (single, trudność 2)
-- `matura.matematyka-p.graniastoslupy.004` (single, trudność 2)
-- `matura.matematyka-p.logarytmy.005` (truefalse, trudność 2)
-- `matura.matematyka-p.logarytmy.007` (match, trudność 2)
-- `matura.matematyka-p.odchylenie-standardowe.004` (single, trudność 2)
-- `matura.matematyka-p.odchylenie-standardowe.011` (ordering, trudność 2)
-- `matura.matematyka-p.odchylenie-standardowe.012` (single, trudność 2)
-- `matura.matematyka-p.odcinki-i-punkty.003` (single, trudność 2)
-- `matura.matematyka-p.odcinki-i-punkty.004` (single, trudność 2)
-- `matura.matematyka-p.odcinki-i-punkty.007` (truefalse, trudność 2)
-- `matura.matematyka-p.odcinki-i-punkty.009` (single, trudność 2)
-- `matura.matematyka-p.okrag-i-kolo.005` (numeric, trudność 2)
-- `matura.matematyka-p.okrag-i-kolo.007` (truefalse, trudność 2)
-- `matura.matematyka-p.ostroslupy.004` (single, trudność 2)
-- `matura.matematyka-p.ostroslupy.006` (truefalse, trudność 2)
-- `matura.matematyka-p.podobienstwo-figur.004` (single, trudność 2)
-- `matura.matematyka-p.podobienstwo-figur.006` (truefalse, trudność 2)
-- `matura.matematyka-p.potegi-i-pierwiastki.004` (truefalse, trudność 2)
-- `matura.matematyka-p.potegi-i-pierwiastki.005` (multi, trudność 2)
-- `matura.matematyka-p.prawdopodobienstwo.007` (truefalse, trudność 2)
-- `matura.matematyka-p.procenty.005` (truefalse, trudność 2)
-- `matura.matematyka-p.procenty.007` (multi, trudność 2)
-- `matura.matematyka-p.procenty.010` (ordering, trudność 2)
-- `matura.matematyka-p.prosta-na-plaszczyznie.002` (single, trudność 2)
-- `matura.matematyka-p.prosta-na-plaszczyznie.003` (single, trudność 2)
-- `matura.matematyka-p.prosta-na-plaszczyznie.005` (single, trudność 2)
-- `matura.matematyka-p.prosta-na-plaszczyznie.008` (truefalse, trudność 2)
-- `matura.matematyka-p.prosta-na-plaszczyznie.009` (single, trudność 2)
-- `matura.matematyka-p.prosta-na-plaszczyznie.010` (single, trudność 2)
-- `matura.matematyka-p.prosta-na-plaszczyznie.013` (truefalse, trudność 2)
-- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.002` (multi, trudność 2)
-- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.004` (single, trudność 2)
-- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.005` (numeric, trudność 2)
-- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.006` (single, trudność 2)
-- `matura.matematyka-p.rownania-i-nierownosci-liniowe.002` (numeric, trudność 2)
-- `matura.matematyka-p.rownania-i-nierownosci-liniowe.003` (numeric, trudność 2)
-- `matura.matematyka-p.rownania-i-nierownosci-liniowe.004` (single, trudność 2)
-- `matura.matematyka-p.rownania-i-nierownosci-liniowe.008` (ordering, trudność 2)
-- `matura.matematyka-p.srednia-mediana-dominanta.007` (truefalse, trudność 2)
-- `matura.matematyka-p.srednia-mediana-dominanta.008` (numeric, trudność 2)
-- `matura.matematyka-p.tozsamosci-trygonometryczne.004` (single, trudność 2)
-- `matura.matematyka-p.tozsamosci-trygonometryczne.005` (single, trudność 2)
-- `matura.matematyka-p.tozsamosci-trygonometryczne.007` (truefalse, trudność 2)
-- `matura.matematyka-p.tozsamosci-trygonometryczne.009` (ordering, trudność 2)
-- `matura.matematyka-p.trojkaty.006` (multi, trudność 2)
-- `matura.matematyka-p.trojkaty.008` (truefalse, trudność 2)
-- `matura.matematyka-p.uklady-rownan.002` (single, trudność 2)
-- `matura.matematyka-p.uklady-rownan.003` (numeric, trudność 2)
-- `matura.matematyka-p.uklady-rownan.004` (single, trudność 2)
-- `matura.matematyka-p.uklady-rownan.005` (single, trudność 2)
-- `matura.matematyka-p.uklady-rownan.008` (truefalse, trudność 2)
-- `matura.matematyka-p.wartosc-bezwzgledna.003` (multi, trudność 2)
-- `matura.matematyka-p.wartosc-bezwzgledna.004` (single, trudność 2)
-- `matura.matematyka-p.wartosc-bezwzgledna.006` (truefalse, trudność 2)
-- `matura.matematyka-p.wlasnosci-funkcji.003` (single, trudność 2)
-- `matura.matematyka-p.wlasnosci-funkcji.004` (single, trudność 2)
-- `matura.matematyka-p.wlasnosci-funkcji.005` (truefalse, trudność 2)
-- `matura.matematyka-p.wlasnosci-funkcji.007` (single, trudność 2)
-- `matura.matematyka-p.wyrazenia-wymierne.002` (single, trudność 2)
-- `matura.matematyka-p.wyrazenia-wymierne.003` (single, trudność 2)
-- `matura.matematyka-p.wyrazenia-wymierne.004` (single, trudność 2)
-- `matura.matematyka-p.wyrazenia-wymierne.005` (numeric, trudność 2)
-- `matura.matematyka-p.wyrazenia-wymierne.009` (truefalse, trudność 2)
-- `matura.matematyka-p.wyrazenia-wymierne.010` (single, trudność 2)
-- `matura.matematyka-p.wyrazenia-wymierne.011` (single, trudność 2)
-- `matura.matematyka-p.wzory-skroconego-mnozenia.002` (single, trudność 2)
-- `matura.matematyka-p.wzory-skroconego-mnozenia.005` (single, trudność 2)
-- `matura.matematyka-p.wzory-skroconego-mnozenia.007` (truefalse, trudność 2)
-- `matura.matematyka-p.wzory-skroconego-mnozenia.009` (match, trudność 2)
-- `e8.matematyka.ostroslupy.002` (single, trudność 1)
-- `e8.matematyka.rownania-pierwszego-stopnia.001` (numeric, trudność 1)
-- `e8.matematyka.rownania-pierwszego-stopnia.002` (numeric, trudność 1)
-- `e8.matematyka.symetrie.001` (single, trudność 1)
-- `e8.matematyka.szacowanie-i-zaokraglanie.001` (single, trudność 1)
-- `e8.matematyka.szacowanie-i-zaokraglanie.002` (single, trudność 1)
-- `e8.matematyka.uklad-wspolrzednych.001` (single, trudność 1)
-- `e8.matematyka.wyrazenia-algebraiczne.001` (single, trudność 1)
-- `e8.matematyka.zadania-z-trescia.013` (ordering, trudność 1)
-- `matura.matematyka-p.ciag-arytmetyczny.002` (numeric, trudność 1)
-
-## Ostrzeżenia
-
-- content/matura/matematyka-p/tasks/prawdopodobienstwo.json: matura.matematyka-p.prawdopodobienstwo.007: bardzo podobne do e8.matematyka.prawdopodobienstwo.008

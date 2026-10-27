@@ -1,0 +1,85 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "multi",
+      "difficulty": 1,
+      "prompt": "Zaznacz **wszystkie** informacje, które musi zawierać ogłoszenie o koncercie.",
+      "options": ["co się odbędzie", "gdzie", "kiedy", "ulubiony kolor organizatora"],
+      "answer": [0, 1, 2],
+      "explanation": "Ogłoszenie podaje najważniejsze konkrety.",
+      "tags": ["ogloszenie"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Czym różni się zaproszenie od ogłoszenia?",
+      "options": [
+        "zaproszenie jest skierowane do konkretnego adresata",
+        "zaproszenie nie podaje daty",
+        "ogłoszenie zawsze ma podpis adresata",
+        "niczym"
+      ],
+      "answer": 0,
+      "explanation": "Zaproszenie ma adresata („Droga Kasiu”), ogłoszenie jest dla wszystkich.",
+      "tags": ["zaproszenie"]
+    },
+    {
+      "id": "003",
+      "type": "ordering",
+      "difficulty": 2,
+      "prompt": "Ułóż elementy listu w dobrej kolejności.",
+      "options": ["miejscowość i data", "zwrot do adresata", "treść", "pozdrowienia i podpis"],
+      "answer": [0, 1, 2, 3],
+      "explanation": "Taki jest tradycyjny układ listu.",
+      "tags": ["list"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które zakończenie pasuje do oficjalnego pisma?",
+      "options": ["Z wyrazami szacunku", "Buziaki!", "Nara", "Pa, pa"],
+      "answer": 0,
+      "explanation": "W piśmie oficjalnym stosujemy formułę grzecznościową.",
+      "tags": ["styl"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Ogłoszenie: „Zaginął pies, rasa jamnik, wabi się Bąbel”. Czego w nim najbardziej brakuje?",
+      "options": ["kontaktu do właściciela", "imienia psa", "rasy psa", "informacji, że to pies"],
+      "answer": 0,
+      "explanation": "Bez telefonu albo adresu znalazca nie odda psa.",
+      "tags": ["ogloszenie"]
+    },
+    {
+      "id": "006",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": ["W zaproszeniu na urodziny warto podać godzinę.", "Życzenia to forma użytkowa."],
+      "answer": [true, true],
+      "explanation": "1. Prawda.\n2. Prawda — życzenia, zaproszenie, ogłoszenie i list to formy użytkowe.",
+      "tags": ["formy-uzytkowe"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Zwrot „Szanowni Państwo” jest odpowiedni na początku",
+      "options": [
+        "przemówienia na akademii szkolnej",
+        "SMS-a do kolegi",
+        "kartki z wakacji do siostry",
+        "notatki na lodówce"
+      ],
+      "answer": 0,
+      "explanation": "To oficjalny zwrot do grupy słuchaczy.",
+      "tags": ["styl", "przemowienie"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

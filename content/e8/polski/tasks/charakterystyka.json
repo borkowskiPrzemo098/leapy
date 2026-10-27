@@ -1,0 +1,98 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "ordering",
+      "difficulty": 1,
+      "prompt": "Ułóż części charakterystyki w dobrej kolejności.",
+      "options": [
+        "przedstawienie postaci",
+        "wygląd zewnętrzny",
+        "cechy charakteru z przykładami",
+        "ocena postaci"
+      ],
+      "answer": [0, 1, 2, 3],
+      "explanation": "Od przedstawienia, przez wygląd i charakter, do oceny.",
+      "tags": ["kompozycja"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które zdanie dobrze łączy cechę z przykładem?",
+      "options": [
+        "Scrooge był skąpy: nie pozwalał pracownikowi dołożyć węgla do pieca.",
+        "Scrooge był skąpy.",
+        "Scrooge mieszkał w Londynie.",
+        "Scrooge był bohaterem lektury."
+      ],
+      "answer": 0,
+      "explanation": "Cecha + dowód z tekstu.",
+      "tags": ["argumentacja"]
+    },
+    {
+      "id": "003",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** cechy charakteru (a nie wyglądu).",
+      "options": ["odważny", "uczynny", "wysoki", "piegowaty", "uparty"],
+      "answer": [0, 1, 4],
+      "explanation": "„Wysoki” i „piegowaty” opisują wygląd.",
+      "tags": ["slownictwo"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Charakterystyka porównawcza",
+      "options": [
+        "zestawia dwie postacie, wskazując podobieństwa i różnice",
+        "opisuje tylko jedną postać",
+        "streszcza lekturę",
+        "jest rodzajem opowiadania"
+      ],
+      "answer": 0,
+      "explanation": "Porównujemy dwie postacie.",
+      "tags": ["rodzaje"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Ocena postaci w charakterystyce powinna",
+      "options": [
+        "wynikać z przedstawionych cech i przykładów",
+        "być zawsze pozytywna",
+        "dotyczyć autora lektury",
+        "zawierać streszczenie zakończenia"
+      ],
+      "answer": 0,
+      "explanation": "Ocena musi być uzasadniona tym, co pokazano wcześniej.",
+      "tags": ["ocena"]
+    },
+    {
+      "id": "006",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań o charakterystyce.",
+      "options": [
+        "W charakterystyce wystarczy opisać wygląd postaci.",
+        "Przykłady z tekstu uwiarygodniają cechy postaci."
+      ],
+      "answer": [false, true],
+      "explanation": "1. Najważniejsze są cechy charakteru. Fałsz.\n2. Prawda.",
+      "tags": ["kompozycja"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które wyrażenie pomaga wprowadzić przykład w charakterystyce?",
+      "options": ["„świadczy o tym fakt, że…”", "„dawno temu…”", "„szanowny panie…”", "„koniec”"],
+      "answer": 0,
+      "explanation": "To zwrot łączący cechę z dowodem.",
+      "tags": ["slownictwo"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

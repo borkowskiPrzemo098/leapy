@@ -333,7 +333,10 @@ export function runPipeline(
 
   // Duplicates: identical prompts are errors, near-identical (3-gram Jaccard ≥ 0.85) warnings.
   const byNorm = new Map<string, string>()
-  const sh = allTasks.map((t) => shingles(t.prompt))
+  // Prompt and options together: short identical prompts with different options are distinct tasks.
+  const sh = allTasks.map((t) =>
+    shingles(t.prompt + ' ' + ('options' in t ? JSON.stringify(t.options) : '')),
+  )
   allTasks.forEach((t, i) => {
     const key = normalize(t.prompt) + '|' + JSON.stringify('options' in t ? t.options : '')
     const prev = byNorm.get(key)

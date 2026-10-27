@@ -1,0 +1,60 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Które zdanie ma poprawną interpunkcję?",
+      "options": ["Wiem, że zdążę.", "Wiem że, zdążę.", "Wiem że zdążę.", "Wiem, że, zdążę."],
+      "answer": 0,
+      "explanation": "Przecinek stawiamy przed spójnikiem „że”.",
+      "tags": ["interpunkcja"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które zdanie ma poprawną interpunkcję?",
+      "options": [
+        "Kupiłem jabłka i gruszki.",
+        "Kupiłem jabłka, i gruszki.",
+        "Kupiłem, jabłka i gruszki.",
+        "Kupiłem jabłka i, gruszki."
+      ],
+      "answer": 0,
+      "explanation": "Przed „i” łączącym wyrazy nie stawiamy przecinka.",
+      "tags": ["interpunkcja"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które zdanie ma poprawną interpunkcję?",
+      "options": [
+        "Mój brat, który mieszka w Gdańsku, przyjedzie jutro.",
+        "Mój brat, który mieszka w Gdańsku przyjedzie jutro.",
+        "Mój brat który mieszka w Gdańsku, przyjedzie jutro.",
+        "Mój brat który, mieszka w Gdańsku przyjedzie jutro."
+      ],
+      "answer": 0,
+      "explanation": "Wtrącone zdanie podrzędne oddzielamy przecinkami z obu stron.",
+      "tags": ["interpunkcja"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "W którym miejscu brakuje przecinka: „Kasiu chodź tutaj”?",
+      "options": [
+        "po słowie „Kasiu”",
+        "po słowie „chodź”",
+        "przed słowem „Kasiu”",
+        "nie brakuje przecinka"
+      ],
+      "answer": 0,
+      "explanation": "Wołacz oddzielamy przecinkiem: „Kasiu, chodź tutaj”.",
+      "tags": ["interpunkcja"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

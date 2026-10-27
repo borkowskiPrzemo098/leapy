@@ -1,0 +1,103 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "ordering",
+      "difficulty": 1,
+      "prompt": "Ułóż części rozprawki w dobrej kolejności.",
+      "options": [
+        "wstęp z tezą",
+        "pierwszy argument z przykładem",
+        "drugi argument z przykładem",
+        "zakończenie z wnioskiem"
+      ],
+      "answer": [0, 1, 2, 3],
+      "explanation": "Teza → argumenty → wniosek.",
+      "tags": ["kompozycja"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Temat: „Czy warto pomagać innym?”. Która teza jest poprawna?",
+      "options": [
+        "Warto pomagać innym, ponieważ pomoc zmienia życie obu stron.",
+        "Opowiem o bohaterach „Opowieści wigilijnej”.",
+        "Pomoc to ważny temat.",
+        "Wiele osób pomaga innym."
+      ],
+      "answer": 0,
+      "explanation": "Teza odpowiada na pytanie z tematu i zapowiada uzasadnienie.",
+      "tags": ["teza"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Który fragment jest argumentem, a nie streszczeniem?",
+      "options": [
+        "Przemiana Scrooge’a pokazuje, że pomaganie daje radość także pomagającemu.",
+        "Scrooge spotkał trzy duchy.",
+        "Akcja dzieje się w Londynie.",
+        "Scrooge miał pracownika Boba."
+      ],
+      "answer": 0,
+      "explanation": "Argument łączy przykład z tezą. Pozostałe zdania tylko relacjonują fabułę.",
+      "tags": ["argumentacja"]
+    },
+    {
+      "id": "004",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** wyrażenia przydatne w rozprawce.",
+      "options": ["po pierwsze", "przykładem jest", "podsumowując", "dawno, dawno temu", "nagle"],
+      "answer": [0, 1, 2],
+      "explanation": "„Dawno temu” i „nagle” pasują do opowiadania.",
+      "tags": ["slownictwo"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Zakończenie rozprawki powinno",
+      "options": [
+        "potwierdzić tezę i podsumować argumenty",
+        "wprowadzić nowy argument",
+        "streszczać lekturę",
+        "zawierać zupełnie inną tezę"
+      ],
+      "answer": 0,
+      "explanation": "Zakończenie domyka wywód, nie wprowadza nowych wątków.",
+      "tags": ["kompozycja"]
+    },
+    {
+      "id": "006",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań o rozprawce.",
+      "options": [
+        "Każdy argument warto zapisać w osobnym akapicie.",
+        "Rozprawka może składać się tylko ze wstępu i zakończenia."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Akapity porządkują wywód. Prawda.\n2. Bez rozwinięcia z argumentami to nie jest rozprawka. Fałsz.",
+      "tags": ["kompozycja"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Najlepszym przykładem do argumentu „Przyjaźń wymaga poświęcenia” jest",
+      "options": [
+        "postawa przyjaciół w „Kamieniach na szaniec”, którzy ryzykowali dla siebie życie",
+        "opis zamku w „Zemście”",
+        "data wydania „Latarnika”",
+        "zawód Scrooge’a"
+      ],
+      "answer": 0,
+      "explanation": "Przykład musi pasować do argumentu, a nie tylko dotyczyć lektury.",
+      "tags": ["argumentacja"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

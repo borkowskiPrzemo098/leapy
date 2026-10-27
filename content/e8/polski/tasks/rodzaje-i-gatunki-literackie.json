@@ -1,0 +1,60 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Tekst przeznaczony do wystawienia na scenie, złożony z dialogów i didaskaliów, należy do",
+      "options": ["dramatu", "epiki", "liryki", "publicystyki"],
+      "answer": 0,
+      "explanation": "Dialogi i didaskalia to cechy dramatu.",
+      "tags": ["rodzaje"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Utwór epicki z jednym wątkiem, zwartą akcją i wyraźnym punktem kulminacyjnym to",
+      "options": ["nowela", "powieść", "fraszka", "oda"],
+      "answer": 0,
+      "explanation": "To cechy noweli, np. „Latarnika”.",
+      "tags": ["gatunki"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "„Zemsta” Aleksandra Fredry to",
+      "options": ["komedia", "tragedia", "ballada", "nowela"],
+      "answer": 0,
+      "explanation": "To utwór dramatyczny o charakterze komicznym, kończący się szczęśliwie.",
+      "tags": ["gatunki"]
+    },
+    {
+      "id": "004",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** gatunki liryczne.",
+      "options": ["tren", "fraszka", "nowela", "hymn", "baśń"],
+      "answer": [0, 1, 3],
+      "explanation": "Tren, fraszka i hymn to gatunki liryczne; nowela i baśń to epika.",
+      "tags": ["gatunki"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Ballada to gatunek synkretyczny, ponieważ",
+      "options": [
+        "łączy cechy epiki, liryki i dramatu",
+        "zawsze jest pisana prozą",
+        "nie ma bohatera",
+        "występuje tylko w literaturze antycznej"
+      ],
+      "answer": 0,
+      "explanation": "Ballada ma fabułę (epika), nastrojowość i rytm (liryka) oraz dialogi (dramat).",
+      "tags": ["gatunki"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

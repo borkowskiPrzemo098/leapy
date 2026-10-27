@@ -1,0 +1,164 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Przeczytaj fragment.\n\n> Szare, ciężkie chmury wisiały nad pustą drogą. Wiatr szarpał gałęzie, a w oddali coś głucho zastukało.\n\nJaki nastrój ma ten fragment?",
+      "options": ["niepokojący", "radosny", "uroczysty", "humorystyczny"],
+      "answer": 0,
+      "explanation": "Epitety „szare”, „ciężkie”, „pustą” i „głucho” budują ponury, niepokojący nastrój.",
+      "tags": ["nastroj"]
+    },
+    {
+      "id": "002",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment.\n\n> Szare, ciężkie chmury wisiały nad pustą drogą. Wiatr szarpał gałęzie, a w oddali coś głucho zastukało.\n\nZaznacz **wszystkie** słowa, które tworzą ten nastrój.",
+      "options": ["ciężkie", "pustą", "głucho", "drogą"],
+      "answer": [0, 1, 2],
+      "explanation": "Nastrój budują określenia; „drogą” to neutralny rzeczownik.",
+      "tags": ["nastroj", "srodki-stylistyczne"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment.\n\n> Marek długo stał przed drzwiami. Trzy razy podnosił rękę, żeby zapukać, i trzy razy ją opuszczał. W końcu odwrócił się i odszedł.\n\nCo można wywnioskować o Marku?",
+      "options": [
+        "waha się i boi się rozmowy",
+        "jest zły na domowników",
+        "zgubił klucze",
+        "spieszy się na autobus"
+      ],
+      "answer": 0,
+      "explanation": "Wielokrotne podnoszenie i opuszczanie ręki pokazuje wahanie. Złość ani klucze nie wynikają z tekstu.",
+      "tags": ["wnioskowanie"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment.\n\n> Marek długo stał przed drzwiami. Trzy razy podnosił rękę, żeby zapukać, i trzy razy ją opuszczał. W końcu odwrócił się i odszedł.\n\nNarrator w tym fragmencie jest",
+      "options": ["trzecioosobowy", "pierwszoosobowy", "liryczny", "nieobecny"],
+      "answer": 0,
+      "explanation": "Opowiada o Marku w trzeciej osobie („stał”, „odszedł”).",
+      "tags": ["narrator"]
+    },
+    {
+      "id": "005",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment.\n\n> Babcia postawiła na stole parujący dzban kakao. — Pij, póki ciepłe — powiedziała i pogładziła Zosię po głowie. Za oknem padał pierwszy śnieg.\n\nOceń prawdziwość zdań.",
+      "options": [
+        "Akcja dzieje się zimą.",
+        "Babcia jest dla Zosi surowa.",
+        "We fragmencie jest dialog."
+      ],
+      "answer": [true, false, true],
+      "explanation": "1. Pada pierwszy śnieg. Prawda.\n2. Gładzi wnuczkę po głowie — jest czuła. Fałsz.\n3. Wypowiedź babci z myślnikiem. Prawda.",
+      "tags": ["rozumienie"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj fragment.\n\n> Babcia postawiła na stole parujący dzban kakao. — Pij, póki ciepłe — powiedziała i pogładziła Zosię po głowie. Za oknem padał pierwszy śnieg.\n\nJaką funkcję pełni zdanie o śniegu?",
+      "options": [
+        "dopowiada nastrój ciepła domu na tle zimy",
+        "zapowiada katastrofę",
+        "opisuje wygląd babci",
+        "wprowadza nowego bohatera"
+      ],
+      "answer": 0,
+      "explanation": "Kontrast śniegu za oknem i ciepłego kakao wzmacnia przytulny nastrój sceny.",
+      "tags": ["interpretacja"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Uzasadniając odpowiedź w zadaniu do tekstu, najlepiej",
+      "options": [
+        "przytoczyć krótki cytat z tekstu",
+        "opisać własne doświadczenia",
+        "streścić całą lekturę",
+        "napisać, że „tak wynika”"
+      ],
+      "answer": 0,
+      "explanation": "Cytat w cudzysłowie to najmocniejsze uzasadnienie.",
+      "tags": ["strategia"]
+    },
+    {
+      "id": "008",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment.\n\n> — Nigdy więcej! — krzyknął Tomek i trzasnął drzwiami tak, że zadrżały szyby.\n\nJakie uczucie towarzyszy Tomkowi?",
+      "options": ["złość", "radość", "znudzenie", "wdzięczność"],
+      "answer": 0,
+      "explanation": "Krzyk, wykrzyknik i trzaśnięcie drzwiami świadczą o złości.",
+      "tags": ["emocje-bohatera"]
+    },
+    {
+      "id": "009",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment.\n\n> Las szeptał coś cicho, a strumyk śmiał się między kamieniami.\n\nW zdaniu zastosowano przede wszystkim",
+      "options": ["uosobienia", "porównania", "pytania retoryczne", "zdrobnienia"],
+      "answer": 0,
+      "explanation": "Las „szepcze”, strumyk „się śmieje” — ludzkie cechy przyrody.",
+      "tags": ["srodki-stylistyczne"]
+    },
+    {
+      "id": "010",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj fragment.\n\n> Stary zegar wybił północ. Dwanaście uderzeń rozeszło się po pustym domu, jakby ktoś liczył ostatnie chwile.\n\nPorównanie w tym fragmencie służy",
+      "options": [
+        "budowaniu napięcia i poczucia, że coś się kończy",
+        "rozśmieszeniu czytelnika",
+        "opisaniu wyglądu zegara",
+        "podaniu dokładnej godziny"
+      ],
+      "answer": 0,
+      "explanation": "„Jakby ktoś liczył ostatnie chwile” dodaje dramatyzmu i niepokoju.",
+      "tags": ["interpretacja"]
+    },
+    {
+      "id": "011",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment.\n\n> Stary zegar wybił północ. Dwanaście uderzeń rozeszło się po pustym domu, jakby ktoś liczył ostatnie chwile.\n\nO której godzinie dzieje się akcja?",
+      "options": ["o północy", "w południe", "o świcie", "wieczorem, przed snem"],
+      "answer": 0,
+      "explanation": "Zegar „wybił północ”.",
+      "tags": ["rozumienie"]
+    },
+    {
+      "id": "012",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment.\n\n> Stary zegar wybił północ. Dwanaście uderzeń rozeszło się po pustym domu, jakby ktoś liczył ostatnie chwile.\n\nOceń prawdziwość zdań.",
+      "options": ["W domu było wiele osób.", "We fragmencie jest porównanie."],
+      "answer": [false, true],
+      "explanation": "1. Dom jest „pusty”. Fałsz.\n2. Słowo „jakby” wprowadza porównanie. Prawda.",
+      "tags": ["rozumienie"]
+    },
+    {
+      "id": "013",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj fragment.\n\n> Ola przez cały rok odkładała kieszonkowe. W dniu urodzin mamy wyjęła z szuflady małe pudełko i z uśmiechem podała je przy śniadaniu.\n\nKtóra cecha Oli wynika z fragmentu?",
+      "options": [
+        "wytrwałość i troska o bliskich",
+        "skłonność do kłamstwa",
+        "lenistwo",
+        "zazdrość"
+      ],
+      "answer": 0,
+      "explanation": "Oszczędzała cały rok, żeby zrobić mamie prezent.",
+      "tags": ["wnioskowanie"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,63 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "W zdaniu „Poszedłem nad rzekę i usiadłem na kamieniu” narrator jest",
+      "options": ["pierwszoosobowy", "trzecioosobowy", "wszystkowiedzący", "zbiorowy"],
+      "answer": 0,
+      "explanation": "Narrator opowiada o sobie, w pierwszej osobie.",
+      "tags": ["narrator"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Moment największego napięcia w utworze to",
+      "options": ["punkt kulminacyjny", "zawiązanie akcji", "wątek poboczny", "epilog"],
+      "answer": 0,
+      "explanation": "Punkt kulminacyjny to szczyt napięcia, po którym akcja zmierza do rozwiązania.",
+      "tags": ["akcja"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Akcja „Opowieści wigilijnej” rozgrywa się",
+      "options": [
+        "w Londynie w noc wigilijną",
+        "w Warszawie podczas wojny",
+        "na wyspie Aspinwall",
+        "na zamku w Polsce"
+      ],
+      "answer": 0,
+      "explanation": "Scrooge mieszka w Londynie, a duchy odwiedzają go w Wigilię.",
+      "tags": ["czas-i-miejsce"]
+    },
+    {
+      "id": "004",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Narrator zawsze jest tą samą osobą co autor.",
+        "Bohater epizodyczny pojawia się w utworze na krótko."
+      ],
+      "answer": [false, true],
+      "explanation": "1. Narrator to postać stworzona przez autora. Fałsz.\n2. Prawda.",
+      "tags": ["narrator", "bohaterowie"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Narrator, który zna myśli i uczucia wszystkich bohaterów, to narrator",
+      "options": ["wszystkowiedzący", "pierwszoosobowy", "uczestniczący", "liryczny"],
+      "answer": 0,
+      "explanation": "Narrator wszystkowiedzący (zwykle trzecioosobowy) wie więcej niż bohaterowie.",
+      "tags": ["narrator"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

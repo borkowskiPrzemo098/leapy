@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Wskaż poprawnie zapisany wyraz.",
+      "options": ["stół", "stuł", "sztół", "stoół"],
+      "answer": 0,
+      "explanation": "„Ó” wymienia się na „o”: stół — stoły.",
+      "tags": ["ortografia", "o-u"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wskaż poprawny zapis.",
+      "options": ["nie lubię", "nielubię", "nie-lubię", "nielubie"],
+      "answer": 0,
+      "explanation": "„Nie” z czasownikami piszemy osobno.",
+      "tags": ["ortografia", "pisownia-nie"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wskaż poprawny zapis.",
+      "options": ["niedobry", "nie dobry", "nie-dobry", "niedobrzy"],
+      "answer": 0,
+      "explanation": "„Nie” z przymiotnikami w stopniu równym piszemy łącznie.",
+      "tags": ["ortografia", "pisownia-nie"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Wskaż poprawny zapis.",
+      "options": ["nie lepszy", "nielepszy", "nie-lepszy", "nielepsi"],
+      "answer": 0,
+      "explanation": "„Nie” z przymiotnikami w stopniu wyższym piszemy osobno.",
+      "tags": ["ortografia", "pisownia-nie"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

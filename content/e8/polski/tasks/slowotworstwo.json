@@ -1,0 +1,44 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Wyrazem podstawowym dla wyrazu „domek” jest",
+      "options": ["dom", "domowy", "domownik", "domy"],
+      "answer": 0,
+      "explanation": "„Domek” to zdrobnienie od „dom”.",
+      "tags": ["slowotworstwo"]
+    },
+    {
+      "id": "002",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** wyrazy należące do tej samej rodziny co „uczyć”.",
+      "options": ["uczeń", "nauczyciel", "uczciwy", "nauka", "ucho"],
+      "answer": [0, 1, 3],
+      "explanation": "Wspólny rdzeń „ucz-/uk-”. „Uczciwy” i „ucho” tylko brzmią podobnie.",
+      "tags": ["rodzina-wyrazow"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wyraz „długopis” to wyraz",
+      "options": ["złożony", "zdrobniały", "zgrubiały", "podstawowy"],
+      "answer": 0,
+      "explanation": "Powstał z połączenia „długo” i „pisać”.",
+      "tags": ["slowotworstwo"]
+    },
+    {
+      "id": "004",
+      "type": "short",
+      "difficulty": 2,
+      "prompt": "Utwórz zdrobnienie od rzeczownika „kot”.",
+      "answer": ["kotek", "kotka", "koteczek"],
+      "explanation": "Przyrostek „-ek”: kotek (także: koteczek).",
+      "tags": ["slowotworstwo"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,50 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "W zdaniu „Wczoraj mój brat przeczytał ciekawą książkę” podmiotem jest",
+      "options": ["brat", "książkę", "wczoraj", "mój"],
+      "answer": 0,
+      "explanation": "Kto przeczytał? Brat.",
+      "tags": ["czesci-zdania"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "W zdaniu „Wczoraj mój brat przeczytał ciekawą książkę” słowo „wczoraj” to",
+      "options": ["okolicznik czasu", "przydawka", "dopełnienie", "orzeczenie"],
+      "answer": 0,
+      "explanation": "Odpowiada na pytanie „kiedy?”.",
+      "tags": ["czesci-zdania"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które wypowiedzenie jest równoważnikiem zdania?",
+      "options": [
+        "„Cisza nad jeziorem.”",
+        "„Nad jeziorem zapadła cisza.”",
+        "„Było cicho.”",
+        "„Grzmi.”"
+      ],
+      "answer": 0,
+      "explanation": "Równoważnik nie ma orzeczenia. „Grzmi” to zdanie bezpodmiotowe z orzeczeniem.",
+      "tags": ["rownowaznik"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "W zdaniu „Ola dała siostrze prezent” słowo „siostrze” to",
+      "options": ["dopełnienie", "podmiot", "przydawka", "okolicznik"],
+      "answer": 0,
+      "explanation": "Dała komu? Siostrze. To dopełnienie.",
+      "tags": ["czesci-zdania"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

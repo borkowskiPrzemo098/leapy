@@ -1,0 +1,61 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Zdanie „Padał deszcz, więc zostaliśmy w domu” jest",
+      "options": [
+        "złożone współrzędnie wynikowe",
+        "złożone podrzędnie",
+        "pojedyncze",
+        "równoważnikiem zdania"
+      ],
+      "answer": 0,
+      "explanation": "Dwa równorzędne zdania połączone „więc”: współrzędne wynikowe.",
+      "tags": ["zdanie-zlozone"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Zdanie „Wiem, że zdążę” jest",
+      "options": [
+        "złożone podrzędnie",
+        "złożone współrzędnie łącznie",
+        "pojedyncze rozwinięte",
+        "złożone współrzędnie przeciwstawnie"
+      ],
+      "answer": 0,
+      "explanation": "„Że zdążę” odpowiada na pytanie „co?” zadane od „wiem”.",
+      "tags": ["zdanie-zlozone"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Ile zdań składowych jest w wypowiedzeniu: „Kiedy wróciłem, mama gotowała obiad, a tata czytał gazetę”?",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "Trzy orzeczenia: „wróciłem”, „gotowała”, „czytał”.",
+      "tags": ["zdanie-zlozone"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Które zdanie jest złożone współrzędnie przeciwstawnie?",
+      "options": [
+        "„Chciałem przyjść, ale zachorowałem.”",
+        "„Przyszedłem, bo mnie zaprosiłeś.”",
+        "„Przyjdę albo zadzwonię.”",
+        "„Wiem, kto przyjdzie.”"
+      ],
+      "answer": 0,
+      "explanation": "„Ale” przeciwstawia treść zdań. „Bo” i „kto” wprowadzają zdania podrzędne, „albo” — rozłączne.",
+      "tags": ["zdanie-zlozone"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

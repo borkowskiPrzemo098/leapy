@@ -1,0 +1,53 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Frazeologizm „wziąć nogi za pas” znaczy",
+      "options": ["uciec", "zacząć ćwiczyć", "zapiąć pasek", "odpocząć"],
+      "answer": 0,
+      "explanation": "„Wziąć nogi za pas” to szybko uciec.",
+      "tags": ["frazeologia"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "„Syzyfowa praca” to praca",
+      "options": ["ciężka i bezowocna", "dobrze płatna", "wykonywana w nocy", "zespołowa"],
+      "answer": 0,
+      "explanation": "Od mitu o Syzyfie, który w nieskończoność wtaczał głaz na górę.",
+      "tags": ["frazeologia", "mitologia"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "O kimś rozsądnym i zaradnym mówimy, że",
+      "options": [
+        "ma głowę na karku",
+        "ma muchy w nosie",
+        "buja w obłokach",
+        "chodzi z głową w chmurach"
+      ],
+      "answer": 0,
+      "explanation": "„Mieć głowę na karku” — być rozsądnym. Pozostałe opisują zły humor albo marzycielstwo.",
+      "tags": ["frazeologia"]
+    },
+    {
+      "id": "004",
+      "type": "match",
+      "difficulty": 2,
+      "prompt": "Dopasuj frazeologizm do znaczenia.",
+      "options": {
+        "left": ["„pięta achillesowa”", "„owijać w bawełnę”", "„mieć muchy w nosie”"],
+        "right": ["słaby punkt", "mówić nie wprost", "być w złym humorze", "dużo pracować"]
+      },
+      "answer": [0, 1, 2],
+      "explanation": "Każdy związek ma utrwalone znaczenie przenośne.",
+      "tags": ["frazeologia"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

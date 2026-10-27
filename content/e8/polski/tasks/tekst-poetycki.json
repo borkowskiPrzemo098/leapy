@@ -1,0 +1,55 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Osoba mówiąca w wierszu to",
+      "options": ["podmiot liryczny", "narrator", "autor", "adresat"],
+      "answer": 0,
+      "explanation": "W liryce mówi podmiot liryczny.",
+      "tags": ["liryka"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Jedna linijka wiersza to",
+      "options": ["wers", "strofa", "rym", "refren"],
+      "answer": 0,
+      "explanation": "Wers to jedna linijka, strofa to grupa wersów.",
+      "tags": ["budowa-wiersza"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Rymy w układzie aabb to rymy",
+      "options": ["parzyste", "przeplatane", "okalające", "wewnętrzne"],
+      "answer": 0,
+      "explanation": "Rymują się kolejne pary wersów: parzyste.",
+      "tags": ["rymy"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wiersz: „Idę przez łąkę, a wiatr mnie goni, / słońce mi mruga, ptak w trawie dzwoni”. To przykład liryki",
+      "options": ["bezpośredniej", "pośredniej", "zwrotu do adresata", "opisowej bez podmiotu"],
+      "answer": 0,
+      "explanation": "Podmiot mówi o sobie („idę”, „mnie”).",
+      "tags": ["liryka"]
+    },
+    {
+      "id": "005",
+      "type": "multi",
+      "difficulty": 3,
+      "prompt": "Wiersz: „Idę przez łąkę, a wiatr mnie goni, / słońce mi mruga, ptak w trawie dzwoni”. Zaznacz **wszystkie** zastosowane środki.",
+      "options": ["uosobienie", "rym", "pytanie retoryczne", "porównanie"],
+      "answer": [0, 1],
+      "explanation": "Wiatr „goni”, słońce „mruga” — uosobienia; „goni – dzwoni” — rym. Nie ma pytania ani słowa „jak”.",
+      "tags": ["srodki-stylistyczne", "liryka"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

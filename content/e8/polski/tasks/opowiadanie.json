@@ -1,0 +1,108 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "ordering",
+      "difficulty": 1,
+      "prompt": "Ułóż elementy opowiadania w dobrej kolejności.",
+      "options": [
+        "przedstawienie bohatera i sytuacji",
+        "rozwój wydarzeń",
+        "punkt kulminacyjny",
+        "zakończenie"
+      ],
+      "answer": [0, 1, 2, 3],
+      "explanation": "Wstęp → zdarzenia → najwyższe napięcie → rozwiązanie.",
+      "tags": ["kompozycja"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Który zapis dialogu jest poprawny?",
+      "options": [
+        "— Słyszałeś to? — szepnęła Ola.",
+        "„Słyszałeś to?”, szepnęła Ola",
+        "- Słyszałeś to - szepnęła Ola?",
+        "Słyszałeś to — szepnęła Ola"
+      ],
+      "answer": 0,
+      "explanation": "Wypowiedź zaczyna się od myślnika, znak zapytania należy do wypowiedzi, a komentarz narratora oddzielamy myślnikiem.",
+      "tags": ["dialog"]
+    },
+    {
+      "id": "003",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** sposoby ożywienia opowiadania.",
+      "options": [
+        "dialog",
+        "opis emocji bohatera",
+        "słowa „nagle”, „w tej chwili”",
+        "wyliczanie dat bez zdarzeń"
+      ],
+      "answer": [0, 1, 2],
+      "explanation": "Same daty nie budują napięcia.",
+      "tags": ["styl"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Opowiadanie zaczęte w pierwszej osobie („Poszedłem…”) powinno",
+      "options": [
+        "konsekwentnie prowadzić narrację w pierwszej osobie",
+        "w połowie przejść na trzecią osobę",
+        "nie mieć narratora",
+        "składać się tylko z dialogów"
+      ],
+      "answer": 0,
+      "explanation": "Zmiana narratora w trakcie tekstu to błąd kompozycyjny.",
+      "tags": ["narrator"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Który fragment najlepiej buduje napięcie?",
+      "options": [
+        "Nagle zgasło światło. W ciszy usłyszałem powolne kroki na schodach.",
+        "Było ciepło i przyjemnie.",
+        "Poszedłem do sklepu i kupiłem chleb.",
+        "Moja szkoła ma trzy piętra."
+      ],
+      "answer": 0,
+      "explanation": "„Nagle”, ciemność i nieznane kroki wywołują niepokój i ciekawość.",
+      "tags": ["napiecie"]
+    },
+    {
+      "id": "006",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań o opowiadaniu.",
+      "options": [
+        "Opowiadanie musi mieć punkt kulminacyjny.",
+        "W opowiadaniu nie wolno używać dialogu."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Bez punktu kulminacyjnego tekst traci napięcie. Prawda.\n2. Dialog ożywia opowiadanie. Fałsz.",
+      "tags": ["kompozycja"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Każda nowa wypowiedź w dialogu powinna zaczynać się",
+      "options": [
+        "od nowej linii",
+        "w tym samym wierszu",
+        "od wielkiego wykrzyknika",
+        "od cudzysłowu na końcu"
+      ],
+      "answer": 0,
+      "explanation": "Każda kwestia w nowym akapicie, z myślnikiem.",
+      "tags": ["dialog"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}
