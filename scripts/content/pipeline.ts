@@ -83,6 +83,38 @@ const PL: Record<string, string> = {
   ż: 'z',
 }
 
+/**
+ * Task files can be written in a short form:
+ *   { "updatedAt": "2026-10-27", "tasks": [{ "id": "001", "type": "single", ... }] }
+ * The path fills exam/subject/topic, "001" becomes the full id, and source/reviewed/updatedAt
+ * get their defaults ("original", false, the file's updatedAt). Anything written out wins.
+ */
+export function expandTaskFile(raw: unknown, exam: string, subject: string, topic: string) {
+  const file =
+    Array.isArray(raw) || typeof raw !== 'object' || raw === null
+      ? { tasks: raw, updatedAt: undefined }
+      : (raw as { tasks?: unknown; updatedAt?: unknown })
+  if (!Array.isArray(file.tasks)) return file.tasks ?? raw
+  return file.tasks.map((t: unknown) => {
+    if (typeof t !== 'object' || t === null) return t
+    const task = t as Record<string, unknown>
+    const id =
+      typeof task.id === 'string' && /^\d{3}$/.test(task.id)
+        ? `${exam}.${subject}.${topic}.${task.id}`
+        : task.id
+    return {
+      exam,
+      subject,
+      topic,
+      source: 'original',
+      reviewed: false,
+      ...(file.updatedAt ? { updatedAt: file.updatedAt } : {}),
+      ...task,
+      id,
+    }
+  })
+}
+
 /** "Logarytm iloczynu" → "logarytm-iloczynu". Math is dropped, Polish letters folded. */
 export function cardSlug(front: string) {
   const s = front
@@ -231,7 +263,7 @@ export function runPipeline(
         const path = join(dir, 'tasks', f)
         const topic = basename(f, '.json')
         if (!topicIds.has(topic)) err(path, `zadania dla nieistniejącego tematu "${topic}"`)
-        const tp = TaskFile.safeParse(readJson(path))
+        const tp = TaskFile.safeParse(expandTaskFile(readJson(path), exam.id, subject.id, topic))
         if (!tp.success) {
           for (const i of tp.error.issues) err(path, `[${i.path.join('.')}] ${i.message}`)
           continue

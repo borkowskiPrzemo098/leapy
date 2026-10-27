@@ -2,9 +2,9 @@
 
 Wygenerowano: 2026-10-27 (`npm run content:build`).
 
-- Zadania: **30** (zweryfikowane przez człowieka: 0, czekają: 30)
-- Sprawdzone automatycznie (`verify`): 15
-- Typy: single 8, numeric 7, truefalse 3, match 3, multi 3, short 3, ordering 3
+- Zadania: **86** (zweryfikowane przez człowieka: 0, czekają: 86)
+- Sprawdzone automatycznie (`verify`): 26
+- Typy: single 34, numeric 25, truefalse 7, match 6, multi 6, short 4, ordering 4
 - Błędy: 0, ostrzeżenia: 0
 
 Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
@@ -94,19 +94,19 @@ Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
 
 ## Matura
 
-### Matematyka (podstawowy): 30 zadań
+### Matematyka (podstawowy): 86 zadań
 
 | Dział | Temat | Zadania | Lekcja |
 | --- | --- | ---: | :---: |
-| Liczby rzeczywiste (30) | Potęgi i pierwiastki | 10 | tak |
+| Liczby rzeczywiste (38) | Potęgi i pierwiastki | 10 | tak |
 |  | Logarytmy | 10 | tak |
 |  | Procenty | 10 | tak |
-|  | Wartość bezwzględna | 0 | — |
-| Wyrażenia algebraiczne (0 ⚠) | Wzory skróconego mnożenia | 0 | — |
-|  | Wyrażenia wymierne | 0 | — |
-| Równania i nierówności (0 ⚠) | Równania i nierówności liniowe | 0 | — |
-|  | Układy równań | 0 | — |
-|  | Równania i nierówności kwadratowe | 0 | — |
+|  | Wartość bezwzględna | 8 | tak |
+| Wyrażenia algebraiczne (21 ⚠) | Wzory skróconego mnożenia | 12 | tak |
+|  | Wyrażenia wymierne | 9 | tak |
+| Równania i nierówności (27) | Równania i nierówności liniowe | 9 | tak |
+|  | Układy równań | 8 | tak |
+|  | Równania i nierówności kwadratowe | 10 | tak |
 | Funkcje (0 ⚠) | Własności funkcji | 0 | — |
 |  | Funkcja liniowa | 0 | — |
 |  | Funkcja kwadratowa | 0 | — |
@@ -236,11 +236,26 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 
 - `matura.matematyka-p.potegi-i-pierwiastki.008` (short, trudność 2)
 - `matura.matematyka-p.procenty.008` (short, trudność 2)
+- `matura.matematyka-p.wzory-skroconego-mnozenia.012` (short, trudność 2)
 - `matura.matematyka-p.logarytmy.009` (short, trudność 1)
 - `matura.matematyka-p.logarytmy.008` (multi, trudność 3)
 - `matura.matematyka-p.logarytmy.010` (ordering, trudność 3)
 - `matura.matematyka-p.potegi-i-pierwiastki.006` (ordering, trudność 3)
 - `matura.matematyka-p.potegi-i-pierwiastki.007` (match, trudność 3)
+- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.007` (single, trudność 3)
+- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.008` (single, trudność 3)
+- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.009` (numeric, trudność 3)
+- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.010` (match, trudność 3)
+- `matura.matematyka-p.rownania-i-nierownosci-liniowe.006` (single, trudność 3)
+- `matura.matematyka-p.rownania-i-nierownosci-liniowe.007` (single, trudność 3)
+- `matura.matematyka-p.rownania-i-nierownosci-liniowe.009` (numeric, trudność 3)
+- `matura.matematyka-p.uklady-rownan.006` (numeric, trudność 3)
+- `matura.matematyka-p.uklady-rownan.007` (numeric, trudność 3)
+- `matura.matematyka-p.wartosc-bezwzgledna.005` (single, trudność 3)
+- `matura.matematyka-p.wartosc-bezwzgledna.008` (match, trudność 3)
+- `matura.matematyka-p.wyrazenia-wymierne.006` (single, trudność 3)
+- `matura.matematyka-p.wyrazenia-wymierne.007` (numeric, trudność 3)
+- `matura.matematyka-p.wzory-skroconego-mnozenia.011` (single, trudność 3)
 - `matura.matematyka-p.logarytmy.005` (truefalse, trudność 2)
 - `matura.matematyka-p.logarytmy.007` (match, trudność 2)
 - `matura.matematyka-p.potegi-i-pierwiastki.004` (truefalse, trudność 2)
@@ -248,11 +263,44 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.procenty.005` (truefalse, trudność 2)
 - `matura.matematyka-p.procenty.007` (multi, trudność 2)
 - `matura.matematyka-p.procenty.010` (ordering, trudność 2)
+- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.002` (multi, trudność 2)
+- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.004` (single, trudność 2)
+- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.005` (numeric, trudność 2)
+- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.006` (single, trudność 2)
+- `matura.matematyka-p.rownania-i-nierownosci-liniowe.002` (numeric, trudność 2)
+- `matura.matematyka-p.rownania-i-nierownosci-liniowe.003` (numeric, trudność 2)
+- `matura.matematyka-p.rownania-i-nierownosci-liniowe.004` (single, trudność 2)
+- `matura.matematyka-p.rownania-i-nierownosci-liniowe.008` (ordering, trudność 2)
+- `matura.matematyka-p.uklady-rownan.002` (single, trudność 2)
+- `matura.matematyka-p.uklady-rownan.003` (numeric, trudność 2)
+- `matura.matematyka-p.uklady-rownan.004` (single, trudność 2)
+- `matura.matematyka-p.uklady-rownan.005` (single, trudność 2)
+- `matura.matematyka-p.uklady-rownan.008` (truefalse, trudność 2)
+- `matura.matematyka-p.wartosc-bezwzgledna.003` (multi, trudność 2)
+- `matura.matematyka-p.wartosc-bezwzgledna.004` (single, trudność 2)
+- `matura.matematyka-p.wartosc-bezwzgledna.006` (truefalse, trudność 2)
+- `matura.matematyka-p.wyrazenia-wymierne.002` (single, trudność 2)
+- `matura.matematyka-p.wyrazenia-wymierne.003` (single, trudność 2)
+- `matura.matematyka-p.wyrazenia-wymierne.004` (single, trudność 2)
+- `matura.matematyka-p.wyrazenia-wymierne.005` (numeric, trudność 2)
+- `matura.matematyka-p.wyrazenia-wymierne.009` (truefalse, trudność 2)
+- `matura.matematyka-p.wzory-skroconego-mnozenia.002` (single, trudność 2)
+- `matura.matematyka-p.wzory-skroconego-mnozenia.005` (single, trudność 2)
+- `matura.matematyka-p.wzory-skroconego-mnozenia.007` (truefalse, trudność 2)
+- `matura.matematyka-p.wzory-skroconego-mnozenia.009` (match, trudność 2)
 - `matura.matematyka-p.procenty.009` (match, trudność 1)
+- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.001` (multi, trudność 1)
+- `matura.matematyka-p.rownania-i-nierownosci-liniowe.001` (numeric, trudność 1)
+- `matura.matematyka-p.uklady-rownan.001` (single, trudność 1)
+- `matura.matematyka-p.wyrazenia-wymierne.001` (single, trudność 1)
+- `matura.matematyka-p.wzory-skroconego-mnozenia.001` (single, trudność 1)
 - `matura.matematyka-p.logarytmy.004` (numeric, trudność 3, verify ✓)
 - `matura.matematyka-p.potegi-i-pierwiastki.003` (single, trudność 3, verify ✓)
 - `matura.matematyka-p.procenty.004` (single, trudność 3, verify ✓)
 - `matura.matematyka-p.procenty.006` (numeric, trudność 3, verify ✓)
+- `matura.matematyka-p.wartosc-bezwzgledna.007` (numeric, trudność 3, verify ✓)
+- `matura.matematyka-p.wzory-skroconego-mnozenia.006` (single, trudność 3, verify ✓)
+- `matura.matematyka-p.wzory-skroconego-mnozenia.008` (numeric, trudność 3, verify ✓)
 - `matura.matematyka-p.logarytmy.002` (numeric, trudność 2, verify ✓)
 - `matura.matematyka-p.logarytmy.003` (single, trudność 2, verify ✓)
 - `matura.matematyka-p.logarytmy.006` (single, trudność 2, verify ✓)
@@ -260,7 +308,15 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.potegi-i-pierwiastki.009` (numeric, trudność 2, verify ✓)
 - `matura.matematyka-p.potegi-i-pierwiastki.010` (single, trudność 2, verify ✓)
 - `matura.matematyka-p.procenty.003` (numeric, trudność 2, verify ✓)
+- `matura.matematyka-p.rownania-i-nierownosci-liniowe.005` (single, trudność 2, verify ✓)
+- `matura.matematyka-p.wartosc-bezwzgledna.002` (single, trudność 2, verify ✓)
+- `matura.matematyka-p.wyrazenia-wymierne.008` (numeric, trudność 2, verify ✓)
+- `matura.matematyka-p.wzory-skroconego-mnozenia.004` (single, trudność 2, verify ✓)
+- `matura.matematyka-p.wzory-skroconego-mnozenia.010` (numeric, trudność 2, verify ✓)
 - `matura.matematyka-p.logarytmy.001` (single, trudność 1, verify ✓)
 - `matura.matematyka-p.potegi-i-pierwiastki.002` (numeric, trudność 1, verify ✓)
 - `matura.matematyka-p.procenty.001` (numeric, trudność 1, verify ✓)
 - `matura.matematyka-p.procenty.002` (single, trudność 1, verify ✓)
+- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.003` (numeric, trudność 1, verify ✓)
+- `matura.matematyka-p.wartosc-bezwzgledna.001` (numeric, trudność 1, verify ✓)
+- `matura.matematyka-p.wzory-skroconego-mnozenia.003` (numeric, trudność 1, verify ✓)

@@ -1,0 +1,95 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Rozwiązaniem układu $\\begin{cases}x+y=5\\\\ x-y=1\\end{cases}$ jest para",
+      "options": ["$x=3,\\ y=2$", "$x=2,\\ y=3$", "$x=4,\\ y=1$", "$x=3,\\ y=-2$"],
+      "answer": 0,
+      "explanation": "1. Dodajemy równania: $2x=6$, $x=3$.\n2. Z pierwszego: $y=5-3=2$.\n3. Sprawdzenie: $3-2=1$.",
+      "tags": ["uklady-rownan"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Rozwiązaniem układu $\\begin{cases}y=2x-1\\\\ 3x+y=9\\end{cases}$ jest para",
+      "options": ["$x=2,\\ y=3$", "$x=3,\\ y=5$", "$x=1,\\ y=1$", "$x=2,\\ y=5$"],
+      "answer": 0,
+      "explanation": "1. Podstawiamy $y$: $3x+2x-1=9$.\n2. $5x=10$, $x=2$.\n3. $y=2\\cdot 2-1=3$.",
+      "tags": ["uklady-rownan"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Para $(x,y)$ jest rozwiązaniem układu $\\begin{cases}2x+3y=12\\\\ 2x-y=4\\end{cases}$. Oblicz $x+y$.",
+      "answer": { "value": 5 },
+      "explanation": "1. Odejmujemy drugie równanie od pierwszego: $4y=8$, $y=2$.\n2. $2x-2=4$, $x=3$.\n3. $x+y=5$.",
+      "tags": ["uklady-rownan"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Układ $\\begin{cases}x+y=1\\\\ x+y=3\\end{cases}$",
+      "options": [
+        "nie ma rozwiązań",
+        "ma nieskończenie wiele rozwiązań",
+        "ma jedno rozwiązanie",
+        "ma dwa rozwiązania"
+      ],
+      "answer": 0,
+      "explanation": "Ta sama suma $x+y$ nie może być naraz równa $1$ i $3$. To dwie proste równoległe, układ jest sprzeczny.",
+      "tags": ["uklady-rownan"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Układ $\\begin{cases}x-2y=3\\\\ 2x-4y=6\\end{cases}$",
+      "options": [
+        "ma nieskończenie wiele rozwiązań",
+        "nie ma rozwiązań",
+        "ma dokładnie jedno rozwiązanie",
+        "ma rozwiązanie tylko $x=3,\\ y=0$"
+      ],
+      "answer": 0,
+      "explanation": "Drugie równanie to pierwsze pomnożone przez $2$. Oba opisują tę samą prostą, więc każdy jej punkt jest rozwiązaniem.",
+      "tags": ["uklady-rownan"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "W klasie jest $28$ osób. Dziewcząt jest o $4$ więcej niż chłopców. Ile jest dziewcząt?",
+      "answer": { "value": 16 },
+      "explanation": "1. $d+c=28$, $d=c+4$.\n2. $c+4+c=28$, $2c=24$, $c=12$.\n3. $d=16$.",
+      "tags": ["uklady-rownan", "zadania-tekstowe"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Za $3$ zeszyty i $2$ długopisy zapłacono $19$ zł, a za $1$ zeszyt i $4$ długopisy $13$ zł. Ile kosztuje jeden zeszyt (w zł)?",
+      "answer": { "value": 5, "unit": "zł" },
+      "explanation": "1. $3z+2d=19$, $z+4d=13$.\n2. Z drugiego: $z=13-4d$.\n3. $3(13-4d)+2d=19$, $39-10d=19$, $d=2$.\n4. $z=13-8=5$.",
+      "tags": ["uklady-rownan", "zadania-tekstowe"]
+    },
+    {
+      "id": "008",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Dany jest układ $\\begin{cases}x+2y=7\\\\ 3x-y=0\\end{cases}$. Oceń prawdziwość zdań.",
+      "options": [
+        "Para $x=1,\\ y=3$ jest rozwiązaniem układu.",
+        "Para $x=7,\\ y=0$ jest rozwiązaniem układu."
+      ],
+      "answer": [true, false],
+      "explanation": "1. $1+6=7$ i $3-3=0$: oba równania spełnione. Prawda.\n2. $7+0=7$, ale $21-0=21\\neq 0$. Para spełnia tylko pierwsze równanie. Fałsz.",
+      "tags": ["uklady-rownan"]
+    }
+  ]
+}

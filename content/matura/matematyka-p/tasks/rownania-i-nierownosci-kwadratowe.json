@@ -1,0 +1,113 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "multi",
+      "difficulty": 1,
+      "prompt": "Zaznacz **wszystkie** rozwiązania równania $x^{2}-5x+6=0$.",
+      "options": ["$2$", "$3$", "$-2$", "$-3$", "$6$"],
+      "answer": [0, 1],
+      "explanation": "1. $\\Delta=25-24=1$.\n2. $x_{1}=\\frac{5-1}{2}=2$, $x_{2}=\\frac{5+1}{2}=3$.",
+      "tags": ["rownania-kwadratowe"]
+    },
+    {
+      "id": "002",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** rozwiązania równania $x^{2}=3x$.",
+      "options": ["$0$", "$3$", "$-3$", "$\\sqrt{3}$"],
+      "answer": [0, 1],
+      "hint": "Nie dziel przez $x$. Przenieś wszystko na jedną stronę.",
+      "explanation": "1. $x^{2}-3x=0$, czyli $x(x-3)=0$.\n2. $x=0$ lub $x=3$.\n\nTypowy błąd: podzielenie przez $x$ i zgubienie $x=0$.",
+      "tags": ["rownania-kwadratowe"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz wyróżnik $\\Delta$ trójmianu $2x^{2}-3x-2$.",
+      "answer": { "value": 25 },
+      "explanation": "1. $a=2$, $b=-3$, $c=-2$.\n2. $\\Delta=(-3)^{2}-4\\cdot 2\\cdot(-2)=9+16=25$.",
+      "verify": "(-3)^2 - 4 * 2 * (-2)",
+      "tags": ["rownania-kwadratowe", "delta"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Ile rozwiązań rzeczywistych ma równanie $x^{2}+2x+5=0$?",
+      "options": ["$0$", "$1$", "$2$", "nieskończenie wiele"],
+      "answer": 0,
+      "explanation": "$\\Delta=4-20=-16<0$, więc równanie nie ma rozwiązań rzeczywistych.",
+      "tags": ["rownania-kwadratowe", "delta"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Równanie $x^{2}-6x+9=0$ ma jedno rozwiązanie. Podaj je.",
+      "answer": { "value": 3 },
+      "explanation": "1. $x^{2}-6x+9=(x-3)^{2}$.\n2. $(x-3)^{2}=0\\iff x=3$.",
+      "tags": ["rownania-kwadratowe"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Zbiorem rozwiązań nierówności $x^{2}-5x+6<0$ jest",
+      "options": ["$(2,\\ 3)$", "$(-\\infty,2)\\cup(3,\\ \\infty)$", "$[2,\\ 3]$", "$(-3,\\ -2)$"],
+      "answer": 0,
+      "explanation": "1. Miejsca zerowe: $2$ i $3$.\n2. $a=1>0$, ramiona w górę.\n3. Wartości ujemne między miejscami zerowymi: $(2,3)$.",
+      "tags": ["nierownosci-kwadratowe"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Zbiorem rozwiązań nierówności $x^{2}\\ge 16$ jest",
+      "options": [
+        "$(-\\infty,-4]\\cup[4,\\ \\infty)$",
+        "$[-4,\\ 4]$",
+        "$[4,\\ \\infty)$",
+        "$(-\\infty,-4)\\cup(4,\\ \\infty)$"
+      ],
+      "answer": 0,
+      "explanation": "1. $x^{2}-16\\ge 0$, miejsca zerowe $-4$ i $4$.\n2. Ramiona w górę: wartości nieujemne poza przedziałem $(-4,4)$, razem z końcami.\n\nTypowy błąd: odpowiedź $[4,\\infty)$, czyli zgubienie ujemnych $x$.",
+      "tags": ["nierownosci-kwadratowe"]
+    },
+    {
+      "id": "008",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Zbiorem rozwiązań nierówności $-x^{2}+4x\\ge 0$ jest",
+      "options": ["$[0,\\ 4]$", "$(-\\infty,0]\\cup[4,\\ \\infty)$", "$(0,\\ 4)$", "$[-4,\\ 0]$"],
+      "answer": 0,
+      "explanation": "1. $-x(x-4)\\ge 0$, miejsca zerowe $0$ i $4$.\n2. $a=-1<0$, ramiona w dół: wartości nieujemne między miejscami zerowymi.\n3. Wynik: $[0,4]$.",
+      "tags": ["nierownosci-kwadratowe"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Liczby $x_{1}$ i $x_{2}$ są rozwiązaniami równania $x^{2}-7x+10=0$. Oblicz $x_{1}\\cdot x_{2}$.",
+      "answer": { "value": 10 },
+      "hint": "Wzory Viète’a: $x_{1}x_{2}=\\frac{c}{a}$.",
+      "explanation": "1. $x_{1}x_{2}=\\frac{c}{a}=\\frac{10}{1}=10$.\n2. Sprawdzenie: rozwiązania to $2$ i $5$, a $2\\cdot 5=10$.",
+      "tags": ["rownania-kwadratowe", "viete"]
+    },
+    {
+      "id": "010",
+      "type": "match",
+      "difficulty": 3,
+      "prompt": "Dopasuj każde równanie do liczby jego rozwiązań rzeczywistych.",
+      "options": {
+        "left": ["$x^{2}-4x+4=0$", "$x^{2}-4x+3=0$", "$x^{2}-4x+5=0$"],
+        "right": ["jedno", "dwa", "zero", "trzy"]
+      },
+      "answer": [0, 1, 2],
+      "explanation": "1. $\\Delta=16-16=0$: jedno.\n2. $\\Delta=16-12=4>0$: dwa.\n3. $\\Delta=16-20<0$: zero.",
+      "tags": ["rownania-kwadratowe", "delta"]
+    }
+  ]
+}

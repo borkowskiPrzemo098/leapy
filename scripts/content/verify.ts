@@ -22,14 +22,18 @@ export function numberFromText(text: string): number | null {
     .replace(/(\d)\{?,\}?(\d)/g, '$1.$2')
     .replace(/\\?%/g, '')
     .replace(/\\left|\\right/g, '')
-    .replace(/\\[dt]?frac\{([^{}]+)\}\{([^{}]+)\}/g, '(($1)/($2))')
-    .replace(/\\sqrt\[(\d+)\]\{([^{}]+)\}/g, 'nthRoot($2,$1)')
-    .replace(/\\sqrt\{([^{}]+)\}/g, 'sqrt($1)')
     .replace(/\\cdot|\\times/g, '*')
-    .replace(/\\pi/g, 'pi')
-    .replace(/\^\{([^{}]+)\}/g, '^($1)')
-    .replace(/[−–]/g, '-')
-    .replace(/\s+/g, '')
+  // Innermost first, so \frac{\sqrt{5}+1}{2} and nested fractions work
+  for (let i = 0; i < 6; i++) {
+    const before = s
+    s = s
+      .replace(/\\sqrt\[(\d+)\]\{([^{}]+)\}/g, 'nthRoot($2,$1)')
+      .replace(/\\sqrt\{([^{}]+)\}/g, 'sqrt($1)')
+      .replace(/\^\{([^{}]+)\}/g, '^($1)')
+      .replace(/\\[dt]?frac\{([^{}]+)\}\{([^{}]+)\}/g, '(($1)/($2))')
+    if (s === before) break
+  }
+  s = s.replace(/\\pi/g, 'pi').replace(/[−–]/g, '-').replace(/\s+/g, '')
   // Only digits, operators and the three known functions; anything else is prose, not a number.
   if (!s || !/^[0-9+\-*/().^,]*$/.test(s.replace(/sqrt|nthRoot|pi/g, ''))) return null
   // implicit multiplication like 2sqrt(2) or 3pi

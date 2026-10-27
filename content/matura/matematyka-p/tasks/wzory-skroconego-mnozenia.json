@@ -1,0 +1,138 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Wyrażenie $(x+5)^{2}$ jest równe",
+      "options": ["$x^{2}+10x+25$", "$x^{2}+25$", "$x^{2}+5x+25$", "$x^{2}+10x+10$"],
+      "answer": 0,
+      "hint": "$(a+b)^{2}=a^{2}+2ab+b^{2}$, tu $a=x$, $b=5$.",
+      "explanation": "1. $a=x$, $b=5$.\n2. $a^{2}=x^{2}$, $2ab=10x$, $b^{2}=25$.\n3. $(x+5)^{2}=x^{2}+10x+25$.\n\nTypowy błąd: $x^{2}+25$, czyli zgubiony wyraz $2ab$.",
+      "tags": ["wzory-skroconego-mnozenia"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wyrażenie $(3x-2)^{2}$ jest równe",
+      "options": ["$9x^{2}-12x+4$", "$9x^{2}-4$", "$9x^{2}-6x+4$", "$9x^{2}+12x-4$"],
+      "answer": 0,
+      "explanation": "1. $a=3x$, $b=2$.\n2. $(3x)^{2}-2\\cdot 3x\\cdot 2+2^{2}=9x^{2}-12x+4$.",
+      "tags": ["wzory-skroconego-mnozenia"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz w pamięci $49\\cdot 51$.",
+      "answer": { "value": 2499 },
+      "hint": "$49=50-1$, $51=50+1$.",
+      "explanation": "1. $49\\cdot 51=(50-1)(50+1)$.\n2. Z różnicy kwadratów: $50^{2}-1^{2}=2500-1=2499$.",
+      "verify": "49 * 51",
+      "tags": ["wzory-skroconego-mnozenia"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Liczba $(2-\\sqrt{3})^{2}$ jest równa",
+      "options": ["$7-4\\sqrt{3}$", "$1$", "$7$", "$4-4\\sqrt{3}$"],
+      "answer": 0,
+      "explanation": "1. $(2-\\sqrt{3})^{2}=2^{2}-2\\cdot 2\\cdot\\sqrt{3}+(\\sqrt{3})^{2}$.\n2. $=4-4\\sqrt{3}+3=7-4\\sqrt{3}$.",
+      "verify": "(2 - sqrt(3))^2",
+      "tags": ["wzory-skroconego-mnozenia", "pierwiastki"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wyrażenie $x^{2}-16$ można zapisać w postaci",
+      "options": ["$(x-4)(x+4)$", "$(x-4)^{2}$", "$(x-8)(x+8)$", "$(x+4)^{2}$"],
+      "answer": 0,
+      "explanation": "$x^{2}-16=x^{2}-4^{2}=(x-4)(x+4)$ ze wzoru na różnicę kwadratów.",
+      "tags": ["wzory-skroconego-mnozenia", "rozklad"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Liczba $\\dfrac{2}{\\sqrt{5}-1}$ jest równa",
+      "options": [
+        "$\\dfrac{\\sqrt{5}+1}{2}$",
+        "$\\dfrac{\\sqrt{5}-1}{2}$",
+        "$\\sqrt{5}+1$",
+        "$\\dfrac{2\\sqrt{5}+2}{3}$"
+      ],
+      "answer": 0,
+      "hint": "Pomnóż licznik i mianownik przez $\\sqrt{5}+1$.",
+      "explanation": "1. $\\dfrac{2}{\\sqrt{5}-1}\\cdot\\dfrac{\\sqrt{5}+1}{\\sqrt{5}+1}=\\dfrac{2(\\sqrt{5}+1)}{5-1}$.\n2. $=\\dfrac{2(\\sqrt{5}+1)}{4}=\\dfrac{\\sqrt{5}+1}{2}$.",
+      "verify": "2 / (sqrt(5) - 1)",
+      "tags": ["wzory-skroconego-mnozenia", "pierwiastki"]
+    },
+    {
+      "id": "007",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość każdej równości (dla wszystkich liczb rzeczywistych $a$, $b$).",
+      "options": ["$(a-b)^{2}=(b-a)^{2}$", "$(a+b)^{2}=a^{2}+b^{2}$", "$a^{2}-b^{2}=(a-b)^{2}$"],
+      "answer": [true, false, false],
+      "explanation": "1. $b-a=-(a-b)$, a kwadrat liczby i liczby przeciwnej jest taki sam. Prawda.\n2. Brakuje $2ab$; np. dla $a=b=1$: $4\\neq 2$. Fałsz.\n3. Dla $a=2$, $b=1$: $3\\neq 1$. Fałsz.",
+      "tags": ["wzory-skroconego-mnozenia"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Wiadomo, że $a+b=7$ i $ab=10$. Oblicz $a^{2}+b^{2}$.",
+      "answer": { "value": 29 },
+      "hint": "$a^{2}+b^{2}=(a+b)^{2}-2ab$.",
+      "explanation": "1. $(a+b)^{2}=a^{2}+2ab+b^{2}$, więc $a^{2}+b^{2}=(a+b)^{2}-2ab$.\n2. $=49-20=29$.",
+      "verify": "7^2 - 2 * 10",
+      "tags": ["wzory-skroconego-mnozenia"]
+    },
+    {
+      "id": "009",
+      "type": "match",
+      "difficulty": 2,
+      "prompt": "Dopasuj każde wyrażenie do postaci iloczynowej.",
+      "options": {
+        "left": ["$x^{2}-9$", "$x^{2}-6x+9$", "$x^{2}+6x+9$", "$4x^{2}-1$"],
+        "right": ["$(x-3)(x+3)$", "$(x-3)^{2}$", "$(x+3)^{2}$", "$(2x-1)(2x+1)$", "$(x-9)(x+1)$"]
+      },
+      "answer": [0, 1, 2, 3],
+      "explanation": "1. $x^{2}-9=x^{2}-3^{2}$: różnica kwadratów.\n2. $x^{2}-6x+9=(x-3)^{2}$: kwadrat różnicy.\n3. $x^{2}+6x+9=(x+3)^{2}$: kwadrat sumy.\n4. $4x^{2}-1=(2x)^{2}-1^{2}=(2x-1)(2x+1)$.",
+      "tags": ["wzory-skroconego-mnozenia", "rozklad"]
+    },
+    {
+      "id": "010",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz w pamięci $99^{2}$.",
+      "answer": { "value": 9801 },
+      "explanation": "1. $99^{2}=(100-1)^{2}$.\n2. $=10000-200+1=9801$.",
+      "verify": "99^2",
+      "tags": ["wzory-skroconego-mnozenia"]
+    },
+    {
+      "id": "011",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Wyrażenie $x^{3}-8$ jest równe",
+      "options": ["$(x-2)(x^{2}+2x+4)$", "$(x-2)^{3}$", "$(x-2)(x^{2}-2x+4)$", "$(x-2)(x+2)^{2}$"],
+      "answer": 0,
+      "explanation": "Ze wzoru na różnicę sześcianów, dla $a=x$, $b=2$: $x^{3}-2^{3}=(x-2)(x^{2}+2x+4)$.",
+      "tags": ["wzory-skroconego-mnozenia", "rozklad"]
+    },
+    {
+      "id": "012",
+      "type": "short",
+      "difficulty": 2,
+      "prompt": "Uzupełnij: $(x+\\square)^{2}=x^{2}+14x+49$. Wpisz brakującą liczbę.",
+      "answer": ["7"],
+      "explanation": "1. Środkowy wyraz $2\\cdot x\\cdot\\square=14x$, więc $\\square=7$.\n2. Sprawdzenie: $7^{2}=49$.",
+      "tags": ["wzory-skroconego-mnozenia"]
+    }
+  ]
+}
