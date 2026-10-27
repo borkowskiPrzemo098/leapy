@@ -1,0 +1,490 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T12:00:00Z",
+  "title": "Design System: Leapy",
+  "extensions": {
+    "colorMeta": {
+      "brand": {
+        "role": "primary",
+        "displayName": "Leap Violet",
+        "canonical": "#5b3df5",
+        "dark": "#6c4fff",
+        "tonalRamp": [
+          "#1a0d63",
+          "#2f1a9e",
+          "#4a2be0",
+          "#5b3df5",
+          "#7d64ff",
+          "#b3a4ff",
+          "#d9d2ff",
+          "#f0edff"
+        ]
+      },
+      "brand-strong": {
+        "role": "primary",
+        "displayName": "Pressed Violet",
+        "canonical": "#4a2be0",
+        "dark": "#7d64ff"
+      },
+      "brand-deep": {
+        "role": "primary",
+        "displayName": "Night Violet",
+        "canonical": "#2f1a9e",
+        "dark": "#3a24b8"
+      },
+      "brand-soft": {
+        "role": "primary",
+        "displayName": "Violet Mist",
+        "canonical": "#e6e0ff",
+        "dark": "#2a2160"
+      },
+      "brand-text": {
+        "role": "primary",
+        "displayName": "Violet Text",
+        "canonical": "#4a2be0",
+        "dark": "#b3a4ff"
+      },
+      "on-brand": {
+        "role": "primary",
+        "displayName": "On-Violet White",
+        "canonical": "#ffffff",
+        "dark": "#ffffff"
+      },
+      "on-brand-2": {
+        "role": "primary",
+        "displayName": "On-Violet Lilac",
+        "canonical": "#d9d2ff",
+        "dark": "#d9d2ff"
+      },
+      "reward": {
+        "role": "secondary",
+        "displayName": "Sun Yellow",
+        "canonical": "#ffc531",
+        "dark": "#ffcd4a",
+        "tonalRamp": [
+          "#2b1d00",
+          "#6b4700",
+          "#b87a00",
+          "#f0a800",
+          "#ffc531",
+          "#ffd76e",
+          "#ffe7a3",
+          "#fff2c9"
+        ]
+      },
+      "reward-strong": {
+        "role": "secondary",
+        "displayName": "Sun Hover",
+        "canonical": "#f0a800",
+        "dark": "#ffbb1a"
+      },
+      "reward-deep": {
+        "role": "secondary",
+        "displayName": "Amber Lip",
+        "canonical": "#b87a00",
+        "dark": "#b88400"
+      },
+      "reward-soft": {
+        "role": "secondary",
+        "displayName": "Sun Cream",
+        "canonical": "#fff2c9",
+        "dark": "#3a2f12"
+      },
+      "on-reward": {
+        "role": "secondary",
+        "displayName": "On-Sun Brown",
+        "canonical": "#2b1d00",
+        "dark": "#2b1d00"
+      },
+      "correct": {
+        "role": "tertiary",
+        "displayName": "Correct Green",
+        "canonical": "#1f9d55",
+        "dark": "#34c46f",
+        "tonalRamp": [
+          "#0a3d20",
+          "#0f6b36",
+          "#157a40",
+          "#1f9d55",
+          "#34c46f",
+          "#6fe09d",
+          "#b2f0cb",
+          "#dcf6e6"
+        ]
+      },
+      "correct-deep": {
+        "role": "tertiary",
+        "displayName": "Correct Lip",
+        "canonical": "#157a40",
+        "dark": "#1f8a4b"
+      },
+      "correct-soft": {
+        "role": "tertiary",
+        "displayName": "Correct Wash",
+        "canonical": "#dcf6e6",
+        "dark": "#12301f"
+      },
+      "correct-text": {
+        "role": "tertiary",
+        "displayName": "Correct Text",
+        "canonical": "#0f6b36",
+        "dark": "#6fe09d"
+      },
+      "wrong": {
+        "role": "tertiary",
+        "displayName": "Wrong Red",
+        "canonical": "#e0394a",
+        "dark": "#ff5a68",
+        "tonalRamp": [
+          "#4a0b12",
+          "#a51c2a",
+          "#b3202f",
+          "#e0394a",
+          "#ff5a68",
+          "#ff9aa4",
+          "#ffc6cc",
+          "#ffe2e5"
+        ]
+      },
+      "wrong-deep": {
+        "role": "tertiary",
+        "displayName": "Wrong Lip",
+        "canonical": "#b3202f",
+        "dark": "#c42d3b"
+      },
+      "wrong-soft": {
+        "role": "tertiary",
+        "displayName": "Wrong Wash",
+        "canonical": "#ffe2e5",
+        "dark": "#3a1520"
+      },
+      "wrong-text": {
+        "role": "tertiary",
+        "displayName": "Wrong Text",
+        "canonical": "#a51c2a",
+        "dark": "#ff9aa4"
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "Lavender Ground",
+        "canonical": "#f5f3ff",
+        "dark": "#0e0a22",
+        "tonalRamp": [
+          "#0e0a22",
+          "#17123a",
+          "#463f6e",
+          "#635c8c",
+          "#c3b8ee",
+          "#ddd6f6",
+          "#eeeaff",
+          "#f5f3ff"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface White",
+        "canonical": "#ffffff",
+        "dark": "#19143a"
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Lilac Wash",
+        "canonical": "#eeeaff",
+        "dark": "#231c4c"
+      },
+      "surface-sunken": {
+        "role": "neutral",
+        "displayName": "Sunken Lilac",
+        "canonical": "#e7e2fb",
+        "dark": "#120d2c"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Lilac Hairline",
+        "canonical": "#ddd6f6",
+        "dark": "#2f2762"
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Lilac Rule",
+        "canonical": "#c3b8ee",
+        "dark": "#463b86"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Violet Ink",
+        "canonical": "#17123a",
+        "dark": "#f4f1ff"
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Violet Ink Secondary",
+        "canonical": "#463f6e",
+        "dark": "#c9c1ef"
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Violet Ink Tertiary",
+        "canonical": "#635c8c",
+        "dark": "#9d94cc"
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Focus Ring",
+        "canonical": "#5b3df5",
+        "dark": "#b3a4ff"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Start card headline and single hero statements."
+      },
+      "title": { "displayName": "Title", "purpose": "Section titles and the feedback verdict." },
+      "heading": { "displayName": "Heading", "purpose": "Card headings and the task question." },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Explanations and reading text, about 60-65ch; answers at 600."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Meta lines, counters, descriptions, segmented labels."
+      },
+      "label": { "displayName": "Label", "purpose": "Chips and captions, sentence case." }
+    },
+    "shadows": [
+      {
+        "name": "shadow-sm",
+        "value": "0 1px 2px rgb(32 20 110 / 0.06), 0 2px 6px -2px rgb(32 20 110 / 0.08)",
+        "purpose": "Active segment, Switch thumb. Dark: 0 1px 2px rgb(0 0 0 / 0.3)."
+      },
+      {
+        "name": "shadow-md",
+        "value": "0 2px 4px rgb(32 20 110 / 0.05), 0 10px 28px -10px rgb(32 20 110 / 0.22)",
+        "purpose": "Emphasised card."
+      },
+      {
+        "name": "shadow-lg",
+        "value": "0 4px 8px rgb(32 20 110 / 0.06), 0 22px 48px -16px rgb(32 20 110 / 0.3)",
+        "purpose": "Floating layers (sheets, dialogs)."
+      },
+      {
+        "name": "button-lip",
+        "value": "0 4px 0 var(--brand-deep | --reward-deep | --line-strong)",
+        "purpose": "Tactile lip on primary/reward/secondary buttons; 0 on :active with translateY(4px)."
+      },
+      {
+        "name": "tile-lip",
+        "value": "0 3px 0 var(--line | --brand | --correct-deep | --wrong-deep)",
+        "purpose": "Answer tile lip by state; none on :active with translateY(3px)."
+      },
+      {
+        "name": "step-base",
+        "value": "inset 0 -4px 0 var(--reward-deep)",
+        "purpose": "Finished StepLadder blocks."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The only easing: exponential ease-out."
+      },
+      {
+        "name": "dur-fast",
+        "value": "140ms",
+        "purpose": "Button press, hover colour, segment switch. 0ms under reduced motion."
+      },
+      {
+        "name": "dur-base",
+        "value": "240ms",
+        "purpose": "Answer tile state, Switch, step colour. 0ms under reduced motion."
+      },
+      {
+        "name": "dur-slow",
+        "value": "420ms",
+        "purpose": "Leap, shake, progress fills. 0ms under reduced motion."
+      },
+      {
+        "name": "leap",
+        "value": "0% translateY(0) scale(1); 35% translateY(-14px) scale(1.08); 70% translateY(0) scale(1.06,0.92); 100% none; var(--dur-slow) var(--ease-out)",
+        "purpose": "Correct answer badge: hop and squash on landing."
+      },
+      {
+        "name": "shake",
+        "value": "translateX 0 / -5px / 4px / -2px / 0; var(--dur-slow) var(--ease-out)",
+        "purpose": "Wrong answer badge."
+      },
+      {
+        "name": "pulse-step",
+        "value": "filter brightness 1 -> 1.18 -> 1, 1.6s ease-in-out infinite",
+        "purpose": "Current StepLadder step."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce OR :root[data-motion='reduce'] -> --dur-* 0ms, animation-duration 0.01ms, 1 iteration",
+        "purpose": "Motion collapses globally."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "container", "value": "1024px" }
+    ],
+    "themes": {
+      "mechanism": "data-theme='light'|'dark' on <html>; 'auto' resolved from prefers-color-scheme by the boot script in index.html before first paint (key leapy:theme).",
+      "textScale": "html font-size = calc(100% * var(--text-scale)); all type in rem."
+    },
+    "temporary": "src/app/DesignSystemPage.tsx is the E0 living style guide at '/'; it moves to /dev/ui in E1. Its composition is not part of the system."
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Default action: violet face on a Night Violet lip that compresses on press.",
+      "html": "<button class=\"ds-btn ds-btn-primary\">Zacznij naukę <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 20px; margin-bottom: 4px; border: 0; border-radius: var(--radius-lg, 20px); font-family: 'Plus Jakarta Sans Variable', ui-rounded, system-ui, sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; cursor: pointer; transition: background-color 140ms cubic-bezier(0.16,1,0.3,1), box-shadow 140ms cubic-bezier(0.16,1,0.3,1), transform 140ms cubic-bezier(0.16,1,0.3,1); } .ds-btn:focus-visible { outline: 3px solid var(--focus, #5b3df5); outline-offset: 3px; } .ds-btn:active { transform: translateY(4px); } .ds-btn-primary { background: var(--brand, #5b3df5); color: var(--on-brand, #fff); box-shadow: 0 4px 0 var(--brand-deep, #2f1a9e); } .ds-btn-primary:hover { background: var(--brand-strong, #4a2be0); } .ds-btn-primary:active { box-shadow: 0 0 0 var(--brand-deep, #2f1a9e); }"
+    },
+    {
+      "name": "Reward Button",
+      "kind": "button",
+      "refersTo": "button-reward",
+      "description": "Sun-yellow, only for claiming rewards or continuing a streak.",
+      "html": "<button class=\"ds-btn-r\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"/></svg> Odbierz 50 XP</button>",
+      "css": ".ds-btn-r { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 24px; margin-bottom: 4px; border: 0; border-radius: var(--radius-xl, 24px); background: var(--reward, #ffc531); color: var(--on-reward, #2b1d00); box-shadow: 0 4px 0 var(--reward-deep, #b87a00); font-family: 'Plus Jakarta Sans Variable', ui-rounded, system-ui, sans-serif; font-size: 1.0625rem; font-weight: 700; letter-spacing: -0.01em; cursor: pointer; transition: background-color 140ms cubic-bezier(0.16,1,0.3,1), box-shadow 140ms cubic-bezier(0.16,1,0.3,1), transform 140ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-r:hover { background: var(--reward-strong, #f0a800); } .ds-btn-r:active { transform: translateY(4px); box-shadow: 0 0 0 var(--reward-deep, #b87a00); } .ds-btn-r:focus-visible { outline: 3px solid var(--focus, #5b3df5); outline-offset: 3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "White face, 2px lilac border and lip.",
+      "html": "<button class=\"ds-btn-s\">Pomiń</button>",
+      "css": ".ds-btn-s { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 20px; margin-bottom: 4px; border: 2px solid var(--line-strong, #c3b8ee); border-radius: var(--radius-lg, 20px); background: var(--surface, #fff); color: var(--ink, #17123a); box-shadow: 0 4px 0 var(--line-strong, #c3b8ee); font-family: 'Plus Jakarta Sans Variable', ui-rounded, system-ui, sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; cursor: pointer; transition: background-color 140ms cubic-bezier(0.16,1,0.3,1), box-shadow 140ms cubic-bezier(0.16,1,0.3,1), transform 140ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-s:hover { background: var(--surface-2, #eeeaff); } .ds-btn-s:active { transform: translateY(4px); box-shadow: 0 0 0 var(--line-strong, #c3b8ee); } .ds-btn-s:focus-visible { outline: 3px solid var(--focus, #5b3df5); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Flat violet text action; no lip.",
+      "html": "<button class=\"ds-btn-g\">Podpowiedź</button>",
+      "css": ".ds-btn-g { display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; border: 0; border-radius: var(--radius-lg, 20px); background: transparent; color: var(--brand-text, #4a2be0); font-family: 'Plus Jakarta Sans Variable', ui-rounded, system-ui, sans-serif; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background-color 140ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-g:hover { background: var(--brand-soft, #e6e0ff); } .ds-btn-g:focus-visible { outline: 3px solid var(--focus, #5b3df5); outline-offset: 3px; }"
+    },
+    {
+      "name": "Answer Option",
+      "kind": "custom",
+      "refersTo": "answer-option",
+      "description": "Thumb-sized answer tile; idle, correct (check + leap) and wrong (cross + shake) shown.",
+      "html": "<div class=\"ds-ans-list\"><button class=\"ds-ans\"><span class=\"ds-ans-k\">1</span><span>4</span></button><button class=\"ds-ans ds-ans-ok\"><span class=\"ds-ans-k\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg></span><span>8</span></button><button class=\"ds-ans ds-ans-no\"><span class=\"ds-ans-k\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M18 6 6 18\"/><path d=\"m6 6 12 12\"/></svg></span><span>2</span></button></div>",
+      "css": ".ds-ans-list { display: flex; flex-direction: column; gap: 12px; } .ds-ans { display: flex; align-items: center; gap: 16px; width: 100%; min-height: 64px; padding: 12px 16px; border: 2px solid var(--line, #ddd6f6); border-radius: var(--radius-xl, 24px); background: var(--surface, #fff); color: var(--ink, #17123a); box-shadow: 0 3px 0 var(--line, #ddd6f6); font-family: 'Plus Jakarta Sans Variable', ui-rounded, system-ui, sans-serif; font-size: 1rem; font-weight: 600; text-align: left; cursor: pointer; transition: background-color 240ms cubic-bezier(0.16,1,0.3,1), border-color 240ms cubic-bezier(0.16,1,0.3,1), box-shadow 240ms cubic-bezier(0.16,1,0.3,1), transform 240ms cubic-bezier(0.16,1,0.3,1); } .ds-ans:hover { border-color: var(--line-strong, #c3b8ee); background: var(--surface-2, #eeeaff); } .ds-ans:active { transform: translateY(3px); box-shadow: none; } .ds-ans:focus-visible { outline: 3px solid var(--focus, #5b3df5); outline-offset: 3px; } .ds-ans-k { display: grid; place-items: center; width: 40px; height: 40px; flex-shrink: 0; border-radius: var(--radius-md, 16px); background: var(--surface-2, #eeeaff); color: var(--ink-2, #463f6e); font-size: 0.875rem; font-weight: 800; } .ds-ans-ok { border-color: var(--correct, #1f9d55); background: var(--correct-soft, #dcf6e6); box-shadow: 0 3px 0 var(--correct-deep, #157a40); } .ds-ans-ok .ds-ans-k { background: var(--correct, #1f9d55); color: #fff; animation: ds-leap 420ms cubic-bezier(0.16,1,0.3,1) both; } .ds-ans-no { border-color: var(--wrong, #e0394a); background: var(--wrong-soft, #ffe2e5); box-shadow: 0 3px 0 var(--wrong-deep, #b3202f); } .ds-ans-no .ds-ans-k { background: var(--wrong, #e0394a); color: #fff; animation: ds-shake 420ms cubic-bezier(0.16,1,0.3,1) both; } @keyframes ds-leap { 0% { transform: translateY(0) scale(1); } 35% { transform: translateY(-14px) scale(1.08); } 70% { transform: translateY(0) scale(1.06, 0.92); } 100% { transform: translateY(0) scale(1); } } @keyframes ds-shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 50% { transform: translateX(4px); } 75% { transform: translateX(-2px); } } @media (prefers-reduced-motion: reduce) { .ds-ans-k { animation-duration: 0.01ms !important; } }"
+    },
+    {
+      "name": "Step Ladder",
+      "kind": "custom",
+      "refersTo": "progress-bar",
+      "description": "Signature level progress: rising blocks; done = sun-yellow, current = pulsing violet, todo = sunken.",
+      "html": "<div class=\"ds-ladder\" role=\"progressbar\" aria-label=\"Postęp poziomu: 6 z 10 kroków\" aria-valuemin=\"0\" aria-valuemax=\"10\" aria-valuenow=\"6\"><i class=\"d\" style=\"height:35.2%\"></i><i class=\"d\" style=\"height:42.4%\"></i><i class=\"d\" style=\"height:49.6%\"></i><i class=\"d\" style=\"height:56.8%\"></i><i class=\"d\" style=\"height:64%\"></i><i class=\"d\" style=\"height:71.2%\"></i><i class=\"c\" style=\"height:78.4%\"></i><i style=\"height:85.6%\"></i><i style=\"height:92.8%\"></i><i style=\"height:100%\"></i></div>",
+      "css": ".ds-ladder { display: flex; align-items: flex-end; gap: 6px; height: 96px; } .ds-ladder i { flex: 1; border-radius: 16px 16px 12px 12px; background: var(--surface-sunken, #e7e2fb); transition: background-color 240ms; } .ds-ladder i.d { background: var(--reward, #ffc531); box-shadow: inset 0 -4px 0 var(--reward-deep, #b87a00); } .ds-ladder i.c { background: var(--brand, #5b3df5); animation: ds-pulse 1.6s ease-in-out infinite; } @keyframes ds-pulse { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.18); } } @media (prefers-reduced-motion: reduce) { .ds-ladder i.c { animation: none; } }"
+    },
+    {
+      "name": "Progress Bar",
+      "kind": "custom",
+      "refersTo": "progress-bar",
+      "description": "14px pill track with a highlighted fill.",
+      "html": "<div class=\"ds-pbar\" role=\"progressbar\" aria-label=\"Postęp sesji\" aria-valuemin=\"0\" aria-valuemax=\"10\" aria-valuenow=\"3\"><div class=\"ds-pbar-f\" style=\"width:30%\"><div class=\"ds-pbar-h\"></div></div></div>",
+      "css": ".ds-pbar { height: 14px; overflow: hidden; border-radius: 9999px; background: var(--surface-sunken, #e7e2fb); } .ds-pbar-f { height: 100%; border-radius: 9999px; background: var(--brand, #5b3df5); transition: width 420ms cubic-bezier(0.16,1,0.3,1); } .ds-pbar-h { margin: 3px 8px 0; height: 4px; border-radius: 9999px; background: rgb(255 255 255 / 0.35); }"
+    },
+    {
+      "name": "Chips",
+      "kind": "chip",
+      "refersTo": "chip-plain",
+      "description": "Status pills: plain, brand, reward (streak).",
+      "html": "<div class=\"ds-chips\"><span class=\"ds-chip\">Potęgi · poziom 2</span><span class=\"ds-chip ds-chip-b\">Rekomendacja</span><span class=\"ds-chip ds-chip-r\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z\"/></svg>12 dni z rzędu</span></div>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 8px; } .ds-chip { display: inline-flex; align-items: center; gap: 6px; min-height: 28px; padding: 0 12px; border-radius: 9999px; background: var(--surface-2, #eeeaff); color: var(--ink-2, #463f6e); font-family: 'Plus Jakarta Sans Variable', ui-rounded, system-ui, sans-serif; font-size: 0.75rem; font-weight: 700; } .ds-chip-b { background: var(--brand-soft, #e6e0ff); color: var(--brand-text, #4a2be0); } .ds-chip-r { background: var(--reward-soft, #fff2c9); color: var(--on-reward, #2b1d00); }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "nav",
+      "refersTo": "segmented",
+      "description": "Sunken track with a raised white active segment (theme picker).",
+      "html": "<div class=\"ds-seg\" role=\"radiogroup\" aria-label=\"Motyw\"><button role=\"radio\" aria-checked=\"true\">Jasny</button><button role=\"radio\" aria-checked=\"false\">Ciemny</button><button role=\"radio\" aria-checked=\"false\">Auto</button></div>",
+      "css": ".ds-seg { display: flex; gap: 4px; padding: 4px; border-radius: var(--radius-xl, 24px); background: var(--surface-sunken, #e7e2fb); } .ds-seg button { flex: 1; min-height: 48px; min-width: 48px; padding: 0 12px; border: 0; border-radius: var(--radius-lg, 20px); background: transparent; color: var(--ink-3, #635c8c); font-family: 'Plus Jakarta Sans Variable', ui-rounded, system-ui, sans-serif; font-size: 0.875rem; font-weight: 700; cursor: pointer; transition: background-color 140ms, color 140ms, box-shadow 140ms; } .ds-seg button:hover { color: var(--ink, #17123a); } .ds-seg button[aria-checked='true'] { background: var(--surface, #fff); color: var(--ink, #17123a); box-shadow: 0 1px 2px rgb(32 20 110 / 0.06), 0 2px 6px -2px rgb(32 20 110 / 0.08); } .ds-seg button:focus-visible { outline: 3px solid var(--focus, #5b3df5); outline-offset: 3px; }"
+    },
+    {
+      "name": "Start Card",
+      "kind": "card",
+      "refersTo": "card-brand",
+      "description": "Violet field with the stair backdrop, streak chip, display headline and full-width reward Continue.",
+      "html": "<div class=\"ds-start\"><svg class=\"ds-start-st\" viewBox=\"0 0 600 300\" preserveAspectRatio=\"xMaxYMax slice\" aria-hidden=\"true\"><path d=\"M300 300V240H380V180H460V120H540V60H600V300Z\"/></svg><div class=\"ds-start-c\"><span class=\"ds-start-chip\">12 dni z rzędu</span><h1>Skocz na wyższy poziom.</h1><p>Dziś zostały ci 4 minuty do celu.</p><button class=\"ds-start-btn\">Kontynuuj</button></div></div>",
+      "css": ".ds-start { position: relative; overflow: hidden; padding: 24px; border-radius: var(--radius-2xl, 32px); background: var(--brand, #5b3df5); color: var(--on-brand, #fff); font-family: 'Plus Jakarta Sans Variable', ui-rounded, system-ui, sans-serif; } .ds-start-st { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; } .ds-start-st path { fill: var(--brand-deep, #2f1a9e); opacity: 0.45; } .ds-start-c { position: relative; } .ds-start-chip { display: inline-flex; align-items: center; min-height: 28px; padding: 0 12px; border-radius: 9999px; background: var(--reward-soft, #fff2c9); color: var(--on-reward, #2b1d00); font-size: 0.75rem; font-weight: 700; } .ds-start h1 { margin: 20px 0 0; font-size: 2.5rem; font-weight: 800; line-height: 1.05; letter-spacing: -0.035em; } .ds-start p { margin: 12px 0 0; color: var(--on-brand-2, #d9d2ff); font-size: 1.0625rem; } .ds-start-btn { display: flex; align-items: center; justify-content: center; width: 100%; max-width: 384px; min-height: 56px; margin: 24px 0 4px; border: 0; border-radius: var(--radius-xl, 24px); background: var(--reward, #ffc531); color: var(--on-reward, #2b1d00); box-shadow: 0 4px 0 var(--reward-deep, #b87a00); font: inherit; font-size: 1.0625rem; font-weight: 700; cursor: pointer; transition: box-shadow 140ms cubic-bezier(0.16,1,0.3,1), transform 140ms cubic-bezier(0.16,1,0.3,1), background-color 140ms; } .ds-start-btn:hover { background: var(--reward-strong, #f0a800); } .ds-start-btn:active { transform: translateY(4px); box-shadow: 0 0 0 var(--reward-deep, #b87a00); } .ds-start-btn:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Climb",
+    "overview": "Leapy is a staircase you climb in short daily sessions, not a school portal. Large committed fields of intense indigo-violet carry the brand; everything around them sits on violet-tinted neutrals so the whole surface reads as one world, in daylight and at night. Progress is literal geometry: blocks that rise one step at a time, a ring that closes, a button that lands when pressed. The energy comes from colour mass, heavy tight display type and tactile motion, while the layout stays clean, roomy and calm enough to study in.\n\nDensity is low and thumb-first: every interactive target is at least 48px tall, answer tiles are 64px, primary actions span the full width at the bottom of a card. The palette is strictly role-bound. Violet is the voice, sun-yellow is the reward, green and red exist only to judge an answer. Light and dark are both first-class: the theme is resolved onto `data-theme` on `<html>` before first paint, and every component reads tokens only, so nothing is themed twice.\n\nMotion has one grammar: exponential ease-out (`cubic-bezier(0.16, 1, 0.3, 1)`) over three durations (140 / 240 / 420ms). A correct answer leaps (hop up, squash on landing), a wrong one shakes, the current step pulses. Under `prefers-reduced-motion` or `data-motion=\"reduce\"` every duration collapses to zero and animations run once at 0.01ms.",
+    "keyCharacteristics": [
+      "Committed violet fields (`brand`) on violet-tinted neutrals; never grey, never cream.",
+      "Sun-yellow reserved for rewards, streaks, levels and goal completion.",
+      "Green/red only for answer feedback, always paired with a check/cross icon.",
+      "Plus Jakarta Sans Variable, self-hosted, 800-weight display with negative tracking.",
+      "Strong rounding (12–32px) and tactile buttons with a solid lip that compresses on press.",
+      "The staircase motif (StepLadder, stair backdrop, logo mark) and the leap keyframe."
+    ],
+    "rules": [
+      {
+        "name": "The Role-Bound Palette Rule",
+        "body": "Violet carries large fields; yellow appears only for rewards, streaks, levels and goal completion; green and red appear only to judge an answer and never without a check or cross icon. A yellow decorative accent or a red \"delete\" button breaks the system.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tinted Neutral Rule",
+        "body": "Every neutral is violet-tinted (`bg` #f5f3ff through `ink` #17123a). No grey, no cream, no pure black, in either theme.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tokens-Only Rule",
+        "body": "Components reference tokens (`bg-brand`, `text-ink-2`); raw hex lives only in `tokens.css` and `src/brand/geometry.js`.",
+        "section": "colors"
+      },
+      {
+        "name": "The Heavy Top Rule",
+        "body": "Display and Title are always 800 with negative tracking; body never goes below 500. The contrast between those two weights is the hierarchy.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Count Rule",
+        "body": "Any changing number (score, step count, percent, countdown) uses tabular figures so it does not jitter.",
+        "section": "typography"
+      },
+      {
+        "name": "The Thumb Floor Rule",
+        "body": "Every tap target is at least 48px (buttons 48/56px, IconButton 48px, segments 48px, Switch rows 56px, answer tiles 64px). Small visual elements get a full-row hit area instead of shrinking the target.",
+        "section": "layout"
+      },
+      {
+        "name": "The Lip Is Tactile Rule",
+        "body": "Solid offset shadows exist only as a pressable lip in the element's own deep tone, on things you press (buttons, answer tiles) or have climbed (finished steps). Never as decoration on static cards. Ghost buttons and IconButtons stay flat.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do put the brand on big violet fields (Start card, primary buttons) and let the tinted neutrals carry everything else.",
+      "Do reserve `reward` yellow for rewards, streaks, levels and goal completion, with `on-reward` (#2b1d00) text.",
+      "Do pair every correct/wrong colour with a check or cross icon and a screen-reader status.",
+      "Do give pressable things the solid lip in their own deep tone and compress it on `:active` (4px buttons, 3px tiles).",
+      "Do keep every tap target at least 48px and place the main action full-width at the bottom of its card.",
+      "Do run every transition on `--ease-out` with `--dur-fast` / `--dur-base` / `--dur-slow`, so reduced motion zeroes them.",
+      "Do use the leap keyframe for a correct answer and the shake for a wrong one; nothing else hops.",
+      "Do check every text pair for 4.5:1 in both themes."
+    ],
+    "donts": [
+      "Don't use grey or cream neutrals, or pure black, in either theme.",
+      "Don't use yellow as a decorative accent, or green/red for anything other than answer feedback (no green \"save\", no red \"delete\").",
+      "Don't put a solid offset lip on static cards or decorative elements; ghost buttons and IconButtons stay flat.",
+      "Don't hard-code hex in components or hand-edit generated logo files; change `tokens.css` or `src/brand/geometry.js`.",
+      "Don't substitute emoji or Unicode glyphs for icons; icons are lucide-react.",
+      "Don't fade content in on scroll or animate without the `--dur-*` tokens.",
+      "Don't rotate, stretch, shadow or gradient the logo, and keep the spark sun-yellow unless the whole mark is mono."
+    ]
+  }
+}

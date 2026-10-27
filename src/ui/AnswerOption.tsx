@@ -26,8 +26,8 @@ const tile: Record<AnswerState, string> = {
 const badge: Record<AnswerState, string> = {
   idle: 'bg-surface-2 text-ink-2',
   selected: 'bg-brand text-on-brand',
-  correct: 'bg-correct text-white animate-leap',
-  wrong: 'bg-wrong text-white animate-shake',
+  correct: 'bg-correct text-on-feedback animate-leap',
+  wrong: 'bg-wrong text-on-feedback animate-shake',
   missed: 'bg-correct-soft text-correct-text',
 }
 

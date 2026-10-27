@@ -45,6 +45,8 @@
   --wrong-deep: #b3202f;
   --wrong-soft: #ffe2e5;
   --wrong-text: #a51c2a;
+  /* Icon on solid correct/wrong badges (non-text, needs 3:1: 3.5:1 and 4.2:1) */
+  --on-feedback: #ffffff;
 
   --focus: #5b3df5;
   --overlay: rgb(23 18 58 / 0.45);

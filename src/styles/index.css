@@ -81,6 +81,7 @@
   --color-wrong-deep: var(--wrong-deep);
   --color-wrong-soft: var(--wrong-soft);
   --color-wrong-text: var(--wrong-text);
+  --color-on-feedback: var(--on-feedback);
   --color-focus: var(--focus);
 
   --radius-sm: var(--radius-sm);
