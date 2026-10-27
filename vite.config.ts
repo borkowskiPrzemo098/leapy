@@ -59,11 +59,13 @@ export default defineConfig({
       workbox: {
         // Content packs (public/data) are precached too, so every subject works offline.
         // Revisit once total content passes a few MB (switch packs to runtime caching).
-        globPatterns: ['**/*.{js,css,html,svg,png,woff2,webmanifest,json}'],
+        // Prerendered public pages are not precached (they come from the network and stay
+        // indexable); the app shell app.html is, and serves every /app route offline.
+        globPatterns: ['**/*.{js,css,svg,png,woff2,webmanifest,json}', 'app.html'],
         // Only the fonts actually used (latin + latin-ext) are precached.
         globIgnores: ['**/*-{cyrillic,cyrillic-ext,vietnamese,greek}-*.woff2', 'og-default.png'],
-        navigateFallback: '/index.html',
-        navigateFallbackDenylist: [/^\/(sitemap\.xml|robots\.txt)$/],
+        navigateFallback: '/app.html',
+        navigateFallbackAllowlist: [/^\/app(\/|$)/, /^\/dev(\/|$)/],
         cleanupOutdatedCaches: true,
       },
       devOptions: { enabled: false },
@@ -74,8 +76,10 @@ export default defineConfig({
   },
   build: {
     target: 'es2022',
+    // Two HTML entries: index.html (template for prerendered public pages) and app.html (shell)
     sourcemap: true,
     rollupOptions: {
+      input: { index: 'index.html', app: 'app.html' },
       onwarn(warning, warn) {
         // Zod ships /*#__PURE__*/ hints in positions Rollup ignores; harmless, so not reported.
         if (warning.code === 'INVALID_ANNOTATION' && warning.id?.includes('node_modules/zod'))

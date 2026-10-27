@@ -280,3 +280,39 @@ export interface SubjectPack {
   tasks: CompiledTask[]
   cards: CompiledCard[]
 }
+
+// ---------- Site content: blog, static pages, FAQ (public pages) ----------
+
+export const BlogMeta = z.strictObject({
+  title: z.string().min(10).max(90),
+  /** Meta description and listing lead, 70–170 characters */
+  description: z.string().min(70).max(170),
+  date: z.iso.date(),
+  tags: z.array(slug).default([]),
+  /** Exam the post is mainly about, for links */
+  exam: slug.optional(),
+  reviewed: z.boolean(),
+})
+export type BlogMeta = z.infer<typeof BlogMeta>
+
+export const PageMeta = z.strictObject({
+  title: z.string().min(3),
+  description: z.string().min(50).max(170),
+  updatedAt: z.iso.date(),
+})
+
+export const FaqFile = z.array(z.strictObject({ q: z.string().min(8), a: md })).min(3)
+
+export interface CompiledPost extends BlogMeta {
+  slug: string
+  html: Html
+  /** Minutes to read, rounded up */
+  minutes: number
+}
+
+export interface SiteData {
+  version: number
+  posts: CompiledPost[]
+  pages: Record<string, z.infer<typeof PageMeta> & { slug: string; html: Html }>
+  faq: { q: string; a: Html }[]
+}

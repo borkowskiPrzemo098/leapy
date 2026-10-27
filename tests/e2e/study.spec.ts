@@ -128,7 +128,9 @@ test('flashcards: flip, rate, forgotten cards come back in the same sitting', as
   await expect(page.getByText('2 / 7')).toBeVisible()
 
   for (let i = 0; i < 6; i++) {
+    await expect(page.getByRole('button', { name: 'Pokaż odpowiedź' })).toBeVisible()
     await page.keyboard.press('Space')
+    await expect(page.getByRole('button', { name: 'Wiem' })).toBeVisible()
     await page.keyboard.press('3')
   }
   await expect(page.getByRole('heading', { level: 1, name: '5 z 6' })).toBeVisible()

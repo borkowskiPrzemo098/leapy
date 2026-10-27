@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && npm run prerender",
     "preview": "vite preview",
     "lint": "eslint . --max-warnings 0",
     "format": "prettier --write .",
@@ -22,8 +22,9 @@
     "test:e2e": "playwright test",
     "content:check": "tsx scripts/content/cli.ts check",
     "content:build": "tsx scripts/content/cli.ts build",
-    "predev": "npm run content:build",
-    "prebuild": "npm run content:build"
+    "predev": "npm run content:build && node scripts/prerender/app-shell.mjs",
+    "prebuild": "npm run content:build && node scripts/prerender/app-shell.mjs",
+    "prerender": "node --import ./scripts/prerender/register.mjs --import tsx scripts/prerender/prerender.tsx"
   },
   "dependencies": {
     "@fontsource-variable/plus-jakarta-sans": "^5.3.0",

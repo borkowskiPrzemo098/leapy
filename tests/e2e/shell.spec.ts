@@ -9,7 +9,7 @@ const screens = [
 ] as const
 
 test('every tab opens its screen without horizontal scroll', async ({ page, isMobile }) => {
-  await page.goto('/')
+  await page.goto('/app')
   await expect(page).toHaveURL(/\/app$/)
   const nav = page.getByRole('navigation', { name: 'Główna nawigacja' })
   for (const [link, heading] of screens) {

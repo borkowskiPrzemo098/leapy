@@ -1,5 +1,5 @@
 import { lazy } from 'react'
-import { createBrowserRouter, Navigate, type RouteObject } from 'react-router-dom'
+import { createBrowserRouter, type RouteObject } from 'react-router-dom'
 import { AppLayout, SessionShell } from './AppLayout'
 import { StartPage } from '@/routes/StartPage'
 
@@ -17,13 +17,15 @@ const FlashcardsPage = lazy(() => import('@/routes/FlashcardsPage'))
 const MockSetupPage = lazy(() => import('@/routes/MockSetupPage'))
 const MockPage = lazy(() => import('@/routes/MockPage'))
 const OnboardingPage = lazy(() => import('@/routes/OnboardingPage'))
+// Public pages (prerendered for SEO). main.tsx loads this chunk before the first render
+// on public paths, so the prerendered HTML is replaced without a loading state.
+export const loadPublic = () => import('@/public/PublicApp')
+const PublicApp = lazy(() => loadPublic().then((m) => ({ default: m.PublicApp })))
 const DesignSystemPage = lazy(() =>
   import('./DesignSystemPage').then((m) => ({ default: m.DesignSystemPage })),
 )
 
 export const routes: RouteObject[] = [
-  // Public pages (home, exams, SEO) arrive in E5; until then "/" opens the app.
-  { path: '/', element: <Navigate to="/app" replace /> },
   {
     path: '/app',
     element: <AppLayout />,
@@ -61,7 +63,7 @@ export const routes: RouteObject[] = [
     children: [{ index: true, element: <OnboardingPage /> }],
   },
   { path: '/dev/ui', element: <DesignSystemPage /> },
-  { path: '*', element: <Navigate to="/app" replace /> },
+  { path: '/*', element: <PublicApp /> },
 ]
 
 export const createRouter = () => createBrowserRouter(routes)

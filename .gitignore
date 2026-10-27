@@ -10,3 +10,4 @@ __pycache__/
 .impeccable/hook.cache.json
 .impeccable/review/
 public/data/
+app.html

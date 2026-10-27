@@ -44,7 +44,7 @@ const ls = (dir: string, ext: string) =>
         .sort()
     : []
 
-function splitFrontmatter(src: string): { meta: unknown; body: string } {
+export function splitFrontmatter(src: string): { meta: unknown; body: string } {
   const m = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/.exec(src)
   if (!m) throw new Error('brak frontmattera YAML (--- ... ---)')
   return { meta: parseYaml(m[1] ?? ''), body: (m[2] ?? '').trim() }

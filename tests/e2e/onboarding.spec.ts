@@ -7,7 +7,7 @@ import { answerCurrent } from './helpers'
 test.use({ storageState: { cookies: [], origins: [] } })
 
 test('new learner: onboarding, first test, rewards and a share card', async ({ page }) => {
-  await page.goto('/')
+  await page.goto('/app')
   await expect(page).toHaveURL(/\/app\/witaj$/)
   await expect(
     page.getByRole('heading', { level: 1, name: 'Do czego się przygotowujesz?' }),

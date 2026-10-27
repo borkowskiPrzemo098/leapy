@@ -1,0 +1,22 @@
+- q: Czy Leapy jest darmowe?
+  a: Tak. Wszystkie obecne funkcje są bezpłatne i nie wymagają konta ani karty płatniczej.
+- q: Czy muszę zakładać konto?
+  a: Nie. Wybierasz egzamin i od razu się uczysz. Postęp zapisuje się na twoim urządzeniu.
+- q: Jak przenieść postęp na inny telefon albo komputer?
+  a: 'W aplikacji wejdź w **Profil → Twoje dane → Zapisz kopię**. Powstanie plik JSON. Na drugim urządzeniu wybierz **Wczytaj kopię** i wskaż ten plik.'
+- q: Czy Leapy działa bez internetu?
+  a: 'Tak. Po pierwszym uruchomieniu aplikacja i zadania są zapisane w przeglądarce. Możesz też dodać Leapy do ekranu początkowego telefonu, wtedy działa jak zwykła aplikacja.'
+- q: Czy zadania pochodzą z arkuszy CKE?
+  a: 'Nie. Wszystkie zadania piszemy od podstaw, w duchu wymagań egzaminacyjnych. Oficjalne arkusze z poprzednich lat są na [cke.gov.pl](https://cke.gov.pl) i warto je rozwiązać przed egzaminem.'
+- q: Czy Leapy jest powiązane z CKE albo Ministerstwem Edukacji?
+  a: Nie. Leapy to niezależny projekt edukacyjny.
+- q: Do jakich egzaminów mogę się przygotować?
+  a: 'Do egzaminu ósmoklasisty (język polski, matematyka, język angielski) i matury (matematyka na poziomie podstawowym i rozszerzonym, język polski, język angielski na poziomie podstawowym i rozszerzonym). Zadania dodajemy partiami, przy tematach w przygotowaniu widać informację.'
+- q: Jak działają powtórki?
+  a: 'Każda odpowiedź ustawia termin kolejnej powtórki: zadanie z błędem wraca następnego dnia, dobrze rozwiązane po 1, potem po 6 dniach, potem coraz rzadziej. W zakładce **Ćwicz → Powtórki** widzisz, co jest na dziś.'
+- q: Czy egzamin próbny w Leapy to prawdziwy arkusz?
+  a: To arkusz ćwiczebny Leapy z zadaniami z całego przedmiotu, z czasem i punktacją. Nie odwzorowuje oficjalnego arkusza i jego wynik nie przelicza się na wynik egzaminu.
+- q: W zadaniu jest błąd. Co zrobić?
+  a: 'Przy każdym zadaniu jest przycisk **Zgłoś błąd**. Otworzy się gotowa wiadomość z numerem zadania. Poprawiamy zgłoszenia w ciągu 14 dni.'
+- q: Czy Leapy zbiera moje dane?
+  a: 'Nie zbieramy danych osobowych. Liczymy tylko anonimowe statystyki odwiedzin bez ciasteczek. Szczegóły w [Polityce prywatności](/prywatnosc).'

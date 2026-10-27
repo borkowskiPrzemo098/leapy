@@ -4,12 +4,15 @@ import { mkdirSync, rmSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { coverageReport, runPipeline } from './pipeline'
+import { compileSite } from './site'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..')
 const mode = process.argv[2] === 'build' ? 'build' : 'check'
 const lockFile = join(root, 'content/ids.lock.json')
 
 const r = runPipeline(root, { lockFile, renamesFile: join(root, 'content/renames.json') })
+const site = compileSite(root)
+r.issues.push(...site.issues)
 const errors = r.issues.filter((i) => i.level === 'error')
 const warnings = r.issues.filter((i) => i.level === 'warning')
 
@@ -20,7 +23,7 @@ for (const i of r.issues)
 
 const subjects = r.catalog.exams.reduce((n, e) => n + e.subjects.length, 0)
 console.log(
-  `content: ${r.catalog.exams.length} egzaminy, ${subjects} przedmiotów, ${r.lessons.size} lekcji, ${r.tasks.length} zadań (${r.verified} sprawdzonych automatycznie), ${errors.length} błędów, ${warnings.length} ostrzeżeń`,
+  `content: ${r.catalog.exams.length} egzaminy, ${subjects} przedmiotów, ${r.lessons.size} lekcji, ${r.tasks.length} zadań (${r.verified} sprawdzonych automatycznie), ${site.site.posts.length} wpisów, ${Object.keys(site.site.pages).length} stron, ${errors.length} błędów, ${warnings.length} ostrzeżeń`,
 )
 
 if (errors.length) {
@@ -33,6 +36,7 @@ if (mode === 'build') {
   rmSync(out, { recursive: true, force: true })
   mkdirSync(out, { recursive: true })
   writeFileSync(join(out, 'catalog.json'), JSON.stringify(r.catalog))
+  writeFileSync(join(out, 'site.json'), JSON.stringify(site.site))
   for (const p of r.packs) {
     mkdirSync(join(out, p.exam), { recursive: true })
     writeFileSync(join(out, p.exam, `${p.subject}.json`), JSON.stringify(p))

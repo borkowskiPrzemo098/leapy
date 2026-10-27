@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import type { Catalog, CompiledTask, SubjectPack } from './schema'
+import type { Catalog, CompiledTask, SiteData, SubjectPack } from './schema'
 import { DATA_VERSION } from './version'
 
 // Loads compiled content from /data (precached by the service worker, so it works offline).
@@ -26,21 +26,39 @@ function load<T>(url: string): Promise<T> {
 export const loadCatalog = () => load<Catalog>('/data/catalog.json')
 export const loadPack = (exam: string, subject: string) =>
   load<SubjectPack>(`/data/${exam}/${subject}.json`)
+export const loadSite = () => load<SiteData>('/data/site.json')
+
+// Resources already in memory, by useResource key. Prerendered public pages embed the data
+// they were built from and seed it here, so their first render matches the HTML (no flash).
+const ready = new Map<string, unknown>()
+// Only static content is kept; learner data (stats) must re-read every time.
+const cacheable = (key: string) => key === 'catalog' || key === 'site' || key.startsWith('pack:')
+/** Keys read during this render pass (the prerender script embeds exactly these). */
+export const readKeys = new Set<string>()
+
+export function seedResource(key: string, data: unknown) {
+  ready.set(key, data)
+}
 
 export type Resource<T> =
   { status: 'loading' } | { status: 'error'; error: string } | { status: 'ready'; data: T }
 
 /** Minimal async-resource hook: re-runs when `key` changes. */
 export function useResource<T>(key: string | null, loader: () => Promise<T>): Resource<T> {
+  const cached = key !== null && ready.has(key) ? (ready.get(key) as T) : undefined
+  if (key !== null && cached !== undefined) readKeys.add(key)
   const [state, setState] = useState<{ key: string | null; res: Resource<T> }>({
     key,
     res: { status: 'loading' },
   })
   useEffect(() => {
-    if (key === null) return
+    if (key === null || ready.has(key)) return
     let alive = true
     loader().then(
-      (data) => alive && setState({ key, res: { status: 'ready', data } }),
+      (data) => {
+        if (cacheable(key)) ready.set(key, data)
+        if (alive) setState({ key, res: { status: 'ready', data } })
+      },
       (e: unknown) =>
         alive &&
         setState({
@@ -54,10 +72,14 @@ export function useResource<T>(key: string | null, loader: () => Promise<T>): Re
     // loader is derived from key by every caller
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key])
+  if (cached !== undefined) return { status: 'ready', data: cached }
   return state.key === key ? state.res : { status: 'loading' }
 }
 
 export const useCatalog = () => useResource('catalog', loadCatalog)
+export const useSite = () => useResource('site', loadSite)
+export const usePack = (exam: string, subject: string) =>
+  useResource(`pack:${exam}/${subject}`, () => loadPack(exam, subject))
 
 export function findSubject(catalog: Catalog, exam: string, subject: string) {
   const e = catalog.exams.find((x) => x.id === exam)
