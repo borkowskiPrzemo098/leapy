@@ -1,0 +1,178 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj zdanie.\n\n> Badacze przypuszczają, że ocieplenie klimatu przyspiesza wędrówki ptaków.\n\nTo zdanie przedstawia",
+      "options": ["hipotezę", "udowodniony fakt", "opinię felietonisty", "definicję"],
+      "answer": 0,
+      "explanation": "„Przypuszczają” — hipoteza.",
+      "tags": ["tekst-naukowy"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Cechą tekstu popularnonaukowego jest",
+      "options": [
+        "wyjaśnianie trudnych pojęć przykładami i porównaniami",
+        "wyłącznie specjalistyczna terminologia bez objaśnień",
+        "brak informacji",
+        "forma wiersza"
+      ],
+      "answer": 0,
+      "explanation": "Popularyzacja wiedzy dla laików.",
+      "tags": ["tekst-popularnonaukowy"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj fragment.\n\n> Fotosynteza zachodzi w chloroplastach. W jej wyniku powstaje tlen, dlatego lasy nazywa się płucami Ziemi.\n\nWyrażenie „płuca Ziemi” to",
+      "options": [
+        "metafora ułatwiająca zrozumienie",
+        "termin naukowy",
+        "dane statystyczne",
+        "nazwa organu"
+      ],
+      "answer": 0,
+      "explanation": "Obrazowe porównanie typowe dla popularyzacji.",
+      "tags": ["tekst-popularnonaukowy"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment.\n\n> Fotosynteza zachodzi w chloroplastach. W jej wyniku powstaje tlen, dlatego lasy nazywa się płucami Ziemi.\n\nSłowo „dlatego” wskazuje na związek",
+      "options": ["przyczynowo-skutkowy", "przeciwstawny", "czasowy", "porównawczy"],
+      "answer": 0,
+      "explanation": "Powstawanie tlenu jest przyczyną nazwy.",
+      "tags": ["tekst-naukowy", "spojnosc"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Wyrażenia „jak się wydaje”, „prawdopodobnie” w tekście naukowym",
+      "options": [
+        "sygnalizują ostrożność i niepewność wniosku",
+        "oznaczają, że autor kłamie",
+        "są błędem stylistycznym",
+        "wprowadzają definicję"
+      ],
+      "answer": 0,
+      "explanation": "Autor zaznacza stopień pewności.",
+      "tags": ["tekst-naukowy"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przypisy w tekście naukowym służą",
+      "options": [
+        "podaniu źródeł i uzupełnień",
+        "ozdobie tekstu",
+        "zapisowi dialogów",
+        "ocenie czytelnika"
+      ],
+      "answer": 0,
+      "explanation": "Przypisy dokumentują źródła.",
+      "tags": ["tekst-naukowy"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj fragment.\n\n> Choć dawniej sądzono, że mózg dorosłego człowieka się nie zmienia, dziś wiadomo, że tworzy nowe połączenia przez całe życie.\n\nJaka zmiana poglądów została opisana?",
+      "options": [
+        "od przekonania o niezmienności mózgu do wiedzy o jego plastyczności",
+        "od wiedzy o plastyczności do przekonania o niezmienności",
+        "brak zmiany",
+        "od nauki do mitologii"
+      ],
+      "answer": 0,
+      "explanation": "„Choć dawniej… dziś wiadomo”.",
+      "tags": ["tekst-popularnonaukowy"]
+    },
+    {
+      "id": "008",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment.\n\n> Choć dawniej sądzono, że mózg dorosłego człowieka się nie zmienia, dziś wiadomo, że tworzy nowe połączenia przez całe życie.\n\nOceń prawdziwość zdań.",
+      "options": [
+        "Według tekstu mózg dorosłego może się zmieniać.",
+        "Tekst twierdzi, że dawne poglądy były prawdziwe."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Prawda.\n2. Dawny pogląd został podważony. Fałsz.",
+      "tags": ["tekst-popularnonaukowy"]
+    },
+    {
+      "id": "009",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Definicja w tekście naukowym ma zwykle postać",
+      "options": ["„X to Y, który/które…”", "pytania retorycznego", "wykrzyknienia", "dialogu"],
+      "answer": 0,
+      "explanation": "Definicja określa pojęcie przez rodzaj i cechę.",
+      "tags": ["tekst-naukowy"]
+    },
+    {
+      "id": "010",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj fragment.\n\n> Wskutek intensywnych opadów poziom rzeki podniósł się o dwa metry, w konsekwencji zalane zostały pobliskie pola.\n\nCo jest ostatecznym skutkiem opisanym we fragmencie?",
+      "options": ["zalanie pól", "intensywne opady", "podniesienie poziomu rzeki", "budowa wałów"],
+      "answer": 0,
+      "explanation": "Opady → wzrost poziomu → zalanie pól.",
+      "tags": ["tekst-naukowy", "przyczyna-skutek"]
+    },
+    {
+      "id": "011",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Czym różni się tekst naukowy od popularnonaukowego?",
+      "options": [
+        "jest skierowany do specjalistów i używa precyzyjnej terminologii",
+        "nie zawiera informacji",
+        "zawsze jest krótszy",
+        "jest pisany wierszem"
+      ],
+      "answer": 0,
+      "explanation": "Różnią się adresatem i językiem.",
+      "tags": ["tekst-naukowy"]
+    },
+    {
+      "id": "012",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wniosek w tekście naukowym",
+      "options": [
+        "wynika z przedstawionych dowodów",
+        "jest dowolną opinią autora",
+        "musi być na początku",
+        "zastępuje dowody"
+      ],
+      "answer": 0,
+      "explanation": "Wniosek jest zwieńczeniem wywodu.",
+      "tags": ["tekst-naukowy"]
+    },
+    {
+      "id": "013",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Najlepsza strategia przy pytaniu o znaczenie terminu w tekście to",
+      "options": [
+        "sprawdzenie, jak autor definiuje go w tekście",
+        "podanie definicji z pamięci, niezależnie od tekstu",
+        "pominięcie pytania",
+        "przepisanie całego akapitu"
+      ],
+      "answer": 0,
+      "explanation": "Odpowiedź ma wynikać z tekstu.",
+      "tags": ["strategia"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

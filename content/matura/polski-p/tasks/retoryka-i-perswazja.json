@@ -1,0 +1,70 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Odwołanie do wiarygodności mówcy lub autorytetu to",
+      "options": ["ethos", "pathos", "logos", "argument ad personam"],
+      "answer": 0,
+      "explanation": "Ethos — wiarygodność.",
+      "tags": ["retoryka"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Odwołanie do emocji odbiorcy to",
+      "options": ["pathos", "ethos", "logos", "elipsa"],
+      "answer": 0,
+      "explanation": "Pathos — emocje.",
+      "tags": ["retoryka"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "„Nie słuchajcie go, przecież on nawet nie skończył studiów” to przykład",
+      "options": [
+        "argumentu ad personam",
+        "argumentu rzeczowego",
+        "odwołania do statystyki",
+        "kontrargumentu"
+      ],
+      "answer": 0,
+      "explanation": "Atak na osobę zamiast na jej pogląd.",
+      "tags": ["retoryka", "erystyka"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Pytanie retoryczne w przemówieniu służy",
+      "options": [
+        "skłonieniu słuchaczy do refleksji i wzmocnieniu tezy",
+        "uzyskaniu informacji",
+        "przerwaniu wypowiedzi",
+        "zakończeniu dyskusji bez wniosku"
+      ],
+      "answer": 0,
+      "explanation": "Nie oczekuje odpowiedzi, ale angażuje odbiorcę.",
+      "tags": ["retoryka"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Czym manipulacja różni się od perswazji?",
+      "options": [
+        "ukrywa intencje i wykorzystuje odbiorcę wbrew jego interesom",
+        "zawsze używa liczb",
+        "jest dłuższa",
+        "nie ma nadawcy"
+      ],
+      "answer": 0,
+      "explanation": "Perswazja może być uczciwa, manipulacja nie jest.",
+      "tags": ["retoryka"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

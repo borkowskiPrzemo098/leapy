@@ -1,0 +1,60 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Wypowiedź „Pociąg do Krakowa odjeżdża z peronu drugiego” pełni funkcję",
+      "options": ["informatywną", "ekspresywną", "impresywną", "poetycką"],
+      "answer": 0,
+      "explanation": "Przekazuje informację.",
+      "tags": ["funkcje-jezyka"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Wypowiedź „Ale się cieszę!” pełni funkcję",
+      "options": ["ekspresywną", "informatywną", "fatyczną", "metajęzykową"],
+      "answer": 0,
+      "explanation": "Wyraża emocje nadawcy.",
+      "tags": ["funkcje-jezyka"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Hasło „Zagłosuj na nas — zmieńmy miasto razem!” pełni przede wszystkim funkcję",
+      "options": ["impresywną", "poetycką", "fatyczną", "informatywną"],
+      "answer": 0,
+      "explanation": "Nakłania odbiorcę do działania.",
+      "tags": ["funkcje-jezyka"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Pytanie „Halo, słyszysz mnie?” w rozmowie telefonicznej pełni funkcję",
+      "options": ["fatyczną", "ekspresywną", "impresywną", "poetycką"],
+      "answer": 0,
+      "explanation": "Podtrzymuje kontakt.",
+      "tags": ["funkcje-jezyka"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "W wierszu dominuje funkcja poetycka, gdy",
+      "options": [
+        "uwaga odbiorcy skupia się na samej formie wypowiedzi",
+        "tekst przekazuje rozkład jazdy",
+        "tekst nakłania do zakupu",
+        "nadawca sprawdza, czy jest słyszany"
+      ],
+      "answer": 0,
+      "explanation": "Funkcja poetycka zwraca uwagę na kształt językowy.",
+      "tags": ["funkcje-jezyka"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

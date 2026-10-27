@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Motyw marności i przemijania świata to",
+      "options": ["vanitas", "carpe diem", "arkadia", "katharsis"],
+      "answer": 0,
+      "explanation": "*Vanitas* — marność.",
+      "tags": ["barok", "motywy"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Barokowy koncept to",
+      "options": [
+        "zaskakujące, pomysłowe połączenie myśli lub obrazów",
+        "rodzaj tańca",
+        "zakończenie dramatu",
+        "prosty opis przyrody"
+      ],
+      "answer": 0,
+      "explanation": "Koncept ma zadziwić odbiorcę.",
+      "tags": ["barok"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przedstawicielem poezji metafizycznej baroku jest",
+      "options": [
+        "Mikołaj Sęp Szarzyński",
+        "Ignacy Krasicki",
+        "Adam Mickiewicz",
+        "Bolesław Leśmian"
+      ],
+      "answer": 0,
+      "explanation": "Sęp Szarzyński pisał o człowieku rozdartym między ciałem a duchem.",
+      "tags": ["barok"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

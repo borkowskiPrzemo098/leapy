@@ -1,0 +1,43 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Średniowieczny światopogląd, w którym w centrum jest Bóg, to",
+      "options": ["teocentryzm", "humanizm", "racjonalizm", "pozytywizm"],
+      "answer": 0,
+      "explanation": "Teocentryzm — od gr. *theos* (Bóg).",
+      "tags": ["sredniowiecze"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Motyw *danse macabre* pokazuje, że",
+      "options": [
+        "śmierć zrównuje wszystkich ludzi, bez względu na stan",
+        "śmierć dotyczy tylko grzeszników",
+        "taniec był ulubioną rozrywką rycerzy",
+        "człowiek może pokonać śmierć"
+      ],
+      "answer": 0,
+      "explanation": "W tańcu śmierci Śmierć prowadzi papieża, króla i chłopa.",
+      "tags": ["sredniowiecze", "motywy"]
+    },
+    {
+      "id": "003",
+      "type": "match",
+      "difficulty": 2,
+      "prompt": "Dopasuj utwór do wzorca osobowego.",
+      "options": {
+        "left": ["„Pieśń o Rolandzie”", "„Legenda o świętym Aleksym”"],
+        "right": ["rycerz", "asceta", "władca", "mieszczanin"]
+      },
+      "answer": [0, 1],
+      "explanation": "Roland — rycerz, św. Aleksy — asceta.",
+      "tags": ["sredniowiecze", "wzorce-osobowe"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

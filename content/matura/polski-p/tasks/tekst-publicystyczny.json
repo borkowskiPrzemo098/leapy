@@ -1,0 +1,198 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment.\n\n> Znowu zamknięto jedyną bibliotekę w dzielnicy. Cóż za wspaniały pomysł: dzieci przecież tak chętnie czytają w centrach handlowych.\n\nAutor wyraża stosunek",
+      "options": [
+        "krytyczny, z użyciem ironii",
+        "entuzjastyczny",
+        "obojętny",
+        "pochwalny wobec władz"
+      ],
+      "answer": 0,
+      "explanation": "„Cóż za wspaniały pomysł” to ironia.",
+      "tags": ["publicystyka", "ironia"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment.\n\n> Znowu zamknięto jedyną bibliotekę w dzielnicy. Cóż za wspaniały pomysł: dzieci przecież tak chętnie czytają w centrach handlowych.\n\nJaka jest teza autora?",
+      "options": [
+        "Zamknięcie biblioteki to zła decyzja.",
+        "Dzieci lubią centra handlowe.",
+        "Biblioteki są niepotrzebne.",
+        "W dzielnicy jest wiele bibliotek."
+      ],
+      "answer": 0,
+      "explanation": "Ironia służy krytyce decyzji.",
+      "tags": ["publicystyka", "teza"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Felieton to gatunek",
+      "options": [
+        "krótki, subiektywny, często ironiczny komentarz",
+        "naukowy wywód z przypisami",
+        "relacja z podróży bez ocen",
+        "urzędowe pismo"
+      ],
+      "answer": 0,
+      "explanation": "Cechy felietonu.",
+      "tags": ["publicystyka", "gatunki"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj fragment.\n\n> Według badań co trzeci nastolatek śpi krócej niż siedem godzin. To nie jest problem młodzieży — to problem szkoły, która zaczyna lekcje o świcie.\n\nNa czym opiera się argumentacja autora?",
+      "options": [
+        "na danych statystycznych i ich interpretacji",
+        "na anegdocie z życia autora",
+        "na cytacie z poety",
+        "na emocjonalnym apelu bez faktów"
+      ],
+      "answer": 0,
+      "explanation": "„Według badań co trzeci…” — dane, potem wniosek.",
+      "tags": ["publicystyka", "argumentacja"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj fragment.\n\n> Według badań co trzeci nastolatek śpi krócej niż siedem godzin. To nie jest problem młodzieży — to problem szkoły, która zaczyna lekcje o świcie.\n\nAutor przypisuje odpowiedzialność za problem",
+      "options": [
+        "organizacji pracy szkoły",
+        "samym nastolatkom",
+        "rodzicom",
+        "producentom telefonów"
+      ],
+      "answer": 0,
+      "explanation": "„To problem szkoły…”.",
+      "tags": ["publicystyka", "teza"]
+    },
+    {
+      "id": "006",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań o tekstach publicystycznych.",
+      "options": [
+        "Opinia felietonisty jest faktem.",
+        "Reportaż opiera się na rzeczywistych zdarzeniach."
+      ],
+      "answer": [false, true],
+      "explanation": "1. To subiektywny pogląd. Fałsz.\n2. Prawda.",
+      "tags": ["publicystyka"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Słowa wartościujące (np. „skandaliczny”, „wspaniały”) w tekście publicystycznym służą",
+      "options": [
+        "wyrażeniu oceny i wpływaniu na odbiorcę",
+        "podaniu dokładnych danych",
+        "zachowaniu neutralności",
+        "definiowaniu terminów"
+      ],
+      "answer": 0,
+      "explanation": "To środki perswazji.",
+      "tags": ["publicystyka", "perswazja"]
+    },
+    {
+      "id": "008",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Przeczytaj fragment.\n\n> Mówi się, że młodzi nie czytają. Tymczasem kolejki po nową powieść fantasy ustawiają się od rana.\n\nSłowo „tymczasem” wprowadza",
+      "options": [
+        "kontrargument wobec obiegowej opinii",
+        "przykład potwierdzający opinię",
+        "zakończenie tekstu",
+        "definicję"
+      ],
+      "answer": 0,
+      "explanation": "„Tymczasem” przeciwstawia fakt powszechnemu przekonaniu.",
+      "tags": ["publicystyka", "spojnosc"]
+    },
+    {
+      "id": "009",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeczytaj fragment.\n\n> Mówi się, że młodzi nie czytają. Tymczasem kolejki po nową powieść fantasy ustawiają się od rana.\n\nAutor najpewniej uważa, że",
+      "options": [
+        "młodzi ludzie czytają, choć wybierają inne książki",
+        "młodzi nie czytają",
+        "fantasy nie jest literaturą",
+        "kolejki są niepotrzebne"
+      ],
+      "answer": 0,
+      "explanation": "Fakt o kolejkach podważa tezę o nieczytaniu.",
+      "tags": ["publicystyka", "wnioskowanie"]
+    },
+    {
+      "id": "010",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Teza tekstu to",
+      "options": [
+        "główne twierdzenie autora",
+        "tytuł tekstu",
+        "pierwsze zdanie zawsze",
+        "nazwisko autora"
+      ],
+      "answer": 0,
+      "explanation": "Teza nie musi być pierwszym zdaniem.",
+      "tags": ["publicystyka", "teza"]
+    },
+    {
+      "id": "011",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Esej różni się od rozprawki tym, że",
+      "options": [
+        "swobodniej prowadzi wywód i łączy refleksję z erudycją",
+        "nie może zawierać opinii",
+        "zawsze ma dialogi",
+        "jest gatunkiem urzędowym"
+      ],
+      "answer": 0,
+      "explanation": "Esej jest swobodny kompozycyjnie i osobisty.",
+      "tags": ["publicystyka", "gatunki"]
+    },
+    {
+      "id": "012",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Pytanie zadane przez autora na końcu felietonu, na które nie odpowiada, służy",
+      "options": [
+        "pozostawieniu czytelnika z refleksją",
+        "podaniu informacji",
+        "zmianie tematu",
+        "przeprosinom"
+      ],
+      "answer": 0,
+      "explanation": "Pytanie otwarte angażuje odbiorcę.",
+      "tags": ["publicystyka", "perswazja"]
+    },
+    {
+      "id": "013",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Który element NIE jest typowy dla reportażu?",
+      "options": [
+        "zmyślona fabuła z fantastycznymi postaciami",
+        "opis miejsc i ludzi",
+        "cytaty z rozmów",
+        "fakty i daty"
+      ],
+      "answer": 0,
+      "explanation": "Reportaż jest literaturą faktu.",
+      "tags": ["publicystyka", "gatunki"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Autorem „Bajek i przypowieści” jest",
+      "options": ["Ignacy Krasicki", "Jan Kochanowski", "Aleksander Fredro", "Adam Mickiewicz"],
+      "answer": 0,
+      "explanation": "Bajki pisał Ignacy Krasicki.",
+      "tags": ["oswiecenie"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Poemat heroikomiczny to utwór, w którym",
+      "options": [
+        "błahy temat opisano podniosłym stylem",
+        "bohater ginie w walce",
+        "nie ma narratora",
+        "podmiot liryczny wyraża rozpacz"
+      ],
+      "answer": 0,
+      "explanation": "Kontrast tematu i stylu daje efekt komiczny, np. „Monachomachia”.",
+      "tags": ["oswiecenie", "gatunki"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Oświecenie uważało, że źródłem wiedzy jest przede wszystkim",
+      "options": ["rozum", "uczucie", "objawienie", "intuicja poety"],
+      "answer": 0,
+      "explanation": "Racjonalizm epoki.",
+      "tags": ["oswiecenie"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

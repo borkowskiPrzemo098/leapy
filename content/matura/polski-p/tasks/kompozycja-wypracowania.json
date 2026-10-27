@@ -1,0 +1,133 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "ordering",
+      "difficulty": 1,
+      "prompt": "Ułóż elementy wypracowania w dobrej kolejności.",
+      "options": [
+        "wstęp z tezą",
+        "pierwszy argument z przykładem",
+        "drugi argument z przykładem",
+        "zakończenie z wnioskiem"
+      ],
+      "answer": [0, 1, 2, 3],
+      "explanation": "Klasyczna kompozycja wypracowania argumentacyjnego.",
+      "tags": ["kompozycja"]
+    },
+    {
+      "id": "002",
+      "type": "ordering",
+      "difficulty": 2,
+      "prompt": "Ułóż elementy akapitu argumentacyjnego.",
+      "options": [
+        "zdanie wprowadzające argument",
+        "odwołanie do przykładu z lektury",
+        "wyjaśnienie, jak przykład potwierdza argument",
+        "zdanie łączące z tezą"
+      ],
+      "answer": [0, 1, 2, 3],
+      "explanation": "Argument → przykład → komentarz → wniosek cząstkowy.",
+      "tags": ["kompozycja", "akapit"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Zakończenie wypracowania powinno",
+      "options": [
+        "potwierdzić tezę i podsumować wywód",
+        "wprowadzić nowy argument",
+        "powtórzyć wstęp słowo w słowo",
+        "zawierać streszczenie lektury"
+      ],
+      "answer": 0,
+      "explanation": "Zakończenie domyka wywód.",
+      "tags": ["kompozycja"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które wyrażenie najlepiej łączy dwa akapity z argumentami?",
+      "options": ["Kolejnym dowodem na słuszność tej tezy jest…", "Nagle…", "Koniec.", "Siema,"],
+      "answer": 0,
+      "explanation": "Wyrażenie metatekstowe porządkuje wywód.",
+      "tags": ["kompozycja", "spojnosc"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Dlaczego warto przygotować plan przed pisaniem wypracowania?",
+      "options": [
+        "żeby zachować logiczny porządek i nie zgubić tezy",
+        "bo plan jest oceniany zamiast wypracowania",
+        "żeby tekst był dłuższy",
+        "nie warto"
+      ],
+      "answer": 0,
+      "explanation": "Plan porządkuje argumenty i oszczędza czas.",
+      "tags": ["kompozycja", "strategia"]
+    },
+    {
+      "id": "006",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Wypracowanie bez podziału na akapity jest mniej czytelne.",
+        "W zakończeniu można przedstawić szerszą refleksję."
+      ],
+      "answer": [true, true],
+      "explanation": "1. Prawda.\n2. Prawda — refleksja wychodząca poza temat może wzbogacić zakończenie.",
+      "tags": ["kompozycja"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wstęp wypracowania powinien zawierać",
+      "options": [
+        "wprowadzenie w problem i tezę",
+        "wszystkie argumenty",
+        "tylko cytat bez komentarza",
+        "streszczenie zakończenia"
+      ],
+      "answer": 0,
+      "explanation": "Wstęp wprowadza i formułuje tezę.",
+      "tags": ["kompozycja"]
+    },
+    {
+      "id": "008",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Wypracowanie ma tezę i trzy argumenty, ale drugi dotyczy innego problemu niż temat. Co jest błędem?",
+      "options": [
+        "argument nie jest związany z tematem i tezą",
+        "liczba argumentów",
+        "obecność tezy",
+        "długość wypracowania"
+      ],
+      "answer": 0,
+      "explanation": "Każdy argument musi odpowiadać na temat.",
+      "tags": ["kompozycja", "argumentacja"]
+    },
+    {
+      "id": "009",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które wyrażenie dobrze rozpoczyna zakończenie?",
+      "options": [
+        "Podsumowując, można stwierdzić, że…",
+        "Po pierwsze…",
+        "Na początku…",
+        "Dawno temu…"
+      ],
+      "answer": 0,
+      "explanation": "Sygnał podsumowania.",
+      "tags": ["kompozycja"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

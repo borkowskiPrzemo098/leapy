@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Postać Pana Cogito stworzył",
+      "options": ["Zbigniew Herbert", "Tadeusz Różewicz", "Czesław Miłosz", "Wisława Szymborska"],
+      "answer": 0,
+      "explanation": "Pan Cogito to bohater wierszy Herberta.",
+      "tags": ["wspolczesnosc"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Akcja „Dżumy” Alberta Camusa rozgrywa się w",
+      "options": ["Oranie", "Paryżu", "Krakowie", "Londynie"],
+      "answer": 0,
+      "explanation": "Epidemia wybucha w algierskim Oranie.",
+      "tags": ["wspolczesnosc", "kontekst-swiatowy"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Nowomowa w „Roku 1984” Orwella służy",
+      "options": [
+        "ograniczaniu myślenia przez ubożenie języka",
+        "ułatwieniu nauki języków obcych",
+        "tworzeniu poezji",
+        "porozumieniu z innymi państwami"
+      ],
+      "answer": 0,
+      "explanation": "Mniej słów to mniej możliwych myśli — narzędzie totalitaryzmu.",
+      "tags": ["wspolczesnosc", "kontekst-swiatowy"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

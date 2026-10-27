@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Autorem „Antygony” jest",
+      "options": ["Sofokles", "Homer", "Ajschylos", "Horacy"],
+      "answer": 0,
+      "explanation": "„Antygona” to tragedia Sofoklesa.",
+      "tags": ["antyk"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Konflikt tragiczny w „Antygonie” polega na tym, że",
+      "options": [
+        "obie strony mają swoje racje, a każdy wybór prowadzi do nieszczęścia",
+        "Antygona nie zna prawa",
+        "Kreon chce oddać władzę",
+        "bogowie nie interesują się ludźmi"
+      ],
+      "answer": 0,
+      "explanation": "Prawo boskie (Antygona) i państwowe (Kreon) — obie racje są ważne.",
+      "tags": ["antyk", "tragedia"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Księga Hioba porusza przede wszystkim problem",
+      "options": [
+        "cierpienia niezawinionego",
+        "stworzenia świata",
+        "końca świata",
+        "wędrówki narodu wybranego"
+      ],
+      "answer": 0,
+      "explanation": "Hiob jest sprawiedliwy, a mimo to cierpi.",
+      "tags": ["biblia"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

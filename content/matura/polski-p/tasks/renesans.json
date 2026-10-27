@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "„Treny” Jana Kochanowskiego powstały po śmierci",
+      "options": ["córki Urszuli", "żony", "króla Zygmunta Augusta", "przyjaciela"],
+      "answer": 0,
+      "explanation": "Cykl to żal po śmierci córki Urszulki.",
+      "tags": ["renesans", "kochanowski"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Renesansowy humanizm stawia w centrum",
+      "options": [
+        "człowieka, jego rozum i godność",
+        "Boga i zbawienie",
+        "naród i walkę zbrojną",
+        "naukę i przemysł"
+      ],
+      "answer": 0,
+      "explanation": "Humanizm skupia się na człowieku.",
+      "tags": ["renesans"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "„Treny” są ważne dla obrazu epoki, ponieważ",
+      "options": [
+        "pokazują kryzys renesansowej wiary w rozum i harmonię",
+        "są pochwałą życia dworskiego",
+        "opisują bitwę pod Grunwaldem",
+        "wyśmiewają szlachtę"
+      ],
+      "answer": 0,
+      "explanation": "Cierpienie po śmierci dziecka podważa stoicką postawę i ład świata.",
+      "tags": ["renesans", "kochanowski"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

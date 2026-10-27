@@ -2,9 +2,9 @@
 
 Wygenerowano: 2026-10-27 (`npm run content:build`).
 
-- Zadania: **817** (zweryfikowane przez człowieka: 0, czekają: 817)
+- Zadania: **928** (zweryfikowane przez człowieka: 0, czekają: 928)
 - Sprawdzone automatycznie (`verify`): 242
-- Typy: ordering 15, single 471, multi 25, truefalse 51, match 15, short 18, numeric 222
+- Typy: ordering 17, single 571, multi 27, truefalse 56, match 17, short 18, numeric 222
 - Błędy: 0, ostrzeżenia: 0
 
 Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
@@ -155,31 +155,31 @@ Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
 |  | Prawdopodobieństwo warunkowe | 0 | — |
 |  | Schemat Bernoullego | 0 | — |
 
-### Język polski (podstawowy): 0 zadań
+### Język polski (podstawowy): 111 zadań
 
 | Dział | Temat | Zadania | Lekcja |
 | --- | --- | ---: | :---: |
-| Epoki literackie (0 ⚠) | Antyk i Biblia | 0 | — |
-|  | Średniowiecze | 0 | — |
-|  | Renesans | 0 | — |
-|  | Barok | 0 | — |
-|  | Oświecenie | 0 | — |
-|  | Romantyzm | 0 | — |
-|  | Pozytywizm | 0 | — |
-|  | Młoda Polska | 0 | — |
-|  | Dwudziestolecie międzywojenne | 0 | — |
-|  | Literatura wojny i okupacji | 0 | — |
-|  | Literatura po 1945 roku | 0 | — |
-| Wiedza o języku (0 ⚠) | Funkcje tekstu i języka | 0 | — |
-|  | Środki stylistyczne | 0 | — |
-|  | Style funkcjonalne | 0 | — |
-|  | Kultura języka | 0 | — |
-|  | Retoryka i perswazja | 0 | — |
-| Czytanie ze zrozumieniem (0 ⚠) | Tekst publicystyczny | 0 | — |
-|  | Tekst naukowy i popularnonaukowy | 0 | — |
-| Wypracowanie (0 ⚠) | Teza i argumentacja | 0 | — |
-|  | Kompozycja wypracowania | 0 | — |
-|  | Kontekst w wypracowaniu | 0 | — |
+| Epoki literackie (33) | Antyk i Biblia | 3 | tak |
+|  | Średniowiecze | 3 | tak |
+|  | Renesans | 3 | tak |
+|  | Barok | 3 | tak |
+|  | Oświecenie | 3 | tak |
+|  | Romantyzm | 3 | tak |
+|  | Pozytywizm | 3 | tak |
+|  | Młoda Polska | 3 | tak |
+|  | Dwudziestolecie międzywojenne | 3 | tak |
+|  | Literatura wojny i okupacji | 3 | tak |
+|  | Literatura po 1945 roku | 3 | tak |
+| Wiedza o języku (25) | Funkcje tekstu i języka | 5 | tak |
+|  | Środki stylistyczne | 5 | tak |
+|  | Style funkcjonalne | 5 | tak |
+|  | Kultura języka | 5 | tak |
+|  | Retoryka i perswazja | 5 | tak |
+| Czytanie ze zrozumieniem (26) | Tekst publicystyczny | 13 | tak |
+|  | Tekst naukowy i popularnonaukowy | 13 | tak |
+| Wypracowanie (27) | Teza i argumentacja | 9 | tak |
+|  | Kompozycja wypracowania | 9 | tak |
+|  | Kontekst w wypracowaniu | 9 | tak |
 
 ### Język angielski (podstawowy): 86 zadań
 
@@ -314,6 +314,32 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.wyrazenia-wymierne.012` (numeric, trudność 3)
 - `matura.matematyka-p.wyrazenia-wymierne.013` (single, trudność 3)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.011` (single, trudność 3)
+- `matura.polski-p.funkcje-tekstu-i-jezyka.005` (single, trudność 3)
+- `matura.polski-p.kompozycja-wypracowania.005` (single, trudność 3)
+- `matura.polski-p.kompozycja-wypracowania.008` (single, trudność 3)
+- `matura.polski-p.kontekst-w-wypracowaniu.003` (single, trudność 3)
+- `matura.polski-p.kontekst-w-wypracowaniu.005` (single, trudność 3)
+- `matura.polski-p.kontekst-w-wypracowaniu.008` (single, trudność 3)
+- `matura.polski-p.kultura-jezyka.004` (single, trudność 3)
+- `matura.polski-p.renesans.003` (single, trudność 3)
+- `matura.polski-p.retoryka-i-perswazja.003` (single, trudność 3)
+- `matura.polski-p.retoryka-i-perswazja.005` (single, trudność 3)
+- `matura.polski-p.romantyzm.003` (single, trudność 3)
+- `matura.polski-p.srodki-stylistyczne.004` (single, trudność 3)
+- `matura.polski-p.srodki-stylistyczne.005` (single, trudność 3)
+- `matura.polski-p.style-funkcjonalne.005` (single, trudność 3)
+- `matura.polski-p.tekst-naukowy-i-popularnonaukowy.003` (single, trudność 3)
+- `matura.polski-p.tekst-naukowy-i-popularnonaukowy.005` (single, trudność 3)
+- `matura.polski-p.tekst-naukowy-i-popularnonaukowy.007` (single, trudność 3)
+- `matura.polski-p.tekst-naukowy-i-popularnonaukowy.010` (single, trudność 3)
+- `matura.polski-p.tekst-naukowy-i-popularnonaukowy.013` (single, trudność 3)
+- `matura.polski-p.tekst-publicystyczny.004` (single, trudność 3)
+- `matura.polski-p.tekst-publicystyczny.005` (single, trudność 3)
+- `matura.polski-p.tekst-publicystyczny.008` (single, trudność 3)
+- `matura.polski-p.tekst-publicystyczny.012` (single, trudność 3)
+- `matura.polski-p.teza-i-argumentacja.003` (single, trudność 3)
+- `matura.polski-p.teza-i-argumentacja.006` (single, trudność 3)
+- `matura.polski-p.teza-i-argumentacja.008` (single, trudność 3)
 - `matura.angielski-p.czasowniki-modalne.002` (single, trudność 3)
 - `matura.angielski-p.czasowniki-modalne.003` (single, trudność 3)
 - `matura.angielski-p.czasy-przeszle.002` (single, trudność 3)
@@ -408,29 +434,3 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `e8.polski.komunikacja-jezykowa.003` (single, trudność 2)
 - `e8.polski.komunikacja-jezykowa.004` (multi, trudność 2)
 - `e8.polski.lektury-obowiazkowe.003` (single, trudność 2)
-- `e8.polski.lektury-obowiazkowe.004` (single, trudność 2)
-- `e8.polski.lektury-obowiazkowe.005` (match, trudność 2)
-- `e8.polski.lektury-obowiazkowe.006` (truefalse, trudność 2)
-- `e8.polski.opowiadanie.002` (single, trudność 2)
-- `e8.polski.opowiadanie.003` (multi, trudność 2)
-- `e8.polski.opowiadanie.004` (single, trudność 2)
-- `e8.polski.opowiadanie.006` (truefalse, trudność 2)
-- `e8.polski.opowiadanie.007` (single, trudność 2)
-- `e8.polski.ortografia.002` (single, trudność 2)
-- `e8.polski.ortografia.003` (single, trudność 2)
-- `e8.polski.rodzaje-i-gatunki-literackie.002` (single, trudność 2)
-- `e8.polski.rodzaje-i-gatunki-literackie.003` (single, trudność 2)
-- `e8.polski.rodzaje-i-gatunki-literackie.004` (multi, trudność 2)
-- `e8.polski.rozprawka.002` (single, trudność 2)
-- `e8.polski.rozprawka.003` (single, trudność 2)
-- `e8.polski.rozprawka.004` (multi, trudność 2)
-- `e8.polski.rozprawka.006` (truefalse, trudność 2)
-- `e8.polski.rozprawka.007` (single, trudność 2)
-- `e8.polski.skladnia-zdania.002` (single, trudność 2)
-- `e8.polski.skladnia-zdania.003` (single, trudność 2)
-- `e8.polski.skladnia-zdania.004` (single, trudność 2)
-- `e8.polski.slowotworstwo.002` (multi, trudność 2)
-- `e8.polski.slowotworstwo.003` (single, trudność 2)
-- `e8.polski.srodki-stylistyczne.003` (single, trudność 2)
-- `e8.polski.srodki-stylistyczne.004` (multi, trudność 2)
-- `e8.polski.srodki-stylistyczne.006` (match, trudność 2)

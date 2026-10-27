@@ -1,0 +1,133 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Temat: „Czy miłość może być siłą niszczącą?”. Która teza jest najlepsza?",
+      "options": [
+        "Miłość może niszczyć, gdy staje się obsesją i odbiera zdolność rozsądnego działania.",
+        "Miłość to temat wielu utworów.",
+        "Opiszę Wokulskiego.",
+        "Miłość jest różna."
+      ],
+      "answer": 0,
+      "explanation": "Jasne stanowisko z zapowiedzią uzasadnienia.",
+      "tags": ["teza"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Który fragment jest argumentem, a nie streszczeniem?",
+      "options": [
+        "Obsesyjne uczucie Wokulskiego sprawia, że porzuca on swoje plany, co pokazuje niszczącą siłę miłości.",
+        "Wokulski był kupcem.",
+        "Akcja „Lalki” toczy się w Warszawie.",
+        "Wokulski pojechał do Paryża."
+      ],
+      "answer": 0,
+      "explanation": "Argument interpretuje i łączy przykład z tezą.",
+      "tags": ["argumentacja"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Kontrargument w wypracowaniu powinien",
+      "options": [
+        "zostać przedstawiony i odparty",
+        "zastąpić tezę",
+        "pojawić się tylko w tytule",
+        "być pominięty zawsze"
+      ],
+      "answer": 0,
+      "explanation": "Odparcie kontrargumentu wzmacnia tezę.",
+      "tags": ["argumentacja"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Argument a przykład: która relacja jest poprawna?",
+      "options": [
+        "argument jest ogólny, przykład konkretny",
+        "przykład jest ogólny, argument konkretny",
+        "to jedno i to samo",
+        "przykład zastępuje tezę"
+      ],
+      "answer": 0,
+      "explanation": "Przykład ilustruje ogólne twierdzenie.",
+      "tags": ["argumentacja"]
+    },
+    {
+      "id": "005",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** wyrażenia przydatne do wprowadzenia argumentu.",
+      "options": [
+        "Przede wszystkim należy zauważyć, że…",
+        "Świadczy o tym…",
+        "Dawno, dawno temu…",
+        "Potwierdza to przykład…"
+      ],
+      "answer": [0, 1, 3],
+      "explanation": "„Dawno temu” to formuła baśni.",
+      "tags": ["argumentacja", "slownictwo"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Temat: „Czy jednostka może zmienić historię?”. Który przykład najlepiej wspiera tezę „tak”?",
+      "options": [
+        "Konrad z „Dziadów” cz. III, który bierze na siebie cierpienie narodu i chce nim kierować",
+        "opis przyrody w „Panu Tadeuszu”",
+        "spór o mur w „Zemście”",
+        "dzieciństwo Scrooge’a"
+      ],
+      "answer": 0,
+      "explanation": "Przykład dotyczy roli jednostki w dziejach.",
+      "tags": ["argumentacja"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Teza w wypracowaniu maturalnym powinna znaleźć się",
+      "options": ["we wstępie", "dopiero w ostatnim zdaniu", "w nawiasie", "w przypisie"],
+      "answer": 0,
+      "explanation": "Teza wyznacza kierunek całego wywodu.",
+      "tags": ["teza", "kompozycja"]
+    },
+    {
+      "id": "008",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Argument jest trafny, jeśli",
+      "options": [
+        "bezpośrednio uzasadnia tezę i jest poparty przykładem",
+        "jest długi",
+        "dotyczy innego tematu",
+        "zawiera dużo dat"
+      ],
+      "answer": 0,
+      "explanation": "Liczy się związek z tezą.",
+      "tags": ["argumentacja"]
+    },
+    {
+      "id": "009",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Streszczenie lektury jest wystarczającym argumentem.",
+        "Jedna lektura może dostarczyć kilku argumentów."
+      ],
+      "answer": [false, true],
+      "explanation": "1. Streszczenie nie uzasadnia tezy. Fałsz.\n2. Prawda.",
+      "tags": ["argumentacja"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

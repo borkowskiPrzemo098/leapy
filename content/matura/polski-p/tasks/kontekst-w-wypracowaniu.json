@@ -1,0 +1,135 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Który kontekst jest funkcjonalny?",
+      "options": [
+        "Bunt Konrada przypomina mit Prometeusza: obaj występują przeciw bogu w imię ludzi.",
+        "Prometeusz był postacią z mitologii.",
+        "Mitologia grecka jest stara.",
+        "Mickiewicz znał mitologię."
+      ],
+      "answer": 0,
+      "explanation": "Kontekst pogłębia interpretację bohatera.",
+      "tags": ["kontekst"]
+    },
+    {
+      "id": "002",
+      "type": "match",
+      "difficulty": 2,
+      "prompt": "Dopasuj przykład do rodzaju kontekstu.",
+      "options": {
+        "left": [
+          "śmierć córki Kochanowskiego jako tło „Trenów”",
+          "upadek powstania styczniowego jako tło pozytywizmu",
+          "stoicyzm jako sposób patrzenia na cierpienie"
+        ],
+        "right": ["biograficzny", "historyczny", "filozoficzny", "literacki"]
+      },
+      "answer": [0, 1, 2],
+      "explanation": "Rodzaj kontekstu wynika z jego źródła.",
+      "tags": ["kontekst"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Jako kontekst literacki do „Dżumy” Camusa w temacie o postawach wobec zła dobrze pasuje",
+      "options": [
+        "„Inny świat” Herlinga-Grudzińskiego",
+        "„Zemsta” Fredry",
+        "„Pan Tadeusz” jako opis przyrody",
+        "„Bajki” Krasickiego o zwierzętach domowych"
+      ],
+      "answer": 0,
+      "explanation": "Oba utwory pokazują człowieka wobec zła systemu i sytuacji granicznej.",
+      "tags": ["kontekst"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Kontekst historycznoliteracki to odwołanie do",
+      "options": [
+        "cech epoki lub prądu literackiego",
+        "przepisu kulinarnego",
+        "biografii czytelnika",
+        "pogody w dniu egzaminu"
+      ],
+      "answer": 0,
+      "explanation": "Np. cechy romantyzmu w interpretacji ballady.",
+      "tags": ["kontekst"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Najczęstszy błąd w użyciu kontekstu to",
+      "options": [
+        "wzmianka bez związku z tezą",
+        "zbyt trafne połączenie",
+        "odwołanie do innej epoki",
+        "użycie nazwiska autora"
+      ],
+      "answer": 0,
+      "explanation": "Kontekst musi coś wyjaśniać.",
+      "tags": ["kontekst"]
+    },
+    {
+      "id": "006",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Kontekst może zastąpić analizę głównego utworu.",
+        "Błąd faktograficzny w kontekście obniża wartość wypracowania."
+      ],
+      "answer": [false, true],
+      "explanation": "1. Kontekst uzupełnia, a nie zastępuje analizę. Fałsz.\n2. Prawda.",
+      "tags": ["kontekst"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Temat o samotności bohatera. Który kontekst jest najtrafniejszy dla Wokulskiego?",
+      "options": [
+        "romantyczny bohater samotny wśród ludzi, którzy go nie rozumieją",
+        "przepisy handlowe XIX wieku",
+        "statystyka ludności Warszawy",
+        "budowa kolei żelaznych"
+      ],
+      "answer": 0,
+      "explanation": "Kontekst związany z problemem tematu.",
+      "tags": ["kontekst"]
+    },
+    {
+      "id": "008",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Kontekst filozoficzny do „Trenów” Kochanowskiego to przede wszystkim",
+      "options": ["stoicyzm", "pozytywizm", "egzystencjalizm Camusa", "marksizm"],
+      "answer": 0,
+      "explanation": "„Treny” podważają stoicką postawę wobec cierpienia.",
+      "tags": ["kontekst", "renesans"]
+    },
+    {
+      "id": "009",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Ile kontekstów trzeba zwykle wykorzystać w wypracowaniu maturalnym?",
+      "options": [
+        "co najmniej jeden, funkcjonalnie wykorzystany",
+        "żadnego",
+        "dokładnie dziesięć",
+        "tylko kontekst biograficzny"
+      ],
+      "answer": 0,
+      "explanation": "Liczy się jakość i funkcja kontekstu; dokładne wymagania podaje polecenie i informator CKE.",
+      "tags": ["kontekst"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

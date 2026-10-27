@@ -1,0 +1,50 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Słowa „Czucie i wiara silniej mówi do mnie / Niż mędrca szkiełko i oko” pochodzą z ballady",
+      "options": [
+        "„Romantyczność” Adama Mickiewicza",
+        "„Lilije” Adama Mickiewicza",
+        "„Kordian” Juliusza Słowackiego",
+        "„Dziady” cz. II"
+      ],
+      "answer": 0,
+      "explanation": "To manifest romantyzmu z „Romantyczności”.",
+      "tags": ["romantyzm"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wielką Improwizację wygłasza",
+      "options": [
+        "Konrad w „Dziadach” cz. III",
+        "Kordian na szczycie Mont Blanc",
+        "Gustaw w „Dziadach” cz. IV",
+        "Tadeusz w „Panu Tadeuszu”"
+      ],
+      "answer": 0,
+      "explanation": "Konrad rzuca wyzwanie Bogu w Wielkiej Improwizacji.",
+      "tags": ["romantyzm", "dziady"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Mesjanizm polski w romantyzmie to przekonanie, że",
+      "options": [
+        "cierpienie Polski ma sens i przyniesie odkupienie innym narodom",
+        "Polska powinna przyjąć obcą władzę",
+        "należy porzucić walkę o niepodległość",
+        "poezja nie ma wpływu na naród"
+      ],
+      "answer": 0,
+      "explanation": "Polska jako „Chrystus narodów”.",
+      "tags": ["romantyzm"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

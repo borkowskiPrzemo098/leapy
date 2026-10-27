@@ -1,0 +1,60 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Zdanie „Uprzejmie informuję, że wniosek zostanie rozpatrzony w ciągu 14 dni” to przykład stylu",
+      "options": ["urzędowego", "potocznego", "artystycznego", "publicystycznego"],
+      "answer": 0,
+      "explanation": "Formuły i bezosobowość typowe dla urzędu.",
+      "tags": ["style"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Cechą stylu naukowego jest",
+      "options": [
+        "terminologia i precyzyjne definicje",
+        "zdrobnienia i wykrzyknienia",
+        "formy grzecznościowe w każdym zdaniu",
+        "słownictwo potoczne"
+      ],
+      "answer": 0,
+      "explanation": "Styl naukowy dąży do ścisłości.",
+      "tags": ["style"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wypracowanie maturalne powinno być napisane stylem",
+      "options": ["starannym, bez potocyzmów", "potocznym", "urzędowym", "reklamowym"],
+      "answer": 0,
+      "explanation": "Potocyzmy obniżają ocenę za styl.",
+      "tags": ["style"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "„Fajnie, że wpadłeś, siadaj!” to przykład stylu",
+      "options": ["potocznego", "naukowego", "urzędowego", "publicystycznego"],
+      "answer": 0,
+      "explanation": "Swobodna rozmowa codzienna.",
+      "tags": ["style"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Felieton należy do stylu",
+      "options": ["publicystycznego", "urzędowego", "naukowego", "potocznego"],
+      "answer": 0,
+      "explanation": "Felieton to gatunek publicystyczny.",
+      "tags": ["style"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,65 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Wskaż formę poprawną.",
+      "options": ["wziąć", "wziąść", "wziąźć", "wząść"],
+      "answer": 0,
+      "explanation": "Poprawnie: *wziąć*.",
+      "tags": ["kultura-jezyka"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które wyrażenie jest pleonazmem?",
+      "options": ["cofnąć się do tyłu", "cofnąć się", "wrócić do domu", "iść do przodu szybko"],
+      "answer": 0,
+      "explanation": "„Cofnąć się” już znaczy „do tyłu”.",
+      "tags": ["kultura-jezyka", "pleonazm"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wskaż zdanie poprawne.",
+      "options": [
+        "Bynajmniej nie jestem zmęczony.",
+        "Bynajmniej wczoraj zdążyłem.",
+        "Zrobię to bynajmniej jutro.",
+        "Bynajmniej spróbuj."
+      ],
+      "answer": 0,
+      "explanation": "„Bynajmniej” wzmacnia przeczenie; nie znaczy „przynajmniej”.",
+      "tags": ["kultura-jezyka"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Wyrażenie „odgrywać znaczenie” jest błędem",
+      "options": [
+        "frazeologicznym (kontaminacja)",
+        "ortograficznym",
+        "fleksyjnym",
+        "interpunkcyjnym"
+      ],
+      "answer": 0,
+      "explanation": "Zlepiono „odgrywać rolę” i „mieć znaczenie”.",
+      "tags": ["kultura-jezyka"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Zamiast „na dzień dzisiejszy” lepiej napisać",
+      "options": ["dziś", "na tę chwilę dzisiaj", "w dniu obecnym dzisiejszym", "aktualnie dziś"],
+      "answer": 0,
+      "explanation": "Najprościej i poprawnie: „dziś”, „obecnie”.",
+      "tags": ["kultura-jezyka"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

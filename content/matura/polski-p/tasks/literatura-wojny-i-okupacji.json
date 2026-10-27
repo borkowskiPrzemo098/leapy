@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Autorem „Innego świata” jest",
+      "options": [
+        "Gustaw Herling-Grudziński",
+        "Tadeusz Borowski",
+        "Zofia Nałkowska",
+        "Hanna Krall"
+      ],
+      "answer": 0,
+      "explanation": "„Inny świat” opisuje sowiecki łagier.",
+      "tags": ["wojna"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "„Człowiek zlagrowany” w opowiadaniach Borowskiego to człowiek, który",
+      "options": [
+        "przystosował się do obozu kosztem moralności",
+        "uciekł z obozu",
+        "jest bohaterem walczącym z oprawcami",
+        "nigdy nie był w obozie"
+      ],
+      "answer": 0,
+      "explanation": "Obóz zmienia ofiary — to sedno prozy Borowskiego.",
+      "tags": ["wojna", "borowski"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Rozmówcą Hanny Krall w „Zdążyć przed Panem Bogiem” jest",
+      "options": ["Marek Edelman", "Tadeusz Borowski", "Witold Pilecki", "Jan Karski"],
+      "answer": 0,
+      "explanation": "Edelman był jednym z dowódców powstania w getcie warszawskim.",
+      "tags": ["wojna"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

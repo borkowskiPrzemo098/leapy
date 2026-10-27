@@ -1,0 +1,55 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wyrażenie „jasna ciemność” to",
+      "options": ["oksymoron", "hiperbola", "anafora", "apostrofa"],
+      "answer": 0,
+      "explanation": "Połączenie wyrazów o sprzecznych znaczeniach.",
+      "tags": ["srodki-stylistyczne"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "„Litwo! Ojczyzno moja!” to przykład",
+      "options": ["apostrofy", "oksymoronu", "eufemizmu", "litoty"],
+      "answer": 0,
+      "explanation": "Bezpośredni zwrot do Litwy.",
+      "tags": ["srodki-stylistyczne"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wyrażenie „morze krwi” w opisie bitwy to",
+      "options": ["hiperbola", "oksymoron", "eufemizm", "anafora"],
+      "answer": 0,
+      "explanation": "Przesada wzmacniająca obraz.",
+      "tags": ["srodki-stylistyczne"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Powtórzenie tego samego słowa na początku kolejnych wersów to",
+      "options": ["anafora", "epifora", "elipsa", "inwersja"],
+      "answer": 0,
+      "explanation": "Anafora — na początku; epifora — na końcu.",
+      "tags": ["srodki-stylistyczne"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Zdanie „Ależ wspaniała pogoda!” powiedziane w czasie ulewy to przykład",
+      "options": ["ironii", "hiperboli", "apostrofy", "porównania"],
+      "answer": 0,
+      "explanation": "Mówiący myśli odwrotnie, niż mówi.",
+      "tags": ["srodki-stylistyczne"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

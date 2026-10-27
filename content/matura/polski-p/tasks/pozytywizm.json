@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Głównym bohaterem „Lalki” Bolesława Prusa jest",
+      "options": ["Stanisław Wokulski", "Cezary Baryka", "Jan Bohatyrowicz", "Kordian"],
+      "answer": 0,
+      "explanation": "Wokulski to kupiec zakochany w Izabeli Łęckiej.",
+      "tags": ["pozytywizm", "lalka"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Praca u podstaw to",
+      "options": [
+        "edukacja i pomoc najuboższym warstwom społeczeństwa",
+        "rozwój przemysłu w miastach",
+        "przygotowanie powstania",
+        "budowa kolei"
+      ],
+      "answer": 0,
+      "explanation": "Praca organiczna dotyczy całego społeczeństwa, praca u podstaw — ludu.",
+      "tags": ["pozytywizm"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "W „Nad Niemnem” ważnym symbolem pamięci o powstaniu styczniowym jest",
+      "options": ["mogiła powstańców", "złoty róg", "szklany dom", "latarnia morska"],
+      "answer": 0,
+      "explanation": "Mogiła w lesie łączy pamięć o walce z pracą na ziemi.",
+      "tags": ["pozytywizm"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Autorem „Wesela” jest",
+      "options": [
+        "Stanisław Wyspiański",
+        "Władysław Reymont",
+        "Stefan Żeromski",
+        "Kazimierz Przerwa-Tetmajer"
+      ],
+      "answer": 0,
+      "explanation": "„Wesele” napisał Wyspiański.",
+      "tags": ["mloda-polska"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Chocholi taniec w finale „Wesela” symbolizuje",
+      "options": [
+        "uśpienie i niemoc społeczeństwa",
+        "radość z wesela",
+        "zwycięstwo w powstaniu",
+        "pojednanie z zaborcą"
+      ],
+      "answer": 0,
+      "explanation": "Goście tańczą jak w transie, zgubiony został złoty róg.",
+      "tags": ["mloda-polska", "wesele"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Nagrodę Nobla za „Chłopów” otrzymał",
+      "options": ["Władysław Reymont", "Henryk Sienkiewicz", "Czesław Miłosz", "Bolesław Prus"],
+      "answer": 0,
+      "explanation": "Reymont, 1924.",
+      "tags": ["mloda-polska"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}
