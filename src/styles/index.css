@@ -210,3 +210,65 @@
     border: 3px solid var(--bg);
   }
 }
+
+/* Compiled lesson/task HTML. Long formulas scroll inside their own box, never the page. */
+@layer components {
+  .prose {
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .prose > * + * {
+    margin-top: 0.75em;
+  }
+  .prose strong {
+    font-weight: 800;
+  }
+  .prose ol,
+  .prose ul {
+    padding-left: 1.4em;
+  }
+  .prose ol {
+    list-style: decimal;
+  }
+  .prose ul {
+    list-style: disc;
+  }
+  .prose li + li {
+    margin-top: 0.4em;
+  }
+  .prose li::marker {
+    color: var(--brand-text);
+    font-weight: 800;
+  }
+  .prose code {
+    border-radius: 6px;
+    background: var(--surface-2);
+    padding: 0.1em 0.35em;
+    font-size: 0.92em;
+  }
+  .prose table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+  }
+  .prose th,
+  .prose td {
+    border: 1px solid var(--line);
+    padding: 0.4em 0.7em;
+  }
+  .task-prompt {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .katex-display,
+  .math-scroll {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-block: 0.25em;
+  }
+  .katex {
+    font-size: 1.08em;
+  }
+}

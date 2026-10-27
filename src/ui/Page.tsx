@@ -74,7 +74,16 @@ export function EmptyState({ art, title, children, action }: EmptyStateProps) {
  * The Leapy climb: solid blocks rising left to right (StepLadder geometry), the first
  * `done` in sun-yellow, the next one violet, the rest sunken, with a spark on top.
  */
-export function ClimbArt({ steps = 5, done = 0 }: { steps?: number; done?: number }) {
+export function ClimbArt({
+  steps = 5,
+  done = 0,
+  onBrand = false,
+}: {
+  steps?: number
+  done?: number
+  /** Drawn on a violet field: current step turns white, the rest deep violet */
+  onBrand?: boolean
+}) {
   const w = 160
   const gap = 6
   const bw = (w - gap * (steps - 1)) / steps
@@ -83,7 +92,15 @@ export function ClimbArt({ steps = 5, done = 0 }: { steps?: number; done?: numbe
       {Array.from({ length: steps }, (_, i) => {
         const h = 24 + (64 * (i + 1)) / steps
         const fill =
-          i < done ? 'var(--reward)' : i === done ? 'var(--brand)' : 'var(--surface-sunken)'
+          i < done
+            ? 'var(--reward)'
+            : i === done
+              ? onBrand
+                ? 'var(--on-brand)'
+                : 'var(--brand)'
+              : onBrand
+                ? 'var(--brand-deep)'
+                : 'var(--surface-sunken)'
         return (
           <rect key={i} x={i * (bw + gap)} y={112 - h} width={bw} height={h} rx="6" fill={fill} />
         )

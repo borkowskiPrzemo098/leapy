@@ -1,0 +1,127 @@
+{
+  "id": "matematyka",
+  "exam": "e8",
+  "name": "Matematyka",
+  "sections": [
+    {
+      "id": "liczby-i-dzialania",
+      "name": "Liczby i działania",
+      "topics": [
+        {
+          "id": "liczby-wymierne",
+          "name": "Liczby wymierne"
+        },
+        {
+          "id": "potegi",
+          "name": "Potęgi"
+        },
+        {
+          "id": "pierwiastki",
+          "name": "Pierwiastki"
+        },
+        {
+          "id": "procenty",
+          "name": "Procenty"
+        },
+        {
+          "id": "szacowanie-i-zaokraglanie",
+          "name": "Szacowanie i zaokrąglanie"
+        }
+      ]
+    },
+    {
+      "id": "wyrazenia-algebraiczne-i-rownania",
+      "name": "Wyrażenia algebraiczne i równania",
+      "topics": [
+        {
+          "id": "wyrazenia-algebraiczne",
+          "name": "Wyrażenia algebraiczne"
+        },
+        {
+          "id": "rownania-pierwszego-stopnia",
+          "name": "Równania pierwszego stopnia"
+        },
+        {
+          "id": "proporcjonalnosc",
+          "name": "Proporcjonalność"
+        }
+      ]
+    },
+    {
+      "id": "geometria-plaska",
+      "name": "Geometria płaska",
+      "topics": [
+        {
+          "id": "katy-i-trojkaty",
+          "name": "Kąty i trójkąty"
+        },
+        {
+          "id": "twierdzenie-pitagorasa",
+          "name": "Twierdzenie Pitagorasa"
+        },
+        {
+          "id": "wielokaty-pola-i-obwody",
+          "name": "Wielokąty: pola i obwody"
+        },
+        {
+          "id": "okrag-i-kolo",
+          "name": "Okrąg i koło"
+        },
+        {
+          "id": "symetrie",
+          "name": "Symetrie"
+        },
+        {
+          "id": "uklad-wspolrzednych",
+          "name": "Układ współrzędnych"
+        }
+      ]
+    },
+    {
+      "id": "geometria-przestrzenna",
+      "name": "Geometria przestrzenna",
+      "topics": [
+        {
+          "id": "graniastoslupy",
+          "name": "Graniastosłupy"
+        },
+        {
+          "id": "ostroslupy",
+          "name": "Ostrosłupy"
+        }
+      ]
+    },
+    {
+      "id": "statystyka-i-prawdopodobienstwo",
+      "name": "Statystyka i prawdopodobieństwo",
+      "topics": [
+        {
+          "id": "odczytywanie-danych-i-diagramy",
+          "name": "Odczytywanie danych i diagramy"
+        },
+        {
+          "id": "srednia-arytmetyczna",
+          "name": "Średnia arytmetyczna"
+        },
+        {
+          "id": "prawdopodobienstwo",
+          "name": "Prawdopodobieństwo"
+        }
+      ]
+    },
+    {
+      "id": "zadania-tekstowe",
+      "name": "Zadania tekstowe",
+      "topics": [
+        {
+          "id": "predkosc-droga-czas",
+          "name": "Prędkość, droga, czas"
+        },
+        {
+          "id": "zadania-z-trescia",
+          "name": "Zadania z treścią"
+        }
+      ]
+    }
+  ]
+}

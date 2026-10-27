@@ -57,7 +57,9 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,woff2,webmanifest}'],
+        // Content packs (public/data) are precached too, so every subject works offline.
+        // Revisit once total content passes a few MB (switch packs to runtime caching).
+        globPatterns: ['**/*.{js,css,html,svg,png,woff2,webmanifest,json}'],
         // Only the fonts actually used (latin + latin-ext) are precached.
         globIgnores: ['**/*-{cyrillic,cyrillic-ext,vietnamese,greek}-*.woff2', 'og-default.png'],
         navigateFallback: '/index.html',
@@ -70,5 +72,16 @@ export default defineConfig({
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
   },
-  build: { target: 'es2022', sourcemap: true },
+  build: {
+    target: 'es2022',
+    sourcemap: true,
+    rollupOptions: {
+      onwarn(warning, warn) {
+        // Zod ships /*#__PURE__*/ hints in positions Rollup ignores; harmless, so not reported.
+        if (warning.code === 'INVALID_ANNOTATION' && warning.id?.includes('node_modules/zod'))
+          return
+        warn(warning)
+      },
+    },
+  },
 })

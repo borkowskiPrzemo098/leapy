@@ -9,3 +9,4 @@ __pycache__/
 .venv/
 .impeccable/hook.cache.json
 .impeccable/review/
+public/data/

@@ -1,20 +1,27 @@
 import { clsx } from 'clsx'
-import { Check, Plus } from 'lucide-react'
-import { CATALOG } from '@/content/catalog'
+import { Check, ChevronRight, Plus } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { ScreenSkeleton } from '@/app/AppLayout'
+import { useCatalog } from '@/content/data'
 import { useStudy } from '@/state/study'
+import { LoadError } from '@/ui/LoadError'
 import { Page, StairsBackdrop } from '@/ui/Page'
 
 export default function ExamsPage() {
+  const catalog = useCatalog()
   const { exam: chosenExam, subjects, chooseExam, toggleSubject } = useStudy()
+
+  if (catalog.status === 'loading') return <ScreenSkeleton />
+  if (catalog.status === 'error') return <LoadError message={catalog.error} />
 
   return (
     <Page
       title="Egzaminy"
-      lead="Wybierz egzamin i zaznacz przedmioty, które zdajesz. Możesz to zmienić w każdej chwili."
+      lead="Wybierz egzamin i zaznacz przedmioty, które zdajesz. Stuknij przedmiot, żeby zobaczyć jego tematy."
       wide
     >
       <div className="grid gap-5 md:grid-cols-2 md:items-start">
-        {CATALOG.map((exam) => {
+        {catalog.data.exams.map((exam) => {
           const active = chosenExam === exam.id
           return (
             <section
@@ -53,53 +60,61 @@ export default function ExamsPage() {
                 </span>
               </button>
 
-              <div className="p-4">
-                <ul className="flex flex-col gap-2">
-                  {exam.subjects.map((s) => {
-                    const on = active && subjects.includes(s.id)
-                    return (
-                      <li key={s.id}>
-                        <button
-                          type="button"
-                          aria-pressed={on}
-                          onClick={() => toggleSubject(exam.id, s.id)}
+              <ul className="flex flex-col gap-2 p-4">
+                {exam.subjects.map((s) => {
+                  const on = active && subjects.includes(s.id)
+                  const label = s.level ? `${s.name}, poziom ${s.level}` : s.name
+                  return (
+                    <li
+                      key={s.id}
+                      className={clsx(
+                        'mb-[3px] flex min-h-16 items-stretch overflow-hidden rounded-xl border-2 transition-[background-color,border-color,box-shadow] duration-[var(--dur-fast)]',
+                        on
+                          ? 'border-brand bg-brand-soft shadow-[0_3px_0_var(--brand)]'
+                          : 'border-line bg-surface shadow-[0_3px_0_var(--line)]',
+                      )}
+                    >
+                      <Link
+                        to={`/app/egzaminy/${exam.id}/${s.id}`}
+                        className="flex flex-1 items-center gap-2 py-2.5 pl-4 text-left no-underline hover:bg-surface-2/60"
+                      >
+                        <span className="flex-1">
+                          <span className="block font-extrabold text-ink">{s.name}</span>
+                          <span className="block text-small text-ink-3">
+                            {s.level && `poziom ${s.level} · `}
+                            {s.tasks > 0 ? `${s.tasks} zadań` : 'w przygotowaniu'}
+                          </span>
+                        </span>
+                        <ChevronRight aria-hidden className="size-5 text-ink-3" />
+                      </Link>
+                      <button
+                        type="button"
+                        aria-pressed={on}
+                        aria-label={
+                          on
+                            ? `Usuń z moich przedmiotów: ${label}`
+                            : `Dodaj do moich przedmiotów: ${label}`
+                        }
+                        onClick={() => toggleSubject(exam.id, s.id)}
+                        className="grid w-16 shrink-0 place-items-center border-l-2 border-line/70"
+                      >
+                        <span
                           className={clsx(
-                            'mb-[3px] flex min-h-16 w-full items-center gap-3 rounded-xl border-2 px-4 text-left',
-                            'transition-[background-color,border-color,box-shadow,transform] duration-[var(--dur-fast)] active:translate-y-[3px] active:shadow-none',
-                            on
-                              ? 'border-brand bg-brand-soft shadow-[0_3px_0_var(--brand)]'
-                              : 'border-line bg-surface shadow-[0_3px_0_var(--line)] hover:border-line-strong',
+                            'grid size-9 place-items-center rounded-md transition-colors duration-[var(--dur-fast)]',
+                            on ? 'bg-brand text-on-brand' : 'bg-surface-2 text-ink-3',
                           )}
                         >
-                          <span className="flex-1">
-                            <span className="block font-extrabold text-ink">{s.name}</span>
-                            {s.level && (
-                              <span className="block text-small text-ink-3">poziom {s.level}</span>
-                            )}
-                          </span>
-                          <span
-                            aria-hidden
-                            className={clsx(
-                              'grid size-8 place-items-center rounded-md',
-                              on ? 'bg-brand text-on-brand' : 'bg-surface-2 text-ink-3',
-                            )}
-                          >
-                            {on ? (
-                              <Check className="size-5" strokeWidth={3} />
-                            ) : (
-                              <Plus className="size-5" strokeWidth={2.5} />
-                            )}
-                          </span>
-                        </button>
-                      </li>
-                    )
-                  })}
-                </ul>
-                <p className="mt-3 px-1 text-small text-ink-3">
-                  Zadania i lekcje dla tych przedmiotów są w przygotowaniu.
-                  {active && subjects.length > 0 && ' Twój wybór jest zapisany.'}
-                </p>
-              </div>
+                          {on ? (
+                            <Check aria-hidden className="size-5" strokeWidth={3} />
+                          ) : (
+                            <Plus aria-hidden className="size-5" strokeWidth={2.5} />
+                          )}
+                        </span>
+                      </button>
+                    </li>
+                  )
+                })}
+              </ul>
             </section>
           )
         })}

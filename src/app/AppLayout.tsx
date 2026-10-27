@@ -21,6 +21,21 @@ export function ScreenSkeleton() {
   )
 }
 
+/** Full-screen frame for practice sessions: no navigation, same offline/update affordances. */
+export function SessionShell() {
+  useEffect(() => watchSystemTheme(() => usePrefs.getState().theme), [])
+  return (
+    <>
+      <Suspense fallback={<ScreenSkeleton />}>
+        <Outlet />
+      </Suspense>
+      <OfflineChip />
+      <UpdateToast />
+      <ScrollRestoration />
+    </>
+  )
+}
+
 export function AppLayout() {
   const { pathname } = useLocation()
 

@@ -1,0 +1,140 @@
+{
+  "id": "matematyka-r",
+  "exam": "matura",
+  "name": "Matematyka",
+  "level": "rozszerzony",
+  "sections": [
+    {
+      "id": "liczby-i-wyrazenia",
+      "name": "Liczby i wyrażenia",
+      "topics": [
+        {
+          "id": "wartosc-bezwzgledna-i-nierownosci",
+          "name": "Wartość bezwzględna i nierówności"
+        },
+        {
+          "id": "logarytmy",
+          "name": "Logarytmy"
+        }
+      ]
+    },
+    {
+      "id": "wielomiany-i-funkcje-wymierne",
+      "name": "Wielomiany i funkcje wymierne",
+      "topics": [
+        {
+          "id": "wielomiany",
+          "name": "Wielomiany"
+        },
+        {
+          "id": "rownania-i-nierownosci-wielomianowe",
+          "name": "Równania i nierówności wielomianowe"
+        },
+        {
+          "id": "funkcje-wymierne",
+          "name": "Funkcje wymierne"
+        }
+      ]
+    },
+    {
+      "id": "rownania-z-parametrem",
+      "name": "Równania z parametrem",
+      "topics": [
+        {
+          "id": "rownania-kwadratowe-z-parametrem",
+          "name": "Równania kwadratowe z parametrem"
+        },
+        {
+          "id": "wzory-viete-a",
+          "name": "Wzory Viète’a"
+        }
+      ]
+    },
+    {
+      "id": "ciagi-i-granice",
+      "name": "Ciągi i granice",
+      "topics": [
+        {
+          "id": "ciagi",
+          "name": "Ciągi"
+        },
+        {
+          "id": "granica-ciagu",
+          "name": "Granica ciągu"
+        },
+        {
+          "id": "szereg-geometryczny",
+          "name": "Szereg geometryczny"
+        }
+      ]
+    },
+    {
+      "id": "rachunek-rozniczkowy",
+      "name": "Rachunek różniczkowy",
+      "topics": [
+        {
+          "id": "granica-i-ciaglosc-funkcji",
+          "name": "Granica i ciągłość funkcji"
+        },
+        {
+          "id": "pochodna-funkcji",
+          "name": "Pochodna funkcji"
+        },
+        {
+          "id": "optymalizacja",
+          "name": "Optymalizacja"
+        }
+      ]
+    },
+    {
+      "id": "trygonometria",
+      "name": "Trygonometria",
+      "topics": [
+        {
+          "id": "funkcje-trygonometryczne",
+          "name": "Funkcje trygonometryczne"
+        },
+        {
+          "id": "rownania-trygonometryczne",
+          "name": "Równania trygonometryczne"
+        }
+      ]
+    },
+    {
+      "id": "geometria",
+      "name": "Geometria",
+      "topics": [
+        {
+          "id": "planimetria",
+          "name": "Planimetria"
+        },
+        {
+          "id": "geometria-analityczna",
+          "name": "Geometria analityczna"
+        },
+        {
+          "id": "stereometria",
+          "name": "Stereometria"
+        }
+      ]
+    },
+    {
+      "id": "kombinatoryka-i-prawdopodobienstwo",
+      "name": "Kombinatoryka i prawdopodobieństwo",
+      "topics": [
+        {
+          "id": "kombinatoryka",
+          "name": "Kombinatoryka"
+        },
+        {
+          "id": "prawdopodobienstwo-warunkowe",
+          "name": "Prawdopodobieństwo warunkowe"
+        },
+        {
+          "id": "schemat-bernoullego",
+          "name": "Schemat Bernoullego"
+        }
+      ]
+    }
+  ]
+}

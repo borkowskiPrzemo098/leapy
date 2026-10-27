@@ -1,0 +1,116 @@
+{
+  "id": "polski-p",
+  "exam": "matura",
+  "name": "Język polski",
+  "level": "podstawowy",
+  "sections": [
+    {
+      "id": "epoki-literackie",
+      "name": "Epoki literackie",
+      "topics": [
+        {
+          "id": "antyk-i-biblia",
+          "name": "Antyk i Biblia"
+        },
+        {
+          "id": "sredniowiecze",
+          "name": "Średniowiecze"
+        },
+        {
+          "id": "renesans",
+          "name": "Renesans"
+        },
+        {
+          "id": "barok",
+          "name": "Barok"
+        },
+        {
+          "id": "oswiecenie",
+          "name": "Oświecenie"
+        },
+        {
+          "id": "romantyzm",
+          "name": "Romantyzm"
+        },
+        {
+          "id": "pozytywizm",
+          "name": "Pozytywizm"
+        },
+        {
+          "id": "mloda-polska",
+          "name": "Młoda Polska"
+        },
+        {
+          "id": "dwudziestolecie-miedzywojenne",
+          "name": "Dwudziestolecie międzywojenne"
+        },
+        {
+          "id": "literatura-wojny-i-okupacji",
+          "name": "Literatura wojny i okupacji"
+        },
+        {
+          "id": "literatura-po-1945-roku",
+          "name": "Literatura po 1945 roku"
+        }
+      ]
+    },
+    {
+      "id": "wiedza-o-jezyku",
+      "name": "Wiedza o języku",
+      "topics": [
+        {
+          "id": "funkcje-tekstu-i-jezyka",
+          "name": "Funkcje tekstu i języka"
+        },
+        {
+          "id": "srodki-stylistyczne",
+          "name": "Środki stylistyczne"
+        },
+        {
+          "id": "style-funkcjonalne",
+          "name": "Style funkcjonalne"
+        },
+        {
+          "id": "kultura-jezyka",
+          "name": "Kultura języka"
+        },
+        {
+          "id": "retoryka-i-perswazja",
+          "name": "Retoryka i perswazja"
+        }
+      ]
+    },
+    {
+      "id": "czytanie-ze-zrozumieniem",
+      "name": "Czytanie ze zrozumieniem",
+      "topics": [
+        {
+          "id": "tekst-publicystyczny",
+          "name": "Tekst publicystyczny"
+        },
+        {
+          "id": "tekst-naukowy-i-popularnonaukowy",
+          "name": "Tekst naukowy i popularnonaukowy"
+        }
+      ]
+    },
+    {
+      "id": "wypracowanie",
+      "name": "Wypracowanie",
+      "topics": [
+        {
+          "id": "teza-i-argumentacja",
+          "name": "Teza i argumentacja"
+        },
+        {
+          "id": "kompozycja-wypracowania",
+          "name": "Kompozycja wypracowania"
+        },
+        {
+          "id": "kontekst-w-wypracowaniu",
+          "name": "Kontekst w wypracowaniu"
+        }
+      ]
+    }
+  ]
+}

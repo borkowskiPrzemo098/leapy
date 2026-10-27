@@ -1,0 +1,10 @@
+{
+  "id": "matura",
+  "name": "Matura",
+  "short": "M",
+  "audience": "Szkoła średnia",
+  "order": 2,
+  "phase": 1,
+  "subjects": ["matematyka-p", "matematyka-r", "polski-p", "angielski-p", "angielski-r"],
+  "officialUrl": "https://cke.gov.pl/egzamin-maturalny/"
+}

@@ -1,5 +1,5 @@
 import { BookmarkX, Layers, RotateCcw, Target, Timer, Zap, type LucideIcon } from 'lucide-react'
-import { CATALOG } from '@/content/catalog'
+import { useCatalog } from '@/content/data'
 import { useStudy } from '@/state/study'
 import { ButtonLink } from '@/ui/Button'
 import { Page, StairsBackdrop } from '@/ui/Page'
@@ -23,8 +23,11 @@ const quick: Mode[] = [
 ]
 
 export default function PracticePage() {
-  const examId = useStudy((s) => s.exam)
-  const exam = CATALOG.find((e) => e.id === examId)
+  const { exam: examId, subjects } = useStudy()
+  const catalog = useCatalog()
+  const exam =
+    catalog.status === 'ready' ? catalog.data.exams.find((e) => e.id === examId) : undefined
+  const ready = exam?.subjects.some((s) => subjects.includes(s.id) && s.tasks > 0) ?? false
 
   return (
     <Page title="Ćwicz" wide>
@@ -47,10 +50,21 @@ export default function PracticePage() {
           </div>
         </div>
         <div className="relative mt-6 max-w-sm">
-          {exam ? (
-            <p className="rounded-xl bg-brand-deep/60 px-4 py-3 font-bold text-on-brand">
-              {exam.name}: zadania pojawią się wkrótce. Twój wybór przedmiotów jest zapisany.
-            </p>
+          {ready ? (
+            <ButtonLink to="/app/sesja/szybka" variant="reward" size="lg" block>
+              Zacznij szybką sesję
+            </ButtonLink>
+          ) : exam ? (
+            <>
+              <p className="rounded-xl bg-brand-deep/60 px-4 py-3 font-bold text-on-brand">
+                {subjects.length
+                  ? 'Twoje przedmioty nie mają jeszcze zadań. Dodajemy je partiami.'
+                  : 'Zaznacz przedmioty, które zdajesz.'}
+              </p>
+              <ButtonLink to="/app/egzaminy" variant="secondary" block className="mt-3">
+                {subjects.length ? 'Zmień przedmioty' : 'Wybierz przedmioty'}
+              </ButtonLink>
+            </>
           ) : (
             <ButtonLink to="/app/egzaminy" variant="reward" size="lg" block>
               Najpierw wybierz egzamin

@@ -19,15 +19,17 @@ Vite 6 + React 18 + TypeScript strict · Tailwind v4 (tokeny jako zmienne CSS) �
 
 ## Komendy
 
-| Komenda               | Co robi                                                                                |
-| --------------------- | -------------------------------------------------------------------------------------- |
-| `npm run dev`         | serwer deweloperski (port domyślny Vite)                                               |
-| `npm run build`       | typecheck + build produkcyjny do `dist/`                                               |
-| `npm run check`       | typecheck + lint + format:check + testy (to samo co CI)                                |
-| `npm test`            | testy jednostkowe Vitest                                                               |
-| `npm run test:e2e`    | testy Playwright na buildzie produkcyjnym (360×640, 390×844, desktop, offline)         |
-| `npm run format`      | Prettier na całym repo                                                                 |
-| `npm run brand:build` | generuje wszystkie pliki logo, ikony PWA, favicon i obraz OG z `src/brand/geometry.js` |
+| Komenda                 | Co robi                                                                                                         |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `npm run dev`           | serwer deweloperski (port domyślny Vite)                                                                        |
+| `npm run build`         | typecheck + build produkcyjny do `dist/`                                                                        |
+| `npm run check`         | typecheck + lint + format:check + testy (to samo co CI)                                                         |
+| `npm test`              | testy jednostkowe Vitest                                                                                        |
+| `npm run test:e2e`      | testy Playwright na buildzie produkcyjnym (360×640, 390×844, desktop, offline)                                  |
+| `npm run format`        | Prettier na całym repo                                                                                          |
+| `npm run content:check` | waliduje treść (schemat, verify, duplikaty, stabilność id), nic nie zapisuje                                    |
+| `npm run content:build` | to samo + zapis `public/data`, `content/ids.lock.json`, `docs/content-report.md` (odpala się przed dev i build) |
+| `npm run brand:build`   | generuje wszystkie pliki logo, ikony PWA, favicon i obraz OG z `src/brand/geometry.js`                          |
 
 Po każdym etapie: `npm run check` i `npm run build` muszą przejść, potem krótki commit i push.
 
@@ -45,6 +47,20 @@ Po każdym etapie: `npm run check` i `npm run build` muszą przejść, potem kr�
 - Przycisk, który prowadzi do innego ekranu, to `<ButtonLink>`, nie `<Button onClick={navigate}>`.
 - Przewodnik po komponentach: `/dev/ui` (nielinkowany z aplikacji).
 
-## Treść (od etapu E2)
+## Treść
 
-Hierarchia: Egzamin → Przedmiot → Dział → Temat → Lekcja + Zadania. Nowy egzamin dodajemy wyłącznie plikami w `content/`, bez zmian w kodzie. ID zadań są stabilne (`<egzamin>.<przedmiot>.<temat>.<nnn>`), bo zależą od nich postępy uczniów. Treść generujemy partiami, a po każdej partii uruchamiamy `content:check`.
+Szczegóły: [docs/content-guide.md](docs/content-guide.md). Najważniejsze:
+
+- Hierarchia: Egzamin → Przedmiot → Dział → Temat → Lekcja + Zadania. Nowy egzamin = nowe pliki w `content/`, bez zmian w kodzie.
+- ID zadań są stabilne (`<egzamin>.<przedmiot>.<temat>.NNN`). Nigdy ich nie zmieniaj ani nie usuwaj bez wpisu w `content/renames.json`.
+- Każde nowe zadanie i lekcja: `source: "original"`, `reviewed: false`. Zadania obliczeniowe dostają `verify`.
+- Treść generujemy partiami. Po każdej partii `npm run content:build` i przegląd `docs/content-report.md`.
+
+## Architektura w skrócie
+
+- `src/content/schema.ts`: Zod dla treści (build i typy; aplikacja nie importuje go w czasie działania, stała wersji jest w `version.ts`).
+- `src/content/data.ts`: wczytywanie `/data/*.json` + `useResource`.
+- `src/engine/`: czyste funkcje: ocenianie 7 typów zadań, losowanie, sesja. Bez Reacta i bez IndexedDB.
+- `src/storage/`: interfejs `ProgressStore` + implementacja Dexie + format kopii zapasowej. UI woła tylko `progress()`.
+- Zapisy do IndexedDB nigdy wewnątrz updatera `setState` (StrictMode wywołuje je dwa razy).
+- Dexie ładujemy dynamicznie (`import('@/storage')`) tam, gdzie kod trafia do pierwszego ekranu.

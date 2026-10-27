@@ -1,0 +1,129 @@
+{
+  "id": "angielski",
+  "exam": "e8",
+  "name": "Język angielski",
+  "sections": [
+    {
+      "id": "slownictwo",
+      "name": "Słownictwo",
+      "topics": [
+        {
+          "id": "czlowiek",
+          "name": "Człowiek"
+        },
+        {
+          "id": "dom",
+          "name": "Dom"
+        },
+        {
+          "id": "szkola",
+          "name": "Szkoła"
+        },
+        {
+          "id": "praca",
+          "name": "Praca"
+        },
+        {
+          "id": "zycie-prywatne",
+          "name": "Życie prywatne"
+        },
+        {
+          "id": "zywienie",
+          "name": "Żywienie"
+        },
+        {
+          "id": "zakupy-i-uslugi",
+          "name": "Zakupy i usługi"
+        },
+        {
+          "id": "podrozowanie-i-turystyka",
+          "name": "Podróżowanie i turystyka"
+        },
+        {
+          "id": "kultura",
+          "name": "Kultura"
+        },
+        {
+          "id": "sport",
+          "name": "Sport"
+        },
+        {
+          "id": "zdrowie",
+          "name": "Zdrowie"
+        },
+        {
+          "id": "nauka-i-technika",
+          "name": "Nauka i technika"
+        },
+        {
+          "id": "swiat-przyrody",
+          "name": "Świat przyrody"
+        }
+      ]
+    },
+    {
+      "id": "gramatyka",
+      "name": "Gramatyka",
+      "topics": [
+        {
+          "id": "czasy-terazniejsze",
+          "name": "Czasy teraźniejsze"
+        },
+        {
+          "id": "czasy-przeszle",
+          "name": "Czasy przeszłe"
+        },
+        {
+          "id": "wyrazanie-przyszlosci",
+          "name": "Wyrażanie przyszłości"
+        },
+        {
+          "id": "present-perfect",
+          "name": "Present Perfect"
+        },
+        {
+          "id": "stopniowanie-przymiotnikow",
+          "name": "Stopniowanie przymiotników"
+        },
+        {
+          "id": "czasowniki-modalne",
+          "name": "Czasowniki modalne"
+        },
+        {
+          "id": "strona-bierna",
+          "name": "Strona bierna"
+        },
+        {
+          "id": "zdania-warunkowe",
+          "name": "Zdania warunkowe"
+        },
+        {
+          "id": "rzeczowniki-przedimki-i-okreslniki",
+          "name": "Rzeczowniki, przedimki i określniki"
+        }
+      ]
+    },
+    {
+      "id": "umiejetnosci",
+      "name": "Umiejętności",
+      "topics": [
+        {
+          "id": "znajomosc-funkcji-jezykowych",
+          "name": "Znajomość funkcji językowych"
+        },
+        {
+          "id": "rozumienie-tekstow-pisanych",
+          "name": "Rozumienie tekstów pisanych"
+        },
+        {
+          "id": "znajomosc-srodkow-jezykowych",
+          "name": "Znajomość środków językowych"
+        },
+        {
+          "id": "wypowiedz-pisemna-e-mail",
+          "name": "Wypowiedź pisemna: e-mail"
+        }
+      ]
+    }
+  ]
+}

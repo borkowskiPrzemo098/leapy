@@ -1,0 +1,107 @@
+{
+  "id": "polski",
+  "exam": "e8",
+  "name": "Język polski",
+  "sections": [
+    {
+      "id": "ksztalcenie-literackie",
+      "name": "Kształcenie literackie",
+      "topics": [
+        {
+          "id": "lektury-obowiazkowe",
+          "name": "Lektury obowiązkowe"
+        },
+        {
+          "id": "rodzaje-i-gatunki-literackie",
+          "name": "Rodzaje i gatunki literackie"
+        },
+        {
+          "id": "srodki-stylistyczne",
+          "name": "Środki stylistyczne"
+        },
+        {
+          "id": "elementy-swiata-przedstawionego",
+          "name": "Elementy świata przedstawionego"
+        },
+        {
+          "id": "tekst-poetycki",
+          "name": "Tekst poetycki"
+        }
+      ]
+    },
+    {
+      "id": "ksztalcenie-jezykowe",
+      "name": "Kształcenie językowe",
+      "topics": [
+        {
+          "id": "czesci-mowy",
+          "name": "Części mowy"
+        },
+        {
+          "id": "skladnia-zdania",
+          "name": "Składnia zdania"
+        },
+        {
+          "id": "zdanie-zlozone",
+          "name": "Zdanie złożone"
+        },
+        {
+          "id": "slowotworstwo",
+          "name": "Słowotwórstwo"
+        },
+        {
+          "id": "frazeologia",
+          "name": "Frazeologia"
+        },
+        {
+          "id": "ortografia",
+          "name": "Ortografia"
+        },
+        {
+          "id": "interpunkcja",
+          "name": "Interpunkcja"
+        },
+        {
+          "id": "komunikacja-jezykowa",
+          "name": "Komunikacja językowa"
+        }
+      ]
+    },
+    {
+      "id": "czytanie-ze-zrozumieniem",
+      "name": "Czytanie ze zrozumieniem",
+      "topics": [
+        {
+          "id": "tekst-literacki",
+          "name": "Tekst literacki"
+        },
+        {
+          "id": "tekst-popularnonaukowy-i-publicystyczny",
+          "name": "Tekst popularnonaukowy i publicystyczny"
+        }
+      ]
+    },
+    {
+      "id": "tworzenie-wypowiedzi",
+      "name": "Tworzenie wypowiedzi",
+      "topics": [
+        {
+          "id": "rozprawka",
+          "name": "Rozprawka"
+        },
+        {
+          "id": "opowiadanie",
+          "name": "Opowiadanie"
+        },
+        {
+          "id": "charakterystyka",
+          "name": "Charakterystyka"
+        },
+        {
+          "id": "formy-uzytkowe",
+          "name": "Formy użytkowe"
+        }
+      ]
+    }
+  ]
+}

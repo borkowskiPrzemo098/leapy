@@ -1,0 +1,10 @@
+{
+  "id": "e8",
+  "name": "Egzamin ósmoklasisty",
+  "short": "E8",
+  "audience": "Klasa 8 szkoły podstawowej",
+  "order": 1,
+  "phase": 1,
+  "subjects": ["polski", "matematyka", "angielski"],
+  "officialUrl": "https://cke.gov.pl/egzamin-osmoklasisty/"
+}

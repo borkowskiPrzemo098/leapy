@@ -1,0 +1,82 @@
+{
+  "id": "angielski-r",
+  "exam": "matura",
+  "name": "Język angielski",
+  "level": "rozszerzony",
+  "sections": [
+    {
+      "id": "slownictwo-zaawansowane",
+      "name": "Słownictwo zaawansowane",
+      "topics": [
+        {
+          "id": "kolokacje",
+          "name": "Kolokacje"
+        },
+        {
+          "id": "phrasal-verbs",
+          "name": "Phrasal verbs"
+        },
+        {
+          "id": "slowotworstwo",
+          "name": "Słowotwórstwo"
+        },
+        {
+          "id": "idiomy-i-wyrazenia",
+          "name": "Idiomy i wyrażenia"
+        }
+      ]
+    },
+    {
+      "id": "gramatyka-zaawansowana",
+      "name": "Gramatyka zaawansowana",
+      "topics": [
+        {
+          "id": "czasy-i-aspekty",
+          "name": "Czasy i aspekty"
+        },
+        {
+          "id": "inwersja",
+          "name": "Inwersja"
+        },
+        {
+          "id": "zdania-warunkowe-mieszane",
+          "name": "Zdania warunkowe mieszane"
+        },
+        {
+          "id": "konstrukcje-bezosobowe",
+          "name": "Konstrukcje bezosobowe"
+        },
+        {
+          "id": "transformacje-zdan",
+          "name": "Transformacje zdań"
+        }
+      ]
+    },
+    {
+      "id": "umiejetnosci",
+      "name": "Umiejętności",
+      "topics": [
+        {
+          "id": "rozumienie-tekstow-pisanych",
+          "name": "Rozumienie tekstów pisanych"
+        },
+        {
+          "id": "znajomosc-srodkow-jezykowych",
+          "name": "Znajomość środków językowych"
+        },
+        {
+          "id": "rozprawka",
+          "name": "Rozprawka"
+        },
+        {
+          "id": "artykul-publicystyczny",
+          "name": "Artykuł publicystyczny"
+        },
+        {
+          "id": "list-formalny",
+          "name": "List formalny"
+        }
+      ]
+    }
+  ]
+}

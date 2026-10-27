@@ -1,7 +1,9 @@
-import { Database, Mail, Monitor, Moon, Sun } from 'lucide-react'
+import { Mail, Monitor, Moon, Sun } from 'lucide-react'
 import type { ReactNode } from 'react'
+import { CONTACT_EMAIL } from '@/lib/report'
 import { usePrefs, type TextScale } from '@/state/prefs'
-import { Chip, Segmented, Switch } from '@/ui/controls'
+import { BackupPanel } from '@/features/backup/BackupPanel'
+import { Segmented, Switch } from '@/ui/controls'
 import { Page } from '@/ui/Page'
 
 const themeOptions = [
@@ -66,17 +68,7 @@ export default function ProfilePage() {
       </Group>
 
       <Group title="Twoje dane">
-        <div className="flex items-start gap-4">
-          <Database aria-hidden className="mt-0.5 size-6 shrink-0 text-brand-text" />
-          <div className="flex-1">
-            <p className="font-bold text-ink">Kopia zapasowa</p>
-            <p className="text-small text-ink-2">
-              Postępy są zapisane w tej przeglądarce. Eksport i import pliku z kopią pojawią się
-              razem z zapisem postępów.
-            </p>
-          </div>
-          <Chip>Wkrótce</Chip>
-        </div>
+        <BackupPanel />
       </Group>
 
       <Group title="O Leapy">
@@ -86,7 +78,7 @@ export default function ProfilePage() {
           podstaw dla Leapy.
         </p>
         <a
-          href="mailto:rob.lewandowski987@gmail.com?subject=Leapy"
+          href={`mailto:${CONTACT_EMAIL}?subject=Leapy`}
           className="mt-4 inline-flex min-h-12 items-center gap-2 font-bold"
         >
           <Mail aria-hidden className="size-5" />

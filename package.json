@@ -19,15 +19,22 @@
     "test:watch": "vitest",
     "brand:build": "node scripts/brand/build-assets.mjs",
     "check": "npm run typecheck && npm run lint && npm run format:check && npm run test",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "content:check": "tsx scripts/content/cli.ts check",
+    "content:build": "tsx scripts/content/cli.ts build",
+    "predev": "npm run content:build",
+    "prebuild": "npm run content:build"
   },
   "dependencies": {
     "@fontsource-variable/plus-jakarta-sans": "^5.3.0",
     "clsx": "^2.1.1",
+    "dexie": "^4.4.7",
+    "katex": "^0.19.1",
     "lucide-react": "^1.62.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.30.6",
+    "zod": "^4.6.7",
     "zustand": "^5.0.16"
   },
   "devDependencies": {
@@ -45,20 +52,26 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.7",
+    "fake-indexeddb": "^6.2.6",
     "globals": "^17.13.0",
     "jsdom": "^30.1.3",
+    "marked": "^18.1.2",
+    "mathjs": "^15.2.0",
     "playwright": "^1.64.1",
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "~5.8",
     "typescript-eslint": "^8.72.1",
     "vite": "^6.4.5",
     "vite-plugin-pwa": "^2.0.0",
     "vitest": "^3.2.7",
-    "workbox-window": "^7.4.1"
+    "workbox-window": "^7.4.1",
+    "yaml": "^2.9.1"
   },
   "allowScripts": {
-    "esbuild@0.25.12": true
+    "esbuild@0.25.12": true,
+    "esbuild@0.28.2": true
   }
 }

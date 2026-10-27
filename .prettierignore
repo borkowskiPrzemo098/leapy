@@ -6,3 +6,6 @@ brand/final/png
 *.svg
 docs/brief.md
 .impeccable/hook.cache.json
+docs/content-report.md
+content/ids.lock.json
+public/data

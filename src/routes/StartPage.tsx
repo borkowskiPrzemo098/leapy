@@ -1,6 +1,6 @@
 import { clsx } from 'clsx'
 import { ArrowRight } from 'lucide-react'
-import { CATALOG } from '@/content/catalog'
+import { useCatalog } from '@/content/data'
 import { InstallCard } from '@/features/pwa/pwa'
 import { useStudy } from '@/state/study'
 import { ButtonLink } from '@/ui/Button'
@@ -20,8 +20,11 @@ const blockTone = (i: number) =>
 /** First-run Start. The real dashboard (streak, goal ring, reviews) replaces this after onboarding in E4. */
 export function StartPage() {
   const { exam: examId, subjects } = useStudy()
-  const exam = CATALOG.find((e) => e.id === examId)
+  const catalog = useCatalog()
+  const exam =
+    catalog.status === 'ready' ? catalog.data.exams.find((e) => e.id === examId) : undefined
   const chosen = exam ? exam.subjects.filter((s) => subjects.includes(s.id)) : []
+  const playable = chosen.some((s) => s.tasks > 0)
 
   return (
     <Page title="Cześć!" wide>
@@ -34,18 +37,24 @@ export function StartPage() {
                 <h2 className="text-display text-on-brand">{exam.name}</h2>
                 <p className="mt-3 max-w-[40ch] text-lead text-on-brand-2">
                   {chosen.length > 0
-                    ? `Wybrane: ${chosen.map((s) => (s.level ? `${s.name} (poziom ${s.level})` : s.name)).join(', ')}. Zadania pojawią się tu, gdy tylko je dodamy.`
+                    ? `Wybrane: ${chosen.map((s) => (s.level ? `${s.name} (poziom ${s.level})` : s.name)).join(', ')}.${
+                        playable ? '' : ' Zadania do tych przedmiotów dodajemy partiami.'
+                      }`
                     : 'Zaznacz jeszcze przedmioty, które zdajesz.'}
                 </p>
                 <ButtonLink
-                  to="/app/egzaminy"
+                  to={playable ? '/app/sesja/szybka' : '/app/egzaminy'}
                   variant="reward"
                   size="lg"
                   block
                   className="mt-6 max-w-sm"
                   iconEnd={<ArrowRight aria-hidden className="size-5" />}
                 >
-                  {chosen.length > 0 ? 'Zmień przedmioty' : 'Wybierz przedmioty'}
+                  {playable
+                    ? 'Szybka sesja · 10 zadań'
+                    : chosen.length > 0
+                      ? 'Zmień przedmioty'
+                      : 'Wybierz przedmioty'}
                 </ButtonLink>
               </>
             ) : (

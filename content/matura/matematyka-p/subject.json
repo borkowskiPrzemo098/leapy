@@ -1,0 +1,194 @@
+{
+  "id": "matematyka-p",
+  "exam": "matura",
+  "name": "Matematyka",
+  "level": "podstawowy",
+  "sections": [
+    {
+      "id": "liczby-rzeczywiste",
+      "name": "Liczby rzeczywiste",
+      "topics": [
+        {
+          "id": "potegi-i-pierwiastki",
+          "name": "Potęgi i pierwiastki"
+        },
+        {
+          "id": "logarytmy",
+          "name": "Logarytmy"
+        },
+        {
+          "id": "procenty",
+          "name": "Procenty"
+        },
+        {
+          "id": "wartosc-bezwzgledna",
+          "name": "Wartość bezwzględna"
+        }
+      ]
+    },
+    {
+      "id": "wyrazenia-algebraiczne",
+      "name": "Wyrażenia algebraiczne",
+      "topics": [
+        {
+          "id": "wzory-skroconego-mnozenia",
+          "name": "Wzory skróconego mnożenia"
+        },
+        {
+          "id": "wyrazenia-wymierne",
+          "name": "Wyrażenia wymierne"
+        }
+      ]
+    },
+    {
+      "id": "rownania-i-nierownosci",
+      "name": "Równania i nierówności",
+      "topics": [
+        {
+          "id": "rownania-i-nierownosci-liniowe",
+          "name": "Równania i nierówności liniowe"
+        },
+        {
+          "id": "uklady-rownan",
+          "name": "Układy równań"
+        },
+        {
+          "id": "rownania-i-nierownosci-kwadratowe",
+          "name": "Równania i nierówności kwadratowe"
+        }
+      ]
+    },
+    {
+      "id": "funkcje",
+      "name": "Funkcje",
+      "topics": [
+        {
+          "id": "wlasnosci-funkcji",
+          "name": "Własności funkcji"
+        },
+        {
+          "id": "funkcja-liniowa",
+          "name": "Funkcja liniowa"
+        },
+        {
+          "id": "funkcja-kwadratowa",
+          "name": "Funkcja kwadratowa"
+        },
+        {
+          "id": "funkcja-wykladnicza",
+          "name": "Funkcja wykładnicza"
+        }
+      ]
+    },
+    {
+      "id": "ciagi",
+      "name": "Ciągi",
+      "topics": [
+        {
+          "id": "ciag-arytmetyczny",
+          "name": "Ciąg arytmetyczny"
+        },
+        {
+          "id": "ciag-geometryczny",
+          "name": "Ciąg geometryczny"
+        }
+      ]
+    },
+    {
+      "id": "trygonometria",
+      "name": "Trygonometria",
+      "topics": [
+        {
+          "id": "funkcje-trygonometryczne-kata-ostrego",
+          "name": "Funkcje trygonometryczne kąta ostrego"
+        },
+        {
+          "id": "tozsamosci-trygonometryczne",
+          "name": "Tożsamości trygonometryczne"
+        }
+      ]
+    },
+    {
+      "id": "planimetria",
+      "name": "Planimetria",
+      "topics": [
+        {
+          "id": "trojkaty",
+          "name": "Trójkąty"
+        },
+        {
+          "id": "czworokaty",
+          "name": "Czworokąty"
+        },
+        {
+          "id": "okrag-i-kolo",
+          "name": "Okrąg i koło"
+        },
+        {
+          "id": "podobienstwo-figur",
+          "name": "Podobieństwo figur"
+        }
+      ]
+    },
+    {
+      "id": "geometria-analityczna",
+      "name": "Geometria analityczna",
+      "topics": [
+        {
+          "id": "prosta-na-plaszczyznie",
+          "name": "Prosta na płaszczyźnie"
+        },
+        {
+          "id": "odcinki-i-punkty",
+          "name": "Odcinki i punkty"
+        }
+      ]
+    },
+    {
+      "id": "stereometria",
+      "name": "Stereometria",
+      "topics": [
+        {
+          "id": "graniastoslupy",
+          "name": "Graniastosłupy"
+        },
+        {
+          "id": "ostroslupy",
+          "name": "Ostrosłupy"
+        },
+        {
+          "id": "bryly-obrotowe",
+          "name": "Bryły obrotowe"
+        }
+      ]
+    },
+    {
+      "id": "kombinatoryka-i-prawdopodobienstwo",
+      "name": "Kombinatoryka i prawdopodobieństwo",
+      "topics": [
+        {
+          "id": "kombinatoryka",
+          "name": "Kombinatoryka"
+        },
+        {
+          "id": "prawdopodobienstwo",
+          "name": "Prawdopodobieństwo"
+        }
+      ]
+    },
+    {
+      "id": "statystyka",
+      "name": "Statystyka",
+      "topics": [
+        {
+          "id": "srednia-mediana-dominanta",
+          "name": "Średnia, mediana, dominanta"
+        },
+        {
+          "id": "odchylenie-standardowe",
+          "name": "Odchylenie standardowe"
+        }
+      ]
+    }
+  ]
+}
