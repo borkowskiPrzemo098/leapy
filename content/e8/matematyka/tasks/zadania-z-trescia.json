@@ -1,0 +1,166 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Bilet dla dorosłego kosztuje $25$ zł, a dla dziecka $15$ zł. Rodzina zapłaciła $95$ zł za $5$ biletów. Ile biletów kupiono dla dzieci?",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "$15x+25(5-x)=95$, $125-10x=95$, $x=3$.",
+      "tags": ["rownania"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Zeszyt kosztuje $4$ zł, a długopis $3$ zł. Ile złotych zapłacimy za $3$ zeszyty i $2$ długopisy?",
+      "answer": {
+        "value": 18,
+        "unit": "zł"
+      },
+      "explanation": "$12+6=18$ zł.",
+      "verify": "3 * 4 + 2 * 3",
+      "tags": ["zakupy"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Ania ma dwa razy więcej naklejek niż Bartek, a razem mają $60$. Ile naklejek ma Ania?",
+      "answer": {
+        "value": 40
+      },
+      "explanation": "$x+2x=60$, $x=20$, Ania: $40$.",
+      "tags": ["rownania"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Wycieczka kosztuje $1200$ zł dla całej grupy. Gdy dołączyły $2$ osoby, koszt na osobę spadł z $60$ zł do ilu złotych?",
+      "answer": {
+        "value": 54.55,
+        "tolerance": 0.01,
+        "unit": "zł"
+      },
+      "explanation": "1. Grupa: $1200:60=20$ osób.\n2. Po dołączeniu: $22$ osoby, $1200:22\\approx 54{,}55$ zł.",
+      "verify": "1200 / 22",
+      "tags": ["proporcjonalnosc"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Prostokątny ogród ma obwód $46$ m, a jego długość jest o $5$ m większa od szerokości. Oblicz pole ogrodu (w $\\text{m}^{2}$).",
+      "answer": {
+        "value": 126
+      },
+      "explanation": "1. $2(x+x+5)=46$, $x=9$.\n2. Wymiary $9\\times 14$, pole $126$.",
+      "verify": "9 * 14",
+      "tags": ["geometria", "rownania"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Kasia oszczędza $15$ zł tygodniowo. Ile tygodni musi oszczędzać, żeby kupić słuchawki za $195$ zł?",
+      "answer": {
+        "value": 13
+      },
+      "explanation": "$195:15=13$.",
+      "verify": "195 / 15",
+      "tags": ["dzielenie"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Za $3$ kg truskawek i $2$ kg czereśni zapłacono $54$ zł. Kilogram czereśni jest o $2$ zł droższy od kilograma truskawek. Ile kosztuje kilogram truskawek (w zł)?",
+      "answer": {
+        "value": 10,
+        "unit": "zł"
+      },
+      "explanation": "$3x+2(x+2)=54$, $5x=50$, $x=10$.",
+      "tags": ["rownania"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Film zaczyna się o $17{:}45$ i trwa $1$ h $50$ min. O której się kończy? Podaj liczbę minut po godzinie $19{:}00$.",
+      "answer": {
+        "value": 35,
+        "unit": "min"
+      },
+      "explanation": "$17{:}45+1{:}50=19{:}35$.",
+      "verify": "45 + 50 - 60",
+      "tags": ["czas"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "W sklepie jest promocja: przy zakupie trzech sztuk najtańsza jest gratis. Kupiono koszulki za $40$ zł, $35$ zł i $25$ zł. Ile zapłacono (w zł)?",
+      "answer": {
+        "value": 75,
+        "unit": "zł"
+      },
+      "explanation": "Najtańsza ($25$ zł) gratis: $40+35=75$ zł.",
+      "verify": "40 + 35",
+      "tags": ["zakupy"]
+    },
+    {
+      "id": "010",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Paczka zawiera $24$ cukierki. Ile cukierków dostanie każde z $6$ dzieci, jeśli podzielimy po równo $3$ paczki?",
+      "answer": {
+        "value": 12
+      },
+      "explanation": "$3\\cdot 24=72$, $72:6=12$.",
+      "verify": "3 * 24 / 6",
+      "tags": ["dzielenie"]
+    },
+    {
+      "id": "011",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Pole kwadratowej działki to $400\\ \\text{m}^{2}$. Ile metrów siatki potrzeba na ogrodzenie całej działki?",
+      "options": ["$80$ m", "$100$ m", "$40$ m", "$160$ m"],
+      "answer": 0,
+      "explanation": "Bok: $20$ m, obwód: $80$ m.",
+      "tags": ["geometria"]
+    },
+    {
+      "id": "012",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Pan Jan zatankował $40$ litrów paliwa po $6{,}50$ zł za litr i zapłacił banknotem $500$ zł. Ile złotych reszty otrzymał?",
+      "answer": {
+        "value": 240,
+        "unit": "zł"
+      },
+      "explanation": "$40\\cdot 6{,}50=260$ zł, reszta $240$ zł.",
+      "verify": "500 - 40 * 6.5",
+      "tags": ["zakupy"]
+    },
+    {
+      "id": "013",
+      "type": "ordering",
+      "difficulty": 1,
+      "prompt": "Ułóż etapy rozwiązywania zadania z treścią w dobrej kolejności.",
+      "options": [
+        "zapisz dane i pytanie",
+        "oznacz niewiadomą i ułóż równanie",
+        "rozwiąż równanie",
+        "sprawdź wynik z treścią i napisz odpowiedź"
+      ],
+      "answer": [0, 1, 2, 3],
+      "explanation": "Dane → równanie → rozwiązanie → sprawdzenie i odpowiedź.",
+      "tags": ["strategia"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

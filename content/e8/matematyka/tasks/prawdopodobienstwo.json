@@ -1,0 +1,107 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Rzucamy kostką. Prawdopodobieństwo wyrzucenia liczby podzielnej przez $3$ jest równe",
+      "options": ["$\\frac{1}{3}$", "$\\frac{1}{2}$", "$\\frac{1}{6}$", "$\\frac{2}{3}$"],
+      "answer": 0,
+      "explanation": "Sprzyjają $3$ i $6$: $\\frac{2}{6}=\\frac{1}{3}$.",
+      "verify": "2 / 6",
+      "tags": ["prawdopodobienstwo"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "W worku są $3$ kule czerwone i $5$ niebieskich. Prawdopodobieństwo wylosowania czerwonej jest równe",
+      "options": ["$\\frac{3}{8}$", "$\\frac{3}{5}$", "$\\frac{5}{8}$", "$\\frac{1}{3}$"],
+      "answer": 0,
+      "explanation": "$\\frac{3}{3+5}=\\frac{3}{8}$.",
+      "verify": "3 / 8",
+      "tags": ["prawdopodobienstwo"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Rzucamy kostką. Prawdopodobieństwo, że **nie** wypadnie szóstka, jest równe",
+      "options": ["$\\frac{5}{6}$", "$\\frac{1}{6}$", "$\\frac{1}{2}$", "$1$"],
+      "answer": 0,
+      "explanation": "$1-\\frac{1}{6}=\\frac{5}{6}$.",
+      "verify": "1 - 1/6",
+      "tags": ["zdarzenie-przeciwne"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Rzucamy dwa razy monetą. Prawdopodobieństwo wyrzucenia dwóch orłów jest równe",
+      "options": ["$\\frac{1}{4}$", "$\\frac{1}{2}$", "$\\frac{1}{3}$", "$\\frac{3}{4}$"],
+      "answer": 0,
+      "explanation": "Wyniki: OO, OR, RO, RR. Sprzyja jeden: $\\frac{1}{4}$.",
+      "verify": "1 / 4",
+      "tags": ["prawdopodobienstwo"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Ze zbioru liczb od $1$ do $20$ losujemy jedną. Prawdopodobieństwo, że będzie podzielna przez $4$, jest równe",
+      "options": ["$\\frac{1}{4}$", "$\\frac{1}{5}$", "$\\frac{4}{20}$", "$\\frac{1}{2}$"],
+      "answer": 0,
+      "explanation": "Liczby: $4, 8, 12, 16, 20$, czyli $5$ z $20$: $\\frac{1}{4}$.",
+      "verify": "5 / 20",
+      "tags": ["prawdopodobienstwo"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "W klasie jest $12$ dziewcząt i $18$ chłopców. Losujemy jedną osobę. Prawdopodobieństwo, że będzie to dziewczyna, jest równe",
+      "options": ["$\\frac{2}{5}$", "$\\frac{2}{3}$", "$\\frac{3}{5}$", "$\\frac{1}{12}$"],
+      "answer": 0,
+      "explanation": "$\\frac{12}{30}=\\frac{2}{5}$.",
+      "verify": "12 / 30",
+      "tags": ["prawdopodobienstwo"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "W worku jest $10$ kul: białe i czarne. Prawdopodobieństwo wylosowania białej to $\\frac{3}{5}$. Ile jest kul czarnych?",
+      "options": ["$4$", "$6$", "$3$", "$5$"],
+      "answer": 0,
+      "explanation": "Białych: $\\frac{3}{5}\\cdot 10=6$, czarnych: $4$.",
+      "verify": "10 - 6",
+      "tags": ["prawdopodobienstwo"]
+    },
+    {
+      "id": "008",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Wyrzucenie $7$ oczek na zwykłej kostce to zdarzenie niemożliwe.",
+        "Prawdopodobieństwo jakiegoś zdarzenia może wynosić $120\\%$."
+      ],
+      "answer": [true, false],
+      "explanation": "1. To zdarzenie niemożliwe. Prawda.\n2. Prawdopodobieństwo nie przekracza $100\\%$. Fałsz.",
+      "tags": ["prawdopodobienstwo"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Rzucamy kostką. Oblicz prawdopodobieństwo wyrzucenia liczby pierwszej. Wynik podaj jako ułamek.",
+      "answer": {
+        "value": "1/2"
+      },
+      "explanation": "Liczby pierwsze na kostce: $2, 3, 5$. $\\frac{3}{6}=\\frac{1}{2}$.",
+      "verify": "3 / 6",
+      "tags": ["prawdopodobienstwo"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,60 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz $2^{5}$.",
+      "answer": {
+        "value": 32
+      },
+      "explanation": "$2\\cdot 2\\cdot 2\\cdot 2\\cdot 2=32$.",
+      "verify": "2^5",
+      "tags": ["potegi"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Liczba $3^{4}\\cdot 3^{2}$ jest równa",
+      "options": ["$3^{6}$", "$3^{8}$", "$9^{6}$", "$6^{6}$"],
+      "answer": 0,
+      "explanation": "Ta sama podstawa: dodajemy wykładniki, $3^{6}$.",
+      "tags": ["potegi"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wartość wyrażenia $-2^{2}+(-2)^{2}$ jest równa",
+      "options": ["$0$", "$8$", "$-8$", "$4$"],
+      "answer": 0,
+      "explanation": "$-2^{2}=-4$, $(-2)^{2}=4$, suma: $0$.",
+      "verify": "-(2^2) + (-2)^2",
+      "tags": ["potegi"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Liczba $4{,}5\\cdot 10^{6}$ zapisana w zwykłej postaci to",
+      "options": ["$4\\,500\\,000$", "$450\\,000$", "$45\\,000\\,000$", "$4\\,500$"],
+      "answer": 0,
+      "explanation": "Przesuwamy przecinek o $6$ miejsc w prawo: $4\\,500\\,000$.",
+      "tags": ["notacja-wykladnicza"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz $\\frac{5^{7}}{5^{5}}+(2^{2})^{3}$.",
+      "answer": {
+        "value": 89
+      },
+      "explanation": "$5^{2}+2^{6}=25+64=89$.",
+      "verify": "5^7 / 5^5 + (2^2)^3",
+      "tags": ["potegi"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,74 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz $\\frac{2}{3}+\\frac{1}{4}$. Wynik podaj jako ułamek zwykły.",
+      "answer": {
+        "value": "11/12"
+      },
+      "explanation": "1. Wspólny mianownik $12$: $\\frac{8}{12}+\\frac{3}{12}$.\n2. $=\\frac{11}{12}$.",
+      "verify": "2/3 + 1/4",
+      "tags": ["ulamki"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Wartość wyrażenia $2+3\\cdot 4$ jest równa",
+      "options": ["$14$", "$20$", "$24$", "$9$"],
+      "answer": 0,
+      "explanation": "Najpierw mnożenie: $3\\cdot 4=12$, potem dodawanie: $14$.",
+      "verify": "2 + 3 * 4",
+      "tags": ["kolejnosc-dzialan"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Która liczba jest największa?",
+      "options": ["$\\frac{5}{8}$", "$\\frac{3}{5}$", "$0{,}6$", "$\\frac{7}{12}$"],
+      "answer": 0,
+      "explanation": "$\\frac{5}{8}=0{,}625$, $\\frac{3}{5}=0{,}6$, $\\frac{7}{12}\\approx 0{,}583$. Największa: $\\frac{5}{8}$.",
+      "tags": ["porownywanie"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz $\\frac{3}{4}:\\frac{9}{8}$. Wynik podaj jako ułamek zwykły.",
+      "answer": {
+        "value": "2/3"
+      },
+      "explanation": "$\\frac{3}{4}\\cdot\\frac{8}{9}=\\frac{24}{36}=\\frac{2}{3}$.",
+      "verify": "(3/4) / (9/8)",
+      "tags": ["ulamki"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz $-3\\cdot(-4)-5\\cdot 2$.",
+      "answer": {
+        "value": 2
+      },
+      "explanation": "$12-10=2$.",
+      "verify": "-3 * (-4) - 5 * 2",
+      "tags": ["liczby-ujemne"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz $\\left(1\\frac{1}{2}-\\frac{3}{4}\\right)\\cdot 8$.",
+      "answer": {
+        "value": 6
+      },
+      "explanation": "1. $1\\frac{1}{2}=\\frac{6}{4}$, więc nawias to $\\frac{3}{4}$.\n2. $\\frac{3}{4}\\cdot 8=6$.",
+      "verify": "(1.5 - 0.75) * 8",
+      "tags": ["ulamki"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

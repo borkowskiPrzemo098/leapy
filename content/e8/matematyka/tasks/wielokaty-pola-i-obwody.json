@@ -1,0 +1,65 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz pole trójkąta o podstawie $8$ cm i wysokości $5$ cm (w $\\text{cm}^{2}$).",
+      "answer": {
+        "value": 20
+      },
+      "explanation": "$\\frac{1}{2}\\cdot 8\\cdot 5=20$.",
+      "verify": "0.5 * 8 * 5",
+      "tags": ["pole"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Trapez ma podstawy $8$ cm i $4$ cm oraz wysokość $5$ cm. Oblicz jego pole (w $\\text{cm}^{2}$).",
+      "answer": {
+        "value": 30
+      },
+      "explanation": "$\\frac{(8+4)\\cdot 5}{2}=30$.",
+      "verify": "(8 + 4) * 5 / 2",
+      "tags": ["pole", "trapez"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Ile $\\text{cm}^{2}$ to $1{,}5\\ \\text{m}^{2}$?",
+      "answer": {
+        "value": 15000
+      },
+      "explanation": "$1\\ \\text{m}^{2}=10\\,000\\ \\text{cm}^{2}$, więc $15\\,000$.",
+      "verify": "1.5 * 10000",
+      "tags": ["jednostki"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Obwód kwadratu jest równy $36$ cm. Oblicz jego pole (w $\\text{cm}^{2}$).",
+      "answer": {
+        "value": 81
+      },
+      "explanation": "Bok: $9$ cm, pole: $81$.",
+      "verify": "9^2",
+      "tags": ["pole", "obwod"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Prostokąt ma pole $48\\ \\text{cm}^{2}$, a jeden bok $6$ cm. Oblicz jego obwód (w cm).",
+      "answer": {
+        "value": 28
+      },
+      "explanation": "Drugi bok: $8$ cm. Obwód: $2(6+8)=28$ cm.",
+      "verify": "2 * (6 + 8)",
+      "tags": ["obwod"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

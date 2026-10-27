@@ -1,0 +1,116 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Na diagramie kołowym $25\\%$ uczniów wybrało sport. Jaki kąt ma ten wycinek (w stopniach)?",
+      "answer": {
+        "value": 90,
+        "unit": "°"
+      },
+      "explanation": "$0{,}25\\cdot 360^\\circ=90^\\circ$.",
+      "verify": "0.25 * 360",
+      "tags": ["diagram-kolowy"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "W klasie jest $28$ osób. Na diagramie kołowym $25\\%$ wybrało sport. Ile osób wybrało sport?",
+      "answer": {
+        "value": 7
+      },
+      "explanation": "$0{,}25\\cdot 28=7$.",
+      "verify": "0.25 * 28",
+      "tags": ["diagram-kolowy"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Wycinek diagramu kołowego ma kąt $72^\\circ$. Jaki procent całości przedstawia?",
+      "answer": {
+        "value": 20,
+        "unit": "%"
+      },
+      "explanation": "$\\frac{72}{360}=0{,}2=20\\%$.",
+      "verify": "72 / 360 * 100",
+      "tags": ["diagram-kolowy"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "W tabeli: w poniedziałek sklep sprzedał $40$ bułek, we wtorek $60$. O ile procent więcej bułek sprzedano we wtorek niż w poniedziałek?",
+      "options": ["$50\\%$", "$20\\%$", "$33\\%$", "$60\\%$"],
+      "answer": 0,
+      "explanation": "Różnica $20$ to $50\\%$ z $40$.",
+      "tags": ["procenty", "tabela"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "W tabeli: w poniedziałek $40$ bułek, we wtorek $60$. Ile razy więcej bułek sprzedano we wtorek?",
+      "options": ["$1{,}5$ raza", "$2$ razy", "o $20$", "$0{,}5$ raza"],
+      "answer": 0,
+      "explanation": "„Ile razy” to iloraz: $60:40=1{,}5$.",
+      "tags": ["tabela"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Oś pionowa diagramu słupkowego zaczyna się od $50$, a nie od $0$. Słupek A sięga $60$, a słupek B $70$. Na rysunku B wygląda na dwa razy wyższy. W rzeczywistości wartość B jest",
+      "options": [
+        "o mniej więcej $17\\%$ większa od A",
+        "dwa razy większa od A",
+        "taka sama jak A",
+        "o $10\\%$ większa od A"
+      ],
+      "answer": 0,
+      "explanation": "$\\frac{70}{60}\\approx 1{,}17$. Ucięta oś wyolbrzymia różnice, dlatego zawsze odczytuj wartości z osi.",
+      "tags": ["diagram-slupkowy"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Z $200$ ankietowanych $30\\%$ wybrało rower. Ile osób wybrało rower?",
+      "answer": {
+        "value": 60
+      },
+      "explanation": "$0{,}3\\cdot 200=60$.",
+      "verify": "0.3 * 200",
+      "tags": ["procenty"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "W ankiecie $12$ osób z $48$ odpowiedziało „tak”. Jaki procent ankietowanych to jest?",
+      "answer": {
+        "value": 25,
+        "unit": "%"
+      },
+      "explanation": "$\\frac{12}{48}=0{,}25=25\\%$.",
+      "verify": "12 / 48 * 100",
+      "tags": ["procenty"]
+    },
+    {
+      "id": "009",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań o diagramie kołowym.",
+      "options": [
+        "Suma procentów wszystkich wycinków wynosi $100\\%$.",
+        "Wycinek $50\\%$ ma kąt $180^\\circ$."
+      ],
+      "answer": [true, true],
+      "explanation": "1. Całe koło to całość. Prawda.\n2. $0{,}5\\cdot 360^\\circ=180^\\circ$. Prawda.",
+      "tags": ["diagram-kolowy"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

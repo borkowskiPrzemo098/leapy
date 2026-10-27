@@ -1,0 +1,63 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Pole koła o promieniu $5$ jest równe",
+      "options": ["$25\\pi$", "$10\\pi$", "$5\\pi$", "$100\\pi$"],
+      "answer": 0,
+      "explanation": "$\\pi r^{2}=25\\pi$.",
+      "verify": "pi * 25",
+      "tags": ["kolo"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Długość okręgu o średnicy $8$ jest równa",
+      "options": ["$8\\pi$", "$16\\pi$", "$4\\pi$", "$64\\pi$"],
+      "answer": 0,
+      "explanation": "$L=\\pi d=8\\pi$.",
+      "verify": "8 * pi",
+      "tags": ["okrag"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Koło ma promień $10$ cm. Oblicz jego pole, przyjmując $\\pi\\approx 3{,}14$ (w $\\text{cm}^{2}$).",
+      "answer": {
+        "value": 314
+      },
+      "explanation": "$3{,}14\\cdot 100=314$.",
+      "verify": "3.14 * 100",
+      "tags": ["kolo"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Koło roweru ma promień $35$ cm. Jaką drogę (w cm) pokona rower przy jednym pełnym obrocie koła? Przyjmij $\\pi\\approx\\frac{22}{7}$.",
+      "answer": {
+        "value": 220,
+        "unit": "cm"
+      },
+      "explanation": "$2\\cdot\\frac{22}{7}\\cdot 35=220$ cm.",
+      "verify": "2 * 22/7 * 35",
+      "tags": ["okrag", "zadania-tekstowe"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Długość okręgu jest równa $12\\pi$. Oblicz jego promień.",
+      "answer": {
+        "value": 6
+      },
+      "explanation": "$2\\pi r=12\\pi$, więc $r=6$.",
+      "tags": ["okrag"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

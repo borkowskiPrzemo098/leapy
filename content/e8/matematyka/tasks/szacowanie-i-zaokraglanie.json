@@ -1,0 +1,61 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Liczba $7{,}48$ zaokrąglona do części dziesiątych to",
+      "options": ["$7{,}5$", "$7{,}4$", "$7$", "$7{,}48$"],
+      "answer": 0,
+      "explanation": "Odrzucana cyfra $8\\ge 5$, zaokrąglamy w górę: $7{,}5$.",
+      "tags": ["zaokraglanie"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Liczba $1\\,251$ zaokrąglona do setek to",
+      "options": ["$1\\,300$", "$1\\,200$", "$1\\,250$", "$1\\,000$"],
+      "answer": 0,
+      "explanation": "Odrzucana cyfra dziesiątek to $5$, więc w górę: $1\\,300$.",
+      "tags": ["zaokraglanie"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Najlepszym oszacowaniem iloczynu $49\\cdot 21$ jest",
+      "options": ["$1000$", "$100$", "$800$", "$10\\,000$"],
+      "answer": 0,
+      "explanation": "$50\\cdot 20=1000$ (dokładnie $1029$).",
+      "tags": ["szacowanie"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Uczeń obliczył, że $12\\%$ z $398$ zł to $477{,}6$ zł. Szacunek pokazuje, że",
+      "options": [
+        "wynik jest za duży, powinno być około $48$ zł",
+        "wynik jest dobry",
+        "wynik jest za mały",
+        "nie da się tego sprawdzić"
+      ],
+      "answer": 0,
+      "explanation": "$10\\%$ z $400$ to $40$ zł, więc $12\\%$ to około $48$ zł. Uczeń przesunął przecinek.",
+      "tags": ["szacowanie"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Zaokrąglij liczbę $3{,}1415$ do części setnych.",
+      "answer": {
+        "value": 3.14
+      },
+      "explanation": "Odrzucana cyfra $1<5$, więc $3{,}14$.",
+      "tags": ["zaokraglanie"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

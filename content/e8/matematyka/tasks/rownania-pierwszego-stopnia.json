@@ -1,0 +1,102 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Rozwiąż równanie $x+5=12$.",
+      "answer": {
+        "value": 7
+      },
+      "explanation": "$x=12-5=7$.",
+      "tags": ["rownania"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Rozwiąż równanie $3x=18$.",
+      "answer": {
+        "value": 6
+      },
+      "explanation": "$x=18:3=6$.",
+      "tags": ["rownania"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Rozwiąż równanie $4x-7=2x+5$.",
+      "answer": {
+        "value": 6
+      },
+      "explanation": "$2x=12$, $x=6$.",
+      "tags": ["rownania"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Rozwiąż równanie $\\frac{x}{4}=5$.",
+      "answer": {
+        "value": 20
+      },
+      "explanation": "$x=20$.",
+      "tags": ["rownania"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Rozwiąż równanie $2(x-3)=10$.",
+      "answer": {
+        "value": 8
+      },
+      "explanation": "$2x-6=10$, $2x=16$, $x=8$.",
+      "tags": ["rownania"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ola ma o $3$ lata więcej niż Kuba. Razem mają $27$ lat. Ile lat ma Kuba?",
+      "answer": {
+        "value": 12
+      },
+      "explanation": "$x+(x+3)=27$, $2x=24$, $x=12$.",
+      "tags": ["zadania-tekstowe"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Suma trzech kolejnych liczb naturalnych jest równa $48$. Jaka jest najmniejsza z nich?",
+      "answer": {
+        "value": 15
+      },
+      "explanation": "$n+(n+1)+(n+2)=48$, $3n=45$, $n=15$.",
+      "tags": ["zadania-tekstowe"]
+    },
+    {
+      "id": "008",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Liczba $3$ jest rozwiązaniem równania",
+      "options": ["$2x+1=7$", "$2x-1=7$", "$x+3=0$", "$3x=1$"],
+      "answer": 0,
+      "explanation": "$2\\cdot 3+1=7$. Pozostałe dają $5$, $6$ i $9$.",
+      "tags": ["rownania"]
+    },
+    {
+      "id": "009",
+      "type": "ordering",
+      "difficulty": 2,
+      "prompt": "Ułóż kroki rozwiązania równania $5x+2=3x+10$ w dobrej kolejności.",
+      "options": ["$5x-3x+2=10$", "$2x+2=10$", "$2x=8$", "$x=4$"],
+      "answer": [0, 1, 2, 3],
+      "explanation": "Przenosimy $3x$, redukujemy, odejmujemy $2$, dzielimy przez $2$.",
+      "tags": ["rownania"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

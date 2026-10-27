@@ -1,0 +1,98 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Wyrażenie $5a-2a+b$ po uproszczeniu to",
+      "options": ["$3a+b$", "$4ab$", "$3ab$", "$7a+b$"],
+      "answer": 0,
+      "explanation": "Redukujemy wyrazy podobne: $5a-2a=3a$.",
+      "tags": ["redukcja"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wyrażenie $3(x+2)-2(x-1)$ po uproszczeniu to",
+      "options": ["$x+8$", "$x+4$", "$5x+8$", "$x+5$"],
+      "answer": 0,
+      "explanation": "$3x+6-2x+2=x+8$.",
+      "tags": ["nawiasy"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz wartość wyrażenia $x^{2}-3x$ dla $x=-2$.",
+      "answer": {
+        "value": 10
+      },
+      "explanation": "$(-2)^{2}-3\\cdot(-2)=4+6=10$.",
+      "verify": "(-2)^2 - 3 * (-2)",
+      "tags": ["wartosc-wyrazenia"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Obwód prostokąta o bokach $a$ i $a+3$ jest równy",
+      "options": ["$4a+6$", "$2a+3$", "$a^{2}+3a$", "$4a+3$"],
+      "answer": 0,
+      "explanation": "$2a+2(a+3)=4a+6$.",
+      "tags": ["zapisywanie"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Iloczyn $(x+2)(x+3)$ jest równy",
+      "options": ["$x^{2}+5x+6$", "$x^{2}+6$", "$x^{2}+5x+5$", "$2x+5$"],
+      "answer": 0,
+      "explanation": "$x^{2}+3x+2x+6=x^{2}+5x+6$.",
+      "tags": ["nawiasy"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wyrażenie $-(4-x)$ jest równe",
+      "options": ["$x-4$", "$-4-x$", "$4+x$", "$4-x$"],
+      "answer": 0,
+      "explanation": "Minus przed nawiasem zmienia znaki: $-4+x$.",
+      "tags": ["nawiasy"]
+    },
+    {
+      "id": "007",
+      "type": "short",
+      "difficulty": 2,
+      "prompt": "Zapisz wyrażeniem: liczba o $5$ większa od podwojonej liczby $n$.",
+      "answer": ["2n+5", "5+2n"],
+      "explanation": "Podwojona liczba: $2n$, o $5$ większa: $2n+5$.",
+      "tags": ["zapisywanie"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz wartość wyrażenia $2a-3b$ dla $a=\\frac{1}{2}$ i $b=-2$.",
+      "answer": {
+        "value": 7
+      },
+      "explanation": "$1-(-6)=7$.",
+      "verify": "2 * 0.5 - 3 * (-2)",
+      "tags": ["wartosc-wyrazenia"]
+    },
+    {
+      "id": "009",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": ["$2a+3b=5ab$", "$2(x+4)=2x+8$", "$a\\cdot a\\cdot a=a^{3}$"],
+      "answer": [false, true, true],
+      "explanation": "1. Wyrazy niepodobne nie łączą się. Fałsz.\n2. Prawda.\n3. Prawda.",
+      "tags": ["redukcja"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

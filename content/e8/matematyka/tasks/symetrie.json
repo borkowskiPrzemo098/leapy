@@ -1,0 +1,56 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Ile osi symetrii ma kwadrat?",
+      "options": ["$4$", "$2$", "$1$", "$8$"],
+      "answer": 0,
+      "explanation": "Dwie przekątne i dwie proste przez środki przeciwległych boków.",
+      "tags": ["symetria-osiowa"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Punkt symetryczny do $A=(3,2)$ względem osi $Ox$ to",
+      "options": ["$(3,\\ -2)$", "$(-3,\\ 2)$", "$(-3,\\ -2)$", "$(2,\\ 3)$"],
+      "answer": 0,
+      "explanation": "Odbicie względem $Ox$ zmienia znak drugiej współrzędnej.",
+      "tags": ["symetria", "uklad-wspolrzednych"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Punkt symetryczny do $B=(-4,1)$ względem początku układu współrzędnych to",
+      "options": ["$(4,\\ -1)$", "$(-4,\\ -1)$", "$(4,\\ 1)$", "$(1,\\ -4)$"],
+      "answer": 0,
+      "explanation": "Symetria środkowa względem $(0,0)$ zmienia oba znaki.",
+      "tags": ["symetria-srodkowa"]
+    },
+    {
+      "id": "004",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** figury, które mają środek symetrii.",
+      "options": ["prostokąt", "okrąg", "trójkąt równoboczny", "równoległobok"],
+      "answer": [0, 1, 3],
+      "explanation": "Prostokąt, okrąg i równoległobok mają środek symetrii (przecięcie przekątnych, środek okręgu). Trójkąt nie ma.",
+      "tags": ["symetria-srodkowa"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Ile osi symetrii ma trójkąt równoboczny?",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "Każda wysokość leży na osi symetrii.",
+      "tags": ["symetria-osiowa"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

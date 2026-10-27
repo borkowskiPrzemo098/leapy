@@ -2,10 +2,10 @@
 
 Wygenerowano: 2026-10-27 (`npm run content:build`).
 
-- Zadania: **297** (zweryfikowane przez człowieka: 0, czekają: 297)
-- Sprawdzone automatycznie (`verify`): 144
-- Typy: single 118, numeric 123, match 11, truefalse 25, short 5, multi 9, ordering 6
-- Błędy: 0, ostrzeżenia: 0
+- Zadania: **459** (zweryfikowane przez człowieka: 0, czekają: 459)
+- Sprawdzone automatycznie (`verify`): 242
+- Typy: numeric 221, single 168, truefalse 35, ordering 8, multi 10, short 6, match 11
+- Błędy: 0, ostrzeżenia: 1
 
 Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
 
@@ -35,31 +35,31 @@ Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
 |  | Charakterystyka | 0 | — |
 |  | Formy użytkowe | 0 | — |
 
-### Matematyka: 0 zadań
+### Matematyka: 162 zadań
 
 | Dział | Temat | Zadania | Lekcja |
 | --- | --- | ---: | :---: |
-| Liczby i działania (0 ⚠) | Liczby wymierne | 0 | — |
-|  | Potęgi | 0 | — |
-|  | Pierwiastki | 0 | — |
-|  | Procenty | 0 | — |
-|  | Szacowanie i zaokrąglanie | 0 | — |
-| Wyrażenia algebraiczne i równania (0 ⚠) | Wyrażenia algebraiczne | 0 | — |
-|  | Równania pierwszego stopnia | 0 | — |
-|  | Proporcjonalność | 0 | — |
-| Geometria płaska (0 ⚠) | Kąty i trójkąty | 0 | — |
-|  | Twierdzenie Pitagorasa | 0 | — |
-|  | Wielokąty: pola i obwody | 0 | — |
-|  | Okrąg i koło | 0 | — |
-|  | Symetrie | 0 | — |
-|  | Układ współrzędnych | 0 | — |
-| Geometria przestrzenna (0 ⚠) | Graniastosłupy | 0 | — |
-|  | Ostrosłupy | 0 | — |
-| Statystyka i prawdopodobieństwo (0 ⚠) | Odczytywanie danych i diagramy | 0 | — |
-|  | Średnia arytmetyczna | 0 | — |
-|  | Prawdopodobieństwo | 0 | — |
-| Zadania tekstowe (0 ⚠) | Prędkość, droga, czas | 0 | — |
-|  | Zadania z treścią | 0 | — |
+| Liczby i działania (26) | Liczby wymierne | 6 | tak |
+|  | Potęgi | 5 | tak |
+|  | Pierwiastki | 5 | tak |
+|  | Procenty | 5 | tak |
+|  | Szacowanie i zaokrąglanie | 5 | tak |
+| Wyrażenia algebraiczne i równania (27) | Wyrażenia algebraiczne | 9 | tak |
+|  | Równania pierwszego stopnia | 9 | tak |
+|  | Proporcjonalność | 9 | tak |
+| Geometria płaska (30) | Kąty i trójkąty | 5 | tak |
+|  | Twierdzenie Pitagorasa | 5 | tak |
+|  | Wielokąty: pola i obwody | 5 | tak |
+|  | Okrąg i koło | 5 | tak |
+|  | Symetrie | 5 | tak |
+|  | Układ współrzędnych | 5 | tak |
+| Geometria przestrzenna (26) | Graniastosłupy | 13 | tak |
+|  | Ostrosłupy | 13 | tak |
+| Statystyka i prawdopodobieństwo (27) | Odczytywanie danych i diagramy | 9 | tak |
+|  | Średnia arytmetyczna | 9 | tak |
+|  | Prawdopodobieństwo | 9 | tak |
+| Zadania tekstowe (26) | Prędkość, droga, czas | 13 | tak |
+|  | Zadania z treścią | 13 | tak |
 
 ### Język angielski: 0 zadań
 
@@ -234,11 +234,18 @@ Cel Fazy 1: co najmniej 25 zadań na dział i lekcja dla każdego tematu.
 
 Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 
+- `e8.matematyka.wyrazenia-algebraiczne.007` (short, trudność 2)
 - `matura.matematyka-p.ciag-arytmetyczny.011` (short, trudność 2)
 - `matura.matematyka-p.potegi-i-pierwiastki.008` (short, trudność 2)
 - `matura.matematyka-p.procenty.008` (short, trudność 2)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.012` (short, trudność 2)
 - `matura.matematyka-p.logarytmy.009` (short, trudność 1)
+- `e8.matematyka.odczytywanie-danych-i-diagramy.006` (single, trudność 3)
+- `e8.matematyka.procenty.005` (single, trudność 3)
+- `e8.matematyka.rownania-pierwszego-stopnia.006` (numeric, trudność 3)
+- `e8.matematyka.rownania-pierwszego-stopnia.007` (numeric, trudność 3)
+- `e8.matematyka.wyrazenia-algebraiczne.005` (single, trudność 3)
+- `e8.matematyka.zadania-z-trescia.007` (numeric, trudność 3)
 - `matura.matematyka-p.bryly-obrotowe.008` (numeric, trudność 3)
 - `matura.matematyka-p.ciag-arytmetyczny.010` (numeric, trudność 3)
 - `matura.matematyka-p.ciag-geometryczny.004` (multi, trudność 3)
@@ -275,6 +282,54 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.wyrazenia-wymierne.012` (numeric, trudność 3)
 - `matura.matematyka-p.wyrazenia-wymierne.013` (single, trudność 3)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.011` (single, trudność 3)
+- `e8.matematyka.graniastoslupy.006` (single, trudność 2)
+- `e8.matematyka.graniastoslupy.007` (single, trudność 2)
+- `e8.matematyka.graniastoslupy.011` (truefalse, trudność 2)
+- `e8.matematyka.katy-i-trojkaty.004` (single, trudność 2)
+- `e8.matematyka.katy-i-trojkaty.005` (truefalse, trudność 2)
+- `e8.matematyka.liczby-wymierne.003` (single, trudność 2)
+- `e8.matematyka.odczytywanie-danych-i-diagramy.004` (single, trudność 2)
+- `e8.matematyka.odczytywanie-danych-i-diagramy.005` (single, trudność 2)
+- `e8.matematyka.odczytywanie-danych-i-diagramy.009` (truefalse, trudność 2)
+- `e8.matematyka.okrag-i-kolo.005` (numeric, trudność 2)
+- `e8.matematyka.ostroslupy.003` (single, trudność 2)
+- `e8.matematyka.ostroslupy.006` (single, trudność 2)
+- `e8.matematyka.ostroslupy.009` (single, trudność 2)
+- `e8.matematyka.ostroslupy.010` (numeric, trudność 2)
+- `e8.matematyka.ostroslupy.012` (truefalse, trudność 2)
+- `e8.matematyka.pierwiastki.002` (single, trudność 2)
+- `e8.matematyka.pierwiastki.005` (truefalse, trudność 2)
+- `e8.matematyka.potegi.002` (single, trudność 2)
+- `e8.matematyka.potegi.004` (single, trudność 2)
+- `e8.matematyka.prawdopodobienstwo.008` (truefalse, trudność 2)
+- `e8.matematyka.predkosc-droga-czas.008` (single, trudność 2)
+- `e8.matematyka.predkosc-droga-czas.011` (single, trudność 2)
+- `e8.matematyka.predkosc-droga-czas.013` (truefalse, trudność 2)
+- `e8.matematyka.procenty.004` (single, trudność 2)
+- `e8.matematyka.proporcjonalnosc.004` (numeric, trudność 2)
+- `e8.matematyka.proporcjonalnosc.005` (single, trudność 2)
+- `e8.matematyka.proporcjonalnosc.008` (truefalse, trudność 2)
+- `e8.matematyka.rownania-pierwszego-stopnia.003` (numeric, trudność 2)
+- `e8.matematyka.rownania-pierwszego-stopnia.004` (numeric, trudność 2)
+- `e8.matematyka.rownania-pierwszego-stopnia.005` (numeric, trudność 2)
+- `e8.matematyka.rownania-pierwszego-stopnia.008` (single, trudność 2)
+- `e8.matematyka.rownania-pierwszego-stopnia.009` (ordering, trudność 2)
+- `e8.matematyka.srednia-arytmetyczna.009` (truefalse, trudność 2)
+- `e8.matematyka.symetrie.002` (single, trudność 2)
+- `e8.matematyka.symetrie.003` (single, trudność 2)
+- `e8.matematyka.symetrie.004` (multi, trudność 2)
+- `e8.matematyka.symetrie.005` (numeric, trudność 2)
+- `e8.matematyka.szacowanie-i-zaokraglanie.003` (single, trudność 2)
+- `e8.matematyka.szacowanie-i-zaokraglanie.004` (single, trudność 2)
+- `e8.matematyka.szacowanie-i-zaokraglanie.005` (numeric, trudność 2)
+- `e8.matematyka.uklad-wspolrzednych.004` (single, trudność 2)
+- `e8.matematyka.wyrazenia-algebraiczne.002` (single, trudność 2)
+- `e8.matematyka.wyrazenia-algebraiczne.004` (single, trudność 2)
+- `e8.matematyka.wyrazenia-algebraiczne.006` (single, trudność 2)
+- `e8.matematyka.wyrazenia-algebraiczne.009` (truefalse, trudność 2)
+- `e8.matematyka.zadania-z-trescia.001` (numeric, trudność 2)
+- `e8.matematyka.zadania-z-trescia.003` (numeric, trudność 2)
+- `e8.matematyka.zadania-z-trescia.011` (single, trudność 2)
 - `matura.matematyka-p.bryly-obrotowe.007` (match, trudność 2)
 - `matura.matematyka-p.ciag-arytmetyczny.003` (numeric, trudność 2)
 - `matura.matematyka-p.ciag-arytmetyczny.005` (numeric, trudność 2)
@@ -369,68 +424,17 @@ Najpierw zadania bez automatycznej weryfikacji i o wyższej trudności.
 - `matura.matematyka-p.wzory-skroconego-mnozenia.005` (single, trudność 2)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.007` (truefalse, trudność 2)
 - `matura.matematyka-p.wzory-skroconego-mnozenia.009` (match, trudność 2)
+- `e8.matematyka.ostroslupy.002` (single, trudność 1)
+- `e8.matematyka.rownania-pierwszego-stopnia.001` (numeric, trudność 1)
+- `e8.matematyka.rownania-pierwszego-stopnia.002` (numeric, trudność 1)
+- `e8.matematyka.symetrie.001` (single, trudność 1)
+- `e8.matematyka.szacowanie-i-zaokraglanie.001` (single, trudność 1)
+- `e8.matematyka.szacowanie-i-zaokraglanie.002` (single, trudność 1)
+- `e8.matematyka.uklad-wspolrzednych.001` (single, trudność 1)
+- `e8.matematyka.wyrazenia-algebraiczne.001` (single, trudność 1)
+- `e8.matematyka.zadania-z-trescia.013` (ordering, trudność 1)
 - `matura.matematyka-p.ciag-arytmetyczny.002` (numeric, trudność 1)
-- `matura.matematyka-p.ciag-geometryczny.002` (numeric, trudność 1)
-- `matura.matematyka-p.funkcja-kwadratowa.001` (single, trudność 1)
-- `matura.matematyka-p.funkcja-liniowa.001` (single, trudność 1)
-- `matura.matematyka-p.funkcja-wykladnicza.001` (numeric, trudność 1)
-- `matura.matematyka-p.funkcja-wykladnicza.002` (single, trudność 1)
-- `matura.matematyka-p.odchylenie-standardowe.002` (numeric, trudność 1)
-- `matura.matematyka-p.odcinki-i-punkty.002` (single, trudność 1)
-- `matura.matematyka-p.procenty.009` (match, trudność 1)
-- `matura.matematyka-p.rownania-i-nierownosci-kwadratowe.001` (multi, trudność 1)
-- `matura.matematyka-p.rownania-i-nierownosci-liniowe.001` (numeric, trudność 1)
-- `matura.matematyka-p.srednia-mediana-dominanta.003` (numeric, trudność 1)
-- `matura.matematyka-p.srednia-mediana-dominanta.013` (numeric, trudność 1)
-- `matura.matematyka-p.tozsamosci-trygonometryczne.003` (numeric, trudność 1)
-- `matura.matematyka-p.uklady-rownan.001` (single, trudność 1)
-- `matura.matematyka-p.wlasnosci-funkcji.002` (numeric, trudność 1)
-- `matura.matematyka-p.wyrazenia-wymierne.001` (single, trudność 1)
-- `matura.matematyka-p.wzory-skroconego-mnozenia.001` (single, trudność 1)
-- `matura.matematyka-p.bryly-obrotowe.006` (single, trudność 3, verify ✓)
-- `matura.matematyka-p.ciag-arytmetyczny.007` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.ciag-arytmetyczny.012` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.ciag-geometryczny.007` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.ciag-geometryczny.011` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.czworokaty.005` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.funkcja-kwadratowa.005` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.funkcja-liniowa.005` (single, trudność 3, verify ✓)
-- `matura.matematyka-p.funkcja-wykladnicza.007` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.006` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.009` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.010` (single, trudność 3, verify ✓)
-- `matura.matematyka-p.funkcje-trygonometryczne-kata-ostrego.012` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.graniastoslupy.005` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.graniastoslupy.006` (single, trudność 3, verify ✓)
-- `matura.matematyka-p.kombinatoryka.006` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.kombinatoryka.007` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.kombinatoryka.011` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.kombinatoryka.012` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.logarytmy.004` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.odchylenie-standardowe.005` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.odchylenie-standardowe.009` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.odcinki-i-punkty.006` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.odcinki-i-punkty.010` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.ostroslupy.003` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.ostroslupy.007` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.ostroslupy.008` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.podobienstwo-figur.005` (single, trudność 3, verify ✓)
-- `matura.matematyka-p.podobienstwo-figur.007` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.potegi-i-pierwiastki.003` (single, trudność 3, verify ✓)
-- `matura.matematyka-p.prawdopodobienstwo.005` (single, trudność 3, verify ✓)
-- `matura.matematyka-p.prawdopodobienstwo.006` (single, trudność 3, verify ✓)
-- `matura.matematyka-p.prawdopodobienstwo.009` (single, trudność 3, verify ✓)
-- `matura.matematyka-p.prawdopodobienstwo.011` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.procenty.004` (single, trudność 3, verify ✓)
-- `matura.matematyka-p.procenty.006` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.prosta-na-plaszczyznie.007` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.prosta-na-plaszczyznie.011` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.prosta-na-plaszczyznie.012` (single, trudność 3, verify ✓)
-- `matura.matematyka-p.srednia-mediana-dominanta.005` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.srednia-mediana-dominanta.006` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.srednia-mediana-dominanta.011` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.tozsamosci-trygonometryczne.006` (single, trudność 3, verify ✓)
-- `matura.matematyka-p.tozsamosci-trygonometryczne.008` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.tozsamosci-trygonometryczne.012` (numeric, trudność 3, verify ✓)
-- `matura.matematyka-p.trojkaty.007` (single, trudność 3, verify ✓)
-- `matura.matematyka-p.wartosc-bezwzgledna.007` (numeric, trudność 3, verify ✓)
+
+## Ostrzeżenia
+
+- content/matura/matematyka-p/tasks/prawdopodobienstwo.json: matura.matematyka-p.prawdopodobienstwo.007: bardzo podobne do e8.matematyka.prawdopodobienstwo.008

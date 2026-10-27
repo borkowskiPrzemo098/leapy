@@ -1,0 +1,62 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz $15\\%$ liczby $240$.",
+      "answer": {
+        "value": 36
+      },
+      "explanation": "$0{,}15\\cdot 240=36$.",
+      "verify": "0.15 * 240",
+      "tags": ["procenty"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Kurtka kosztowała $240$ zł. Jej cenę obniżono o $15\\%$. Ile kosztuje teraz (w zł)?",
+      "answer": {
+        "value": 204,
+        "unit": "zł"
+      },
+      "explanation": "$240\\cdot 0{,}85=204$ zł.",
+      "verify": "240 * 0.85",
+      "tags": ["procenty", "obnizka"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "$30\\%$ pewnej liczby to $45$. Jaka to liczba?",
+      "answer": {
+        "value": 150
+      },
+      "explanation": "$45:0{,}3=150$.",
+      "verify": "45 / 0.3",
+      "tags": ["procenty"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "W klasie jest $25$ uczniów, $10$ z nich to dziewczęta. Jaki procent klasy stanowią dziewczęta?",
+      "options": ["$40\\%$", "$10\\%$", "$25\\%$", "$60\\%$"],
+      "answer": 0,
+      "explanation": "$\\frac{10}{25}=0{,}4=40\\%$.",
+      "tags": ["procenty"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "Poparcie dla pomysłu wzrosło z $20\\%$ do $25\\%$. Wzrosło o",
+      "options": ["$5$ punktów procentowych", "$5\\%$", "$20\\%$", "$45$ punktów procentowych"],
+      "answer": 0,
+      "explanation": "Różnica dwóch procentów to $5$ punktów procentowych (względnie to wzrost o $25\\%$).",
+      "tags": ["punkty-procentowe"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,64 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz $\\sqrt{81}-\\sqrt[3]{27}$.",
+      "answer": {
+        "value": 6
+      },
+      "explanation": "$9-3=6$.",
+      "verify": "sqrt(81) - nthRoot(27, 3)",
+      "tags": ["pierwiastki"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Liczba $\\sqrt{30}$ leży między liczbami",
+      "options": ["$5$ i $6$", "$4$ i $5$", "$6$ i $7$", "$15$ i $16$"],
+      "answer": 0,
+      "explanation": "$25<30<36$, więc $5<\\sqrt{30}<6$.",
+      "tags": ["szacowanie"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Liczba $\\sqrt{50}$ jest równa",
+      "options": ["$5\\sqrt{2}$", "$25\\sqrt{2}$", "$2\\sqrt{5}$", "$10\\sqrt{5}$"],
+      "answer": 0,
+      "explanation": "$\\sqrt{25\\cdot 2}=5\\sqrt{2}$.",
+      "verify": "sqrt(50)",
+      "tags": ["pierwiastki"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz $\\sqrt{2}\\cdot\\sqrt{18}$.",
+      "answer": {
+        "value": 6
+      },
+      "explanation": "$\\sqrt{36}=6$.",
+      "verify": "sqrt(2) * sqrt(18)",
+      "tags": ["pierwiastki"]
+    },
+    {
+      "id": "005",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "$\\sqrt{9+16}=\\sqrt{9}+\\sqrt{16}$",
+        "$\\sqrt[3]{-8}=-2$",
+        "$3\\sqrt{5}+2\\sqrt{5}=5\\sqrt{5}$"
+      ],
+      "answer": [false, true, true],
+      "explanation": "1. $\\sqrt{25}=5$, a $3+4=7$. Fałsz.\n2. $(-2)^{3}=-8$. Prawda.\n3. Dodajemy jak wyrazy podobne. Prawda.",
+      "tags": ["pierwiastki"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

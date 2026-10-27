@@ -1,0 +1,163 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz objętość prostopadłościanu o wymiarach $2$ cm, $3$ cm i $4$ cm (w $\\text{cm}^{3}$).",
+      "answer": {
+        "value": 24
+      },
+      "explanation": "$2\\cdot 3\\cdot 4=24$.",
+      "verify": "2 * 3 * 4",
+      "tags": ["objetosc"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz objętość sześcianu o krawędzi $4$ cm (w $\\text{cm}^{3}$).",
+      "answer": {
+        "value": 64
+      },
+      "explanation": "$4^{3}=64$.",
+      "verify": "4^3",
+      "tags": ["objetosc"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Akwarium ma wymiary $60$ cm, $30$ cm i $40$ cm. Ile litrów wody mieści?",
+      "answer": {
+        "value": 72,
+        "unit": "l"
+      },
+      "explanation": "$72\\,000\\ \\text{cm}^{3}=72\\ \\text{dm}^{3}=72$ l.",
+      "verify": "60 * 30 * 40 / 1000",
+      "tags": ["objetosc", "jednostki"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz pole powierzchni całkowitej prostopadłościanu o wymiarach $3\\times 4\\times 5$.",
+      "answer": {
+        "value": 94
+      },
+      "explanation": "$2(3\\cdot 4+3\\cdot 5+4\\cdot 5)=2\\cdot 47=94$.",
+      "verify": "2 * (12 + 15 + 20)",
+      "tags": ["pole-powierzchni"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz pole powierzchni całkowitej sześcianu o krawędzi $5$.",
+      "answer": {
+        "value": 150
+      },
+      "explanation": "$6\\cdot 25=150$.",
+      "verify": "6 * 25",
+      "tags": ["pole-powierzchni"]
+    },
+    {
+      "id": "006",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Ile krawędzi ma graniastosłup sześciokątny?",
+      "options": ["$18$", "$12$", "$6$", "$24$"],
+      "answer": 0,
+      "explanation": "Graniastosłup $n$-kątny ma $3n$ krawędzi: $18$.",
+      "tags": ["elementy-bryl"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Ile ścian ma graniastosłup pięciokątny?",
+      "options": ["$7$", "$5$", "$10$", "$15$"],
+      "answer": 0,
+      "explanation": "$2$ podstawy i $5$ ścian bocznych.",
+      "tags": ["elementy-bryl"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Graniastosłup prosty ma podstawę w kształcie trójkąta prostokątnego o przyprostokątnych $3$ i $4$ oraz wysokość $10$. Oblicz jego objętość.",
+      "answer": {
+        "value": 60
+      },
+      "explanation": "$P_{p}=\\frac{1}{2}\\cdot 3\\cdot 4=6$, $V=6\\cdot 10=60$.",
+      "verify": "0.5 * 3 * 4 * 10",
+      "tags": ["objetosc"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Objętość sześcianu jest równa $125\\ \\text{cm}^{3}$. Oblicz długość jego krawędzi (w cm).",
+      "answer": {
+        "value": 5,
+        "unit": "cm"
+      },
+      "explanation": "$\\sqrt[3]{125}=5$.",
+      "verify": "nthRoot(125, 3)",
+      "tags": ["objetosc"]
+    },
+    {
+      "id": "010",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Ile litrów to $2\\ \\text{m}^{3}$?",
+      "answer": {
+        "value": 2000,
+        "unit": "l"
+      },
+      "explanation": "$1\\ \\text{m}^{3}=1000$ l.",
+      "verify": "2 * 1000",
+      "tags": ["jednostki"]
+    },
+    {
+      "id": "011",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Sześcian ma $12$ krawędzi.",
+        "Prostopadłościan ma $8$ wierzchołków.",
+        "Każdy graniastosłup ma co najmniej $6$ ścian."
+      ],
+      "answer": [true, true, false],
+      "explanation": "1. Prawda.\n2. Prawda.\n3. Graniastosłup trójkątny ma tylko $5$ ścian ($2$ podstawy i $3$ ściany boczne). Fałsz.",
+      "tags": ["elementy-bryl"]
+    },
+    {
+      "id": "012",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Pudełko w kształcie prostopadłościanu ma objętość $480\\ \\text{cm}^{3}$, długość $10$ cm i szerokość $6$ cm. Oblicz jego wysokość (w cm).",
+      "answer": {
+        "value": 8,
+        "unit": "cm"
+      },
+      "explanation": "$480:(10\\cdot 6)=8$ cm.",
+      "verify": "480 / 60",
+      "tags": ["objetosc"]
+    },
+    {
+      "id": "013",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Oblicz długość przekątnej prostopadłościanu o wymiarach $2\\times 3\\times 6$.",
+      "answer": {
+        "value": 7
+      },
+      "explanation": "$\\sqrt{4+9+36}=7$.",
+      "verify": "sqrt(4 + 9 + 36)",
+      "tags": ["pitagoras"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

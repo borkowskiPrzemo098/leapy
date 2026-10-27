@@ -1,0 +1,115 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz średnią temperaturę z pomiarów: $4^\\circ$, $6^\\circ$, $-1^\\circ$, $3^\\circ$.",
+      "answer": {
+        "value": 3,
+        "unit": "°"
+      },
+      "explanation": "$\\frac{12}{4}=3^\\circ$.",
+      "verify": "(4 + 6 - 1 + 3) / 4",
+      "tags": ["srednia"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Średnia czterech ocen to $4$. Trzy z nich to $3$, $5$ i $5$. Jaka jest czwarta ocena?",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "Suma: $16$. $16-13=3$.",
+      "verify": "4 * 4 - 13",
+      "tags": ["srednia"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Średnia pięciu liczb jest równa $10$. Dopisano liczbę $16$. Oblicz nową średnią.",
+      "answer": {
+        "value": 11
+      },
+      "explanation": "$\\frac{50+16}{6}=11$.",
+      "verify": "(50 + 16) / 6",
+      "tags": ["srednia"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Oblicz średnią liczb $2, 4, 6, 8$.",
+      "answer": {
+        "value": 5
+      },
+      "explanation": "$\\frac{20}{4}=5$.",
+      "verify": "(2 + 4 + 6 + 8) / 4",
+      "tags": ["srednia"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "W ciągu tygodnia Kasia czytała średnio $20$ stron dziennie. Ile stron przeczytała w ciągu całego tygodnia?",
+      "answer": {
+        "value": 140
+      },
+      "explanation": "$7\\cdot 20=140$.",
+      "verify": "7 * 20",
+      "tags": ["srednia"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Średni wiek trojga dzieci to $9$ lat. Gdy dołączyła mama, średni wiek wzrósł do $15$ lat. Ile lat ma mama?",
+      "answer": {
+        "value": 33
+      },
+      "explanation": "Suma dzieci: $27$, suma z mamą: $60$. Mama: $33$ lata.",
+      "verify": "4 * 15 - 3 * 9",
+      "tags": ["srednia"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Średnia liczb $1, 2, 3, 4, x$ jest równa $4$. Wtedy $x$ jest równe",
+      "options": ["$10$", "$4$", "$6$", "$8$"],
+      "answer": 0,
+      "explanation": "Suma: $20$, więc $x=20-10=10$.",
+      "verify": "20 - 10",
+      "tags": ["srednia"]
+    },
+    {
+      "id": "008",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Uczniowie zebrali makulaturę: $12$ kg, $8$ kg, $15$ kg, $5$ kg i $10$ kg. Oblicz średnią masę (w kg).",
+      "answer": {
+        "value": 10,
+        "unit": "kg"
+      },
+      "explanation": "$\\frac{50}{5}=10$ kg.",
+      "verify": "(12 + 8 + 15 + 5 + 10) / 5",
+      "tags": ["srednia"]
+    },
+    {
+      "id": "009",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Średnia arytmetyczna nie musi być jedną z danych.",
+        "Średnia liczb $0, 0, 9$ jest równa $9$."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Np. średnia $1$ i $2$ to $1{,}5$. Prawda.\n2. $\\frac{9}{3}=3$. Fałsz (zera też liczymy).",
+      "tags": ["srednia"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,168 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Pociąg jedzie $240$ km z prędkością $80\\ \\frac{\\text{km}}{\\text{h}}$. Ile godzin trwa podróż?",
+      "answer": {
+        "value": 3,
+        "unit": "h"
+      },
+      "explanation": "$t=\\frac{240}{80}=3$ h.",
+      "verify": "240 / 80",
+      "tags": ["ruch"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Samochód jechał $2$ h z prędkością $90\\ \\frac{\\text{km}}{\\text{h}}$. Jaką drogę pokonał (w km)?",
+      "answer": {
+        "value": 180,
+        "unit": "km"
+      },
+      "explanation": "$s=90\\cdot 2=180$ km.",
+      "verify": "90 * 2",
+      "tags": ["ruch"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Rowerzysta przejechał $9$ km w $45$ minut. Oblicz jego średnią prędkość w $\\frac{\\text{km}}{\\text{h}}$.",
+      "answer": {
+        "value": 12,
+        "unit": "km/h"
+      },
+      "explanation": "$45$ min $=0{,}75$ h. $v=9:0{,}75=12$.",
+      "verify": "9 / 0.75",
+      "tags": ["ruch", "jednostki"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Zamień $15\\ \\frac{\\text{m}}{\\text{s}}$ na $\\frac{\\text{km}}{\\text{h}}$.",
+      "answer": {
+        "value": 54,
+        "unit": "km/h"
+      },
+      "explanation": "$15\\cdot 3{,}6=54$.",
+      "verify": "15 * 3.6",
+      "tags": ["jednostki"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Ile minut trwa przejście $2$ km z prędkością $5\\ \\frac{\\text{km}}{\\text{h}}$?",
+      "answer": {
+        "value": 24,
+        "unit": "min"
+      },
+      "explanation": "$t=\\frac{2}{5}$ h $=0{,}4$ h $=24$ min.",
+      "verify": "2 / 5 * 60",
+      "tags": ["ruch", "jednostki"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Samochód jechał $1$ h z prędkością $60\\ \\frac{\\text{km}}{\\text{h}}$, a potem $2$ h z prędkością $30\\ \\frac{\\text{km}}{\\text{h}}$. Oblicz jego średnią prędkość na całej trasie (w $\\frac{\\text{km}}{\\text{h}}$).",
+      "answer": {
+        "value": 40,
+        "unit": "km/h"
+      },
+      "explanation": "Droga: $60+60=120$ km, czas: $3$ h. Średnia: $40$, nie $45$.",
+      "verify": "120 / 3",
+      "tags": ["predkosc-srednia"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Z dwóch miast odległych o $210$ km wyjechały naprzeciw siebie dwa samochody: jeden z prędkością $60\\ \\frac{\\text{km}}{\\text{h}}$, drugi $80\\ \\frac{\\text{km}}{\\text{h}}$. Po ilu godzinach się spotkają?",
+      "answer": {
+        "value": 1.5,
+        "unit": "h"
+      },
+      "explanation": "Zbliżają się z prędkością $140\\ \\frac{\\text{km}}{\\text{h}}$: $210:140=1{,}5$ h.",
+      "verify": "210 / 140",
+      "tags": ["ruch"]
+    },
+    {
+      "id": "008",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Pół godziny to",
+      "options": ["$0{,}5$ h", "$0{,}3$ h", "$0{,}05$ h", "$30$ h"],
+      "answer": 0,
+      "explanation": "$30$ min $=\\frac{30}{60}$ h $=0{,}5$ h.",
+      "tags": ["jednostki"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Biegacz przebiegł $100$ m w $12{,}5$ s. Oblicz jego średnią prędkość w $\\frac{\\text{m}}{\\text{s}}$.",
+      "answer": {
+        "value": 8,
+        "unit": "m/s"
+      },
+      "explanation": "$100:12{,}5=8$.",
+      "verify": "100 / 12.5",
+      "tags": ["ruch"]
+    },
+    {
+      "id": "010",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Autobus wyjechał o $8{:}40$ i przejechał $150$ km ze średnią prędkością $60\\ \\frac{\\text{km}}{\\text{h}}$. O której godzinie dojechał? Podaj liczbę minut po godzinie $11{:}00$.",
+      "answer": {
+        "value": 10,
+        "unit": "min"
+      },
+      "explanation": "Czas: $2{,}5$ h $=2$ h $30$ min. $8{:}40+2{:}30=11{:}10$.",
+      "verify": "40 + 150 / 60 * 60 - 180",
+      "tags": ["ruch", "czas"]
+    },
+    {
+      "id": "011",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wzór na czas ruchu to",
+      "options": ["$t=\\frac{s}{v}$", "$t=s\\cdot v$", "$t=\\frac{v}{s}$", "$t=s+v$"],
+      "answer": 0,
+      "explanation": "Z $s=v\\cdot t$ dzielimy obie strony przez $v$.",
+      "tags": ["ruch"]
+    },
+    {
+      "id": "012",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Zamień $72\\ \\frac{\\text{km}}{\\text{h}}$ na $\\frac{\\text{m}}{\\text{s}}$.",
+      "answer": {
+        "value": 20,
+        "unit": "m/s"
+      },
+      "explanation": "$72:3{,}6=20$.",
+      "verify": "72 / 3.6",
+      "tags": ["jednostki"]
+    },
+    {
+      "id": "013",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Jadąc dwa razy szybciej, tę samą trasę pokonamy w dwa razy krótszym czasie.",
+        "$20$ minut to $0{,}2$ godziny."
+      ],
+      "answer": [true, false],
+      "explanation": "1. Czas jest odwrotnie proporcjonalny do prędkości. Prawda.\n2. $20$ min $=\\frac{1}{3}$ h $\\approx 0{,}33$ h. Fałsz.",
+      "tags": ["ruch", "jednostki"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,61 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Środkiem odcinka o końcach $(2,6)$ i $(8,2)$ jest punkt",
+      "options": ["$(5,\\ 4)$", "$(6,\\ 4)$", "$(5,\\ 8)$", "$(10,\\ 8)$"],
+      "answer": 0,
+      "explanation": "$\\left(\\frac{2+8}{2},\\frac{6+2}{2}\\right)=(5,4)$.",
+      "tags": ["srodek-odcinka"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Prostokąt ma wierzchołki $(1,1)$, $(5,1)$, $(5,4)$, $(1,4)$. Oblicz jego pole.",
+      "answer": {
+        "value": 12
+      },
+      "explanation": "Boki: $4$ i $3$. Pole: $12$.",
+      "verify": "4 * 3",
+      "tags": ["uklad-wspolrzednych", "pole"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz długość odcinka o końcach $(1,1)$ i $(5,4)$.",
+      "answer": {
+        "value": 5
+      },
+      "explanation": "$\\sqrt{4^{2}+3^{2}}=5$.",
+      "verify": "sqrt(16 + 9)",
+      "tags": ["dlugosc-odcinka"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Punkt $(-3,\\ 2)$ leży w",
+      "options": ["II ćwiartce", "I ćwiartce", "III ćwiartce", "IV ćwiartce"],
+      "answer": 0,
+      "explanation": "$x<0$, $y>0$: druga ćwiartka (lewa górna).",
+      "tags": ["uklad-wspolrzednych"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Oblicz długość odcinka o końcach $(-2,3)$ i $(6,3)$.",
+      "answer": {
+        "value": 8
+      },
+      "explanation": "Odcinek poziomy: $6-(-2)=8$.",
+      "verify": "6 - (-2)",
+      "tags": ["dlugosc-odcinka"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

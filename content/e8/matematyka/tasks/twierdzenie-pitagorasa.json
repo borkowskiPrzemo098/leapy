@@ -1,0 +1,64 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Przyprostokątne trójkąta prostokątnego mają długości $5$ i $12$. Oblicz długość przeciwprostokątnej.",
+      "answer": {
+        "value": 13
+      },
+      "explanation": "$\\sqrt{25+144}=13$.",
+      "verify": "sqrt(5^2 + 12^2)",
+      "tags": ["pitagoras"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Przeciwprostokątna ma długość $10$, a jedna przyprostokątna $6$. Oblicz długość drugiej przyprostokątnej.",
+      "answer": {
+        "value": 8
+      },
+      "explanation": "$\\sqrt{100-36}=8$.",
+      "verify": "sqrt(100 - 36)",
+      "tags": ["pitagoras"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przekątna kwadratu o boku $4$ ma długość",
+      "options": ["$4\\sqrt{2}$", "$8$", "$16$", "$2\\sqrt{2}$"],
+      "answer": 0,
+      "explanation": "$d=a\\sqrt{2}=4\\sqrt{2}$.",
+      "verify": "4 * sqrt(2)",
+      "tags": ["pitagoras"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Drabina o długości $5$ m jest oparta o ścianę. Jej dolny koniec jest w odległości $3$ m od ściany. Na jakiej wysokości (w m) drabina dotyka ściany?",
+      "answer": {
+        "value": 4,
+        "unit": "m"
+      },
+      "explanation": "$\\sqrt{25-9}=4$ m.",
+      "verify": "sqrt(25 - 9)",
+      "tags": ["pitagoras", "zadania-tekstowe"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Wysokość trójkąta równobocznego o boku $6$ jest równa",
+      "options": ["$3\\sqrt{3}$", "$6\\sqrt{3}$", "$3$", "$\\sqrt{27}+1$"],
+      "answer": 0,
+      "explanation": "$h=\\frac{6\\sqrt{3}}{2}=3\\sqrt{3}$.",
+      "verify": "6 * sqrt(3) / 2",
+      "tags": ["pitagoras"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}

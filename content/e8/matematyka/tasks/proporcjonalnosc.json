@@ -1,0 +1,121 @@
+{
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "$3$ kg jabłek kosztują $7{,}50$ zł. Ile złotych kosztuje $5$ kg tych jabłek?",
+      "answer": {
+        "value": 12.5,
+        "unit": "zł"
+      },
+      "explanation": "$1$ kg: $2{,}50$ zł, $5$ kg: $12{,}50$ zł.",
+      "verify": "7.5 / 3 * 5",
+      "tags": ["proporcjonalnosc-prosta"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "$4$ malarzy maluje płot w $6$ godzin. Ilu malarzy (pracujących w tym samym tempie) pomaluje go w $3$ godziny?",
+      "answer": {
+        "value": 8
+      },
+      "explanation": "Proporcjonalność odwrotna: $4\\cdot 6=24$, $24:3=8$.",
+      "verify": "4 * 6 / 3",
+      "tags": ["proporcjonalnosc-odwrotna"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Na mapie w skali $1:20\\,000$ odcinek ma długość $3$ cm. Ile metrów ma ten odcinek w terenie?",
+      "answer": {
+        "value": 600,
+        "unit": "m"
+      },
+      "explanation": "$3\\cdot 20\\,000=60\\,000$ cm $=600$ m.",
+      "verify": "3 * 20000 / 100",
+      "tags": ["skala"]
+    },
+    {
+      "id": "004",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Rozwiąż proporcję $\\frac{x}{6}=\\frac{4}{3}$.",
+      "answer": {
+        "value": 8
+      },
+      "explanation": "$3x=24$, $x=8$.",
+      "tags": ["proporcje"]
+    },
+    {
+      "id": "005",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Które wielkości są odwrotnie proporcjonalne?",
+      "options": [
+        "prędkość i czas przejazdu tej samej trasy",
+        "liczba kupionych biletów i ich łączna cena",
+        "bok kwadratu i jego obwód",
+        "wiek i wzrost człowieka"
+      ],
+      "answer": 0,
+      "explanation": "Dwa razy większa prędkość to dwa razy krótszy czas: iloczyn (droga) jest stały.",
+      "tags": ["proporcjonalnosc-odwrotna"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Przepis na $4$ porcje wymaga $300$ g mąki. Ile gramów mąki potrzeba na $6$ porcji?",
+      "answer": {
+        "value": 450,
+        "unit": "g"
+      },
+      "explanation": "$300:4\\cdot 6=450$ g.",
+      "verify": "300 / 4 * 6",
+      "tags": ["proporcjonalnosc-prosta"]
+    },
+    {
+      "id": "007",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Samochód spala $6$ litrów paliwa na $100$ km. Ile litrów spali na trasie $350$ km?",
+      "answer": {
+        "value": 21,
+        "unit": "l"
+      },
+      "explanation": "$6\\cdot 3{,}5=21$ l.",
+      "verify": "6 * 3.5",
+      "tags": ["proporcjonalnosc-prosta"]
+    },
+    {
+      "id": "008",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Obwód kwadratu jest wprost proporcjonalny do długości jego boku.",
+        "Pole kwadratu jest wprost proporcjonalne do długości jego boku."
+      ],
+      "answer": [true, false],
+      "explanation": "1. $L=4a$, iloraz $\\frac{L}{a}=4$ jest stały. Prawda.\n2. $P=a^{2}$: przy boku dwa razy dłuższym pole jest cztery razy większe. Fałsz.",
+      "tags": ["proporcjonalnosc-prosta"]
+    },
+    {
+      "id": "009",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Za $5$ zeszytów zapłacono $17{,}50$ zł. Ile złotych trzeba zapłacić za $8$ takich zeszytów?",
+      "answer": {
+        "value": 28,
+        "unit": "zł"
+      },
+      "explanation": "$1$ zeszyt: $3{,}50$ zł, $8$ zeszytów: $28$ zł.",
+      "verify": "17.5 / 5 * 8",
+      "tags": ["proporcjonalnosc-prosta"]
+    }
+  ],
+  "updatedAt": "2026-10-27"
+}
