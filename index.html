@@ -15,17 +15,25 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta property="og:title" content="Leapy · Skocz na wyższy poziom" />
     <meta property="og:image" content="/og-default.png" />
-    <!-- Resolve theme and motion before first paint (no flash). Mirrors src/lib/theme.ts -->
+    <!-- Apply theme, text size and motion before first paint (no flash).
+         Mirrors src/lib/theme.ts and src/state/prefs.ts -->
     <script>
       ;(function () {
         var d = document.documentElement
-        var t = null
-        try {
-          t = localStorage.getItem('leapy:theme')
-        } catch (e) {}
+        var get = function (k) {
+          try {
+            return localStorage.getItem(k)
+          } catch (e) {
+            return null
+          }
+        }
+        var t = get('leapy:theme')
         if (t !== 'light' && t !== 'dark')
           t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
         d.dataset.theme = t
+        var s = { sm: 0.9, lg: 1.125, xl: 1.25 }[get('leapy:text-scale')]
+        if (s) d.style.setProperty('--text-scale', s)
+        if (get('leapy:motion') === 'reduce') d.dataset.motion = 'reduce'
       })()
     </script>
   </head>

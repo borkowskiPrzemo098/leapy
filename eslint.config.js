@@ -24,6 +24,11 @@ export default tseslint.config(
     },
   },
   {
+    // Route tables hold lazy() references, not components; fast refresh is irrelevant there.
+    files: ['src/app/router.tsx'],
+    rules: { 'react-refresh/only-export-components': 'off' },
+  },
+  {
     files: ['scripts/**/*.{js,mjs}', '*.config.{js,ts}'],
     extends: [js.configs.recommended],
     languageOptions: { globals: globals.node },

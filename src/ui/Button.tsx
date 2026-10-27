@@ -1,6 +1,7 @@
 import { clsx } from 'clsx'
 import { LoaderCircle } from 'lucide-react'
 import type { ButtonHTMLAttributes, ReactNode } from 'react'
+import { Link, type LinkProps } from 'react-router-dom'
 
 type Variant = 'primary' | 'reward' | 'secondary' | 'ghost'
 type Size = 'md' | 'lg'
@@ -31,6 +32,23 @@ const sizes: Record<Size, string> = {
   lg: 'min-h-14 px-6 text-lead gap-2.5 rounded-xl',
 }
 
+/** Shared look for <Button> and <ButtonLink>, so a link that acts as a primary action looks like one. */
+function buttonClass({
+  variant = 'primary',
+  size = 'md',
+  block = false,
+}: { variant?: Variant; size?: Size; block?: boolean } = {}) {
+  return clsx(
+    'inline-flex items-center justify-center font-bold tracking-[-0.01em] select-none no-underline',
+    'transition-[background-color,box-shadow,transform] duration-[var(--dur-fast)] ease-out',
+    variant !== 'ghost' && 'mb-1 active:translate-y-1',
+    'disabled:cursor-not-allowed disabled:opacity-50 disabled:active:translate-y-0',
+    variants[variant],
+    sizes[size],
+    block && 'w-full',
+  )
+}
+
 export function Button({
   variant = 'primary',
   size = 'md',
@@ -44,27 +62,42 @@ export function Button({
   type = 'button',
   ...rest
 }: ButtonProps) {
-  const pressable = variant !== 'ghost'
   return (
     <button
       type={type}
       disabled={disabled || loading}
       aria-busy={loading || undefined}
-      className={clsx(
-        'inline-flex items-center justify-center font-bold tracking-[-0.01em] select-none',
-        'transition-[background-color,box-shadow,transform] duration-[var(--dur-fast)] ease-out',
-        pressable && 'mb-1 active:translate-y-1',
-        'disabled:cursor-not-allowed disabled:opacity-50 disabled:active:translate-y-0',
-        variants[variant],
-        sizes[size],
-        block && 'w-full',
-        className,
-      )}
+      className={clsx(buttonClass({ variant, size, block }), className)}
       {...rest}
     >
       {loading ? <LoaderCircle aria-hidden className="size-5 animate-spin" /> : icon}
       {children}
       {iconEnd}
     </button>
+  )
+}
+
+export interface ButtonLinkProps extends LinkProps {
+  variant?: Variant
+  size?: Size
+  block?: boolean
+  iconEnd?: ReactNode
+}
+
+/** Navigation that looks like a button (router Link underneath, so it stays a real link). */
+export function ButtonLink({
+  variant = 'primary',
+  size = 'md',
+  block = false,
+  iconEnd,
+  className,
+  children,
+  ...rest
+}: ButtonLinkProps) {
+  return (
+    <Link className={clsx(buttonClass({ variant, size, block }), className)} {...rest}>
+      {children}
+      {iconEnd}
+    </Link>
   )
 }

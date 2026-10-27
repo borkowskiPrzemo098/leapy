@@ -20,3 +20,8 @@ Format: data — decyzja — uzasadnienie. Zmiana decyzji = nowy wpis, starych n
 - **2026-10-27 — Przyciski z „wargą” (twardy dolny cień, który znika przy wciśnięciu).** Świadome odstępstwo od reguły „bez twardych cieni”: brief wymaga energii Duolingo, a warga daje dotykowe potwierdzenie tapnięcia. Tylko na przyciskach i kafelkach odpowiedzi, nigdy na kartach.
 - **2026-10-27 — E-mail kontaktowy: rob.lewandowski987@gmail.com** (decyzja właściciela) dla „Zgłoś błąd” i stron prawnych.
 - **2026-10-27 — Odbiorcy: ósmoklasiści i maturzyści po równo** (decyzja właściciela). Ton neutralny, ani szkolny, ani dziecinny; neutralne płciowo formy w UI.
+- **2026-10-27 — Aplikacja pod `/app/*`, publiczne strony SEO pod `/`.** Rozdział pozwala w E5 prerenderować strony publiczne bez dotykania części offline. Do E5 `/` przekierowuje do `/app`. Ścieżki po polsku: `/app/egzaminy`, `/app/cwicz`, `/app/postepy`, `/app/profil`.
+- **2026-10-27 — Ustawienia wyglądu (motyw, rozmiar tekstu, animacje) w localStorage, nie w Dexie.** Skrypt w `index.html` musi je odczytać synchronicznie przed pierwszym malowaniem. Postępy nauki trafią do Dexie (E2).
+- **2026-10-27 — Service worker w trybie `prompt`.** Nowa wersja czeka, aż uczeń stuknie „Odśwież”, więc aktualizacja nigdy nie przerwie sesji w połowie. Sprawdzanie aktualizacji co godzinę.
+- **2026-10-27 — Baner instalacji jako karta na ekranie Start, nie pop-up.** Chrome/Android: przycisk „Zainstaluj” (beforeinstallprompt). iOS: instrukcja „Udostępnij → Do ekranu początkowego”. Odrzucenie ukrywa kartę na 30 dni.
+- **2026-10-27 — Testy E2E Playwright już od E1** (360×640, 390×844, desktop) na buildzie produkcyjnym, z testem pracy offline. Uruchamiane w CI jako osobny job.

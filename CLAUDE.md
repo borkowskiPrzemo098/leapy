@@ -25,6 +25,7 @@ Vite 6 + React 18 + TypeScript strict · Tailwind v4 (tokeny jako zmienne CSS) �
 | `npm run build`       | typecheck + build produkcyjny do `dist/`                                               |
 | `npm run check`       | typecheck + lint + format:check + testy (to samo co CI)                                |
 | `npm test`            | testy jednostkowe Vitest                                                               |
+| `npm run test:e2e`    | testy Playwright na buildzie produkcyjnym (360×640, 390×844, desktop, offline)         |
 | `npm run format`      | Prettier na całym repo                                                                 |
 | `npm run brand:build` | generuje wszystkie pliki logo, ikony PWA, favicon i obraz OG z `src/brand/geometry.js` |
 
@@ -39,7 +40,10 @@ Po każdym etapie: `npm run check` i `npm run build` muszą przejść, potem kr�
 - Animacje trwają `--dur-*` i znikają przy `prefers-reduced-motion` albo `data-motion="reduce"`.
 - Teksty w UI po polsku, w formie neutralnej płciowo („Wracasz do tematu…”, a nie „skończyłeś”).
 - Importy z aliasem `@/` (`src/`). Importy typów zawsze przez `import type`.
-- Pliki testów obok kodu: `*.test.ts(x)`.
+- Pliki testów obok kodu: `*.test.ts(x)`. Testy E2E w `tests/e2e/`.
+- Ekrany aplikacji w `src/routes/` (lazy, poza Start), owinięte w `<Page>` (tytuł, fokus na nagłówku po nawigacji). Nawigacja w `src/app/nav.ts`, jedno źródło dla dolnego paska i panelu bocznego.
+- Przycisk, który prowadzi do innego ekranu, to `<ButtonLink>`, nie `<Button onClick={navigate}>`.
+- Przewodnik po komponentach: `/dev/ui` (nielinkowany z aplikacji).
 
 ## Treść (od etapu E2)
 

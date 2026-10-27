@@ -118,7 +118,7 @@ export function Chip({
   return (
     <span
       className={clsx(
-        'inline-flex min-h-7 items-center gap-1.5 rounded-full px-3 text-micro font-bold',
+        'inline-flex min-h-7 shrink-0 items-center gap-1.5 rounded-full px-3 text-micro font-bold whitespace-nowrap',
         tone === 'plain' && 'bg-surface-2 text-ink-2',
         tone === 'brand' && 'bg-brand-soft text-brand-text',
         tone === 'reward' && 'bg-reward-soft text-on-reward dark:text-reward',

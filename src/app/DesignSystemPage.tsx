@@ -5,13 +5,14 @@ import conceptA from '../../brand/concepts/A-skok-l.svg?raw'
 import conceptB from '../../brand/concepts/B-schody.svg?raw'
 import conceptC from '../../brand/concepts/C-ikona.svg?raw'
 import { Logo, LogoMark } from '@/brand/Logo'
-import { applyTheme, readThemePref, watchSystemTheme, type ThemePref } from '@/lib/theme'
+import { watchSystemTheme } from '@/lib/theme'
+import { usePrefs } from '@/state/prefs'
 import { AnswerOption, type AnswerState } from '@/ui/AnswerOption'
 import { Button } from '@/ui/Button'
 import { Chip, Segmented, Skeleton, Switch } from '@/ui/controls'
 import { GoalRing, ProgressBar, StepLadder } from '@/ui/progress'
 
-// E0 living style guide. In E1 it moves to /dev/ui and the app shell takes "/".
+// Living style guide at /dev/ui (not linked from the app). Every base component in one place.
 
 const themeOptions = [
   { value: 'light' as const, label: 'Jasny', icon: <Sun aria-hidden className="size-4" /> },
@@ -38,19 +39,11 @@ function Section({
 }
 
 export function DesignSystemPage() {
-  const [theme, setTheme] = useState<ThemePref>(readThemePref)
-  const [reduceMotion, setReduceMotion] = useState(false)
+  const { theme, setTheme: changeTheme, motion, setMotion } = usePrefs()
+  const reduceMotion = motion === 'reduce'
+  const setReduceMotion = (on: boolean) => setMotion(on ? 'reduce' : 'system')
 
-  useEffect(() => watchSystemTheme(() => theme), [theme])
-  useEffect(() => {
-    if (reduceMotion) document.documentElement.dataset.motion = 'reduce'
-    else delete document.documentElement.dataset.motion
-  }, [reduceMotion])
-
-  const changeTheme = (t: ThemePref) => {
-    setTheme(t)
-    applyTheme(t)
-  }
+  useEffect(() => watchSystemTheme(() => usePrefs.getState().theme), [])
 
   return (
     <div className="min-h-dvh pb-24">
