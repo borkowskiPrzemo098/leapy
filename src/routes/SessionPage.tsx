@@ -7,6 +7,7 @@ import { loadCatalog, loadPack } from '@/content/data'
 import type { CompiledTask } from '@/content/schema'
 import { correctAnswerHtml, type Response } from '@/engine/grade'
 import { newSeed, rng } from '@/engine/random'
+import { qualityFromGrade } from '@/engine/srs'
 import {
   answer,
   currentItem,
@@ -20,6 +21,7 @@ import {
 } from '@/engine/session'
 import { Html, Prose } from '@/features/content/Prose'
 import { pickTasks } from '@/features/session/pick'
+import { dueTaskIds, mistakeTaskIds, recordReview, tasksByIds } from '@/features/study/queries'
 import { TaskView } from '@/features/session/TaskView'
 import { reportMailto } from '@/lib/report'
 import { useStudy, useStudyHydrated } from '@/state/study'
@@ -31,6 +33,7 @@ import { ClimbArt, EmptyState, Page } from '@/ui/Page'
 import { ProgressBar } from '@/ui/progress'
 
 const SESSION_LENGTH = 10
+const REVIEW_LENGTH = 15
 
 interface Prepared {
   tasks: Map<string, CompiledTask>
@@ -65,6 +68,25 @@ async function prepare(
     title = t.name
     scope = `${exam}/${subject}/${topic}`
     backTo = `/app/egzaminy/${exam}/${subject}/${topic}`
+  } else if (mode === 'review' || mode === 'mistakes') {
+    // These keep their own order (most overdue / most recent mistake first), only capped.
+    const ids = mode === 'review' ? await dueTaskIds() : await mistakeTaskIds()
+    const tasks = (await tasksByIds(ids)).slice(
+      0,
+      mode === 'review' ? REVIEW_LENGTH : SESSION_LENGTH,
+    )
+    title = mode === 'review' ? 'Powtórki na dziś' : 'Moje błędy'
+    scope = mode
+    const chosen = [...tasks].sort((a, b) => a.difficulty - b.difficulty)
+    const session = startSession({
+      id: chosen.length ? crypto.randomUUID() : '',
+      mode,
+      scope,
+      tasks: chosen,
+      seed,
+      now: Date.now(),
+    })
+    return { tasks: new Map(chosen.map((t) => [t.id, t])), session, title, backTo }
   } else if (study.exam) {
     const catalog = await loadCatalog()
     const exam = catalog.exams.find((e) => e.id === study.exam)
@@ -127,6 +149,24 @@ export default function SessionPage({ mode }: { mode: SessionMode }) {
   if (prep === 'loading') return <ScreenSkeleton />
   if (prep === null) return <LoadError message="Nie ma takiego tematu." />
   if ('error' in prep) return <LoadError message={prep.error} />
+  if (!prep.session.items.length && (mode === 'review' || mode === 'mistakes'))
+    return (
+      <Page title={prep.title}>
+        <EmptyState
+          art={<ClimbArt done={5} />}
+          title={mode === 'review' ? 'Na dziś wszystko powtórzone' : 'Nie masz błędów do poprawy'}
+          action={
+            <ButtonLink to="/app/cwicz" block>
+              Wróć do ćwiczeń
+            </ButtonLink>
+          }
+        >
+          {mode === 'review'
+            ? 'Zadania wracają do powtórki po 1, 6, a potem coraz większej liczbie dni. Kolejne pojawią się tu same.'
+            : 'Każde zadanie z błędną ostatnią odpowiedzią trafia tutaj, aż rozwiążesz je dobrze.'}
+        </EmptyState>
+      </Page>
+    )
   if (!prep.session.items.length)
     return (
       <Page title={prep.title}>
@@ -221,6 +261,7 @@ function Player({
         sessionId: ns.id,
         hintUsed: !!it?.hintUsed,
       })
+      void recordReview(task.id, qualityFromGrade(grade, !!it?.hintUsed))
     },
     [task, onDraft, update],
   )
@@ -443,7 +484,7 @@ function Summary({
             Do powtórki: {summary.wrongTaskIds.length}
           </h2>
           <p className="mt-1 text-small text-ink-2">
-            Te zadania wrócą w kolejnych sesjach, dopóki ich nie opanujesz.
+            Wrócą jutro w powtórkach. Do tego czasu czekają w trybie „Moje błędy”.
           </p>
           <ul className="mt-4 flex flex-col gap-2">
             {summary.wrongTaskIds.map((id) => {

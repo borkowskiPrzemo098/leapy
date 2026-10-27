@@ -3,7 +3,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { Task } from '../../src/content/schema'
 import { mdBlock, mdInline } from './markdown'
-import { runPipeline } from './pipeline'
+import { cardSlug, runPipeline } from './pipeline'
 import { numberFromText, verifyTask } from './verify'
 
 const base = {
@@ -84,6 +84,15 @@ describe('Task schema', () => {
   })
 })
 
+describe('cardSlug', () => {
+  it('folds Polish letters and drops math', () => {
+    expect(cardSlug('Logarytm ilorazu')).toBe('logarytm-ilorazu')
+    expect(cardSlug('Źdźbło, łąka i żółć')).toBe('zdzblo-laka-i-zolc')
+    expect(cardSlug('Wzór $a^2-b^2$ na różnicę')).toBe('wzor-na-roznice')
+    expect(cardSlug('$x$')).toBe('karta')
+  })
+})
+
 describe('markdown', () => {
   it('renders KaTeX and keeps escaped dollars', () => {
     expect(mdInline('$x^2$')).toContain('katex')
@@ -159,6 +168,55 @@ describe('runPipeline', () => {
     expect(msgs).toMatch(/zduplikowane id/)
     expect(msgs).toMatch(/identyczna treść/)
     expect(msgs).toMatch(/verify: odpowiedź 9/)
+  })
+
+  const lesson = (extra = '') =>
+    writeFileSync(
+      join(root, 'content/matura/matematyka-p/lessons/potegi.md'),
+      [
+        '---',
+        'title: Potęgi',
+        'summary:',
+        "  - 'Jeden.'",
+        "  - 'Dwa.'",
+        'mistakes:',
+        "  - 'Błąd.'",
+        'cheatsheet:',
+        "  - label: 'Iloczyn potęg'",
+        "    formula: '$a^m a^n=a^{m+n}$'",
+        extra,
+        'reviewed: false',
+        'updatedAt: 2026-10-27',
+        '---',
+        '',
+        'Notatka '.repeat(40),
+      ].join('\n'),
+    )
+
+  it('makes flashcards from the cheatsheet and lesson cards, with stable ids', () => {
+    writeTasks([t1])
+    lesson("cards:\n  - front: 'Potęga zerowa'\n    back: '$a^0=1$'")
+    const r = runPipeline(root)
+    expect(r.issues.filter((i) => i.level === 'error')).toEqual([])
+    const pack = r.packs[0]
+    expect(pack?.cards.map((c) => c.id)).toEqual([
+      'matura.matematyka-p.potegi.card.iloczyn-poteg',
+      'matura.matematyka-p.potegi.card.potega-zerowa',
+    ])
+    expect(pack?.cards[1]?.back).toContain('katex')
+    expect(r.catalog.exams[0]?.subjects[0]?.cards).toBe(2)
+    // cards are not part of the lesson object shipped to the app
+    expect(pack?.lessons.potegi).not.toHaveProperty('cards')
+  })
+
+  it('rejects two flashcards with the same front', () => {
+    writeTasks([t1])
+    lesson("cards:\n  - front: 'Iloczyn potęg'\n    back: 'x'")
+    expect(
+      runPipeline(root)
+        .issues.map((i) => i.message)
+        .join(),
+    ).toMatch(/się powtarza/)
   })
 
   it('blocks removing a task id that is in the lock file', () => {

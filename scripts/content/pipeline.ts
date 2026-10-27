@@ -11,6 +11,7 @@ import {
   TaskFile,
   type Catalog,
   type CatalogExam,
+  type CompiledCard,
   type CompiledLesson,
   type CompiledTask,
   type SubjectPack,
@@ -68,6 +69,32 @@ function jaccard(a: Set<string>, b: Set<string>) {
   let inter = 0
   for (const x of a) if (b.has(x)) inter++
   return inter / (a.size + b.size - inter)
+}
+
+const PL: Record<string, string> = {
+  ą: 'a',
+  ć: 'c',
+  ę: 'e',
+  ł: 'l',
+  ń: 'n',
+  ó: 'o',
+  ś: 's',
+  ź: 'z',
+  ż: 'z',
+}
+
+/** "Logarytm iloczynu" → "logarytm-iloczynu". Math is dropped, Polish letters folded. */
+export function cardSlug(front: string) {
+  const s = front
+    .toLowerCase()
+    .replace(/\$[^$]*\$/g, ' ')
+    .replace(/[ąćęłńóśźż]/g, (c) => PL[c] ?? c)
+    .normalize('NFKD')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 48)
+    .replace(/-+$/, '')
+  return s || 'karta'
 }
 
 function compileTask(t: Task): CompiledTask {
@@ -145,8 +172,9 @@ export function runPipeline(
           topicIds.add(tp.id)
         }
 
-      // Lessons
+      // Lessons, and the flashcards made from their cheatsheets and cards
       const lessons: Record<string, CompiledLesson> = {}
+      const cards: CompiledCard[] = []
       for (const f of ls(join(dir, 'lessons'), '.md')) {
         const path = join(dir, 'lessons', f)
         const topic = basename(f, '.md')
@@ -163,8 +191,26 @@ export function runPipeline(
           }
           if (body.length < 200) warn(path, 'notatka krótsza niż 200 znaków')
           lessonsByKey.set(`${exam.id}/${subject.id}/${topic}`, lm.data)
+          const { cards: extraCards, ...lessonMeta } = lm.data
+          const seenCards = new Set<string>()
+          for (const c of [
+            ...lm.data.cheatsheet.map((x) => ({ front: x.label, back: x.formula })),
+            ...extraCards,
+          ]) {
+            const id = `${exam.id}.${subject.id}.${topic}.card.${cardSlug(c.front)}`
+            if (seenCards.has(id)) err(path, `fiszka „${c.front}” się powtarza (id ${id})`)
+            seenCards.add(id)
+            cards.push({
+              id,
+              exam: exam.id,
+              subject: subject.id,
+              topic,
+              front: mdInline(c.front),
+              back: mdInline(c.back),
+            })
+          }
           lessons[topic] = {
-            ...lm.data,
+            ...lessonMeta,
             topic,
             summary: lm.data.summary.map(mdInline),
             mistakes: lm.data.mistakes.map(mdInline),
@@ -220,6 +266,8 @@ export function runPipeline(
         name: subject.name,
         ...(subject.level ? { level: subject.level } : {}),
         tasks: tasks.length,
+        cards: cards.length,
+        ...(subject.mock ? { mock: subject.mock } : {}),
         sections: subject.sections.map((s) => ({
           id: s.id,
           name: s.name,
@@ -243,6 +291,7 @@ export function runPipeline(
         subject: subject.id,
         lessons,
         tasks: compiled,
+        cards,
       })
       allTasks.push(...tasks)
     }

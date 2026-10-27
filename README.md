@@ -2,7 +2,7 @@
 
 **Skocz na wyższy poziom.** Polskojęzyczna platforma PWA (mobile-first) do nauki i przygotowania do egzaminów: egzamin ósmoklasisty i matura na start. Darmowa, bez konta, działa offline. Postęp zostaje na urządzeniu.
 
-> Status: **E2 ukończony**: model treści z walidacją, silnik zadań (7 typów), sesje, zapis postępów (IndexedDB) i kopia zapasowa. Na start jest 30 przykładowych zadań z matematyki (matura, poziom podstawowy). Dalsze etapy: [docs/plan.md](docs/plan.md).
+> Status: **E3 ukończony**: powtórki SM-2, tryb „Moje błędy”, fiszki z mini-ściąg, egzamin próbny z czasem i punktacją, statystyki z kalendarzem nauki. Wcześniej (E2): model treści z walidacją, silnik zadań (7 typów), sesje, zapis postępów i kopia zapasowa. Na start jest 30 przykładowych zadań z matematyki (matura, poziom podstawowy). Dalsze etapy: [docs/plan.md](docs/plan.md).
 
 ## Szybki start
 

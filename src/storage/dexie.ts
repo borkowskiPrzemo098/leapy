@@ -89,6 +89,18 @@ export function createDexieStore(name = 'leapy'): ProgressStore & { db: LeapyDB 
       return db.sessions.orderBy('startedAt').reverse().limit(limit).toArray()
     },
 
+    async srs() {
+      return db.srs.toArray()
+    },
+
+    async getSrs(taskId) {
+      return db.srs.get(taskId)
+    },
+
+    async putSrs(r) {
+      await db.srs.put(r)
+    },
+
     async toggleBookmark(taskId) {
       return db.transaction('rw', db.bookmarks, async () => {
         if (await db.bookmarks.get(taskId)) {

@@ -33,6 +33,13 @@ export const SubjectFile = z.strictObject({
   exam: slug,
   name: z.string().min(2),
   level: z.string().optional(),
+  /** Practice mock exam: how many tasks and minutes (default: derived from the task pool) */
+  mock: z
+    .strictObject({
+      tasks: z.number().int().min(5).max(60),
+      minutes: z.number().int().min(10).max(240),
+    })
+    .optional(),
   sections: z
     .array(
       z.strictObject({
@@ -55,6 +62,11 @@ export const LessonMeta = z.strictObject({
   cheatsheet: z
     .array(z.strictObject({ label: md, formula: md }))
     .max(12)
+    .default([]),
+  /** Extra flashcards beyond the cheatsheet (definitions, dates, vocabulary) */
+  cards: z
+    .array(z.strictObject({ front: md, back: md }))
+    .max(40)
     .default([]),
   reviewed: z.boolean(),
   updatedAt: z.iso.date(),
@@ -208,6 +220,9 @@ export interface CatalogSubject {
   name: string
   level?: string
   tasks: number
+  /** Flashcards in the subject (cheatsheet entries + lesson cards) */
+  cards: number
+  mock?: { tasks: number; minutes: number }
   sections: CatalogSection[]
 }
 export interface CatalogExam extends Omit<ExamFile, 'subjects'> {
@@ -221,7 +236,10 @@ export interface Catalog {
 /** Markdown fields are compiled to HTML (KaTeX pre-rendered) so the app ships no parser. */
 export type Html = string
 
-export interface CompiledLesson extends Omit<LessonMeta, 'summary' | 'mistakes' | 'cheatsheet'> {
+export interface CompiledLesson extends Omit<
+  LessonMeta,
+  'summary' | 'mistakes' | 'cheatsheet' | 'cards'
+> {
   topic: string
   summary: Html[]
   mistakes: Html[]
@@ -244,10 +262,21 @@ export type CompiledTask =
   | Compiled<z.infer<typeof MatchTask>, { options: { left: Html[]; right: Html[] } }>
   | Compiled<z.infer<typeof ShortTask>, object>
 
+/** A flashcard. id: <exam>.<subject>.<topic>.card.<slug of the front>, stable like task ids. */
+export interface CompiledCard {
+  id: string
+  exam: string
+  subject: string
+  topic: string
+  front: Html
+  back: Html
+}
+
 export interface SubjectPack {
   version: number
   exam: string
   subject: string
   lessons: Record<string, CompiledLesson>
   tasks: CompiledTask[]
+  cards: CompiledCard[]
 }

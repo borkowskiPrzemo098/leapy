@@ -1,43 +1,8 @@
-import { expect, test, type Page } from '@playwright/test'
+import { expect, test } from '@playwright/test'
+import { answerCurrent } from './helpers'
 
 // Plays one full topic session, answering every task type with whatever is on screen,
 // then checks the summary, the recorded progress and the error-report link.
-
-async function answerCurrent(page: Page) {
-  const check = page.getByRole('button', { name: 'Sprawdź' })
-  const input = page.getByLabel('Twoja odpowiedź')
-  if (await input.isVisible().catch(() => false)) {
-    await input.fill('1')
-    await check.click()
-    return
-  }
-  const order = page.getByRole('list', { name: 'Do ułożenia' })
-  if (await order.isVisible().catch(() => false)) {
-    while ((await order.getByRole('button').count()) > 0)
-      await order.getByRole('button').first().click()
-    await check.click()
-    return
-  }
-  const values = page.getByRole('list', { name: 'Wartości do wyboru' })
-  if (await values.isVisible().catch(() => false)) {
-    const n = await page
-      .getByRole('list', { name: 'Elementy do dopasowania' })
-      .getByRole('button')
-      .count()
-    for (let i = 0; i < n; i++) await values.getByRole('button').nth(i).click()
-    await check.click()
-    return
-  }
-  const radios = page.getByRole('radio', { name: 'Prawda' })
-  if ((await radios.count()) > 0) {
-    for (const r of await radios.all()) await r.click()
-    await check.click()
-    return
-  }
-  // single (answers on tap) or multi (toggle, then check)
-  await page.locator('main button[aria-pressed]').first().click()
-  if (await check.isVisible().catch(() => false)) await check.click()
-}
 
 test('a full topic session records progress and ends with a summary', async ({ page }) => {
   await page.goto('/app/egzaminy/matura/matematyka-p/procenty')

@@ -48,6 +48,15 @@
   /* Icon on solid correct/wrong badges (non-text, needs 3:1: 3.5:1 and 4.2:1) */
   --on-feedback: #ffffff;
 
+  /* Charts: one violet ramp, light to dark, for magnitude (activity calendar, bars).
+     Steps 3-4 clear 3:1 against --surface, so filled marks read without colour vision. */
+  --heat-0: #ebe7fc;
+  --heat-1: #cfc4fb;
+  --heat-2: #9e8af7;
+  --heat-3: #5b3df5;
+  --heat-4: #2f1a9e;
+  --chart-grid: #e4dff8;
+
   --focus: #5b3df5;
   --overlay: rgb(23 18 58 / 0.45);
 
@@ -110,6 +119,14 @@
   --wrong-deep: #c42d3b;
   --wrong-soft: #3a1520;
   --wrong-text: #ff9aa4;
+
+  /* Charts: the same ramp, re-stepped for the dark surface (dark to light) */
+  --heat-0: #241d4f;
+  --heat-1: #3b2e8c;
+  --heat-2: #5b3df5;
+  --heat-3: #9580ff;
+  --heat-4: #d2c8ff;
+  --chart-grid: #2a2358;
 
   --focus: #b3a4ff;
   --overlay: rgb(5 3 16 / 0.65);

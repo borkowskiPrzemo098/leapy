@@ -123,3 +123,23 @@ export function correctAnswerHtml(task: CompiledTask): string {
       return task.answer[0] ?? ''
   }
 }
+
+/** The response of a task left blank (mock exams grade unanswered tasks as wrong). */
+export function emptyResponse(task: CompiledTask): Response {
+  switch (task.type) {
+    case 'single':
+      return { type: 'single', choice: -1 }
+    case 'multi':
+      return { type: 'multi', choices: [] }
+    case 'truefalse':
+      return { type: 'truefalse', values: task.options.map(() => null) }
+    case 'numeric':
+      return { type: 'numeric', text: '' }
+    case 'ordering':
+      return { type: 'ordering', order: [] }
+    case 'match':
+      return { type: 'match', pairs: task.options.left.map(() => null) }
+    case 'short':
+      return { type: 'short', text: '' }
+  }
+}

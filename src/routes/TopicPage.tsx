@@ -1,4 +1,4 @@
-import { AlertTriangle, ChevronLeft, Flag, Zap } from 'lucide-react'
+import { AlertTriangle, ChevronLeft, Flag, Layers, Zap } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
 import { ScreenSkeleton } from '@/app/AppLayout'
 import { findTopic, loadPack, tasksOfTopic, useCatalog, useResource } from '@/content/data'
@@ -60,9 +60,17 @@ export default function TopicPage() {
 
           {lesson.cheatsheet.length > 0 && (
             <section aria-labelledby="sheet">
-              <h2 id="sheet" className="mb-3 text-heading text-ink">
-                Ściąga
-              </h2>
+              <div className="mb-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
+                <h2 id="sheet" className="text-heading text-ink">
+                  Ściąga
+                </h2>
+                <Link
+                  to={`/app/sesja/fiszki/${exam}/${subject}/${topic}`}
+                  className="inline-flex min-h-12 items-center gap-2 font-bold"
+                >
+                  <Layers aria-hidden className="size-5" /> Ucz się na fiszkach
+                </Link>
+              </div>
               <dl className="grid gap-2 sm:grid-cols-2">
                 {lesson.cheatsheet.map((c, i) => (
                   <div key={i} className="rounded-xl bg-brand-soft px-4 py-3">

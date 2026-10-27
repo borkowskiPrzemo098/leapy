@@ -91,6 +91,12 @@
   --color-wrong-text: var(--wrong-text);
   --color-on-feedback: var(--on-feedback);
   --color-focus: var(--focus);
+  --color-heat-0: var(--heat-0);
+  --color-heat-1: var(--heat-1);
+  --color-heat-2: var(--heat-2);
+  --color-heat-3: var(--heat-3);
+  --color-heat-4: var(--heat-4);
+  --color-chart-grid: var(--chart-grid);
 
   --radius-sm: var(--radius-sm);
   --radius-md: var(--radius-md);
@@ -270,5 +276,36 @@
   }
   .katex {
     font-size: 1.08em;
+  }
+}
+
+/* Flashcard flip: both faces share one grid cell, so the card is as tall as its longer face.
+   Under reduced motion the faces swap without the turn. */
+@layer components {
+  .flip {
+    perspective: 1400px;
+  }
+  .flip-inner {
+    display: grid;
+    transform-style: preserve-3d;
+    transition: transform var(--dur-slow) var(--ease-out);
+  }
+  .flip-inner > * {
+    grid-area: 1 / 1;
+    backface-visibility: hidden;
+  }
+  .flip-back {
+    transform: rotateY(180deg);
+  }
+  .flip[data-flipped='true'] .flip-inner {
+    transform: rotateY(180deg);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .flip-inner {
+      transition: none;
+    }
+  }
+  :root[data-motion='reduce'] .flip-inner {
+    transition: none;
   }
 }

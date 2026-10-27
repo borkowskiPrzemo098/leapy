@@ -13,6 +13,9 @@ const NotFoundPage = lazy(() => import('@/routes/NotFoundPage'))
 const SubjectPage = lazy(() => import('@/routes/SubjectPage'))
 const TopicPage = lazy(() => import('@/routes/TopicPage'))
 const SessionPage = lazy(() => import('@/routes/SessionPage'))
+const FlashcardsPage = lazy(() => import('@/routes/FlashcardsPage'))
+const MockSetupPage = lazy(() => import('@/routes/MockSetupPage'))
+const MockPage = lazy(() => import('@/routes/MockPage'))
 const DesignSystemPage = lazy(() =>
   import('./DesignSystemPage').then((m) => ({ default: m.DesignSystemPage })),
 )
@@ -29,6 +32,7 @@ export const routes: RouteObject[] = [
       { path: 'egzaminy/:exam/:subject', element: <SubjectPage /> },
       { path: 'egzaminy/:exam/:subject/:topic', element: <TopicPage /> },
       { path: 'cwicz', element: <PracticePage /> },
+      { path: 'egzamin-probny', element: <MockSetupPage /> },
       { path: 'postepy', element: <ProgressPage /> },
       { path: 'profil', element: <ProfilePage /> },
       { path: '*', element: <NotFoundPage /> },
@@ -41,6 +45,11 @@ export const routes: RouteObject[] = [
     children: [
       { path: 'temat/:exam/:subject/:topic', element: <SessionPage mode="topic" /> },
       { path: 'szybka', element: <SessionPage mode="quick" /> },
+      { path: 'powtorki', element: <SessionPage mode="review" /> },
+      { path: 'bledy', element: <SessionPage mode="mistakes" /> },
+      { path: 'fiszki', element: <FlashcardsPage /> },
+      { path: 'fiszki/:exam/:subject/:topic', element: <FlashcardsPage /> },
+      { path: 'probny/:exam/:subject', element: <MockPage /> },
     ],
   },
   { path: '/dev/ui', element: <DesignSystemPage /> },

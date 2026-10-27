@@ -6,7 +6,7 @@ import type { BackupData } from './types'
 
 export const BACKUP_VERSION = 1
 
-const mode = z.enum(['topic', 'quick', 'review', 'mistakes', 'mock'])
+const mode = z.enum(['topic', 'quick', 'review', 'mistakes', 'mock', 'cards'])
 const ts = z.number().int().nonnegative()
 
 const Attempt = z.object({
@@ -32,6 +32,8 @@ const Summary = z.object({
   accuracy: z.number(),
   ms: z.number(),
   wrongTaskIds: z.array(z.string()),
+  points: z.number().optional(),
+  maxPoints: z.number().optional(),
 })
 
 export const Backup = z.object({

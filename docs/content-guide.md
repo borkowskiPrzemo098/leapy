@@ -27,6 +27,8 @@ Po każdej partii treści uruchom `content:build`. W [content-report.md](content
 2. Dla każdego przedmiotu z listy dodaj `content/<id>/<przedmiot>/subject.json` z działami i tematami.
 3. Uruchom `npm run content:build`. Egzamin od razu pojawi się w aplikacji, z tematami „w przygotowaniu”.
 
+Egzamin próbny: w `subject.json` możesz podać `"mock": { "tasks": 15, "minutes": 40 }`. Bez tego arkusz ma do 20 zadań i ok. 2,5 minuty na zadanie. Gdy zadań w przedmiocie jest mniej, czas skaluje się proporcjonalnie. Zadania rozkładają się równo między tematy, a punkty biorą się z pola `points` (zadanie za 1 pkt: wszystko albo nic, za więcej: częściowo).
+
 Identyfikatory (`id`) piszemy małymi literami, bez polskich znaków, ze słowami połączonymi myślnikiem: `funkcja-kwadratowa`.
 
 ## Lekcja
@@ -51,6 +53,18 @@ Treść notatki. Wzory: $x^2$ w tekście, $$x^2$$ jako osobny blok.
 ```
 
 W YAML-u wzory zapisuj w pojedynczych cudzysłowach, żeby ukośniki zostały bez zmian.
+
+### Fiszki
+
+Każda pozycja `cheatsheet` staje się fiszką (`label` na awersie, `formula` na rewersie). Dodatkowe fiszki (definicje, daty, słówka) dopisz w polu `cards`:
+
+```yaml
+cards:
+  - front: 'Logarytm dziesiętny'
+    back: '$\log x$ to $\log_{10}x$'
+```
+
+Id fiszki powstaje z awersu: `matura.matematyka-p.logarytmy.card.logarytm-dziesietny`. Od niego zależą powtórki ucznia, więc **nie zmieniaj awersu istniejącej fiszki** bez potrzeby. Dwie fiszki o tym samym awersie w jednym temacie to błąd.
 
 ## Zadania
 

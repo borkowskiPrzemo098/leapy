@@ -1,25 +1,52 @@
-import { BookmarkX, Layers, RotateCcw, Target, Timer, Zap, type LucideIcon } from 'lucide-react'
+import {
+  BookmarkX,
+  ChevronRight,
+  Layers,
+  RotateCcw,
+  Target,
+  Timer,
+  Zap,
+  type LucideIcon,
+} from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useCatalog } from '@/content/data'
+import { practiceCounts, type PracticeCounts } from '@/features/study/queries'
 import { useStudy } from '@/state/study'
 import { ButtonLink } from '@/ui/Button'
 import { Page, StairsBackdrop } from '@/ui/Page'
 
-type Mode = { icon: LucideIcon; title: string; text: string }
+type Mode = { icon: LucideIcon; title: string; text: string; to: string }
 
 // Three sizes on purpose: the mock exam is the headline, review modes are the daily
 // habit (filled tiles), topic practice and flashcards are quick rows.
 const featured: Mode = {
   icon: Timer,
   title: 'Egzamin próbny',
-  text: 'Pełny arkusz z czasem, punktacją i podsumowaniem, jak na prawdziwym egzaminie.',
+  text: 'Arkusz z całego przedmiotu: czas, punkty i wyjaśnienia na końcu.',
+  to: '/app/egzamin-probny',
 }
-const habits: Mode[] = [
-  { icon: RotateCcw, title: 'Powtórki', text: 'Co warto powtórzyć dziś.' },
-  { icon: BookmarkX, title: 'Moje błędy', text: 'Tylko to, co poszło źle.' },
+const habits: (Mode & { count: keyof PracticeCounts; none: string })[] = [
+  {
+    icon: RotateCcw,
+    title: 'Powtórki',
+    text: 'na dziś',
+    none: 'Na dziś nic',
+    to: '/app/sesja/powtorki',
+    count: 'due',
+  },
+  {
+    icon: BookmarkX,
+    title: 'Moje błędy',
+    text: 'do poprawy',
+    none: 'Brak błędów',
+    to: '/app/sesja/bledy',
+    count: 'mistakes',
+  },
 ]
 const quick: Mode[] = [
-  { icon: Target, title: 'Wybrany temat', text: 'Jeden temat, aż wejdzie.' },
-  { icon: Layers, title: 'Fiszki', text: 'Wzory, definicje, daty.' },
+  { icon: Target, title: 'Wybrany temat', text: 'Jeden temat, aż wejdzie.', to: '/app/egzaminy' },
+  { icon: Layers, title: 'Fiszki', text: 'Wzory i definicje z lekcji.', to: '/app/sesja/fiszki' },
 ]
 
 export default function PracticePage() {
@@ -28,6 +55,14 @@ export default function PracticePage() {
   const exam =
     catalog.status === 'ready' ? catalog.data.exams.find((e) => e.id === examId) : undefined
   const ready = exam?.subjects.some((s) => subjects.includes(s.id) && s.tasks > 0) ?? false
+  const [counts, setCounts] = useState<PracticeCounts | null>(null)
+  useEffect(() => {
+    let alive = true
+    void practiceCounts().then((c) => alive && setCounts(c))
+    return () => {
+      alive = false
+    }
+  }, [])
 
   return (
     <Page title="Ćwicz" wide>
@@ -73,12 +108,12 @@ export default function PracticePage() {
         </div>
       </section>
 
-      <div className="mt-10 flex items-baseline justify-between gap-3">
-        <h2 className="text-heading text-ink">Inne tryby</h2>
-        <p className="text-small font-bold text-ink-3">Ruszą razem z treściami</p>
-      </div>
+      <h2 className="mt-10 text-heading text-ink">Inne tryby</h2>
       <div className="mt-4 grid gap-3 md:grid-cols-[1.2fr_1fr]">
-        <div className="flex items-center gap-4 rounded-2xl bg-ink p-5 text-bg sm:p-6">
+        <Link
+          to={featured.to}
+          className="flex items-center gap-4 rounded-2xl bg-ink p-5 text-bg no-underline transition-transform duration-[var(--dur-fast)] hover:-translate-y-0.5 sm:p-6"
+        >
           <span className="grid size-16 shrink-0 place-items-center rounded-2xl bg-brand text-on-brand">
             <featured.icon aria-hidden className="size-8" strokeWidth={2.25} />
           </span>
@@ -86,25 +121,43 @@ export default function PracticePage() {
             <h3 className="text-heading text-bg">{featured.title}</h3>
             <p className="mt-1 text-small text-bg/80">{featured.text}</p>
           </div>
-        </div>
+          <ChevronRight aria-hidden className="ml-auto size-6 shrink-0" />
+        </Link>
         <div className="grid grid-cols-2 gap-3">
-          {habits.map(({ icon: Icon, title, text }) => (
-            <div key={title} className="flex flex-col rounded-2xl bg-brand-soft p-4">
-              <Icon aria-hidden className="size-8 text-brand-text" strokeWidth={2.25} />
-              <h3 className="mt-3 font-extrabold text-ink">{title}</h3>
-              <p className="mt-0.5 text-small text-ink-2">{text}</p>
-            </div>
-          ))}
+          {habits.map(({ icon: Icon, title, text, none, to, count }) => {
+            const n = counts?.[count]
+            return (
+              <Link
+                key={title}
+                to={to}
+                className="flex flex-col rounded-2xl bg-brand-soft p-4 no-underline transition-transform duration-[var(--dur-fast)] hover:-translate-y-0.5"
+              >
+                <Icon aria-hidden className="size-8 text-brand-text" strokeWidth={2.25} />
+                <h3 className="mt-3 font-extrabold text-ink">{title}</h3>
+                <p className="tabular mt-0.5 text-small text-ink-2">
+                  {n === undefined ? ' ' : n > 0 ? `${n} ${text}` : none}
+                </p>
+              </Link>
+            )
+          })}
         </div>
         <ul className="overflow-hidden rounded-2xl bg-surface shadow-sm md:col-span-2 md:grid md:grid-cols-2">
-          {quick.map(({ icon: Icon, title, text }) => (
+          {quick.map(({ icon: Icon, title, text, to }) => (
             <li
               key={title}
-              className="flex min-h-16 items-center gap-3 border-b border-line px-4 py-3 last:border-b-0 md:border-b-0 md:first:border-r"
+              className="border-b border-line last:border-b-0 md:border-b-0 md:first:border-r"
             >
-              <Icon aria-hidden className="size-6 shrink-0 text-brand-text" />
-              <span className="font-extrabold text-ink">{title}</span>
-              <span className="text-small text-ink-3">{text}</span>
+              <Link
+                to={to}
+                className="flex min-h-16 items-center gap-3 px-4 py-3 no-underline hover:bg-surface-2"
+              >
+                <Icon aria-hidden className="size-6 shrink-0 text-brand-text" />
+                <span className="min-w-0">
+                  <span className="block font-extrabold text-ink">{title}</span>
+                  <span className="block text-small text-ink-3">{text}</span>
+                </span>
+                <ChevronRight aria-hidden className="ml-auto size-5 shrink-0 text-ink-3" />
+              </Link>
             </li>
           ))}
         </ul>

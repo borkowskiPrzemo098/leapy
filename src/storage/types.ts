@@ -1,4 +1,5 @@
 import type { SessionMode, SessionSummary } from '@/engine/session'
+import type { SrsCard } from '@/engine/srs'
 
 // Storage contract. The app talks only to ProgressStore; today it is IndexedDB (Dexie)
 // on the device, later a cloud-synced implementation can sit behind the same interface.
@@ -28,15 +29,8 @@ export interface SessionRecord {
   summary: SessionSummary
 }
 
-/** Spaced-repetition state per task (filled in E3). */
-export interface SrsRecord {
-  taskId: string
-  due: number
-  interval: number
-  ease: number
-  reps: number
-  lapses: number
-}
+/** Spaced-repetition state per task or flashcard (see engine/srs.ts). */
+export type SrsRecord = SrsCard
 
 export interface Bookmark {
   taskId: string
@@ -75,6 +69,10 @@ export interface ProgressStore {
   topicStats(exam: string, subject: string): Promise<Map<string, TopicStats>>
   saveSession(s: SessionRecord): Promise<void>
   sessions(limit?: number): Promise<SessionRecord[]>
+  /** All spaced-repetition records (tasks and flashcards) */
+  srs(): Promise<SrsRecord[]>
+  getSrs(taskId: string): Promise<SrsRecord | undefined>
+  putSrs(r: SrsRecord): Promise<void>
   toggleBookmark(taskId: string): Promise<boolean>
   bookmarks(): Promise<Bookmark[]>
   getKv<T>(key: string): Promise<T | undefined>

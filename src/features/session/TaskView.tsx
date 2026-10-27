@@ -8,6 +8,7 @@ import { AnswerOption, type AnswerState } from '@/ui/AnswerOption'
 
 // One task on screen. Inputs keep their draft locally; `onSubmit` hands the engine a response in
 // ORIGINAL option indices. After grading, `graded` freezes the view and shows what was right.
+// Exam mode (`onChange` set): nothing is graded, every edit is reported and answers stay editable.
 
 export interface TaskViewProps {
   task: CompiledTask
@@ -17,6 +18,10 @@ export interface TaskViewProps {
   onSubmit: (r: Response) => void
   /** Lets the bottom bar run "Sprawdź": null when the draft is not complete yet */
   onDraft: (submit: (() => void) | null) => void
+  /** Exam mode: the current answer after every edit (null = blank) */
+  onChange?: ((r: Response | null) => void) | undefined
+  /** Exam mode: the answer given earlier, restored when returning to the task */
+  initial?: Response | undefined
 }
 
 const KEYS = ['1', '2', '3', '4', '5', '6', '7', '8']
@@ -44,6 +49,19 @@ type Of<T extends CompiledTask['type']> = Omit<TaskViewProps, 'task'> & {
   task: Extract<CompiledTask, { type: T }>
 }
 
+/** Reports the draft in exam mode. */
+function useReport(onChange: TaskViewProps['onChange'], r: Response | null) {
+  const json = JSON.stringify(r)
+  useEffect(() => {
+    onChange?.(r)
+    // r is compared by value
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [json, onChange])
+}
+
+const from = <T extends Response['type']>(r: Response | undefined, t: T) =>
+  r?.type === t ? (r as Extract<Response, { type: T }>) : undefined
+
 function useNumberKeys(count: number, onKey: (i: number) => void, enabled: boolean) {
   useEffect(() => {
     if (!enabled) return
@@ -62,14 +80,19 @@ function useNumberKeys(count: number, onKey: (i: number) => void, enabled: boole
 
 // ---------- single: tap answers immediately ----------
 
-function Single({ task, order, graded, onSubmit, onDraft }: Of<'single'>) {
+function Single({ task, order, graded, onSubmit, onDraft, onChange, initial }: Of<'single'>) {
+  const exam = !!onChange
+  const [draft, setDraft] = useState<number | null>(from(initial, 'single')?.choice ?? null)
   useEffect(() => onDraft(null), [onDraft])
+  useReport(onChange, draft === null ? null : { type: 'single', choice: draft })
   const pick = (i: number) => {
     const original = order[i]
-    if (!graded && original !== undefined) onSubmit({ type: 'single', choice: original })
+    if (graded || original === undefined) return
+    if (exam) setDraft(original)
+    else onSubmit({ type: 'single', choice: original })
   }
   useNumberKeys(order.length, pick, !graded)
-  const chosen = graded?.response.type === 'single' ? graded.response.choice : null
+  const chosen = graded?.response.type === 'single' ? graded.response.choice : draft
   return (
     <div className="flex flex-col gap-3">
       {order.map((o, i) => {
@@ -77,7 +100,7 @@ function Single({ task, order, graded, onSubmit, onDraft }: Of<'single'>) {
         if (graded) {
           if (o === chosen) state = o === task.answer ? 'correct' : 'wrong'
           else if (o === task.answer) state = 'missed'
-        }
+        } else if (o === chosen) state = 'selected'
         return (
           <AnswerOption
             key={o}
@@ -96,8 +119,9 @@ function Single({ task, order, graded, onSubmit, onDraft }: Of<'single'>) {
 
 // ---------- multi: toggle, then check ----------
 
-function Multi({ task, order, graded, onSubmit, onDraft }: Of<'multi'>) {
-  const [chosen, setChosen] = useState<number[]>([])
+function Multi({ task, order, graded, onSubmit, onDraft, onChange, initial }: Of<'multi'>) {
+  const [chosen, setChosen] = useState<number[]>(from(initial, 'multi')?.choices ?? [])
+  useReport(onChange, chosen.length ? { type: 'multi', choices: chosen } : null)
   const toggle = (i: number) => {
     const o = order[i]
     if (graded || o === undefined) return
@@ -106,9 +130,11 @@ function Multi({ task, order, graded, onSubmit, onDraft }: Of<'multi'>) {
   useNumberKeys(order.length, toggle, !graded)
   useEffect(() => {
     onDraft(
-      !graded && chosen.length > 0 ? () => onSubmit({ type: 'multi', choices: chosen }) : null,
+      !graded && !onChange && chosen.length > 0
+        ? () => onSubmit({ type: 'multi', choices: chosen })
+        : null,
     )
-  }, [chosen, graded, onDraft, onSubmit])
+  }, [chosen, graded, onDraft, onSubmit, onChange])
   const picked = graded?.response.type === 'multi' ? graded.response.choices : chosen
   return (
     <div className="flex flex-col gap-3">
@@ -145,16 +171,19 @@ function Multi({ task, order, graded, onSubmit, onDraft }: Of<'multi'>) {
 
 // ---------- truefalse: P / F per statement ----------
 
-function TrueFalse({ task, graded, onSubmit, onDraft }: Of<'truefalse'>) {
-  const [values, setValues] = useState<(boolean | null)[]>(() => task.options.map(() => null))
+function TrueFalse({ task, graded, onSubmit, onDraft, onChange, initial }: Of<'truefalse'>) {
+  const [values, setValues] = useState<(boolean | null)[]>(
+    () => from(initial, 'truefalse')?.values ?? task.options.map(() => null),
+  )
+  useReport(onChange, values.some((v) => v !== null) ? { type: 'truefalse', values } : null)
   const shown = graded?.response.type === 'truefalse' ? graded.response.values : values
   useEffect(() => {
     onDraft(
-      !graded && values.every((v) => v !== null)
+      !graded && !onChange && values.every((v) => v !== null)
         ? () => onSubmit({ type: 'truefalse', values })
         : null,
     )
-  }, [values, graded, onDraft, onSubmit])
+  }, [values, graded, onDraft, onSubmit, onChange])
   return (
     <ol className="flex flex-col gap-3">
       {task.options.map((html, i) => {
@@ -223,10 +252,22 @@ function TrueFalse({ task, graded, onSubmit, onDraft }: Of<'truefalse'>) {
 
 // ---------- numeric / short: typed answer ----------
 
-function TextAnswer({ task, graded, onSubmit, onDraft }: Of<'numeric' | 'short'>) {
-  const [text, setText] = useState('')
-  const [problem, setProblem] = useState<string | null>(null)
+function TextAnswer({
+  task,
+  graded,
+  onSubmit,
+  onDraft,
+  onChange,
+  initial,
+}: Of<'numeric' | 'short'>) {
   const numeric = task.type === 'numeric'
+  const restored = initial?.type === 'numeric' || initial?.type === 'short' ? initial.text : ''
+  const [text, setText] = useState(restored)
+  const [problem, setProblem] = useState<string | null>(null)
+  useReport(
+    onChange,
+    text.trim() ? (numeric ? { type: 'numeric', text } : { type: 'short', text }) : null,
+  )
   const submit = () => {
     if (numeric && parseNumber(text) === null) {
       setProblem('Wpisz liczbę, np. 12, 0,75 albo 3/4.')
@@ -235,7 +276,7 @@ function TextAnswer({ task, graded, onSubmit, onDraft }: Of<'numeric' | 'short'>
     onSubmit(numeric ? { type: 'numeric', text } : { type: 'short', text })
   }
   useEffect(() => {
-    onDraft(!graded && text.trim() ? submit : null)
+    onDraft(!graded && !onChange && text.trim() ? submit : null)
     // submit closes over text only
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text, graded, onDraft])
@@ -257,8 +298,12 @@ function TextAnswer({ task, graded, onSubmit, onDraft }: Of<'numeric' | 'short'>
             setText(e.target.value)
             setProblem(null)
           }}
+          onBlur={() => {
+            if (onChange && numeric && text.trim() && parseNumber(text) === null)
+              setProblem('Wpisz liczbę, np. 12, 0,75 albo 3/4.')
+          }}
           onKeyDown={(e) => {
-            if (e.key === 'Enter' && text.trim() && !graded) submit()
+            if (e.key === 'Enter' && text.trim() && !graded && !onChange) submit()
           }}
           disabled={!!graded}
           inputMode={numeric ? 'decimal' : 'text'}
@@ -288,17 +333,18 @@ function TextAnswer({ task, graded, onSubmit, onDraft }: Of<'numeric' | 'short'>
 
 // ---------- ordering: tap items in order ----------
 
-function Ordering({ task, order, graded, onSubmit, onDraft }: Of<'ordering'>) {
-  const [seq, setSeq] = useState<number[]>([])
+function Ordering({ task, order, graded, onSubmit, onDraft, onChange, initial }: Of<'ordering'>) {
+  const [seq, setSeq] = useState<number[]>(from(initial, 'ordering')?.order ?? [])
+  useReport(onChange, seq.length ? { type: 'ordering', order: seq } : null)
   const shownSeq = graded?.response.type === 'ordering' ? graded.response.order : seq
   const pool = order.filter((o) => !shownSeq.includes(o))
   useEffect(() => {
     onDraft(
-      !graded && seq.length === order.length
+      !graded && !onChange && seq.length === order.length
         ? () => onSubmit({ type: 'ordering', order: seq })
         : null,
     )
-  }, [seq, graded, order.length, onDraft, onSubmit])
+  }, [seq, graded, order.length, onDraft, onSubmit, onChange])
   return (
     <div className="flex flex-col gap-5">
       <ol
@@ -366,15 +412,20 @@ function Ordering({ task, order, graded, onSubmit, onDraft }: Of<'ordering'>) {
 
 // ---------- match: tap a left item, then its partner ----------
 
-function Match({ task, order, graded, onSubmit, onDraft }: Of<'match'>) {
-  const [pairs, setPairs] = useState<(number | null)[]>(() => task.options.left.map(() => null))
+function Match({ task, order, graded, onSubmit, onDraft, onChange, initial }: Of<'match'>) {
+  const [pairs, setPairs] = useState<(number | null)[]>(
+    () => from(initial, 'match')?.pairs ?? task.options.left.map(() => null),
+  )
+  useReport(onChange, pairs.some((p) => p !== null) ? { type: 'match', pairs } : null)
   const [active, setActive] = useState<number | null>(0)
   const shown = graded?.response.type === 'match' ? graded.response.pairs : pairs
   useEffect(() => {
     onDraft(
-      !graded && pairs.every((p) => p !== null) ? () => onSubmit({ type: 'match', pairs }) : null,
+      !graded && !onChange && pairs.every((p) => p !== null)
+        ? () => onSubmit({ type: 'match', pairs })
+        : null,
     )
-  }, [pairs, graded, onDraft, onSubmit])
+  }, [pairs, graded, onDraft, onSubmit, onChange])
 
   const chooseRight = (r: number) => {
     if (graded || active === null) return

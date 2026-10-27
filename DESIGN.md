@@ -239,6 +239,12 @@ One intense violet carries the brand at full field strength, a single warm sun-y
 - **Lilac Hairline** (`line`) / **Lilac Rule** (`line-strong`): card borders and idle tile lip / secondary button border and lip, Switch off-track, scrollbar thumb, dashed placeholder outline.
 - **Violet Ink** (`ink`, `ink-2`, `ink-3`): primary text (16.9:1), secondary text (9.1:1), tertiary/meta text (5.4:1). All three clear 4.5:1 on `surface` in both themes.
 
+### Charts
+
+- **Heat ramp** (`heat-0` … `heat-4`): one violet ramp for magnitude only (activity calendar cells, daily columns). Light runs pale to deep (#ebe7fc → #2f1a9e), dark is re-stepped for the dark surface (#241d4f → #d2c8ff), not flipped. Steps 3–4 clear 3:1 on `surface`; today's column uses `heat-4`, other columns `heat-3`.
+- **Chart grid** (`chart-grid`): 1px solid gridlines one step off the card surface; the baseline uses `line-strong`.
+- Charts never use `reward`, `correct` or `wrong`: those stay bound to their roles.
+
 ### Named Rules
 
 **The Role-Bound Palette Rule.** Violet carries large fields; yellow appears only for rewards, streaks, levels and goal completion; green and red appear only to judge an answer and never without a check or cross icon. A yellow decorative accent or a red "delete" button breaks the system.
@@ -338,6 +344,13 @@ The thumb-sized answer tile. Min 64px tall, 24px radius, 2px border, 16px gap be
 - **ProgressBar:** 14px pill track in `surface-sunken`, fill in `brand` (default), `reward` or `correct`, with a 4px white-35% highlight strip inside the fill; width animates over 420ms.
 - **GoalRing:** circular daily goal drawn on violet fields; track `on-brand` at 20%, stroke 12% of the diameter with round caps, `on-brand` while filling and `reward` once the goal is met. Centre holds a tabular 800-weight number and a small caption.
 - **StepLadder (signature):** a row of rising blocks (96px tall, 6px gaps, 16px top / 12px bottom radius). Done steps are `reward` with a `reward-deep` inset base, the current step is `brand` and pulses (brightness 1 → 1.18, 1.6s), todo steps are `surface-sunken`.
+
+### Charts and statistics
+
+- **ActivityCalendar:** GitHub-style grid of the last 20 weeks, Monday first, 3px gaps, 3px cell radius, fixed thresholds (0 / 1–4 / 5–9 / 10–19 / 20+) so a colour means the same every week. Legend "mniej … więcej" under the grid.
+- **DailyBars:** last 14 days as columns at most 24px wide, 4px rounded tops and square feet on the baseline, three gridlines (0, half, max rounded to a clean step), y labels in a left gutter, x labels on the first, every 7th and today ("dziś"). Only the peak and today carry a value label.
+- Both charts: an ink tooltip (value first, date under it) on hover and on keyboard focus, and a "Pokaż jako tabelę / listę" disclosure with every value, so nothing depends on hovering or colour. SVG units equal CSS px (the chart measures its width) so labels stay on the type ramp.
+- **Summary band:** a `brand` field with the streak (flame on a `reward` tile, display-size number) and three `brand-deep` figure tiles.
 
 ### Controls
 

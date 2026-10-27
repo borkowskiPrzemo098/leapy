@@ -6,7 +6,7 @@ import { permutation, rng } from './random'
 //   start → (answer → [next]) * → finished
 // The UI renders `current()`; storage records each answer as an attempt.
 
-export type SessionMode = 'topic' | 'quick' | 'review' | 'mistakes' | 'mock'
+export type SessionMode = 'topic' | 'quick' | 'review' | 'mistakes' | 'mock' | 'cards'
 
 export interface SessionItem {
   taskId: string
@@ -33,7 +33,7 @@ export interface SessionState {
   shownAt: number
 }
 
-function displayOrder(task: CompiledTask, rand: () => number): number[] {
+export function displayOrder(task: CompiledTask, rand: () => number): number[] {
   switch (task.type) {
     case 'single':
     case 'multi':
@@ -107,6 +107,9 @@ export interface SessionSummary {
   accuracy: number
   ms: number
   wrongTaskIds: string[]
+  /** Mock exams only: points scored and available */
+  points?: number | undefined
+  maxPoints?: number | undefined
 }
 
 export function summarize(s: SessionState): SessionSummary {

@@ -60,7 +60,9 @@ Szczegóły: [docs/content-guide.md](docs/content-guide.md). Najważniejsze:
 
 - `src/content/schema.ts`: Zod dla treści (build i typy; aplikacja nie importuje go w czasie działania, stała wersji jest w `version.ts`).
 - `src/content/data.ts`: wczytywanie `/data/*.json` + `useResource`.
-- `src/engine/`: czyste funkcje: ocenianie 7 typów zadań, losowanie, sesja. Bez Reacta i bez IndexedDB.
+- `src/engine/`: czyste funkcje: ocenianie 7 typów zadań, losowanie, sesja, powtórki (`srs.ts`, SM-2 za interfejsem `Scheduler`), egzamin próbny (`mock.ts`), statystyki (`stats.ts`, dni lokalne). Bez Reacta, bez IndexedDB i bez odczytu zegara: `now` zawsze przychodzi z zewnątrz.
+- `src/features/study/queries.ts`: łączy magazyn z treścią (co na dziś do powtórki, błędy, zadania po id) i zapisuje powtórki (`recordReview`).
+- Stan SRS jest w tabeli `srs` (klucz: id zadania albo fiszki, fiszki mają `.card.` w id). Rozpoczęty egzamin próbny leży w `kv` pod `mock:active`, ostatni oddany pod `mock:last`.
 - `src/storage/`: interfejs `ProgressStore` + implementacja Dexie + format kopii zapasowej. UI woła tylko `progress()`.
 - Zapisy do IndexedDB nigdy wewnątrz updatera `setState` (StrictMode wywołuje je dwa razy).
 - Dexie ładujemy dynamicznie (`import('@/storage')`) tam, gdzie kod trafia do pierwszego ekranu.

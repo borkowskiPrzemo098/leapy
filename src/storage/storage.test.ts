@@ -50,6 +50,17 @@ describe('Dexie ProgressStore', () => {
     expect(await s.getKv('study')).toEqual({ exam: 'e8' })
   })
 
+  it('stores spaced-repetition records', async () => {
+    const s = fresh()
+    expect(await s.getSrs('x')).toBeUndefined()
+    const r = { taskId: 'x', due: 5, interval: 1, ease: 2.5, reps: 1, lapses: 0 }
+    await s.putSrs(r)
+    await s.putSrs({ ...r, taskId: 'y.card.z' })
+    await s.putSrs({ ...r, reps: 2 })
+    expect(await s.getSrs('x')).toEqual({ ...r, reps: 2 })
+    expect((await s.srs()).map((x) => x.taskId).sort()).toEqual(['x', 'y.card.z'])
+  })
+
   it('round-trips a backup through JSON (replace)', async () => {
     const a = fresh()
     await a.recordAttempt(attempt())

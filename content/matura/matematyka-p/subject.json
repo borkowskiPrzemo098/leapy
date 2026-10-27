@@ -3,6 +3,7 @@
   "exam": "matura",
   "name": "Matematyka",
   "level": "podstawowy",
+  "mock": { "tasks": 15, "minutes": 40 },
   "sections": [
     {
       "id": "liczby-rzeczywiste",
