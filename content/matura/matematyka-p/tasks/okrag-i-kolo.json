@@ -1,0 +1,80 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Pole koła o średnicy $10$ jest równe",
+      "options": ["$25\\pi$", "$100\\pi$", "$10\\pi$", "$50\\pi$"],
+      "answer": 0,
+      "explanation": "1. $r=5$.\n2. $P=\\pi\\cdot 5^{2}=25\\pi$.\n\nTypowy błąd: $100\\pi$, czyli wzór ze średnicą zamiast promienia.",
+      "verify": "pi * 5^2",
+      "tags": ["kolo", "pole"]
+    },
+    {
+      "id": "002",
+      "type": "single",
+      "difficulty": 1,
+      "prompt": "Długość okręgu o promieniu $7$ jest równa",
+      "options": ["$14\\pi$", "$49\\pi$", "$7\\pi$", "$28\\pi$"],
+      "answer": 0,
+      "explanation": "$L=2\\pi r=14\\pi$.",
+      "verify": "2 * pi * 7",
+      "tags": ["okrag"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Kąt środkowy oparty na łuku ma miarę $100^\\circ$. Oblicz miarę kąta wpisanego opartego na tym samym łuku (w stopniach).",
+      "answer": { "value": 50, "unit": "°" },
+      "explanation": "Kąt wpisany jest połową kąta środkowego: $50^\\circ$.",
+      "verify": "100 / 2",
+      "tags": ["okrag", "katy"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Pole wycinka koła o promieniu $6$ i kącie środkowym $60^\\circ$ jest równe",
+      "options": ["$6\\pi$", "$36\\pi$", "$12\\pi$", "$2\\pi$"],
+      "answer": 0,
+      "explanation": "$P=\\frac{60}{360}\\cdot\\pi\\cdot 36=6\\pi$.",
+      "verify": "60 / 360 * pi * 36",
+      "tags": ["kolo", "wycinek"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Trójkąt $ABC$ jest wpisany w okrąg, a bok $AB$ jest średnicą. Oblicz miarę kąta $ACB$ (w stopniach).",
+      "answer": { "value": 90, "unit": "°" },
+      "explanation": "Kąt wpisany oparty na średnicy (półokręgu) jest prosty.",
+      "tags": ["okrag", "katy"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Pole koła jest równe $16\\pi$. Oblicz obwód tego koła i podaj go jako wielokrotność $\\pi$ (wpisz samą liczbę przy $\\pi$).",
+      "answer": { "value": 8 },
+      "explanation": "1. $\\pi r^{2}=16\\pi$, więc $r=4$.\n2. $L=2\\pi\\cdot 4=8\\pi$.",
+      "tags": ["kolo"]
+    },
+    {
+      "id": "007",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Styczna do okręgu jest prostopadła do promienia w punkcie styczności.",
+        "Kąty wpisane oparte na tym samym łuku są równe.",
+        "Gdy promień koła rośnie dwa razy, pole też rośnie dwa razy."
+      ],
+      "answer": [true, true, false],
+      "explanation": "1. To własność stycznej. Prawda.\n2. Każdy z nich to połowa tego samego kąta środkowego. Prawda.\n3. Pole zależy od $r^{2}$: rośnie cztery razy. Fałsz.",
+      "tags": ["okrag", "kolo"]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "W trójkącie dwa kąty mają miary $48^\\circ$ i $67^\\circ$. Oblicz miarę trzeciego kąta (w stopniach).",
+      "answer": { "value": 65, "unit": "°" },
+      "explanation": "$180^\\circ-48^\\circ-67^\\circ=65^\\circ$.",
+      "verify": "180 - 48 - 67",
+      "tags": ["trojkaty"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Przyprostokątne trójkąta prostokątnego mają długości $6$ i $8$. Oblicz długość przeciwprostokątnej.",
+      "answer": { "value": 10 },
+      "explanation": "$c=\\sqrt{6^{2}+8^{2}}=\\sqrt{100}=10$.",
+      "verify": "sqrt(6^2 + 8^2)",
+      "tags": ["trojkaty", "pitagoras"]
+    },
+    {
+      "id": "003",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przeciwprostokątna trójkąta prostokątnego ma długość $13$, a jedna przyprostokątna $5$. Druga przyprostokątna ma długość",
+      "options": ["$12$", "$8$", "$\\sqrt{194}$", "$18$"],
+      "answer": 0,
+      "explanation": "$b=\\sqrt{13^{2}-5^{2}}=\\sqrt{144}=12$.\n\nTypowy błąd: dodanie kwadratów, choć $13$ to przeciwprostokątna.",
+      "verify": "sqrt(13^2 - 5^2)",
+      "tags": ["trojkaty", "pitagoras"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Pole trójkąta równobocznego o boku $6$ jest równe",
+      "options": ["$9\\sqrt{3}$", "$18\\sqrt{3}$", "$36\\sqrt{3}$", "$3\\sqrt{3}$"],
+      "answer": 0,
+      "explanation": "$P=\\frac{6^{2}\\sqrt{3}}{4}=\\frac{36\\sqrt{3}}{4}=9\\sqrt{3}$.",
+      "verify": "6^2 * sqrt(3) / 4",
+      "tags": ["trojkaty", "pole"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Dwa boki trójkąta mają długości $4$ i $6$, a kąt między nimi ma miarę $30^\\circ$. Oblicz pole trójkąta.",
+      "answer": { "value": 6 },
+      "explanation": "$P=\\frac{1}{2}\\cdot 4\\cdot 6\\cdot\\sin 30^\\circ=12\\cdot\\frac{1}{2}=6$.",
+      "verify": "0.5 * 4 * 6 * sin(pi / 6)",
+      "tags": ["trojkaty", "pole"]
+    },
+    {
+      "id": "006",
+      "type": "multi",
+      "difficulty": 2,
+      "prompt": "Zaznacz **wszystkie** trójki liczb, które mogą być długościami boków trójkąta.",
+      "options": ["$3,\\ 4,\\ 5$", "$2,\\ 3,\\ 6$", "$5,\\ 5,\\ 9$", "$1,\\ 2,\\ 3$"],
+      "answer": [0, 2],
+      "explanation": "Suma dwóch krótszych boków musi być większa od najdłuższego.\n1. $3+4>5$: tak.\n2. $2+3<6$: nie.\n3. $5+5>9$: tak.\n4. $1+2=3$: nie (trójkąt „spłaszczony”).",
+      "tags": ["trojkaty", "nierownosc-trojkata"]
+    },
+    {
+      "id": "007",
+      "type": "single",
+      "difficulty": 3,
+      "prompt": "W trójkącie prostokątnym kąt ostry ma miarę $30^\\circ$, a przeciwprostokątna długość $8$. Krótsza przyprostokątna ma długość",
+      "options": ["$4$", "$4\\sqrt{3}$", "$8\\sqrt{3}$", "$2$"],
+      "answer": 0,
+      "explanation": "Krótsza przyprostokątna leży naprzeciw kąta $30^\\circ$ i jest połową przeciwprostokątnej: $4$.",
+      "verify": "8 / 2",
+      "tags": ["trojkaty"]
+    },
+    {
+      "id": "008",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Trójkąt o bokach $5,\\ 12,\\ 13$ jest prostokątny.",
+        "Trójkąt może mieć dwa kąty rozwarte.",
+        "Kąt zewnętrzny trójkąta jest równy sumie dwóch kątów wewnętrznych do niego nieprzyległych."
+      ],
+      "answer": [true, false, true],
+      "explanation": "1. $25+144=169$. Prawda.\n2. Dwa kąty rozwarte to więcej niż $180^\\circ$. Fałsz.\n3. To znana własność kąta zewnętrznego. Prawda.",
+      "tags": ["trojkaty"]
+    }
+  ]
+}

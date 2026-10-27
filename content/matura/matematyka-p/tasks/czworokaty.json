@@ -1,0 +1,80 @@
+{
+  "updatedAt": "2026-10-27",
+  "tasks": [
+    {
+      "id": "001",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Przekątne rombu mają długości $6$ i $8$. Oblicz pole rombu.",
+      "answer": { "value": 24 },
+      "explanation": "$P=\\frac{d_{1}d_{2}}{2}=\\frac{48}{2}=24$.",
+      "verify": "6 * 8 / 2",
+      "tags": ["czworokaty", "pole"]
+    },
+    {
+      "id": "002",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Przekątne rombu mają długości $6$ i $8$. Oblicz długość boku rombu.",
+      "answer": { "value": 5 },
+      "explanation": "1. Przekątne dzielą się na połowy pod kątem prostym: $3$ i $4$.\n2. Bok: $\\sqrt{9+16}=5$.",
+      "verify": "sqrt(3^2 + 4^2)",
+      "tags": ["czworokaty", "pitagoras"]
+    },
+    {
+      "id": "003",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Podstawy trapezu mają długości $10$ i $4$, a wysokość $5$. Oblicz pole trapezu.",
+      "answer": { "value": 35 },
+      "explanation": "$P=\\frac{10+4}{2}\\cdot 5=35$.",
+      "verify": "(10 + 4) / 2 * 5",
+      "tags": ["czworokaty", "pole"]
+    },
+    {
+      "id": "004",
+      "type": "single",
+      "difficulty": 2,
+      "prompt": "Przekątna kwadratu ma długość $6\\sqrt{2}$. Pole tego kwadratu jest równe",
+      "options": ["$36$", "$72$", "$18$", "$36\\sqrt{2}$"],
+      "answer": 0,
+      "explanation": "1. $a\\sqrt{2}=6\\sqrt{2}$, więc $a=6$.\n2. $P=36$.",
+      "verify": "6^2",
+      "tags": ["czworokaty"]
+    },
+    {
+      "id": "005",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Trapez równoramienny ma podstawy długości $10$ i $4$ oraz ramiona długości $5$. Oblicz jego wysokość.",
+      "answer": { "value": 4 },
+      "explanation": "1. Odcinek odcięty przez wysokość: $\\frac{10-4}{2}=3$.\n2. $h=\\sqrt{5^{2}-3^{2}}=4$.",
+      "verify": "sqrt(5^2 - 3^2)",
+      "tags": ["czworokaty", "pitagoras"]
+    },
+    {
+      "id": "006",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Trzy kąty czworokąta mają miary $85^\\circ$, $95^\\circ$ i $110^\\circ$. Oblicz miarę czwartego kąta (w stopniach).",
+      "answer": { "value": 70, "unit": "°" },
+      "explanation": "$360^\\circ-85^\\circ-95^\\circ-110^\\circ=70^\\circ$.",
+      "verify": "360 - 85 - 95 - 110",
+      "tags": ["czworokaty"]
+    },
+    {
+      "id": "007",
+      "type": "truefalse",
+      "difficulty": 2,
+      "prompt": "Oceń prawdziwość zdań.",
+      "options": [
+        "Każdy kwadrat jest rombem.",
+        "Każdy romb jest kwadratem.",
+        "Przekątne prostokąta są równej długości."
+      ],
+      "answer": [true, false, true],
+      "explanation": "1. Kwadrat ma równe boki. Prawda.\n2. Romb nie musi mieć kątów prostych. Fałsz.\n3. Obie przekątne to $\\sqrt{a^{2}+b^{2}}$. Prawda.",
+      "tags": ["czworokaty"]
+    }
+  ]
+}
