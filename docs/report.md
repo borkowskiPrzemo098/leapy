@@ -1,6 +1,6 @@
 # Leapy: raport końcowy (E0–E6)
 
-Stan na 2026-10-28. Aplikacja jest publikowana na GitHub Pages: https://borkowskiprzemo098.github.io/leapy/ ([deployment.md](deployment.md)). Przed publikacją właściciel musi uzupełnić dane w polityce prywatności i regulaminie.
+Stan na 2026-10-28. Aplikacja jest publikowana na GitHub Pages: https://leapy.pl ([deployment.md](deployment.md)). Przed publikacją właściciel musi uzupełnić dane w polityce prywatności i regulaminie.
 
 ## Co jest zbudowane
 

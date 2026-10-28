@@ -45,6 +45,6 @@ src/
   ui/         komponenty bazowe
 ```
 
-Wdrożenie (GitHub Pages: https://borkowskiprzemo098.github.io/leapy/, domena, analityka): [docs/deployment.md](docs/deployment.md). Dodawanie treści: [docs/content-guide.md](docs/content-guide.md). Zasady projektu: [CLAUDE.md](CLAUDE.md). Produkt: [PRODUCT.md](PRODUCT.md). System wizualny: [DESIGN.md](DESIGN.md). Marka: [brand/README.md](brand/README.md).
+Wdrożenie (GitHub Pages: https://leapy.pl, domena, analityka): [docs/deployment.md](docs/deployment.md). Dodawanie treści: [docs/content-guide.md](docs/content-guide.md). Zasady projektu: [CLAUDE.md](CLAUDE.md). Produkt: [PRODUCT.md](PRODUCT.md). System wizualny: [DESIGN.md](DESIGN.md). Marka: [brand/README.md](brand/README.md).
 
 Leapy nie jest powiązane z CKE, MEN ani żadną uczelnią.

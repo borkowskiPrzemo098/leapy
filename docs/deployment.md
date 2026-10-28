@@ -2,19 +2,19 @@
 
 Leapy to statyczne pliki z `dist/`, publikowane za darmo na GitHub Pages z publicznego repozytorium.
 
-Adres: **https://borkowskiprzemo098.github.io/leapy/**
+Adres: **https://leapy.pl** (domena z nazwa.pl; wcześniej https://borkowskiprzemo098.github.io/leapy/, które teraz przekierowuje).
 
 ## 1. Jak to działa
 
 - `.github/workflows/pages.yml` uruchamia się po zielonym CI na `main` (albo ręcznie: Actions → Deploy to GitHub Pages → Run workflow).
-- Build dostaje `VITE_BASE=/leapy/` i `VITE_SITE_URL=https://borkowskiprzemo098.github.io/leapy`. Wszystkie ścieżki (kod, dane, service worker, manifest, linki w treści, kanoniczne adresy, sitemap) biorą bazę z `src/lib/env.ts`.
+- Build dostaje `VITE_BASE=/` i `VITE_SITE_URL=https://leapy.pl`, a `public/CNAME` zawiera `leapy.pl`. Wszystkie ścieżki (kod, dane, service worker, manifest, linki w treści, kanoniczne adresy, sitemap) biorą bazę z `src/lib/env.ts`.
 - Lokalnie i w testach baza to `/`, więc `npm run dev`, `npm run preview` i testy E2E działają jak wcześniej.
 - Ustawienie w repozytorium: Settings → Pages → Source: **GitHub Actions**.
 
 GitHub Pages nie ma przekierowań, więc:
 
 - czyste adresy działają, bo GitHub serwuje `/egzaminy/matura` z `egzaminy/matura.html`;
-- wejście z linku prosto w aplikację (np. `/leapy/app/cwicz`) trafia na `404.html`. Ta strona to publiczne „nie znaleziono”, a na ścieżkach `/app/*` skrypt podmienia ją na aplikację. Działa, ale pierwsze takie wejście ma status HTTP 404 (dla wyszukiwarek bez znaczenia, bo `/app` ma `noindex`). Po instalacji service workera wszystkie adresy `/app/*` obsługuje on sam;
+- wejście z linku prosto w aplikację (np. `/app/cwicz`) trafia na `404.html`. Ta strona to publiczne „nie znaleziono”, a na ścieżkach `/app/*` skrypt podmienia ją na aplikację. Działa, ale pierwsze takie wejście ma status HTTP 404 (dla wyszukiwarek bez znaczenia, bo `/app` ma `noindex`). Po instalacji service workera wszystkie adresy `/app/*` obsługuje on sam;
 - `_redirects` w `dist/` jest ignorowany (przydaje się tylko na Cloudflare Pages).
 
 ## 2. Własna domena (opcjonalnie)
