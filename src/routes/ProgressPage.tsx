@@ -168,7 +168,7 @@ function Stats({ data }: { data: Data }) {
         </div>
       )}
 
-      <div className="mt-6 grid gap-4 md:grid-cols-2">
+      <div className="mt-6 grid gap-4 lg:grid-cols-2">
         <section aria-labelledby="cal" className="rounded-2xl bg-surface p-5 shadow-sm">
           <h2 id="cal" className="text-heading text-ink">
             Kalendarz nauki

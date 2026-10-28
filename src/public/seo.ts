@@ -24,5 +24,4 @@ export const organizationLd = {
   logo: `${SITE_URL}/icons/pwa-512.png`,
 }
 
-export const tasksLabel = (n: number) =>
-  `${n} ${n === 1 ? 'zadanie' : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'zadania' : 'zadań'}`
+export { tasksLabel } from '@/lib/plural'

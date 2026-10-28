@@ -72,8 +72,12 @@ export function TabBar() {
 /** Tablet and desktop: the same five destinations as a left rail, "Ćwicz" as the lead action. */
 export function Sidebar() {
   return (
-    <aside className="sticky top-0 hidden h-dvh w-64 shrink-0 flex-col border-r border-line bg-surface px-4 pt-6 pb-6 md:flex">
-      <NavLink to="/app" className="mb-8 self-start rounded-lg px-2" aria-label="Leapy, Start">
+    <aside className="sticky top-0 hidden h-dvh w-64 shrink-0 flex-col overflow-y-auto border-r border-line bg-surface px-4 pt-6 pb-6 md:flex">
+      <NavLink
+        to="/app"
+        className="mb-8 flex min-h-12 items-center self-start rounded-lg px-2"
+        aria-label="Leapy, Start"
+      >
         <Logo height={36} />
       </NavLink>
       <nav aria-label="Główna nawigacja">

@@ -12,6 +12,7 @@ import { SITE_URL } from '../site'
 import { Breadcrumbs, Loading, PageTitle } from './common'
 import { breadcrumbLd, tasksLabel, type Crumb } from '../seo'
 import { PublicNotFound } from './notfound'
+import { plural } from '@/lib/plural'
 
 const examCrumbs = (exam: CatalogExam): Crumb[] => [
   { to: '/', label: 'Leapy' },
@@ -110,7 +111,7 @@ export function ExamPublicPage() {
             <a
               href={exam.officialUrl}
               rel="noopener"
-              className="inline-flex items-center gap-1 font-bold"
+              className="inline-flex min-h-12 items-center gap-1 font-bold"
             >
               strona CKE <ExternalLink aria-hidden className="size-4" />
             </a>
@@ -132,7 +133,8 @@ export function ExamPublicPage() {
                 </span>
                 <span className="mt-4 text-heading text-ink">{subjectLabel(s)}</span>
                 <span className="tabular mt-1 text-small text-ink-2">
-                  {s.sections.length} działów · {topics} tematów
+                  {s.sections.length} {plural(s.sections.length, 'dział', 'działy', 'działów')} ·{' '}
+                  {topics} {plural(topics, 'temat', 'tematy', 'tematów')}
                   {s.tasks > 0 ? ` · ${tasksLabel(s.tasks)}` : ''}
                 </span>
                 <span className="mt-auto pt-5 font-extrabold text-brand-text">Zobacz tematy</span>
@@ -195,7 +197,7 @@ export function SubjectPublicPage() {
       <PageTitle
         kicker={<Breadcrumbs items={crumbs} />}
         title={subjectLabel(subject)}
-        lead={`${exam.name}. ${subject.sections.length} działów. Tematy z lekcją możesz przeczytać tutaj, a zadania rozwiązać w aplikacji.`}
+        lead={`${exam.name}. ${subject.sections.length} ${plural(subject.sections.length, 'dział', 'działy', 'działów')}. Tematy z lekcją możesz przeczytać tutaj, a zadania rozwiązać w aplikacji.`}
       />
       <div className="mt-10 grid gap-5 lg:grid-cols-2">
         {subject.sections.map((sec, i) => (

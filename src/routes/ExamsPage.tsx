@@ -8,6 +8,7 @@ import { TopicSearch } from '@/features/search/TopicSearch'
 import { useStudy } from '@/state/study'
 import { LoadError } from '@/ui/LoadError'
 import { Page, StairsBackdrop } from '@/ui/Page'
+import { tasksLabel } from '@/lib/plural'
 
 export default function ExamsPage() {
   const catalog = useCatalog()
@@ -26,7 +27,7 @@ export default function ExamsPage() {
       <div className="mb-6 max-w-2xl">
         <TopicSearch onActive={setSearching} />
       </div>
-      <div hidden={searching} className="grid gap-5 md:grid-cols-2 md:items-start">
+      <div hidden={searching} className="grid gap-5 lg:grid-cols-2 lg:items-start">
         {catalog.data.exams.map((exam) => {
           const active = chosenExam === exam.id
           return (
@@ -88,7 +89,7 @@ export default function ExamsPage() {
                           <span className="block font-extrabold text-ink">{s.name}</span>
                           <span className="block text-small text-ink-3">
                             {s.level && `poziom ${s.level} · `}
-                            {s.tasks > 0 ? `${s.tasks} zadań` : 'w przygotowaniu'}
+                            {s.tasks > 0 ? tasksLabel(s.tasks) : 'w przygotowaniu'}
                           </span>
                         </span>
                         <ChevronRight aria-hidden className="size-5 text-ink-3" />

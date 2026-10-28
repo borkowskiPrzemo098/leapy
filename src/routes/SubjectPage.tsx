@@ -9,6 +9,7 @@ import { LoadError } from '@/ui/LoadError'
 import { Page } from '@/ui/Page'
 import { ProgressBar } from '@/ui/progress'
 import NotFoundPage from './NotFoundPage'
+import { tasksLabel } from '@/lib/plural'
 
 /** Topic map: sections as flights of stairs, each topic a step with its own progress. */
 export default function SubjectPage() {
@@ -27,7 +28,7 @@ export default function SubjectPage() {
     <Page
       title={s.name}
       lead={`${found.exam.name}${s.level ? `, poziom ${s.level}` : ''}. ${
-        s.tasks > 0 ? `${s.tasks} zadań w tym przedmiocie.` : 'Zadania są w przygotowaniu.'
+        s.tasks > 0 ? `${tasksLabel(s.tasks)} w tym przedmiocie.` : 'Zadania są w przygotowaniu.'
       }`}
       actions={
         <Link
@@ -74,7 +75,7 @@ export default function SubjectPage() {
                         </span>
                         <span className="block text-small text-ink-3">
                           {ready
-                            ? `${t.tasks} zadań${st ? ` · ${Math.round(accuracy * 100)}% poprawnych` : ''}`
+                            ? `${tasksLabel(t.tasks)}${st ? ` · ${Math.round(accuracy * 100)}% poprawnych` : ''}`
                             : 'w przygotowaniu'}
                         </span>
                         {st && (

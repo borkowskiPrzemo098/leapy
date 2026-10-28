@@ -3,6 +3,7 @@ import { Award, Lock } from 'lucide-react'
 import { BADGES } from '@/engine/gamify'
 import { ShareButton } from '@/features/share/ShareButton'
 import { useGame } from './useGame'
+import { plural } from '@/lib/plural'
 
 /** All badges: earned ones in sun yellow, the rest locked with how to get them. */
 export function BadgeGrid() {
@@ -58,7 +59,7 @@ export function BadgeGrid() {
             content={{
               kicker: 'Seria nauki w Leapy',
               value: `${game.streak.current} ${game.streak.current === 1 ? 'dzień' : 'dni'}`,
-              detail: `Stopień ${game.level.level} · ${game.answered} rozwiązanych zadań`,
+              detail: `Stopień ${game.level.level} · ${game.answered} ${plural(game.answered, 'rozwiązane zadanie', 'rozwiązane zadania', 'rozwiązanych zadań')}`,
               steps: Math.min(5, game.level.level),
             }}
           />

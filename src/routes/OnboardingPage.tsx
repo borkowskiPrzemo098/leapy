@@ -21,6 +21,7 @@ import { IconButton } from '@/ui/controls'
 import { LoadError } from '@/ui/LoadError'
 import { StairsBackdrop } from '@/ui/Page'
 import { ProgressBar, StepLadder } from '@/ui/progress'
+import { tasksLabel } from '@/lib/plural'
 
 // First run in about 30 seconds: exam → subjects → daily goal → optional 5-task test.
 // Every step can be changed later (Egzaminy, Profil); nothing here needs an account.
@@ -131,7 +132,7 @@ export default function OnboardingPage() {
                     onClick={() => toggleSubject(chosen.id, s.id)}
                     title={subjectLabel(s)}
                     icon={BookOpen}
-                    text={s.tasks > 0 ? `${s.tasks} zadań` : 'Zadania w przygotowaniu'}
+                    text={s.tasks > 0 ? tasksLabel(s.tasks) : 'Zadania w przygotowaniu'}
                   />
                 </li>
               ))}

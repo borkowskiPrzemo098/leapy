@@ -330,7 +330,7 @@ export function HomePage() {
               <h2 id="blog" className="text-title text-ink">
                 Z bloga
               </h2>
-              <Link to="/blog" className="font-extrabold">
+              <Link to="/blog" className="inline-flex min-h-12 items-center font-extrabold">
                 Wszystkie wpisy
               </Link>
             </div>

@@ -12,6 +12,7 @@ import { ConfirmDialog } from '@/ui/Dialog'
 import { LoadError } from '@/ui/LoadError'
 import { Page } from '@/ui/Page'
 import { ScreenSkeleton } from '@/app/AppLayout'
+import { tasksLabel } from '@/lib/plural'
 
 const rules = [
   { icon: Timer, text: 'Czas biegnie od startu, także po zamknięciu aplikacji.' },
@@ -148,7 +149,7 @@ function SubjectRow({
       <div className="min-w-0 flex-1">
         <h3 className="font-extrabold text-ink">{subjectLabel(subject)}</h3>
         <p className="tabular mt-1 text-small text-ink-2">
-          {cfg.tasks} zadań · {cfg.minutes} min
+          {tasksLabel(cfg.tasks)} · {cfg.minutes} min
         </p>
         {last?.summary.maxPoints !== undefined && (
           <p className="tabular mt-1 text-small font-bold text-ink-3">

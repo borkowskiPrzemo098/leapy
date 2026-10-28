@@ -32,7 +32,11 @@ function Header() {
   return (
     <header className="sticky top-0 z-30 border-b border-line bg-bg/95 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-4 px-4 sm:px-6">
-        <Link to="/" aria-label="Leapy, strona główna" className="shrink-0 no-underline">
+        <Link
+          to="/"
+          aria-label="Leapy, strona główna"
+          className="flex min-h-12 shrink-0 items-center no-underline"
+        >
           <Logo height={32} />
         </Link>
         <nav aria-label="Główna" className="ml-4 hidden md:block">

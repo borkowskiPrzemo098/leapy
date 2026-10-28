@@ -37,7 +37,7 @@ function Dashboard() {
 
   return (
     <Page title="Cześć!" wide>
-      <div className="grid gap-4 md:grid-cols-[1.4fr_1fr] md:items-stretch">
+      <div className="grid gap-4 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-stretch">
         <div className="flex flex-col gap-4">
           <section className="relative overflow-hidden rounded-2xl bg-brand p-6 pb-28 text-on-brand sm:p-8 sm:pb-32">
             <StairsBackdrop className="w-[62%] max-w-80" />

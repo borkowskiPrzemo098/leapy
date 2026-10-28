@@ -8,6 +8,7 @@ import { ButtonLink } from '@/ui/Button'
 import { LoadError } from '@/ui/LoadError'
 import { Page } from '@/ui/Page'
 import NotFoundPage from './NotFoundPage'
+import { tasksLabel } from '@/lib/plural'
 
 export default function TopicPage() {
   const { exam = '', subject = '', topic = '' } = useParams()
@@ -41,7 +42,7 @@ export default function TopicPage() {
       }
     >
       {lesson ? (
-        <div className="flex flex-col gap-5 pb-24 md:pb-0">
+        <div className="flex flex-col gap-5 pb-40 md:pb-0">
           <section aria-labelledby="in30" className="rounded-2xl bg-brand p-5 text-on-brand sm:p-6">
             <h2 id="in30" className="text-heading text-on-brand">
               Najważniejsze w 30 sekund
@@ -111,7 +112,7 @@ export default function TopicPage() {
               Ta lekcja czeka jeszcze na sprawdzenie przez nauczyciela.{' '}
               <a
                 href={reportMailto({ topic: `${exam}/${subject}/${topic}`, what: 'lekcja' })}
-                className="inline-flex items-center gap-1 font-bold"
+                className="inline-flex min-h-12 items-center gap-1 font-bold"
               >
                 <Flag aria-hidden className="size-4" /> Zgłoś błąd
               </a>
@@ -131,7 +132,7 @@ export default function TopicPage() {
             className="mx-auto max-w-md shadow-lg md:mx-0"
           >
             <Zap aria-hidden className="size-5" fill="currentColor" />
-            Ćwicz temat · {count} zadań
+            Ćwicz temat · {tasksLabel(count)}
           </ButtonLink>
         </div>
       )}

@@ -115,7 +115,7 @@ export default function PracticePage() {
       </section>
 
       <h2 className="mt-10 text-heading text-ink">Inne tryby</h2>
-      <div className="mt-4 grid gap-3 md:grid-cols-[1.2fr_1fr]">
+      <div className="mt-4 grid gap-3 lg:grid-cols-[1.2fr_1fr]">
         <Link
           to={featured.to}
           className="flex items-center gap-4 rounded-2xl bg-ink p-5 text-bg no-underline transition-transform duration-[var(--dur-fast)] hover:-translate-y-0.5 sm:p-6"
@@ -132,7 +132,7 @@ export default function PracticePage() {
         {ready && (
           <Link
             to={blitz.to}
-            className="flex items-center gap-4 rounded-2xl bg-reward p-5 text-on-reward no-underline shadow-[inset_0_-5px_0_var(--reward-deep)] transition-transform duration-[var(--dur-fast)] hover:-translate-y-0.5 sm:p-6 md:col-span-2"
+            className="flex items-center gap-4 rounded-2xl bg-reward p-5 text-on-reward no-underline shadow-[inset_0_-5px_0_var(--reward-deep)] transition-transform duration-[var(--dur-fast)] hover:-translate-y-0.5 sm:p-6 lg:col-span-2"
           >
             <span className="grid size-16 shrink-0 place-items-center rounded-2xl bg-on-reward text-reward">
               <blitz.icon aria-hidden className="size-8" fill="currentColor" />
@@ -162,11 +162,11 @@ export default function PracticePage() {
             )
           })}
         </div>
-        <ul className="overflow-hidden rounded-2xl bg-surface shadow-sm md:col-span-2 md:grid md:grid-cols-2">
+        <ul className="overflow-hidden rounded-2xl bg-surface shadow-sm lg:col-span-2 lg:grid lg:grid-cols-2">
           {quick.map(({ icon: Icon, title, text, to }) => (
             <li
               key={title}
-              className="border-b border-line last:border-b-0 md:border-b-0 md:first:border-r"
+              className="border-b border-line last:border-b-0 lg:border-b-0 lg:first:border-r"
             >
               <Link
                 to={to}
