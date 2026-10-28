@@ -1,7 +1,7 @@
 import type { CompiledTask } from '@/content/schema'
 import { correctAnswerHtml, grade, normalizeText, parseNumber } from './grade'
 import { permutation, rng, shuffle } from './random'
-import { answer, next, startSession, summarize } from './session'
+import { answer, next, startSession, stopNow, summarize } from './session'
 
 const common = {
   exam: 'matura',
@@ -161,5 +161,19 @@ describe('session', () => {
 
   it('rejects answering a task that is not current', () => {
     expect(() => answer(start(), T.numeric, { type: 'numeric', text: '1' }, 2000)).toThrow()
+  })
+})
+
+describe('stopNow (Błyskawica)', () => {
+  it('keeps only answered items and finishes the session', () => {
+    const one = T.single as CompiledTask
+    const tasks = [one, { ...one, id: 'a.b.c.101' }, { ...one, id: 'a.b.c.102' }] as CompiledTask[]
+    let s = startSession({ id: 's', mode: 'blitz', scope: 'blitz', tasks, seed: 1, now: 0 })
+    s = answer(s, one, { type: 'single', choice: 1 }, 100).state
+    s = next(s, 100)
+    s = stopNow(s, 60_000)
+    expect(s.items).toHaveLength(1)
+    expect(s.finishedAt).toBe(60_000)
+    expect(summarize(s)).toMatchObject({ total: 1, correct: 1 })
   })
 })

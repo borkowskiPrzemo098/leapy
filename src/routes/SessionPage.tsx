@@ -1,12 +1,14 @@
 import { clsx } from 'clsx'
-import { Bookmark, Flag, Lightbulb, RotateCcw, X } from 'lucide-react'
+import { Bookmark, CalendarCheck, Flag, Lightbulb, RotateCcw, Trophy, X, Zap } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ScreenSkeleton } from '@/app/AppLayout'
 import { loadCatalog, loadPack } from '@/content/data'
 import type { CompiledTask } from '@/content/schema'
 import { correctAnswerHtml, type Response } from '@/engine/grade'
-import { newSeed, rng } from '@/engine/random'
+import { dailyTaskId } from '@/engine/daily'
+import { newSeed, rng, shuffle } from '@/engine/random'
+import { dayKey } from '@/engine/stats'
 import { qualityFromGrade } from '@/engine/srs'
 import {
   answer,
@@ -15,12 +17,14 @@ import {
   markHintUsed,
   next,
   startSession,
+  stopNow,
   summarize,
   type SessionMode,
   type SessionState,
 } from '@/engine/session'
 import { Html, Prose } from '@/features/content/Prose'
 import { pickTasks } from '@/features/session/pick'
+import { BLITZ_SECONDS, blitzRecord, dailyStatus } from '@/features/study/daily'
 import { dueTaskIds, mistakeTaskIds, recordReview, tasksByIds } from '@/features/study/queries'
 import { TaskView } from '@/features/session/TaskView'
 import { reportMailto } from '@/lib/report'
@@ -37,6 +41,9 @@ import { ProgressBar } from '@/ui/progress'
 const SESSION_LENGTH = 10
 const DIAGNOSTIC_LENGTH = 5
 const REVIEW_LENGTH = 15
+const BLITZ_POOL = 80
+/** Błyskawica: how long the answer colour stays before the next task */
+const BLITZ_NEXT_MS = 650
 
 interface Prepared {
   tasks: Map<string, CompiledTask>
@@ -55,9 +62,15 @@ async function prepare(
   const seed = newSeed()
   const rand = rng(seed)
   let pool: CompiledTask[] = []
-  let title = diagnostic ? 'Test na start' : 'Szybka sesja'
-  let scope = diagnostic ? 'diagnostic' : 'quick'
-  let backTo = diagnostic ? '/app' : '/app/cwicz'
+  let title = diagnostic
+    ? 'Test na start'
+    : mode === 'daily'
+      ? 'Zadanie dnia'
+      : mode === 'blitz'
+        ? 'Błyskawica'
+        : 'Szybka sesja'
+  let scope = diagnostic ? 'diagnostic' : mode === 'daily' ? `daily:${dayKey(Date.now())}` : mode
+  let backTo = diagnostic || mode === 'daily' ? '/app' : '/app/cwicz'
 
   if (mode === 'topic') {
     const { exam = '', subject = '', topic = '' } = params
@@ -108,8 +121,24 @@ async function prepare(
       backTo,
     }
 
-  const history = await progress().attempts()
-  const chosen = pickTasks(pool, history, diagnostic ? DIAGNOSTIC_LENGTH : SESSION_LENGTH, rand)
+  let chosen: CompiledTask[]
+  if (mode === 'daily') {
+    // Same task for everyone with these subjects today: chosen by date, not by history.
+    const id = dailyTaskId(
+      pool.map((t) => t.id),
+      dayKey(Date.now()),
+    )
+    chosen = pool.filter((t) => t.id === id)
+  } else if (mode === 'blitz') {
+    // Single choice only: one tap per task keeps the pace. More than anyone answers in 60 s.
+    chosen = shuffle(
+      pool.filter((t) => t.type === 'single'),
+      rand,
+    ).slice(0, BLITZ_POOL)
+  } else {
+    const history = await progress().attempts()
+    chosen = pickTasks(pool, history, diagnostic ? DIAGNOSTIC_LENGTH : SESSION_LENGTH, rand)
+  }
   const session = startSession({
     id: crypto.randomUUID(),
     mode,
@@ -142,7 +171,7 @@ export default function SessionPage({
   }>()
 
   useEffect(() => {
-    if (mode === 'quick' && !hydrated) return
+    if ((mode === 'quick' || mode === 'daily' || mode === 'blitz') && !hydrated) return
     let alive = true
     prepare(mode, params, { exam: study.exam, subjects: study.subjects }, diagnostic).then(
       (p) => alive && setResult({ key, value: p }),
@@ -233,6 +262,7 @@ function Player({
     [item],
   )
   const finished = isFinished(state)
+  const blitz = state.mode === 'blitz'
 
   useEffect(() => {
     void progress()
@@ -253,6 +283,27 @@ function Player({
     setState(ns)
   }, [])
 
+  const save = useCallback((ns: SessionState) => {
+    void progress()
+      .saveSession({
+        id: ns.id,
+        mode: ns.mode,
+        scope: ns.scope,
+        startedAt: ns.startedAt,
+        finishedAt: ns.finishedAt ?? Date.now(),
+        summary: summarize(ns),
+      })
+      .then(() => setSaved(true))
+  }, [])
+
+  const goNext = useCallback(() => {
+    if (isFinished(stateRef.current)) return
+    const ns = next(stateRef.current, Date.now())
+    setShowHint(false)
+    update(ns)
+    if (isFinished(ns)) save(ns)
+    window.scrollTo({ top: 0 })
+  }, [update, save])
   const onSubmit = useCallback(
     (r: Response) => {
       const s = stateRef.current
@@ -274,28 +325,31 @@ function Player({
         sessionId: ns.id,
         hintUsed: !!it?.hintUsed,
       })
-      void recordReview(task.id, qualityFromGrade(grade, !!it?.hintUsed))
+      // Błyskawica answers are quick guesses at speed: they count, but do not move the
+      // spaced-repetition schedule.
+      if (ns.mode !== 'blitz') void recordReview(task.id, qualityFromGrade(grade, !!it?.hintUsed))
+      else window.setTimeout(goNext, BLITZ_NEXT_MS)
     },
-    [task, onDraft, update],
+    [task, onDraft, update, goNext],
   )
 
-  const goNext = useCallback(() => {
-    const ns = next(stateRef.current, Date.now())
-    setShowHint(false)
-    update(ns)
-    if (isFinished(ns))
-      void progress()
-        .saveSession({
-          id: ns.id,
-          mode: ns.mode,
-          scope: ns.scope,
-          startedAt: ns.startedAt,
-          finishedAt: ns.finishedAt ?? Date.now(),
-          summary: summarize(ns),
-        })
-        .then(() => setSaved(true))
-    window.scrollTo({ top: 0 })
-  }, [update])
+  // Błyskawica clock: starts when the first task is on screen, ends the run at zero.
+  const [deadline] = useState(() => Date.now() + BLITZ_SECONDS * 1000)
+  const [left, setLeft] = useState(BLITZ_SECONDS)
+  useEffect(() => {
+    if (!blitz || finished) return
+    const tick = () => {
+      const s = Math.max(0, Math.ceil((deadline - Date.now()) / 1000))
+      setLeft(s)
+      if (s === 0 && !isFinished(stateRef.current)) {
+        const ns = stopNow(stateRef.current, Date.now())
+        update(ns)
+        save(ns)
+      }
+    }
+    const id = window.setInterval(tick, 250)
+    return () => window.clearInterval(id)
+  }, [blitz, finished, deadline, update, save])
 
   // Move focus to the feedback so screen readers hear the result and Enter continues.
   useEffect(() => {
@@ -327,24 +381,52 @@ function Player({
           <IconButton label="Zakończ sesję" onClick={onClose}>
             <X aria-hidden className="size-6" />
           </IconButton>
-          <ProgressBar
-            value={done}
-            max={state.items.length}
-            label="Postęp sesji"
-            className="flex-1"
-          />
-          <span className="tabular w-14 text-right text-small font-bold text-ink-3">
-            {Math.min(state.index + 1, state.items.length)} / {state.items.length}
-          </span>
+          {blitz ? (
+            <>
+              <ProgressBar
+                value={finished ? 0 : left}
+                max={BLITZ_SECONDS}
+                label="Pozostały czas"
+                className="flex-1"
+              />
+              <span
+                className={clsx(
+                  'tabular w-14 text-right text-small font-extrabold',
+                  left <= 10 && !finished ? 'text-wrong-text' : 'text-ink-3',
+                )}
+                aria-live={left <= 10 ? 'polite' : 'off'}
+              >
+                {finished ? '0 s' : `${left} s`}
+              </span>
+            </>
+          ) : (
+            <>
+              <ProgressBar
+                value={done}
+                max={state.items.length}
+                label="Postęp sesji"
+                className="flex-1"
+              />
+              <span className="tabular w-14 text-right text-small font-bold text-ink-3">
+                {Math.min(state.index + 1, state.items.length)} / {state.items.length}
+              </span>
+            </>
+          )}
         </div>
       </header>
 
-      {summary ? (
+      {summary && blitz ? (
+        <BlitzSummary prep={prep} summary={summary} onAgain={onAgain} saved={saved} />
+      ) : summary ? (
         <Summary prep={prep} summary={summary} onAgain={onAgain} saved={saved} />
       ) : task && item ? (
         <>
           <main id="main" className="mx-auto w-full max-w-2xl flex-1 px-4 pt-6 pb-64 sm:px-6">
-            <p className="mb-3 text-micro font-bold text-ink-3">{prep.title}</p>
+            <p className="mb-3 text-micro font-bold text-ink-3">
+              {blitz
+                ? `Błyskawica · poprawnych: ${state.items.filter((i) => i.grade?.correct).length}`
+                : prep.title}
+            </p>
             <TaskView
               key={task.id}
               task={task}
@@ -353,7 +435,7 @@ function Player({
               onSubmit={onSubmit}
               onDraft={onDraft}
             />
-            {!graded && task.hint && (
+            {!blitz && !graded && task.hint && (
               <div className="mt-6">
                 {showHint ? (
                   <div className="rounded-xl bg-reward-soft p-4 text-ink">
@@ -379,7 +461,7 @@ function Player({
           </main>
 
           <div className="fixed inset-x-0 bottom-0 z-30 pb-[env(safe-area-inset-bottom)]">
-            {graded ? (
+            {blitz ? null : graded ? (
               <div
                 ref={feedbackRef}
                 tabIndex={-1}
@@ -497,6 +579,7 @@ function Summary({
 
       {saved && (
         <>
+          {prep.session.mode === 'daily' && <DailyStreakNote />}
           <XpGain sessionId={prep.session.id} />
           <NewBadges />
         </>
@@ -549,6 +632,111 @@ function Summary({
       <p className="mt-6 text-center text-small text-ink-3">
         <Link to="/app/postepy">Zobacz postępy</Link>
       </p>
+    </main>
+  )
+}
+
+function DailyStreakNote() {
+  const [streak, setStreak] = useState<number | null>(null)
+  useEffect(() => {
+    void dailyStatus().then((d) => setStreak(d.streak))
+  }, [])
+  if (!streak) return null
+  return (
+    <p className="mt-6 flex items-center gap-3 rounded-2xl bg-reward-soft p-4 font-bold text-ink">
+      <CalendarCheck aria-hidden className="size-6 shrink-0 text-reward-deep" />
+      {streak === 1
+        ? 'Pierwsze zadanie dnia za tobą. Wróć jutro po kolejne.'
+        : `Zadanie dnia ${streak} dni z rzędu. Jutro czeka następne.`}
+    </p>
+  )
+}
+
+/** 1 poprawna, 2–4 poprawne, 5+ poprawnych (12–14 too) */
+function correctWord(n: number) {
+  if (n === 1) return 'poprawna'
+  const d = n % 10
+  const t = n % 100
+  return d >= 2 && d <= 4 && (t < 12 || t > 14) ? 'poprawne' : 'poprawnych'
+}
+
+function BlitzSummary({
+  prep,
+  summary,
+  onAgain,
+  saved,
+}: {
+  prep: Prepared
+  summary: ReturnType<typeof summarize>
+  onAgain: () => void
+  saved: boolean
+}) {
+  const [record, setRecord] = useState<number | null>(null)
+  useEffect(() => {
+    if (saved) void blitzRecord(prep.session.id).then(setRecord)
+  }, [saved, prep.session.id])
+  const best = record !== null && summary.correct > record && summary.correct > 0
+  return (
+    <main id="main" className="mx-auto w-full max-w-2xl flex-1 px-4 pt-8 pb-16 sm:px-6">
+      <section className="relative overflow-hidden rounded-2xl bg-brand p-6 text-on-brand sm:p-8">
+        <p className="flex items-center gap-2 text-lead font-bold text-on-brand-2">
+          <Zap aria-hidden className="size-5" fill="currentColor" /> Błyskawica · {BLITZ_SECONDS} s
+        </p>
+        <h1 className="mt-1 text-display text-on-brand">
+          {summary.correct} {correctWord(summary.correct)}
+        </h1>
+        <p className="mt-2 text-lead text-on-brand-2">
+          Odpowiedzi: {summary.answered} · {Math.round(summary.accuracy * 100)}% trafnych
+        </p>
+        {record !== null && (
+          <p
+            className={clsx(
+              'mt-5 inline-flex items-center gap-2 rounded-xl px-4 py-2 font-extrabold',
+              best ? 'animate-leap bg-reward text-on-reward' : 'bg-brand-deep text-on-brand',
+            )}
+          >
+            <Trophy aria-hidden className="size-5" />
+            {best
+              ? record > 0
+                ? `Nowy rekord! Poprzedni: ${record}`
+                : 'Pierwszy rekord ustanowiony!'
+              : `Rekord: ${record}`}
+          </p>
+        )}
+      </section>
+
+      {saved && <XpGain sessionId={prep.session.id} />}
+
+      {summary.wrongTaskIds.length > 0 && (
+        <p className="mt-6 text-small text-ink-2">
+          Błędne odpowiedzi ({summary.wrongTaskIds.length}) trafiły do trybu „Moje błędy”, z
+          wyjaśnieniami.
+        </p>
+      )}
+
+      <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+        <Button
+          size="lg"
+          block
+          icon={<RotateCcw aria-hidden className="size-5" />}
+          onClick={onAgain}
+        >
+          Jeszcze raz
+        </Button>
+        <ButtonLink to={prep.backTo} variant="secondary" size="lg" block>
+          Wróć
+        </ButtonLink>
+      </div>
+      <div className="mt-3">
+        <ShareButton
+          content={{
+            kicker: 'Błyskawica · 60 sekund',
+            value: `${summary.correct} ${correctWord(summary.correct)}`,
+            detail: best ? 'Nowy rekord!' : `${summary.answered} odpowiedzi`,
+            steps: Math.min(5, Math.round(summary.accuracy * 5)),
+          }}
+        />
+      </div>
     </main>
   )
 }

@@ -71,6 +71,7 @@ Szczegóły: [docs/content-guide.md](docs/content-guide.md). Najważniejsze:
 - `src/public/`: strony publiczne (SEO). Te same komponenty renderuje `scripts/prerender/prerender.tsx` po `vite build` (strony `.html`, sitemap, robots, `_redirects`). `useHead` ustawia tytuł, opis, kanoniczny adres i JSON-LD. Strony czytają dane przez `useResource` (`useCatalog`, `usePack`, `useSite`); prerender osadza je w `#page-data`, a `main.tsx` zasiewa nimi pamięć przed pierwszym renderem.
 - Ekran tematu czyta mały plik `data/<egzamin>/<przedmiot>/<temat>.json` (`loadTopic`), nie całą paczkę.
 - Wyszukiwarka: `src/features/search/TopicSearch.tsx` (MiniSearch, ładowany przy pierwszym użyciu) nad `data/search.json` z `scripts/content/search.ts`.
+- Tryby `daily` (Zadanie dnia, `src/engine/daily.ts`) i `blitz` (Błyskawica, 60 s) w `SessionPage`; historia w `src/features/study/daily.ts`. Kolory aplikacji: `src/lib/accent.ts` + `[data-accent]` w `tokens.css` (nowa paleta musi przejść te same progi kontrastu).
 - Nowy ekran dopisz do listy w `tests/e2e/a11y.spec.ts`. Wdrożenie: [docs/deployment.md](docs/deployment.md), stan projektu: [docs/report.md](docs/report.md).
 - Paczki przedmiotów nie są w precache (za duże); service worker cache'uje je w locie, a `usePrefetchSubjects` pobiera wybrane przedmioty w tle.
 - `src/storage/`: interfejs `ProgressStore` + implementacja Dexie + format kopii zapasowej. UI woła tylko `progress()`.

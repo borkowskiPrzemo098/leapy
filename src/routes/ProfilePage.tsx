@@ -1,6 +1,9 @@
-import { Mail, Monitor, Moon, Sun } from 'lucide-react'
-import type { ReactNode } from 'react'
+import { clsx } from 'clsx'
+import { Check, Lock, Mail, Monitor, Moon, Sun } from 'lucide-react'
+import { useEffect, type ReactNode } from 'react'
 import { CONTACT_EMAIL } from '@/lib/report'
+import { ACCENTS, isUnlocked } from '@/lib/accent'
+import { useGame } from '@/features/gamify/useGame'
 import { usePrefs, type TextScale } from '@/state/prefs'
 import { BackupPanel } from '@/features/backup/BackupPanel'
 import { GoalSettings, ReminderSettings } from '@/features/reminders/StudySettings'
@@ -50,6 +53,7 @@ export default function ProfilePage() {
         <Field label="Motyw">
           <Segmented label="Motyw" value={theme} options={themeOptions} onChange={setTheme} />
         </Field>
+        <AccentField />
         <Field label="Rozmiar tekstu" hint="Zmienia tekst w całej aplikacji.">
           <Segmented
             label="Rozmiar tekstu"
@@ -96,5 +100,67 @@ export default function ProfilePage() {
         <p className="mt-2 text-micro text-ink-3">Wersja {__APP_VERSION__}</p>
       </Group>
     </Page>
+  )
+}
+
+/** Colour themes, unlocked by level: locked ones say what it takes to get them. */
+function AccentField() {
+  const { accent, setAccent } = usePrefs()
+  const game = useGame()
+  const level = game?.level.level ?? 1
+  // A colour that is not unlocked (e.g. progress was deleted) falls back to the violet.
+  useEffect(() => {
+    const current = ACCENTS.find((a) => a.id === accent)
+    if (game && current && !isUnlocked(current, game.level.level)) setAccent('fiolet')
+  }, [game, accent, setAccent])
+  return (
+    <Field label="Kolor aplikacji" hint="Nowe kolory odblokowujesz, zdobywając kolejne stopnie.">
+      <div
+        role="radiogroup"
+        aria-label="Kolor aplikacji"
+        className="grid grid-cols-2 gap-2 sm:grid-cols-3"
+      >
+        {ACCENTS.map((a) => {
+          const open = isUnlocked(a, level)
+          const on = accent === a.id
+          return (
+            <button
+              key={a.id}
+              type="button"
+              role="radio"
+              aria-checked={on}
+              aria-disabled={!open}
+              onClick={() => open && setAccent(a.id)}
+              className={clsx(
+                'flex min-h-14 items-center gap-3 rounded-xl border-2 px-3 py-2 text-left',
+                on ? 'border-ink bg-surface-2' : 'border-line bg-surface',
+                open ? 'hover:bg-surface-2' : 'cursor-not-allowed',
+              )}
+            >
+              <span
+                aria-hidden
+                className={clsx(
+                  'grid size-8 shrink-0 place-items-center rounded-full text-on-brand',
+                  !open && 'opacity-40',
+                )}
+                style={{ background: `var(--swatch-${a.id})` }}
+              >
+                {on && <Check className="size-4" strokeWidth={3} />}
+              </span>
+              <span className="min-w-0">
+                <span className={clsx('block font-bold', open ? 'text-ink' : 'text-ink-3')}>
+                  {a.name}
+                </span>
+                {!open && (
+                  <span className="flex items-center gap-1 text-micro text-ink-3">
+                    <Lock aria-hidden className="size-3" /> od stopnia {a.level}
+                  </span>
+                )}
+              </span>
+            </button>
+          )
+        })}
+      </div>
+    </Field>
   )
 }

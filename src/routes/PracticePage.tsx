@@ -44,6 +44,12 @@ const habits: (Mode & { count: keyof PracticeCounts; none: string })[] = [
     count: 'mistakes',
   },
 ]
+const blitz: Mode = {
+  icon: Zap,
+  title: 'Błyskawica',
+  text: '60 sekund, jak najwięcej dobrych odpowiedzi. Pobij własny rekord.',
+  to: '/app/sesja/blyskawica',
+}
 const quick: Mode[] = [
   { icon: Target, title: 'Wybrany temat', text: 'Jeden temat, aż wejdzie.', to: '/app/egzaminy' },
   { icon: Layers, title: 'Fiszki', text: 'Wzory i definicje z lekcji.', to: '/app/sesja/fiszki' },
@@ -123,6 +129,21 @@ export default function PracticePage() {
           </div>
           <ChevronRight aria-hidden className="ml-auto size-6 shrink-0" />
         </Link>
+        {ready && (
+          <Link
+            to={blitz.to}
+            className="flex items-center gap-4 rounded-2xl bg-reward p-5 text-on-reward no-underline shadow-[inset_0_-5px_0_var(--reward-deep)] transition-transform duration-[var(--dur-fast)] hover:-translate-y-0.5 sm:p-6 md:col-span-2"
+          >
+            <span className="grid size-16 shrink-0 place-items-center rounded-2xl bg-on-reward text-reward">
+              <blitz.icon aria-hidden className="size-8" fill="currentColor" />
+            </span>
+            <div>
+              <h3 className="text-heading text-on-reward">{blitz.title}</h3>
+              <p className="mt-1 text-small text-on-reward">{blitz.text}</p>
+            </div>
+            <ChevronRight aria-hidden className="ml-auto size-6 shrink-0" />
+          </Link>
+        )}
         <div className="grid grid-cols-2 gap-3">
           {habits.map(({ icon: Icon, title, text, none, to, count }) => {
             const n = counts?.[count]

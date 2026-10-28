@@ -52,6 +52,8 @@ export const routes: RouteObject[] = [
       { path: 'diagnoza', element: <SessionPage mode="quick" diagnostic /> },
       { path: 'powtorki', element: <SessionPage mode="review" /> },
       { path: 'bledy', element: <SessionPage mode="mistakes" /> },
+      { path: 'dzien', element: <SessionPage mode="daily" /> },
+      { path: 'blyskawica', element: <SessionPage mode="blitz" /> },
       { path: 'fiszki', element: <FlashcardsPage /> },
       { path: 'fiszki/:exam/:subject/:topic', element: <FlashcardsPage /> },
       { path: 'probny/:exam/:subject', element: <MockPage /> },

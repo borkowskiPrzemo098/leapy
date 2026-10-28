@@ -116,3 +116,13 @@ describe('badges', () => {
     ])
   })
 })
+
+describe('Błyskawica XP', () => {
+  it('gives less per answer and nothing for a wrong one', async () => {
+    const { attemptXp, XP } = await import('./gamify')
+    const base = { taskId: 't', exam: 'e', subject: 's', topic: 'x', ts: 0, ms: 0 }
+    expect(attemptXp({ ...base, correct: true, mode: 'blitz' })).toBe(XP.blitzCorrect)
+    expect(attemptXp({ ...base, correct: false, mode: 'blitz' })).toBe(0)
+    expect(attemptXp({ ...base, correct: true, mode: 'quick' })).toBe(XP.correct)
+  })
+})

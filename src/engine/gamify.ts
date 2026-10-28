@@ -7,6 +7,7 @@ import { dayKey, startOfDay, type AttemptLike, type SessionLike } from './stats'
 export interface XpAttempt extends AttemptLike {
   score?: number
   hintUsed?: boolean
+  mode?: string
 }
 
 export interface XpSession extends SessionLike {
@@ -21,9 +22,12 @@ export const XP = {
   card: 3,
   session: 5,
   mock: 20,
+  /** Błyskawica: quick answers, so less per answer (a 60-second run cannot out-earn a session) */
+  blitzCorrect: 4,
 } as const
 
 export function attemptXp(a: XpAttempt) {
+  if (a.mode === 'blitz') return a.correct ? XP.blitzCorrect : 0
   if (a.correct) return a.hintUsed ? XP.correctWithHint : XP.correct
   return XP.wrong
 }

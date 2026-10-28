@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import { applyAccent, readAccent, type AccentId } from '@/lib/accent'
 import { applyTheme, readThemePref, type ThemePref } from '@/lib/theme'
 
 // Device-level UI preferences. They live in localStorage (not Dexie) because the
@@ -54,7 +55,9 @@ interface PrefsState {
   theme: ThemePref
   textScale: TextScale
   motion: MotionPref
+  accent: AccentId
   setTheme: (t: ThemePref) => void
+  setAccent: (a: AccentId) => void
   setTextScale: (s: TextScale) => void
   setMotion: (m: MotionPref) => void
 }
@@ -65,6 +68,11 @@ export const usePrefs = create<PrefsState>((set) => {
     theme: readThemePref(),
     textScale: isTextScale(text) ? text : 'md',
     motion: read(KEYS.motion) === 'reduce' ? 'reduce' : 'system',
+    accent: readAccent(),
+    setAccent: (accent) => {
+      applyAccent(accent)
+      set({ accent })
+    },
     setTheme: (theme) => {
       applyTheme(theme)
       set({ theme })

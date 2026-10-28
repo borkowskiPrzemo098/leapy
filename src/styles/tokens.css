@@ -136,6 +136,82 @@
   --shadow-lg: 0 4px 8px rgb(0 0 0 / 0.3), 0 24px 48px -16px rgb(0 0 0 / 0.65);
 }
 
+/* Colour themes unlocked with levels (src/lib/accent.ts). Each one re-sets only the brand
+   family and keeps the same contrast rules as the violet: white and --on-brand-2 on --brand,
+   white on --brand-strong, and --brand-text on --bg, --surface and --brand-soft are all
+   at least 4.5:1, in both themes. Dark rules are more specific, so they win in dark mode. */
+:root {
+  --swatch-fiolet: #5b3df5;
+  --swatch-morski: #0b7a75;
+  --swatch-malinowy: #c2185b;
+  --swatch-kobaltowy: #1f5fd1;
+  --swatch-grafitowy: #3d4459;
+}
+:root[data-accent='morski'] {
+  --brand: #0b7a75;
+  --brand-strong: #086560;
+  --brand-deep: #04403d;
+  --brand-soft: #d4f1ee;
+  --brand-text: #086560;
+  --on-brand-2: #e3f7f5;
+}
+:root[data-theme='dark'][data-accent='morski'] {
+  --brand: #0b7a75;
+  --brand-strong: #086560;
+  --brand-deep: #064a47;
+  --brand-soft: #103b3a;
+  --brand-text: #6fd9d0;
+  --on-brand-2: #e8faf8;
+}
+:root[data-accent='malinowy'] {
+  --brand: #c2185b;
+  --brand-strong: #a3134c;
+  --brand-deep: #6e0c33;
+  --brand-soft: #fbdde9;
+  --brand-text: #a3134c;
+  --on-brand-2: #fde9f1;
+}
+:root[data-theme='dark'][data-accent='malinowy'] {
+  --brand: #c2185b;
+  --brand-strong: #a3134c;
+  --brand-deep: #7a0e39;
+  --brand-soft: #3d1428;
+  --brand-text: #ff8fbb;
+  --on-brand-2: #fff0f6;
+}
+:root[data-accent='kobaltowy'] {
+  --brand: #1f5fd1;
+  --brand-strong: #174cae;
+  --brand-deep: #0e3277;
+  --brand-soft: #dce8ff;
+  --brand-text: #174cae;
+  --on-brand-2: #e8f0ff;
+}
+:root[data-theme='dark'][data-accent='kobaltowy'] {
+  --brand: #2563d9;
+  --brand-strong: #1c51b8;
+  --brand-deep: #123a87;
+  --brand-soft: #132a52;
+  --brand-text: #8db6ff;
+  --on-brand-2: #eef4ff;
+}
+:root[data-accent='grafitowy'] {
+  --brand: #3d4459;
+  --brand-strong: #2e3445;
+  --brand-deep: #1c2030;
+  --brand-soft: #e2e5ee;
+  --brand-text: #3d4459;
+  --on-brand-2: #e9ebf2;
+}
+:root[data-theme='dark'][data-accent='grafitowy'] {
+  --brand: #4a5270;
+  --brand-strong: #3b425c;
+  --brand-deep: #272c40;
+  --brand-soft: #262b40;
+  --brand-text: #b9c1dc;
+  --on-brand-2: #eef0f7;
+}
+
 @media (prefers-reduced-motion: reduce) {
   :root {
     --dur-fast: 0ms;

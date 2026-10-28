@@ -6,7 +6,17 @@ import { permutation, rng } from './random'
 //   start → (answer → [next]) * → finished
 // The UI renders `current()`; storage records each answer as an attempt.
 
-export type SessionMode = 'topic' | 'quick' | 'review' | 'mistakes' | 'mock' | 'cards'
+export type SessionMode =
+  | 'topic'
+  | 'quick'
+  | 'review'
+  | 'mistakes'
+  | 'mock'
+  | 'cards'
+  /** Zadanie dnia: one task, the same for everyone that day */
+  | 'daily'
+  /** Błyskawica: as many single-choice answers as possible in 60 seconds */
+  | 'blitz'
 
 export interface SessionItem {
   taskId: string
@@ -96,6 +106,16 @@ export function markHintUsed(s: SessionState): SessionState {
 export function next(s: SessionState, now: number): SessionState {
   if (s.index + 1 >= s.items.length) return { ...s, finishedAt: now }
   return { ...s, index: s.index + 1, shownAt: now }
+}
+
+/**
+ * Ends a session early (the Błyskawica clock ran out): only answered items stay, so the
+ * summary counts what was actually done.
+ */
+export function stopNow(s: SessionState, now: number): SessionState {
+  if (s.finishedAt !== undefined) return s
+  const items = s.items.filter((i) => i.grade)
+  return { ...s, items, index: Math.max(0, items.length - 1), finishedAt: now }
 }
 
 export interface SessionSummary {
