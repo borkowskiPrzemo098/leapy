@@ -10,12 +10,15 @@ cheatsheet:
     formula: 'prescription'
 title: 'Słownictwo: zdrowie'
 summary:
-  - 'Zakres tematyczny: samopoczucie, choroby, leczenie.'
-  - 'Ucz się słów w zwrotach, nie pojedynczo: łatwiej je zapamiętać i użyć w zdaniu.'
-  - 'Na egzaminie słownictwo sprawdzają zadania z rozumienia tekstu i z uzupełniania luk.'
+  - "Objawy: *I've got a headache / a sore throat / a temperature*, *I feel sick* (mdli mnie, źle się czuję)."
+  - "Ból: *My leg hurts*, *I've got a pain in my back*, *-ache* w złożeniach: *toothache*, *stomachache*."
+  - 'U lekarza: *make an appointment*, *a prescription* (recepta), *take medicine*, *get better / recover*.'
+  - 'Zdrowy styl życia: *a balanced diet*, *get enough sleep*, *keep fit*, *avoid junk food*.'
 mistakes:
-  - 'Dosłowne tłumaczenie z polskiego, np. „make a photo” zamiast „take a photo”.'
-  - 'Mylenie podobnie brzmiących słów (np. „lose” i „loose”, „cook” i „cooker”).'
+  - "*My head is hurting me* brzmi nienaturalnie; mówimy *I've got a headache* albo *My head hurts*."
+  - '*take a medicine* w liczbie pojedynczej jako „łyknąć lek” jest rzadkie; zwykle *take medicine* albo *take a pill*.'
+  - '*receipt* zamiast *prescription*: receptę wypisuje lekarz, paragon dostajemy w sklepie.'
+  - "*I have fever* bez przedimka: *I have a fever* albo *I've got a temperature*."
 cards:
   - front: 'lekarstwo'
     back: 'medicine'
@@ -26,11 +29,13 @@ cards:
   - front: 'skręcić kostkę'
     back: 'to sprain an ankle'
 reviewed: false
-updatedAt: '2026-10-27'
+updatedAt: '2026-10-28'
 ---
 
-Najważniejsze słowa z tego działu masz w ściądze i na fiszkach (polski → angielski).
+Na egzaminie zdrowie to zwykle opis choroby (np. dlaczego nie było cię na spotkaniu) albo rada.
 
-**Przykład użycia:** _I have a headache and a high temperature. The doctor gave me a prescription._
+**Opis choroby.** _I'm sorry I couldn't come to your party. I had a terrible cold and a high temperature, so I stayed in bed for three days._
 
-**Jak się uczyć.** Codziennie przejrzyj fiszki z jednego działu. Do każdego nowego słowa ułóż jedno własne zdanie o sobie, np. o swoim domu albo szkole. Zdania „o sobie” zapamiętuje się najlepiej i przydają się w wypowiedzi pisemnej.
+**U lekarza.** _The doctor examined me and gave me a prescription. I'm taking the medicine and I'm getting better._
+
+**Rada.** _If you want to keep fit, you should sleep at least eight hours and avoid junk food._

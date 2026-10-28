@@ -10,12 +10,15 @@ cheatsheet:
     formula: 'homework'
 title: 'Słownictwo: szkoła'
 summary:
-  - 'Zakres tematyczny: przedmioty, oceny, życie szkolne.'
-  - 'Ucz się słów w zwrotach, nie pojedynczo: łatwiej je zapamiętać i użyć w zdaniu.'
-  - 'Na maturze słownictwo pojawia się w zadaniach na rozumienie, środki językowe i w wypowiedzi pisemnej.'
+  - Nazwy przedmiotów piszemy zwykle małą literą (*maths*, *history*), ale języki zawsze wielką (*English*, *Polish*).
+  - 'Egzaminy: *take an exam* (przystępować), *pass* (zdać), *fail* (oblać), *revise for an exam* (powtarzać).'
+  - 'Życie szkolne: *a break* (przerwa), *a timetable* (plan lekcji), *a school report* (świadectwo), *homework*.'
+  - 'Oceny w Wielkiej Brytanii to litery albo procenty: *get a good mark / grade*.'
 mistakes:
-  - 'Dosłowne tłumaczenie z polskiego, np. „make a photo” zamiast „take a photo”.'
-  - 'Mylenie podobnie brzmiących słów (np. „lose” i „loose”, „cook” i „cooker”).'
+  - '*pass an exam* w znaczeniu „podchodzić do egzaminu”: *pass* to zdać, a podchodzić to *take*.'
+  - '*make homework* albo *homeworks*: poprawnie *do homework*, bez liczby mnogiej.'
+  - '*learn to an exam*: poprawnie *study for an exam* albo *revise for an exam*.'
+  - '*teacher of maths* brzmi sztucznie; naturalnie *a maths teacher*.'
 cards:
   - front: 'przerwa'
     back: 'break'
@@ -26,11 +29,13 @@ cards:
   - front: 'ściągać'
     back: 'to cheat'
 reviewed: false
-updatedAt: '2026-10-27'
+updatedAt: '2026-10-28'
 ---
 
-Najważniejsze słowa z tego działu masz w ściądze i na fiszkach (polski → angielski).
+Szkoła to temat bliski, więc na egzaminie łatwo napisać o niej coś konkretnego.
 
-**Przykład użycia:** _I passed my maths exam. We have a twenty-minute break at eleven._
+**Mój plan dnia.** _My favourite subject is biology. We have it three times a week. During the long break we usually go to the school canteen._
 
-**Jak się uczyć.** Codziennie przejrzyj fiszki z jednego działu. Do każdego nowego słowa ułóż jedno własne zdanie o sobie, np. o swoim domu albo szkole. Zdania „o sobie” zapamiętuje się najlepiej i przydają się w wypowiedzi pisemnej.
+**Egzaminy.** _Next week I'm taking my maths exam. I've been revising for two weeks, so I hope I'll pass._ Pamiętaj: _take_ (podchodzę), _pass_ (zdaję), _fail_ (oblewam).
+
+**Zasady.** _At my school we mustn't use phones during lessons, but we don't have to wear uniforms._

@@ -10,12 +10,15 @@ cheatsheet:
     formula: 'arrival'
 title: 'Słownictwo: podróżowanie i turystyka'
 summary:
-  - 'Zakres tematyczny: środki transportu, wakacje, noclegi.'
-  - 'Ucz się słów w zwrotach, nie pojedynczo: łatwiej je zapamiętać i użyć w zdaniu.'
-  - 'Na maturze słownictwo pojawia się w zadaniach na rozumienie, środki językowe i w wypowiedzi pisemnej.'
+  - 'Środki transportu łączymy z *by*: *by train*, *by plane*, *by bus*, ale *on foot* (pieszo).'
+  - 'Podróż samolotem: *check in*, *boarding pass*, *gate*, *departure* (odlot), *arrival* (przylot), *delay* (opóźnienie).'
+  - 'Nocleg: *book a room*, *a single / double room*, *check in* (zameldować się), *check out* (wymeldować się).'
+  - 'Zwiedzanie: *go sightseeing*, *a guided tour*, *a souvenir*, *get lost* (zgubić się).'
 mistakes:
-  - 'Dosłowne tłumaczenie z polskiego, np. „make a photo” zamiast „take a photo”.'
-  - 'Mylenie podobnie brzmiących słów (np. „lose” i „loose”, „cook” i „cooker”).'
+  - '*by foot* zamiast *on foot*.'
+  - '*travel* jako rzeczownik policzalny (*a travel*): poprawnie *a trip* albo *a journey*.'
+  - '*go on holiday* a *go to holiday*: poprawnie *go on holiday*.'
+  - '*arrive to London*: przyjeżdżamy *in* do miasta i kraju (*arrive in London*) oraz *at* do budynku (*arrive at the station*).'
 cards:
   - front: 'bagaż'
     back: 'luggage'
@@ -26,11 +29,13 @@ cards:
   - front: 'zgubić się'
     back: 'to get lost'
 reviewed: false
-updatedAt: '2026-10-27'
+updatedAt: '2026-10-28'
 ---
 
-Najważniejsze słowa z tego działu masz w ściądze i na fiszkach (polski → angielski).
+Podróż to temat, który często pojawia się w e-mailu: opisujesz wyjazd albo planujesz go z kimś.
 
-**Przykład użycia:** _I booked a room for two nights. Our train leaves from platform three._
+**Opis wyjazdu.** _Last summer we went to Gdańsk by train. The journey took five hours, but it was comfortable. We stayed in a small hotel near the beach._
 
-**Jak się uczyć.** Codziennie przejrzyj fiszki z jednego działu. Do każdego nowego słowa ułóż jedno własne zdanie o sobie, np. o swoim domu albo szkole. Zdania „o sobie” zapamiętuje się najlepiej i przydają się w wypowiedzi pisemnej.
+**Coś poszło nie tak.** _Our flight was delayed for three hours, so we arrived in Rome late at night. Then we got lost on the way to the hotel!_
+
+**Plan.** _Next year I'm going to visit London. I want to go sightseeing and buy some souvenirs for my family._

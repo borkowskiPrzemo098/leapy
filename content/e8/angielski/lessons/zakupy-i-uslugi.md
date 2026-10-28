@@ -10,12 +10,15 @@ cheatsheet:
     formula: 'to try on'
 title: 'Słownictwo: zakupy i usługi'
 summary:
-  - 'Zakres tematyczny: sklepy, ceny, reklamacje.'
-  - 'Ucz się słów w zwrotach, nie pojedynczo: łatwiej je zapamiętać i użyć w zdaniu.'
-  - 'Na egzaminie słownictwo sprawdzają zadania z rozumienia tekstu i z uzupełniania luk.'
+  - "Sklepy: *a supermarket*, *a chemist's* (drogeria/apteka), *a baker's*, *a shopping centre*, *online shop*."
+  - 'W sklepie: *try on* (przymierzyć), *the fitting room* (przymierzalnia), *size*, *the checkout* (kasa).'
+  - 'Pieniądze: *cost*, *pay for*, *a discount* (zniżka), *on sale* (na wyprzedaży), *a bargain* (okazja).'
+  - 'Reklamacja: *return*, *exchange* (wymienić), *a refund* (zwrot pieniędzy), *the receipt* (paragon).'
 mistakes:
-  - 'Dosłowne tłumaczenie z polskiego, np. „make a photo” zamiast „take a photo”.'
-  - 'Mylenie podobnie brzmiących słów (np. „lose” i „loose”, „cook” i „cooker”).'
+  - '*pay the shoes*: płacimy *for* coś (*I paid 100 zł for the shoes*).'
+  - '*recipe* zamiast *receipt*: *recipe* to przepis kulinarny, paragon to *receipt*.'
+  - '*How much it costs?*: w pytaniu szyk pytający, *How much does it cost?*'
+  - '*borrow* i *lend* zamieniane: *borrow* to pożyczyć od kogoś, *lend* to pożyczyć komuś.'
 cards:
   - front: 'zwrócić towar'
     back: 'to return / to take back'
@@ -26,11 +29,13 @@ cards:
   - front: 'drogi'
     back: 'expensive'
 reviewed: false
-updatedAt: '2026-10-27'
+updatedAt: '2026-10-28'
 ---
 
-Najważniejsze słowa z tego działu masz w ściądze i na fiszkach (polski → angielski).
+Zakupy często pojawiają się w dialogach i w e-mailach z reklamacją.
 
-**Przykład użycia:** _Can I try on this jacket? I would like to return it — here is the receipt._
+**W sklepie.** _Excuse me, can I try on this jacket in a smaller size? — Of course, the fitting room is over there._
 
-**Jak się uczyć.** Codziennie przejrzyj fiszki z jednego działu. Do każdego nowego słowa ułóż jedno własne zdanie o sobie, np. o swoim domu albo szkole. Zdania „o sobie” zapamiętuje się najlepiej i przydają się w wypowiedzi pisemnej.
+**Okazja.** _These trainers were on sale with a 30% discount. They were a real bargain!_
+
+**Reklamacja.** _I bought these headphones last week, but they don't work. I'd like a refund, please. Here is the receipt._ Formalnie w e-mailu: _I would be grateful if you could refund the money._

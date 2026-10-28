@@ -10,12 +10,15 @@ cheatsheet:
     formula: 'to argue'
 title: 'Słownictwo: życie prywatne'
 summary:
-  - 'Zakres tematyczny: rodzina, przyjaciele, czas wolny, święta.'
-  - 'Ucz się słów w zwrotach, nie pojedynczo: łatwiej je zapamiętać i użyć w zdaniu.'
-  - 'Na egzaminie słownictwo sprawdzają zadania z rozumienia tekstu i z uzupełniania luk.'
+  - 'Rodzina: *parents*, *siblings* (rodzeństwo), *cousin* (kuzyn/kuzynka), *grandparents*, *an only child* (jedynak/jedynaczka).'
+  - 'Relacje: *get on (well) with* (dogadywać się), *argue* (kłócić się), *make up* (pogodzić się), *fall out* (pokłócić się na dłużej).'
+  - 'Czas wolny: *spend time with*, *hang out with friends*, *go out*, *stay in* (zostać w domu).'
+  - 'Święta i uroczystości: *a birthday party*, *a wedding* (ślub, wesele), *celebrate*, *a present* (prezent).'
 mistakes:
-  - 'Dosłowne tłumaczenie z polskiego, np. „make a photo” zamiast „take a photo”.'
-  - 'Mylenie podobnie brzmiących słów (np. „lose” i „loose”, „cook” i „cooker”).'
+  - '*I have 15 years*: wiek podajemy z *be*, *I am 15 (years old)*.'
+  - "*I'm married with Tom*: poprawnie *married to Tom*, a pobrać się to *get married*."
+  - '*spend time on friends*: z ludźmi *spend time with*, a *on* łączy się z czynnością (*spend time on homework*).'
+  - '*family are* a *family is*: w brytyjskim angielskim możliwe oba, ale w jednym tekście trzymaj się jednej formy.'
 cards:
   - front: 'spędzać czas'
     back: 'to spend time'
@@ -26,11 +29,13 @@ cards:
   - front: 'hobby'
     back: 'hobby'
 reviewed: false
-updatedAt: '2026-10-27'
+updatedAt: '2026-10-28'
 ---
 
-Najważniejsze słowa z tego działu masz w ściądze i na fiszkach (polski → angielski).
+Życie prywatne to najczęstszy temat e-maila do kolegi: zaproszenie, opis imprezy, opowieść o rodzinie.
 
-**Przykład użycia:** _I get on well with my cousin. We spend time together at weekends._
+**Rodzina.** _I've got one brother and no sisters. I get on well with him, although we sometimes argue about computer games._
 
-**Jak się uczyć.** Codziennie przejrzyj fiszki z jednego działu. Do każdego nowego słowa ułóż jedno własne zdanie o sobie, np. o swoim domu albo szkole. Zdania „o sobie” zapamiętuje się najlepiej i przydają się w wypowiedzi pisemnej.
+**Uroczystość.** _Last Saturday my cousin got married. The wedding was in a small village and we celebrated until midnight._
+
+**Zaproszenie.** _I'm having a birthday party on Friday. Would you like to come? We're going to watch a film and eat pizza._

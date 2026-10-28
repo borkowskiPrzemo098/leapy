@@ -10,12 +10,15 @@ cheatsheet:
     formula: 'shy'
 title: 'Słownictwo: człowiek'
 summary:
-  - 'Zakres tematyczny: wygląd, cechy charakteru, uczucia.'
-  - 'Ucz się słów w zwrotach, nie pojedynczo: łatwiej je zapamiętać i użyć w zdaniu.'
-  - 'Na egzaminie słownictwo sprawdzają zadania z rozumienia tekstu i z uzupełniania luk.'
+  - Wygląd opisujemy przez *be* (*She is tall*) albo *have got* (*He has got curly hair*).
+  - 'Kolejność przymiotników przed rzeczownikiem: rozmiar, wiek, kolor: *long dark hair*, *a tall young man*.'
+  - 'Cechy charakteru często mają pary przeciwieństw: *shy – outgoing*, *lazy – hard-working*, *generous – mean*.'
+  - Uczucia opisujemy przymiotnikami na *-ed* (*I'm bored*), a to, co je wywołuje, na *-ing* (*The film is boring*).
 mistakes:
-  - 'Dosłowne tłumaczenie z polskiego, np. „make a photo” zamiast „take a photo”.'
-  - 'Mylenie podobnie brzmiących słów (np. „lose” i „loose”, „cook” i „cooker”).'
+  - '*I am boring* zamiast *I am bored*, gdy mówimy, że się nudzimy.'
+  - '*nervous* w znaczeniu „zły”: *nervous* to „zdenerwowany, spięty” (np. przed egzaminem), a „zły” to *angry*.'
+  - '*sympathetic* w znaczeniu „sympatyczny”: to „współczujący”. Miły człowiek to *nice*, *friendly*, *kind*.'
+  - '*She has long hairs*: włosy na głowie to niepoliczalne *hair*; *hairs* to pojedyncze włoski.'
 cards:
   - front: 'zazdrosny'
     back: 'jealous'
@@ -26,11 +29,13 @@ cards:
   - front: 'leniwy'
     back: 'lazy'
 reviewed: false
-updatedAt: '2026-10-27'
+updatedAt: '2026-10-28'
 ---
 
-Najważniejsze słowa z tego działu masz w ściądze i na fiszkach (polski → angielski).
+W opisie osoby zwykle łączymy trzy rzeczy: wygląd, charakter i to, jak ktoś się czuje.
 
-**Przykład użycia:** _He is tall and has curly hair. She is kind but a bit shy._
+**Wygląd.** _My best friend is quite tall and slim. She has got long dark hair and green eyes._ Do wzrostu i budowy używamy _be_, do włosów i oczu _have got_.
 
-**Jak się uczyć.** Codziennie przejrzyj fiszki z jednego działu. Do każdego nowego słowa ułóż jedno własne zdanie o sobie, np. o swoim domu albo szkole. Zdania „o sobie” zapamiętuje się najlepiej i przydają się w wypowiedzi pisemnej.
+**Charakter z dowodem.** Na egzaminie lepiej brzmi cecha z przykładem niż sama cecha: _Tom is very generous — he always shares his snacks with everyone._
+
+**Uczucia.** _I was nervous before the test, but I felt proud when I passed._ Zapamiętaj pary: _bored – boring_, _tired – tiring_, _excited – exciting_, _interested – interesting_.
