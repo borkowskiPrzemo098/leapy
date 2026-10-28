@@ -77,7 +77,7 @@
       "answer": {
         "value": -6
       },
-      "explanation": "$f'(3)=6+b=0$, $b=-6$.",
+      "explanation": "1. W punkcie minimum funkcji różniczkowalnej pochodna jest równa $0$: $f'(x)=2x+b$, więc $f'(3)=6+b=0$.\n2. $b=-6$. Sprawdzenie: $x^{2}-6x$ to parabola z wierzchołkiem w $x=3$.",
       "tags": ["pochodna", "parametr"]
     },
     {
@@ -90,7 +90,7 @@
         "Pochodna funkcji stałej jest równa $0$."
       ],
       "answer": [false, true],
-      "explanation": "1. Np. $f(x)=x^{3}$ w $0$: $f'=0$, ale brak ekstremum. Fałsz.\n2. Prawda.",
+      "explanation": "1. Np. $f(x)=x^{3}$: $f'(0)=0$, ale pochodna nie zmienia znaku w $0$ (jest nieujemna), więc ekstremum nie ma. Fałsz.\n2. Funkcja stała się nie zmienia, więc jej tempo zmian, czyli pochodna, jest równe $0$. Prawda.",
       "tags": ["pochodna"]
     },
     {

@@ -7,7 +7,7 @@
       "prompt": "*I'm really good ___ maths.*",
       "options": ["at", "in", "on", "for"],
       "answer": 0,
-      "explanation": "Stały zwrot: *good at*.",
+      "explanation": "1. „Być dobrym w czymś” to stałe połączenie good at.\n2. Przyimka nie tłumaczymy z polskiego „w”, dlatego good in jest błędem.",
       "tags": ["przyimki"]
     },
     {
@@ -17,7 +17,7 @@
       "prompt": "*She is interested ___ photography.*",
       "options": ["in", "at", "on", "about"],
       "answer": 0,
-      "explanation": "*interested in*.",
+      "explanation": "1. „Interesować się czymś” to be interested in.\n2. To stałe połączenie: inne przyimki (at, on, about) nie pasują.",
       "tags": ["przyimki"]
     },
     {
@@ -36,7 +36,7 @@
       "difficulty": 3,
       "prompt": "Uzupełnij formą słowa z nawiasu: *The staff were very ___ (help).*",
       "answer": ["helpful"],
-      "explanation": "Przymiotnik od *help*: *helpful*.",
+      "explanation": "1. Po very potrzebny jest przymiotnik. Od help tworzymy go przyrostkiem -ful: helpful („pomocny”).\n2. helpless znaczyłoby „bezradny”, czyli odwrotnie.",
       "tags": ["slowotworstwo"]
     },
     {
@@ -56,7 +56,7 @@
       "prompt": "*We are waiting ___ the bus.*",
       "options": ["for", "on", "to", "at"],
       "answer": 0,
-      "explanation": "*wait for*.",
+      "explanation": "1. „Czekać na coś” to wait for.\n2. Polskie „na” podpowiada on, ale w tym połączeniu angielski używa for.",
       "tags": ["przyimki"]
     },
     {
@@ -66,7 +66,7 @@
       "prompt": "*My sister is afraid ___ spiders.*",
       "options": ["of", "from", "about", "with"],
       "answer": 0,
-      "explanation": "*afraid of*.",
+      "explanation": "1. „Bać się czegoś” to be afraid of.\n2. Polskie „boi się od…” nie istnieje, a from to typowy błąd z dosłownego tłumaczenia.",
       "tags": ["przyimki"]
     }
   ],

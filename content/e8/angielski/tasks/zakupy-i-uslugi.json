@@ -7,7 +7,7 @@
       "prompt": "W sklepie z ubraniami: *Can I ___ this jacket?*",
       "options": ["try on", "try out", "put off", "take up"],
       "answer": 0,
-      "explanation": "Przymierzyć ubranie: *try on*.",
+      "explanation": "1. Przymierzyć ubranie to try on.\n2. try out to wypróbować (np. sprzęt), put off to odłożyć na później, take up to zacząć (hobby).",
       "tags": ["slownictwo", "zakupy"]
     },
     {

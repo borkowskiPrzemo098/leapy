@@ -17,7 +17,7 @@
       "prompt": "*Did you ___ the film yesterday?*",
       "options": ["see", "saw", "seen", "seeing"],
       "answer": 0,
-      "explanation": "Po *did* forma podstawowa.",
+      "explanation": "1. W pytaniu w Past Simple czas pokazuje did, więc czasownik zostaje w formie podstawowej: see.\n2. saw byłoby podwójnym zaznaczeniem przeszłości (did + saw), a seen to III forma, potrzebna np. w Present Perfect.",
       "tags": ["gramatyka", "past-simple"]
     },
     {

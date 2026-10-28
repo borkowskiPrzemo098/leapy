@@ -16,7 +16,7 @@
       "prompt": "*I last saw her two years ago.* → *I ___ her for two years.*",
       "options": ["haven't seen", "didn't see", "don't see", "hadn't saw"],
       "answer": 0,
-      "explanation": "*haven't seen … for*.",
+      "explanation": "1. Ostatni raz widziałem ją dwa lata temu, czyli od dwóch lat jej nie widzę: I haven't seen her for two years.\n2. Present Perfect łączy przeszłość z teraz; Past Simple (didn't see) tego nie wyraża.",
       "tags": ["transformacje", "present-perfect"]
     },
     {

@@ -20,7 +20,7 @@
         "value": 18,
         "unit": "zł"
       },
-      "explanation": "$12+6=18$ zł.",
+      "explanation": "1. Zeszyty: $3\\cdot 4=12$ zł, długopisy: $2\\cdot 3=6$ zł.\n2. Razem: $12+6=18$ zł.",
       "verify": "3 * 4 + 2 * 3",
       "tags": ["zakupy"]
     },
@@ -32,7 +32,7 @@
       "answer": {
         "value": 40
       },
-      "explanation": "$x+2x=60$, $x=20$, Ania: $40$.",
+      "explanation": "1. Bartek ma $x$ naklejek, Ania $2x$. Razem: $x+2x=60$.\n2. $3x=60$, $x=20$, więc Ania ma $2\\cdot 20=40$.",
       "tags": ["rownania"]
     },
     {
@@ -69,7 +69,7 @@
       "answer": {
         "value": 13
       },
-      "explanation": "$195:15=13$.",
+      "explanation": "1. Liczba tygodni to cena podzielona przez tygodniową kwotę.\n2. $195:15=13$ tygodni.",
       "verify": "195 / 15",
       "tags": ["dzielenie"]
     },
@@ -82,7 +82,7 @@
         "value": 10,
         "unit": "zł"
       },
-      "explanation": "$3x+2(x+2)=54$, $5x=50$, $x=10$.",
+      "explanation": "1. Kilogram truskawek: $x$ zł, czereśni: $x+2$ zł. Zakupy: $3x+2(x+2)=54$.\n2. $5x+4=54$, $5x=50$, $x=10$ zł.",
       "tags": ["rownania"]
     },
     {
@@ -94,7 +94,7 @@
         "value": 35,
         "unit": "min"
       },
-      "explanation": "$17{:}45+1{:}50=19{:}35$.",
+      "explanation": "1. Dodajemy osobno godziny i minuty: $17{:}45+1$ h $=18{:}45$, a $18{:}45+50$ min $=19{:}35$.\n2. To $35$ minut po $19{:}00$.",
       "verify": "45 + 50 - 60",
       "tags": ["czas"]
     },
@@ -119,7 +119,7 @@
       "answer": {
         "value": 12
       },
-      "explanation": "$3\\cdot 24=72$, $72:6=12$.",
+      "explanation": "1. Trzy paczki to $3\\cdot 24=72$ cukierki.\n2. Na $6$ dzieci po równo: $72:6=12$.",
       "verify": "3 * 24 / 6",
       "tags": ["dzielenie"]
     },
@@ -130,7 +130,7 @@
       "prompt": "Pole kwadratowej działki to $400\\ \\text{m}^{2}$. Ile metrów siatki potrzeba na ogrodzenie całej działki?",
       "options": ["$80$ m", "$100$ m", "$40$ m", "$160$ m"],
       "answer": 0,
-      "explanation": "Bok: $20$ m, obwód: $80$ m.",
+      "explanation": "1. Pole kwadratu to $a^{2}=400$, więc bok $a=20$ m.\n2. Siatka idzie dookoła działki, czyli długość to obwód: $4\\cdot 20=80$ m.",
       "tags": ["geometria"]
     },
     {

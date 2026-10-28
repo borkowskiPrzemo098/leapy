@@ -52,7 +52,7 @@
       "answer": {
         "value": 96
       },
-      "explanation": "$36+60=96$.",
+      "explanation": "1. Pole podstawy (kwadrat): $6^{2}=36$. Pole jednej ściany bocznej (trójkąt): $\\frac{1}{2}\\cdot 6\\cdot 5=15$.\n2. Cztery ściany boczne: $4\\cdot 15=60$. Razem z podstawą: $36+60=96$.",
       "verify": "36 + 60",
       "tags": ["pole-powierzchni"]
     },
@@ -108,7 +108,7 @@
       "answer": {
         "value": 6
       },
-      "explanation": "Podstawa i $5$ ścian bocznych.",
+      "explanation": "1. Ostrosłup ma jedną podstawę i tyle ścian bocznych, ile boków ma podstawa.\n2. Podstawa pięciokątna: $1+5=6$ ścian.",
       "tags": ["elementy-bryl"]
     },
     {

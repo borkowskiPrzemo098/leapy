@@ -7,7 +7,7 @@
       "prompt": "*The ___ clapped at the end of the concert.*",
       "options": ["audience", "director", "stage", "ticket"],
       "answer": 0,
-      "explanation": "Klaszcze widownia: *audience*.",
+      "explanation": "1. Na koniec koncertu klaszczą ludzie, którzy go oglądali, czyli widownia: audience.\n2. director to reżyser, stage to scena, ticket to bilet: żadne z nich nie klaszcze.",
       "tags": ["slownictwo", "kultura"]
     },
     {
@@ -17,7 +17,7 @@
       "prompt": "*I read a ___ of the film before I saw it. It said the film was great.*",
       "options": ["review", "view", "revision", "preview"],
       "answer": 0,
-      "explanation": "Recenzja: *review*.",
+      "explanation": "1. Tekst, który ocenia film („It said the film was great”), to recenzja: review.\n2. preview to zapowiedź lub pokaz przedpremierowy, revision to powtórka materiału.",
       "tags": ["slownictwo", "kultura"]
     }
   ],

@@ -60,7 +60,7 @@
         "ma rozwiązanie $x=\\frac{\\pi}{2}$"
       ],
       "answer": 0,
-      "explanation": "$|\\sin x|\\le 1$.",
+      "explanation": "1. Sinus przyjmuje tylko wartości z przedziału $[-1,1]$.\n2. $2$ leży poza tym przedziałem, więc równanie nie ma rozwiązań.",
       "tags": ["rownania-trygonometryczne"]
     },
     {
@@ -75,7 +75,7 @@
         "$x=k\\pi$"
       ],
       "answer": 0,
-      "explanation": "Okres tangensa to $\\pi$.",
+      "explanation": "1. $\\operatorname{tg}\\frac{\\pi}{4}=1$, a tangens ma okres $\\pi$.\n2. Wszystkie rozwiązania: $x=\\frac{\\pi}{4}+k\\pi$, $k\\in\\mathbb{Z}$.",
       "tags": ["rownania-trygonometryczne"]
     },
     {
@@ -138,7 +138,7 @@
       "answer": {
         "value": 1
       },
-      "explanation": "$x=\\pi$.",
+      "explanation": "1. Na okręgu jednostkowym $\\cos x=-1$ w punkcie $(-1,0)$, czyli dla kąta półpełnego.\n2. Najmniejsze dodatnie rozwiązanie: $x=\\pi$.",
       "tags": ["rownania-trygonometryczne"]
     },
     {

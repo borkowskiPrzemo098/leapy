@@ -33,7 +33,7 @@
       "answer": {
         "value": 9
       },
-      "explanation": "$\\Delta=36-4m=0$, $m=9$.",
+      "explanation": "1. Równanie kwadratowe ma dokładnie jedno rozwiązanie, gdy $\\Delta=0$.\n2. $\\Delta=36-4m=0$, więc $m=9$ (wtedy $x^{2}+6x+9=(x+3)^{2}$).",
       "tags": ["parametr", "delta"]
     },
     {
@@ -74,7 +74,7 @@
       "prompt": "Nierówność $x^{2}+mx+4>0$ jest spełniona dla każdego $x\\in\\mathbb{R}$ wtedy i tylko wtedy, gdy",
       "options": ["$m\\in(-4,\\ 4)$", "$m\\in[-4,\\ 4]$", "$m>4$", "$m<-4$"],
       "answer": 0,
-      "explanation": "$a=1>0$ i $\\Delta=m^{2}-16<0$.",
+      "explanation": "1. Parabola o ramionach w górę ($a=1>0$) leży cała nad osią $Ox$, gdy nie ma miejsc zerowych: $\\Delta<0$.\n2. $\\Delta=m^{2}-16<0\\iff m\\in(-4,4)$. Dla $m=\\pm 4$ jest $\\Delta=0$ i wartość $0$, więc końce odpadają.",
       "tags": ["parametr", "nierownosci"]
     },
     {
@@ -105,7 +105,7 @@
       "prompt": "Równanie $x^{2}-2x+m=0$ nie ma rozwiązań rzeczywistych dla",
       "options": ["$m>1$", "$m<1$", "$m=1$", "$m\\ge 1$"],
       "answer": 0,
-      "explanation": "$\\Delta=4-4m<0\\iff m>1$.",
+      "explanation": "1. Równanie kwadratowe nie ma rozwiązań rzeczywistych, gdy $\\Delta<0$.\n2. $\\Delta=4-4m<0\\iff m>1$.",
       "tags": ["parametr", "delta"]
     },
     {

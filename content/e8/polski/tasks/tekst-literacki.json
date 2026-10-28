@@ -131,7 +131,7 @@
       "prompt": "Przeczytaj fragment.\n\n> Stary zegar wybił północ. Dwanaście uderzeń rozeszło się po pustym domu, jakby ktoś liczył ostatnie chwile.\n\nO której godzinie dzieje się akcja?",
       "options": ["o północy", "w południe", "o świcie", "wieczorem, przed snem"],
       "answer": 0,
-      "explanation": "Zegar „wybił północ”.",
+      "explanation": "1. W tekście jest napisane wprost: zegar „wybił północ”, a dwanaście uderzeń to właśnie dwunasta.\n2. Nastrój i ciemność nie zmieniają godziny podanej w tekście.",
       "tags": ["rozumienie"]
     },
     {

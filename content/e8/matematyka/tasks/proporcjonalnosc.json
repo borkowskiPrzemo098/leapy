@@ -46,7 +46,7 @@
       "answer": {
         "value": 8
       },
-      "explanation": "$3x=24$, $x=8$.",
+      "explanation": "1. W proporcji iloczyn wyrazów skrajnych równa się iloczynowi środkowych: $3x=6\\cdot 4$.\n2. $3x=24$, więc $x=8$.",
       "tags": ["proporcje"]
     },
     {
@@ -73,7 +73,7 @@
         "value": 450,
         "unit": "g"
       },
-      "explanation": "$300:4\\cdot 6=450$ g.",
+      "explanation": "1. Ilość mąki jest wprost proporcjonalna do liczby porcji. Na $1$ porcję: $300:4=75$ g.\n2. Na $6$ porcji: $6\\cdot 75=450$ g.",
       "verify": "300 / 4 * 6",
       "tags": ["proporcjonalnosc-prosta"]
     },
@@ -86,7 +86,7 @@
         "value": 21,
         "unit": "l"
       },
-      "explanation": "$6\\cdot 3{,}5=21$ l.",
+      "explanation": "1. $350$ km to $3{,}5$ razy po $100$ km.\n2. Spalanie rośnie proporcjonalnie: $3{,}5\\cdot 6=21$ l.",
       "verify": "6 * 3.5",
       "tags": ["proporcjonalnosc-prosta"]
     },

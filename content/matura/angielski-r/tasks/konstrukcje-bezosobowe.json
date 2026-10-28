@@ -7,7 +7,7 @@
       "prompt": "*It is said ___ he is the richest man in town.*",
       "options": ["that", "to", "what", "him"],
       "answer": 0,
-      "explanation": "*It is said that…*",
+      "explanation": "1. Po It is said stoi that i całe zdanie: It is said that he is…\n2. to wymagałoby podmiotu osobowego: He is said to be….",
       "tags": ["gramatyka", "bezosobowe"]
     },
     {

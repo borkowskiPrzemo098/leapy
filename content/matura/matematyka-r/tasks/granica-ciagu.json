@@ -40,7 +40,7 @@
       "prompt": "$\\lim_{n\\to\\infty}\\left(\\frac{2}{3}\\right)^{n}$ jest równa",
       "options": ["$0$", "$1$", "$\\frac{2}{3}$", "$\\infty$"],
       "answer": 0,
-      "explanation": "$|q|<1$, więc $q^{n}\\to 0$.",
+      "explanation": "1. Gdy $|q|<1$, kolejne potęgi $q^{n}$ są coraz mniejsze i dążą do $0$.\n2. $\\left|\\frac{2}{3}\\right|<1$, więc granica to $0$.",
       "tags": ["granica"]
     },
     {
@@ -85,7 +85,7 @@
         "Ciąg $a_{n}=(-1)^{n}$ ma granicę."
       ],
       "answer": [true, false],
-      "explanation": "1. Prawda.\n2. Wyrazy skaczą między $-1$ a $1$. Fałsz.",
+      "explanation": "1. To definicja liczby $e\\approx 2{,}718$. Prawda.\n2. Wyrazy $(-1)^{n}$ skaczą na przemian między $-1$ a $1$ i nie zbliżają się do żadnej liczby. Fałsz.",
       "tags": ["granica"]
     },
     {

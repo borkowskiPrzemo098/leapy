@@ -7,7 +7,7 @@
       "prompt": "W zdaniu „Wczoraj mój brat przeczytał ciekawą książkę” podmiotem jest",
       "options": ["brat", "książkę", "wczoraj", "mój"],
       "answer": 0,
-      "explanation": "Kto przeczytał? Brat.",
+      "explanation": "1. Podmiot odpowiada na pytanie kto? co? wykonuje czynność. Kto przeczytał? Brat.\n2. „Książkę” odpowiada na pytanie co? przeczytał, więc to dopełnienie, a „wczoraj” to okolicznik czasu.",
       "tags": ["czesci-zdania"]
     },
     {

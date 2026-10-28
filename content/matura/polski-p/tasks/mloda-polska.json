@@ -12,7 +12,7 @@
         "Kazimierz Przerwa-Tetmajer"
       ],
       "answer": 0,
-      "explanation": "„Wesele” napisał Wyspiański.",
+      "explanation": "1. „Wesele” (1901) napisał Stanisław Wyspiański.\n2. Reymont to autor „Chłopów”, Żeromski m.in. „Przedwiośnia”.",
       "tags": ["mloda-polska"]
     },
     {
@@ -37,7 +37,7 @@
       "prompt": "Nagrodę Nobla za „Chłopów” otrzymał",
       "options": ["Władysław Reymont", "Henryk Sienkiewicz", "Czesław Miłosz", "Bolesław Prus"],
       "answer": 0,
-      "explanation": "Reymont, 1924.",
+      "explanation": "1. Nagrodę Nobla za „Chłopów” otrzymał w 1924 roku Władysław Reymont.\n2. Sienkiewicz też dostał Nobla, ale w 1905 roku, za całokształt twórczości (m.in. „Quo vadis”).",
       "tags": ["mloda-polska"]
     }
   ],

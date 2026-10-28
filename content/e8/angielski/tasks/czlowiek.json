@@ -16,7 +16,7 @@
       "difficulty": 2,
       "prompt": "Przetłumacz na angielski: „życzliwy” (o człowieku).",
       "answer": ["kind", "friendly"],
-      "explanation": "*kind* (też *friendly*).",
+      "explanation": "1. „Życzliwy” to ktoś miły i dobry dla innych: kind.\n2. friendly („przyjazny”) też oddaje sens, dlatego obie odpowiedzi są przyjmowane.",
       "tags": ["slownictwo", "charakter"]
     }
   ],

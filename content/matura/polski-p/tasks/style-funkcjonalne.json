@@ -42,7 +42,7 @@
       "prompt": "„Fajnie, że wpadłeś, siadaj!” to przykład stylu",
       "options": ["potocznego", "naukowego", "urzędowego", "publicystycznego"],
       "answer": 0,
-      "explanation": "Swobodna rozmowa codzienna.",
+      "explanation": "1. „Fajnie”, swobodny ton i zwrot do rozmówcy to cechy stylu potocznego.\n2. Styl naukowy, urzędowy i publicystyczny są staranniejsze i bardziej oficjalne.",
       "tags": ["style"]
     },
     {

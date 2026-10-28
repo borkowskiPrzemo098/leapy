@@ -30,7 +30,7 @@
       "answer": {
         "value": 0.5
       },
-      "explanation": "$\\frac{0{,}2}{0{,}4}=0{,}5$.",
+      "explanation": "1. Prawdopodobieństwo warunkowe: $P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}$.\n2. $\\frac{0{,}2}{0{,}4}=0{,}5$.",
       "verify": "0.2 / 0.4",
       "tags": ["prawdopodobienstwo-warunkowe"]
     },
@@ -41,7 +41,7 @@
       "prompt": "Dla danych $P(A)=0{,}5$, $P(B)=0{,}4$, $P(A\\cap B)=0{,}2$ zdarzenia $A$ i $B$ są",
       "options": ["niezależne", "zależne", "rozłączne", "przeciwne"],
       "answer": 0,
-      "explanation": "$P(A)P(B)=0{,}2=P(A\\cap B)$.",
+      "explanation": "1. Zdarzenia są niezależne, gdy $P(A\\cap B)=P(A)\\cdot P(B)$.\n2. $0{,}5\\cdot 0{,}4=0{,}2=P(A\\cap B)$, więc są niezależne. Nie są rozłączne, bo $P(A\\cap B)\\neq 0$.",
       "tags": ["niezaleznosc"]
     },
     {
@@ -104,7 +104,7 @@
         "dodaj wyniki gałęzi sprzyjających"
       ],
       "answer": [0, 1, 2, 3],
-      "explanation": "To schemat drzewka.",
+      "explanation": "1. Prawdopodobieństwo całkowite liczymy na drzewku: najpierw rozgałęzienie (np. wybór urny), potem prawdopodobieństwa w każdej gałęzi.\n2. Mnożymy wzdłuż gałęzi, a wyniki gałęzi sprzyjających dodajemy.",
       "tags": ["prawdopodobienstwo-calkowite"]
     }
   ],

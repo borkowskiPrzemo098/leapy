@@ -90,7 +90,7 @@
       "prompt": "Oceń prawdziwość zdań (dla wszystkich liczb rzeczywistych).",
       "options": ["$|a+b|\\le|a|+|b|$", "$|a-b|=|a|-|b|$", "$|ab|=|a|\\cdot|b|$"],
       "answer": [true, false, true],
-      "explanation": "1. Nierówność trójkąta. Prawda.\n2. Np. $a=1$, $b=-1$: $2\\neq 0$. Fałsz.\n3. Prawda.",
+      "explanation": "1. Nierówność trójkąta: odległość $a+b$ od zera nie przekracza sumy odległości $a$ i $b$. Prawda.\n2. Dla $a=1$, $b=-1$: $|a-b|=2$, a $|a|-|b|=0$. Fałsz.\n3. Wartość bezwzględna iloczynu to iloczyn wartości bezwzględnych (znak się „gubi”, długości się mnożą). Prawda.",
       "tags": ["modul"]
     },
     {

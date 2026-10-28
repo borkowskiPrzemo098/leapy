@@ -72,7 +72,7 @@
       "prompt": "Okres podstawowy funkcji $f(x)=\\sin 2x$ jest równy",
       "options": ["$\\pi$", "$2\\pi$", "$\\frac{\\pi}{2}$", "$4\\pi$"],
       "answer": 0,
-      "explanation": "Okres $\\frac{2\\pi}{2}=\\pi$.",
+      "explanation": "1. Funkcja $\\sin(bx)$ ma okres $\\frac{2\\pi}{|b|}$, bo argument rośnie $b$ razy szybciej.\n2. Dla $b=2$: $\\frac{2\\pi}{2}=\\pi$.",
       "tags": ["trygonometria", "okresowosc"]
     },
     {
@@ -98,7 +98,7 @@
       "prompt": "W której ćwiartce sinus jest ujemny, a cosinus dodatni?",
       "options": ["IV", "I", "II", "III"],
       "answer": 0,
-      "explanation": "W IV ćwiartce $y<0$, $x>0$.",
+      "explanation": "1. Na okręgu jednostkowym $\\cos x$ to współrzędna $x$, a $\\sin x$ to współrzędna $y$.\n2. $\\sin<0$ i $\\cos>0$ oznacza $y<0$ i $x>0$, czyli IV ćwiartkę.",
       "tags": ["trygonometria", "znaki"]
     },
     {
@@ -123,7 +123,7 @@
         "$\\sin^{2}x+\\cos^{2}x=1$ dla każdego $x$"
       ],
       "answer": [true, false, true],
-      "explanation": "1. Wzór redukcyjny. Prawda.\n2. Cosinus jest parzysty: $\\cos(-x)=\\cos x$. Fałsz.\n3. Prawda.",
+      "explanation": "1. Wzór redukcyjny: kąty $x$ i $\\pi-x$ mają ten sam sinus. Prawda.\n2. Cosinus jest funkcją parzystą: $\\cos(-x)=\\cos x$, a nie $-\\cos x$. Fałsz.\n3. Jedynka trygonometryczna działa dla każdego kąta, bo punkt $(\\cos x,\\sin x)$ leży na okręgu o promieniu $1$. Prawda.",
       "tags": ["trygonometria"]
     },
     {
@@ -155,7 +155,7 @@
       "prompt": "Wyrażenie $\\sin x\\cos x$ jest równe",
       "options": ["$\\frac{1}{2}\\sin 2x$", "$\\sin 2x$", "$2\\sin 2x$", "$\\cos 2x$"],
       "answer": 0,
-      "explanation": "$\\sin 2x=2\\sin x\\cos x$.",
+      "explanation": "1. Wzór na sinus podwojonego kąta: $\\sin 2x=2\\sin x\\cos x$.\n2. Dzielimy przez $2$: $\\sin x\\cos x=\\frac{1}{2}\\sin 2x$.",
       "tags": ["trygonometria", "podwojony-kat"]
     }
   ],

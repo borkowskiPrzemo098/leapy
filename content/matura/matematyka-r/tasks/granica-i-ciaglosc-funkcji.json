@@ -90,7 +90,7 @@
         "Funkcja ciągła w punkcie musi być w nim różniczkowalna."
       ],
       "answer": [true, false],
-      "explanation": "1. Prawda.\n2. Np. $|x|$ w $0$ jest ciągła, ale nieróżniczkowalna. Fałsz.",
+      "explanation": "1. Wielomian jest sumą iloczynów funkcji ciągłych, więc jest ciągły w każdym punkcie. Prawda.\n2. Np. $|x|$ jest ciągła w $0$, ale ma tam „ostrze”: pochodne jednostronne $-1$ i $1$ są różne, więc nie jest różniczkowalna. Fałsz.",
       "tags": ["ciaglosc"]
     },
     {

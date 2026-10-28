@@ -70,7 +70,7 @@
         "Artykuł nie potrzebuje tytułu."
       ],
       "answer": [true, false],
-      "explanation": "1. Prawda.\n2. Tytuł jest obowiązkowym elementem. Fałsz.",
+      "explanation": "1. Artykuł jest skierowany do czytelników, więc bezpośredni zwrot („Have you ever…?”) jest typowy i angażuje. Prawda.\n2. Tytuł to obowiązkowy element artykułu: przyciąga uwagę i odróżnia artykuł od listu. Fałsz.",
       "tags": ["artykul"]
     }
   ],

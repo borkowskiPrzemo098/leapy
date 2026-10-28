@@ -27,7 +27,7 @@
         "I look forward to your official reply."
       ],
       "answer": 0,
-      "explanation": "Nieformalny styl do kolegi.",
+      "explanation": "1. Do kolegi piszemy nieformalnie, więc pasuje swobodne Write back soon!.\n2. Yours faithfully, Dear Sir or Madam i oficjalna odpowiedź to zwroty z listów formalnych.",
       "tags": ["e-mail", "styl"]
     },
     {
@@ -95,7 +95,7 @@
         "Podział na akapity nie ma znaczenia."
       ],
       "answer": [true, false],
-      "explanation": "1. Prawda.\n2. Akapity poprawiają spójność tekstu. Fałsz.",
+      "explanation": "1. Egzaminator sprawdza, czy odniesiono się do każdego punktu polecenia; pominięty punkt obniża ocenę za treść. Prawda.\n2. Akapity pokazują, gdzie zaczyna się nowy punkt, więc poprawiają spójność i są brane pod uwagę. Fałsz.",
       "tags": ["e-mail"]
     }
   ],

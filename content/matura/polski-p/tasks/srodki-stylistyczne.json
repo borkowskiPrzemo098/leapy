@@ -17,7 +17,7 @@
       "prompt": "„Litwo! Ojczyzno moja!” to przykład",
       "options": ["apostrofy", "oksymoronu", "eufemizmu", "litoty"],
       "answer": 0,
-      "explanation": "Bezpośredni zwrot do Litwy.",
+      "explanation": "1. Narrator zwraca się bezpośrednio do Litwy, jak do osoby: to apostrofa.\n2. Oksymoron łączy wyrazy o sprzecznych znaczeniach, a eufemizm łagodzi przykre słowa.",
       "tags": ["srodki-stylistyczne"]
     },
     {
@@ -27,7 +27,7 @@
       "prompt": "Wyrażenie „morze krwi” w opisie bitwy to",
       "options": ["hiperbola", "oksymoron", "eufemizm", "anafora"],
       "answer": 0,
-      "explanation": "Przesada wzmacniająca obraz.",
+      "explanation": "1. Krew nie tworzy dosłownie morza: to przesada, która wzmacnia obraz okrucieństwa bitwy (hiperbola).\n2. W wyrażeniu nie ma sprzeczności (oksymoron) ani złagodzenia (eufemizm).",
       "tags": ["srodki-stylistyczne"]
     },
     {

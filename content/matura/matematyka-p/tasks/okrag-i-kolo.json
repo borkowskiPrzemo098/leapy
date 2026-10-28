@@ -19,7 +19,7 @@
       "prompt": "Długość okręgu o promieniu $7$ jest równa",
       "options": ["$14\\pi$", "$49\\pi$", "$7\\pi$", "$28\\pi$"],
       "answer": 0,
-      "explanation": "$L=2\\pi r=14\\pi$.",
+      "explanation": "1. Długość okręgu: $L=2\\pi r$.\n2. $L=2\\pi\\cdot 7=14\\pi$.",
       "verify": "2 * pi * 7",
       "tags": ["okrag"]
     },
@@ -28,7 +28,10 @@
       "type": "numeric",
       "difficulty": 2,
       "prompt": "Kąt środkowy oparty na łuku ma miarę $100^\\circ$. Oblicz miarę kąta wpisanego opartego na tym samym łuku (w stopniach).",
-      "answer": { "value": 50, "unit": "°" },
+      "answer": {
+        "value": 50,
+        "unit": "°"
+      },
       "explanation": "Kąt wpisany jest połową kąta środkowego: $50^\\circ$.",
       "verify": "100 / 2",
       "tags": ["okrag", "katy"]
@@ -49,7 +52,10 @@
       "type": "numeric",
       "difficulty": 2,
       "prompt": "Trójkąt $ABC$ jest wpisany w okrąg, a bok $AB$ jest średnicą. Oblicz miarę kąta $ACB$ (w stopniach).",
-      "answer": { "value": 90, "unit": "°" },
+      "answer": {
+        "value": 90,
+        "unit": "°"
+      },
       "explanation": "Kąt wpisany oparty na średnicy (półokręgu) jest prosty.",
       "tags": ["okrag", "katy"]
     },
@@ -58,7 +64,9 @@
       "type": "numeric",
       "difficulty": 3,
       "prompt": "Pole koła jest równe $16\\pi$. Oblicz obwód tego koła i podaj go jako wielokrotność $\\pi$ (wpisz samą liczbę przy $\\pi$).",
-      "answer": { "value": 8 },
+      "answer": {
+        "value": 8
+      },
       "explanation": "1. $\\pi r^{2}=16\\pi$, więc $r=4$.\n2. $L=2\\pi\\cdot 4=8\\pi$.",
       "tags": ["kolo"]
     },

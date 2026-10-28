@@ -32,7 +32,7 @@
       "prompt": "*— How about going to the cinema tonight? — ___*",
       "options": ["Sounds great!", "Yes, I go.", "I'm fine, thanks.", "Nice to meet you."],
       "answer": 0,
-      "explanation": "Reakcja na propozycję: zgoda.",
+      "explanation": "1. Ktoś proponuje kino, więc reagujemy na propozycję zgodą: Sounds great!.\n2. „Yes, I go” jest niepoprawne gramatycznie, a „I'm fine, thanks” odpowiada na pytanie, jak się czujemy.",
       "tags": ["funkcje-jezykowe"]
     },
     {
@@ -47,7 +47,7 @@
         "We studying together?"
       ],
       "answer": 0,
-      "explanation": "Propozycja: *Why don't we…?*",
+      "explanation": "1. Propozycję wspólnego działania wyrażamy przez Why don't we…?.\n2. W tym zwrocie szyk jest pytający (don't we), więc „Why we don't…” jest błędne.",
       "tags": ["funkcje-jezykowe"]
     },
     {
@@ -57,7 +57,7 @@
       "prompt": "Ktoś cię zaczepia na ulicy: *Excuse me, where is the station?* Nie wiesz. Co mówisz?",
       "options": ["I'm sorry, I'm not from here.", "You're welcome.", "Here you are.", "Me too."],
       "answer": 0,
-      "explanation": "Uprzejma odmowa informacji.",
+      "explanation": "1. Nie znamy drogi, więc uprzejmie odmawiamy z wyjaśnieniem: I'm sorry, I'm not from here.\n2. You're welcome odpowiada na podziękowanie, a Here you are mówimy, podając coś komuś.",
       "tags": ["funkcje-jezykowe"]
     },
     {
@@ -82,7 +82,7 @@
       "prompt": "*— Thank you for your help! — ___*",
       "options": ["You're welcome.", "I'm sorry.", "Congratulations.", "Bless you."],
       "answer": 0,
-      "explanation": "Odpowiedź na podziękowanie.",
+      "explanation": "1. Na podziękowanie odpowiadamy You're welcome („Nie ma za co”).\n2. I'm sorry to przeprosiny, Congratulations to gratulacje, Bless you mówimy po kichnięciu.",
       "tags": ["funkcje-jezykowe"]
     }
   ],

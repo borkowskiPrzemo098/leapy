@@ -37,7 +37,7 @@
         "Money back now!"
       ],
       "answer": 0,
-      "explanation": "Uprzejma, formalna prośba.",
+      "explanation": "1. I would be grateful if you could… to formalna, uprzejma prośba, odpowiednia w reklamacji.\n2. Pozostałe wersje są rozkazujące albo potoczne (wanna, „Money back now!”).",
       "tags": ["list-formalny", "styl"]
     },
     {
@@ -62,7 +62,7 @@
         "Bye for now!"
       ],
       "answer": 0,
-      "explanation": "Formalna formuła końcowa.",
+      "explanation": "1. I look forward to hearing from you to typowa formuła przed podpisem w liście formalnym.\n2. Write back soon!, Can't wait… i Bye for now! to zwroty nieformalne.",
       "tags": ["list-formalny"]
     }
   ],

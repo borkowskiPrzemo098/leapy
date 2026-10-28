@@ -17,7 +17,7 @@
       "prompt": "*We have lived here ___ 2020.*",
       "options": ["since", "for", "ago", "from"],
       "answer": 0,
-      "explanation": "Punkt w czasie: *since*.",
+      "explanation": "1. 2020 to punkt w czasie, od którego coś trwa: since 2020.\n2. for łączymy z okresem (for two years), a ago używamy w Past Simple (two years ago).",
       "tags": ["gramatyka", "since-for"]
     },
     {

@@ -17,7 +17,7 @@
       "prompt": "*We didn't have a map and we got ___.*",
       "options": ["lost", "lose", "loose", "losing"],
       "answer": 0,
-      "explanation": "*get lost* — zgubić się.",
+      "explanation": "1. Bez mapy można się zgubić; stałe wyrażenie to get lost, z przymiotnikiem lost.\n2. lose to czasownik (zgubić coś), loose znaczy „luźny”.",
       "tags": ["slownictwo", "podroze"]
     }
   ],

@@ -7,7 +7,7 @@
       "prompt": "Przeczytaj zdanie.\n\n> Badacze przypuszczają, że ocieplenie klimatu przyspiesza wędrówki ptaków.\n\nTo zdanie przedstawia",
       "options": ["hipotezę", "udowodniony fakt", "opinię felietonisty", "definicję"],
       "answer": 0,
-      "explanation": "„Przypuszczają” — hipoteza.",
+      "explanation": "1. Czasownik „przypuszczają” pokazuje, że badacze nie są pewni: to hipoteza do sprawdzenia.\n2. Udowodniony fakt byłby podany jako pewny („Badania wykazały, że…”).",
       "tags": ["tekst-naukowy"]
     },
     {
@@ -77,7 +77,7 @@
         "ocenie czytelnika"
       ],
       "answer": 0,
-      "explanation": "Przypisy dokumentują źródła.",
+      "explanation": "1. Przypisy podają źródła informacji i dodatkowe objaśnienia, dzięki czemu można sprawdzić tekst.\n2. Nie służą ozdobie ani zapisowi dialogów.",
       "tags": ["tekst-naukowy"]
     },
     {
@@ -92,7 +92,7 @@
         "od nauki do mitologii"
       ],
       "answer": 0,
-      "explanation": "„Choć dawniej… dziś wiadomo”.",
+      "explanation": "1. „Choć dawniej sądzono, że mózg się nie zmienia, dziś wiadomo, że tworzy nowe połączenia”: pogląd zmienił się z przekonania o niezmienności na wiedzę o plastyczności.\n2. Kolejność „dawniej … dziś” wyklucza odwrotny kierunek zmiany.",
       "tags": ["tekst-popularnonaukowy"]
     },
     {
@@ -105,7 +105,7 @@
         "Tekst twierdzi, że dawne poglądy były prawdziwe."
       ],
       "answer": [true, false],
-      "explanation": "1. Prawda.\n2. Dawny pogląd został podważony. Fałsz.",
+      "explanation": "1. „Dziś wiadomo, że tworzy nowe połączenia przez całe życie”, więc mózg dorosłego się zmienia. Prawda.\n2. Słowa „choć dawniej sądzono” pokazują, że dawny pogląd został podważony. Fałsz.",
       "tags": ["tekst-popularnonaukowy"]
     },
     {

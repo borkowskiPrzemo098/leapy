@@ -7,7 +7,7 @@
       "prompt": "*___ the bad weather, we went for a walk.*",
       "options": ["Despite", "Although", "However", "Even"],
       "answer": 0,
-      "explanation": "Po luce rzeczownik: *Despite*.",
+      "explanation": "1. Po luce stoi rzeczownik (the bad weather), a nie zdanie, więc pasuje przyimek Despite.\n2. Although wymaga zdania z orzeczeniem (Although the weather was bad).",
       "tags": ["srodki-jezykowe"]
     },
     {
@@ -27,7 +27,7 @@
       "prompt": "*The man ___ car was stolen called the police.*",
       "options": ["whose", "who", "which", "whom"],
       "answer": 0,
-      "explanation": "Przynależność: *whose*.",
+      "explanation": "1. Samochód należał do mężczyzny, więc potrzebny jest zaimek przynależności: whose.\n2. who odnosi się do osoby jako podmiotu, a which do rzeczy.",
       "tags": ["srodki-jezykowe", "zaimki-wzgledne"]
     },
     {

@@ -9,7 +9,7 @@
       "answer": {
         "value": 12
       },
-      "explanation": "Reguła mnożenia: $3\\cdot 4=12$.",
+      "explanation": "1. Do każdej z $3$ koszulek możemy dobrać każdą z $4$ par spodni (reguła mnożenia).\n2. $3\\cdot 4=12$ zestawów.",
       "verify": "3 * 4",
       "tags": ["kombinatoryka", "regula-mnozenia"]
     },
@@ -21,7 +21,7 @@
       "answer": {
         "value": 24
       },
-      "explanation": "$4!=1\\cdot 2\\cdot 3\\cdot 4=24$.",
+      "explanation": "1. Na pierwszym miejscu może stanąć $4$ osoby, na drugim $3$, na trzecim $2$, na czwartym $1$.\n2. $4\\cdot 3\\cdot 2\\cdot 1=4!=24$.",
       "verify": "factorial(4)",
       "tags": ["kombinatoryka", "permutacje"]
     },
@@ -123,7 +123,7 @@
       "answer": {
         "value": 27
       },
-      "explanation": "$3^{3}=27$.",
+      "explanation": "1. Każda z trzech pozycji może być jedną z $3$ cyfr, a cyfry mogą się powtarzać.\n2. $3\\cdot 3\\cdot 3=3^{3}=27$.",
       "verify": "3^3",
       "tags": ["kombinatoryka", "wariacje-z-powtorzeniami"]
     },
@@ -158,7 +158,7 @@
       "prompt": "Liczba $\\binom{7}{2}$ jest równa",
       "options": ["$21$", "$42$", "$14$", "$49$"],
       "answer": 0,
-      "explanation": "$\\frac{7\\cdot 6}{2}=21$.",
+      "explanation": "1. $\\binom{n}{2}=\\frac{n(n-1)}{2}$, czyli liczba sposobów wyboru $2$ elementów z $n$.\n2. $\\binom{7}{2}=\\frac{7\\cdot 6}{2}=21$.",
       "verify": "combinations(7, 2)",
       "tags": ["kombinatoryka", "kombinacje"]
     }

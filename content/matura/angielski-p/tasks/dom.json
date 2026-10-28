@@ -17,7 +17,7 @@
       "prompt": "*They moved out of the city centre to a quiet house in the ___.*",
       "options": ["suburbs", "downtown", "basement", "countryside town hall"],
       "answer": 0,
-      "explanation": "Przedmieścia: *suburbs*.",
+      "explanation": "1. Wyprowadzili się z centrum do spokojnego domu na obrzeżach miasta, czyli na przedmieścia: suburbs.\n2. downtown to właśnie centrum, basement to piwnica.",
       "tags": ["slownictwo", "dom"]
     }
   ],

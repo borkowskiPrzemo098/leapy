@@ -7,7 +7,7 @@
       "prompt": "Pole koła o promieniu $5$ jest równe",
       "options": ["$25\\pi$", "$10\\pi$", "$5\\pi$", "$100\\pi$"],
       "answer": 0,
-      "explanation": "$\\pi r^{2}=25\\pi$.",
+      "explanation": "1. Pole koła: $P=\\pi r^{2}$.\n2. $P=\\pi\\cdot 5^{2}=25\\pi$.",
       "verify": "pi * 25",
       "tags": ["kolo"]
     },
@@ -18,7 +18,7 @@
       "prompt": "Długość okręgu o średnicy $8$ jest równa",
       "options": ["$8\\pi$", "$16\\pi$", "$4\\pi$", "$64\\pi$"],
       "answer": 0,
-      "explanation": "$L=\\pi d=8\\pi$.",
+      "explanation": "1. Długość okręgu: $L=2\\pi r=\\pi d$, bo średnica $d=2r$.\n2. $L=\\pi\\cdot 8=8\\pi$.",
       "verify": "8 * pi",
       "tags": ["okrag"]
     },
@@ -30,7 +30,7 @@
       "answer": {
         "value": 314
       },
-      "explanation": "$3{,}14\\cdot 100=314$.",
+      "explanation": "1. Pole koła: $P=\\pi r^{2}\\approx 3{,}14\\cdot r^{2}$.\n2. $P\\approx 3{,}14\\cdot 10^{2}=3{,}14\\cdot 100=314\\ \\text{cm}^{2}$.",
       "verify": "3.14 * 100",
       "tags": ["kolo"]
     },
@@ -55,7 +55,7 @@
       "answer": {
         "value": 6
       },
-      "explanation": "$2\\pi r=12\\pi$, więc $r=6$.",
+      "explanation": "1. Długość okręgu: $L=2\\pi r$, więc $2\\pi r=12\\pi$.\n2. Dzielimy obie strony przez $2\\pi$: $r=6$.",
       "tags": ["okrag"]
     }
   ],

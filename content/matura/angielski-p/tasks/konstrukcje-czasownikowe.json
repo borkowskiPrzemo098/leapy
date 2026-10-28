@@ -7,7 +7,7 @@
       "prompt": "*I really enjoy ___ in the sea.*",
       "options": ["swimming", "to swim", "swim", "swam"],
       "answer": 0,
-      "explanation": "*enjoy + -ing*.",
+      "explanation": "1. Po enjoy stoi czasownik z końcówką -ing: enjoy swimming.\n2. enjoy to swim to częsty błąd: enjoy nie łączy się z bezokolicznikiem.",
       "tags": ["gramatyka", "gerund"]
     },
     {
@@ -17,7 +17,7 @@
       "prompt": "*We decided ___ at home because of the rain.*",
       "options": ["to stay", "staying", "stay", "stayed"],
       "answer": 0,
-      "explanation": "*decide + to*.",
+      "explanation": "1. Po decide stoi to + bezokolicznik: decided to stay.\n2. decide staying jest błędne; z -ing łączą się np. enjoy, avoid, finish.",
       "tags": ["gramatyka", "infinitive"]
     },
     {

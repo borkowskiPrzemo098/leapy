@@ -61,7 +61,7 @@
       "prompt": "Który wyraz ciągu $a_{n}=\\frac{n+5}{n}$ jest równy $2$?",
       "options": ["piąty", "drugi", "dziesiąty", "żaden"],
       "answer": 0,
-      "explanation": "$\\frac{n+5}{n}=2\\iff n=5$.",
+      "explanation": "1. Rozwiązujemy $\\frac{n+5}{n}=2$, czyli $n+5=2n$.\n2. $n=5$: piąty wyraz. Sprawdzenie: $\\frac{10}{5}=2$.",
       "tags": ["ciagi"]
     },
     {

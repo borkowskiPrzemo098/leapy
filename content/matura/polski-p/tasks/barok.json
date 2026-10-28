@@ -7,7 +7,7 @@
       "prompt": "Motyw marności i przemijania świata to",
       "options": ["vanitas", "carpe diem", "arkadia", "katharsis"],
       "answer": 0,
-      "explanation": "*Vanitas* — marność.",
+      "explanation": "1. Vanitas (łac. „marność”) to motyw przemijania i znikomości ziemskich dóbr, typowy dla baroku.\n2. carpe diem to zachęta do korzystania z chwili, a katharsis to oczyszczenie w tragedii.",
       "tags": ["barok", "motywy"]
     },
     {
@@ -22,7 +22,7 @@
         "prosty opis przyrody"
       ],
       "answer": 0,
-      "explanation": "Koncept ma zadziwić odbiorcę.",
+      "explanation": "1. Koncept to zaskakujące, pomysłowe połączenie myśli lub obrazów, które ma zadziwić odbiorcę.\n2. To pojęcie dotyczy stylu, a nie tańca czy budowy dramatu.",
       "tags": ["barok"]
     },
     {

@@ -31,7 +31,7 @@
       "answer": {
         "value": 128
       },
-      "explanation": "$V(2)=2\\cdot 8^{2}=128$.",
+      "explanation": "1. Z poprzedniego zadania największa objętość jest dla $x=2$.\n2. $V(2)=2\\cdot(12-2\\cdot 2)^{2}=2\\cdot 8^{2}=128$.",
       "verify": "2 * (12 - 4)^2",
       "tags": ["optymalizacja"]
     },
@@ -107,7 +107,7 @@
         "Wśród prostokątów o danym obwodzie największe pole ma kwadrat."
       ],
       "answer": [true, true],
-      "explanation": "1. Prawda — trzeba sprawdzać końce przedziału.\n2. Prawda.",
+      "explanation": "1. Np. $f(x)=x$ na $[0,1]$ ma największą wartość w końcu $x=1$; dlatego zawsze sprawdzamy końce przedziału. Prawda.\n2. Przy obwodzie $L$ pole to $x\\left(\\frac{L}{2}-x\\right)$, a ta funkcja kwadratowa ma maksimum dla $x=\\frac{L}{4}$, czyli dla kwadratu. Prawda.",
       "tags": ["optymalizacja"]
     }
   ],

@@ -7,7 +7,7 @@
       "prompt": "*The printing press was one of the most important ___ in history.*",
       "options": ["inventions", "discoveries of", "devices up", "experiments"],
       "answer": 0,
-      "explanation": "Wynalazek: *invention*.",
+      "explanation": "1. Prasa drukarska została wymyślona przez człowieka, więc to wynalazek: invention (po one of the most important w liczbie mnogiej: inventions).\n2. discovery to odkrycie czegoś, co już istniało (np. lądu).",
       "tags": ["slownictwo", "nauka"]
     },
     {

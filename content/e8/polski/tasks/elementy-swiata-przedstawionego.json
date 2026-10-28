@@ -45,7 +45,7 @@
         "Bohater epizodyczny pojawia się w utworze na krótko."
       ],
       "answer": [false, true],
-      "explanation": "1. Narrator to postać stworzona przez autora. Fałsz.\n2. Prawda.",
+      "explanation": "1. Narrator to postać stworzona przez autora; może być np. dzieckiem albo zwierzęciem, choć autor jest dorosłym człowiekiem. Fałsz.\n2. Bohater epizodyczny pojawia się w jednej lub kilku scenach i nie wpływa na cały przebieg akcji. Prawda.",
       "tags": ["narrator", "bohaterowie"]
     },
     {

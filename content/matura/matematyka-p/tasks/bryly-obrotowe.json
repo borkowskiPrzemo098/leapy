@@ -31,7 +31,7 @@
       "answer": {
         "value": 10
       },
-      "explanation": "$l=\\sqrt{36+64}=10$.",
+      "explanation": "1. Promień, wysokość i tworząca stożka tworzą trójkąt prostokątny, w którym tworząca jest przeciwprostokątną: $l^{2}=r^{2}+H^{2}$.\n2. $l=\\sqrt{36+64}=\\sqrt{100}=10$.",
       "verify": "sqrt(6^2 + 8^2)",
       "tags": ["stereometria", "stozek"]
     },
@@ -42,7 +42,7 @@
       "prompt": "Pole powierzchni kuli o promieniu $3$ jest równe",
       "options": ["$36\\pi$", "$12\\pi$", "$9\\pi$", "$108\\pi$"],
       "answer": 0,
-      "explanation": "$P=4\\pi\\cdot 9=36\\pi$.",
+      "explanation": "1. Pole powierzchni kuli: $P=4\\pi r^{2}$.\n2. $P=4\\pi\\cdot 9=36\\pi$.",
       "verify": "4 * pi * 9",
       "tags": ["stereometria", "kula"]
     },
@@ -104,7 +104,7 @@
       "prompt": "Stożek ma promień podstawy $3$ i tworzącą $5$. Pole jego powierzchni bocznej jest równe",
       "options": ["$15\\pi$", "$24\\pi$", "$9\\pi$", "$30\\pi$"],
       "answer": 0,
-      "explanation": "$P_{b}=\\pi rl=15\\pi$.",
+      "explanation": "1. Pole powierzchni bocznej stożka: $P_{b}=\\pi r l$ (promień razy tworząca).\n2. $P_{b}=\\pi\\cdot 3\\cdot 5=15\\pi$.",
       "verify": "pi * 3 * 5",
       "tags": ["stereometria", "stozek"]
     }

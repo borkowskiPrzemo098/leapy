@@ -8,7 +8,7 @@
       "answer": {
         "value": 7
       },
-      "explanation": "$x=12-5=7$.",
+      "explanation": "1. Odejmujemy $5$ od obu stron, żeby zostało samo $x$.\n2. $x=12-5=7$. Sprawdzenie: $7+5=12$.",
       "tags": ["rownania"]
     },
     {
@@ -19,7 +19,7 @@
       "answer": {
         "value": 6
       },
-      "explanation": "$x=18:3=6$.",
+      "explanation": "1. Dzielimy obie strony przez $3$.\n2. $x=18:3=6$. Sprawdzenie: $3\\cdot 6=18$.",
       "tags": ["rownania"]
     },
     {
@@ -30,7 +30,7 @@
       "answer": {
         "value": 6
       },
-      "explanation": "$2x=12$, $x=6$.",
+      "explanation": "1. Przenosimy niewiadome na lewą stronę, liczby na prawą: $4x-2x=5+7$.\n2. $2x=12$, więc $x=6$. Sprawdzenie: $24-7=17=12+5$.",
       "tags": ["rownania"]
     },
     {
@@ -41,7 +41,7 @@
       "answer": {
         "value": 20
       },
-      "explanation": "$x=20$.",
+      "explanation": "1. Mnożymy obie strony przez $4$, żeby pozbyć się ułamka.\n2. $x=5\\cdot 4=20$.",
       "tags": ["rownania"]
     },
     {
@@ -52,7 +52,7 @@
       "answer": {
         "value": 8
       },
-      "explanation": "$2x-6=10$, $2x=16$, $x=8$.",
+      "explanation": "1. Mnożymy nawias: $2x-6=10$.\n2. Dodajemy $6$: $2x=16$. Dzielimy przez $2$: $x=8$.",
       "tags": ["rownania"]
     },
     {
@@ -63,7 +63,7 @@
       "answer": {
         "value": 12
       },
-      "explanation": "$x+(x+3)=27$, $2x=24$, $x=12$.",
+      "explanation": "1. Wiek Kuby to $x$, wiek Oli to $x+3$. Razem: $x+(x+3)=27$.\n2. $2x+3=27$, $2x=24$, $x=12$. Kuba ma $12$ lat, Ola $15$.",
       "tags": ["zadania-tekstowe"]
     },
     {

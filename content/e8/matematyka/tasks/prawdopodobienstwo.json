@@ -18,7 +18,7 @@
       "prompt": "W worku są $3$ kule czerwone i $5$ niebieskich. Prawdopodobieństwo wylosowania czerwonej jest równe",
       "options": ["$\\frac{3}{8}$", "$\\frac{3}{5}$", "$\\frac{5}{8}$", "$\\frac{1}{3}$"],
       "answer": 0,
-      "explanation": "$\\frac{3}{3+5}=\\frac{3}{8}$.",
+      "explanation": "1. Prawdopodobieństwo to liczba wyników sprzyjających podzielona przez liczbę wszystkich wyników.\n2. Kul jest $3+5=8$, czerwonych $3$: $P=\\frac{3}{8}$.",
       "verify": "3 / 8",
       "tags": ["prawdopodobienstwo"]
     },
@@ -29,7 +29,7 @@
       "prompt": "Rzucamy kostką. Prawdopodobieństwo, że **nie** wypadnie szóstka, jest równe",
       "options": ["$\\frac{5}{6}$", "$\\frac{1}{6}$", "$\\frac{1}{2}$", "$1$"],
       "answer": 0,
-      "explanation": "$1-\\frac{1}{6}=\\frac{5}{6}$.",
+      "explanation": "1. Szóstka wypada z prawdopodobieństwem $\\frac{1}{6}$.\n2. „Nie szóstka” to zdarzenie przeciwne: $1-\\frac{1}{6}=\\frac{5}{6}$ (to samo dają wyniki $1$–$5$: $\\frac{5}{6}$).",
       "verify": "1 - 1/6",
       "tags": ["zdarzenie-przeciwne"]
     },
@@ -62,7 +62,7 @@
       "prompt": "W klasie jest $12$ dziewcząt i $18$ chłopców. Losujemy jedną osobę. Prawdopodobieństwo, że będzie to dziewczyna, jest równe",
       "options": ["$\\frac{2}{5}$", "$\\frac{2}{3}$", "$\\frac{3}{5}$", "$\\frac{1}{12}$"],
       "answer": 0,
-      "explanation": "$\\frac{12}{30}=\\frac{2}{5}$.",
+      "explanation": "1. Wszystkich osób jest $12+18=30$, dziewcząt $12$.\n2. $P=\\frac{12}{30}=\\frac{2}{5}$.",
       "verify": "12 / 30",
       "tags": ["prawdopodobienstwo"]
     },

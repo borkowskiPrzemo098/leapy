@@ -7,7 +7,7 @@
       "prompt": "*You ___ use your phone during the test. It's not allowed.*",
       "options": ["mustn't", "don't have to", "can", "should"],
       "answer": 0,
-      "explanation": "Zakaz: *mustn't*.",
+      "explanation": "1. „It's not allowed” oznacza zakaz, a zakaz wyrażamy przez mustn't.\n2. Pułapka: don't have to znaczy „nie musisz”, czyli wolno, ale nie trzeba. To nie jest zakaz.",
       "tags": ["gramatyka", "modalne"]
     },
     {
@@ -17,7 +17,7 @@
       "prompt": "*Tomorrow is Saturday, so I ___ get up early.*",
       "options": ["don't have to", "mustn't", "can't", "have to"],
       "answer": 0,
-      "explanation": "Nie trzeba: *don't have to*.",
+      "explanation": "1. W sobotę nie trzeba wstawać wcześnie, więc mówimy o braku konieczności: don't have to.\n2. Pułapka: mustn't to zakaz („nie wolno mi wstać wcześnie”), a tu nikt niczego nie zabrania.",
       "tags": ["gramatyka", "modalne"]
     },
     {
@@ -27,7 +27,7 @@
       "prompt": "*You look tired. You ___ go to bed earlier.*",
       "options": ["should", "must to", "can't", "mustn't"],
       "answer": 0,
-      "explanation": "Rada: *should*.",
+      "explanation": "1. „Wyglądasz na zmęczonego” i rada, co zrobić: radę wyrażamy przez should.\n2. must to wyraźnie silniejszy obowiązek, a po must nie stawiamy to, więc must to jest błędne.",
       "tags": ["gramatyka", "modalne"]
     }
   ],

@@ -6,7 +6,9 @@
       "type": "numeric",
       "difficulty": 1,
       "prompt": "Rozwiąż równanie $3x+5=2x-1$.",
-      "answer": { "value": -6 },
+      "answer": {
+        "value": -6
+      },
       "explanation": "1. Odejmujemy $2x$: $x+5=-1$.\n2. Odejmujemy $5$: $x=-6$.",
       "tags": ["rownania-liniowe"]
     },
@@ -15,8 +17,10 @@
       "type": "numeric",
       "difficulty": 2,
       "prompt": "Rozwiąż równanie $3(x-2)=x+4$.",
-      "answer": { "value": 5 },
-      "explanation": "1. $3x-6=x+4$.\n2. $2x=10$.\n3. $x=5$.",
+      "answer": {
+        "value": 5
+      },
+      "explanation": "1. Mnożymy nawias: $3x-6=x+4$.\n2. Przenosimy: $3x-x=4+6$, $2x=10$, $x=5$. Sprawdzenie: $3\\cdot 3=9=5+4$.",
       "tags": ["rownania-liniowe"]
     },
     {
@@ -24,7 +28,9 @@
       "type": "numeric",
       "difficulty": 2,
       "prompt": "Rozwiąż równanie $\\dfrac{x}{2}-\\dfrac{x}{3}=1$.",
-      "answer": { "value": 6 },
+      "answer": {
+        "value": 6
+      },
       "hint": "Pomnóż obie strony przez $6$.",
       "explanation": "1. Mnożymy przez $6$: $3x-2x=6$.\n2. $x=6$.",
       "tags": ["rownania-liniowe"]
@@ -95,7 +101,10 @@
       "type": "numeric",
       "difficulty": 3,
       "prompt": "Bilet ulgowy kosztuje o $8$ zł mniej niż normalny. Za $2$ bilety normalne i $3$ ulgowe zapłacono $76$ zł. Ile kosztuje bilet normalny (w zł)?",
-      "answer": { "value": 20, "unit": "zł" },
+      "answer": {
+        "value": 20,
+        "unit": "zł"
+      },
       "hint": "Oznacz cenę biletu normalnego przez $x$.",
       "explanation": "1. Normalny: $x$, ulgowy: $x-8$.\n2. $2x+3(x-8)=76$.\n3. $5x-24=76$, $5x=100$, $x=20$.\n4. Sprawdzenie: $2\\cdot 20+3\\cdot 12=40+36=76$.",
       "tags": ["rownania-liniowe", "zadania-tekstowe"]

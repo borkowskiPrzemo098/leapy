@@ -7,7 +7,7 @@
       "prompt": "*The storm ___ a lot of damage to the houses.*",
       "options": ["did", "made", "took", "gave"],
       "answer": 0,
-      "explanation": "Kolokacja: *do damage*.",
+      "explanation": "1. Wyrządzić szkody to do damage.\n2. make damage brzmi jak polskie „zrobić szkody”, ale angielski łączy damage z do.",
       "tags": ["kolokacje"]
     },
     {
@@ -17,7 +17,7 @@
       "prompt": "*Could you ___ me a favour and post this letter?*",
       "options": ["do", "make", "give", "take"],
       "answer": 0,
-      "explanation": "*do someone a favour*.",
+      "explanation": "1. „Wyświadczyć komuś przysługę” to do someone a favour.\n2. make a favour to częsty błąd z dosłownego tłumaczenia.",
       "tags": ["kolokacje"]
     },
     {
@@ -27,7 +27,7 @@
       "prompt": "*There was ___ traffic, so we were late.*",
       "options": ["heavy", "strong", "big", "hard"],
       "answer": 0,
-      "explanation": "*heavy traffic*.",
+      "explanation": "1. Duży ruch uliczny to heavy traffic.\n2. strong, big i hard nie tworzą kolokacji z traffic.",
       "tags": ["kolokacje"]
     },
     {
@@ -67,7 +67,7 @@
       "prompt": "*Students are expected to ___ attention during lectures.*",
       "options": ["pay", "give", "make", "put"],
       "answer": 0,
-      "explanation": "*pay attention*.",
+      "explanation": "1. Zwracać uwagę to pay attention.\n2. give attention i make attention nie są naturalnymi połączeniami.",
       "tags": ["kolokacje"]
     }
   ],

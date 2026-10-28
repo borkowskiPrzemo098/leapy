@@ -112,7 +112,7 @@
         "zawiera dużo dat"
       ],
       "answer": 0,
-      "explanation": "Liczy się związek z tezą.",
+      "explanation": "1. Argument jest trafny, gdy bezpośrednio uzasadnia tezę i jest poparty przykładem.\n2. Długość tekstu ani liczba dat nie sprawiają, że argument coś dowodzi.",
       "tags": ["argumentacja"]
     },
     {
@@ -125,7 +125,7 @@
         "Jedna lektura może dostarczyć kilku argumentów."
       ],
       "answer": [false, true],
-      "explanation": "1. Streszczenie nie uzasadnia tezy. Fałsz.\n2. Prawda.",
+      "explanation": "1. Streszczenie tylko opowiada fabułę, a argument musi wyjaśnić, jak przykład potwierdza tezę. Fałsz.\n2. Jedna lektura może dać kilka argumentów, jeśli każdy dotyczy innego aspektu problemu. Prawda.",
       "tags": ["argumentacja"]
     }
   ],

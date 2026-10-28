@@ -8,7 +8,7 @@
       "answer": {
         "value": 36
       },
-      "explanation": "$0{,}15\\cdot 240=36$.",
+      "explanation": "1. $15\\%$ liczby to $0{,}15$ tej liczby.\n2. $0{,}15\\cdot 240=36$ (np. $10\\%$ to $24$, $5\\%$ to $12$, razem $36$).",
       "verify": "0.15 * 240",
       "tags": ["procenty"]
     },
@@ -21,7 +21,7 @@
         "value": 204,
         "unit": "zł"
       },
-      "explanation": "$240\\cdot 0{,}85=204$ zł.",
+      "explanation": "1. Po obniżce o $15\\%$ zostaje $100\\%-15\\%=85\\%$ ceny.\n2. $0{,}85\\cdot 240=204$ zł.",
       "verify": "240 * 0.85",
       "tags": ["procenty", "obnizka"]
     },
@@ -33,7 +33,7 @@
       "answer": {
         "value": 150
       },
-      "explanation": "$45:0{,}3=150$.",
+      "explanation": "1. Jeśli $0{,}3x=45$, to liczbę $x$ dostajemy, dzieląc przez $0{,}3$.\n2. $x=45:0{,}3=150$. Sprawdzenie: $30\\%$ ze $150$ to $45$.",
       "verify": "45 / 0.3",
       "tags": ["procenty"]
     },
@@ -44,7 +44,7 @@
       "prompt": "W klasie jest $25$ uczniów, $10$ z nich to dziewczęta. Jaki procent klasy stanowią dziewczęta?",
       "options": ["$40\\%$", "$10\\%$", "$25\\%$", "$60\\%$"],
       "answer": 0,
-      "explanation": "$\\frac{10}{25}=0{,}4=40\\%$.",
+      "explanation": "1. Jaki procent stanowi część: $\\frac{\\text{część}}{\\text{całość}}\\cdot 100\\%$.\n2. $\\frac{10}{25}=0{,}4=40\\%$.",
       "tags": ["procenty"]
     },
     {

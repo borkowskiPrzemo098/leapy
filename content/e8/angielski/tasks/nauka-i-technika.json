@@ -7,7 +7,7 @@
       "prompt": "*My phone battery is low. I need to ___ it.*",
       "options": ["charge", "change", "download", "switch"],
       "answer": 0,
-      "explanation": "Naładować: *charge*.",
+      "explanation": "1. Gdy bateria jest słaba, trzeba ją naładować: charge.\n2. change to zmienić, download to pobrać, switch to przełączyć.",
       "tags": ["slownictwo", "technika"]
     },
     {
@@ -17,7 +17,7 @@
       "prompt": "*Don't tell anyone your ___.*",
       "options": ["password", "passport", "postcard", "keyword"],
       "answer": 0,
-      "explanation": "Hasło: *password*.",
+      "explanation": "1. Nikomu nie mówimy hasła: password.\n2. passport (paszport) i postcard (pocztówka) brzmią podobnie, ale nie pasują do sensu zdania.",
       "tags": ["slownictwo", "technika"]
     }
   ],

@@ -7,7 +7,7 @@
       "prompt": "*The novel was so popular that it became a ___.*",
       "options": ["bestseller", "best-buyer", "headline", "trailer"],
       "answer": 0,
-      "explanation": "Bestseller: *bestseller*.",
+      "explanation": "1. Książka, która sprzedaje się wyjątkowo dobrze, to bestseller.\n2. headline to nagłówek prasowy, trailer to zwiastun filmu.",
       "tags": ["slownictwo", "kultura"]
     },
     {
@@ -17,7 +17,7 @@
       "prompt": "*The band is going to ___ their new album in a studio in London.*",
       "options": ["record", "register", "remind", "review"],
       "answer": 0,
-      "explanation": "Nagrać album: *record*.",
+      "explanation": "1. Nagrać album w studiu to record.\n2. register to zarejestrować, remind to przypomnieć, review to zrecenzować.",
       "tags": ["slownictwo", "muzyka"]
     }
   ],

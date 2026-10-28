@@ -9,7 +9,7 @@
       "answer": {
         "value": 39
       },
-      "explanation": "$a_{10}=a_{1}+9r=3+36=39$.",
+      "explanation": "1. Wyraz ogólny: $a_{n}=a_{1}+(n-1)r$, więc do $a_{10}$ dodajemy różnicę $9$ razy.\n2. $a_{10}=3+9\\cdot 4=39$.",
       "verify": "3 + 9 * 4",
       "tags": ["ciag-arytmetyczny"]
     },
@@ -21,7 +21,7 @@
       "answer": {
         "value": 5
       },
-      "explanation": "$r=a_{2}-a_{1}=7-2=5$.",
+      "explanation": "1. Różnica ciągu arytmetycznego to stała różnica między kolejnymi wyrazami: $r=a_{2}-a_{1}$.\n2. $r=7-2=5$ (tak samo $12-7$ i $17-12$).",
       "tags": ["ciag-arytmetyczny"]
     },
     {
@@ -151,7 +151,7 @@
       "answer": {
         "value": 52
       },
-      "explanation": "1. $r=3$.\n2. $a_{20}=-5+19\\cdot 3=52$.",
+      "explanation": "1. Różnica: $r=a_{2}-a_{1}=-2-(-5)=3$.\n2. $a_{20}=a_{1}+19r=-5+19\\cdot 3=-5+57=52$.",
       "verify": "-5 + 19 * 3",
       "tags": ["ciag-arytmetyczny"]
     }

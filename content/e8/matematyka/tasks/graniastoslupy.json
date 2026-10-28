@@ -8,7 +8,7 @@
       "answer": {
         "value": 24
       },
-      "explanation": "$2\\cdot 3\\cdot 4=24$.",
+      "explanation": "1. Objętość prostopadłościanu to iloczyn trzech wymiarów: $V=a\\cdot b\\cdot c$.\n2. $V=2\\cdot 3\\cdot 4=24\\ \\text{cm}^{3}$.",
       "verify": "2 * 3 * 4",
       "tags": ["objetosc"]
     },
@@ -20,7 +20,7 @@
       "answer": {
         "value": 64
       },
-      "explanation": "$4^{3}=64$.",
+      "explanation": "1. Sześcian ma wszystkie krawędzie równe, więc $V=a^{3}$.\n2. $V=4^{3}=4\\cdot 4\\cdot 4=64\\ \\text{cm}^{3}$.",
       "verify": "4^3",
       "tags": ["objetosc"]
     },
@@ -57,7 +57,7 @@
       "answer": {
         "value": 150
       },
-      "explanation": "$6\\cdot 25=150$.",
+      "explanation": "1. Sześcian ma $6$ jednakowych ścian-kwadratów, każda o polu $a^{2}$: $P_{c}=6a^{2}$.\n2. $P_{c}=6\\cdot 5^{2}=6\\cdot 25=150$.",
       "verify": "6 * 25",
       "tags": ["pole-powierzchni"]
     },
@@ -102,7 +102,7 @@
         "value": 5,
         "unit": "cm"
       },
-      "explanation": "$\\sqrt[3]{125}=5$.",
+      "explanation": "1. $V=a^{3}$, więc szukamy liczby, która podniesiona do sześcianu daje $125$.\n2. $5^{3}=125$, czyli $a=\\sqrt[3]{125}=5$ cm.",
       "verify": "nthRoot(125, 3)",
       "tags": ["objetosc"]
     },
@@ -115,7 +115,7 @@
         "value": 2000,
         "unit": "l"
       },
-      "explanation": "$1\\ \\text{m}^{3}=1000$ l.",
+      "explanation": "1. $1\\ \\text{m}^{3}=1000\\ \\text{dm}^{3}$, a $1\\ \\text{dm}^{3}=1$ litr, więc $1\\ \\text{m}^{3}=1000$ l.\n2. $2\\ \\text{m}^{3}=2\\cdot 1000=2000$ l.",
       "verify": "2 * 1000",
       "tags": ["jednostki"]
     },
@@ -130,7 +130,7 @@
         "Każdy graniastosłup ma co najmniej $6$ ścian."
       ],
       "answer": [true, true, false],
-      "explanation": "1. Prawda.\n2. Prawda.\n3. Graniastosłup trójkątny ma tylko $5$ ścian ($2$ podstawy i $3$ ściany boczne). Fałsz.",
+      "explanation": "1. Sześcian ma $4$ krawędzie dolnej podstawy, $4$ górnej i $4$ pionowe: $12$. Prawda.\n2. Prostopadłościan ma $4$ wierzchołki na dole i $4$ na górze: $8$. Prawda.\n3. Graniastosłup trójkątny ma tylko $5$ ścian ($2$ podstawy i $3$ ściany boczne). Fałsz.",
       "tags": ["elementy-bryl"]
     },
     {
@@ -142,7 +142,7 @@
         "value": 8,
         "unit": "cm"
       },
-      "explanation": "$480:(10\\cdot 6)=8$ cm.",
+      "explanation": "1. $V=a\\cdot b\\cdot H$, więc wysokość to objętość podzielona przez pole podstawy: $H=\\frac{V}{a\\cdot b}$.\n2. $H=\\frac{480}{10\\cdot 6}=\\frac{480}{60}=8$ cm.",
       "verify": "480 / 60",
       "tags": ["objetosc"]
     },
@@ -154,7 +154,7 @@
       "answer": {
         "value": 7
       },
-      "explanation": "$\\sqrt{4+9+36}=7$.",
+      "explanation": "1. Przekątna prostopadłościanu: $d=\\sqrt{a^{2}+b^{2}+c^{2}}$ (twierdzenie Pitagorasa zastosowane dwa razy).\n2. $d=\\sqrt{2^{2}+3^{2}+6^{2}}=\\sqrt{4+9+36}=\\sqrt{49}=7$.",
       "verify": "sqrt(4 + 9 + 36)",
       "tags": ["pitagoras"]
     }

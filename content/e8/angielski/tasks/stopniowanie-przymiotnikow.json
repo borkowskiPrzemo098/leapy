@@ -7,7 +7,7 @@
       "prompt": "*My brother is ___ than me.*",
       "options": ["taller", "more tall", "tallest", "more taller"],
       "answer": 0,
-      "explanation": "Krótki przymiotnik: *-er*.",
+      "explanation": "1. tall to krótki przymiotnik, więc stopień wyższy tworzymy przez -er: taller (than).\n2. more stosujemy przy długich przymiotnikach; more taller łączy oba sposoby i jest błędem.",
       "tags": ["gramatyka", "stopniowanie"]
     },
     {
@@ -17,7 +17,7 @@
       "prompt": "*This is the ___ pizza in town.*",
       "options": ["best", "goodest", "most good", "better"],
       "answer": 0,
-      "explanation": "*good – better – the best*.",
+      "explanation": "1. „Najlepsza pizza” to stopień najwyższy od good, a good stopniuje się nieregularnie: good – better – the best.\n2. goodest i most good nie istnieją.",
       "tags": ["gramatyka", "stopniowanie"]
     },
     {

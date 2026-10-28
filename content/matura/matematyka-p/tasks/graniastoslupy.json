@@ -9,7 +9,7 @@
       "answer": {
         "value": 125
       },
-      "explanation": "$V=5^{3}=125$.",
+      "explanation": "1. Objętość sześcianu: $V=a^{3}$.\n2. $V=5^{3}=125$.",
       "verify": "5^3",
       "tags": ["stereometria", "objetosc"]
     },
@@ -55,7 +55,7 @@
       "answer": {
         "value": 27
       },
-      "explanation": "1. $6a^{2}=54$, $a=3$.\n2. $V=27$.",
+      "explanation": "1. Sześcian ma $6$ ścian o polu $a^{2}$: $6a^{2}=54$, więc $a^{2}=9$ i $a=3$.\n2. $V=a^{3}=27$.",
       "verify": "3^3",
       "tags": ["stereometria"]
     },

@@ -117,7 +117,7 @@
       "prompt": "Średnia arytmetyczna liczb $x, 2x, 3x$ jest równa $8$. Wtedy $x$ jest równe",
       "options": ["$4$", "$8$", "$2$", "$\\frac{8}{3}$"],
       "answer": 0,
-      "explanation": "$\\frac{6x}{3}=2x=8$, więc $x=4$.",
+      "explanation": "1. Średnia: $\\frac{x+2x+3x}{3}=\\frac{6x}{3}=2x$.\n2. $2x=8$, więc $x=4$ (liczby $4,8,12$ mają średnią $8$).",
       "verify": "4",
       "tags": ["statystyka", "srednia"]
     },

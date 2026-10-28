@@ -8,7 +8,7 @@
       "answer": {
         "value": 6
       },
-      "explanation": "$\\frac{4!}{2!\\cdot 2!}=6$.",
+      "explanation": "1. Przestawiamy $4$ litery, ale M i A występują po dwa razy, a zamiana dwóch takich samych liter nie daje nowego słowa.\n2. $\\frac{4!}{2!\\cdot 2!}=\\frac{24}{4}=6$.",
       "verify": "factorial(4) / (factorial(2) * factorial(2))",
       "tags": ["kombinatoryka", "permutacje-z-powtorzeniami"]
     },
@@ -32,7 +32,7 @@
       "answer": {
         "value": 67
       },
-      "explanation": "$50+33-16=67$.",
+      "explanation": "1. Podzielne przez $2$: $50$, przez $3$: $33$. Liczby podzielne przez $6$ liczymy w obu grupach, więc odejmujemy je raz: $16$.\n2. $50+33-16=67$.",
       "verify": "50 + 33 - 16",
       "tags": ["kombinatoryka", "wlaczenia-wylaczenia"]
     },
@@ -68,7 +68,7 @@
       "answer": {
         "value": 24
       },
-      "explanation": "$(5-1)!=24$.",
+      "explanation": "1. Ustawień w rzędzie jest $5!$, ale przy okrągłym stole każde ustawienie pojawia się $5$ razy (obroty).\n2. $\\frac{5!}{5}=(5-1)!=24$.",
       "verify": "factorial(4)",
       "tags": ["kombinatoryka", "permutacje"]
     },
@@ -91,7 +91,7 @@
       "answer": {
         "value": 35
       },
-      "explanation": "$\\binom{10}{2}-10=45-10=35$.",
+      "explanation": "1. Każda para wierzchołków wyznacza odcinek: $\\binom{10}{2}=45$. Wśród nich jest $10$ boków.\n2. Przekątnych: $45-10=35$.",
       "verify": "combinations(10, 2) - 10",
       "tags": ["kombinatoryka"]
     },
@@ -102,7 +102,7 @@
       "prompt": "Oceń prawdziwość zdań.",
       "options": ["$\\binom{n}{k}=\\binom{n}{n-k}$", "$\\binom{n}{0}=0$"],
       "answer": [true, false],
-      "explanation": "1. Prawda.\n2. $\\binom{n}{0}=1$. Fałsz.",
+      "explanation": "1. Wybranie $k$ elementów to to samo, co wybranie $n-k$ pozostawionych. Prawda.\n2. Pusty podzbiór można wybrać na jeden sposób: $\\binom{n}{0}=\\frac{n!}{0!\\,n!}=1$. Fałsz.",
       "tags": ["kombinatoryka"]
     }
   ],

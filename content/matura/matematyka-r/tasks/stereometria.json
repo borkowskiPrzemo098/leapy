@@ -65,7 +65,7 @@
       "answer": {
         "value": 5
       },
-      "explanation": "$r=l\\cos 60^\\circ=5$.",
+      "explanation": "1. Tworząca, promień i wysokość tworzą trójkąt prostokątny; promień przylega do kąta $60^\\circ$, więc $r=l\\cos 60^\\circ$.\n2. $r=10\\cdot\\frac{1}{2}=5$.",
       "verify": "10 * cos(pi/3)",
       "tags": ["stereometria", "stozek"]
     },
@@ -107,7 +107,7 @@
         "Kąt nachylenia ściany bocznej i krawędzi bocznej do podstawy są zawsze równe."
       ],
       "answer": [true, false],
-      "explanation": "1. Prawda.\n2. Na ogół są różne (np. $45^\\circ$ i $\\operatorname{arctg}\\sqrt{2}$ w zadaniu wyżej). Fałsz.",
+      "explanation": "1. W ostrosłupie prawidłowym podstawa jest wielokątem foremnym, a spodek wysokości leży w jej środku, czyli w środku okręgu opisanego. Prawda.\n2. Na ogół te kąty są różne; w ostrosłupie z zadania wyżej to $45^\\circ$ i $\\operatorname{arctg}\\sqrt{2}\\approx 54{,}7^\\circ$. Fałsz.",
       "tags": ["stereometria"]
     }
   ],

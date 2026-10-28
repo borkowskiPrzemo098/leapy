@@ -9,7 +9,7 @@
         "value": 70,
         "unit": "°"
       },
-      "explanation": "$180^\\circ-110^\\circ=70^\\circ$.",
+      "explanation": "1. Suma kątów w trójkącie wynosi $180^\\circ$.\n2. Trzeci kąt: $180^\\circ-(50^\\circ+60^\\circ)=180^\\circ-110^\\circ=70^\\circ$.",
       "verify": "180 - 50 - 60",
       "tags": ["katy"]
     },
@@ -35,7 +35,7 @@
         "value": 145,
         "unit": "°"
       },
-      "explanation": "$180^\\circ-35^\\circ=145^\\circ$.",
+      "explanation": "1. Kąty przyległe razem tworzą kąt półpełny: $\\alpha+\\beta=180^\\circ$.\n2. $\\beta=180^\\circ-35^\\circ=145^\\circ$.",
       "verify": "180 - 35",
       "tags": ["katy"]
     },
@@ -46,7 +46,7 @@
       "prompt": "Trójkąt o kątach $30^\\circ$, $50^\\circ$ i $100^\\circ$ jest",
       "options": ["rozwartokątny", "ostrokątny", "prostokątny", "równoboczny"],
       "answer": 0,
-      "explanation": "Ma kąt większy od $90^\\circ$.",
+      "explanation": "1. Trójkąt, który ma kąt większy od $90^\\circ$, to trójkąt rozwartokątny.\n2. Tu kąt $100^\\circ>90^\\circ$, więc trójkąt jest rozwartokątny.",
       "tags": ["rodzaje-trojkatow"]
     },
     {
@@ -60,7 +60,7 @@
         "W trójkącie równobocznym każdy kąt ma $60^\\circ$."
       ],
       "answer": [true, false, true],
-      "explanation": "1. Prawda.\n2. Dwa kąty proste to już $180^\\circ$. Fałsz.\n3. $180^\\circ:3=60^\\circ$. Prawda.",
+      "explanation": "1. Kąty wierzchołkowe dopełniają ten sam kąt do $180^\\circ$, więc są równe. Prawda.\n2. Dwa kąty proste to już $180^\\circ$, na trzeci kąt nic nie zostaje. Fałsz.\n3. Kąty są równe, a ich suma to $180^\\circ$: $180^\\circ:3=60^\\circ$. Prawda.",
       "tags": ["katy"]
     }
   ],

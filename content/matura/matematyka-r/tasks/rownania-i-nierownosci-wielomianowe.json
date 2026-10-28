@@ -48,7 +48,7 @@
       "answer": {
         "value": 3
       },
-      "explanation": "$x(x-2)(x+2)=0$: $0, 2, -2$.",
+      "explanation": "1. Wyłączamy $x$ przed nawias i stosujemy różnicę kwadratów: $x(x^{2}-4)=x(x-2)(x+2)=0$.\n2. Iloczyn jest zerem, gdy jeden z czynników jest zerem: $x=0$, $2$ lub $-2$. Trzy rozwiązania.",
       "tags": ["rownania-wielomianowe"]
     },
     {
@@ -99,7 +99,7 @@
         "nie ma rozwiązań"
       ],
       "answer": 0,
-      "explanation": "$x^{2}+1>0$, zostaje $x=5$.",
+      "explanation": "1. Iloczyn jest zerem, gdy któryś czynnik jest zerem. $x^{2}+1\\ge 1>0$, więc nigdy nie jest zerem.\n2. Zostaje $x-5=0$, czyli jedno rozwiązanie $x=5$.",
       "tags": ["rownania-wielomianowe"]
     },
     {

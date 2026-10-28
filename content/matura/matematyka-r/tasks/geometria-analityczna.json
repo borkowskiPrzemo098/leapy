@@ -8,7 +8,7 @@
       "answer": {
         "value": 2
       },
-      "explanation": "$\\frac{|3+8-1|}{5}=2$.",
+      "explanation": "1. Odległość punktu $(x_{0},y_{0})$ od prostej $Ax+By+C=0$: $d=\\frac{|Ax_{0}+By_{0}+C|}{\\sqrt{A^{2}+B^{2}}}$.\n2. $d=\\frac{|3\\cdot 1+4\\cdot 2-1|}{\\sqrt{9+16}}=\\frac{10}{5}=2$.",
       "verify": "abs(3 + 8 - 1) / 5",
       "tags": ["geometria-analityczna", "odleglosc"]
     },
@@ -24,7 +24,7 @@
         "$S=(4,-6)$, $r=3$"
       ],
       "answer": 0,
-      "explanation": "$(x-2)^{2}+(y+3)^{2}=16$.",
+      "explanation": "1. Uzupełniamy do pełnych kwadratów: $x^{2}-4x=(x-2)^{2}-4$ i $y^{2}+6y=(y+3)^{2}-9$.\n2. $(x-2)^{2}+(y+3)^{2}=3+4+9=16$, więc $S=(2,-3)$ i $r=4$.",
       "tags": ["geometria-analityczna", "okrag"]
     },
     {
@@ -44,7 +44,7 @@
       "prompt": "Wektory $\\vec{u}=[2,3]$ i $\\vec{v}=[3,-2]$ są",
       "options": ["prostopadłe", "równoległe", "równe", "przeciwne"],
       "answer": 0,
-      "explanation": "Iloczyn skalarny $6-6=0$.",
+      "explanation": "1. Wektory są prostopadłe, gdy ich iloczyn skalarny jest równy $0$: $u_{1}v_{1}+u_{2}v_{2}$.\n2. $2\\cdot 3+3\\cdot(-2)=6-6=0$, więc są prostopadłe.",
       "tags": ["geometria-analityczna", "wektory"]
     },
     {
@@ -92,7 +92,7 @@
         "Prosta jest styczna do okręgu, gdy odległość środka od prostej jest równa promieniowi."
       ],
       "answer": [false, true],
-      "explanation": "1. $(x+1)^{2}+y^{2}=-4$ — brak punktów. Fałsz.\n2. Prawda.",
+      "explanation": "1. Po zwinięciu do kwadratów: $(x+1)^{2}+y^{2}=-4$. Suma kwadratów nie może być ujemna, więc równanie nie opisuje żadnego punktu. Fałsz.\n2. Prosta jest styczna, gdy ma z okręgiem jeden punkt wspólny, czyli gdy odległość środka od prostej jest równa promieniowi. Prawda.",
       "tags": ["geometria-analityczna"]
     },
     {

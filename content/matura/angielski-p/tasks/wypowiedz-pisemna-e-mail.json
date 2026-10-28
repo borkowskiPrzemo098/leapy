@@ -37,7 +37,7 @@
         "You must pay me back fast."
       ],
       "answer": 0,
-      "explanation": "Uprzejma, formalna prośba.",
+      "explanation": "1. I would be grateful if you could… to uprzejma, formalna prośba, dobra do reklamacji.\n2. Pozostałe zdania to rozkazy („Give me”, „You must”), które w piśmie formalnym brzmią niegrzecznie.",
       "tags": ["e-mail", "styl"]
     },
     {
@@ -82,7 +82,7 @@
         "Because the hotel was comfortable."
       ],
       "answer": 0,
-      "explanation": "*however* wprowadza kontrast.",
+      "explanation": "1. however wprowadza kontrast: hotel wygodny, ale jedzenie rozczarowało.\n2. and łączy, so wskazuje skutek, a samo Because… nie jest pełnym zdaniem.",
       "tags": ["e-mail", "spojnosc"]
     },
     {
@@ -95,7 +95,7 @@
         "W e-mailu do kolegi warto używać form skróconych, np. *I'm*, *can't*."
       ],
       "answer": [true, true],
-      "explanation": "1. Prawda — limit słów jest częścią polecenia.\n2. Prawda — formy skrócone pasują do stylu nieformalnego.",
+      "explanation": "1. Limit słów jest częścią polecenia; tekst wyraźnie dłuższy może stracić punkty. Prawda.\n2. Formy skrócone (I'm, can't) są naturalne w stylu nieformalnym, więc w e-mailu do kolegi pasują. Prawda.",
       "tags": ["e-mail"]
     }
   ],

@@ -80,7 +80,7 @@
         "Znaczenie idiomu często da się odgadnąć z kontekstu."
       ],
       "answer": [false, true],
-      "explanation": "1. W liście formalnym idiomy są zbyt potoczne. Fałsz.\n2. Prawda.",
+      "explanation": "1. Idiomy są potoczne, więc w liście formalnym brzmią zbyt swobodnie. Fałsz.\n2. Kontekst często podpowiada sens idiomu, np. „The test was a piece of cake. I finished in ten minutes.”. Prawda.",
       "tags": ["idiomy", "styl"]
     }
   ],

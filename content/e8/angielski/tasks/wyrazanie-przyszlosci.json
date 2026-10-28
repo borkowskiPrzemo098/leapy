@@ -17,7 +17,7 @@
       "prompt": "*— It's cold in here. — OK, I ___ the window.*",
       "options": ["'ll close", "close", "'m closing to", "closed"],
       "answer": 0,
-      "explanation": "Spontaniczna decyzja: *will*.",
+      "explanation": "1. Decyzja zapada w chwili mówienia (ktoś mówi, że jest zimno), więc używamy will: I'll close the window.\n2. be going to wyrażałoby plan podjęty wcześniej.",
       "tags": ["gramatyka", "przyszlosc"]
     },
     {

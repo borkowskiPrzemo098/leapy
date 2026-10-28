@@ -6,9 +6,11 @@
       "type": "numeric",
       "difficulty": 1,
       "prompt": "Oblicz $|-7|-|3-8|$.",
-      "answer": { "value": 2 },
+      "answer": {
+        "value": 2
+      },
       "hint": "Najpierw policz wyrażenie pod drugą kreską.",
-      "explanation": "1. $|-7|=7$.\n2. $|3-8|=|-5|=5$.\n3. $7-5=2$.",
+      "explanation": "1. Wartość bezwzględna to odległość od zera: $|-7|=7$, a $|3-8|=|-5|=5$.\n2. $7-5=2$.",
       "verify": "abs(-7) - abs(3 - 8)",
       "tags": ["wartosc-bezwzgledna"]
     },
@@ -85,7 +87,9 @@
       "type": "numeric",
       "difficulty": 3,
       "prompt": "Oblicz sumę wszystkich liczb całkowitych $x$ spełniających nierówność $|x-2|\\le 3$.",
-      "answer": { "value": 14 },
+      "answer": {
+        "value": 14
+      },
       "hint": "Wypisz liczby całkowite z przedziału.",
       "explanation": "1. $|x-2|\\le 3\\iff -1\\le x\\le 5$.\n2. Liczby całkowite: $-1, 0, 1, 2, 3, 4, 5$.\n3. Suma: $-1+0+1+2+3+4+5=14$.",
       "verify": "-1 + 0 + 1 + 2 + 3 + 4 + 5",

@@ -102,7 +102,7 @@
       "prompt": "Przeczytaj tekst.\n\n> Coraz więcej młodych ludzi spędza wieczory przed ekranem. Lekarze ostrzegają, że niebieskie światło telefonu utrudnia zasypianie. Może więc warto odłożyć telefon godzinę przed snem?\n\nOceń prawdziwość zdań.",
       "options": ["Autor zakazuje używania telefonów.", "Tekst odnosi się do problemu ze snem."],
       "answer": [false, true],
-      "explanation": "1. Autor tylko zachęca („może warto”). Fałsz.\n2. Prawda.",
+      "explanation": "1. Autor niczego nie zakazuje, tylko zachęca („może warto”). Fałsz.\n2. Tekst mówi o tym, że telefon wieczorem utrudnia zasypianie, czyli o problemie ze snem. Prawda.",
       "tags": ["rozumienie"]
     },
     {
@@ -147,7 +147,7 @@
       "prompt": "Przeczytaj tekst.\n\n> Rowery miejskie to nie tylko moda. Każdy przejazd rowerem zamiast samochodem oznacza mniej spalin, a do tego dbamy o kondycję.\n\nStosunek autora do rowerów miejskich jest",
       "options": ["pozytywny", "negatywny", "obojętny", "nie da się go określić"],
       "answer": 0,
-      "explanation": "Autor podaje same zalety.",
+      "explanation": "1. Autor wymienia same zalety rowerów (mniej spalin, lepsza kondycja) i nie podaje wad.\n2. Dlatego jego stosunek jest pozytywny, a nie obojętny czy negatywny.",
       "tags": ["postawa-autora"]
     },
     {

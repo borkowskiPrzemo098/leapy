@@ -8,7 +8,7 @@
       "answer": {
         "value": 13
       },
-      "explanation": "$\\sqrt{25+144}=13$.",
+      "explanation": "1. Z twierdzenia Pitagorasa: $c^{2}=a^{2}+b^{2}$.\n2. $c^{2}=25+144=169$, więc $c=13$.",
       "verify": "sqrt(5^2 + 12^2)",
       "tags": ["pitagoras"]
     },
@@ -20,7 +20,7 @@
       "answer": {
         "value": 8
       },
-      "explanation": "$\\sqrt{100-36}=8$.",
+      "explanation": "1. Przeciwprostokątna jest najdłuższa, więc odejmujemy: $b^{2}=c^{2}-a^{2}$.\n2. $b^{2}=100-36=64$, więc $b=8$.",
       "verify": "sqrt(100 - 36)",
       "tags": ["pitagoras"]
     },
@@ -31,7 +31,7 @@
       "prompt": "Przekątna kwadratu o boku $4$ ma długość",
       "options": ["$4\\sqrt{2}$", "$8$", "$16$", "$2\\sqrt{2}$"],
       "answer": 0,
-      "explanation": "$d=a\\sqrt{2}=4\\sqrt{2}$.",
+      "explanation": "1. Przekątna dzieli kwadrat na dwa trójkąty prostokątne: $d^{2}=a^{2}+a^{2}=2a^{2}$, więc $d=a\\sqrt{2}$.\n2. $d=4\\sqrt{2}$.",
       "verify": "4 * sqrt(2)",
       "tags": ["pitagoras"]
     },
@@ -44,7 +44,7 @@
         "value": 4,
         "unit": "m"
       },
-      "explanation": "$\\sqrt{25-9}=4$ m.",
+      "explanation": "1. Drabina, ściana i ziemia tworzą trójkąt prostokątny; drabina ($5$ m) to przeciwprostokątna.\n2. $h^{2}=5^{2}-3^{2}=25-9=16$, więc $h=4$ m.",
       "verify": "sqrt(25 - 9)",
       "tags": ["pitagoras", "zadania-tekstowe"]
     },

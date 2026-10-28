@@ -54,7 +54,7 @@
       "answer": {
         "value": 3
       },
-      "explanation": "$\\sigma=\\sqrt{9}=3$.",
+      "explanation": "1. Odchylenie standardowe to pierwiastek z wariancji: $\\sigma=\\sqrt{\\sigma^{2}}$.\n2. $\\sigma=\\sqrt{9}=3$.",
       "verify": "sqrt(9)",
       "tags": ["statystyka", "odchylenie"]
     },

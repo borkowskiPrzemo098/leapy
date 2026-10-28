@@ -7,7 +7,7 @@
       "prompt": "*My brother and I are ___.*",
       "options": ["siblings", "cousins", "parents", "neighbours"],
       "answer": 0,
-      "explanation": "Rodzeństwo: *siblings*.",
+      "explanation": "1. Brat i ja to rodzeństwo: siblings.\n2. cousins to kuzyni, parents to rodzice, neighbours to sąsiedzi.",
       "tags": ["slownictwo", "rodzina"]
     },
     {

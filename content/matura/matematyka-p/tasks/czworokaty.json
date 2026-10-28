@@ -6,7 +6,9 @@
       "type": "numeric",
       "difficulty": 1,
       "prompt": "Przekątne rombu mają długości $6$ i $8$. Oblicz pole rombu.",
-      "answer": { "value": 24 },
+      "answer": {
+        "value": 24
+      },
       "explanation": "$P=\\frac{d_{1}d_{2}}{2}=\\frac{48}{2}=24$.",
       "verify": "6 * 8 / 2",
       "tags": ["czworokaty", "pole"]
@@ -16,7 +18,9 @@
       "type": "numeric",
       "difficulty": 2,
       "prompt": "Przekątne rombu mają długości $6$ i $8$. Oblicz długość boku rombu.",
-      "answer": { "value": 5 },
+      "answer": {
+        "value": 5
+      },
       "explanation": "1. Przekątne dzielą się na połowy pod kątem prostym: $3$ i $4$.\n2. Bok: $\\sqrt{9+16}=5$.",
       "verify": "sqrt(3^2 + 4^2)",
       "tags": ["czworokaty", "pitagoras"]
@@ -26,8 +30,10 @@
       "type": "numeric",
       "difficulty": 1,
       "prompt": "Podstawy trapezu mają długości $10$ i $4$, a wysokość $5$. Oblicz pole trapezu.",
-      "answer": { "value": 35 },
-      "explanation": "$P=\\frac{10+4}{2}\\cdot 5=35$.",
+      "answer": {
+        "value": 35
+      },
+      "explanation": "1. Pole trapezu: $P=\\frac{a+b}{2}\\cdot h$, czyli średnia podstaw razy wysokość.\n2. $P=\\frac{10+4}{2}\\cdot 5=7\\cdot 5=35$.",
       "verify": "(10 + 4) / 2 * 5",
       "tags": ["czworokaty", "pole"]
     },
@@ -47,7 +53,9 @@
       "type": "numeric",
       "difficulty": 3,
       "prompt": "Trapez równoramienny ma podstawy długości $10$ i $4$ oraz ramiona długości $5$. Oblicz jego wysokość.",
-      "answer": { "value": 4 },
+      "answer": {
+        "value": 4
+      },
       "explanation": "1. Odcinek odcięty przez wysokość: $\\frac{10-4}{2}=3$.\n2. $h=\\sqrt{5^{2}-3^{2}}=4$.",
       "verify": "sqrt(5^2 - 3^2)",
       "tags": ["czworokaty", "pitagoras"]
@@ -57,7 +65,10 @@
       "type": "numeric",
       "difficulty": 2,
       "prompt": "Trzy kąty czworokąta mają miary $85^\\circ$, $95^\\circ$ i $110^\\circ$. Oblicz miarę czwartego kąta (w stopniach).",
-      "answer": { "value": 70, "unit": "°" },
+      "answer": {
+        "value": 70,
+        "unit": "°"
+      },
       "explanation": "$360^\\circ-85^\\circ-95^\\circ-110^\\circ=70^\\circ$.",
       "verify": "360 - 85 - 95 - 110",
       "tags": ["czworokaty"]

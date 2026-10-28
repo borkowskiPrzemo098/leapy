@@ -32,7 +32,7 @@
       "prompt": "*I ___ my keys yesterday and had to wait for my mum.*",
       "options": ["lost", "have lost", "was losing", "lose"],
       "answer": 0,
-      "explanation": "*yesterday* — Past Simple.",
+      "explanation": "1. yesterday wskazuje zakończony moment w przeszłości, więc używamy Past Simple: lost.\n2. Present Perfect (have lost) nie łączy się z określeniem przeszłego czasu, takim jak yesterday.",
       "tags": ["gramatyka", "past-simple"]
     },
     {

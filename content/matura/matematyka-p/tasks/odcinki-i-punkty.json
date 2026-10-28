@@ -97,7 +97,7 @@
       "answer": {
         "value": 5
       },
-      "explanation": "$\\sqrt{9+16}=5$.",
+      "explanation": "1. Odległość punktu $(x,y)$ od początku układu to $\\sqrt{x^{2}+y^{2}}$.\n2. $\\sqrt{(-3)^{2}+4^{2}}=\\sqrt{9+16}=5$.",
       "verify": "sqrt(9 + 16)",
       "tags": ["geometria-analityczna", "odcinek"]
     },
@@ -124,7 +124,7 @@
       "answer": {
         "value": 5
       },
-      "explanation": "1. $|AB|=\\sqrt{36+64}=10$.\n2. $r=5$.",
+      "explanation": "1. Średnica to odcinek $AB$: $|AB|=\\sqrt{(7-1)^{2}+(10-2)^{2}}=\\sqrt{36+64}=10$.\n2. Promień to połowa średnicy: $r=5$.",
       "verify": "sqrt(6^2 + 8^2) / 2",
       "tags": ["geometria-analityczna", "okrag"]
     },

@@ -79,7 +79,7 @@
         "$\\mathbb{R}\\setminus\\{-3,3\\}$"
       ],
       "answer": 0,
-      "explanation": "$x^{2}-9>0\\iff x<-3$ lub $x>3$.",
+      "explanation": "1. Logarytmować można tylko liczby dodatnie: $x^{2}-9>0$.\n2. $(x-3)(x+3)>0$ dla $x<-3$ lub $x>3$, czyli $(-\\infty,-3)\\cup(3,\\infty)$.",
       "tags": ["logarytmy", "dziedzina"]
     },
     {
@@ -104,7 +104,7 @@
         "$\\log(a+b)=\\log a+\\log b$."
       ],
       "answer": [true, true, false],
-      "explanation": "1. Podstawa $<1$. Prawda.\n2. Z odwrotności logarytmów. Prawda.\n3. Fałsz.",
+      "explanation": "1. Podstawa $0{,}5<1$, więc większemu $x$ odpowiada mniejszy logarytm: funkcja maleje. Prawda.\n2. Ze wzoru na zmianę podstawy: $\\log_{b}a=\\frac{1}{\\log_{a}b}$, więc iloczyn jest równy $1$. Prawda.\n3. Logarytm sumy nie rozkłada się na sumę logarytmów; np. $\\log(1+1)=\\log 2\\neq 0=\\log 1+\\log 1$. Fałsz.",
       "tags": ["logarytmy"]
     },
     {
@@ -127,7 +127,7 @@
       "answer": {
         "value": 2
       },
-      "explanation": "1. Dziedzina: $x>0$.\n2. $x+2=2x$, $x=2$.",
+      "explanation": "1. Dziedzina: $x>0$ (i wtedy $x+2>0$). Suma logarytmów to logarytm iloczynu: $\\log 2+\\log x=\\log 2x$.\n2. $\\log(x+2)=\\log 2x$, więc $x+2=2x$ i $x=2$, które należy do dziedziny.",
       "tags": ["logarytmy", "rownania"]
     },
     {

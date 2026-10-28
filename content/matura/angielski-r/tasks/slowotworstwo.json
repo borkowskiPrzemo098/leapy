@@ -15,7 +15,7 @@
       "difficulty": 2,
       "prompt": "Uzupełnij formą słowa z nawiasu: *It was ___ of him to leave without saying goodbye. (polite)*",
       "answer": ["impolite"],
-      "explanation": "Negatywna ocena: *impolite*.",
+      "explanation": "1. Odejście bez pożegnania to niegrzeczne zachowanie, więc potrzebny jest przymiotnik przeczący: impolite.\n2. Przedrostek im- stawiamy przed p (impolite, impossible).",
       "tags": ["slowotworstwo"]
     },
     {
@@ -33,7 +33,7 @@
       "difficulty": 3,
       "prompt": "Uzupełnij formą słowa z nawiasu: *Parking here is ___. You will get a fine. (legal)*",
       "answer": ["illegal"],
-      "explanation": "*il-* przed *l*: *illegal*.",
+      "explanation": "1. Za parkowanie dostaje się mandat, więc jest nielegalne: illegal.\n2. Przed słowami na l przeczenie tworzy przedrostek il-.",
       "tags": ["slowotworstwo"]
     },
     {
@@ -42,7 +42,7 @@
       "difficulty": 2,
       "prompt": "Uzupełnij formą słowa z nawiasu: *She answered the question ___. (careful)*",
       "answer": ["carefully"],
-      "explanation": "Przysłówek: *carefully*.",
+      "explanation": "1. Słowo określa czasownik answered (jak odpowiedziała?), więc potrzebny jest przysłówek: carefully.\n2. Przysłówek tworzymy, dodając -ly do przymiotnika careful.",
       "tags": ["slowotworstwo"]
     },
     {
@@ -52,7 +52,7 @@
       "prompt": "Które słowo jest rzeczownikiem od *decide*?",
       "options": ["decision", "decisive", "decided", "decidement"],
       "answer": 0,
-      "explanation": "*decide – decision – decisive*.",
+      "explanation": "1. Rzeczownik od decide to decision.\n2. decisive to przymiotnik („zdecydowany”), a decided to forma czasownika.",
       "tags": ["slowotworstwo"]
     },
     {

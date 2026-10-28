@@ -27,7 +27,7 @@
         "W dzielnicy jest wiele bibliotek."
       ],
       "answer": 0,
-      "explanation": "Ironia służy krytyce decyzji.",
+      "explanation": "1. „Cóż za wspaniały pomysł” to ironia: autor mówi odwrotnie, niż myśli.\n2. Ironia krytykuje zamknięcie biblioteki, więc teza brzmi: to była zła decyzja.",
       "tags": ["publicystyka", "teza"]
     },
     {
@@ -42,7 +42,7 @@
         "urzędowe pismo"
       ],
       "answer": 0,
-      "explanation": "Cechy felietonu.",
+      "explanation": "1. Felieton to krótki, subiektywny komentarz do bieżących spraw, często ironiczny.\n2. Wywód z przypisami to tekst naukowy, a relacja bez ocen to raczej reportaż lub notatka.",
       "tags": ["publicystyka", "gatunki"]
     },
     {
@@ -72,7 +72,7 @@
         "producentom telefonów"
       ],
       "answer": 0,
-      "explanation": "„To problem szkoły…”.",
+      "explanation": "1. Autor pisze wprost: „To nie jest problem młodzieży — to problem szkoły, która zaczyna lekcje o świcie”.\n2. Odpowiedzialność przypisuje więc organizacji pracy szkoły, a nie nastolatkom.",
       "tags": ["publicystyka", "teza"]
     },
     {
@@ -85,7 +85,7 @@
         "Reportaż opiera się na rzeczywistych zdarzeniach."
       ],
       "answer": [false, true],
-      "explanation": "1. To subiektywny pogląd. Fałsz.\n2. Prawda.",
+      "explanation": "1. Opinia felietonisty to jego subiektywny pogląd, którego nie da się sprawdzić jak faktu. Fałsz.\n2. Reportaż to literatura faktu: opisuje prawdziwe zdarzenia i ludzi. Prawda.",
       "tags": ["publicystyka"]
     },
     {
@@ -100,7 +100,7 @@
         "definiowaniu terminów"
       ],
       "answer": 0,
-      "explanation": "To środki perswazji.",
+      "explanation": "1. Słowa wartościujące („skandaliczny”, „wspaniały”) wyrażają ocenę autora i mają wpłynąć na opinię odbiorcy.\n2. Nie podają danych i nie są neutralne.",
       "tags": ["publicystyka", "perswazja"]
     },
     {

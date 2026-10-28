@@ -7,7 +7,7 @@
       "prompt": "*If I ___ you, I would talk to her.*",
       "options": ["were", "am", "would be", "have been"],
       "answer": 0,
-      "explanation": "Rada: *If I were you…*",
+      "explanation": "1. Radę w drugim okresie warunkowym wyrażamy przez If I were you…, z were dla każdej osoby.\n2. am nie pasuje, bo to sytuacja nierealna (nie jestem tobą).",
       "tags": ["gramatyka", "conditionals"]
     },
     {
@@ -37,7 +37,7 @@
       "prompt": "*You won't pass ___ you study harder.*",
       "options": ["unless", "if", "when", "as long"],
       "answer": 0,
-      "explanation": "*unless* = *if not*.",
+      "explanation": "1. unless znaczy if not: „Nie zdasz, jeśli nie będziesz się uczyć więcej”.\n2. Z if zdanie znaczyłoby odwrotnie: „Nie zdasz, jeśli będziesz się uczyć”.",
       "tags": ["gramatyka", "conditionals"]
     }
   ],

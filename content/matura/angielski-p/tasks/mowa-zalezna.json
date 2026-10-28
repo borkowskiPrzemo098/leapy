@@ -7,7 +7,7 @@
       "prompt": "*„I am tired,” said Anna.* → *Anna said that she ___ tired.*",
       "options": ["was", "is", "has been", "were"],
       "answer": 0,
-      "explanation": "Cofamy czas: *am → was*.",
+      "explanation": "1. Po said w czasie przeszłym cofamy czas: am (Present Simple) → was (Past Simple).\n2. Podmiot she jest w liczbie pojedynczej, więc was, nie were.",
       "tags": ["gramatyka", "reported-speech"]
     },
     {

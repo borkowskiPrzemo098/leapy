@@ -7,7 +7,7 @@
       "prompt": "*They ___ last year and now they have a little daughter.*",
       "options": ["got married", "got marry", "married with", "were marrying"],
       "answer": 0,
-      "explanation": "Pobrać się: *get married*.",
+      "explanation": "1. „Pobrać się” to get married (get + przymiotnik married).\n2. got marry jest błędne, a married with to błąd: mówimy married to someone.",
       "tags": ["slownictwo", "rodzina"]
     },
     {

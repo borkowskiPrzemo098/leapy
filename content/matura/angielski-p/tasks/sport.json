@@ -7,7 +7,7 @@
       "prompt": "*Thousands of ___ cheered when the team scored.*",
       "options": ["supporters", "players", "referees", "coaches"],
       "answer": 0,
-      "explanation": "Kibice: *supporters / fans*.",
+      "explanation": "1. Gdy drużyna strzela gola, wiwatują kibice: supporters (albo fans).\n2. players to zawodnicy, referees to sędziowie, coaches to trenerzy.",
       "tags": ["slownictwo", "sport"]
     },
     {
@@ -17,7 +17,7 @@
       "prompt": "*The match ended in a ___: 1–1.*",
       "options": ["draw", "tie up", "loss", "win"],
       "answer": 0,
-      "explanation": "Remis: *draw*.",
+      "explanation": "1. Wynik 1–1 to remis: draw.\n2. tie też znaczy remis, ale tie up to „związać”, więc nie pasuje.",
       "tags": ["slownictwo", "sport"]
     }
   ],

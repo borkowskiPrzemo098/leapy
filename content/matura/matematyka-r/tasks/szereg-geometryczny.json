@@ -8,7 +8,7 @@
       "answer": {
         "value": 2
       },
-      "explanation": "$\\frac{1}{1-\\frac{1}{2}}=2$.",
+      "explanation": "1. Szereg geometryczny o $a_{1}=1$ i $q=\\frac{1}{2}$; $|q|<1$, więc suma istnieje: $S=\\frac{a_{1}}{1-q}$.\n2. $S=\\frac{1}{1-\\frac{1}{2}}=\\frac{1}{\\frac{1}{2}}=2$.",
       "verify": "1 / (1 - 1/2)",
       "tags": ["szereg"]
     },
@@ -30,7 +30,7 @@
       "prompt": "Szereg $1+x+x^{2}+\\ldots$ jest zbieżny dla",
       "options": ["$x\\in(-1,\\ 1)$", "$x\\in[-1,\\ 1]$", "$x>1$", "każdego $x$"],
       "answer": 0,
-      "explanation": "Warunek $|q|=|x|<1$.",
+      "explanation": "1. Szereg geometryczny jest zbieżny, gdy $|q|<1$; tu $q=x$.\n2. $|x|<1\\iff x\\in(-1,1)$. Dla $x=\\pm 1$ wyrazy nie maleją do zera.",
       "tags": ["szereg"]
     },
     {
@@ -52,7 +52,7 @@
       "prompt": "Ułamek $0{,}(36)$ jest równy",
       "options": ["$\\frac{4}{11}$", "$\\frac{36}{100}$", "$\\frac{9}{25}$", "$\\frac{3}{8}$"],
       "answer": 0,
-      "explanation": "$\\frac{36}{99}=\\frac{4}{11}$.",
+      "explanation": "1. $0{,}(36)=0{,}36+0{,}0036+\\ldots$ to szereg o $a_{1}=0{,}36$ i $q=0{,}01$: $S=\\frac{0{,}36}{0{,}99}=\\frac{36}{99}$.\n2. Skracamy przez $9$: $\\frac{4}{11}$.",
       "verify": "36/99",
       "tags": ["szereg", "ulamek-okresowy"]
     },
@@ -79,7 +79,7 @@
         "$x>\\frac{1}{2}$"
       ],
       "answer": 0,
-      "explanation": "$q=2x$, warunek $|2x|<1$.",
+      "explanation": "1. Iloraz szeregu: $q=\\frac{2x}{1}=2x$. Suma istnieje, gdy $|q|<1$.\n2. $|2x|<1\\iff |x|<\\frac{1}{2}$, czyli $x\\in\\left(-\\frac{1}{2},\\frac{1}{2}\\right)$.",
       "tags": ["szereg", "parametr"]
     },
     {

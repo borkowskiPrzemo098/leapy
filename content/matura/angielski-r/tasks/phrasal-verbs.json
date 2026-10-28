@@ -7,7 +7,7 @@
       "prompt": "*We've ___ milk. Can you buy some?*",
       "options": ["run out of", "run into", "run over", "run away with"],
       "answer": 0,
-      "explanation": "*run out of* — skończyć się.",
+      "explanation": "1. „Skończyło nam się mleko”: run out of.\n2. run into to wpaść na kogoś, run over to przejechać, run away with to uciec z czymś.",
       "tags": ["phrasal-verbs"]
     },
     {
@@ -17,7 +17,7 @@
       "prompt": "*She ___ the job offer because the salary was too low.*",
       "options": ["turned down", "turned up", "turned over", "turned into"],
       "answer": 0,
-      "explanation": "*turn down* — odrzucić.",
+      "explanation": "1. Odrzuciła ofertę, bo pensja była za niska: turned down.\n2. turned up to pojawiła się, turned into to zamieniła się w coś.",
       "tags": ["phrasal-verbs"]
     },
     {
@@ -60,7 +60,7 @@
         "right": ["wymyślić", "opiekować się", "zrezygnować", "dogonić", "zgasić"]
       },
       "answer": [0, 1, 2, 3],
-      "explanation": "*Zgasić* to *put out*.",
+      "explanation": "1. come up with to wymyślić, look after to opiekować się, give up to zrezygnować, catch up with to dogonić.\n2. „Zgasić” (put out) nie pasuje do żadnego z podanych czasowników.",
       "tags": ["phrasal-verbs"]
     },
     {

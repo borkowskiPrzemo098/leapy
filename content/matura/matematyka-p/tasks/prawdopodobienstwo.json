@@ -41,7 +41,7 @@
       "prompt": "W urnie jest $4$ kule białe i $6$ czarnych. Losujemy jedną kulę. Prawdopodobieństwo wylosowania kuli białej jest równe",
       "options": ["$\\frac{2}{5}$", "$\\frac{2}{3}$", "$\\frac{3}{5}$", "$\\frac{1}{4}$"],
       "answer": 0,
-      "explanation": "$P=\\frac{4}{10}=\\frac{2}{5}$.",
+      "explanation": "1. Wszystkich kul jest $4+6=10$, białych $4$.\n2. $P=\\frac{4}{10}=\\frac{2}{5}$.",
       "verify": "4 / 10",
       "tags": ["prawdopodobienstwo"]
     },
@@ -78,7 +78,7 @@
         "Zdarzenie niemożliwe ma prawdopodobieństwo $0$."
       ],
       "answer": [false, true, true],
-      "explanation": "1. Prawdopodobieństwo jest z przedziału $[0,1]$. Fałsz.\n2. $1-0{,}3=0{,}7$. Prawda.\n3. Prawda.",
+      "explanation": "1. Prawdopodobieństwo jest liczbą z przedziału $[0,1]$, więc nie może wynosić $1{,}5$. Fałsz.\n2. Zdarzenie przeciwne: $P(A')=1-P(A)=1-0{,}3=0{,}7$. Prawda.\n3. Zdarzenie niemożliwe nie ma żadnych wyników sprzyjających: $P=\\frac{0}{|\\Omega|}=0$. Prawda.",
       "tags": ["prawdopodobienstwo"]
     },
     {
@@ -133,7 +133,7 @@
       "prompt": "Prawdopodobieństwo zdarzenia $A$ jest równe $0{,}15$. Prawdopodobieństwo zdarzenia przeciwnego jest równe",
       "options": ["$0{,}85$", "$0{,}15$", "$0{,}5$", "$1{,}15$"],
       "answer": 0,
-      "explanation": "$1-0{,}15=0{,}85$.",
+      "explanation": "1. Zdarzenie przeciwne zachodzi wtedy, gdy nie zachodzi $A$: $P(A')=1-P(A)$.\n2. $1-0{,}15=0{,}85$.",
       "verify": "1 - 0.15",
       "tags": ["prawdopodobienstwo", "zdarzenie-przeciwne"]
     }

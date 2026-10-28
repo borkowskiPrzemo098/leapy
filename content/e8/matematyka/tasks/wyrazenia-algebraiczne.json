@@ -17,7 +17,7 @@
       "prompt": "Wyrażenie $3(x+2)-2(x-1)$ po uproszczeniu to",
       "options": ["$x+8$", "$x+4$", "$5x+8$", "$x+5$"],
       "answer": 0,
-      "explanation": "$3x+6-2x+2=x+8$.",
+      "explanation": "1. Mnożymy nawiasy; minus przed drugim zmienia znaki: $3x+6-2x+2$.\n2. Redukujemy wyrazy podobne: $x+8$.",
       "tags": ["nawiasy"]
     },
     {
@@ -28,7 +28,7 @@
       "answer": {
         "value": 10
       },
-      "explanation": "$(-2)^{2}-3\\cdot(-2)=4+6=10$.",
+      "explanation": "1. Wstawiamy $x=-2$ w nawiasach: $(-2)^{2}-3\\cdot(-2)$.\n2. $(-2)^{2}=4$ i $-3\\cdot(-2)=6$, więc wynik to $4+6=10$.",
       "verify": "(-2)^2 - 3 * (-2)",
       "tags": ["wartosc-wyrazenia"]
     },
@@ -39,7 +39,7 @@
       "prompt": "Obwód prostokąta o bokach $a$ i $a+3$ jest równy",
       "options": ["$4a+6$", "$2a+3$", "$a^{2}+3a$", "$4a+3$"],
       "answer": 0,
-      "explanation": "$2a+2(a+3)=4a+6$.",
+      "explanation": "1. Obwód prostokąta to suma wszystkich boków: $2a+2(a+3)$.\n2. $2a+2a+6=4a+6$.",
       "tags": ["zapisywanie"]
     },
     {
@@ -49,7 +49,7 @@
       "prompt": "Iloczyn $(x+2)(x+3)$ jest równy",
       "options": ["$x^{2}+5x+6$", "$x^{2}+6$", "$x^{2}+5x+5$", "$2x+5$"],
       "answer": 0,
-      "explanation": "$x^{2}+3x+2x+6=x^{2}+5x+6$.",
+      "explanation": "1. Mnożymy każdy wyraz pierwszego nawiasu przez każdy wyraz drugiego: $x^{2}+3x+2x+6$.\n2. Redukujemy: $x^{2}+5x+6$.",
       "tags": ["nawiasy"]
     },
     {
@@ -79,7 +79,7 @@
       "answer": {
         "value": 7
       },
-      "explanation": "$1-(-6)=7$.",
+      "explanation": "1. Wstawiamy: $2\\cdot\\frac{1}{2}-3\\cdot(-2)$.\n2. $1-(-6)=1+6=7$.",
       "verify": "2 * 0.5 - 3 * (-2)",
       "tags": ["wartosc-wyrazenia"]
     },
@@ -90,7 +90,7 @@
       "prompt": "Oceń prawdziwość zdań.",
       "options": ["$2a+3b=5ab$", "$2(x+4)=2x+8$", "$a\\cdot a\\cdot a=a^{3}$"],
       "answer": [false, true, true],
-      "explanation": "1. Wyrazy niepodobne nie łączą się. Fałsz.\n2. Prawda.\n3. Prawda.",
+      "explanation": "1. $2a$ i $3b$ to wyrazy niepodobne (różne litery), więc nie da się ich dodać. Fałsz.\n2. Mnożymy $2$ przez każdy wyraz w nawiasie: $2\\cdot x+2\\cdot 4=2x+8$. Prawda.\n3. Iloczyn trzech jednakowych czynników to potęga: $a\\cdot a\\cdot a=a^{3}$. Prawda.",
       "tags": ["redukcja"]
     }
   ],

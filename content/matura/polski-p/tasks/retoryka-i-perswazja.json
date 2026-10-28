@@ -7,7 +7,7 @@
       "prompt": "Odwołanie do wiarygodności mówcy lub autorytetu to",
       "options": ["ethos", "pathos", "logos", "argument ad personam"],
       "answer": 0,
-      "explanation": "Ethos — wiarygodność.",
+      "explanation": "1. Ethos to odwołanie do wiarygodności i autorytetu mówcy.\n2. Pathos dotyczy emocji, a logos argumentów rozumowych.",
       "tags": ["retoryka"]
     },
     {
@@ -17,7 +17,7 @@
       "prompt": "Odwołanie do emocji odbiorcy to",
       "options": ["pathos", "ethos", "logos", "elipsa"],
       "answer": 0,
-      "explanation": "Pathos — emocje.",
+      "explanation": "1. Pathos to odwołanie do emocji odbiorcy: litości, gniewu, wzruszenia.\n2. Ethos to wiarygodność mówcy, logos to argumenty rozumowe.",
       "tags": ["retoryka"]
     },
     {

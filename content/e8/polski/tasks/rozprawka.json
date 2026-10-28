@@ -12,7 +12,7 @@
         "zakończenie z wnioskiem"
       ],
       "answer": [0, 1, 2, 3],
-      "explanation": "Teza → argumenty → wniosek.",
+      "explanation": "1. Najpierw wstęp z tezą, potem argumenty z przykładami (każdy w osobnym akapicie), na końcu zakończenie z wnioskiem.\n2. Wniosek musi być na końcu, bo wynika z argumentów.",
       "tags": ["kompozycja"]
     },
     {

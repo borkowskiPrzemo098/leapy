@@ -9,7 +9,7 @@
         "value": 3,
         "unit": "h"
       },
-      "explanation": "$t=\\frac{240}{80}=3$ h.",
+      "explanation": "1. Czas to droga podzielona przez prędkość: $t=\\frac{s}{v}$.\n2. $t=\\frac{240}{80}=3$ h.",
       "verify": "240 / 80",
       "tags": ["ruch"]
     },
@@ -22,7 +22,7 @@
         "value": 180,
         "unit": "km"
       },
-      "explanation": "$s=90\\cdot 2=180$ km.",
+      "explanation": "1. Droga to prędkość razy czas: $s=v\\cdot t$.\n2. $s=90\\cdot 2=180$ km.",
       "verify": "90 * 2",
       "tags": ["ruch"]
     },
@@ -48,7 +48,7 @@
         "value": 54,
         "unit": "km/h"
       },
-      "explanation": "$15\\cdot 3{,}6=54$.",
+      "explanation": "1. $1\\ \\frac{\\text{m}}{\\text{s}}=\\frac{3600\\ \\text{m}}{1\\ \\text{h}}=3{,}6\\ \\frac{\\text{km}}{\\text{h}}$.\n2. $15\\cdot 3{,}6=54\\ \\frac{\\text{km}}{\\text{h}}$.",
       "verify": "15 * 3.6",
       "tags": ["jednostki"]
     },
@@ -110,7 +110,7 @@
         "value": 8,
         "unit": "m/s"
       },
-      "explanation": "$100:12{,}5=8$.",
+      "explanation": "1. Prędkość to droga podzielona przez czas: $v=\\frac{s}{t}$.\n2. $v=\\frac{100}{12{,}5}=8\\ \\frac{\\text{m}}{\\text{s}}$.",
       "verify": "100 / 12.5",
       "tags": ["ruch"]
     },
@@ -146,7 +146,7 @@
         "value": 20,
         "unit": "m/s"
       },
-      "explanation": "$72:3{,}6=20$.",
+      "explanation": "1. $1\\ \\frac{\\text{m}}{\\text{s}}=3{,}6\\ \\frac{\\text{km}}{\\text{h}}$, więc z km/h na m/s dzielimy przez $3{,}6$.\n2. $72:3{,}6=20\\ \\frac{\\text{m}}{\\text{s}}$.",
       "verify": "72 / 3.6",
       "tags": ["jednostki"]
     },

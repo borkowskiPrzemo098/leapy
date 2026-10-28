@@ -94,7 +94,7 @@
         "Prawdopodobieństwo sukcesu może się zmieniać między próbami."
       ],
       "answer": [true, false],
-      "explanation": "1. Prawda.\n2. W każdej próbie $p$ jest takie samo. Fałsz.",
+      "explanation": "1. Wynik jednej próby nie może wpływać na kolejne. Prawda.\n2. W każdej próbie prawdopodobieństwo sukcesu $p$ musi być takie samo; gdy się zmienia (np. losowanie bez zwracania), schemat nie działa. Fałsz.",
       "tags": ["bernoulli"]
     },
     {

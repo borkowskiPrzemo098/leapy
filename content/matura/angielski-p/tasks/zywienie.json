@@ -7,7 +7,7 @@
       "prompt": "*Could you read me the ___? I don't remember how much sugar we need.*",
       "options": ["recipe", "receipt", "menu", "bill"],
       "answer": 0,
-      "explanation": "Przepis: *recipe*.",
+      "explanation": "1. Ilość cukru sprawdza się w przepisie: recipe.\n2. receipt to paragon (podobna pisownia), menu to karta dań, bill to rachunek.",
       "tags": ["slownictwo", "jedzenie"]
     },
     {

@@ -8,7 +8,7 @@
       "prompt": "Współczynnik kierunkowy prostej $2x+y-3=0$ jest równy",
       "options": ["$-2$", "$2$", "$3$", "$-3$"],
       "answer": 0,
-      "explanation": "$y=-2x+3$, więc $a=-2$.",
+      "explanation": "1. Przekształcamy do postaci kierunkowej $y=ax+b$: $y=-2x+3$.\n2. Współczynnik kierunkowy to liczba przy $x$: $a=-2$.",
       "verify": "-2",
       "tags": ["prosta"]
     },
@@ -29,7 +29,7 @@
       "prompt": "Proste $y=x+1$ i $y=-x+5$ przecinają się w punkcie",
       "options": ["$(2,\\ 3)$", "$(3,\\ 2)$", "$(1,\\ 2)$", "$(4,\\ 1)$"],
       "answer": 0,
-      "explanation": "1. $x+1=-x+5$, $x=2$.\n2. $y=3$.",
+      "explanation": "1. W punkcie przecięcia obie proste mają tę samą wartość $y$: $x+1=-x+5$.\n2. $2x=4$, $x=2$, a $y=2+1=3$. Punkt $(2,3)$.",
       "tags": ["prosta", "uklady-rownan"]
     },
     {
@@ -40,7 +40,7 @@
       "answer": {
         "value": 2
       },
-      "explanation": "$m=2\\cdot 3-4=2$.",
+      "explanation": "1. Punkt leży na prostej, gdy jego współrzędne spełniają jej równanie. Wstawiamy $x=3$.\n2. $m=2\\cdot 3-4=2$.",
       "verify": "2 * 3 - 4",
       "tags": ["prosta"]
     },
@@ -62,7 +62,7 @@
       "answer": {
         "value": 3
       },
-      "explanation": "$m-1=2$, więc $m=3$.",
+      "explanation": "1. Proste równoległe mają równe współczynniki kierunkowe: $m-1=2$.\n2. $m=3$.",
       "tags": ["prosta", "rownoleglosc"]
     },
     {
@@ -73,7 +73,7 @@
       "answer": {
         "value": -0.25
       },
-      "explanation": "$4m=-1$, więc $m=-\\frac{1}{4}$.",
+      "explanation": "1. Proste prostopadłe: iloczyn współczynników kierunkowych jest równy $-1$, czyli $m\\cdot 4=-1$.\n2. $m=-\\frac{1}{4}$.",
       "verify": "-1 / 4",
       "tags": ["prosta", "prostopadlosc"]
     },
@@ -108,7 +108,7 @@
       "prompt": "Prosta $y=-3x+6$ przecina oś $Ox$ w punkcie",
       "options": ["$(2,\\ 0)$", "$(6,\\ 0)$", "$(0,\\ 6)$", "$(-2,\\ 0)$"],
       "answer": 0,
-      "explanation": "$-3x+6=0\\iff x=2$.",
+      "explanation": "1. Na osi $Ox$ jest $y=0$, więc rozwiązujemy $-3x+6=0$.\n2. $x=2$. Punkt $(2,0)$.",
       "tags": ["prosta"]
     },
     {

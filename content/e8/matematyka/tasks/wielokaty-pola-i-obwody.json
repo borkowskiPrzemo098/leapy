@@ -8,7 +8,7 @@
       "answer": {
         "value": 20
       },
-      "explanation": "$\\frac{1}{2}\\cdot 8\\cdot 5=20$.",
+      "explanation": "1. Pole trójkąta: $P=\\frac{1}{2}a\\cdot h$.\n2. $P=\\frac{1}{2}\\cdot 8\\cdot 5=20\\ \\text{cm}^{2}$.",
       "verify": "0.5 * 8 * 5",
       "tags": ["pole"]
     },
@@ -20,7 +20,7 @@
       "answer": {
         "value": 30
       },
-      "explanation": "$\\frac{(8+4)\\cdot 5}{2}=30$.",
+      "explanation": "1. Pole trapezu: $P=\\frac{(a+b)\\cdot h}{2}$.\n2. $P=\\frac{(8+4)\\cdot 5}{2}=\\frac{60}{2}=30\\ \\text{cm}^{2}$.",
       "verify": "(8 + 4) * 5 / 2",
       "tags": ["pole", "trapez"]
     },
@@ -44,7 +44,7 @@
       "answer": {
         "value": 81
       },
-      "explanation": "Bok: $9$ cm, pole: $81$.",
+      "explanation": "1. Kwadrat ma $4$ równe boki: $a=36:4=9$ cm.\n2. Pole: $a^{2}=81\\ \\text{cm}^{2}$.",
       "verify": "9^2",
       "tags": ["pole", "obwod"]
     },

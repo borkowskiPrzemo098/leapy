@@ -42,7 +42,7 @@
         "zawierać streszczenie lektury"
       ],
       "answer": 0,
-      "explanation": "Zakończenie domyka wywód.",
+      "explanation": "1. Zakończenie domyka wywód: potwierdza tezę i zbiera argumenty.\n2. Nowy argument w zakończeniu nie ma już uzasadnienia, a streszczenie nic nie dowodzi.",
       "tags": ["kompozycja"]
     },
     {
@@ -80,7 +80,7 @@
         "W zakończeniu można przedstawić szerszą refleksję."
       ],
       "answer": [true, true],
-      "explanation": "1. Prawda.\n2. Prawda — refleksja wychodząca poza temat może wzbogacić zakończenie.",
+      "explanation": "1. Akapity pokazują, gdzie zaczyna się nowy argument, więc tekst bez nich trudniej śledzić. Prawda.\n2. W zakończeniu, po potwierdzeniu tezy, można dodać szerszą refleksję, np. o aktualności problemu. Prawda.",
       "tags": ["kompozycja"]
     },
     {
@@ -125,7 +125,7 @@
         "Dawno temu…"
       ],
       "answer": 0,
-      "explanation": "Sygnał podsumowania.",
+      "explanation": "1. „Podsumowując” sygnalizuje czytelnikowi, że zaczyna się zakończenie.\n2. „Po pierwsze” i „Na początku” wprowadzają argumenty, a „Dawno temu” to początek baśni.",
       "tags": ["kompozycja"]
     }
   ],

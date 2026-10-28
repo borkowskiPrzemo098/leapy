@@ -7,7 +7,7 @@
       "prompt": "Autorem „Bajek i przypowieści” jest",
       "options": ["Ignacy Krasicki", "Jan Kochanowski", "Aleksander Fredro", "Adam Mickiewicz"],
       "answer": 0,
-      "explanation": "Bajki pisał Ignacy Krasicki.",
+      "explanation": "1. „Bajki i przypowieści” napisał Ignacy Krasicki, czołowy pisarz polskiego oświecenia.\n2. Fredro pisał komedie, Kochanowski żył w renesansie, Mickiewicz w romantyzmie.",
       "tags": ["oswiecenie"]
     },
     {
@@ -32,7 +32,7 @@
       "prompt": "Oświecenie uważało, że źródłem wiedzy jest przede wszystkim",
       "options": ["rozum", "uczucie", "objawienie", "intuicja poety"],
       "answer": 0,
-      "explanation": "Racjonalizm epoki.",
+      "explanation": "1. Oświecenie stawiało na racjonalizm: wiedzę zdobywa się rozumem i doświadczeniem.\n2. Uczucie i intuicja jako źródło poznania to cecha romantyzmu, a objawienie to podejście średniowiecza.",
       "tags": ["oswiecenie"]
     }
   ],

@@ -6,7 +6,9 @@
       "type": "numeric",
       "difficulty": 1,
       "prompt": "W ciągu geometrycznym $a_{1}=3$ i $q=2$. Oblicz $a_{6}$.",
-      "answer": { "value": 96 },
+      "answer": {
+        "value": 96
+      },
       "explanation": "$a_{6}=a_{1}q^{5}=3\\cdot 32=96$.",
       "verify": "3 * 2^5",
       "tags": ["ciag-geometryczny"]
@@ -16,8 +18,10 @@
       "type": "numeric",
       "difficulty": 1,
       "prompt": "Ciąg $5,\\ 15,\\ 45,\\ \\dots$ jest geometryczny. Podaj jego iloraz.",
-      "answer": { "value": 3 },
-      "explanation": "$q=\\frac{15}{5}=3$.",
+      "answer": {
+        "value": 3
+      },
+      "explanation": "1. Iloraz ciągu geometrycznego to stosunek wyrazu do poprzedniego: $q=\\frac{a_{2}}{a_{1}}$.\n2. $q=\\frac{15}{5}=3$ (tak samo $\\frac{45}{15}=3$).",
       "tags": ["ciag-geometryczny"]
     },
     {
@@ -25,7 +29,9 @@
       "type": "numeric",
       "difficulty": 2,
       "prompt": "Oblicz sumę pięciu początkowych wyrazów ciągu geometrycznego, w którym $a_{1}=3$ i $q=2$.",
-      "answer": { "value": 93 },
+      "answer": {
+        "value": 93
+      },
       "explanation": "1. $S_{5}=3\\cdot\\frac{1-2^{5}}{1-2}=3\\cdot 31=93$.\n2. Sprawdzenie: $3+6+12+24+48=93$.",
       "verify": "3 * (1 - 2^5) / (1 - 2)",
       "tags": ["ciag-geometryczny", "suma"]
@@ -70,7 +76,10 @@
       "type": "numeric",
       "difficulty": 3,
       "prompt": "Na lokatę wpłacono $5000$ zł. Bank dopisuje $4\\%$ odsetek na koniec każdego roku. Ile złotych będzie na lokacie po $2$ latach?",
-      "answer": { "value": 5408, "unit": "zł" },
+      "answer": {
+        "value": 5408,
+        "unit": "zł"
+      },
       "explanation": "1. Co roku kapitał mnożymy przez $1{,}04$.\n2. $5000\\cdot 1{,}04^{2}=5000\\cdot 1{,}0816=5408$.",
       "verify": "5000 * 1.04^2",
       "tags": ["ciag-geometryczny", "procent-skladany"]
@@ -94,7 +103,9 @@
       "type": "numeric",
       "difficulty": 2,
       "prompt": "W ciągu geometrycznym $a_{2}=6$ i $a_{3}=12$. Oblicz $a_{1}$.",
-      "answer": { "value": 3 },
+      "answer": {
+        "value": 3
+      },
       "explanation": "1. $q=\\frac{12}{6}=2$.\n2. $a_{1}=\\frac{a_{2}}{q}=3$.",
       "tags": ["ciag-geometryczny"]
     },
@@ -116,7 +127,9 @@
       "type": "numeric",
       "difficulty": 3,
       "prompt": "Pierwszy wyraz ciągu geometrycznego jest równy $81$, a iloraz $\\frac{1}{3}$. Oblicz czwarty wyraz.",
-      "answer": { "value": 3 },
+      "answer": {
+        "value": 3
+      },
       "explanation": "$a_{4}=81\\cdot\\left(\\frac{1}{3}\\right)^{3}=\\frac{81}{27}=3$.",
       "verify": "81 * (1/3)^3",
       "tags": ["ciag-geometryczny"]

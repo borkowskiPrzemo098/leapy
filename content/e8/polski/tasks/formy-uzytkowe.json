@@ -62,7 +62,7 @@
       "prompt": "Oceń prawdziwość zdań.",
       "options": ["W zaproszeniu na urodziny warto podać godzinę.", "Życzenia to forma użytkowa."],
       "answer": [true, true],
-      "explanation": "1. Prawda.\n2. Prawda — życzenia, zaproszenie, ogłoszenie i list to formy użytkowe.",
+      "explanation": "1. Godzina mówi gościom, kiedy przyjść; bez niej zaproszenie jest niepełne. Prawda.\n2. Życzenia, tak jak zaproszenie, ogłoszenie i list, to forma użytkowa: tekst pisany w konkretnym celu, z typowymi elementami. Prawda.",
       "tags": ["formy-uzytkowe"]
     },
     {

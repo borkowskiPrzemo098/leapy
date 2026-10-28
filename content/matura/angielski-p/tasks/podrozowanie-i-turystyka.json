@@ -17,7 +17,7 @@
       "prompt": "*We ___ a room at a small hotel near the beach.*",
       "options": ["booked", "checked", "rented out", "reserved for"],
       "answer": 0,
-      "explanation": "Zarezerwować: *book*.",
+      "explanation": "1. Zarezerwować pokój w hotelu to book a room.\n2. checked nie oznacza rezerwacji, rented out znaczy „wynajęli komuś”, a reserved for wymagałoby dopełnienia osoby.",
       "tags": ["slownictwo", "noclegi"]
     }
   ],

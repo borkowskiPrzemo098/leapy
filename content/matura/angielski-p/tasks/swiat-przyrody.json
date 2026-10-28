@@ -7,7 +7,7 @@
       "prompt": "*There has been no rain for months. Farmers are worried about the ___.*",
       "options": ["drought", "flood", "storm", "fog"],
       "answer": 0,
-      "explanation": "Brak deszczu: susza, *drought*.",
+      "explanation": "1. Brak deszczu przez wiele miesięcy to susza: drought.\n2. flood (powódź) to odwrotna sytuacja: za dużo wody.",
       "tags": ["slownictwo", "pogoda"]
     },
     {

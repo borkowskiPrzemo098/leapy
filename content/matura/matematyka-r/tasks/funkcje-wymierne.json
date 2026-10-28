@@ -17,7 +17,7 @@
       "prompt": "Zbiorem rozwiązań nierówności $\\frac{x+2}{x-3}\\le 0$ jest",
       "options": ["$[-2,\\ 3)$", "$[-2,\\ 3]$", "$(-\\infty,-2]\\cup(3,\\infty)$", "$(-2,\\ 3)$"],
       "answer": 0,
-      "explanation": "$(x+2)(x-3)\\le 0$ i $x\\neq 3$.",
+      "explanation": "1. Iloraz ma ten sam znak co iloczyn, więc rozwiązujemy $(x+2)(x-3)\\le 0$ z warunkiem $x\\neq 3$ (mianownik).\n2. Parabola o ramionach w górę jest niedodatnia między pierwiastkami: $[-2,3]$. Bez $3$: $[-2,3)$.",
       "tags": ["funkcje-wymierne", "nierownosci"]
     },
     {
@@ -63,7 +63,7 @@
       "prompt": "Wykres funkcji $f(x)=\\frac{1}{x+3}-2$ powstaje z wykresu $y=\\frac{1}{x}$ przez przesunięcie o wektor",
       "options": ["$[-3,\\ -2]$", "$[3,\\ -2]$", "$[-3,\\ 2]$", "$[2,\\ -3]$"],
       "answer": 0,
-      "explanation": "$\\frac{1}{x-p}+q$ z $p=-3$, $q=-2$.",
+      "explanation": "1. Wykres $y=\\frac{1}{x-p}+q$ to wykres $y=\\frac{1}{x}$ przesunięty o wektor $[p,q]$.\n2. $\\frac{1}{x+3}-2=\\frac{1}{x-(-3)}+(-2)$, więc wektor $[-3,-2]$.",
       "tags": ["funkcje-wymierne", "przeksztalcenia"]
     },
     {
@@ -87,7 +87,7 @@
         "Funkcja jest malejąca w całej dziedzinie."
       ],
       "answer": [true, false],
-      "explanation": "1. Prawda.\n2. Np. $f(-1)=-2<f(1)=2$, choć $-1<1$. Maleje w każdym z przedziałów osobno. Fałsz.",
+      "explanation": "1. Dla $0<x_{1}<x_{2}$ mamy $\\frac{2}{x_{1}}>\\frac{2}{x_{2}}$, więc w $(0,\\infty)$ funkcja maleje. Prawda.\n2. Weźmy $-1<1$: $f(-1)=-2<f(1)=2$, czyli wartość wzrosła. Funkcja maleje w każdym z przedziałów osobno, ale nie w całej dziedzinie. Fałsz.",
       "tags": ["funkcje-wymierne", "monotonicznosc"]
     },
     {

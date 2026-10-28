@@ -7,7 +7,7 @@
       "prompt": "*A person who repairs cars is a ___.*",
       "options": ["mechanic", "nurse", "chef", "pilot"],
       "answer": 0,
-      "explanation": "Samochody naprawia mechanik.",
+      "explanation": "1. Samochody naprawia mechanik: mechanic.\n2. nurse to pielęgniarka, chef to kucharz, pilot to pilot samolotu.",
       "tags": ["slownictwo", "zawody"]
     },
     {

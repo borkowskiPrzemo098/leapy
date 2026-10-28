@@ -17,7 +17,7 @@
       "prompt": "*He can't play today because of an ___ to his knee.*",
       "options": ["injury", "illness", "accident", "ache"],
       "answer": 0,
-      "explanation": "Kontuzja: *injury*.",
+      "explanation": "1. Uraz kolana, przez który zawodnik nie może grać, to kontuzja: injury.\n2. illness to choroba, accident to wypadek (zdarzenie), ache to ból.",
       "tags": ["slownictwo", "sport"]
     }
   ],

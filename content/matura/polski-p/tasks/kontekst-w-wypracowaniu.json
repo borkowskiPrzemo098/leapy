@@ -74,7 +74,7 @@
         "użycie nazwiska autora"
       ],
       "answer": 0,
-      "explanation": "Kontekst musi coś wyjaśniać.",
+      "explanation": "1. Kontekst musi coś wyjaśniać w interpretacji i wspierać tezę.\n2. Sama wzmianka („Prometeusz był postacią z mitologii”) bez związku z tezą nic nie wnosi.",
       "tags": ["kontekst"]
     },
     {
@@ -87,7 +87,7 @@
         "Błąd faktograficzny w kontekście obniża wartość wypracowania."
       ],
       "answer": [false, true],
-      "explanation": "1. Kontekst uzupełnia, a nie zastępuje analizę. Fałsz.\n2. Prawda.",
+      "explanation": "1. Kontekst uzupełnia analizę głównego utworu, a nie ją zastępuje. Fałsz.\n2. Pomylony autor, epoka albo fakt pokazuje brak wiedzy i podważa cały argument. Prawda.",
       "tags": ["kontekst"]
     },
     {

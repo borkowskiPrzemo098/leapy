@@ -7,7 +7,7 @@
       "prompt": "Wypowiedź „Pociąg do Krakowa odjeżdża z peronu drugiego” pełni funkcję",
       "options": ["informatywną", "ekspresywną", "impresywną", "poetycką"],
       "answer": 0,
-      "explanation": "Przekazuje informację.",
+      "explanation": "1. Zdanie przekazuje rzeczową informację o pociągu, więc pełni funkcję informatywną.\n2. Nie wyraża emocji (ekspresywna) i do niczego nie nakłania (impresywna).",
       "tags": ["funkcje-jezyka"]
     },
     {
@@ -17,7 +17,7 @@
       "prompt": "Wypowiedź „Ale się cieszę!” pełni funkcję",
       "options": ["ekspresywną", "informatywną", "fatyczną", "metajęzykową"],
       "answer": 0,
-      "explanation": "Wyraża emocje nadawcy.",
+      "explanation": "1. Wykrzyknienie „Ale się cieszę!” wyraża emocje nadawcy: funkcja ekspresywna.\n2. Nie przekazuje informacji o świecie, tylko o uczuciach mówiącego.",
       "tags": ["funkcje-jezyka"]
     },
     {
@@ -37,7 +37,7 @@
       "prompt": "Pytanie „Halo, słyszysz mnie?” w rozmowie telefonicznej pełni funkcję",
       "options": ["fatyczną", "ekspresywną", "impresywną", "poetycką"],
       "answer": 0,
-      "explanation": "Podtrzymuje kontakt.",
+      "explanation": "1. „Halo, słyszysz mnie?” sprawdza i podtrzymuje kontakt między rozmówcami: funkcja fatyczna.\n2. Nie chodzi tu o emocje ani nakłanianie, tylko o to, czy rozmowa działa.",
       "tags": ["funkcje-jezyka"]
     },
     {

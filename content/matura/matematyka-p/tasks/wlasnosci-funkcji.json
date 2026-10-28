@@ -6,7 +6,9 @@
       "type": "numeric",
       "difficulty": 1,
       "prompt": "Funkcja $f$ jest określona wzorem $f(x)=2x^{2}-1$. Oblicz $f(-3)$.",
-      "answer": { "value": 17 },
+      "answer": {
+        "value": 17
+      },
       "explanation": "1. $f(-3)=2\\cdot(-3)^{2}-1$.\n2. $(-3)^{2}=9$, więc $2\\cdot 9-1=17$.",
       "verify": "2 * (-3)^2 - 1",
       "tags": ["funkcje", "wartosc-funkcji"]
@@ -16,8 +18,10 @@
       "type": "numeric",
       "difficulty": 1,
       "prompt": "Wyznacz miejsce zerowe funkcji $f(x)=3x-12$.",
-      "answer": { "value": 4 },
-      "explanation": "1. $3x-12=0$.\n2. $x=4$.",
+      "answer": {
+        "value": 4
+      },
+      "explanation": "1. Miejsce zerowe to argument, dla którego $f(x)=0$: $3x-12=0$.\n2. $3x=12$, $x=4$.",
       "tags": ["funkcje", "miejsce-zerowe"]
     },
     {

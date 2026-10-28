@@ -43,7 +43,7 @@
       "prompt": "Suma pierwiastków równania $2x^{2}-8x+3=0$ jest równa",
       "options": ["$4$", "$-4$", "$\\frac{3}{2}$", "$8$"],
       "answer": 0,
-      "explanation": "$-\\frac{b}{a}=\\frac{8}{2}=4$.",
+      "explanation": "1. Wzór Viète’a: $x_{1}+x_{2}=-\\frac{b}{a}$ (pierwiastki istnieją, bo $\\Delta=64-24>0$).\n2. $-\\frac{-8}{2}=4$.",
       "verify": "8 / 2",
       "tags": ["viete"]
     },
@@ -54,7 +54,7 @@
       "prompt": "Iloczyn pierwiastków równania $3x^{2}+x-6=0$ jest równy",
       "options": ["$-2$", "$2$", "$-\\frac{1}{3}$", "$-6$"],
       "answer": 0,
-      "explanation": "$\\frac{c}{a}=\\frac{-6}{3}=-2$.",
+      "explanation": "1. Wzór Viète’a: $x_{1}x_{2}=\\frac{c}{a}$ (pierwiastki istnieją, bo $\\Delta=1+72>0$).\n2. $\\frac{-6}{3}=-2$.",
       "verify": "-6 / 3",
       "tags": ["viete"]
     },
@@ -78,7 +78,7 @@
       "prompt": "Suma kwadratów pierwiastków równania $x^{2}-mx+m-1=0$ jest równa",
       "options": ["$m^{2}-2m+2$", "$m^{2}+2m-2$", "$m^{2}$", "$m^{2}-m+1$"],
       "answer": 0,
-      "explanation": "$m^{2}-2(m-1)=m^{2}-2m+2$.",
+      "explanation": "1. $x_{1}^{2}+x_{2}^{2}=(x_{1}+x_{2})^{2}-2x_{1}x_{2}$, a z wzorów Viète’a $x_{1}+x_{2}=m$, $x_{1}x_{2}=m-1$.\n2. $m^{2}-2(m-1)=m^{2}-2m+2$.",
       "tags": ["viete", "parametr"]
     },
     {
@@ -124,7 +124,7 @@
         "Dla $x^{2}+x+1=0$ suma pierwiastków rzeczywistych wynosi $-1$."
       ],
       "answer": [true, false],
-      "explanation": "1. Prawda.\n2. $\\Delta=-3<0$: brak pierwiastków rzeczywistych. Fałsz.",
+      "explanation": "1. Wzory Viète’a opisują pierwiastki, więc stosujemy je dopiero po sprawdzeniu, że $\\Delta\\ge 0$. Prawda.\n2. $\\Delta=1-4=-3<0$, więc pierwiastków rzeczywistych nie ma i nie ma czego sumować. Fałsz.",
       "tags": ["viete"]
     },
     {

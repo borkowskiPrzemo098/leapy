@@ -7,7 +7,7 @@
       "prompt": "*He was caught ___ during the test and had to leave the room.*",
       "options": ["cheating", "cheeting", "copying up", "failing"],
       "answer": 0,
-      "explanation": "Ściągać: *cheat*.",
+      "explanation": "1. Został przyłapany na ściąganiu: caught cheating (po caught czasownik z -ing).\n2. cheeting to błąd ortograficzny, a failing to oblewanie egzaminu.",
       "tags": ["slownictwo", "szkola"]
     },
     {
@@ -17,7 +17,7 @@
       "prompt": "*She ___ her driving test twice before she finally passed.*",
       "options": ["failed", "lost", "missed", "dropped"],
       "answer": 0,
-      "explanation": "Oblać egzamin: *fail*.",
+      "explanation": "1. Dwa razy oblała egzamin, zanim zdała: failed.\n2. lost to przegrać, missed to opuścić lub spóźnić się na coś.",
       "tags": ["slownictwo", "szkola"]
     }
   ],

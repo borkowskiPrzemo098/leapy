@@ -7,7 +7,7 @@
       "prompt": "*It took me two weeks to ___ from the flu.*",
       "options": ["recover", "repair", "cure", "treat"],
       "answer": 0,
-      "explanation": "Wyzdrowieć: *recover*.",
+      "explanation": "1. Wyzdrowieć po chorobie to recover from.\n2. cure to wyleczyć kogoś (robi to lekarz lub lek), treat to leczyć, repair to naprawić rzecz.",
       "tags": ["slownictwo", "zdrowie"]
     },
     {

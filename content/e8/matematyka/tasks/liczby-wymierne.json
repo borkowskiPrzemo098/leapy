@@ -53,7 +53,7 @@
       "answer": {
         "value": 2
       },
-      "explanation": "$12-10=2$.",
+      "explanation": "1. Najpierw mnożenie: $-3\\cdot(-4)=12$ (minus razy minus daje plus) oraz $5\\cdot 2=10$.\n2. Potem odejmowanie: $12-10=2$.",
       "verify": "-3 * (-4) - 5 * 2",
       "tags": ["liczby-ujemne"]
     },

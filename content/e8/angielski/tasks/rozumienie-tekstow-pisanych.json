@@ -7,7 +7,7 @@
       "prompt": "Przeczytaj ogłoszenie.\n\n> **City Museum.** Open Tuesday–Sunday, 10 a.m.–6 p.m. Closed on Mondays. Free entry on Thursdays.\n\nKiedy wstęp jest bezpłatny?",
       "options": ["w czwartki", "w poniedziałki", "w niedziele", "codziennie po 18:00"],
       "answer": 0,
-      "explanation": "*Free entry on Thursdays.*",
+      "explanation": "1. W ogłoszeniu jest zdanie „Free entry on Thursdays”, czyli wstęp jest bezpłatny w czwartki.\n2. Poniedziałek to dzień, w którym muzeum jest zamknięte, a nie darmowy.",
       "tags": ["czytanie"]
     },
     {
@@ -85,7 +85,7 @@
       "prompt": "Napis w autobusie: *Please do not leave your bags unattended.* Jaki jest cel tego tekstu?",
       "options": ["ostrzec", "rozśmieszyć", "opowiedzieć historię", "zaprosić"],
       "answer": 0,
-      "explanation": "To ostrzeżenie (*warn*).",
+      "explanation": "1. Napis prosi, żeby nie zostawiać bagażu bez opieki, bo może zginąć albo wzbudzić alarm. To ostrzeżenie.\n2. Tekst nie opowiada historii, nie zaprasza i nie ma rozśmieszyć.",
       "tags": ["czytanie", "intencja"]
     }
   ],

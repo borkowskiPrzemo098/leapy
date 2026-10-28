@@ -7,7 +7,7 @@
       "prompt": "Wskaż formę poprawną.",
       "options": ["wziąć", "wziąść", "wziąźć", "wząść"],
       "answer": 0,
-      "explanation": "Poprawnie: *wziąć*.",
+      "explanation": "1. Poprawna forma to „wziąć” (por. „wezmę”).\n2. „Wziąść” to częsty błąd: powstaje przez analogię do „przyjść”, „pójść”.",
       "tags": ["kultura-jezyka"]
     },
     {

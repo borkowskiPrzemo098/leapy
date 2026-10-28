@@ -51,7 +51,7 @@
       "answer": {
         "value": 89
       },
-      "explanation": "$5^{2}+2^{6}=25+64=89$.",
+      "explanation": "1. Dzielenie potęg o tej samej podstawie: odejmujemy wykładniki, $\\frac{5^{7}}{5^{5}}=5^{2}=25$.\n2. Potęga potęgi: mnożymy wykładniki, $(2^{2})^{3}=2^{6}=64$.\n3. $25+64=89$.",
       "verify": "5^7 / 5^5 + (2^2)^3",
       "tags": ["potegi"]
     }

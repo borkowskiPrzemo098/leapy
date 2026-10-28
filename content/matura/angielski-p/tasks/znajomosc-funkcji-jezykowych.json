@@ -42,7 +42,7 @@
         "You're welcome."
       ],
       "answer": 0,
-      "explanation": "Uprzejmy brak zgody.",
+      "explanation": "1. Po odpowiedzi pada argument przeciw („prognoza wygląda dobrze”), więc potrzebny jest uprzejmy brak zgody: I'm not so sure about that.\n2. Exactly! i That's what I think too wyrażają zgodę i przeczą dalszej części.",
       "tags": ["funkcje-jezykowe"]
     },
     {
@@ -92,7 +92,7 @@
       "prompt": "*— Shall I help you with those bags? — ___*",
       "options": ["That's very kind of you.", "Yes, you shall.", "No, I shan't.", "Help yourself."],
       "answer": 0,
-      "explanation": "Przyjęcie oferty pomocy.",
+      "explanation": "1. Ktoś oferuje pomoc, więc przyjmujemy ją z podziękowaniem: That's very kind of you.\n2. Yes, you shall i No, I shan't są niepoprawnymi odpowiedziami, a Help yourself znaczy „Częstuj się”.",
       "tags": ["funkcje-jezykowe"]
     }
   ],

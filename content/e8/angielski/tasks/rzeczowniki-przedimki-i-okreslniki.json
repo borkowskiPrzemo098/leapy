@@ -17,7 +17,7 @@
       "prompt": "*How ___ people came to the party?*",
       "options": ["many", "much", "lot", "few of"],
       "answer": 0,
-      "explanation": "*people* — policzalne: *many*.",
+      "explanation": "1. people to rzeczownik policzalny w liczbie mnogiej, więc pytamy How many?.\n2. much łączymy z niepoliczalnymi (How much water?).",
       "tags": ["gramatyka", "okresniki"]
     },
     {
@@ -32,7 +32,7 @@
         "Can you give me many advices?"
       ],
       "answer": 0,
-      "explanation": "*advice* jest niepoliczalne.",
+      "explanation": "1. advice („rada, rady”) jest niepoliczalne: nie ma liczby mnogiej ani przedimka a.\n2. Dlatego poprawnie: some advice, a błędnie: an advice, advices.",
       "tags": ["gramatyka", "niepoliczalne"]
     }
   ],

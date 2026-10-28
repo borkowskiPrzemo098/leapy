@@ -94,7 +94,7 @@
         "Twierdzenie Pitagorasa jest szczególnym przypadkiem twierdzenia cosinusów."
       ],
       "answer": [true, true],
-      "explanation": "1. Prawda.\n2. Dla $\\gamma=90^\\circ$: $\\cos\\gamma=0$. Prawda.",
+      "explanation": "1. Kąt wpisany oparty na przeciwprostokątnej jest prosty, więc przeciwprostokątna jest średnicą okręgu: $R=\\frac{c}{2}$. Prawda.\n2. Dla $\\gamma=90^\\circ$ jest $\\cos\\gamma=0$ i twierdzenie cosinusów daje $c^{2}=a^{2}+b^{2}$. Prawda.",
       "tags": ["planimetria"]
     },
     {

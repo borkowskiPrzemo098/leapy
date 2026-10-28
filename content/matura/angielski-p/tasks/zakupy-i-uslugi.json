@@ -17,7 +17,7 @@
       "prompt": "*The laptop stopped working after a week, so I asked for a ___.*",
       "options": ["refund", "discount", "bargain", "sale"],
       "answer": 0,
-      "explanation": "Zwrot pieniędzy: *refund*.",
+      "explanation": "1. Laptop zepsuł się po tygodniu, więc prosimy o zwrot pieniędzy: refund.\n2. discount to zniżka przy zakupie, bargain to okazja, sale to wyprzedaż.",
       "tags": ["slownictwo", "reklamacje"]
     }
   ],

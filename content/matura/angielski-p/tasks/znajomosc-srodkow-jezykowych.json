@@ -7,7 +7,7 @@
       "prompt": "*It's not worth ___ about it now.*",
       "options": ["worrying", "to worry", "worry", "worried"],
       "answer": 0,
-      "explanation": "*It's (not) worth + -ing*.",
+      "explanation": "1. Po It's (not) worth stoi czasownik z -ing: It's not worth worrying.\n2. to worry jest błędne w tej konstrukcji.",
       "tags": ["konstrukcje"]
     },
     {
@@ -35,7 +35,7 @@
       "prompt": "*I'm looking forward ___ you soon.*",
       "options": ["to seeing", "to see", "seeing", "for seeing"],
       "answer": 0,
-      "explanation": "*look forward to + -ing*.",
+      "explanation": "1. W look forward to słowo to jest przyimkiem, a po przyimku stoi -ing: to seeing.\n2. to see to częsty błąd, bo to wygląda jak bezokolicznik.",
       "tags": ["konstrukcje"]
     },
     {
@@ -55,7 +55,7 @@
       "prompt": "*She is responsible ___ organising the event.*",
       "options": ["for", "of", "about", "to"],
       "answer": 0,
-      "explanation": "*responsible for*.",
+      "explanation": "1. „Odpowiedzialny za coś” to responsible for.\n2. Po for stoi -ing (organising), co potwierdza przyimek.",
       "tags": ["przyimki"]
     },
     {

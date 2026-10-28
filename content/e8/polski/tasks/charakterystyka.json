@@ -27,7 +27,7 @@
         "Scrooge był bohaterem lektury."
       ],
       "answer": 0,
-      "explanation": "Cecha + dowód z tekstu.",
+      "explanation": "1. W charakterystyce cechę trzeba udowodnić przykładem: „skąpy, bo nie pozwalał dołożyć węgla”.\n2. Samo „Scrooge był skąpy” nie ma dowodu, a pozostałe zdania w ogóle nie mówią o cechach.",
       "tags": ["argumentacja"]
     },
     {
@@ -52,7 +52,7 @@
         "jest rodzajem opowiadania"
       ],
       "answer": 0,
-      "explanation": "Porównujemy dwie postacie.",
+      "explanation": "1. Charakterystyka porównawcza zestawia dwie postacie i pokazuje, czym są podobne, a czym się różnią.\n2. Opis jednej postaci to zwykła charakterystyka, a streszczenie dotyczy fabuły, nie postaci.",
       "tags": ["rodzaje"]
     },
     {
@@ -80,7 +80,7 @@
         "Przykłady z tekstu uwiarygodniają cechy postaci."
       ],
       "answer": [false, true],
-      "explanation": "1. Najważniejsze są cechy charakteru. Fałsz.\n2. Prawda.",
+      "explanation": "1. Sam wygląd to za mało: najważniejsze są cechy charakteru poparte przykładami. Fałsz.\n2. Przykład z tekstu pokazuje, że cecha nie jest wymyślona, tylko wynika z zachowania postaci. Prawda.",
       "tags": ["kompozycja"]
     },
     {

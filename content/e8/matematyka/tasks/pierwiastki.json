@@ -8,7 +8,7 @@
       "answer": {
         "value": 6
       },
-      "explanation": "$9-3=6$.",
+      "explanation": "1. $\\sqrt{81}=9$, bo $9^{2}=81$, oraz $\\sqrt[3]{27}=3$, bo $3^{3}=27$.\n2. $9-3=6$.",
       "verify": "sqrt(81) - nthRoot(27, 3)",
       "tags": ["pierwiastki"]
     },
@@ -19,7 +19,7 @@
       "prompt": "Liczba $\\sqrt{30}$ leży między liczbami",
       "options": ["$5$ i $6$", "$4$ i $5$", "$6$ i $7$", "$15$ i $16$"],
       "answer": 0,
-      "explanation": "$25<30<36$, więc $5<\\sqrt{30}<6$.",
+      "explanation": "1. Szukamy kwadratów liczb całkowitych wokół $30$: $5^{2}=25$ i $6^{2}=36$.\n2. Skoro $25<30<36$, to $5<\\sqrt{30}<6$.",
       "tags": ["szacowanie"]
     },
     {
@@ -29,7 +29,7 @@
       "prompt": "Liczba $\\sqrt{50}$ jest równa",
       "options": ["$5\\sqrt{2}$", "$25\\sqrt{2}$", "$2\\sqrt{5}$", "$10\\sqrt{5}$"],
       "answer": 0,
-      "explanation": "$\\sqrt{25\\cdot 2}=5\\sqrt{2}$.",
+      "explanation": "1. Rozkładamy liczbę na czynniki tak, żeby jeden był kwadratem: $50=25\\cdot 2$.\n2. $\\sqrt{50}=\\sqrt{25}\\cdot\\sqrt{2}=5\\sqrt{2}$.",
       "verify": "sqrt(50)",
       "tags": ["pierwiastki"]
     },
@@ -41,7 +41,7 @@
       "answer": {
         "value": 6
       },
-      "explanation": "$\\sqrt{36}=6$.",
+      "explanation": "1. Iloczyn pierwiastków to pierwiastek z iloczynu: $\\sqrt{2}\\cdot\\sqrt{18}=\\sqrt{2\\cdot 18}$.\n2. $\\sqrt{36}=6$.",
       "verify": "sqrt(2) * sqrt(18)",
       "tags": ["pierwiastki"]
     },

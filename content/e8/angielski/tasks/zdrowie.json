@@ -7,7 +7,7 @@
       "prompt": "*I've got a ___. My head hurts.*",
       "options": ["headache", "toothache", "cold", "temperature"],
       "answer": 0,
-      "explanation": "Ból głowy: *headache*.",
+      "explanation": "1. „My head hurts” to ból głowy: headache.\n2. toothache to ból zęba, cold to przeziębienie, temperature to gorączka.",
       "tags": ["slownictwo", "zdrowie"]
     },
     {
@@ -17,7 +17,7 @@
       "prompt": "*The doctor gave me a ___ for some medicine.*",
       "options": ["prescription", "receipt", "description", "subscription"],
       "answer": 0,
-      "explanation": "Recepta: *prescription*.",
+      "explanation": "1. Lekarz wypisuje receptę na lek: prescription.\n2. receipt to paragon ze sklepu, description to opis, subscription to prenumerata.",
       "tags": ["slownictwo", "zdrowie"]
     }
   ],
