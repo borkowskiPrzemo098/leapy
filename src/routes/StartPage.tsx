@@ -7,6 +7,7 @@ import { DailyCard } from '@/features/study/DailyCard'
 import { isOnboarded } from '@/state/profile'
 import { InstallCard } from '@/features/pwa/pwa'
 import { useStudy } from '@/state/study'
+import { greeting, useNick } from '@/state/nick'
 import { ButtonLink } from '@/ui/Button'
 import { Page, StairsBackdrop } from '@/ui/Page'
 
@@ -34,9 +35,10 @@ function Dashboard() {
     catalog.status === 'ready' ? catalog.data.exams.find((e) => e.id === examId) : undefined
   const chosen = exam ? exam.subjects.filter((s) => subjects.includes(s.id)) : []
   const playable = chosen.some((s) => s.tasks > 0)
+  const nick = useNick((s) => s.nick)
 
   return (
-    <Page title="Cześć!" wide>
+    <Page title={greeting(nick)} wide>
       <div className="grid gap-4 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-stretch">
         <div className="flex flex-col gap-4">
           <section className="relative overflow-hidden rounded-2xl bg-brand p-6 pb-28 text-on-brand sm:p-8 sm:pb-32">

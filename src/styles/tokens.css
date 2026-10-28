@@ -75,9 +75,6 @@
   --dur-fast: 140ms;
   --dur-base: 240ms;
   --dur-slow: 420ms;
-
-  /* Text size setting multiplies this (Profil > Rozmiar tekstu) */
-  --text-scale: 1;
 }
 
 /* 'auto' is resolved to light/dark by the boot script in index.html before first paint */

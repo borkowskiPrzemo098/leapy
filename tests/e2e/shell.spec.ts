@@ -40,13 +40,14 @@ test('tab bar targets are at least 48px and sit above the fold', async ({ page, 
   }
 })
 
-test('theme and text size persist across reloads', async ({ page }) => {
+test('theme and nickname persist across reloads', async ({ page }) => {
   await page.goto('/app/profil')
   await page.getByRole('radio', { name: 'Ciemny' }).click()
-  await page.getByRole('radio', { name: 'A+', exact: true }).click()
+  await page.getByLabel('Nick').fill('Ola')
   await page.reload()
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')
-  await expect(page.locator('html')).toHaveAttribute('style', /--text-scale:\s*1\.125/)
+  await page.goto('/app')
+  await expect(page.getByRole('heading', { level: 1, name: 'Cześć, Ola!' })).toBeVisible()
 })
 
 test('works offline after the first visit', async ({ page, context }) => {

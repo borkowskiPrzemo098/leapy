@@ -4,7 +4,8 @@ import { useEffect, type ReactNode } from 'react'
 import { CONTACT_EMAIL } from '@/lib/report'
 import { ACCENTS, isUnlocked } from '@/lib/accent'
 import { useGame } from '@/features/gamify/useGame'
-import { usePrefs, type TextScale } from '@/state/prefs'
+import { usePrefs } from '@/state/prefs'
+import { NickInput } from '@/features/profile/NickInput'
 import { BackupPanel } from '@/features/backup/BackupPanel'
 import { GoalSettings, ReminderSettings } from '@/features/reminders/StudySettings'
 import { Segmented, Switch } from '@/ui/controls'
@@ -14,13 +15,6 @@ const themeOptions = [
   { value: 'light' as const, label: 'Jasny', icon: <Sun aria-hidden className="size-4" /> },
   { value: 'dark' as const, label: 'Ciemny', icon: <Moon aria-hidden className="size-4" /> },
   { value: 'auto' as const, label: 'Auto', icon: <Monitor aria-hidden className="size-4" /> },
-]
-
-const textOptions: { value: TextScale; label: string }[] = [
-  { value: 'sm', label: 'A−' },
-  { value: 'md', label: 'A' },
-  { value: 'lg', label: 'A+' },
-  { value: 'xl', label: 'A++' },
 ]
 
 function Group({ title, children }: { title: string; children: ReactNode }) {
@@ -45,23 +39,25 @@ function Field({ label, hint, children }: { label: string; hint?: string; childr
 }
 
 export default function ProfilePage() {
-  const { theme, textScale, motion, setTheme, setTextScale, setMotion } = usePrefs()
+  const { theme, motion, setTheme, setMotion } = usePrefs()
 
   return (
     <Page title="Profil" lead="Ustawienia zapisują się tylko na tym urządzeniu.">
+      <Group title="Ty">
+        <div>
+          <label htmlFor="nick" className="font-bold text-ink">
+            Nick
+          </label>
+          <p className="text-small text-ink-3">Pojawia się w powitaniu na ekranie Start.</p>
+          <NickInput />
+        </div>
+      </Group>
+
       <Group title="Wygląd">
         <Field label="Motyw">
           <Segmented label="Motyw" value={theme} options={themeOptions} onChange={setTheme} />
         </Field>
         <AccentField />
-        <Field label="Rozmiar tekstu" hint="Zmienia tekst w całej aplikacji.">
-          <Segmented
-            label="Rozmiar tekstu"
-            value={textScale}
-            options={textOptions}
-            onChange={setTextScale}
-          />
-        </Field>
         <div className="pt-3">
           <Switch
             checked={motion === 'reduce'}

@@ -271,7 +271,7 @@ One intense violet carries the brand at full field strength, a single warm sun-y
 - **Small** (500–700, 0.875rem, 1.45): meta lines, counters, descriptions under Switch labels, segmented labels.
 - **Label** (700, 0.75rem, 1.35): chips and captions. Sentence case, never uppercase-tracked.
 
-Sizes are in rem and the root font-size is `100% * --text-scale`, so the in-app text-size setting scales the whole ramp. Headings use `text-wrap: balance`, paragraphs `pretty`. Buttons are 700 with -0.01em tracking.
+Sizes are in rem on the browser's root font-size; there is no in-app text-size setting (it broke layouts). Headings use `text-wrap: balance`, paragraphs `pretty`. Buttons are 700 with -0.01em tracking.
 
 ### Named Rules
 

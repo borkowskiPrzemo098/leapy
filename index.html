@@ -31,8 +31,6 @@
         if (t !== 'light' && t !== 'dark')
           t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
         d.dataset.theme = t
-        var s = { sm: 0.9, lg: 1.125, xl: 1.25 }[get('leapy:text-scale')]
-        if (s) d.style.setProperty('--text-scale', s)
         if (get('leapy:motion') === 'reduce') d.dataset.motion = 'reduce'
         var a = get('leapy:accent')
         if (/^(morski|malinowy|kobaltowy|grafitowy)$/.test(a || '')) d.dataset.accent = a

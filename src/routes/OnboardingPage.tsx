@@ -22,6 +22,7 @@ import { LoadError } from '@/ui/LoadError'
 import { StairsBackdrop } from '@/ui/Page'
 import { ProgressBar, StepLadder } from '@/ui/progress'
 import { tasksLabel } from '@/lib/plural'
+import { NickInput } from '@/features/profile/NickInput'
 
 // First run in about 30 seconds: exam → subjects → daily goal → optional 5-task test.
 // Every step can be changed later (Egzaminy, Profil); nothing here needs an account.
@@ -99,6 +100,15 @@ export default function OnboardingPage() {
             <p className="relative mt-2 max-w-[34ch] text-on-brand-2">
               Trzy pytania i zaczynasz. Bez konta: postęp zostaje na tym urządzeniu.
             </p>
+          </div>
+        )}
+        {step === 0 && (
+          <div className="mt-5">
+            <label htmlFor="nick" className="font-bold text-ink">
+              Jak mamy się do ciebie zwracać?
+            </label>
+            <p className="text-small text-ink-3">Nick pokaże się w powitaniu. Możesz go pominąć.</p>
+            <NickInput />
           </div>
         )}
         {step === 0 && (
