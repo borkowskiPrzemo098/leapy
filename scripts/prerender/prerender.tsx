@@ -11,6 +11,7 @@ import { readKeys, seedResource } from '../../src/content/data'
 import type { Catalog, SiteData, SubjectPack } from '../../src/content/schema'
 import { HeadCollector, headHtml, type Head } from '../../src/public/head'
 import { PublicApp } from '../../src/public/PublicApp'
+import { BASE, BASENAME } from '../../src/lib/env'
 import { SITE_URL } from '../../src/public/site'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..')
@@ -85,14 +86,20 @@ function embedFor(path: string) {
 // Preload the latin and latin-ext text font (Polish needs both); without it the swap shifts layout.
 const fontPreloads = readdirSync(join(dist, 'assets'))
   .filter((n) => /^plus-jakarta-sans-latin(-ext)?-wght-normal-.*\.woff2$/.test(n))
-  .map((n) => `<link rel="preload" href="/assets/${n}" as="font" type="font/woff2" crossorigin />`)
+  .map(
+    (n) =>
+      `<link rel="preload" href="${BASE}assets/${n}" as="font" type="font/woff2" crossorigin />`,
+  )
   .join('\n    ')
 const withFontPreloads = (html: string) => html.replace('</head>', `  ${fontPreloads}\n  </head>`)
 // Pages with formulas: KaTeX fonts use font-display: block and are only found after the lazy
 // Prose CSS loads, which holds back the first paint of text with math. Preload the two common ones.
 const katexPreloads = readdirSync(join(dist, 'assets'))
   .filter((n) => /^KaTeX_(Main-Regular|Math-Italic)-.*\.woff2$/.test(n))
-  .map((n) => `<link rel="preload" href="/assets/${n}" as="font" type="font/woff2" crossorigin />`)
+  .map(
+    (n) =>
+      `<link rel="preload" href="${BASE}assets/${n}" as="font" type="font/woff2" crossorigin />`,
+  )
   .join('\n    ')
 const withKatexPreloads = (html: string) =>
   html.includes('class="katex"') ? html.replace('</head>', `  ${katexPreloads}\n  </head>`) : html
@@ -107,7 +114,7 @@ function render(path: string) {
   let head: Head | null = null
   const markup = renderToString(
     <HeadCollector.Provider value={(h) => (head = h)}>
-      <StaticRouter location={path}>
+      <StaticRouter location={BASENAME + path} basename={BASENAME || '/'}>
         <PublicApp />
       </StaticRouter>
     </HeadCollector.Provider>,
@@ -138,7 +145,18 @@ for (const path of routes) {
   writeFileSync(file, html)
   written.push(path)
 }
-writeFileSync(join(dist, '404.html'), render('/404').html)
+// GitHub Pages has no rewrites: unknown URLs, including /app/* deep links, get 404.html. It is
+// the public "not found" page, and on app paths main.tsx swaps it for the app; until the JS
+// runs, the static markup stays hidden there so it never flashes.
+const appPathRe = `^${BASE.replace(/[/.]/g, '\\$&')}(app|dev)(\\/|$)`
+const fallbackHead = `<script>if(new RegExp(${JSON.stringify(appPathRe)}).test(location.pathname))document.documentElement.dataset.shell='app'</script>
+    <style>[data-shell='app'] #root[data-fallback]{visibility:hidden}</style>`
+writeFileSync(
+  join(dist, '404.html'),
+  render('/404')
+    .html.replace('<div id="root">', '<div id="root" data-fallback>')
+    .replace('</head>', `  ${fallbackHead}\n  </head>`),
+)
 
 // ---------- sitemap, robots, redirects ----------
 const today = new Date().toISOString().slice(0, 10)

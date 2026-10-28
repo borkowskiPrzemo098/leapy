@@ -39,12 +39,18 @@ function withMath(src: string, render: (s: string) => string) {
   )
 }
 
+// Site-root links in content ("/prywatnosc") follow the base path the site is built for
+// (VITE_BASE, e.g. "/leapy/" on GitHub Pages).
+const BASE = (process.env.VITE_BASE ?? '/').replace(/\/?$/, '/')
+const rebase = (html: string) =>
+  BASE === '/' ? html : html.replace(/href="\/(?!\/)/g, `href="${BASE}`)
+
 /** Block Markdown (paragraphs, lists, tables). */
 export function mdBlock(src: string): string {
-  return withMath(src, (s) => marked.parse(s) as string).trim()
+  return rebase(withMath(src, (s) => marked.parse(s) as string).trim())
 }
 
 /** Inline Markdown for short strings (options, list items): no wrapping <p>. */
 export function mdInline(src: string): string {
-  return withMath(src, (s) => marked.parseInline(s) as string).trim()
+  return rebase(withMath(src, (s) => marked.parseInline(s) as string).trim())
 }

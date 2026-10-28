@@ -1,6 +1,7 @@
 import { lazy } from 'react'
 import { createBrowserRouter, type RouteObject } from 'react-router-dom'
 import { AppLayout, SessionShell } from './AppLayout'
+import { BASENAME } from '@/lib/env'
 import { StartPage } from '@/routes/StartPage'
 
 // Start is in the main chunk (it is the first screen); the rest load on demand
@@ -66,4 +67,4 @@ export const routes: RouteObject[] = [
   { path: '/*', element: <PublicApp /> },
 ]
 
-export const createRouter = () => createBrowserRouter(routes)
+export const createRouter = () => createBrowserRouter(routes, { basename: BASENAME || '/' })

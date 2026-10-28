@@ -9,7 +9,11 @@ const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 
   version: string
 }
 
+// Base path: "/" by default, "/leapy/" for GitHub Pages (VITE_BASE in the Pages workflow).
+const base = (process.env.VITE_BASE ?? '/').replace(/\/?$/, '/')
+
 export default defineConfig({
+  base,
   define: { __APP_VERSION__: JSON.stringify(pkg.version) },
   plugins: [
     react(),
@@ -19,25 +23,25 @@ export default defineConfig({
       registerType: 'prompt',
       injectRegister: false,
       manifest: {
-        id: '/app',
+        id: `${base}app`,
         name: 'Leapy: nauka do egzaminów',
         short_name: 'Leapy',
         description:
           'Nauka do egzaminu ósmoklasisty i matury. Zadania z wyjaśnieniami, powtórki i egzaminy próbne. Działa offline.',
         lang: 'pl',
         dir: 'ltr',
-        start_url: '/app',
-        scope: '/',
+        start_url: `${base}app`,
+        scope: base,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#f5f3ff',
         theme_color: '#5b3df5',
         categories: ['education'],
         icons: [
-          { src: '/icons/pwa-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
-          { src: '/icons/pwa-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+          { src: `${base}icons/pwa-192.png`, sizes: '192x192', type: 'image/png', purpose: 'any' },
+          { src: `${base}icons/pwa-512.png`, sizes: '512x512', type: 'image/png', purpose: 'any' },
           {
-            src: '/icons/maskable-512.png',
+            src: `${base}icons/maskable-512.png`,
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable',
@@ -46,13 +50,13 @@ export default defineConfig({
         shortcuts: [
           {
             name: 'Ćwicz',
-            url: '/app/cwicz',
-            icons: [{ src: '/icons/pwa-192.png', sizes: '192x192' }],
+            url: `${base}app/cwicz`,
+            icons: [{ src: `${base}icons/pwa-192.png`, sizes: '192x192' }],
           },
           {
             name: 'Postępy',
-            url: '/app/postepy',
-            icons: [{ src: '/icons/pwa-192.png', sizes: '192x192' }],
+            url: `${base}app/postepy`,
+            icons: [{ src: `${base}icons/pwa-192.png`, sizes: '192x192' }],
           },
         ],
       },
@@ -79,8 +83,8 @@ export default defineConfig({
         ],
         // Only the fonts actually used (latin + latin-ext) are precached.
         globIgnores: ['**/*-{cyrillic,cyrillic-ext,vietnamese,greek}-*.woff2', 'og-default.png'],
-        navigateFallback: '/app.html',
-        navigateFallbackAllowlist: [/^\/app(\/|$)/, /^\/dev(\/|$)/],
+        navigateFallback: `${base}app.html`,
+        navigateFallbackAllowlist: [new RegExp(`^${base}(app|dev)(/|$)`)],
         cleanupOutdatedCaches: true,
       },
       devOptions: { enabled: false },

@@ -15,7 +15,7 @@ Wymagania: [docs/brief.md](docs/brief.md) · plan etapów: [docs/plan.md](docs/p
 
 ## Stack
 
-Vite 6 + React 18 + TypeScript strict · Tailwind v4 (tokeny jako zmienne CSS) · React Router · Zustand · Dexie · Zod · vite-plugin-pwa · KaTeX · własny prerender (strony publiczne) · MiniSearch · Vitest + Testing Library · Playwright · ESLint 9 + Prettier · GitHub Actions · hosting Cloudflare Pages.
+Vite 6 + React 18 + TypeScript strict · Tailwind v4 (tokeny jako zmienne CSS) · React Router · Zustand · Dexie · Zod · vite-plugin-pwa · KaTeX · własny prerender (strony publiczne) · MiniSearch · Vitest + Testing Library · Playwright · ESLint 9 + Prettier · GitHub Actions · hosting GitHub Pages pod `/leapy/` (`VITE_BASE`; ścieżki zawsze przez `withBase` / `BASE` z `src/lib/env.ts`, nigdy surowe `"/data/..."`).
 
 ## Komendy
 

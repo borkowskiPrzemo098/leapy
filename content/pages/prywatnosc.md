@@ -31,7 +31,7 @@ Korzystamy z Cloudflare Web Analytics, żeby wiedzieć, ile osób odwiedza stron
 
 ### Hosting
 
-Strony są serwowane przez Cloudflare Pages. Jak każdy serwer, infrastruktura Cloudflare technicznie otrzymuje adres IP i dane przeglądarki, żeby dostarczyć stronę, oraz przechowuje je krótko w logach bezpieczeństwa.
+Strony są serwowane przez GitHub Pages (GitHub, Inc.). Jak każdy serwer, infrastruktura GitHuba technicznie otrzymuje adres IP i dane przeglądarki, żeby dostarczyć stronę, i zapisuje je w logach bezpieczeństwa.
 
 ### Wiadomości e-mail
 

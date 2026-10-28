@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import type { Catalog, CompiledTask, SearchIndex, SiteData, SubjectPack, TopicFile } from './schema'
+import { withBase } from '@/lib/env'
 import { DATA_VERSION } from './version'
 
 // Loads compiled content from /data (precached by the service worker, so it works offline).
@@ -10,7 +11,7 @@ const cache = new Map<string, Promise<unknown>>()
 function load<T>(url: string): Promise<T> {
   let p = cache.get(url) as Promise<T> | undefined
   if (!p) {
-    p = fetch(url).then(async (r) => {
+    p = fetch(withBase(url)).then(async (r) => {
       if (!r.ok) throw new Error(`Nie udało się wczytać treści (${r.status}).`)
       const data = (await r.json()) as { version?: number }
       if (data.version !== DATA_VERSION)
