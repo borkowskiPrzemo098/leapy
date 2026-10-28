@@ -213,7 +213,7 @@ One intense violet carries the brand at full field strength, a single warm sun-y
 
 ### Primary
 
-- **Leap Violet** (`brand`): the brand field. Hero/Start cards, primary buttons, selected answer badge, the current StepLadder step, active Switch track, `::selection`, caret. White text on it passes AA (6.1:1 light, 4.9:1 dark, where it lifts to #6c4fff).
+- **Leap Violet** (`brand`): the brand field. Hero/Start cards, primary buttons, selected answer badge, the current StepLadder step, active Switch track, `::selection`, caret. White text on it passes AA (6.1:1 light, 5.6:1 dark, where it lifts to #6447f5); `on-brand-2` secondary text on it is ≥ 5:1 in both themes.
 - **Pressed Violet** (`brand-strong`): hover fill of primary buttons; doubles as `brand-text` in light theme for violet text on light surfaces (links, ghost buttons, brand chips).
 - **Night Violet** (`brand-deep`): the solid lip under primary buttons and the stair backdrop drawn at 45% opacity inside violet cards. Also the logo's deep violet.
 - **Violet Mist** (`brand-soft`): selected answer tile, brand chip, brand IconButton rest state, ghost button hover.

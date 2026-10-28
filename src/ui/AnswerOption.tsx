@@ -72,6 +72,9 @@ export function AnswerOption({
           keyLabel
         )}
       </span>
+      {/* The letter is spoken too: an option that is only a formula would otherwise
+          have no text name (MathML is not part of the accessible name everywhere). */}
+      <span className="sr-only">{keyLabel}: </span>
       <span className="flex-1 text-body font-semibold text-ink">{children}</span>
       {status[state] && <span className="sr-only">{status[state]}</span>}
     </button>

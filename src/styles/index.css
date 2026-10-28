@@ -309,3 +309,10 @@
     transition: none;
   }
 }
+
+/* Long sections below the first screen (cheat sheet, typical mistakes): the browser skips
+   their layout and KaTeX paint until they come near the viewport. */
+@utility below-fold {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 480px;
+}

@@ -82,7 +82,21 @@ function embedFor(path: string) {
 }
 
 // ---------- template ----------
-const template = readFileSync(join(dist, 'index.html'), 'utf8')
+// Preload the latin and latin-ext text font (Polish needs both); without it the swap shifts layout.
+const fontPreloads = readdirSync(join(dist, 'assets'))
+  .filter((n) => /^plus-jakarta-sans-latin(-ext)?-wght-normal-.*\.woff2$/.test(n))
+  .map((n) => `<link rel="preload" href="/assets/${n}" as="font" type="font/woff2" crossorigin />`)
+  .join('\n    ')
+const withFontPreloads = (html: string) => html.replace('</head>', `  ${fontPreloads}\n  </head>`)
+// Pages with formulas: KaTeX fonts use font-display: block and are only found after the lazy
+// Prose CSS loads, which holds back the first paint of text with math. Preload the two common ones.
+const katexPreloads = readdirSync(join(dist, 'assets'))
+  .filter((n) => /^KaTeX_(Main-Regular|Math-Italic)-.*\.woff2$/.test(n))
+  .map((n) => `<link rel="preload" href="/assets/${n}" as="font" type="font/woff2" crossorigin />`)
+  .join('\n    ')
+const withKatexPreloads = (html: string) =>
+  html.includes('class="katex"') ? html.replace('</head>', `  ${katexPreloads}\n  </head>`) : html
+const template = withFontPreloads(readFileSync(join(dist, 'index.html'), 'utf8'))
   .replace(/\s*<title>[\s\S]*?<\/title>/, '')
   .replace(/\s*<meta\s+name="description"[\s\S]*?\/>/, '')
   .replace(/\s*<meta property="og:[^>]*\/>/g, '')
@@ -102,13 +116,15 @@ function render(path: string) {
   const pageData = JSON.stringify(embedFor(path)).replace(/</g, '\\u003c')
   return {
     head: head as Head,
-    html: template
-      .replace('</head>', `  ${headHtml(head)}\n  </head>`)
-      .replace('<div id="root"></div>', `<div id="root">${markup}</div>`)
-      .replace(
-        '</body>',
-        `  <script type="application/json" id="page-data">${pageData}</script>\n  </body>`,
-      ),
+    html: withKatexPreloads(
+      template
+        .replace('</head>', `  ${headHtml(head)}\n  </head>`)
+        .replace('<div id="root"></div>', `<div id="root">${markup}</div>`)
+        .replace(
+          '</body>',
+          `  <script type="application/json" id="page-data">${pageData}</script>\n  </body>`,
+        ),
+    ),
   }
 }
 
@@ -153,4 +169,13 @@ if (!existsSync(join(dist, 'app.html'))) throw new Error('dist/app.html: brak po
 const pages = readdirSync(dist).length
 console.log(
   `prerender: ${written.length} stron + 404, sitemap.xml, robots.txt, _redirects (${pages} pozycji w dist)`,
+)
+writeFileSync(
+  join(dist, 'app.html'),
+  // The app shows formulas on most screens, so the shell always preloads the KaTeX fonts.
+  withFontPreloads(readFileSync(join(dist, 'app.html'), 'utf8')).replace(
+    '</head>',
+    `  ${katexPreloads}
+  </head>`,
+  ),
 )

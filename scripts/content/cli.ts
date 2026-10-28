@@ -4,6 +4,7 @@ import { mkdirSync, rmSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { coverageReport, runPipeline } from './pipeline'
+import { buildSearchIndex } from './search'
 import { compileSite } from './site'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..')
@@ -37,9 +38,21 @@ if (mode === 'build') {
   mkdirSync(out, { recursive: true })
   writeFileSync(join(out, 'catalog.json'), JSON.stringify(r.catalog))
   writeFileSync(join(out, 'site.json'), JSON.stringify(site.site))
+  writeFileSync(join(out, 'search.json'), JSON.stringify(buildSearchIndex(r.catalog, r.packs)))
   for (const p of r.packs) {
     mkdirSync(join(out, p.exam), { recursive: true })
     writeFileSync(join(out, p.exam, `${p.subject}.json`), JSON.stringify(p))
+    // Small per-topic files, so a topic screen does not wait for the whole subject pack.
+    mkdirSync(join(out, p.exam, p.subject), { recursive: true })
+    const topics = new Set([...Object.keys(p.lessons), ...p.tasks.map((t) => t.topic)])
+    for (const topic of topics) {
+      const file = {
+        version: p.version,
+        lesson: p.lessons[topic] ?? null,
+        taskCount: p.tasks.filter((t) => t.topic === topic).length,
+      }
+      writeFileSync(join(out, p.exam, p.subject, `${topic}.json`), JSON.stringify(file))
+    }
   }
   writeFileSync(lockFile, JSON.stringify(r.ids, null, 2) + '\n')
   writeFileSync(join(root, 'docs/content-report.md'), coverageReport(r))

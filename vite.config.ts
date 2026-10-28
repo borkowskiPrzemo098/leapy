@@ -67,12 +67,14 @@ export default defineConfig({
           'app.html',
           'data/catalog.json',
           'data/site.json',
+          'data/search.json',
         ],
         runtimeCaching: [
           {
-            urlPattern: /\/data\/[a-z0-9-]+\/[a-z0-9-]+\.json$/,
+            // Subject packs and their per-topic files
+            urlPattern: /\/data\/[a-z0-9-]+\/[a-z0-9-]+(\/[a-z0-9-]+)?\.json$/,
             handler: 'StaleWhileRevalidate',
-            options: { cacheName: 'leapy-content', expiration: { maxEntries: 40 } },
+            options: { cacheName: 'leapy-content', expiration: { maxEntries: 400 } },
           },
         ],
         // Only the fonts actually used (latin + latin-ext) are precached.

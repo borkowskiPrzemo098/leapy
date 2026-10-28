@@ -15,21 +15,22 @@ Wymagania: [docs/brief.md](docs/brief.md) · plan etapów: [docs/plan.md](docs/p
 
 ## Stack
 
-Vite 6 + React 18 + TypeScript strict · Tailwind v4 (tokeny jako zmienne CSS) · React Router · Zustand · Dexie · Zod · vite-plugin-pwa · KaTeX · vite-react-ssg (strony publiczne) · Vitest + Testing Library · Playwright · ESLint 9 + Prettier · GitHub Actions · hosting Cloudflare Pages.
+Vite 6 + React 18 + TypeScript strict · Tailwind v4 (tokeny jako zmienne CSS) · React Router · Zustand · Dexie · Zod · vite-plugin-pwa · KaTeX · własny prerender (strony publiczne) · MiniSearch · Vitest + Testing Library · Playwright · ESLint 9 + Prettier · GitHub Actions · hosting Cloudflare Pages.
 
 ## Komendy
 
-| Komenda                 | Co robi                                                                                                         |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `npm run dev`           | serwer deweloperski (port domyślny Vite)                                                                        |
-| `npm run build`         | typecheck + build produkcyjny do `dist/`                                                                        |
-| `npm run check`         | typecheck + lint + format:check + testy (to samo co CI)                                                         |
-| `npm test`              | testy jednostkowe Vitest                                                                                        |
-| `npm run test:e2e`      | testy Playwright na buildzie produkcyjnym (360×640, 390×844, desktop, offline)                                  |
-| `npm run format`        | Prettier na całym repo                                                                                          |
-| `npm run content:check` | waliduje treść (schemat, verify, duplikaty, stabilność id), nic nie zapisuje                                    |
-| `npm run content:build` | to samo + zapis `public/data`, `content/ids.lock.json`, `docs/content-report.md` (odpala się przed dev i build) |
-| `npm run brand:build`   | generuje wszystkie pliki logo, ikony PWA, favicon i obraz OG z `src/brand/geometry.js`                          |
+| Komenda                    | Co robi                                                                                                         |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `npm run dev`              | serwer deweloperski (port domyślny Vite)                                                                        |
+| `npm run build`            | typecheck + build produkcyjny do `dist/`                                                                        |
+| `npm run check`            | typecheck + lint + format:check + testy (to samo co CI)                                                         |
+| `npm test`                 | testy jednostkowe Vitest                                                                                        |
+| `npm run test:e2e`         | testy Playwright na buildzie produkcyjnym (360×640, 390×844, desktop, offline, axe WCAG 2.2 AA w obu motywach)  |
+| `npm run audit:lighthouse` | Lighthouse mobile (mediana 3 przebiegów) na działającym `npm run preview -- --port 4173`, próg 95               |
+| `npm run format`           | Prettier na całym repo                                                                                          |
+| `npm run content:check`    | waliduje treść (schemat, verify, duplikaty, stabilność id), nic nie zapisuje                                    |
+| `npm run content:build`    | to samo + zapis `public/data`, `content/ids.lock.json`, `docs/content-report.md` (odpala się przed dev i build) |
+| `npm run brand:build`      | generuje wszystkie pliki logo, ikony PWA, favicon i obraz OG z `src/brand/geometry.js`                          |
 
 Po każdym etapie: `npm run check` i `npm run build` muszą przejść, potem krótki commit i push.
 
@@ -68,6 +69,9 @@ Szczegóły: [docs/content-guide.md](docs/content-guide.md). Najważniejsze:
 - `src/features/study/queries.ts`: łączy magazyn z treścią (co na dziś do powtórki, błędy, zadania po id) i zapisuje powtórki (`recordReview`).
 - Stan SRS jest w tabeli `srs` (klucz: id zadania albo fiszki, fiszki mają `.card.` w id). Rozpoczęty egzamin próbny leży w `kv` pod `mock:active`, ostatni oddany pod `mock:last`.
 - `src/public/`: strony publiczne (SEO). Te same komponenty renderuje `scripts/prerender/prerender.tsx` po `vite build` (strony `.html`, sitemap, robots, `_redirects`). `useHead` ustawia tytuł, opis, kanoniczny adres i JSON-LD. Strony czytają dane przez `useResource` (`useCatalog`, `usePack`, `useSite`); prerender osadza je w `#page-data`, a `main.tsx` zasiewa nimi pamięć przed pierwszym renderem.
+- Ekran tematu czyta mały plik `data/<egzamin>/<przedmiot>/<temat>.json` (`loadTopic`), nie całą paczkę.
+- Wyszukiwarka: `src/features/search/TopicSearch.tsx` (MiniSearch, ładowany przy pierwszym użyciu) nad `data/search.json` z `scripts/content/search.ts`.
+- Nowy ekran dopisz do listy w `tests/e2e/a11y.spec.ts`. Wdrożenie: [docs/deployment.md](docs/deployment.md), stan projektu: [docs/report.md](docs/report.md).
 - Paczki przedmiotów nie są w precache (za duże); service worker cache'uje je w locie, a `usePrefetchSubjects` pobiera wybrane przedmioty w tle.
 - `src/storage/`: interfejs `ProgressStore` + implementacja Dexie + format kopii zapasowej. UI woła tylko `progress()`.
 - Zapisy do IndexedDB nigdy wewnątrz updatera `setState` (StrictMode wywołuje je dwa razy).

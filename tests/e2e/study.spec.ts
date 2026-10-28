@@ -159,3 +159,15 @@ test('statistics show streak, calendar and topic mastery after a session', async
   await page.getByText('Pokaż jako tabelę').click()
   await expect(page.getByRole('cell', { name: '10' }).first()).toBeVisible()
 })
+
+test('topic search finds a topic without Polish letters and opens it', async ({ page }) => {
+  await page.goto('/app/egzaminy')
+  await page.getByLabel('Szukaj tematu').fill('potegi')
+  const hit = page.getByRole('link', { name: /Potęgi/ }).first()
+  await expect(hit).toBeVisible()
+  await expect(
+    page.getByRole('button', { name: /Dodaj do moich przedmiotów/ }).first(),
+  ).toBeHidden()
+  await hit.click()
+  await expect(page.getByRole('heading', { name: 'Najważniejsze w 30 sekund' })).toBeVisible()
+})

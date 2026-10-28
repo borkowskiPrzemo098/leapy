@@ -1,6 +1,6 @@
 # Raport pokrycia treści
 
-Wygenerowano: 2026-10-27 (`npm run content:build`).
+Wygenerowano: 2026-10-28 (`npm run content:build`).
 
 - Zadania: **1141** (zweryfikowane przez człowieka: 0, czekają: 1141)
 - Sprawdzone automatycznie (`verify`): 314

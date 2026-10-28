@@ -1,0 +1,13 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "createdAt": "2026-10-28T08:25:53.836Z"
+      }
+    ]
+  }
+}

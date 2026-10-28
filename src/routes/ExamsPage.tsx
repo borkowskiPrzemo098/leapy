@@ -1,8 +1,10 @@
 import { clsx } from 'clsx'
 import { Check, ChevronRight, Plus } from 'lucide-react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ScreenSkeleton } from '@/app/AppLayout'
 import { useCatalog } from '@/content/data'
+import { TopicSearch } from '@/features/search/TopicSearch'
 import { useStudy } from '@/state/study'
 import { LoadError } from '@/ui/LoadError'
 import { Page, StairsBackdrop } from '@/ui/Page'
@@ -10,6 +12,7 @@ import { Page, StairsBackdrop } from '@/ui/Page'
 export default function ExamsPage() {
   const catalog = useCatalog()
   const { exam: chosenExam, subjects, chooseExam, toggleSubject } = useStudy()
+  const [searching, setSearching] = useState(false)
 
   if (catalog.status === 'loading') return <ScreenSkeleton />
   if (catalog.status === 'error') return <LoadError message={catalog.error} />
@@ -20,7 +23,10 @@ export default function ExamsPage() {
       lead="Wybierz egzamin i zaznacz przedmioty, które zdajesz. Stuknij przedmiot, żeby zobaczyć jego tematy."
       wide
     >
-      <div className="grid gap-5 md:grid-cols-2 md:items-start">
+      <div className="mb-6 max-w-2xl">
+        <TopicSearch onActive={setSearching} />
+      </div>
+      <div hidden={searching} className="grid gap-5 md:grid-cols-2 md:items-start">
         {catalog.data.exams.map((exam) => {
           const active = chosenExam === exam.id
           return (
@@ -119,7 +125,7 @@ export default function ExamsPage() {
           )
         })}
       </div>
-      <p className="mt-6 text-small text-ink-3">
+      <p hidden={searching} className="mt-6 text-small text-ink-3">
         Później dojdą pozostałe przedmioty maturalne, egzaminy zawodowe i przedmioty z pierwszego
         roku studiów. Oficjalne arkusze znajdziesz na{' '}
         <a href="https://cke.gov.pl" target="_blank" rel="noopener noreferrer">

@@ -27,7 +27,7 @@
   --brand-soft: #e6e0ff;
   --brand-text: #4a2be0;
   --on-brand: #ffffff;
-  --on-brand-2: #d9d2ff;
+  --on-brand-2: #ebe7ff;
 
   /* Reward (XP, streaks, levels): sun yellow. --on-reward on --reward 11.8:1 */
   --reward: #ffc531;
@@ -96,14 +96,14 @@
   --ink-2: #c9c1ef;
   --ink-3: #9d94cc;
 
-  /* White on --brand 4.9:1 */
-  --brand: #6c4fff;
+  /* White on --brand 5.6:1, --on-brand-2 on --brand 5.0:1 */
+  --brand: #6447f5;
   --brand-strong: #7d64ff;
   --brand-deep: #3a24b8;
   --brand-soft: #2a2160;
   --brand-text: #b3a4ff;
   --on-brand: #ffffff;
-  --on-brand-2: #d9d2ff;
+  --on-brand-2: #f3f0ff;
 
   --reward: #ffcd4a;
   --reward-strong: #ffbb1a;

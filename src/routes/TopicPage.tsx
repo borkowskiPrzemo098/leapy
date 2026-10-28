@@ -1,7 +1,7 @@
 import { AlertTriangle, ChevronLeft, Flag, Layers, Zap } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
 import { ScreenSkeleton } from '@/app/AppLayout'
-import { findTopic, loadPack, tasksOfTopic, useCatalog, useResource } from '@/content/data'
+import { findTopic, loadTopic, useCatalog, useResource } from '@/content/data'
 import { Html, Prose } from '@/features/content/Prose'
 import { reportMailto } from '@/lib/report'
 import { ButtonLink } from '@/ui/Button'
@@ -12,7 +12,9 @@ import NotFoundPage from './NotFoundPage'
 export default function TopicPage() {
   const { exam = '', subject = '', topic = '' } = useParams()
   const catalog = useCatalog()
-  const pack = useResource(`pack:${exam}/${subject}`, () => loadPack(exam, subject))
+  const pack = useResource(`topic:${exam}/${subject}/${topic}`, () =>
+    loadTopic(exam, subject, topic),
+  )
 
   if (catalog.status === 'loading' || pack.status === 'loading') return <ScreenSkeleton />
   if (catalog.status === 'error') return <LoadError message={catalog.error} />
@@ -20,8 +22,8 @@ export default function TopicPage() {
   const found = findTopic(catalog.data, exam, subject, topic)
   if (!found) return <NotFoundPage />
 
-  const lesson = pack.data.lessons[topic]
-  const count = tasksOfTopic(pack.data, topic).length
+  const lesson = pack.data.lesson
+  const count = pack.data.taskCount
   const back = `/app/egzaminy/${exam}/${subject}`
 
   return (
@@ -59,7 +61,7 @@ export default function TopicPage() {
           </section>
 
           {lesson.cheatsheet.length > 0 && (
-            <section aria-labelledby="sheet">
+            <section aria-labelledby="sheet" className="below-fold">
               <div className="mb-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
                 <h2 id="sheet" className="text-heading text-ink">
                   Ściąga
@@ -75,12 +77,12 @@ export default function TopicPage() {
                 {lesson.cheatsheet.map((c, i) => (
                   <div key={i} className="rounded-xl bg-brand-soft px-4 py-3">
                     <Html
-                      as="span"
+                      as="dt"
                       html={c.label}
                       className="block text-small font-bold text-brand-text"
                     />
                     <Html
-                      as="span"
+                      as="dd"
                       html={c.formula}
                       className="math-scroll mt-1 block text-lead text-ink"
                     />
@@ -90,7 +92,10 @@ export default function TopicPage() {
             </section>
           )}
 
-          <section aria-labelledby="mistakes" className="rounded-2xl bg-wrong-soft p-5 sm:p-6">
+          <section
+            aria-labelledby="mistakes"
+            className="rounded-2xl bg-wrong-soft p-5 below-fold sm:p-6"
+          >
             <h2 id="mistakes" className="flex items-center gap-2 text-heading text-wrong-text">
               <AlertTriangle aria-hidden className="size-6" /> Typowe błędy
             </h2>

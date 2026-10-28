@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import type { Catalog, CompiledTask, SiteData, SubjectPack } from './schema'
+import type { Catalog, CompiledTask, SearchIndex, SiteData, SubjectPack, TopicFile } from './schema'
 import { DATA_VERSION } from './version'
 
 // Loads compiled content from /data (precached by the service worker, so it works offline).
@@ -27,12 +27,14 @@ export const loadCatalog = () => load<Catalog>('/data/catalog.json')
 export const loadPack = (exam: string, subject: string) =>
   load<SubjectPack>(`/data/${exam}/${subject}.json`)
 export const loadSite = () => load<SiteData>('/data/site.json')
+export const loadSearch = () => load<SearchIndex>('/data/search.json')
 
 // Resources already in memory, by useResource key. Prerendered public pages embed the data
 // they were built from and seed it here, so their first render matches the HTML (no flash).
 const ready = new Map<string, unknown>()
 // Only static content is kept; learner data (stats) must re-read every time.
-const cacheable = (key: string) => key === 'catalog' || key === 'site' || key.startsWith('pack:')
+const cacheable = (key: string) =>
+  key === 'catalog' || key === 'site' || key.startsWith('pack:') || key.startsWith('topic:')
 /** Keys read during this render pass (the prerender script embeds exactly these). */
 export const readKeys = new Set<string>()
 
@@ -80,6 +82,21 @@ export const useCatalog = () => useResource('catalog', loadCatalog)
 export const useSite = () => useResource('site', loadSite)
 export const usePack = (exam: string, subject: string) =>
   useResource(`pack:${exam}/${subject}`, () => loadPack(exam, subject))
+
+/** A topic's lesson: from the pack when it is already in memory, else from the small topic file. */
+export function loadTopic(exam: string, subject: string, topic: string): Promise<TopicFile> {
+  const fromPack = (p: SubjectPack): TopicFile => ({
+    version: p.version,
+    lesson: p.lessons[topic] ?? null,
+    taskCount: tasksOfTopic(p, topic).length,
+  })
+  const inMemory = ready.get(`pack:${exam}/${subject}`) as SubjectPack | undefined
+  if (inMemory) return Promise.resolve(fromPack(inMemory))
+  // Offline with only the pack cached: fall back to it.
+  return load<TopicFile>(`/data/${exam}/${subject}/${topic}.json`).catch(() =>
+    loadPack(exam, subject).then(fromPack),
+  )
+}
 
 export function findSubject(catalog: Catalog, exam: string, subject: string) {
   const e = catalog.exams.find((x) => x.id === exam)

@@ -281,6 +281,28 @@ export interface SubjectPack {
   cards: CompiledCard[]
 }
 
+/** Search: one document per topic (data/search.json, built with the content). */
+export interface SearchDoc {
+  /** exam/subject/topic */
+  id: string
+  title: string
+  /** "Matura · Matematyka, poziom podstawowy · Liczby rzeczywiste" */
+  where: string
+  /** Plain-text start of the lesson */
+  text: string
+}
+export interface SearchIndex {
+  version: number
+  docs: SearchDoc[]
+}
+
+/** One topic's lesson without the rest of the pack: the topic screen opens from this. */
+export interface TopicFile {
+  version: number
+  lesson: CompiledLesson | null
+  taskCount: number
+}
+
 // ---------- Site content: blog, static pages, FAQ (public pages) ----------
 
 export const BlogMeta = z.strictObject({

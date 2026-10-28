@@ -341,12 +341,12 @@ export function TopicPublicPage() {
                 {lesson.cheatsheet.map((c, i) => (
                   <div key={i} className="rounded-xl bg-brand-soft px-4 py-3">
                     <Html
-                      as="span"
+                      as="dt"
                       html={c.label}
                       className="block text-small font-bold text-brand-text"
                     />
                     <Html
-                      as="span"
+                      as="dd"
                       html={c.formula}
                       className="math-scroll mt-1 block text-lead text-ink"
                     />

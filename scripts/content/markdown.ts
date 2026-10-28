@@ -19,7 +19,8 @@ function renderMath(src: string, display: boolean) {
       displayMode: display,
       throwOnError: true,
       strict: 'error',
-      output: 'html',
+      // MathML is what screen readers read; the HTML half is aria-hidden and only for display.
+      output: 'htmlAndMathml',
     })
   } catch (e) {
     throw new MathError(`KaTeX: ${(e as Error).message} w "${src.trim()}"`)
