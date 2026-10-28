@@ -39,6 +39,9 @@ function Dashboard() {
 
   return (
     <Page title={greeting(nick)} wide>
+      <div className="mb-4 empty:hidden md:max-w-[58%]">
+        <InstallCard />
+      </div>
       <div className="grid gap-4 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-stretch">
         <div className="flex flex-col gap-4">
           <section className="relative overflow-hidden rounded-2xl bg-brand p-6 pb-28 text-on-brand sm:p-8 sm:pb-32">
@@ -136,10 +139,6 @@ function Dashboard() {
             </ol>
           </section>
         )}
-      </div>
-
-      <div className="mt-4 md:max-w-[58%]">
-        <InstallCard />
       </div>
     </Page>
   )

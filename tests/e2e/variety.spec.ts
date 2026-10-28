@@ -60,3 +60,22 @@ test('colour themes: locked until their level, stored colour applies before pain
   await page.goto('/app')
   await expect(page.locator('html')).toHaveAttribute('data-accent', 'morski')
 })
+
+test('install guide: Profil lists the steps, Start shows the card on a phone', async ({
+  page,
+  isMobile,
+}) => {
+  await page.goto('/app/profil')
+  const guide = page.locator('section', {
+    has: page.getByRole('heading', { name: 'Ikonka na telefonie' }),
+  })
+  await expect(guide.getByRole('heading', { name: 'iPhone i iPad (Safari)' })).toBeVisible()
+  await expect(guide.getByText('Do ekranu początkowego')).toBeVisible()
+  await page.goto('/app')
+  const card = page.getByRole('region', { name: 'Dodaj Leapy do ekranu telefonu' })
+  if (!isMobile) return
+  await expect(card).toBeVisible()
+  await card.getByRole('button', { name: 'Nie teraz' }).click()
+  await page.reload()
+  await expect(card).toHaveCount(0)
+})

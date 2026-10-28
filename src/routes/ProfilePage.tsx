@@ -5,6 +5,7 @@ import { CONTACT_EMAIL } from '@/lib/report'
 import { ACCENTS, isUnlocked } from '@/lib/accent'
 import { useGame } from '@/features/gamify/useGame'
 import { usePrefs } from '@/state/prefs'
+import { InstallGuide } from '@/features/pwa/pwa'
 import { NickInput } from '@/features/profile/NickInput'
 import { BackupPanel } from '@/features/backup/BackupPanel'
 import { GoalSettings, ReminderSettings } from '@/features/reminders/StudySettings'
@@ -74,6 +75,10 @@ export default function ProfilePage() {
 
       <Group title="Przypomnienia">
         <ReminderSettings />
+      </Group>
+
+      <Group title="Ikonka na telefonie">
+        <InstallGuide />
       </Group>
 
       <Group title="Twoje dane">

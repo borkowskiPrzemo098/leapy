@@ -1,5 +1,16 @@
-import { CloudOff, Download, RefreshCw, Share, X } from 'lucide-react'
-import { useEffect, useState, useSyncExternalStore } from 'react'
+import { clsx } from 'clsx'
+import {
+  CloudOff,
+  Download,
+  Ellipsis,
+  EllipsisVertical,
+  Menu,
+  MonitorDown,
+  RefreshCw,
+  Share,
+  X,
+} from 'lucide-react'
+import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react'
 import { useRegisterSW } from 'virtual:pwa-register/react'
 import { LogoMark } from '@/brand/Logo'
 import { Button } from '@/ui/Button'
@@ -106,9 +117,22 @@ function isStandalone() {
   )
 }
 
-const isIOS = () =>
-  /iphone|ipad|ipod/i.test(navigator.userAgent) ||
-  (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+export type Platform = 'ios' | 'android' | 'samsung' | 'inapp' | 'desktop'
+
+/** Which add-to-home-screen instruction fits this browser. */
+function detectPlatform(): Platform {
+  const ua = navigator.userAgent
+  // Facebook, Messenger and Instagram open links in their own browser, which cannot install.
+  if (/FBAN|FBAV|FB_IAB|FBIOS|Instagram|Messenger/i.test(ua)) return 'inapp'
+  if (
+    /iphone|ipad|ipod/i.test(ua) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+  )
+    return 'ios'
+  if (/SamsungBrowser/i.test(ua)) return 'samsung'
+  if (/android/i.test(ua)) return 'android'
+  return 'desktop'
+}
 
 function recentlyDismissed() {
   try {
@@ -119,22 +143,35 @@ function recentlyDismissed() {
   }
 }
 
-/**
- * Install card shown inline on Start (never as a pop-up). Chrome/Edge/Android get a real
- * install button; iOS Safari gets the two-tap instruction because it has no install API.
- */
-export function InstallCard() {
+/** Subscribe to the browser's install prompt becoming available or used. */
+function useInstallPrompt() {
   const [, rerender] = useState(0)
-  const [hidden, setHidden] = useState(() => isStandalone() || recentlyDismissed())
-
   useEffect(() => {
     const l = () => rerender((n) => n + 1)
     listeners.add(l)
     return () => void listeners.delete(l)
   }, [])
+  const install = async () => {
+    if (!deferred) return false
+    await deferred.prompt()
+    const { outcome } = await deferred.userChoice
+    deferred = null
+    rerender((n) => n + 1)
+    return outcome === 'accepted'
+  }
+  return { canPrompt: !!deferred, install }
+}
 
-  const ios = isIOS()
-  if (hidden || (!deferred && !ios)) return null
+/**
+ * Install card shown inline on Start (never as a pop-up) on phones and tablets, and on
+ * desktop only when the browser offers installing. Chromium gets a real install button;
+ * every other browser gets its own short steps.
+ */
+export function InstallCard() {
+  const { canPrompt, install } = useInstallPrompt()
+  const [hidden, setHidden] = useState(() => isStandalone() || recentlyDismissed())
+  const platform = detectPlatform()
+  if (hidden || (platform === 'desktop' && !canPrompt)) return null
 
   const dismiss = () => {
     try {
@@ -145,46 +182,169 @@ export function InstallCard() {
     setHidden(true)
   }
 
-  const install = async () => {
-    if (!deferred) return
-    await deferred.prompt()
-    const { outcome } = await deferred.userChoice
-    deferred = null
-    if (outcome === 'accepted') setHidden(true)
-    else rerender((n) => n + 1)
-  }
-
   return (
     <section
-      aria-label="Instalacja aplikacji"
-      className="flex items-start gap-4 rounded-2xl border border-line bg-surface p-4 shadow-sm"
+      aria-labelledby="install"
+      className="rounded-2xl border-2 border-brand bg-brand-soft p-4 sm:p-5"
     >
-      <LogoMark size={48} className="shrink-0 rounded-[12px]" />
-      <div className="flex-1">
-        <h2 className="font-extrabold text-ink">Leapy na ekranie głównym</h2>
-        {ios ? (
-          <p className="mt-1 text-small text-ink-2">
-            Stuknij <Share aria-label="Udostępnij" className="inline size-4 align-[-2px]" />, potem
-            „Do ekranu początkowego”. Leapy otworzy się jak aplikacja i zadziała offline.
-          </p>
+      <div className="flex items-center gap-3">
+        <LogoMark size={44} className="shrink-0 rounded-[11px]" />
+        <h2 id="install" className="min-w-0 flex-1 font-extrabold text-ink">
+          Dodaj Leapy do ekranu telefonu
+        </h2>
+        <IconButton label="Nie teraz" onClick={dismiss} className="-my-2 -mr-2">
+          <X aria-hidden className="size-5" />
+        </IconButton>
+      </div>
+      <div>
+        <p className="mt-3 text-small text-ink-2">
+          Ikonka obok innych aplikacji: otwierasz jednym stuknięciem, bez paska przeglądarki, także
+          offline.
+        </p>
+        {canPrompt ? (
+          <Button
+            className="mt-3"
+            icon={<Download aria-hidden className="size-5" />}
+            onClick={() => void install().then((ok) => ok && setHidden(true))}
+          >
+            Dodaj ikonkę
+          </Button>
         ) : (
-          <>
-            <p className="mt-1 text-small text-ink-2">
-              Otwierasz jednym stuknięciem, działa offline.
-            </p>
-            <Button
-              className="mt-3"
-              icon={<Download aria-hidden className="size-5" />}
-              onClick={() => void install()}
-            >
-              Zainstaluj
-            </Button>
-          </>
+          <InstallSteps platform={platform} className="mt-3" />
         )}
       </div>
-      <IconButton label="Nie teraz" onClick={dismiss} className="-mt-2 -mr-2">
-        <X aria-hidden className="size-5" />
-      </IconButton>
     </section>
+  )
+}
+
+const icon = 'inline size-4 align-[-2px]'
+
+const STEPS: Record<Platform, { title: string; steps: ReactNode[] }> = {
+  ios: {
+    title: 'iPhone i iPad (Safari)',
+    steps: [
+      <>
+        Stuknij <Share aria-label="Udostępnij" className={icon} /> <b>Udostępnij</b> na dolnym pasku
+        (w Chrome: w pasku adresu).
+      </>,
+      <>
+        Przewiń w dół i wybierz <b>Do ekranu początkowego</b>.
+      </>,
+      <>
+        Stuknij <b>Dodaj</b> w prawym górnym rogu.
+      </>,
+    ],
+  },
+  android: {
+    title: 'Android (Chrome)',
+    steps: [
+      <>
+        Stuknij <EllipsisVertical aria-label="menu" className={icon} /> <b>menu</b> w prawym górnym
+        rogu.
+      </>,
+      <>
+        Wybierz <b>Dodaj do ekranu głównego</b> albo <b>Zainstaluj aplikację</b>.
+      </>,
+      <>
+        Potwierdź <b>Zainstaluj</b>.
+      </>,
+    ],
+  },
+  samsung: {
+    title: 'Samsung Internet',
+    steps: [
+      <>
+        Stuknij <Menu aria-label="menu" className={icon} /> <b>menu</b> na dolnym pasku.
+      </>,
+      <>
+        Wybierz <b>Dodaj stronę do</b>, potem <b>Ekran startowy</b>.
+      </>,
+      <>
+        Potwierdź <b>Dodaj</b>.
+      </>,
+    ],
+  },
+  inapp: {
+    title: 'Otwarte z Facebooka, Messengera lub Instagrama',
+    steps: [
+      <>
+        Ta przeglądarka nie dodaje ikonek. Stuknij <Ellipsis aria-label="więcej" className={icon} />{' '}
+        w rogu ekranu.
+      </>,
+      <>
+        Wybierz <b>Otwórz w przeglądarce</b> (Safari albo Chrome).
+      </>,
+      <>Tam dodaj ikonkę według instrukcji dla swojego telefonu.</>,
+    ],
+  },
+  desktop: {
+    title: 'Komputer (Chrome, Edge)',
+    steps: [
+      <>
+        Kliknij ikonkę <MonitorDown aria-label="instalacji" className={icon} /> po prawej stronie
+        paska adresu.
+      </>,
+      <>
+        Potwierdź <b>Zainstaluj</b>.
+      </>,
+    ],
+  },
+}
+
+export function InstallSteps({ platform, className }: { platform: Platform; className?: string }) {
+  return (
+    <ol className={clsx('flex flex-col gap-2', className)}>
+      {STEPS[platform].steps.map((s, i) => (
+        <li key={i} className="flex gap-3 text-small text-ink">
+          <span
+            aria-hidden
+            className="tabular grid size-6 shrink-0 place-items-center rounded-full bg-brand text-small font-extrabold text-on-brand"
+          >
+            {i + 1}
+          </span>
+          <span className="pt-0.5">{s}</span>
+        </li>
+      ))}
+    </ol>
+  )
+}
+
+/** Profil: every instruction, this browser's first. */
+export function InstallGuide() {
+  const { canPrompt, install } = useInstallPrompt()
+  const [installed, setInstalled] = useState(() => isStandalone())
+  if (installed)
+    return <p className="text-ink-2">Leapy jest już na ekranie głównym. Otwierasz ją z ikonki.</p>
+  const platform = detectPlatform()
+  const all: Platform[] = ['ios', 'android', 'samsung', 'inapp', 'desktop']
+  const order = [platform, ...all.filter((p) => p !== platform)]
+  return (
+    <div className="flex flex-col gap-5">
+      <p className="text-ink-2">
+        Ikonka Leapy działa jak zwykła aplikacja: bez sklepu i bez konta, za darmo, także offline.
+      </p>
+      {canPrompt && (
+        <Button
+          className="self-start"
+          icon={<Download aria-hidden className="size-5" />}
+          onClick={() => void install().then((ok) => ok && setInstalled(true))}
+        >
+          Dodaj ikonkę
+        </Button>
+      )}
+      {order.map((p, i) => (
+        <div key={p}>
+          <h3 className="font-extrabold text-ink">
+            {STEPS[p].title}
+            {i === 0 && (
+              <span className="ml-2 rounded-full bg-brand-soft px-2 py-0.5 text-small font-bold whitespace-nowrap text-brand-text">
+                ta przeglądarka
+              </span>
+            )}
+          </h3>
+          <InstallSteps platform={p} className="mt-2" />
+        </div>
+      ))}
+    </div>
   )
 }
