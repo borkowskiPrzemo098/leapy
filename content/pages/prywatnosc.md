@@ -9,7 +9,7 @@ updatedAt: 2026-10-27
 - Leapy działa **bez konta**. Nie podajesz imienia, e-maila ani hasła.
 - Twój postęp nauki (odpowiedzi, powtórki, ustawienia) jest zapisany **tylko na twoim urządzeniu**, w pamięci przeglądarki (IndexedDB i localStorage). Nie wysyłamy go na żaden serwer.
 - Nie używamy ciasteczek śledzących, reklam ani narzędzi, które budują twój profil.
-- Liczymy tylko zbiorcze, anonimowe statystyki odwiedzin (Cloudflare Web Analytics, bez ciasteczek).
+- Nie używamy narzędzi analitycznych ani statystyk odwiedzin.
 
 ## Kto odpowiada za serwis
 
@@ -24,10 +24,6 @@ Aplikacja zapisuje w przeglądarce: wybrany egzamin i przedmioty, twoje odpowied
 - zapisać do pliku (Profil → Twoje dane → Zapisz kopię),
 - wczytać z pliku na innym urządzeniu,
 - usunąć (Profil → Twoje dane → Usuń postępy) albo przez wyczyszczenie danych witryny w przeglądarce.
-
-### Statystyki odwiedzin
-
-Korzystamy z Cloudflare Web Analytics, żeby wiedzieć, ile osób odwiedza strony i które są najczęściej czytane. To narzędzie nie używa ciasteczek, nie śledzi cię między stronami i nie zapisuje adresu IP w formie, która pozwalałaby cię zidentyfikować. Podstawa: nasz uzasadniony interes w rozwijaniu serwisu (art. 6 ust. 1 lit. f RODO). Dostawca: Cloudflare, Inc.
 
 ### Hosting
 
