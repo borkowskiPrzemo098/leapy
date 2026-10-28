@@ -92,3 +92,12 @@ test('blog, FAQ, pricing and legal pages render', async ({ page }) => {
   await page.goto('/nie-ma-takiej-strony')
   await expect(page.getByRole('heading', { level: 1, name: 'Nie ma takiej strony' })).toBeVisible()
 })
+
+test('the sample task on the home page can be answered', async ({ page }) => {
+  await page.goto('/')
+  await page.getByRole('button', { name: '½' }).click()
+  await expect(page.getByText('Nie tym razem.')).toBeVisible()
+  await page.getByRole('button', { name: /Spróbuj jeszcze raz/ }).click()
+  await page.getByRole('button', { name: /^2/ }).first().click()
+  await expect(page.getByText('Jest! Dobrze.')).toBeVisible()
+})

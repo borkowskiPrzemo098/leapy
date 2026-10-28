@@ -45,7 +45,9 @@ export function AppLayout() {
   useEffect(() => watchSystemTheme(() => usePrefs.getState().theme), [])
 
   return (
-    <div className="flex min-h-dvh">
+    // Sidebar and content share one centred, capped column: on very wide screens the
+    // navigation stays next to the content instead of at the far left edge.
+    <div className="mx-auto flex min-h-dvh w-full max-w-[90rem]">
       <a
         href="#main"
         className="sr-only z-50 rounded-lg bg-brand px-4 py-3 font-bold text-on-brand focus:not-sr-only focus:fixed focus:top-2 focus:left-2"

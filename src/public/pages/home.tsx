@@ -9,8 +9,10 @@ import {
   ShieldCheck,
   Timer,
   WifiOff,
+  X,
   type LucideIcon,
 } from 'lucide-react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useCatalog, useSite } from '@/content/data'
 import { ButtonLink } from '@/ui/Button'
@@ -51,56 +53,112 @@ const steps = [
   ['Wracaj do błędów', 'Leapy przypomina je, zanim zdążysz zapomnieć.'],
 ] as const
 
-/** A real-looking task card built from app pieces (no screenshot, no stock photo). */
+/**
+ * A small working task built from app pieces (no screenshot): the visitor can answer it,
+ * sees the same feedback as in the app and can try again.
+ */
 function TaskPreview() {
-  const options = [
-    { t: '2', state: 'correct' },
-    { t: '½', state: 'idle' },
-    { t: '1', state: 'idle' },
-    { t: '4', state: 'idle' },
-  ] as const
+  const options = ['2', '½', '1', '4']
+  const correct = 0
+  const [picked, setPicked] = useState<number | null>(null)
+  const answered = picked !== null
+  const right = picked === correct
   return (
-    <div aria-hidden className="relative mx-auto w-full max-w-sm">
-      <div className="absolute -top-4 -right-3 z-10 rotate-3 rounded-xl bg-reward px-4 py-2 font-extrabold text-on-reward shadow-md">
-        +10 XP
-      </div>
+    <div className="relative mx-auto w-full max-w-sm">
+      {right && (
+        <div
+          aria-hidden
+          className="absolute -top-4 -right-3 z-10 rotate-3 animate-leap rounded-xl bg-reward px-4 py-2 font-extrabold text-on-reward shadow-md"
+        >
+          +10 XP
+        </div>
+      )}
       <div className="rounded-2xl bg-surface p-5 text-ink shadow-lg">
-        <div className="flex items-center gap-3">
+        <div aria-hidden className="flex items-center gap-3">
           <div className="h-3 flex-1 overflow-hidden rounded-full bg-sunken">
             <div className="h-full w-3/5 rounded-full bg-brand" />
           </div>
           <span className="tabular text-small font-bold text-ink-3">6 / 10</span>
         </div>
-        <p className="mt-4 text-micro font-bold text-ink-3">Potęgi i pierwiastki</p>
-        <p className="mt-1 text-heading">Ile to 2¹⁰ · 4³ : 8⁵?</p>
-        <ul className="mt-4 flex flex-col gap-2">
-          {options.map((o, i) => (
-            <li
-              key={o.t}
+        <p className="mt-4 text-micro font-bold text-ink-3">Spróbuj: potęgi i pierwiastki</p>
+        <p id="demo-q" className="mt-1 text-heading">
+          Ile to 2¹⁰ · 4³ : 8⁵?
+        </p>
+        <ul aria-labelledby="demo-q" className="mt-4 flex flex-col gap-2">
+          {options.map((t, i) => {
+            const state = !answered
+              ? 'idle'
+              : i === correct
+                ? 'correct'
+                : i === picked
+                  ? 'wrong'
+                  : 'idle'
+            return (
+              <li key={t}>
+                <button
+                  type="button"
+                  disabled={answered}
+                  aria-pressed={i === picked}
+                  onClick={() => setPicked(i)}
+                  className={clsx(
+                    'flex min-h-12 w-full items-center gap-3 rounded-xl border-2 px-3 py-2.5 text-left font-bold',
+                    'transition-[background-color,border-color,transform] duration-[var(--dur-fast)] enabled:hover:bg-surface-2 enabled:active:translate-y-[2px] disabled:cursor-default',
+                    state === 'correct' &&
+                      'border-correct bg-correct-soft shadow-[0_3px_0_var(--correct-deep)]',
+                    state === 'wrong' &&
+                      'border-wrong bg-wrong-soft shadow-[0_3px_0_var(--wrong-deep)]',
+                    state === 'idle' && 'border-line bg-surface shadow-[0_3px_0_var(--line)]',
+                  )}
+                >
+                  <span
+                    aria-hidden
+                    className={clsx(
+                      'grid size-8 place-items-center rounded-md text-small',
+                      state === 'correct' && 'bg-correct text-on-feedback',
+                      state === 'wrong' && 'bg-wrong text-on-feedback',
+                      state === 'idle' && 'bg-surface-2 text-ink-2',
+                    )}
+                  >
+                    {state === 'correct' ? (
+                      <Check className="size-4" strokeWidth={3} />
+                    ) : state === 'wrong' ? (
+                      <X className="size-4" strokeWidth={3} />
+                    ) : (
+                      i + 1
+                    )}
+                  </span>
+                  {t}
+                  {state === 'correct' && <span className="sr-only"> (poprawna odpowiedź)</span>}
+                </button>
+              </li>
+            )
+          })}
+        </ul>
+        <div role="status" aria-live="polite">
+          {answered && (
+            <div
               className={clsx(
-                'flex items-center gap-3 rounded-xl border-2 px-3 py-2.5 font-bold',
-                o.state === 'correct'
-                  ? 'border-correct bg-correct-soft shadow-[0_3px_0_var(--correct-deep)]'
-                  : 'border-line bg-surface shadow-[0_3px_0_var(--line)]',
+                'mt-4 rounded-xl px-4 py-3',
+                right ? 'bg-correct-soft' : 'bg-wrong-soft',
               )}
             >
-              <span
-                className={clsx(
-                  'grid size-8 place-items-center rounded-md text-small',
-                  o.state === 'correct' ? 'bg-correct text-on-feedback' : 'bg-surface-2 text-ink-2',
-                )}
+              <p
+                className={clsx('font-extrabold', right ? 'text-correct-text' : 'text-wrong-text')}
               >
-                {o.state === 'correct' ? <Check className="size-4" strokeWidth={3} /> : i + 1}
-              </span>
-              {o.t}
-            </li>
-          ))}
-        </ul>
-        <div className="mt-4 rounded-xl bg-correct-soft px-4 py-3">
-          <p className="font-extrabold text-correct-text">Jest! Dobrze.</p>
-          <p className="mt-1 text-small text-ink-2">
-            2¹⁶ : 2¹⁵ = 2. Zapisz 4 i 8 jako potęgi dwójki.
-          </p>
+                {right ? 'Jest! Dobrze.' : 'Nie tym razem.'}
+              </p>
+              <p className="mt-1 text-small text-ink-2">
+                Zapisz 4 i 8 jako potęgi dwójki: 2¹⁰ · 2⁶ : 2¹⁵ = 2¹⁶ : 2¹⁵ = 2.
+              </p>
+              <button
+                type="button"
+                onClick={() => setPicked(null)}
+                className="mt-2 inline-flex min-h-12 items-center gap-2 rounded-lg text-small font-bold text-brand-text hover:underline"
+              >
+                <RotateCcw aria-hidden className="size-4" /> Spróbuj jeszcze raz
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
