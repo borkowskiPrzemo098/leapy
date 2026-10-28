@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Przeszłość → teraz'
     formula: 'If + Past Perfect, would + bezokolicznik'
+    card: 'Warunek w przeszłości, skutek teraz: jaki schemat?'
   - label: 'Teraz → przeszłość'
     formula: 'If + Past Simple, would have + III forma'
+    card: 'Warunek teraz, skutek w przeszłości: jaki schemat?'
   - label: 'Inwersja'
     formula: 'Had I known… / Were I you… / Should you need…'
+    card: 'Jak zastąpić if inwersją?'
   - label: 'Alternatywy if'
     formula: 'unless, provided that, as long as, otherwise'
+    card: 'Czym można zastąpić if?'
 title: 'Zdania warunkowe mieszane'
 summary:
   - 'Mieszane łączą różne czasy w warunku i skutku.'

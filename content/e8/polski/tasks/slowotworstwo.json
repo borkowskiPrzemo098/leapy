@@ -35,7 +35,7 @@
       "type": "short",
       "difficulty": 2,
       "prompt": "Utwórz zdrobnienie od rzeczownika „kot”.",
-      "answer": ["kotek", "kotka", "koteczek"],
+      "answer": ["kotek", "koteczek"],
       "explanation": "Przyrostek „-ek”: kotek (także: koteczek).",
       "tags": ["slowotworstwo"]
     }

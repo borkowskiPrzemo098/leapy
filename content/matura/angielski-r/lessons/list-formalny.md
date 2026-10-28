@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Cel'
     formula: 'I am writing to complain about / enquire about…'
+    card: 'Jak podać cel listu formalnego?'
   - label: 'Prośba'
     formula: 'I would be grateful if you could…'
+    card: 'Jak formalnie o coś poprosić?'
   - label: 'Załącznik'
     formula: 'Please find attached…'
+    card: 'Jak wspomnieć o załączniku?'
   - label: 'Zakończenie'
     formula: 'I look forward to hearing from you.'
+    card: 'Jaka formuła stoi przed podpisem w liście formalnym?'
 title: 'List formalny'
 summary:
   - 'List formalny: do instytucji, redakcji, pracodawcy.'

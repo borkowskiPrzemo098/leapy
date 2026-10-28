@@ -2,10 +2,13 @@
 cheatsheet:
   - label: 'Ogłoszenie'
     formula: 'co? gdzie? kiedy? kto? (kontakt)'
+    card: 'Co musi zawierać ogłoszenie?'
   - label: 'Zaproszenie'
     formula: 'adresat, okazja, miejsce, termin, nadawca'
+    card: 'Co musi zawierać zaproszenie?'
   - label: 'List'
     formula: 'miejscowość i data, zwrot, treść, pozdrowienie, podpis'
+    card: 'Jakie są części listu?'
 title: 'Formy użytkowe'
 summary:
   - 'Formy użytkowe na egzaminie to m.in. ogłoszenie, zaproszenie, list, życzenia, przemówienie.'

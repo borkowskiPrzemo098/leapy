@@ -2,10 +2,13 @@
 cheatsheet:
   - label: 'Częste luki'
     formula: 'despite, although, unless, whose, which, so, such'
+    card: false
   - label: 'so / such'
     formula: 'so tired / such a long day'
+    card: 'Kiedy so, a kiedy such?'
   - label: 'despite / although'
     formula: 'despite the rain / although it rained'
+    card: 'Kiedy despite, a kiedy although?'
 title: 'Środki językowe (poziom rozszerzony)'
 summary:
   - 'Zadania: luki otwarte, słowotwórstwo, transformacje, tłumaczenie fragmentów zdań.'

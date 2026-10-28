@@ -2,14 +2,19 @@
 cheatsheet:
   - label: 'Umiejętność'
     formula: "I can / I can't"
+    card: 'Jak powiedzieć, że coś umiesz albo nie umiesz?'
   - label: 'Zakaz'
     formula: "You mustn't smoke here."
+    card: 'Jak wyrazić zakaz?'
   - label: 'Brak konieczności'
     formula: "You don't have to come."
+    card: 'Jak powiedzieć, że coś nie jest konieczne?'
   - label: 'Rada'
     formula: 'You should rest.'
+    card: 'Jak udzielić rady?'
   - label: 'Prośba'
     formula: 'Could you help me?'
+    card: 'Jak grzecznie o coś poprosić?'
 title: 'Czasowniki modalne'
 summary:
   - '*can* — umiejętność, możliwość, prośba: *I can swim.*'

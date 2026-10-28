@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'a / an'
     formula: 'a book, an hour, a university'
+    card: 'Kiedy a, a kiedy an?'
   - label: 'Niepoliczalne'
     formula: 'water, money, advice, furniture'
+    card: 'Przykłady rzeczowników niepoliczalnych?'
   - label: 'much / many'
     formula: 'much time, many friends'
+    card: 'Kiedy much, a kiedy many?'
   - label: 'some / any'
     formula: 'I have some. Do you have any?'
+    card: 'Kiedy some, a kiedy any?'
 title: 'Rzeczowniki, przedimki i określniki'
 summary:
   - '*a/an* — pierwsza wzmianka o czymś policzalnym w liczbie pojedynczej: *a cat, an apple*.'

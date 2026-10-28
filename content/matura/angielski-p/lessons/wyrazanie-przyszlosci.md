@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Decyzja w chwili mówienia'
     formula: "The phone is ringing. I'll answer it."
+    card: 'Decyzja podjęta w chwili mówienia: jaka forma?'
   - label: 'Plan'
     formula: "I'm going to visit my grandma next week."
+    card: 'Plan na przyszłość: jaka forma?'
   - label: 'Przewidywanie z dowodu'
     formula: "Look at those clouds! It's going to rain."
+    card: 'Przewidywanie na podstawie tego, co widać: jaka forma?'
   - label: 'Po when / if'
     formula: "When I get home, I'll call you."
+    card: 'Jaki czas po when / if, gdy mówimy o przyszłości?'
 title: 'Wyrażanie przyszłości'
 summary:
   - "*will* — przewidywania, spontaniczne decyzje, obietnice: *I'll help you.*"

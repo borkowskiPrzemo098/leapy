@@ -56,7 +56,7 @@ W YAML-u wzory zapisuj w pojedynczych cudzysłowach, żeby ukośniki zostały be
 
 ### Fiszki
 
-Każda pozycja `cheatsheet` staje się fiszką (`label` na awersie, `formula` na rewersie). Dodatkowe fiszki (definicje, daty, słówka) dopisz w polu `cards`:
+Każda pozycja `cheatsheet` staje się fiszką (`label` na awersie, `formula` na rewersie). Gdy sama etykieta wyglądałaby na słówko do przetłumaczenia („Zakaz”, „Początek”), dodaj pytanie na awers: `card: 'Jak wyrazić zakaz?'`; `card: false` pomija fiszkę (np. wskazówki strategiczne). Id fiszki zawsze pochodzi z `label`. Dodatkowe fiszki (definicje, daty, słówka) dopisz w polu `cards`:
 
 ```yaml
 cards:

@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Present Perfect Continuous'
     formula: 'have/has been + -ing'
+    card: 'Jak tworzymy Present Perfect Continuous?'
   - label: 'Past Perfect'
     formula: 'had + III forma'
+    card: 'Jak tworzymy Past Perfect?'
   - label: 'Past Perfect Continuous'
     formula: 'had been + -ing'
+    card: 'Jak tworzymy Past Perfect Continuous?'
   - label: 'Future Perfect'
     formula: 'will have + III forma'
+    card: 'Jak tworzymy Future Perfect?'
 title: 'Czasy i aspekty'
 summary:
   - 'Aspekt Simple — fakt, całość; Continuous — trwanie, czynność w toku; Perfect — związek z innym momentem.'

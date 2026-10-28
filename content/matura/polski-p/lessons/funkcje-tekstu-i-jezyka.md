@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Informatywna'
     formula: '„Pociąg odjeżdża o 8:15.”'
+    card: 'Funkcja informatywna: przykład?'
   - label: 'Ekspresywna'
     formula: '„Ale się cieszę!”'
+    card: 'Funkcja ekspresywna: przykład?'
   - label: 'Impresywna'
     formula: '„Zagłosuj na nas!”'
+    card: 'Funkcja impresywna: przykład?'
   - label: 'Fatyczna'
     formula: '„No więc… słuchasz?”'
+    card: 'Funkcja fatyczna: przykład?'
 title: 'Funkcje tekstu i języka'
 summary:
   - 'Funkcja informatywna: przekazuje wiadomość.'

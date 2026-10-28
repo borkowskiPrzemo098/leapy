@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Wstęp'
     formula: 'It is often argued that…'
+    card: 'Jak zacząć rozprawkę?'
   - label: 'Dodawanie'
     formula: 'Moreover, Furthermore, In addition'
+    card: 'Jak dodać kolejny argument?'
   - label: 'Kontrast'
     formula: 'On the other hand, However'
+    card: 'Jak wprowadzić kontrast?'
   - label: 'Zakończenie'
     formula: 'In conclusion, All things considered'
+    card: 'Jak zacząć zakończenie rozprawki?'
 title: 'Rozprawka po angielsku'
 summary:
   - 'Rozprawka (*for and against* albo *opinion essay*) wymaga tezy, argumentów i podsumowania.'

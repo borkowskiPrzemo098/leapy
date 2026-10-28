@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Przed spójnikiem podrzędnym'
     formula: '„Wiem, że zdążę.”'
+    card: 'Przecinek przed spójnikiem podrzędnym: przykład?'
   - label: 'Przed „ale”'
     formula: '„Chciałem, ale nie mogłem.”'
+    card: 'Przecinek przed „ale”: przykład?'
   - label: 'Bez przecinka przed „i”'
     formula: '„Jabłka i gruszki.”'
+    card: 'Kiedy nie stawiamy przecinka przed „i”?'
   - label: 'Wołacz'
     formula: '„Kasiu, chodź tu.”'
+    card: 'Przecinek przy wołaczu: przykład?'
 title: 'Interpunkcja'
 summary:
   - 'Przecinek stawiamy przed spójnikami podrzędnymi: „że”, „który”, „bo”, „ponieważ”, „aby”, „gdy”.'

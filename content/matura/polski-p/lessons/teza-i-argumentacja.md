@@ -2,12 +2,14 @@
 cheatsheet:
   - label: 'Teza'
     formula: '„Literatura pokazuje, że…”'
+    card: 'Jak sformułować tezę?'
   - label: 'Argument'
     formula: 'ogólne twierdzenie wspierające tezę'
   - label: 'Przykład'
     formula: 'konkretny utwór i sytuacja'
   - label: 'Kontrargument'
     formula: '„Można by zarzucić, że…, jednak…”'
+    card: 'Jak wprowadzić kontrargument?'
 title: 'Teza i argumentacja'
 summary:
   - 'Teza to jasne stanowisko w odpowiedzi na problem z tematu.'

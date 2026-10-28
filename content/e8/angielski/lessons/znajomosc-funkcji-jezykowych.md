@@ -2,14 +2,19 @@
 cheatsheet:
   - label: 'Prośba'
     formula: 'Could you…? / Would you mind …ing?'
+    card: 'Jak o coś poprosić?'
   - label: 'Propozycja'
     formula: "Why don't we…? / How about …ing?"
+    card: 'Jak coś zaproponować?'
   - label: 'Zgoda'
     formula: 'Sounds great! / Why not?'
+    card: 'Jak zgodzić się na propozycję?'
   - label: 'Odmowa'
     formula: "I'm afraid I can't."
+    card: 'Jak uprzejmie odmówić?'
   - label: 'Przeprosiny'
     formula: "I'm sorry. / It's my fault."
+    card: 'Jak przeprosić?'
 title: 'Znajomość funkcji językowych'
 summary:
   - 'Zadania sprawdzają, jak reagować w typowych sytuacjach: prośba, przeprosiny, propozycja, zgoda, odmowa.'

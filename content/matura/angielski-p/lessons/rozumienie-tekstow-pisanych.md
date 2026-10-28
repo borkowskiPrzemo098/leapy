@@ -2,10 +2,13 @@
 cheatsheet:
   - label: 'Główna myśl'
     formula: 'o czym jest cały tekst?'
+    card: false
   - label: 'Szczegół'
     formula: 'kto? kiedy? gdzie? ile?'
+    card: false
   - label: 'Intencja autora'
     formula: 'inform / advise / warn / persuade / entertain'
+    card: false
 title: 'Rozumienie tekstów pisanych'
 summary:
   - 'Najpierw przeczytaj pytania, potem tekst.'

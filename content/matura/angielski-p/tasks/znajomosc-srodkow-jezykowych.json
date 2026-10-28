@@ -15,7 +15,7 @@
       "type": "short",
       "difficulty": 3,
       "prompt": "Uzupełnij formą słowa z nawiasu: *The ___ of the new bridge took three years. (build)*",
-      "answer": ["building", "construction"],
+      "answer": ["building"],
       "explanation": "Rzeczownik od *build*: *building*.",
       "tags": ["slowotworstwo"]
     },

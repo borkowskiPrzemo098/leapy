@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Zero'
     formula: 'If + Present, Present'
+    card: 'Zero conditional: jaki schemat?'
   - label: 'First'
     formula: 'If + Present, will + bezokolicznik'
+    card: 'First conditional: jaki schemat?'
   - label: 'Second'
     formula: 'If + Past, would + bezokolicznik'
+    card: 'Second conditional: jaki schemat?'
   - label: 'Rada'
     formula: 'If I were you, I would…'
+    card: 'Jak udzielić rady zdaniem z if?'
 title: 'Zdania warunkowe'
 summary:
   - 'Zero conditional — prawdy ogólne: *If you heat ice, it melts.*'

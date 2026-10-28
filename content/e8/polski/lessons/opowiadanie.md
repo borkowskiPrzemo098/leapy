@@ -2,10 +2,13 @@
 cheatsheet:
   - label: 'Budowa'
     formula: 'wstęp → zdarzenia → punkt kulminacyjny → zakończenie'
+    card: 'Jaka jest budowa opowiadania?'
   - label: 'Dialog'
     formula: 'każda wypowiedź od nowej linii, z myślnikiem'
+    card: 'Jak zapisujemy dialog?'
   - label: 'Słowa ożywiające'
     formula: '„nagle”, „w tej chwili”, „ku zaskoczeniu”'
+    card: 'Jakie słowa ożywiają opowiadanie?'
 title: 'Opowiadanie'
 summary:
   - 'Opowiadanie to tekst o zdarzeniach z bohaterem, czasem i miejscem akcji.'

@@ -2,10 +2,13 @@
 cheatsheet:
   - label: 'Ton'
     formula: 'critical, ironic, enthusiastic, neutral, nostalgic'
+    card: 'Jakimi słowami opisujemy ton tekstu?'
   - label: 'Kontrast'
     formula: 'however, although, nevertheless, whereas'
+    card: 'Jakie słowa sygnalizują kontrast w tekście?'
   - label: 'Odwołania'
     formula: 'this, that, it, the former, the latter'
+    card: 'Jakie słowa odsyłają do wcześniejszych treści?'
 title: 'Rozumienie tekstów pisanych (poziom rozszerzony)'
 summary:
   - 'Teksty są dłuższe, z bogatym słownictwem i opiniami autora.'

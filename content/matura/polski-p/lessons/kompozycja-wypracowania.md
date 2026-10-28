@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Wstęp'
     formula: 'problem → teza'
+    card: 'Co zawiera wstęp wypracowania?'
   - label: 'Akapit'
     formula: 'argument → przykład → wniosek cząstkowy'
+    card: 'Jak zbudować akapit argumentacyjny?'
   - label: 'Spójniki'
     formula: '„przede wszystkim”, „ponadto”, „z kolei”, „w rezultacie”'
+    card: 'Jakie wyrażenia łączą akapity?'
   - label: 'Zakończenie'
     formula: 'potwierdzenie tezy + refleksja'
+    card: 'Co zawiera zakończenie wypracowania?'
 title: 'Kompozycja wypracowania'
 summary:
   - 'Wstęp: wprowadzenie w problem i teza.'

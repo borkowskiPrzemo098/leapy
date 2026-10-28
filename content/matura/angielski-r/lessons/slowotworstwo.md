@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Rzeczowniki'
     formula: 'develop → development, kind → kindness, able → ability'
+    card: 'Jak tworzymy rzeczowniki (przykłady)?'
   - label: 'Przymiotniki'
     formula: 'use → useful/useless, comfort → comfortable'
+    card: 'Jak tworzymy przymiotniki (przykłady)?'
   - label: 'Przeczenia'
     formula: 'un-happy, im-possible, il-legal, ir-regular, dis-agree'
+    card: 'Jakie przedrostki tworzą przeczenia?'
   - label: 'Przysłówki'
     formula: 'careful → carefully, easy → easily'
+    card: 'Jak tworzymy przysłówki?'
 title: 'Słowotwórstwo'
 summary:
   - 'Przyrostki tworzą rzeczowniki (*-ment, -ness, -tion, -ity*), przymiotniki (*-ful, -less, -able, -ous*) i przysłówki (*-ly*).'

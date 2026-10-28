@@ -209,6 +209,22 @@ describe('runPipeline', () => {
     expect(pack?.lessons.potegi).not.toHaveProperty('cards')
   })
 
+  it('uses a cheatsheet card question as the front, keeping the id from the label', () => {
+    writeTasks([t1])
+    lesson("    card: 'Jak mnożymy potęgi o tej samej podstawie?'")
+    const card = runPipeline(root).packs[0]?.cards[0]
+    expect(card?.id).toBe('matura.matematyka-p.potegi.card.iloczyn-poteg')
+    expect(card?.front).toBe('Jak mnożymy potęgi o tej samej podstawie?')
+  })
+
+  it('skips the flashcard of a cheatsheet entry with card: false', () => {
+    writeTasks([t1])
+    lesson('    card: false')
+    const r = runPipeline(root)
+    expect(r.packs[0]?.cards).toEqual([])
+    expect(r.packs[0]?.lessons.potegi?.cheatsheet).toHaveLength(1)
+  })
+
   it('rejects two flashcards with the same front', () => {
     writeTasks([t1])
     lesson("cards:\n  - front: 'Iloczyn potęg'\n    back: 'x'")

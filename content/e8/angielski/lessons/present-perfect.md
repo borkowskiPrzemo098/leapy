@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Budowa'
     formula: 'I have / she has + III forma'
+    card: 'Jak tworzymy Present Perfect?'
   - label: 'since'
     formula: 'od punktu w czasie: since 2020, since Monday'
+    card: 'Kiedy w Present Perfect używamy since?'
   - label: 'for'
     formula: 'przez okres: for two weeks, for ages'
+    card: 'Kiedy w Present Perfect używamy for?'
   - label: 'already / yet'
     formula: "I've already done it. / Have you done it yet?"
+    card: 'Jak używamy already i yet?'
 title: 'Present Perfect'
 summary:
   - 'Budowa: *have/has + III forma czasownika* — *I have finished.*'

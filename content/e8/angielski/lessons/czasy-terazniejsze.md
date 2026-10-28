@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Present Simple'
     formula: "I work / he works / Do you work? / He doesn't work."
+    card: 'Jak wygląda Present Simple (twierdzenie, pytanie, przeczenie)?'
   - label: 'Present Continuous'
     formula: "I am working / Are you working? / She isn't working."
+    card: 'Jak wygląda Present Continuous?'
   - label: 'Słowa-klucze Simple'
     formula: 'always, usually, often, every day'
+    card: 'Słowa-klucze dla Present Simple?'
   - label: 'Słowa-klucze Continuous'
     formula: 'now, at the moment, today, look!'
+    card: 'Słowa-klucze dla Present Continuous?'
 title: 'Czasy teraźniejsze: Present Simple i Present Continuous'
 summary:
   - 'Present Simple: zwyczaje, fakty, rozkłady jazdy — *She plays tennis every Monday.*'

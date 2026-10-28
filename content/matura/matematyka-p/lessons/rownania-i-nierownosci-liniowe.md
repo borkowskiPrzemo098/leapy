@@ -14,9 +14,9 @@ cheatsheet:
     formula: '$ax+b=0\Rightarrow x=-\frac{b}{a}\ (a\neq 0)$'
   - label: 'Zmiana zwrotu'
     formula: '$-x<3\iff x>-3$'
-  - label: 'Przedział domknięty'
+  - label: 'Przedział z końcem (≥)'
     formula: '$x\ge 2\iff x\in[2,\infty)$'
-  - label: 'Przedział otwarty'
+  - label: 'Przedział bez końca (<)'
     formula: '$x<2\iff x\in(-\infty,2)$'
 reviewed: false
 updatedAt: 2026-10-27

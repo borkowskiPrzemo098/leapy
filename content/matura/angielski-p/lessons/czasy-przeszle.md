@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Past Simple'
     formula: "I worked / I went / Did you go? / I didn't go."
+    card: 'Jak wygląda Past Simple (twierdzenie, pytanie, przeczenie)?'
   - label: 'Past Continuous'
     formula: 'I was working / They were working'
+    card: 'Jak wygląda Past Continuous?'
   - label: 'Przerwanie'
     formula: 'was/were + -ing … when + Past Simple'
+    card: 'Czynność przerwana inną czynnością: jaki schemat?'
   - label: 'Słowa-klucze'
     formula: 'yesterday, last week, ago, in 2010'
+    card: 'Słowa-klucze dla Past Simple?'
 title: 'Czasy przeszłe: Past Simple i Past Continuous'
 summary:
   - 'Past Simple: zakończona czynność w przeszłości — *I visited Kraków last year.*'

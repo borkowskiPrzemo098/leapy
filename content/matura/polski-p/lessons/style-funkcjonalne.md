@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Potoczny'
     formula: '„Fajnie, że wpadłeś!”'
+    card: 'Styl potoczny: przykład?'
   - label: 'Urzędowy'
     formula: '„Uprzejmie informuję, że…”'
+    card: 'Styl urzędowy: przykład?'
   - label: 'Naukowy'
     formula: '„Zjawisko to definiuje się jako…”'
+    card: 'Styl naukowy: przykład?'
   - label: 'Publicystyczny'
     formula: '„Czas wreszcie powiedzieć głośno…”'
+    card: 'Styl publicystyczny: przykład?'
 title: 'Style funkcjonalne'
 summary:
   - 'Styl potoczny: codzienna rozmowa, swoboda, emocje.'

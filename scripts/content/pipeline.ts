@@ -226,10 +226,12 @@ export function runPipeline(
           const { cards: extraCards, ...lessonMeta } = lm.data
           const seenCards = new Set<string>()
           for (const c of [
-            ...lm.data.cheatsheet.map((x) => ({ front: x.label, back: x.formula })),
-            ...extraCards,
+            ...lm.data.cheatsheet
+              .filter((x) => x.card !== false)
+              .map((x) => ({ key: x.label, front: x.card || x.label, back: x.formula })),
+            ...extraCards.map((x) => ({ key: x.front, ...x })),
           ]) {
-            const id = `${exam.id}.${subject.id}.${topic}.card.${cardSlug(c.front)}`
+            const id = `${exam.id}.${subject.id}.${topic}.card.${cardSlug(c.key)}`
             if (seenCards.has(id)) err(path, `fiszka „${c.front}” się powtarza (id ${id})`)
             seenCards.add(id)
             cards.push({

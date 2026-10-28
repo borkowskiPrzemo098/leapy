@@ -12,7 +12,7 @@ mistakes:
 cheatsheet:
   - label: 'Procent liczby'
     formula: '$p\%\cdot x=\frac{p}{100}x$'
-  - label: 'Jakim procentem $a$ jest $b$'
+  - label: 'Jakim procentem liczby $a$ jest liczba $b$'
     formula: '$\frac{b}{a}\cdot 100\%$'
   - label: 'Podwyżka o $p\%$'
     formula: '$x\cdot\left(1+\frac{p}{100}\right)$'

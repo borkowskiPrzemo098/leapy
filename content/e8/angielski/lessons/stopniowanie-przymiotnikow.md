@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Krótkie'
     formula: 'big – bigger – the biggest'
+    card: 'Jak stopniujemy krótkie przymiotniki?'
   - label: 'Długie'
     formula: 'expensive – more expensive – the most expensive'
+    card: 'Jak stopniujemy długie przymiotniki?'
   - label: 'Nieregularne'
     formula: 'good – better – the best; bad – worse – the worst'
+    card: 'Jak stopniujemy good i bad?'
   - label: 'Porównanie'
     formula: 'My bag is heavier than yours.'
+    card: 'Jak porównać dwie rzeczy?'
 title: 'Stopniowanie przymiotników'
 summary:
   - 'Krótkie przymiotniki: *-er, -est*: *tall – taller – the tallest*.'

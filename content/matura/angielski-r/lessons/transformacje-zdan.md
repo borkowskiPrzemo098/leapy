@@ -1,13 +1,17 @@
 ---
 cheatsheet:
   - label: "It's a pity…"
-    formula: '→ I wish + Past Simple'
+    formula: 'I wish + Past Simple'
+    card: "Transformacja: It's a pity… → ?"
   - label: "It wasn't necessary…"
-    formula: "→ needn't have + III forma"
+    formula: "needn't have + III forma"
+    card: "Transformacja: It wasn't necessary… (a zrobiłem) → ?"
   - label: 'Perhaps he…'
-    formula: '→ He may/might have + III forma'
+    formula: 'He may/might have + III forma'
+    card: 'Transformacja: Perhaps he… (o przeszłości) → ?'
   - label: 'Last time…'
-    formula: "→ I haven't … since"
+    formula: "I haven't … since"
+    card: 'Transformacja: The last time I… → ?'
 title: 'Transformacje zdań'
 summary:
   - 'Przekształć zdanie tak, by zachować znaczenie, używając podanego słowa.'

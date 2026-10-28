@@ -2,8 +2,10 @@
 cheatsheet:
   - label: 'Plan'
     formula: 'przedstawienie → wygląd → cechy z przykładami → ocena'
+    card: 'Jaki jest plan charakterystyki?'
   - label: 'Słownictwo'
     formula: '„świadczy o tym”, „dowodem jest”, „wyróżnia się”'
+    card: 'Jakie zwroty przydają się w charakterystyce?'
 title: 'Charakterystyka'
 summary:
   - 'Charakterystyka przedstawia postać: wygląd, cechy charakteru, zachowanie, ocenę.'

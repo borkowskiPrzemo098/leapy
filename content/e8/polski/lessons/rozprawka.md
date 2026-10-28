@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Wstęp'
     formula: 'wprowadzenie + teza'
+    card: 'Co zawiera wstęp rozprawki?'
   - label: 'Rozwinięcie'
     formula: 'argumenty + przykłady, każdy w akapicie'
+    card: 'Co zawiera rozwinięcie rozprawki?'
   - label: 'Zakończenie'
     formula: 'potwierdzenie tezy, wniosek'
+    card: 'Co zawiera zakończenie rozprawki?'
   - label: 'Słownictwo'
     formula: '„po pierwsze”, „ponadto”, „przykładem jest”, „podsumowując”'
+    card: 'Jakie zwroty przydają się w rozprawce?'
 title: 'Rozprawka'
 summary:
   - 'Rozprawka ma wstęp z tezą, rozwinięcie z argumentami i zakończenie z wnioskiem.'

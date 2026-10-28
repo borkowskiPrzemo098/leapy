@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Present Simple'
     formula: 'English is spoken here.'
+    card: 'Strona bierna w Present Simple: przykład?'
   - label: 'Past Simple'
     formula: 'The window was broken.'
+    card: 'Strona bierna w Past Simple: przykład?'
   - label: 'Present Perfect'
     formula: 'My bike has been stolen.'
+    card: 'Strona bierna w Present Perfect: przykład?'
   - label: 'will'
     formula: 'The results will be announced tomorrow.'
+    card: 'Strona bierna z will: przykład?'
 title: 'Strona bierna'
 summary:
   - 'Budowa: *be* w odpowiednim czasie + III forma: *The house was built in 1900.*'

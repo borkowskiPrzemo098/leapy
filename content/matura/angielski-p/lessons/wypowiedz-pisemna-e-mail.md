@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Początek (nieformalnie)'
     formula: 'Hi Anna, / Thanks for your email.'
+    card: 'Jak zacząć nieformalny e-mail?'
   - label: 'Opowiadanie'
     formula: 'Last weekend I… / It was amazing because…'
+    card: 'Jak w e-mailu opowiedzieć o wydarzeniu?'
   - label: 'Propozycja'
     formula: "Why don't we meet…?"
+    card: 'Jak w e-mailu zaproponować spotkanie?'
   - label: 'Zakończenie'
     formula: 'Write back soon! / Best wishes,'
+    card: 'Jak zakończyć nieformalny e-mail?'
 title: 'Wypowiedź pisemna: e-mail'
 summary:
   - 'E-mail maturalny musi rozwinąć **wszystkie** elementy polecenia, każdy w kilku zdaniach.'

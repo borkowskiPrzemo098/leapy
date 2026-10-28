@@ -60,7 +60,18 @@ export const LessonMeta = z.strictObject({
   summary: z.array(md).min(2).max(5),
   mistakes: z.array(md).min(1).max(6),
   cheatsheet: z
-    .array(z.strictObject({ label: md, formula: md }))
+    .array(
+      z.strictObject({
+        label: md,
+        formula: md,
+        /**
+         * Flashcard made from this entry: a question for its front when the label alone would
+         * read like a word to translate ("Jak zacząć nieformalny e-mail?"), or false for none.
+         * The card id still comes from the label, so learners keep their progress.
+         */
+        card: z.union([md, z.literal(false)]).optional(),
+      }),
+    )
     .max(12)
     .default([]),
   /** Extra flashcards beyond the cheatsheet (definitions, dates, vocabulary) */

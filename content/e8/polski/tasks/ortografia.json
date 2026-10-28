@@ -25,7 +25,7 @@
       "type": "single",
       "difficulty": 2,
       "prompt": "Wskaż poprawny zapis.",
-      "options": ["niedobry", "nie dobry", "nie-dobry", "niedobrzy"],
+      "options": ["niedobry", "nie dobry", "nie-dobry", "nie dobra"],
       "answer": 0,
       "explanation": "„Nie” z przymiotnikami w stopniu równym piszemy łącznie.",
       "tags": ["ortografia", "pisownia-nie"]

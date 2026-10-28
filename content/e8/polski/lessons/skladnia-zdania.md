@@ -7,7 +7,7 @@ cheatsheet:
   - label: 'Przydawka'
     formula: 'jaki? który? czyj?'
   - label: 'Dopełnienie'
-    formula: 'kogo? czego? komu? czemu? kogo? co?'
+    formula: 'kogo? czego? komu? czemu? kim? czym? o kim? o czym?'
   - label: 'Okolicznik'
     formula: 'gdzie? kiedy? jak? dlaczego?'
 title: 'Składnia zdania'

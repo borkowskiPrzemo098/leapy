@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'Historycznoliteracki'
     formula: 'cechy epoki, prąd literacki'
+    card: 'Na czym polega kontekst historycznoliteracki?'
   - label: 'Biograficzny'
     formula: 'fakty z życia autora'
+    card: 'Na czym polega kontekst biograficzny?'
   - label: 'Filozoficzny'
     formula: 'stoicyzm, egzystencjalizm, racjonalizm'
+    card: 'Kontekst filozoficzny: przykłady?'
   - label: 'Literacki'
     formula: 'inny utwór o podobnym motywie'
+    card: 'Na czym polega kontekst literacki?'
 title: 'Kontekst w wypracowaniu'
 summary:
   - 'Kontekst to odwołanie do czegoś spoza głównego tekstu, co pogłębia interpretację.'

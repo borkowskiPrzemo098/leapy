@@ -2,12 +2,16 @@
 cheatsheet:
   - label: 'make'
     formula: 'a decision, an effort, a complaint, progress'
+    card: 'Co łączy się z make?'
   - label: 'do'
     formula: 'research, damage, harm, your best'
+    card: 'Co łączy się z do?'
   - label: 'take'
     formula: 'a photo, a risk, part in, advantage of'
+    card: 'Co łączy się z take?'
   - label: 'Przymiotnik + rzeczownik'
     formula: 'heavy traffic, strong coffee, high price'
+    card: 'Kolokacje przymiotnik + rzeczownik: przykłady?'
 title: 'Kolokacje'
 summary:
   - 'Kolokacja to naturalne połączenie słów: *make a decision*, *do homework*, *heavy rain*.'

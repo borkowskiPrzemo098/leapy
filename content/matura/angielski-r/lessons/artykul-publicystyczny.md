@@ -2,10 +2,13 @@
 cheatsheet:
   - label: 'Wstęp'
     formula: 'Have you ever wondered…?'
+    card: 'Jak zacząć artykuł?'
   - label: 'Zwrot do czytelnika'
     formula: 'You might think that… but…'
+    card: 'Jak w artykule zwrócić się do czytelnika?'
   - label: 'Zakończenie'
     formula: 'So next time you…, remember…'
+    card: 'Jak zakończyć artykuł?'
 title: 'Artykuł publicystyczny'
 summary:
   - 'Artykuł ma tytuł, który przyciąga uwagę, i angażujący wstęp.'

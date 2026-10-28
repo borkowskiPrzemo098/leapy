@@ -2,12 +2,16 @@
 cheatsheet:
   - label: '+ -ing'
     formula: 'enjoy, avoid, finish, mind, suggest, keep'
+    card: 'Po jakich czasownikach stawiamy formę -ing?'
   - label: '+ to'
     formula: 'want, decide, hope, plan, promise, refuse, agree'
+    card: 'Po jakich czasownikach stawiamy to + bezokolicznik?'
   - label: 'make / let'
     formula: 'make sb do sth, let sb do sth'
+    card: 'Jak używamy make i let?'
   - label: 'remember / forget'
     formula: 'remember doing (pamiętać, że się zrobiło) / remember to do (pamiętać, żeby zrobić)'
+    card: 'remember doing a remember to do: czym się różnią?'
 title: 'Konstrukcje czasownikowe'
 summary:
   - 'Po niektórych czasownikach używamy formy *-ing*: *enjoy, avoid, finish, mind, suggest*.'
