@@ -1,7 +1,7 @@
 ---
 title: Własności funkcji
 summary:
-  - 'Funkcja przypisuje każdemu argumentu $x$ z dziedziny **dokładnie jedną** wartość $f(x)$.'
+  - 'Funkcja przypisuje każdemu argumentowi $x$ z dziedziny **dokładnie jedną** wartość $f(x)$.'
   - 'Miejsce zerowe to argument, dla którego $f(x)=0$, czyli punkt przecięcia wykresu z osią $Ox$.'
   - 'Funkcja rosnąca: większy argument daje większą wartość. Malejąca: mniejszą.'
   - 'Zbiór wartości odczytujemy z wykresu na osi $Oy$, dziedzinę na osi $Ox$.'

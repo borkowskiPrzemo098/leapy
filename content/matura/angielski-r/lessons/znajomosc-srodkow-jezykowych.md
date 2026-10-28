@@ -25,6 +25,6 @@ updatedAt: '2026-10-27'
 
 Luki otwarte sprawdzają, czy rozumiesz strukturę zdania.
 
-**Przykład.** _\___ the bad weather, we went for a walk._ — po luce rzeczownik: _Despite_ (nie _Although_).
+**Przykład.** „\_\_\_ the bad weather, we went for a walk.” — po luce rzeczownik: _Despite_ (nie _Although_).
 
 **Przykład.** _It was ___ an interesting lecture that nobody left early._ — _such_ (bo dalej _an + przymiotnik + rzeczownik_).

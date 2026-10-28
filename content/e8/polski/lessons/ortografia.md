@@ -24,7 +24,7 @@ summary:
 mistakes:
   - '„Nie” z przymiotnikiem w stopniu wyższym pisane łącznie: poprawnie „nie lepszy”.'
   - '„Ch” i „h”: „chleb”, ale „herbata” trzeba zapamiętać.'
-  - 'Wielka litera w nazwach mieszkańców: „Polak”, „warszawianin”.'
+  - 'Wielka litera w nazwie mieszkańca miasta: „Warszawianin” zamiast „warszawianin” (wielką piszemy mieszkańców krajów i regionów: „Polak”, „Ślązak”).'
 reviewed: false
 updatedAt: '2026-10-27'
 ---

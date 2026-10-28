@@ -26,8 +26,8 @@ reviewed: false
 updatedAt: '2026-10-27'
 ---
 
-Na poziomie rozszerzonym liczy się precyzja: różnica między _I've read the book_ (skończyłem) a _I've been reading the book_ (czytam od jakiegoś czasu, może jeszcze nie skończyłem).
+Na poziomie rozszerzonym liczy się precyzja: różnica między _I've read the book_ (książka przeczytana) a _I've been reading the book_ (czytam od jakiegoś czasu, może jeszcze nie do końca).
 
-**Kolejność zdarzeń.** _When I got to the station, the train had left._ — pociąg odjechał wcześniej. _When I got to the station, the train left._ — odjechał w chwili, gdy przyszedłem.
+**Kolejność zdarzeń.** _When I got to the station, the train had left._ — pociąg odjechał wcześniej. _When I got to the station, the train left._ — odjechał w chwili mojego przyjścia.
 
 **Skutek widoczny teraz:** _Your eyes are red. Have you been crying?_

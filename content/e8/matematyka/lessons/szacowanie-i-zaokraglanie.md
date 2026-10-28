@@ -26,4 +26,4 @@ Szacowanie to umiejętność, która przydaje się w zadaniach z zakupami, podr�
 
 **Zaokrąglanie.** Liczba $3{,}1415$ zaokrąglona do części setnych to $3{,}14$ (odrzucana cyfra $1$), a do części tysięcznych $3{,}142$ (odrzucana $5$).
 
-**Sprawdzanie wyniku.** Jeśli obliczyłeś, że $12\%$ z $398$ zł to $477$ zł, szacunek $10\%$ z $400$ zł $=40$ zł od razu pokazuje błąd.
+**Sprawdzanie wyniku.** Jeśli wychodzi ci, że $12\%$ z $398$ zł to $477$ zł, szacunek $10\%$ z $400$ zł $=40$ zł od razu pokazuje błąd.

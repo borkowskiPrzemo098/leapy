@@ -13,7 +13,7 @@ summary:
   - 'Symbol $\frac{0}{0}$: rozkładamy na czynniki i skracamy.'
   - 'Granice jednostronne muszą być równe, żeby istniała granica.'
 mistakes:
-  - 'Podstawienie dającego $\frac{0}{0}$ i uznanie, że granica nie istnieje.'
+  - 'Uznanie, że granica nie istnieje, bo podstawienie daje $\frac{0}{0}$.'
   - 'Brak sprawdzenia granic jednostronnych dla funkcji „sklejanej”.'
   - 'Mylenie ciągłości z różniczkowalnością.'
 reviewed: false

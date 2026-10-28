@@ -10,7 +10,7 @@ cheatsheet:
     formula: 'Had I known… / Were I you… / Should you need…'
     card: 'Jak zastąpić if inwersją?'
   - label: 'Alternatywy if'
-    formula: 'unless, provided that, as long as, otherwise'
+    formula: 'unless, provided that, as long as, on condition that'
     card: 'Czym można zastąpić if?'
 title: 'Zdania warunkowe mieszane'
 summary:

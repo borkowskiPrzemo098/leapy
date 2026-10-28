@@ -32,4 +32,4 @@ Te zadania są krótkie, ale wymagają uwagi do szczegółu.
 
 **Transformacja.** _It isn't necessary to come early._ → _You ___ come early._ Odpowiedź: _don't have to_.
 
-Po wpisaniu odpowiedzi przeczytaj całe zdanie jeszcze raz, jakbyś słyszał je na głos.
+Po wpisaniu odpowiedzi przeczytaj całe zdanie jeszcze raz, najlepiej półgłosem.

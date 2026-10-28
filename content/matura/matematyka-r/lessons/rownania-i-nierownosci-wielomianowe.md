@@ -13,7 +13,7 @@ summary:
   - 'Przy pierwiastku krotności parzystej wykres odbija się od osi (znak się nie zmienia).'
   - 'Podstawienie $t=x^{2}$ upraszcza równania dwukwadratowe.'
 mistakes:
-  - 'Dzielenie przez wyrażenie z $x$ (gubi się pierwiastki).'
+  - 'Dzielenie przez wyrażenie z $x$ (gubią się pierwiastki).'
   - 'Zmiana znaku przy pierwiastku parzystej krotności.'
   - 'Odrzucanie ujemnych $t$ dopiero po powrocie do $x$ — trzeba je odrzucić od razu ($t=x^{2}\ge 0$).'
 reviewed: false

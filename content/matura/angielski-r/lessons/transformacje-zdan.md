@@ -5,7 +5,7 @@ cheatsheet:
     card: "Transformacja: It's a pity… → ?"
   - label: "It wasn't necessary…"
     formula: "needn't have + III forma"
-    card: "Transformacja: It wasn't necessary… (a zrobiłem) → ?"
+    card: "Transformacja: It wasn't necessary… (a jednak to zrobiono) → ?"
   - label: 'Perhaps he…'
     formula: 'He may/might have + III forma'
     card: 'Transformacja: Perhaps he… (o przeszłości) → ?'

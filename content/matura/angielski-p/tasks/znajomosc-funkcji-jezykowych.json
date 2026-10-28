@@ -79,7 +79,7 @@
       "id": "006",
       "type": "single",
       "difficulty": 3,
-      "prompt": "Chcesz poprosić o powtórzenie, bo nie usłyszałeś. Co mówisz?",
+      "prompt": "Chcesz poprosić o powtórzenie, bo nie było słychać. Co mówisz?",
       "options": ["Sorry, could you say that again?", "What you said?", "Repeat.", "Say again me."],
       "answer": 0,
       "explanation": "Uprzejma prośba o powtórzenie.",

@@ -32,6 +32,6 @@ Wybór między _-ing_ a _to_ zależy od czasownika, po którym stoi druga czynno
 - _We decided to stay at home._
 - _Would you mind opening the window?_
 
-**Zmiana znaczenia.** _I remember locking the door_ — pamiętam, że zamknąłem. _Remember to lock the door_ — pamiętaj, żeby zamknąć.
+**Zmiana znaczenia.** _I remember locking the door_ — pamiętam, że drzwi zostały zamknięte. _Remember to lock the door_ — pamiętaj, żeby zamknąć.
 
 Te konstrukcje często sprawdzają zadania z transformacjami zdań.

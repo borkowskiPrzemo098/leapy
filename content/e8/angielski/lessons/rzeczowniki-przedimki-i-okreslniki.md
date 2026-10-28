@@ -21,7 +21,7 @@ summary:
 mistakes:
   - '*an information*, *advices*.'
   - '*How much people?* zamiast *How many people?*'
-  - '*a university* jest poprawne (wymowa zaczyna się od /j/), choć pisze się od samogłoski.'
+  - '*an university* zamiast *a university*: liczy się wymowa (/j/), a nie pisownia od samogłoski.'
 reviewed: false
 updatedAt: '2026-10-27'
 ---

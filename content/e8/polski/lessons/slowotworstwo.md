@@ -12,7 +12,7 @@ title: 'Słowotwórstwo'
 summary:
   - 'Wyraz pochodny powstaje od wyrazu podstawowego: „domek” od „dom”.'
   - 'Rdzeń to wspólna część wyrazów pokrewnych: „ucz-” w „uczeń”, „uczyć”, „nauka”.'
-  - 'Formant to cząstka tworząca nowy wyraz: przedrostek, przyrostek albo końcówka zmieniona.'
+  - 'Formant to cząstka tworząca nowy wyraz: przedrostek, przyrostek albo formant zerowy („wybrać” → „wybór”).'
   - 'Rodzina wyrazów to wszystkie wyrazy o tym samym rdzeniu.'
 mistakes:
   - 'Uznanie wyrazów podobnych brzmieniowo za pokrewne („kot” i „kotlet”).'

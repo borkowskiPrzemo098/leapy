@@ -26,6 +26,6 @@ Dwie figury są podobne, gdy jedna jest powiększeniem albo pomniejszeniem drugi
 
 **Pola.** Jeśli trójkąt powiększymy w skali $2$, każdy bok jest dwa razy dłuższy, a wysokość też, więc pole rośnie $2\cdot 2=4$ razy. Ogólnie pola są w stosunku $k^{2}$.
 
-**Talesa.** Ramiona kąta przecina dwie proste równoległe. Odcinki na jednym ramieniu $2$ i $3$ odpowiadają odcinkom $4$ i $x$ na drugim: $\frac{2}{3}=\frac{4}{x}$, więc $x=6$.
+**Talesa.** Ramiona kąta przecinają dwie proste równoległe. Odcinki na jednym ramieniu $2$ i $3$ odpowiadają odcinkom $4$ i $x$ na drugim: $\frac{2}{3}=\frac{4}{x}$, więc $x=6$.
 
 **Trójkąty podobne** szybko rozpoznasz po dwóch równych kątach, np. trójkąty w trapezie wyznaczone przez przekątne.

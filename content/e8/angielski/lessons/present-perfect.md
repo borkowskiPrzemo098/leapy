@@ -28,7 +28,7 @@ updatedAt: '2026-10-27'
 
 Present Perfect łączy przeszłość z teraźniejszością.
 
-- _I've lost my keys_ — zgubiłem je i nadal ich nie mam.
+- _I've lost my keys_ — klucze zginęły i nadal ich nie mam.
 - _She has never flown_ — w całym jej życiu do teraz.
 - _We have lived here for ten years_ — mieszkamy nadal.
 
